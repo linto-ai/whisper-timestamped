@@ -579,6 +579,33 @@ def ensure_increasing_positions(segments, min_duration=0.1):
     return segments
 
 
+def write_vtt_words(transcript, file):
+    from whisper.utils import format_timestamp
+    print("WEBVTT\n", file=file)
+    for segment in transcript:
+        for word in segment["words"]:
+            print(
+                f"{format_timestamp(word['start'])} --> {format_timestamp(word['end'])}\n"
+                f"{word['word']}\n",
+                file=file,
+                flush=True,
+            )
+
+def write_srt_words(transcript, file):
+    from whisper.utils import format_timestamp
+    i = 1
+    for segment in transcript:
+        for word in segment["words"]:
+            print(
+                f"{i}\n"
+                f"{format_timestamp(word['start'], always_include_hours=True, decimal_marker=',')} --> "
+                f"{format_timestamp(word['end'], always_include_hours=True, decimal_marker=',')}\n"
+                f"{word['word']}\n",
+                file=file,
+                flush=True,
+            )
+            i += 1
+
 def cli():
 
     import os
@@ -586,17 +613,17 @@ def cli():
     import argparse
     import json
 
-    from whisper.utils import str2bool, optional_float, optional_int
+    from whisper.utils import str2bool, optional_float, optional_int, write_txt
 
     parser = argparse.ArgumentParser(
         description='Transcribe a single audio with whisper and print result in a json',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
-    parser.add_argument('audio', help="Audio file to transcribe")  # , nargs='+') # TODO : support several files
+    parser.add_argument('audio', help="Audio file to transcribe", nargs='+')
     parser.add_argument('--model', help=f"Name of the Whisper model to use.", choices=whisper.available_models(), default="small")
     parser.add_argument("--model_dir", default=None, help="The path to save model files; uses ~/.cache/whisper by default", type=str)
     parser.add_argument("--device", default="cuda:0" if torch.cuda.is_available() else "cpu", help="device to use for PyTorch inference")
-    # TODO: parser.add_argument("--output_dir", "-o", type=str, default=".", help="Directory to save the outputs")
+    parser.add_argument("--output_dir", "-o", default=None, help="directory to save the outputs", type=str)
     parser.add_argument("--verbose", type=str2bool, default=False, help="Whether to print out the progress and debug messages")
     
     parser.add_argument("--task", default="transcribe", help="Whether to perform X->X speech recognition ('transcribe') or X->English translation ('translate')", choices=["transcribe", "translate"], type=str)
@@ -619,25 +646,15 @@ def cli():
     parser.add_argument("--no_speech_threshold", default=0.6, help="If the probability of the <|nospeech|> token is higher than this value AND the decoding has failed due to `logprob_threshold`, consider the segment as silence", type=optional_float)
     parser.add_argument("--threads", default=0, help="Number of threads used by torch for CPU inference; supercedes MKL_NUM_THREADS/OMP_NUM_THREADS", type=optional_int)
 
-    parser.add_argument('--output', help="Output path (will print on stdout by default)", default=None)
     parser.add_argument('--plot', help="Plot word alignments", default=False, action="store_true")
 
     args = parser.parse_args().__dict__
-
-    output = args.pop("output")
-    if not output:
-        output = sys.stdout
-    elif output == "/dev/null":
-        # output nothing
-        output = open(os.devnull, "w")
-    else:
-        output = open(output, "w")
 
     threads = args.pop("threads")
     if threads:
         torch.set_num_threads(threads)
 
-    audio = args.pop("audio")
+    audio_files = args.pop("audio")
     
     model = args.pop("model")
     device = args.pop("device")
@@ -646,13 +663,41 @@ def cli():
 
     plot_word_alignment = args.pop("plot")
 
-    res = transcribe(
-        model, audio,
-        plot_word_alignment=plot_word_alignment,
-        **args
-    )
+    output_dir = args.pop("output_dir")
+    if not os.path.isdir(output_dir):
+        os.makedirs(output_dir)
 
-    json.dump(res, output, indent=2, ensure_ascii=False)
+    for audio_path in audio_files:
+
+        result = transcribe(
+            model, audio_path,
+            plot_word_alignment=plot_word_alignment,
+            **args
+        )
+
+        if output_dir:
+
+            outname = os.path.join(output_dir, os.path.basename(audio_path))
+
+            # save JSON
+            with open(outname + ".words.json", "w", encoding="utf-8") as js:
+                json.dump(result, js, indent=2, ensure_ascii=False)
+
+            # save TXT
+            with open(outname + ".txt", "w", encoding="utf-8") as txt:
+                write_txt(result["segments"], file=txt)
+
+            # save VTT
+            with open(outname + ".words.vtt", "w", encoding="utf-8") as vtt:
+                write_vtt_words(result["segments"], file=vtt)
+
+            # save SRT
+            with open(outname + ".words.srt", "w", encoding="utf-8") as srt:
+                write_srt_words(result["segments"], file=srt)
+
+        else:
+
+            json.dump(result, sys.stdout, indent=2, ensure_ascii=False)
 
 
 if __name__ == "__main__":
