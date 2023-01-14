@@ -1,2 +1,2 @@
-whisper
 dtw-python
+whisper @ git+https://github.com/openai/whisper.git@main#egg=whisper
