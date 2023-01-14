@@ -12,10 +12,15 @@ import scipy.signal
 # Additional for text tokenization
 import string
 
+# Constant variables
 from whisper.audio import N_FRAMES, HOP_LENGTH, SAMPLE_RATE  # 3000, 160, 16000
-
 AUDIO_SAMPLES_PER_TOKEN = HOP_LENGTH * 2                     # 320
 AUDIO_TIME_PER_TOKEN = AUDIO_SAMPLES_PER_TOKEN / SAMPLE_RATE # 0.02
+
+# Logs
+import logging
+logger = logging.getLogger("whisper_timestamped")
+
 
 def transcribe(
     # main Whisper options
@@ -153,11 +158,10 @@ def transcribe(
         if len(ws):
             timestamped_word_segments.append(ws)
         else:
-            print(f"WARNING: not adding segment ({len(timestamped_word_segments)}) {tokenizer.decode_with_timestamps(tokens[-2])}")
+            logger.warning(f"Not adding segment ({len(timestamped_word_segments)}) {tokenizer.decode_with_timestamps(tokens[-2])}")
             tokens.pop(-2)
 
         attention_weights = [[w[-1][:, :, -1:, :]] for w in attention_weights]
-        # print("NOCOMMIT me segment", len(tokens)-1)
 
     def get_input_tokens(layer, ins, outs):
         nonlocal tokens, num_inference_steps, attention_weights
@@ -240,7 +244,7 @@ def transcribe(
     l1 = len(whisper_segments)
     l2 = len(timestamped_word_segments)
     if l1 != l2 and l1 != 0:
-        print(f"WARNING: Inconsistent number of segments: whisper_segments ({l1}) != timestamped_word_segments ({l2})")
+        logger.warning(f"Inconsistent number of segments: whisper_segments ({l1}) != timestamped_word_segments ({l2})")
 
     words = []
     for i, (segment, timestamped_words, token) in enumerate(zip(whisper_segments, timestamped_word_segments, tokens)):
@@ -256,9 +260,9 @@ def transcribe(
             segment_end = segment["end"]
 
             if timestamped_words[0]["start"] < segment_start - refine_whisper_precision:
-                print(f"WARNING: problem on start position for segment {i} ({segment['text']}) : {timestamped_words[0]['start']} << {segment_start}")
+                logger.warning(f"Problem on start position for segment {i} ({segment['text']}) : {timestamped_words[0]['start']} << {segment_start}")
             if timestamped_words[-1]["end"] > segment_end + refine_whisper_precision:
-                print(f"WARNING: problem on end position for segment {i} ({segment['text']}) : {timestamped_words[0]['end']} >> {segment_end}")
+                logger.warning(f"Problem on end position for segment {i} ({segment['text']}) : {timestamped_words[0]['end']} >> {segment_end}")
             # assert timestamped_words[0]["start"] >= segment_start - refine_whisper_precision
             # assert timestamped_words[-1]["end"] <= segment_end + refine_whisper_precision
 
@@ -312,10 +316,10 @@ def perform_word_alignment(
 
     assert start_token >= 0, f"Missing start token in {tokenizer.decode_with_timestamps(tokens)}"
     if len(tokens) == 1 or end_token < 0:
-        print(f"WARNING: missing end token in {tokenizer.decode_with_timestamps(tokens)}")
+        logger.warning(f"Missing end token in {tokenizer.decode_with_timestamps(tokens)}")
         return []
     if end_token == start_token and refine_whisper_precision_nsamples == 0:
-        print(f"WARNING: got empty segment in {tokenizer.decode_with_timestamps(tokens)}")
+        logger.warning(f"Got empty segment in {tokenizer.decode_with_timestamps(tokens)}")
         return []
 
     if refine_whisper_precision_nsamples > 0:
@@ -336,8 +340,7 @@ def perform_word_alignment(
     num_tokens = weights.shape[-2]
     num_frames = end_token - start_token
     if num_tokens > num_frames:
-        print(
-            f"WARNING: too many tokens ({num_tokens}) given the number of frames ({num_frames}) in: {tokenizer.decode_with_timestamps(tokens)}")
+        logger.warning(f"Too many tokens ({num_tokens}) given the number of frames ({num_frames}) in: {tokenizer.decode_with_timestamps(tokens)}")
         return perform_word_alignment(
             tokens[:num_frames-1] + [tokens[-1]],
             [[w[:, :, :num_frames-1, :], w[:, :, -1:, :]]
@@ -616,7 +619,7 @@ def cli():
     from whisper.utils import str2bool, optional_float, optional_int, write_txt
 
     parser = argparse.ArgumentParser(
-        description='Transcribe a single audio with whisper and print result in a json',
+        description='Transcribe a single audio with whisper and compute word timestamps',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
     parser.add_argument('audio', help="Audio file to transcribe", nargs='+')
@@ -624,7 +627,7 @@ def cli():
     parser.add_argument("--model_dir", default=None, help="The path to save model files; uses ~/.cache/whisper by default", type=str)
     parser.add_argument("--device", default="cuda:0" if torch.cuda.is_available() else "cpu", help="device to use for PyTorch inference")
     parser.add_argument("--output_dir", "-o", default=None, help="directory to save the outputs", type=str)
-    parser.add_argument("--verbose", type=str2bool, default=False, help="Whether to print out the progress and debug messages")
+    parser.add_argument("--verbose", type=str2bool, default=False, help="Whether to print out the progress and debug messages of Whisper")
     
     parser.add_argument("--task", default="transcribe", help="Whether to perform X->X speech recognition ('transcribe') or X->English translation ('translate')", choices=["transcribe", "translate"], type=str)
     parser.add_argument('--language', help=f"Language to use. Among : {', '.join(sorted(k+'('+v+')' for k,v in whisper.tokenizer.LANGUAGES.items()))}.", choices=sorted(whisper.tokenizer.LANGUAGES.keys()) + sorted([k.title() for k in whisper.tokenizer.TO_LANGUAGE_CODE.keys()]), default=None)
@@ -664,7 +667,7 @@ def cli():
     plot_word_alignment = args.pop("plot")
 
     output_dir = args.pop("output_dir")
-    if not os.path.isdir(output_dir):
+    if output_dir and not os.path.isdir(output_dir):
         os.makedirs(output_dir)
 
     for audio_path in audio_files:
