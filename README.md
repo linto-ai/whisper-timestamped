@@ -1,6 +1,6 @@
 # whisper-timestamped
 
-Multilingual Automatic Speech Recognition with Accurate Word-level Timestamps.
+Multilingual Automatic Speech Recognition with Word-level Timestamps.
 
 * [Description](#description)
 * [Installation](#installation)
@@ -12,25 +12,27 @@ Multilingual Automatic Speech Recognition with Accurate Word-level Timestamps.
 * [Acknowlegment](#acknowlegment)
 
 ## Description
-Whisper is a multi-lingual robust speech recognition model, trained by OpenAI,
-that achieves state-of-the-art in many languages.
-The Whisper models were trained to predict approximative timestamps on speech segments (most of the times with 1 sec accuracy),
+[Whisper](https://openai.com/blog/whisper/) is a set of multi-lingual robust speech recognition models, trained by OpenAI,
+that achieve state-of-the-art in many languages.
+Whisper models were trained to predict approximative timestamps on speech segments (most of the times with 1 sec accuracy),
 but cannot originally predict word timestamps.
 This repository proposes an implementation to **predict word timestamps, and give more accurate estimation of speech segments, when transcribing with Whipser models**.
 
-The approach is based on approach dynamic time warping applied to cross-attention weights,
+The approach is based on approach Dynamic Time Warping (DTW) applied to cross-attention weights,
 as done by [this notebook by Jong Wook Kim](https://github.com/openai/whisper/blob/f82bc59f5ea234d4b97fb2860842ed38519f7e65/notebooks/Multilingual_ASR.ipynb).
 The main addition to this notebook is that **no additional inference steps are required to predict word timestamps**.
 Word alignment is done on the fly, after each speech segment is decoded.
 In particular, little additional memory is used with respect to the regular use of the model.
 
-Note that another relevant approach to recover word-level timestamps would be to use wav2vec models that predict characters, as implemented in [whisperX](https://github.com/m-bain/whisperX).
+Note that another relevant approach to recover word-level timestamps consists in using wav2vec models that predict characters,
+as successfully implemented in [whisperX](https://github.com/m-bain/whisperX).
 But these approaches have several drawbacks, which does not have approachs based on cross-attention weights like `whisper_timestamped`:
 * The need to perform twice the inference (once with Whisper, once with wav2vec), which has an impact on the Real Time Factor.
 * The need to handle (at least) an additional neural network, which consumes memory.
 * The need to find one wav2vec model per language to support.
-* The need to normalize characters of whisper transcription in order to match the character set of the wav2vec model.
-This often involves awkward language-dependent conversions, like converting numbers to words ("2" -> "two"), symbols to words ("%" -> "percent", "€" -> "euro(s)")... 
+* The need to normalize characters in whisper transcription to match the character set of wav2vec model.
+This involves awkward language-dependent conversions, like converting numbers to words ("2" -> "two"), symbols to words ("%" -> "percent", "€" -> "euro(s)")...
+* The lack of robustness around speech disfluencies (fillers, hesitations, repeated words...) that are usually removed by Whisper.
 
 ## Installation
 
@@ -97,7 +99,7 @@ The main differences with `whisper` CLI are:
 ### Plot of word alignment
 
 Note that you can use option `plot_word_alignment` of python function `whisper_timestamped.transcribe()`, or option `--plot` of `whisper_timestamped` CLI in order to see the word alignment for each segment.
-The upper plot represents the transformation of cross-attention weights that is used for Dynamic Time Warping;
+The upper plot represents the transformation of cross-attention weights that is used for DTW;
 The lower plot is a MFCC representation of the input signal (features used by Whisper).
 
 ![Example alignement](figs/example_alignement_plot.png)
@@ -128,7 +130,7 @@ whisper_timestamped AUDIO_FILE.wav --model tiny --language fr
       "no_speech_prob": 0.07406192272901535,
       "words": [
         {
-          "word": "Bonjour!",
+          "text": "Bonjour!",
           "start": 0.38,
           "end": 1.14
         }
@@ -158,27 +160,27 @@ whisper_timestamped AUDIO_FILE.wav --model tiny --language fr
       "no_speech_prob": 0.09121622145175934,
       "words": [
         {
-          "word": "Est-ce",
+          "text": "Est-ce",
           "start": 1.8,
           "end": 2.04
         },
         {
-          "word": "que",
+          "text": "que",
           "start": 2.04,
           "end": 2.14
         },
         {
-          "word": "vous",
+          "text": "vous",
           "start": 2.14,
           "end": 2.28
         },
         {
-          "word": "allez",
+          "text": "allez",
           "start": 2.28,
           "end": 2.4
         },
         {
-          "word": "bien?",
+          "text": "bien?",
           "start": 2.4,
           "end": 3.02
         }
@@ -191,4 +193,4 @@ whisper_timestamped AUDIO_FILE.wav --model tiny --language fr
 
 ## Acknowlegment
 * [whisper](https://github.com/openai/whisper): Whisper speech recognition (License MIT).
-* [dtw-python](https://pypi.org/project/dtw-python): Comprehensive implementation of Dynamic Time Warping algorithms (License GPL v3).
+* [dtw-python](https://pypi.org/project/dtw-python): Dynamic Time Warping (License GPL v3).
