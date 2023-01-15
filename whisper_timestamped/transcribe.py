@@ -275,7 +275,7 @@ def transcribe(
         print(f"Detected {len(words)} words:")
     for word in words:
         if verbose:
-            print(f"[{format_timestamp(word['start'])} --> {format_timestamp(word['end'])}]  {word['word']}")
+            print(f"[{format_timestamp(word['start'])} --> {format_timestamp(word['end'])}]  {word['text']}")
         idx_segment = word.pop("idx_segment")
         segment = whisper_segments[idx_segment]
         if "words" in segment:
@@ -508,7 +508,7 @@ def perform_word_alignment(
         plt.show()
 
     return [
-        dict(word=word, start=round(begin + start_time, 2),
+        dict(text=word, start=round(begin + start_time, 2),
              end=round(end + start_time, 2))
         for word, begin, end in zip(words, begin_times, end_times)
         if not word.startswith("<|")
@@ -593,7 +593,7 @@ def write_vtt_words(transcript, file):
         for word in segment["words"]:
             print(
                 f"{format_timestamp(word['start'])} --> {format_timestamp(word['end'])}\n"
-                f"{word['word']}\n",
+                f"{word['text']}\n",
                 file=file,
                 flush=True,
             )
@@ -606,7 +606,7 @@ def write_srt_words(transcript, file):
                 f"{i}\n"
                 f"{format_timestamp(word['start'], always_include_hours=True, decimal_marker=',')} --> "
                 f"{format_timestamp(word['end'], always_include_hours=True, decimal_marker=',')}\n"
-                f"{word['word']}\n",
+                f"{word['text']}\n",
                 file=file,
                 flush=True,
             )
