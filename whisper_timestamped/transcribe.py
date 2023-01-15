@@ -13,6 +13,7 @@ import scipy.signal
 import string
 
 # Constant variables
+from whisper.utils import format_timestamp
 from whisper.audio import N_FRAMES, HOP_LENGTH, SAMPLE_RATE  # 3000, 160, 16000
 AUDIO_SAMPLES_PER_TOKEN = HOP_LENGTH * 2                     # 320
 AUDIO_TIME_PER_TOKEN = AUDIO_SAMPLES_PER_TOKEN / SAMPLE_RATE # 0.02
@@ -270,7 +271,11 @@ def transcribe(
 
     ensure_increasing_positions(words, min_duration=min_word_duration)
 
+    if verbose:
+        print(f"Detected {len(words)} words:")
     for word in words:
+        if verbose:
+            print(f"[{format_timestamp(word['start'])} --> {format_timestamp(word['end'])}]  {word['word']}")
         idx_segment = word.pop("idx_segment")
         segment = whisper_segments[idx_segment]
         if "words" in segment:
@@ -583,7 +588,6 @@ def ensure_increasing_positions(segments, min_duration=0.1):
 
 
 def write_vtt_words(transcript, file):
-    from whisper.utils import format_timestamp
     print("WEBVTT\n", file=file)
     for segment in transcript:
         for word in segment["words"]:
@@ -595,7 +599,6 @@ def write_vtt_words(transcript, file):
             )
 
 def write_srt_words(transcript, file):
-    from whisper.utils import format_timestamp
     i = 1
     for segment in transcript:
         for word in segment["words"]:
@@ -616,7 +619,7 @@ def cli():
     import argparse
     import json
 
-    from whisper.utils import str2bool, optional_float, optional_int, write_txt
+    from whisper.utils import str2bool, optional_float, optional_int, write_txt, write_srt, write_vtt
 
     parser = argparse.ArgumentParser(
         description='Transcribe a single audio with whisper and compute word timestamps',
@@ -691,14 +694,18 @@ def cli():
                 write_txt(result["segments"], file=txt)
 
             # save VTT
+            with open(outname + ".vtt", "w", encoding="utf-8") as vtt:
+                write_vtt(result["segments"], file=vtt)
             with open(outname + ".words.vtt", "w", encoding="utf-8") as vtt:
                 write_vtt_words(result["segments"], file=vtt)
 
             # save SRT
+            with open(outname + ".srt", "w", encoding="utf-8") as srt:
+                write_srt(result["segments"], file=srt)
             with open(outname + ".words.srt", "w", encoding="utf-8") as srt:
                 write_srt_words(result["segments"], file=srt)
 
-        else:
+        elif not args["verbose"]:
 
             json.dump(result, sys.stdout, indent=2, ensure_ascii=False)
 
