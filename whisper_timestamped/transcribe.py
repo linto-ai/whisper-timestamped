@@ -708,15 +708,14 @@ def cli():
     parser.add_argument("--model_dir", default=None, help="The path to save model files; uses ~/.cache/whisper by default", type=str)
     parser.add_argument("--device", default="cuda:0" if torch.cuda.is_available() else "cpu", help="device to use for PyTorch inference")
     parser.add_argument("--output_dir", "-o", default=None, help="directory to save the outputs", type=str)
+    parser.add_argument('--plot', help="Plot word alignments", default=False, action="store_true")
+    parser.add_argument("--verbose", type=str2bool, default=False, help="Whether to print out the progress and debug messages of Whisper")
 
     parser.add_argument("--csv", default=True, help="directory to save the outputs", type=str2bool)
     parser.add_argument("--json", default=False, help="directory to save the outputs", type=str2bool)
     parser.add_argument("--srt", default=True, help="directory to save the outputs", type=str2bool)
     parser.add_argument("--txt", default=True, help="directory to save the outputs", type=str2bool)
     parser.add_argument("--vtt", default=True, help="directory to save the outputs", type=str2bool)
-
-    parser.add_argument('--plot', help="Plot word alignments", default=False, action="store_true")
-    parser.add_argument("--verbose", type=str2bool, default=False, help="Whether to print out the progress and debug messages of Whisper")
     
     parser.add_argument("--task", default="transcribe", help="Whether to perform X->X speech recognition ('transcribe') or X->English translation ('translate')", choices=["transcribe", "translate"], type=str)
     parser.add_argument('--language', help=f"Language to use. Among : {', '.join(sorted(k+'('+v+')' for k,v in whisper.tokenizer.LANGUAGES.items()))}.", choices=sorted(whisper.tokenizer.LANGUAGES.keys()) + sorted([k.title() for k in whisper.tokenizer.TO_LANGUAGE_CODE.keys()]), default=None)
