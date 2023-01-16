@@ -1,0 +1,120 @@
+{
+  "text": " Bonjour! Est-ce que vous allez bien? Bonjour! Est-ce que vous allez bien?",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.44,
+      "end": 3.32,
+      "text": " Bonjour! Est-ce que vous allez bien?",
+      "tokens": [
+        50364,
+        25431,
+        2298,
+        4410,
+        12,
+        384,
+        631,
+        2630,
+        18146,
+        3610,
+        2506,
+        50564
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.3618113077603854,
+      "compression_ratio": 0.8181818181818182,
+      "no_speech_prob": 0.07167890667915344,
+      "words": [
+        {
+          "text": "Bonjour!",
+          "start": 0.44,
+          "end": 1.66
+        },
+        {
+          "text": "Est-ce",
+          "start": 1.66,
+          "end": 2.18
+        },
+        {
+          "text": "que",
+          "start": 2.18,
+          "end": 2.28
+        },
+        {
+          "text": "vous",
+          "start": 2.28,
+          "end": 2.38
+        },
+        {
+          "text": "allez",
+          "start": 2.38,
+          "end": 2.56
+        },
+        {
+          "text": "bien?",
+          "start": 2.56,
+          "end": 3.32
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "seek": 3000,
+      "start": 32.6,
+      "end": 35.48,
+      "text": " Bonjour! Est-ce que vous allez bien?",
+      "tokens": [
+        50414,
+        25431,
+        2298,
+        4410,
+        12,
+        384,
+        631,
+        2630,
+        18146,
+        3610,
+        2506,
+        50614
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.23405993901766264,
+      "compression_ratio": 0.8181818181818182,
+      "no_speech_prob": 0.33330824971199036,
+      "words": [
+        {
+          "text": "Bonjour!",
+          "start": 32.6,
+          "end": 34.24
+        },
+        {
+          "text": "Est-ce",
+          "start": 34.24,
+          "end": 34.72
+        },
+        {
+          "text": "que",
+          "start": 34.72,
+          "end": 34.82
+        },
+        {
+          "text": "vous",
+          "start": 34.82,
+          "end": 34.92
+        },
+        {
+          "text": "allez",
+          "start": 34.92,
+          "end": 35.08
+        },
+        {
+          "text": "bien?",
+          "start": 35.08,
+          "end": 35.48
+        }
+      ]
+    }
+  ],
+  "language": "fr"
+}

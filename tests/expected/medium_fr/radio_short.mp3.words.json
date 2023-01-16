@@ -1,0 +1,1732 @@
+{
+  "text": " Le plus important au poker ce ne sont pas les cartes, c'est ce que vous en faites. Winamax, la référence du poker en ligne. Bonsoir à toutes et tous, vous êtes sur BFM TV, nous sommes en direct, c'est bien sûr BFM story avec tout ce qui fait l'actualité. Durant 60 minutes ce sont des gros plans, des analyses, des réactions que nous vous proposons. Comment Eric Verth peut-il encore soutenir la réforme des retraites alors qu'il est englué dans sa propre affaire, l'affaire Verth-Bettancourt? Question posée par les leaders de la CFDT et la CGT. Réponse de Nicolas Sarkozy, Eric Verth portera le débat sur les retraites, on en parle dans BFM story avec le numéro de la CFDT. Et puis il y a une bataille qui a démarré, celle entre Marine Le Pen et Bruno Gognich, la bataille de la succession de Jean-Marie Le Pen à la tête du Front National. La tournée de campagne de Marine Le Pen commence aujourd'hui dans le Var, Marine Le Pen sera en direct dans BFM story. Restez avec nous Marine Le Pen dans moins de 3 minutes, à tout de suite. Musique L'actualité c'est aussi aujourd'hui un dernier adieu, dernier adieu à Laurent Fignon, c'était au cimetière du Père Lachaise à Paris. L'ancien double vainqueur du Tour de France, vaincu par le cancer à 50 ans, a été incinéré en petit comité aujourd'hui.",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 3000,
+      "start": 30.8,
+      "end": 35.6,
+      "text": " Le plus important au poker ce ne sont pas les cartes, c'est ce que vous en faites.",
+      "tokens": [
+        1456,
+        1804,
+        1021,
+        1609,
+        36863,
+        1769,
+        408,
+        4900,
+        1736,
+        1512,
+        5467,
+        279,
+        11,
+        269,
+        6,
+        377,
+        1769,
+        631,
+        2630,
+        465,
+        29902,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1936618947537146,
+      "compression_ratio": 1.5084745762711864,
+      "no_speech_prob": 0.5573732852935791,
+      "words": [
+        {
+          "text": "Le",
+          "start": 30.8,
+          "end": 30.98
+        },
+        {
+          "text": "plus",
+          "start": 30.98,
+          "end": 31.12
+        },
+        {
+          "text": "important",
+          "start": 31.12,
+          "end": 31.46
+        },
+        {
+          "text": "au",
+          "start": 31.46,
+          "end": 31.6
+        },
+        {
+          "text": "poker",
+          "start": 31.6,
+          "end": 31.84
+        },
+        {
+          "text": "ce",
+          "start": 31.84,
+          "end": 32.0
+        },
+        {
+          "text": "ne",
+          "start": 32.0,
+          "end": 32.1
+        },
+        {
+          "text": "sont",
+          "start": 32.1,
+          "end": 32.2
+        },
+        {
+          "text": "pas",
+          "start": 32.2,
+          "end": 32.3
+        },
+        {
+          "text": "les",
+          "start": 32.3,
+          "end": 32.4
+        },
+        {
+          "text": "cartes,",
+          "start": 32.4,
+          "end": 33.34
+        },
+        {
+          "text": "c'est",
+          "start": 33.34,
+          "end": 33.58
+        },
+        {
+          "text": "ce",
+          "start": 33.58,
+          "end": 33.68
+        },
+        {
+          "text": "que",
+          "start": 33.68,
+          "end": 33.78
+        },
+        {
+          "text": "vous",
+          "start": 33.78,
+          "end": 33.88
+        },
+        {
+          "text": "en",
+          "start": 33.88,
+          "end": 34.0
+        },
+        {
+          "text": "faites.",
+          "start": 34.0,
+          "end": 35.6
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "seek": 3000,
+      "start": 36.14,
+      "end": 38.82,
+      "text": " Winamax, la référence du poker en ligne.",
+      "tokens": [
+        10427,
+        2404,
+        87,
+        11,
+        635,
+        30170,
+        41635,
+        1581,
+        36863,
+        465,
+        34207,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1936618947537146,
+      "compression_ratio": 1.5084745762711864,
+      "no_speech_prob": 0.5573732852935791,
+      "words": [
+        {
+          "text": "Winamax,",
+          "start": 36.14,
+          "end": 37.18
+        },
+        {
+          "text": "la",
+          "start": 37.18,
+          "end": 37.28
+        },
+        {
+          "text": "référence",
+          "start": 37.28,
+          "end": 37.76
+        },
+        {
+          "text": "du",
+          "start": 37.76,
+          "end": 37.94
+        },
+        {
+          "text": "poker",
+          "start": 37.94,
+          "end": 38.2
+        },
+        {
+          "text": "en",
+          "start": 38.2,
+          "end": 38.4
+        },
+        {
+          "text": "ligne.",
+          "start": 38.4,
+          "end": 38.82
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "seek": 3000,
+      "start": 44.94,
+      "end": 51.36,
+      "text": " Bonsoir à toutes et tous, vous êtes sur BFM TV, nous sommes en direct, c'est bien sûr BFM story avec tout ce qui fait l'actualité.",
+      "tokens": [
+        7368,
+        539,
+        347,
+        1531,
+        14437,
+        1030,
+        8317,
+        11,
+        2630,
+        18935,
+        1022,
+        363,
+        37,
+        44,
+        3558,
+        11,
+        4666,
+        25232,
+        465,
+        2047,
+        11,
+        269,
+        6,
+        377,
+        3610,
+        18143,
+        363,
+        37,
+        44,
+        1657,
+        4163,
+        3486,
+        1769,
+        1956,
+        3887,
+        287,
+        6,
+        578,
+        901,
+        5066,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1936618947537146,
+      "compression_ratio": 1.5084745762711864,
+      "no_speech_prob": 0.5573732852935791,
+      "words": [
+        {
+          "text": "Bonsoir",
+          "start": 44.94,
+          "end": 45.38
+        },
+        {
+          "text": "à",
+          "start": 45.38,
+          "end": 45.8
+        },
+        {
+          "text": "toutes",
+          "start": 45.8,
+          "end": 46.02
+        },
+        {
+          "text": "et",
+          "start": 46.02,
+          "end": 46.16
+        },
+        {
+          "text": "tous,",
+          "start": 46.16,
+          "end": 46.68
+        },
+        {
+          "text": "vous",
+          "start": 46.68,
+          "end": 46.78
+        },
+        {
+          "text": "êtes",
+          "start": 46.78,
+          "end": 46.88
+        },
+        {
+          "text": "sur",
+          "start": 46.88,
+          "end": 47.04
+        },
+        {
+          "text": "BFM",
+          "start": 47.04,
+          "end": 47.5
+        },
+        {
+          "text": "TV,",
+          "start": 47.5,
+          "end": 47.86
+        },
+        {
+          "text": "nous",
+          "start": 47.86,
+          "end": 47.96
+        },
+        {
+          "text": "sommes",
+          "start": 47.96,
+          "end": 48.1
+        },
+        {
+          "text": "en",
+          "start": 48.1,
+          "end": 48.2
+        },
+        {
+          "text": "direct,",
+          "start": 48.2,
+          "end": 48.7
+        },
+        {
+          "text": "c'est",
+          "start": 48.7,
+          "end": 48.8
+        },
+        {
+          "text": "bien",
+          "start": 48.8,
+          "end": 48.9
+        },
+        {
+          "text": "sûr",
+          "start": 48.9,
+          "end": 49.16
+        },
+        {
+          "text": "BFM",
+          "start": 49.16,
+          "end": 49.78
+        },
+        {
+          "text": "story",
+          "start": 49.78,
+          "end": 50.02
+        },
+        {
+          "text": "avec",
+          "start": 50.02,
+          "end": 50.24
+        },
+        {
+          "text": "tout",
+          "start": 50.24,
+          "end": 50.38
+        },
+        {
+          "text": "ce",
+          "start": 50.38,
+          "end": 50.48
+        },
+        {
+          "text": "qui",
+          "start": 50.48,
+          "end": 50.58
+        },
+        {
+          "text": "fait",
+          "start": 50.58,
+          "end": 50.72
+        },
+        {
+          "text": "l'actualité.",
+          "start": 50.72,
+          "end": 51.36
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "seek": 3000,
+      "start": 52.0,
+      "end": 56.1,
+      "text": " Durant 60 minutes ce sont des gros plans, des analyses, des réactions que nous vous proposons.",
+      "tokens": [
+        13710,
+        394,
+        4060,
+        2077,
+        1769,
+        4900,
+        730,
+        18638,
+        5482,
+        11,
+        730,
+        37560,
+        11,
+        730,
+        3960,
+        12299,
+        631,
+        4666,
+        2630,
+        7532,
+        892,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1936618947537146,
+      "compression_ratio": 1.5084745762711864,
+      "no_speech_prob": 0.5573732852935791,
+      "words": [
+        {
+          "text": "Durant",
+          "start": 52.0,
+          "end": 52.28
+        },
+        {
+          "text": "60",
+          "start": 52.28,
+          "end": 52.7
+        },
+        {
+          "text": "minutes",
+          "start": 52.7,
+          "end": 53.06
+        },
+        {
+          "text": "ce",
+          "start": 53.06,
+          "end": 53.24
+        },
+        {
+          "text": "sont",
+          "start": 53.24,
+          "end": 53.52
+        },
+        {
+          "text": "des",
+          "start": 53.52,
+          "end": 53.84
+        },
+        {
+          "text": "gros",
+          "start": 53.84,
+          "end": 53.98
+        },
+        {
+          "text": "plans,",
+          "start": 53.98,
+          "end": 54.28
+        },
+        {
+          "text": "des",
+          "start": 54.28,
+          "end": 54.38
+        },
+        {
+          "text": "analyses,",
+          "start": 54.38,
+          "end": 54.78
+        },
+        {
+          "text": "des",
+          "start": 54.78,
+          "end": 54.88
+        },
+        {
+          "text": "réactions",
+          "start": 54.88,
+          "end": 55.2
+        },
+        {
+          "text": "que",
+          "start": 55.2,
+          "end": 55.38
+        },
+        {
+          "text": "nous",
+          "start": 55.38,
+          "end": 55.5
+        },
+        {
+          "text": "vous",
+          "start": 55.5,
+          "end": 55.62
+        },
+        {
+          "text": "proposons.",
+          "start": 55.62,
+          "end": 56.1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "seek": 5600,
+      "start": 56.1,
+      "end": 63.96,
+      "text": " Comment Eric Verth peut-il encore soutenir la réforme des retraites alors qu'il est englué dans sa propre affaire, l'affaire Verth-Bettancourt?",
+      "tokens": [
+        16328,
+        9336,
+        4281,
+        392,
+        5977,
+        12,
+        388,
+        10122,
+        29350,
+        268,
+        347,
+        635,
+        3960,
+        44562,
+        730,
+        49356,
+        3324,
+        11246,
+        421,
+        6,
+        388,
+        871,
+        1741,
+        2781,
+        526,
+        2680,
+        601,
+        35221,
+        2096,
+        9020,
+        11,
+        287,
+        6,
+        2518,
+        9020,
+        4281,
+        392,
+        12,
+        33,
+        3093,
+        4463,
+        33403,
+        2506
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12767816358996975,
+      "compression_ratio": 1.5705329153605017,
+      "no_speech_prob": 6.302506517386064e-05,
+      "words": [
+        {
+          "text": "Comment",
+          "start": 56.1,
+          "end": 56.94
+        },
+        {
+          "text": "Eric",
+          "start": 56.94,
+          "end": 57.14
+        },
+        {
+          "text": "Verth",
+          "start": 57.14,
+          "end": 57.32
+        },
+        {
+          "text": "peut-il",
+          "start": 57.32,
+          "end": 57.72
+        },
+        {
+          "text": "encore",
+          "start": 57.72,
+          "end": 58.08
+        },
+        {
+          "text": "soutenir",
+          "start": 58.08,
+          "end": 58.6
+        },
+        {
+          "text": "la",
+          "start": 58.6,
+          "end": 58.7
+        },
+        {
+          "text": "réforme",
+          "start": 58.7,
+          "end": 59.14
+        },
+        {
+          "text": "des",
+          "start": 59.14,
+          "end": 59.36
+        },
+        {
+          "text": "retraites",
+          "start": 59.36,
+          "end": 59.74
+        },
+        {
+          "text": "alors",
+          "start": 59.74,
+          "end": 59.92
+        },
+        {
+          "text": "qu'il",
+          "start": 59.92,
+          "end": 60.72
+        },
+        {
+          "text": "est",
+          "start": 60.72,
+          "end": 60.86
+        },
+        {
+          "text": "englué",
+          "start": 60.86,
+          "end": 61.6
+        },
+        {
+          "text": "dans",
+          "start": 61.6,
+          "end": 61.88
+        },
+        {
+          "text": "sa",
+          "start": 61.88,
+          "end": 62.4
+        },
+        {
+          "text": "propre",
+          "start": 62.4,
+          "end": 62.62
+        },
+        {
+          "text": "affaire,",
+          "start": 62.62,
+          "end": 63.12
+        },
+        {
+          "text": "l'affaire",
+          "start": 63.12,
+          "end": 63.22
+        },
+        {
+          "text": "Verth-Bettancourt?",
+          "start": 63.22,
+          "end": 63.96
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "seek": 5600,
+      "start": 63.96,
+      "end": 67.2,
+      "text": " Question posée par les leaders de la CFDT et la CGT.",
+      "tokens": [
+        14464,
+        1366,
+        3856,
+        971,
+        1512,
+        3523,
+        368,
+        635,
+        21792,
+        35,
+        51,
+        1030,
+        635,
+        38007,
+        51,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12767816358996975,
+      "compression_ratio": 1.5705329153605017,
+      "no_speech_prob": 6.302506517386064e-05,
+      "words": [
+        {
+          "text": "Question",
+          "start": 63.96,
+          "end": 64.3
+        },
+        {
+          "text": "posée",
+          "start": 64.3,
+          "end": 64.7
+        },
+        {
+          "text": "par",
+          "start": 64.7,
+          "end": 64.94
+        },
+        {
+          "text": "les",
+          "start": 64.94,
+          "end": 65.06
+        },
+        {
+          "text": "leaders",
+          "start": 65.06,
+          "end": 65.62
+        },
+        {
+          "text": "de",
+          "start": 65.62,
+          "end": 65.88
+        },
+        {
+          "text": "la",
+          "start": 65.88,
+          "end": 66.08
+        },
+        {
+          "text": "CFDT",
+          "start": 66.08,
+          "end": 66.52
+        },
+        {
+          "text": "et",
+          "start": 66.52,
+          "end": 66.62
+        },
+        {
+          "text": "la",
+          "start": 66.62,
+          "end": 66.72
+        },
+        {
+          "text": "CGT.",
+          "start": 66.72,
+          "end": 67.2
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "seek": 5600,
+      "start": 67.4,
+      "end": 76.38,
+      "text": " Réponse de Nicolas Sarkozy, Eric Verth portera le débat sur les retraites, on en parle dans BFM story avec le numéro de la CFDT.",
+      "tokens": [
+        41587,
+        3739,
+        368,
+        38268,
+        318,
+        809,
+        78,
+        1229,
+        11,
+        9336,
+        4281,
+        392,
+        1515,
+        23833,
+        476,
+        2795,
+        11980,
+        1022,
+        1512,
+        49356,
+        3324,
+        11,
+        322,
+        465,
+        18508,
+        2680,
+        363,
+        37,
+        44,
+        1657,
+        4163,
+        476,
+        49525,
+        368,
+        635,
+        21792,
+        35,
+        51,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12767816358996975,
+      "compression_ratio": 1.5705329153605017,
+      "no_speech_prob": 6.302506517386064e-05,
+      "words": [
+        {
+          "text": "Réponse",
+          "start": 67.4,
+          "end": 67.92
+        },
+        {
+          "text": "de",
+          "start": 67.92,
+          "end": 68.08
+        },
+        {
+          "text": "Nicolas",
+          "start": 68.08,
+          "end": 68.36
+        },
+        {
+          "text": "Sarkozy,",
+          "start": 68.36,
+          "end": 68.98
+        },
+        {
+          "text": "Eric",
+          "start": 68.98,
+          "end": 69.2
+        },
+        {
+          "text": "Verth",
+          "start": 69.2,
+          "end": 69.74
+        },
+        {
+          "text": "portera",
+          "start": 69.74,
+          "end": 70.34
+        },
+        {
+          "text": "le",
+          "start": 70.34,
+          "end": 70.98
+        },
+        {
+          "text": "débat",
+          "start": 70.98,
+          "end": 71.34
+        },
+        {
+          "text": "sur",
+          "start": 71.34,
+          "end": 71.64
+        },
+        {
+          "text": "les",
+          "start": 71.64,
+          "end": 71.8
+        },
+        {
+          "text": "retraites,",
+          "start": 71.8,
+          "end": 72.28
+        },
+        {
+          "text": "on",
+          "start": 72.28,
+          "end": 72.46
+        },
+        {
+          "text": "en",
+          "start": 72.46,
+          "end": 72.66
+        },
+        {
+          "text": "parle",
+          "start": 72.66,
+          "end": 72.92
+        },
+        {
+          "text": "dans",
+          "start": 72.92,
+          "end": 73.4
+        },
+        {
+          "text": "BFM",
+          "start": 73.4,
+          "end": 74.52
+        },
+        {
+          "text": "story",
+          "start": 74.52,
+          "end": 74.68
+        },
+        {
+          "text": "avec",
+          "start": 74.68,
+          "end": 75.08
+        },
+        {
+          "text": "le",
+          "start": 75.08,
+          "end": 75.24
+        },
+        {
+          "text": "numéro",
+          "start": 75.24,
+          "end": 75.52
+        },
+        {
+          "text": "de",
+          "start": 75.52,
+          "end": 75.7
+        },
+        {
+          "text": "la",
+          "start": 75.7,
+          "end": 75.84
+        },
+        {
+          "text": "CFDT.",
+          "start": 75.84,
+          "end": 76.38
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "seek": 5600,
+      "start": 76.78,
+      "end": 83.14,
+      "text": " Et puis il y a une bataille qui a démarré, celle entre Marine Le Pen et Bruno Gognich, la bataille de la succession de Jean-Marie Le Pen à la tête du Front National.",
+      "tokens": [
+        3790,
+        9093,
+        1930,
+        288,
+        257,
+        2251,
+        272,
+        3274,
+        3409,
+        1956,
+        257,
+        22761,
+        2284,
+        526,
+        11,
+        25722,
+        3962,
+        20415,
+        1456,
+        10571,
+        1030,
+        23046,
+        460,
+        2912,
+        480,
+        11,
+        635,
+        272,
+        3274,
+        3409,
+        368,
+        635,
+        36624,
+        368,
+        13854,
+        12,
+        16639,
+        414,
+        1456,
+        10571,
+        1531,
+        635,
+        24661,
+        1581,
+        17348,
+        4862,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12767816358996975,
+      "compression_ratio": 1.5705329153605017,
+      "no_speech_prob": 6.302506517386064e-05,
+      "words": [
+        {
+          "text": "Et",
+          "start": 76.78,
+          "end": 76.96
+        },
+        {
+          "text": "puis",
+          "start": 76.96,
+          "end": 77.08
+        },
+        {
+          "text": "il",
+          "start": 77.08,
+          "end": 77.18
+        },
+        {
+          "text": "y",
+          "start": 77.18,
+          "end": 77.28
+        },
+        {
+          "text": "a",
+          "start": 77.28,
+          "end": 77.38
+        },
+        {
+          "text": "une",
+          "start": 77.38,
+          "end": 77.48
+        },
+        {
+          "text": "bataille",
+          "start": 77.48,
+          "end": 77.58
+        },
+        {
+          "text": "qui",
+          "start": 77.58,
+          "end": 77.68
+        },
+        {
+          "text": "a",
+          "start": 77.68,
+          "end": 77.78
+        },
+        {
+          "text": "démarré,",
+          "start": 77.78,
+          "end": 78.1
+        },
+        {
+          "text": "celle",
+          "start": 78.1,
+          "end": 78.36
+        },
+        {
+          "text": "entre",
+          "start": 78.36,
+          "end": 78.64
+        },
+        {
+          "text": "Marine",
+          "start": 78.64,
+          "end": 78.94
+        },
+        {
+          "text": "Le",
+          "start": 78.94,
+          "end": 79.12
+        },
+        {
+          "text": "Pen",
+          "start": 79.12,
+          "end": 79.22
+        },
+        {
+          "text": "et",
+          "start": 79.22,
+          "end": 79.32
+        },
+        {
+          "text": "Bruno",
+          "start": 79.32,
+          "end": 79.54
+        },
+        {
+          "text": "Gognich,",
+          "start": 79.54,
+          "end": 80.16
+        },
+        {
+          "text": "la",
+          "start": 80.16,
+          "end": 80.3
+        },
+        {
+          "text": "bataille",
+          "start": 80.3,
+          "end": 80.52
+        },
+        {
+          "text": "de",
+          "start": 80.52,
+          "end": 80.72
+        },
+        {
+          "text": "la",
+          "start": 80.72,
+          "end": 80.82
+        },
+        {
+          "text": "succession",
+          "start": 80.82,
+          "end": 81.16
+        },
+        {
+          "text": "de",
+          "start": 81.16,
+          "end": 81.4
+        },
+        {
+          "text": "Jean-Marie",
+          "start": 81.4,
+          "end": 81.68
+        },
+        {
+          "text": "Le",
+          "start": 81.68,
+          "end": 81.92
+        },
+        {
+          "text": "Pen",
+          "start": 81.92,
+          "end": 82.02
+        },
+        {
+          "text": "à",
+          "start": 82.02,
+          "end": 82.12
+        },
+        {
+          "text": "la",
+          "start": 82.12,
+          "end": 82.26
+        },
+        {
+          "text": "tête",
+          "start": 82.26,
+          "end": 82.36
+        },
+        {
+          "text": "du",
+          "start": 82.36,
+          "end": 82.46
+        },
+        {
+          "text": "Front",
+          "start": 82.46,
+          "end": 82.62
+        },
+        {
+          "text": "National.",
+          "start": 82.62,
+          "end": 83.14
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "seek": 8300,
+      "start": 83.28,
+      "end": 88.92,
+      "text": " La tournée de campagne de Marine Le Pen commence aujourd'hui dans le Var, Marine Le Pen sera en direct dans BFM story.",
+      "tokens": [
+        2369,
+        3512,
+        77,
+        3856,
+        368,
+        2255,
+        13887,
+        368,
+        20415,
+        1456,
+        10571,
+        18137,
+        14023,
+        6,
+        10556,
+        2680,
+        476,
+        14662,
+        11,
+        20415,
+        1456,
+        10571,
+        15021,
+        465,
+        2047,
+        2680,
+        363,
+        37,
+        44,
+        1657,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.10752125653353604,
+      "compression_ratio": 1.3591549295774648,
+      "no_speech_prob": 0.00011234736302867532,
+      "words": [
+        {
+          "text": "La",
+          "start": 83.28,
+          "end": 83.54
+        },
+        {
+          "text": "tournée",
+          "start": 83.54,
+          "end": 84.06
+        },
+        {
+          "text": "de",
+          "start": 84.06,
+          "end": 84.34
+        },
+        {
+          "text": "campagne",
+          "start": 84.34,
+          "end": 84.8
+        },
+        {
+          "text": "de",
+          "start": 84.8,
+          "end": 84.9
+        },
+        {
+          "text": "Marine",
+          "start": 84.9,
+          "end": 85.12
+        },
+        {
+          "text": "Le",
+          "start": 85.12,
+          "end": 85.26
+        },
+        {
+          "text": "Pen",
+          "start": 85.26,
+          "end": 85.42
+        },
+        {
+          "text": "commence",
+          "start": 85.42,
+          "end": 85.74
+        },
+        {
+          "text": "aujourd'hui",
+          "start": 85.74,
+          "end": 86.12
+        },
+        {
+          "text": "dans",
+          "start": 86.12,
+          "end": 86.24
+        },
+        {
+          "text": "le",
+          "start": 86.24,
+          "end": 86.38
+        },
+        {
+          "text": "Var,",
+          "start": 86.38,
+          "end": 86.72
+        },
+        {
+          "text": "Marine",
+          "start": 86.72,
+          "end": 86.9
+        },
+        {
+          "text": "Le",
+          "start": 86.9,
+          "end": 87.04
+        },
+        {
+          "text": "Pen",
+          "start": 87.04,
+          "end": 87.2
+        },
+        {
+          "text": "sera",
+          "start": 87.2,
+          "end": 87.44
+        },
+        {
+          "text": "en",
+          "start": 87.44,
+          "end": 87.62
+        },
+        {
+          "text": "direct",
+          "start": 87.62,
+          "end": 87.98
+        },
+        {
+          "text": "dans",
+          "start": 87.98,
+          "end": 88.28
+        },
+        {
+          "text": "BFM",
+          "start": 88.28,
+          "end": 88.66
+        },
+        {
+          "text": "story.",
+          "start": 88.66,
+          "end": 88.92
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "seek": 8300,
+      "start": 88.98,
+      "end": 92.26,
+      "text": " Restez avec nous Marine Le Pen dans moins de 3 minutes, à tout de suite.",
+      "tokens": [
+        13094,
+        4371,
+        4163,
+        4666,
+        20415,
+        1456,
+        10571,
+        2680,
+        13099,
+        368,
+        805,
+        2077,
+        11,
+        1531,
+        3486,
+        368,
+        14205,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.10752125653353604,
+      "compression_ratio": 1.3591549295774648,
+      "no_speech_prob": 0.00011234736302867532,
+      "words": [
+        {
+          "text": "Restez",
+          "start": 88.98,
+          "end": 89.4
+        },
+        {
+          "text": "avec",
+          "start": 89.4,
+          "end": 89.62
+        },
+        {
+          "text": "nous",
+          "start": 89.62,
+          "end": 89.88
+        },
+        {
+          "text": "Marine",
+          "start": 89.88,
+          "end": 90.14
+        },
+        {
+          "text": "Le",
+          "start": 90.14,
+          "end": 90.38
+        },
+        {
+          "text": "Pen",
+          "start": 90.38,
+          "end": 90.66
+        },
+        {
+          "text": "dans",
+          "start": 90.66,
+          "end": 90.84
+        },
+        {
+          "text": "moins",
+          "start": 90.84,
+          "end": 91.16
+        },
+        {
+          "text": "de",
+          "start": 91.16,
+          "end": 91.28
+        },
+        {
+          "text": "3",
+          "start": 91.28,
+          "end": 91.46
+        },
+        {
+          "text": "minutes,",
+          "start": 91.46,
+          "end": 91.86
+        },
+        {
+          "text": "à",
+          "start": 91.86,
+          "end": 91.96
+        },
+        {
+          "text": "tout",
+          "start": 91.96,
+          "end": 92.06
+        },
+        {
+          "text": "de",
+          "start": 92.06,
+          "end": 92.16
+        },
+        {
+          "text": "suite.",
+          "start": 92.16,
+          "end": 92.26
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "seek": 9200,
+      "start": 92.26,
+      "end": 93.46,
+      "text": " Musique",
+      "tokens": [
+        3569,
+        1925
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.15090540717629825,
+      "compression_ratio": 1.4545454545454546,
+      "no_speech_prob": 8.090532355709001e-05,
+      "words": [
+        {
+          "text": "Musique",
+          "start": 92.26,
+          "end": 93.46
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "seek": 9200,
+      "start": 106.68,
+      "end": 113.54,
+      "text": " L'actualité c'est aussi aujourd'hui un dernier adieu, dernier adieu à Laurent Fignon, c'était au cimetière du Père Lachaise à Paris.",
+      "tokens": [
+        441,
+        6,
+        578,
+        901,
+        5066,
+        269,
+        6,
+        377,
+        6212,
+        14023,
+        6,
+        10556,
+        517,
+        29332,
+        614,
+        19347,
+        11,
+        29332,
+        614,
+        19347,
+        1531,
+        49357,
+        479,
+        41846,
+        11,
+        269,
+        6,
+        9743,
+        1609,
+        269,
+        26123,
+        10195,
+        1581,
+        430,
+        4212,
+        441,
+        27442,
+        908,
+        1531,
+        8380,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.15090540717629825,
+      "compression_ratio": 1.4545454545454546,
+      "no_speech_prob": 8.090532355709001e-05,
+      "words": [
+        {
+          "text": "L'actualité",
+          "start": 106.68,
+          "end": 107.42
+        },
+        {
+          "text": "c'est",
+          "start": 107.42,
+          "end": 107.6
+        },
+        {
+          "text": "aussi",
+          "start": 107.6,
+          "end": 107.88
+        },
+        {
+          "text": "aujourd'hui",
+          "start": 107.88,
+          "end": 108.32
+        },
+        {
+          "text": "un",
+          "start": 108.32,
+          "end": 108.44
+        },
+        {
+          "text": "dernier",
+          "start": 108.44,
+          "end": 108.78
+        },
+        {
+          "text": "adieu,",
+          "start": 108.78,
+          "end": 109.1
+        },
+        {
+          "text": "dernier",
+          "start": 109.1,
+          "end": 109.38
+        },
+        {
+          "text": "adieu",
+          "start": 109.38,
+          "end": 109.9
+        },
+        {
+          "text": "à",
+          "start": 109.9,
+          "end": 110.1
+        },
+        {
+          "text": "Laurent",
+          "start": 110.1,
+          "end": 110.38
+        },
+        {
+          "text": "Fignon,",
+          "start": 110.38,
+          "end": 111.04
+        },
+        {
+          "text": "c'était",
+          "start": 111.04,
+          "end": 111.2
+        },
+        {
+          "text": "au",
+          "start": 111.2,
+          "end": 111.42
+        },
+        {
+          "text": "cimetière",
+          "start": 111.42,
+          "end": 111.92
+        },
+        {
+          "text": "du",
+          "start": 111.92,
+          "end": 112.12
+        },
+        {
+          "text": "Père",
+          "start": 112.12,
+          "end": 112.34
+        },
+        {
+          "text": "Lachaise",
+          "start": 112.34,
+          "end": 112.84
+        },
+        {
+          "text": "à",
+          "start": 112.84,
+          "end": 113.08
+        },
+        {
+          "text": "Paris.",
+          "start": 113.08,
+          "end": 113.54
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "seek": 11400,
+      "start": 114.02,
+      "end": 120.6,
+      "text": " L'ancien double vainqueur du Tour de France, vaincu par le cancer à 50 ans, a été incinéré en petit comité aujourd'hui.",
+      "tokens": [
+        50364,
+        441,
+        6,
+        38840,
+        268,
+        3834,
+        22240,
+        1077,
+        374,
+        1581,
+        13077,
+        368,
+        6190,
+        11,
+        22240,
+        12032,
+        971,
+        476,
+        5592,
+        1531,
+        2625,
+        1567,
+        11,
+        257,
+        8862,
+        834,
+        259,
+        29071,
+        465,
+        9686,
+        395,
+        5066,
+        14023,
+        6,
+        10556,
+        13,
+        50764
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.10672580568413985,
+      "compression_ratio": 1.1160714285714286,
+      "no_speech_prob": 0.0002530302735976875,
+      "words": [
+        {
+          "text": "L'ancien",
+          "start": 114.02,
+          "end": 114.34
+        },
+        {
+          "text": "double",
+          "start": 114.34,
+          "end": 114.62
+        },
+        {
+          "text": "vainqueur",
+          "start": 114.62,
+          "end": 115.06
+        },
+        {
+          "text": "du",
+          "start": 115.06,
+          "end": 115.18
+        },
+        {
+          "text": "Tour",
+          "start": 115.18,
+          "end": 115.32
+        },
+        {
+          "text": "de",
+          "start": 115.32,
+          "end": 115.5
+        },
+        {
+          "text": "France,",
+          "start": 115.5,
+          "end": 115.98
+        },
+        {
+          "text": "vaincu",
+          "start": 115.98,
+          "end": 116.46
+        },
+        {
+          "text": "par",
+          "start": 116.46,
+          "end": 116.58
+        },
+        {
+          "text": "le",
+          "start": 116.58,
+          "end": 116.74
+        },
+        {
+          "text": "cancer",
+          "start": 116.74,
+          "end": 117.06
+        },
+        {
+          "text": "à",
+          "start": 117.06,
+          "end": 117.24
+        },
+        {
+          "text": "50",
+          "start": 117.24,
+          "end": 117.52
+        },
+        {
+          "text": "ans,",
+          "start": 117.52,
+          "end": 118.28
+        },
+        {
+          "text": "a",
+          "start": 118.28,
+          "end": 118.38
+        },
+        {
+          "text": "été",
+          "start": 118.38,
+          "end": 118.54
+        },
+        {
+          "text": "incinéré",
+          "start": 118.54,
+          "end": 119.18
+        },
+        {
+          "text": "en",
+          "start": 119.18,
+          "end": 119.46
+        },
+        {
+          "text": "petit",
+          "start": 119.46,
+          "end": 119.74
+        },
+        {
+          "text": "comité",
+          "start": 119.74,
+          "end": 120.16
+        },
+        {
+          "text": "aujourd'hui.",
+          "start": 120.16,
+          "end": 120.6
+        }
+      ]
+    }
+  ],
+  "language": "fr"
+}
