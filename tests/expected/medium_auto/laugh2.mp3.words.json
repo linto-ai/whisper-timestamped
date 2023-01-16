@@ -1,0 +1,30 @@
+{
+  "text": " Hehehe",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.18,
+      "end": 0.6,
+      "text": " Hehehe",
+      "tokens": [
+        50364,
+        634,
+        23500,
+        50396
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -1.0522638320922852,
+      "compression_ratio": 0.5,
+      "no_speech_prob": 0.451229065656662,
+      "words": [
+        {
+          "text": "Hehehe",
+          "start": 0.18,
+          "end": 0.6
+        }
+      ]
+    }
+  ],
+  "language": "en"
+}
