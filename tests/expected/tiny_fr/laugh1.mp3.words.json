@@ -1,0 +1,78 @@
+{
+  "text": " Je ne suis pas en train de faire ça.",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.06,
+      "end": 1.76,
+      "text": " Je ne suis pas en train de faire ça.",
+      "tokens": [
+        50364,
+        2588,
+        408,
+        7624,
+        1736,
+        465,
+        3847,
+        368,
+        4865,
+        2788,
+        13,
+        50464
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -1.531521723820613,
+      "compression_ratio": 0.8222222222222222,
+      "no_speech_prob": 0.3798484802246094,
+      "words": [
+        {
+          "text": "Je",
+          "start": 0.06,
+          "end": 0.68
+        },
+        {
+          "text": "ne",
+          "start": 0.68,
+          "end": 0.78
+        },
+        {
+          "text": "suis",
+          "start": 0.78,
+          "end": 0.96
+        },
+        {
+          "text": "pas",
+          "start": 0.96,
+          "end": 1.12
+        },
+        {
+          "text": "en",
+          "start": 1.12,
+          "end": 1.28
+        },
+        {
+          "text": "train",
+          "start": 1.28,
+          "end": 1.38
+        },
+        {
+          "text": "de",
+          "start": 1.38,
+          "end": 1.56
+        },
+        {
+          "text": "faire",
+          "start": 1.56,
+          "end": 1.66
+        },
+        {
+          "text": "ça.",
+          "start": 1.66,
+          "end": 1.76
+        }
+      ]
+    }
+  ],
+  "language": "fr"
+}

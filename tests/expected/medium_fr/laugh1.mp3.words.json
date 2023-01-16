@@ -1,0 +1,30 @@
+{
+  "text": " Rires",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.02,
+      "end": 1.6,
+      "text": " Rires",
+      "tokens": [
+        50364,
+        497,
+        3145,
+        50576
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -1.0973867416381835,
+      "compression_ratio": 0.38461538461538464,
+      "no_speech_prob": 0.5563598275184631,
+      "words": [
+        {
+          "text": "Rires",
+          "start": 0.02,
+          "end": 1.6
+        }
+      ]
+    }
+  ],
+  "language": "fr"
+}

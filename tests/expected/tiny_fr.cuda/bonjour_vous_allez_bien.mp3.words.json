@@ -1,0 +1,172 @@
+{
+  "text": " Bonjour! Est-ce que vous allez bien? Bonjour! Bonjour! Est-ce que vous allez bien?",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.46,
+      "end": 1.3,
+      "text": " Bonjour!",
+      "tokens": [
+        25431,
+        2298
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.774240239461263,
+      "compression_ratio": 0.8181818181818182,
+      "no_speech_prob": 0.04296562075614929,
+      "words": [
+        {
+          "text": "Bonjour!",
+          "start": 0.46,
+          "end": 1.3
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "seek": 148,
+      "start": 1.86,
+      "end": 3.06,
+      "text": " Est-ce que vous allez bien?",
+      "tokens": [
+        50364,
+        4410,
+        12,
+        384,
+        631,
+        2630,
+        18146,
+        3610,
+        2506,
+        50464
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.48053342645818536,
+      "compression_ratio": 0.7714285714285715,
+      "no_speech_prob": 0.04136796295642853,
+      "words": [
+        {
+          "text": "Est-ce",
+          "start": 1.86,
+          "end": 2.14
+        },
+        {
+          "text": "que",
+          "start": 2.14,
+          "end": 2.24
+        },
+        {
+          "text": "vous",
+          "start": 2.24,
+          "end": 2.34
+        },
+        {
+          "text": "allez",
+          "start": 2.34,
+          "end": 2.48
+        },
+        {
+          "text": "bien?",
+          "start": 2.48,
+          "end": 3.06
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "seek": 3148,
+      "start": 33.0,
+      "end": 33.64,
+      "text": " Bonjour!",
+      "tokens": [
+        25431,
+        2298
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.3400673548380534,
+      "compression_ratio": 0.8181818181818182,
+      "no_speech_prob": 0.5503692030906677,
+      "words": [
+        {
+          "text": "Bonjour!",
+          "start": 33.0,
+          "end": 33.64
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "seek": 3348,
+      "start": 34.92,
+      "end": 35.02,
+      "text": " Bonjour!",
+      "tokens": [
+        25431,
+        2298
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.2368337631225586,
+      "compression_ratio": 0.8181818181818182,
+      "no_speech_prob": 0.40514007210731506,
+      "words": [
+        {
+          "text": "Bonjour!",
+          "start": 34.92,
+          "end": 35.02
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "seek": 3448,
+      "start": 35.02,
+      "end": 35.58,
+      "text": " Est-ce que vous allez bien?",
+      "tokens": [
+        50364,
+        4410,
+        12,
+        384,
+        631,
+        2630,
+        18146,
+        3610,
+        2506,
+        50464
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1729703816500577,
+      "compression_ratio": 0.7714285714285715,
+      "no_speech_prob": 0.5840025544166565,
+      "words": [
+        {
+          "text": "Est-ce",
+          "start": 35.02,
+          "end": 35.12
+        },
+        {
+          "text": "que",
+          "start": 35.12,
+          "end": 35.22
+        },
+        {
+          "text": "vous",
+          "start": 35.22,
+          "end": 35.32
+        },
+        {
+          "text": "allez",
+          "start": 35.32,
+          "end": 35.42
+        },
+        {
+          "text": "bien?",
+          "start": 35.42,
+          "end": 35.58
+        }
+      ]
+    }
+  ],
+  "language": "fr"
+}

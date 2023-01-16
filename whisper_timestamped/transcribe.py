@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+__author__ = "Jérôme Louradour"
+__credits__ = ["Jérôme Louradour"]
+__license__ = "MIT"
+
 # Whisper
 import whisper
 import torch
@@ -23,7 +27,7 @@ import logging
 logger = logging.getLogger("whisper_timestamped")
 
 
-def transcribe(
+def transcribe_timestamped(
     # main Whisper options
     model,
     audio,
@@ -34,7 +38,11 @@ def transcribe(
     min_word_duration=0.1,
     plot_word_alignment=False,
     # other Whisper options
-    temperature=0.0,
+    temperature=0.0, # TODO: support list
+    best_of=5,
+    beam_size=None, # TODO: support 5
+    patience=None,
+    length_penalty=None,
     compression_ratio_threshold=2.4,
     logprob_threshold=-1.0,
     no_speech_threshold=0.6,
@@ -105,16 +113,23 @@ def transcribe(
     the spoken language ("language"), which is detected when `decode_options["language"]` is None.
     """
 
+    debug = logger.getEffectiveLevel() >= logging.DEBUG
+
     assert refine_whisper_precision >= 0 and refine_whisper_precision / AUDIO_TIME_PER_TOKEN == round(
         refine_whisper_precision / AUDIO_TIME_PER_TOKEN), f"refine_whisper_precision must be a positive multiple of {AUDIO_TIME_PER_TOKEN}"
     refine_whisper_precision_nsamples = round(
         refine_whisper_precision / AUDIO_TIME_PER_TOKEN)
 
-    if isinstance(temperature, (list, tuple)):
+    if isinstance(temperature, (list, tuple)) and len(temperature) > 1:
         raise NotImplementedError("Transcription with several temperatures not implemented")
+    if beam_size is not None:
+        raise NotImplementedError("Transcription with beam search not implemented")
 
     tokenizer = whisper.tokenizer.get_tokenizer(model.is_multilingual, language=language)
-    tokens_sot = list(tokenizer.sot_sequence)
+    # Note: we cannot trust the token in the middle of tokenizer.sot_sequence which refers to the language
+    #       (arbitrarily set to <|en|> if it's actually None/unknown)
+    token_sot = tokenizer.sot_sequence[0]
+    token_transcribe = tokenizer.sot_sequence[-1]
     token_eot = tokenizer.eot
 
     input_stride = N_FRAMES // model.dims.n_audio_ctx
@@ -137,29 +152,44 @@ def transcribe(
         assert isinstance(outs, tuple) and len(outs) == 2
         attention_weights[index].append(outs[-1])
 
-    def reset_new_segment(timestamp_start):
+    def reset_new_segment(timestamp_start, add_even_if_missing_end_token=True):
         nonlocal tokens, attention_weights
-        nonlocal tokenizer
+        nonlocal tokenizer, token_transcribe
 
         if timestamp_start is None:
             tokens.append([])
         else:
             tokens[-1] = tokens[-1][:-1]
             tokens.append([timestamp_start])
+            
+        current_tokens = tokens[-2]
+        current_attention_weights = [torch.cat(w, dim=-2)[:, :, :-1, :] for w in attention_weights]
+
+        if debug:
+            logger.debug(f"add new segment {len(tokens)-1}: mode {1 if timestamp_start is None else 0}: {tokenizer.decode_with_timestamps(current_tokens)}")
+        if token_transcribe in current_tokens:
+            i_transcribe = current_tokens.index(token_transcribe)
+            current_tokens = current_tokens[i_transcribe+1:]
+            current_attention_weights = [w[:, :, i_transcribe+1:, :] for w in current_attention_weights]
+            tokens[-2] = current_tokens
+            if debug:
+                logger.debug(f"refine segment {len(tokens)-1} to: {tokenizer.decode_with_timestamps(current_tokens)}")
 
         ws = perform_word_alignment(
-            tokens[-2],
-            [w[:-1] for w in attention_weights],
+            current_tokens,
+            current_attention_weights,
             tokenizer,
             use_space=use_space,
             refine_whisper_precision_nsamples=refine_whisper_precision_nsamples,
+            add_even_if_missing_end_token=add_even_if_missing_end_token,
             mfcc=mfcc,
             plot=plot_word_alignment,
         )
         if len(ws):
             timestamped_word_segments.append(ws)
         else:
-            logger.warning(f"Not adding segment ({len(timestamped_word_segments)}) {tokenizer.decode_with_timestamps(tokens[-2])}")
+            if debug:
+                logger.debug(f"Not adding segment ({len(timestamped_word_segments)}) {tokenizer.decode_with_timestamps(tokens[-2])}")
             tokens.pop(-2)
 
         attention_weights = [[w[-1][:, :, -1:, :]] for w in attention_weights]
@@ -169,8 +199,10 @@ def transcribe(
         curr_tokens = ins[0][0]
         num_inference_steps += 1
 
-        if len(curr_tokens) > 5 and curr_tokens[-3:].tolist() == list(tokenizer.sot_sequence) and curr_tokens[-5] != curr_tokens[-4] and curr_tokens[-4] >= tokenizer.timestamp_begin:
-            reset_new_segment(None)
+        if len(curr_tokens) > 5:
+            ends_with_sot = (curr_tokens[-1] == token_transcribe and curr_tokens[-3] == token_sot)
+            if ends_with_sot and curr_tokens[-4] >= tokenizer.timestamp_begin:
+                reset_new_segment(None)
 
         last_token = tokens[-1][-1] if len(tokens[-1]) > 0 else -1
         tokens[-1] += curr_tokens.tolist()
@@ -182,10 +214,33 @@ def transcribe(
 
         if is_a_start:
 
+            curr_tokens = tokens[-1]
+            ends_with_sot = len(curr_tokens) > 5 and (curr_tokens[-2] == token_transcribe and curr_tokens[-4] == token_sot)
+
             # Flush
-            tokens[-1] = [tokens[-1][-1]]
-            attention_weights = [[w[-1][:, :, -1:, :]]
-                                 for w in attention_weights]
+            if len(tokens) > 1 and curr_tokens[0] == tokenizer.sot_prev:
+                previous_tokens = tokens[-2]
+                if not ends_with_sot or len(previous_tokens) <= 1 or not (len(curr_tokens) >= len(previous_tokens)+3 and curr_tokens[-len(previous_tokens)-4:-4] == previous_tokens):
+                    if debug:
+                        logger.debug(f"flushing (-1): {tokenizer.decode_with_timestamps(previous_tokens)}")
+                    tokens.pop(-2)
+                    timestamped_word_segments.pop(-1)
+                elif debug:
+                    logger.debug(f"NOT flushing: {tokenizer.decode_with_timestamps(previous_tokens)}")
+            if ends_with_sot and curr_tokens[-5] < tokenizer.timestamp_begin:
+                # Find the last index of <|0.0|> before the last one
+                i_start = len(curr_tokens) - 2 - curr_tokens[-2::-1].index(tokenizer.timestamp_begin)
+                # Add the missing ending timestamp (set it to the maximum)
+                if debug:
+                    logger.debug(f"flushing (1): {tokenizer.decode_with_timestamps(curr_tokens[:i_start])}")
+                tokens[-1] = curr_tokens[i_start:-4] + ([tokenizer.timestamp_begin + N_FRAMES / 2] * 2)
+                attention_weights = [[torch.cat(w, dim=-2)[:, :, i_start:-2, :]] for w in attention_weights]
+                reset_new_segment(tokenizer.timestamp_begin)
+            else:
+                if debug:
+                    logger.debug(f"flushing (2): {tokenizer.decode_with_timestamps(curr_tokens[:-1])}")
+                tokens[-1] = [curr_tokens[-1]]
+                attention_weights = [[w[-1][:, :, -1:, :]] for w in attention_weights]
 
         elif is_a_timestamp and is_last_timestamp:
 
@@ -216,7 +271,10 @@ def transcribe(
                                      task=task,
                                      fp16=fp16,
                                      temperature=temperature,
-                                     beam_size=None,
+                                     best_of=best_of,
+                                     beam_size=beam_size,
+                                     patience=patience,
+                                     length_penalty=length_penalty,
                                      no_speech_threshold=no_speech_threshold,
                                      logprob_threshold=logprob_threshold,
                                      compression_ratio_threshold=compression_ratio_threshold,
@@ -227,10 +285,10 @@ def transcribe(
                                      )
 
     # Finalize
-    reset_new_segment(None)
+    reset_new_segment(None, False)
     tokens = tokens[:-1]
 
-    token_special_idx = min(tokens_sot + [token_eot])
+    token_special_idx = min(token_sot, token_eot)
 
     def filter_tokens(tokens):
         while len(tokens) and tokens[0] >= token_special_idx:
@@ -246,10 +304,16 @@ def transcribe(
     l2 = len(timestamped_word_segments)
     if l1 != l2 and l1 != 0:
         logger.warning(f"Inconsistent number of segments: whisper_segments ({l1}) != timestamped_word_segments ({l2})")
+    assert l1 == l2 or l1 == 0, f"Inconsistent number of segments: whisper_segments ({l1}) != timestamped_word_segments ({l2})"
 
     words = []
     for i, (segment, timestamped_words, token) in enumerate(zip(whisper_segments, timestamped_word_segments, tokens)):
-        assert filter_tokens(token) == filter_tokens(segment["tokens"])
+        timestamped_tokens = filter_tokens(token)
+        whisper_tokens = filter_tokens(segment["tokens"])
+        if timestamped_tokens != whisper_tokens:
+            logger.warning(f"Got inconsistent segments at index {i}:\n{tokenizer.decode(timestamped_tokens)}\n!=\n{tokenizer.decode(whisper_tokens)}")
+            assert len(timestamped_tokens) < len(whisper_tokens) and timestamped_tokens == whisper_tokens[:len(timestamped_tokens)], f"Got inconsistent segments at index {i}:\n{tokenizer.decode(timestamped_tokens)}\n!=\n{tokenizer.decode(whisper_tokens)}"
+
         offset = segment["seek"] * HOP_LENGTH / SAMPLE_RATE
         for timestamped_word in timestamped_words:
             timestamped_word["start"] += offset
@@ -292,11 +356,13 @@ def perform_word_alignment(
     tokenizer,
     use_space=True,
     refine_whisper_precision_nsamples=0,
+    add_even_if_missing_end_token=True,
     medfilt_width=9,
     qk_scale=1.0,
     most_top_layers=None,  # 6
     mfcc=None,
     plot=False,
+    debug=False,
 ):
     """
     Perform word alignment on the given tokens and attention weights.
@@ -310,28 +376,32 @@ def perform_word_alignment(
     """
 
     for i, w in enumerate(attention_weights):
-        w = torch.cat(w, dim=-2)
-        assert w.shape[-2] == len(
-            tokens), f"Attention weights have wrong shape: {w.shape[-2]} (expected {len(tokens)})."
-        attention_weights[i] = w
+        assert w.shape[-2] == len(tokens), f"Attention weights have wrong shape: {w.shape[-2]} (expected {len(tokens)})."
 
     assert len(tokens) > 0, f"Got unexpected empty sequence of tokens"
     start_token = tokens[0] - tokenizer.timestamp_begin
     end_token = tokens[-1] - tokenizer.timestamp_begin
 
-    assert start_token >= 0, f"Missing start token in {tokenizer.decode_with_timestamps(tokens)}"
+    if start_token < 0:
+        raise RuntimeError(f"Missing start token in {tokenizer.decode_with_timestamps(tokens)}")
     if len(tokens) == 1 or end_token < 0:
-        logger.warning(f"Missing end token in {tokenizer.decode_with_timestamps(tokens)}")
-        return []
+        if add_even_if_missing_end_token:
+            if debug:
+                logger.debug(f"Missing end token in {tokenizer.decode_with_timestamps(tokens)}")
+            return [dict(text="", start=round(start_token * AUDIO_TIME_PER_TOKEN, 2), end=round(end_token * AUDIO_TIME_PER_TOKEN, 2))]
+        else:
+            return []
     if end_token == start_token and refine_whisper_precision_nsamples == 0:
-        logger.warning(f"Got empty segment in {tokenizer.decode_with_timestamps(tokens)}")
+        if debug:
+            logger.debug(f"Got empty segment in {tokenizer.decode_with_timestamps(tokens)}")
         return []
 
     if refine_whisper_precision_nsamples > 0:
         start_token = max(start_token - refine_whisper_precision_nsamples, 0)
         end_token = min(end_token + refine_whisper_precision_nsamples, N_FRAMES // 2)
 
-    assert end_token > start_token, f"Got segment with null or negative duration {tokenizer.decode_with_timestamps(tokens)}: {start_token} {end_token}"
+    if end_token <= start_token:
+        raise RuntimeError(f"Got segment with null or negative duration {tokenizer.decode_with_timestamps(tokens)}: {start_token} {end_token}")
 
     start_time = start_token * AUDIO_TIME_PER_TOKEN
     end_time = end_token * AUDIO_TIME_PER_TOKEN
@@ -339,7 +409,6 @@ def perform_word_alignment(
     split_tokens = split_tokens_on_spaces if use_space else split_tokens_on_unicode
     words, word_tokens = split_tokens(tokens, tokenizer)
 
-    
     weights = torch.cat(attention_weights) # layers * heads * tokens * frames
 
     num_tokens = weights.shape[-2]
@@ -538,12 +607,12 @@ def split_tokens_on_spaces(tokens: torch.Tensor, tokenizer, tokens_as_string=Tru
     words = []
     word_tokens = []
 
-    for subword, subword_tokens in zip(subwords, subword_tokens_list):
-        special = (subword_tokens[0].startswith("<|")) if tokens_as_string else (
-            subword_tokens[0] >= tokenizer.eot)
+    for i, (subword, subword_tokens) in enumerate(zip(subwords, subword_tokens_list)):
+        special = (subword_tokens[0].startswith("<|")) if tokens_as_string else (subword_tokens[0] >= tokenizer.eot)
+        previous_special = i > 0 and (subword_tokens_list[i-1][0].startswith("<|")) if tokens_as_string else (subword_tokens_list[i-1][0] >= tokenizer.eot)
         with_space = subword.startswith(" ")
         punctuation = subword.strip() in string.punctuation
-        if special or (with_space and not punctuation):
+        if special or (with_space and not punctuation) or previous_special:
             words.append(subword.strip())
             word_tokens.append(subword_tokens)
         else:
@@ -639,38 +708,47 @@ def cli():
     parser.add_argument("--model_dir", default=None, help="The path to save model files; uses ~/.cache/whisper by default", type=str)
     parser.add_argument("--device", default="cuda:0" if torch.cuda.is_available() else "cpu", help="device to use for PyTorch inference")
     parser.add_argument("--output_dir", "-o", default=None, help="directory to save the outputs", type=str)
-
-    parser.add_argument("--csv", default=True, help="directory to save the outputs", type=str2bool)
-    parser.add_argument("--json", default=False, help="directory to save the outputs", type=str2bool)
-    parser.add_argument("--srt", default=True, help="directory to save the outputs", type=str2bool)
-    parser.add_argument("--txt", default=True, help="directory to save the outputs", type=str2bool)
-    parser.add_argument("--vtt", default=True, help="directory to save the outputs", type=str2bool)
-
+    parser.add_argument('--plot', help="Plot word alignments", default=False, action="store_true")
     parser.add_argument("--verbose", type=str2bool, default=False, help="Whether to print out the progress and debug messages of Whisper")
+
+    parser.add_argument("--csv", default=True, help="Whether to save in CSV format", type=str2bool)
+    parser.add_argument("--json", default=False, help="Whether to save in JSON format", type=str2bool)
+    parser.add_argument("--srt", default=True, help="Whether to save in SRT format", type=str2bool)
+    parser.add_argument("--vtt", default=True, help="Whether to save in VTT format", type=str2bool)
+    parser.add_argument("--txt", default=True, help="Whether to save in simple text format", type=str2bool)
     
     parser.add_argument("--task", default="transcribe", help="Whether to perform X->X speech recognition ('transcribe') or X->English translation ('translate')", choices=["transcribe", "translate"], type=str)
     parser.add_argument('--language', help=f"Language to use. Among : {', '.join(sorted(k+'('+v+')' for k,v in whisper.tokenizer.LANGUAGES.items()))}.", choices=sorted(whisper.tokenizer.LANGUAGES.keys()) + sorted([k.title() for k in whisper.tokenizer.TO_LANGUAGE_CODE.keys()]), default=None)
     
-    parser.add_argument("--temperature", default=0, help="Temperature to use for sampling", type=float)
-    # parser.add_argument("--best_of", type=optional_int, default=5, help="number of candidates when sampling with non-zero temperature")
-    # parser.add_argument("--beam_size", type=optional_int, default=5, help="number of beams in beam search, only applicable when temperature is zero")
-    # parser.add_argument("--patience", type=float, default=None, help="optional patience value to use in beam decoding, as in https://arxiv.org/abs/2204.05424, the default (1.0) is equivalent to conventional beam search")
-    # parser.add_argument("--length_penalty", type=float, default=None, help="optional token length penalty coefficient (alpha) as in https://arxiv.org/abs/1609.08144, uses simple length normalization by default")
+    parser.add_argument("--temperature", default=0.0, help="Temperature to use for sampling", type=float)
+    parser.add_argument("--best_of", type=optional_int, default=5, help="number of candidates when sampling with non-zero temperature")
+    # TODO: implement default beam_size 5
+    parser.add_argument("--beam_size", type=optional_int, default=None, help="number of beams in beam search, only applicable when temperature is zero")
+    parser.add_argument("--patience", type=float, default=None, help="optional patience value to use in beam decoding, as in https://arxiv.org/abs/2204.05424, the default (1.0) is equivalent to conventional beam search")
+    parser.add_argument("--length_penalty", type=float, default=None, help="optional token length penalty coefficient (alpha) as in https://arxiv.org/abs/1609.08144, uses simple length normalization by default")
 
     parser.add_argument("--suppress_tokens", default="-1", help="comma-separated list of token ids to suppress during sampling; '-1' will suppress most special characters except common punctuations", type=str)
     parser.add_argument("--initial_prompt", default=None, help="optional text to provide as a prompt for the first window.", type=str)
     parser.add_argument("--condition_on_previous_text", default=True, help="if True, provide the previous output of the model as a prompt for the next window; disabling may make the text inconsistent across windows, but the model becomes less prone to getting stuck in a failure loop", type=str2bool)
     parser.add_argument("--fp16", default=None, help="whether to perform inference in fp16; Automatic by default (True if GPU available, False otherwise)", type=str2bool)
 
-    # parser.add_argument("--temperature_increment_on_fallback", default=0.2, help="temperature to increase when falling back when the decoding fails to meet either of the thresholds below", type=optional_float)
+    # TODO: implement default support 0.2
+    parser.add_argument("--temperature_increment_on_fallback", default=None, help="temperature to increase when falling back when the decoding fails to meet either of the thresholds below", type=optional_float)
     parser.add_argument("--compression_ratio_threshold", default=2.4, help="If the gzip compression ratio is higher than this value, treat the decoding as failed", type=optional_float)
     parser.add_argument("--logprob_threshold", default=-1.0, help="If the average log probability is lower than this value, treat the decoding as failed", type=optional_float)
     parser.add_argument("--no_speech_threshold", default=0.6, help="If the probability of the <|nospeech|> token is higher than this value AND the decoding has failed due to `logprob_threshold`, consider the segment as silence", type=optional_float)
     parser.add_argument("--threads", default=0, help="Number of threads used by torch for CPU inference; supercedes MKL_NUM_THREADS/OMP_NUM_THREADS", type=optional_int)
 
-    parser.add_argument('--plot', help="Plot word alignments", default=False, action="store_true")
+    parser.add_argument('--debug', help="Print some debug information for word alignement", default=False, action="store_true")
 
     args = parser.parse_args().__dict__
+
+    temperature = args.pop("temperature")
+    temperature_increment_on_fallback = args.pop("temperature_increment_on_fallback")
+    if temperature_increment_on_fallback:
+        temperature = tuple(np.arange(temperature, 1.0 + 1e-6, temperature_increment_on_fallback))
+    else:
+        temperature = [temperature]
 
     threads = args.pop("threads")
     if threads:
@@ -694,14 +772,20 @@ def cli():
 
     plot_word_alignment = args.pop("plot")
 
+    debug = args.pop("debug")
+    if debug:
+        logger.setLevel(logging.DEBUG)
+        logging.getLogger("Whisper").setLevel(logging.DEBUG)
+
     output_dir = args.pop("output_dir")
     if output_dir and not os.path.isdir(output_dir):
         os.makedirs(output_dir)
 
     for audio_path in audio_files:
 
-        result = transcribe(
+        result = transcribe_timestamped(
             model, audio_path,
+            temperature=temperature,
             plot_word_alignment=plot_word_alignment,
             **args
         )
