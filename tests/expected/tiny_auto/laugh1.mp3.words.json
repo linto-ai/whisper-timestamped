@@ -1,0 +1,75 @@
+{
+  "text": " You can't do it, you can't do it.",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.06,
+      "end": 1.88,
+      "text": " You can't do it, you can't do it.",
+      "tokens": [
+        50364,
+        509,
+        393,
+        380,
+        360,
+        309,
+        11,
+        291,
+        393,
+        380,
+        360,
+        309,
+        13,
+        50464
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -1.2209794362386068,
+      "compression_ratio": 1.1379310344827587,
+      "no_speech_prob": 0.3798484802246094,
+      "words": [
+        {
+          "text": "You",
+          "start": 0.06,
+          "end": 0.6
+        },
+        {
+          "text": "can't",
+          "start": 0.6,
+          "end": 0.78
+        },
+        {
+          "text": "do",
+          "start": 0.78,
+          "end": 0.96
+        },
+        {
+          "text": "it,",
+          "start": 0.96,
+          "end": 1.36
+        },
+        {
+          "text": "you",
+          "start": 1.36,
+          "end": 1.46
+        },
+        {
+          "text": "can't",
+          "start": 1.46,
+          "end": 1.68
+        },
+        {
+          "text": "do",
+          "start": 1.68,
+          "end": 1.78
+        },
+        {
+          "text": "it.",
+          "start": 1.78,
+          "end": 1.88
+        }
+      ]
+    }
+  ],
+  "language": "en"
+}

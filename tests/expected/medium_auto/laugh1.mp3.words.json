@@ -1,0 +1,30 @@
+{
+  "text": " hahahaha",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.04,
+      "end": 1.4,
+      "text": " hahahaha",
+      "tokens": [
+        50364,
+        17206,
+        15380,
+        50464
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -1.2422116279602051,
+      "compression_ratio": 0.6666666666666666,
+      "no_speech_prob": 0.5563598275184631,
+      "words": [
+        {
+          "text": "hahahaha",
+          "start": 0.04,
+          "end": 1.4
+        }
+      ]
+    }
+  ],
+  "language": "en"
+}
