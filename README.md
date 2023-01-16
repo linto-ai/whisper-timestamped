@@ -93,7 +93,7 @@ whisper_timestamped -h
 ```
 
 The main differences with `whisper` CLI are:
-* If an output folder is specified (with option `--output_dir`), then it will save 3 additional files: 2 files `*.words.srt` and `*.words.vtt` with timestamps of words in `SRT` and `VTT` format, and a `json` file which corresponds to the output of `transcribe` (see example [below](#example-output)).
+* If an output folder is specified (with option `--output_dir`), then additional files `*.words.srt` and `*.words.vtt` with timestamps of words in `SRT` and `VTT` format will be saved by default. A `json` file that corresponds to the output of `transcribe` (see example [below](#example-output)) can also be dumped using `--json True`.
 * The options related to beam search and temperature fallback are not available (only "best prediction" decoding is currently supported to get word timestamps).
 
 ### Plot of word alignment
