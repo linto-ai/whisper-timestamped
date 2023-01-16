@@ -1,0 +1,4431 @@
+{
+  "text": " C'est évidence que dit Nicolas. Mais je me l'étais jamais formulé comme ça. Ce qui fait la force du smartphone, c'est pas seulement la cumulation des fonctions, mais la manière dans quelques interagues entraîne. Et il est d'ailleurs, c'est la photo c'est hyper convaincant. Alors évidemment, il faudrait ajouter les interfaces les grand-attêtes qu'il a été beaucoup très souvent ementionné. Mais bon, il faudrait que les profites aussi de 20 ans pendant l'été, les ordinateurs nous ont appris à piquer sur des icônes. C'est ce que le smartphone ajoute le toucher, qui rend le contact plus direct, plus sensible. Et puis, évidemment, il faudrait parler aussi des applications qui permettent de contourner le côté tout flu de la navigation web pour aller directement en but. Bref, tout ça, ce sont les conditions qui permettent de créer cette objet, en Nicolas, dit qu'il est très fondablement inédit dans l'histoire de l'humanité. Mais ça s'assoulait d'une autre interrogation. Est-ce que le fait que cette objet soit inédit un d'huies que notre rapport a lui est aussi un rapport inédit? Je veux dire, est-ce que le rapport qu'on a au sein de foi n'est comparable à celui qu'on entretenait à d'autres objectes techniques comme la voiture ou le téléphone? Il n'y a pas d'équivalent. On s'est espécie de nous voter dans la relation à l'objet. C'est facilement éterréciant parce qu'on a impression de, comme le 10, les utilisateurs et les efforts, elles aident dépendant de cette objet d'un lieu, en fait, une espèce de relation de médiation avec le monde qui rendent un peu avec la même sédiforme de le jeu. Donc, à objets inédits, rapport inédits. Et, ce rapport, si j'en prends Nicolas, frère caractérisée par un mélange de dépenses et de rojets. Bon, en vrai, il faudrait remonter très très finement toute l'histoire des objectes techniques et de leur infération dans le vie pour déterminer si ce rapport est totalement inédit. Mais j'ai l'impression comme ça que Nicolas se trompe pas vraiment. Pour autant, je sache. Il y a eu plein de discussions autour de la voiture ou même du téléphone. Mais la dépense n'était pas du même mort, donc le rejet n'en plus n'était pas du même mort. On peut adorer sa bagnure, en avoir besoin pour plein de choses. Et là, le soir, quand on va se coucher, on la laisse. On l'a pas dans la main, quand on est collis, quand on n'en mène pas au chiot. On pouvait être émervé par son mome qui occupeait la ligne de téléphone pendant une heure chaque soir pour discuter avec un copain. Mais ça ne ressemble pas à ce qu'on peut ressentir à voir même mome aujourd'hui continuuellement avec son smartphone dans la main, comme c'était une sorte de estimateur extère de l'intempis de lâcher à l'éantrénée, ça m'a eu immédiate. Bon, je dis ça pour le mome, mais évidemment, va là pour nos aussi. Donc, rapport immédiate d'accord. Mais pourquoi, à ton impression qu'on en sortira jamais? Et puis, il faut en remettre la faute sur les gens qui ont créé cette route merveilleux et diabolique, qui a dit à bollique par coeur, merveilleux. Les économistes parlent de dépendance du santé. Ces vidéos, en fait, on est un santé qui a été établie, c'est un soit mon termine, soit définissant des beurs, on définisse un signalétique.",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.42,
+      "end": 1.5,
+      "text": " C'est évidence que dit Nicolas.",
+      "tokens": [
+        383,
+        6,
+        377,
+        20090,
+        2778,
+        631,
+        6176,
+        38268,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.566579490710216,
+      "compression_ratio": 1.605421686746988,
+      "no_speech_prob": 0.14170263707637787,
+      "words": [
+        {
+          "text": "C'est",
+          "start": 0.42,
+          "end": 0.7
+        },
+        {
+          "text": "évidence",
+          "start": 0.7,
+          "end": 0.92
+        },
+        {
+          "text": "que",
+          "start": 0.92,
+          "end": 1.06
+        },
+        {
+          "text": "dit",
+          "start": 1.06,
+          "end": 1.16
+        },
+        {
+          "text": "Nicolas.",
+          "start": 1.16,
+          "end": 1.5
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 1.66,
+      "end": 3.7,
+      "text": " Mais je me l'étais jamais formulé comme ça.",
+      "tokens": [
+        6313,
+        1506,
+        385,
+        287,
+        6,
+        22824,
+        14540,
+        1254,
+        425,
+        526,
+        5173,
+        2788,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.566579490710216,
+      "compression_ratio": 1.605421686746988,
+      "no_speech_prob": 0.14170263707637787,
+      "words": [
+        {
+          "text": "Mais",
+          "start": 1.66,
+          "end": 1.9
+        },
+        {
+          "text": "je",
+          "start": 1.9,
+          "end": 2.18
+        },
+        {
+          "text": "me",
+          "start": 2.18,
+          "end": 2.3
+        },
+        {
+          "text": "l'étais",
+          "start": 2.3,
+          "end": 2.54
+        },
+        {
+          "text": "jamais",
+          "start": 2.54,
+          "end": 2.78
+        },
+        {
+          "text": "formulé",
+          "start": 2.78,
+          "end": 3.2
+        },
+        {
+          "text": "comme",
+          "start": 3.2,
+          "end": 3.34
+        },
+        {
+          "text": "ça.",
+          "start": 3.34,
+          "end": 3.7
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 4.14,
+      "end": 8.82,
+      "text": " Ce qui fait la force du smartphone, c'est pas seulement la cumulation des fonctions, mais la manière",
+      "tokens": [
+        8257,
+        1956,
+        3887,
+        635,
+        3464,
+        1581,
+        13307,
+        11,
+        269,
+        6,
+        377,
+        1736,
+        27772,
+        635,
+        12713,
+        2776,
+        730,
+        17290,
+        3916,
+        11,
+        2420,
+        635,
+        22267
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.566579490710216,
+      "compression_ratio": 1.605421686746988,
+      "no_speech_prob": 0.14170263707637787,
+      "words": [
+        {
+          "text": "Ce",
+          "start": 4.14,
+          "end": 4.24
+        },
+        {
+          "text": "qui",
+          "start": 4.24,
+          "end": 4.34
+        },
+        {
+          "text": "fait",
+          "start": 4.34,
+          "end": 4.46
+        },
+        {
+          "text": "la",
+          "start": 4.46,
+          "end": 4.56
+        },
+        {
+          "text": "force",
+          "start": 4.56,
+          "end": 4.96
+        },
+        {
+          "text": "du",
+          "start": 4.96,
+          "end": 5.14
+        },
+        {
+          "text": "smartphone,",
+          "start": 5.14,
+          "end": 5.74
+        },
+        {
+          "text": "c'est",
+          "start": 5.74,
+          "end": 6.12
+        },
+        {
+          "text": "pas",
+          "start": 6.12,
+          "end": 6.22
+        },
+        {
+          "text": "seulement",
+          "start": 6.22,
+          "end": 6.52
+        },
+        {
+          "text": "la",
+          "start": 6.52,
+          "end": 6.76
+        },
+        {
+          "text": "cumulation",
+          "start": 6.76,
+          "end": 7.18
+        },
+        {
+          "text": "des",
+          "start": 7.18,
+          "end": 7.54
+        },
+        {
+          "text": "fonctions,",
+          "start": 7.54,
+          "end": 8.1
+        },
+        {
+          "text": "mais",
+          "start": 8.1,
+          "end": 8.42
+        },
+        {
+          "text": "la",
+          "start": 8.42,
+          "end": 8.58
+        },
+        {
+          "text": "manière",
+          "start": 8.58,
+          "end": 8.82
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 8.9,
+      "end": 10.86,
+      "text": " dans quelques interagues entraîne.",
+      "tokens": [
+        2680,
+        16597,
+        728,
+        559,
+        1247,
+        22284,
+        24741,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.566579490710216,
+      "compression_ratio": 1.605421686746988,
+      "no_speech_prob": 0.14170263707637787,
+      "words": [
+        {
+          "text": "dans",
+          "start": 8.9,
+          "end": 9.04
+        },
+        {
+          "text": "quelques",
+          "start": 9.04,
+          "end": 9.26
+        },
+        {
+          "text": "interagues",
+          "start": 9.26,
+          "end": 10.18
+        },
+        {
+          "text": "entraîne.",
+          "start": 10.18,
+          "end": 10.86
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 11.04,
+      "end": 12.94,
+      "text": " Et il est d'ailleurs, c'est la photo c'est hyper convaincant.",
+      "tokens": [
+        3790,
+        1930,
+        871,
+        274,
+        6,
+        19400,
+        11,
+        269,
+        6,
+        377,
+        635,
+        5052,
+        269,
+        6,
+        377,
+        9848,
+        3754,
+        491,
+        66,
+        394,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.566579490710216,
+      "compression_ratio": 1.605421686746988,
+      "no_speech_prob": 0.14170263707637787,
+      "words": [
+        {
+          "text": "Et",
+          "start": 11.04,
+          "end": 11.14
+        },
+        {
+          "text": "il",
+          "start": 11.14,
+          "end": 11.24
+        },
+        {
+          "text": "est",
+          "start": 11.24,
+          "end": 11.38
+        },
+        {
+          "text": "d'ailleurs,",
+          "start": 11.38,
+          "end": 11.62
+        },
+        {
+          "text": "c'est",
+          "start": 11.62,
+          "end": 11.78
+        },
+        {
+          "text": "la",
+          "start": 11.78,
+          "end": 11.88
+        },
+        {
+          "text": "photo",
+          "start": 11.88,
+          "end": 11.98
+        },
+        {
+          "text": "c'est",
+          "start": 11.98,
+          "end": 12.18
+        },
+        {
+          "text": "hyper",
+          "start": 12.18,
+          "end": 12.36
+        },
+        {
+          "text": "convaincant.",
+          "start": 12.36,
+          "end": 12.94
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 13.26,
+      "end": 18.07,
+      "text": " Alors évidemment, il faudrait ajouter les interfaces les grand-attêtes qu'il a été beaucoup",
+      "tokens": [
+        9946,
+        24724,
+        11,
+        1930,
+        38694,
+        8645,
+        17680,
+        23985,
+        1512,
+        28416,
+        1512,
+        2697,
+        12,
+        1591,
+        38262,
+        421,
+        6,
+        388,
+        257,
+        8862,
+        8796
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.566579490710216,
+      "compression_ratio": 1.605421686746988,
+      "no_speech_prob": 0.14170263707637787,
+      "words": [
+        {
+          "text": "Alors",
+          "start": 13.26,
+          "end": 13.48
+        },
+        {
+          "text": "évidemment,",
+          "start": 13.48,
+          "end": 13.92
+        },
+        {
+          "text": "il",
+          "start": 13.92,
+          "end": 14.4
+        },
+        {
+          "text": "faudrait",
+          "start": 14.4,
+          "end": 14.76
+        },
+        {
+          "text": "ajouter",
+          "start": 14.76,
+          "end": 15.38
+        },
+        {
+          "text": "les",
+          "start": 15.38,
+          "end": 15.62
+        },
+        {
+          "text": "interfaces",
+          "start": 15.62,
+          "end": 15.86
+        },
+        {
+          "text": "les",
+          "start": 15.86,
+          "end": 16.5
+        },
+        {
+          "text": "grand-attêtes",
+          "start": 16.5,
+          "end": 16.94
+        },
+        {
+          "text": "qu'il",
+          "start": 16.94,
+          "end": 17.18
+        },
+        {
+          "text": "a",
+          "start": 17.18,
+          "end": 17.28
+        },
+        {
+          "text": "été",
+          "start": 17.28,
+          "end": 17.5
+        },
+        {
+          "text": "beaucoup",
+          "start": 17.5,
+          "end": 18.07
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 18.07,
+      "end": 19.42,
+      "text": " très souvent ementionné.",
+      "tokens": [
+        5732,
+        20847,
+        846,
+        1251,
+        15055,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.566579490710216,
+      "compression_ratio": 1.605421686746988,
+      "no_speech_prob": 0.14170263707637787,
+      "words": [
+        {
+          "text": "très",
+          "start": 18.07,
+          "end": 18.66
+        },
+        {
+          "text": "souvent",
+          "start": 18.66,
+          "end": 18.82
+        },
+        {
+          "text": "ementionné.",
+          "start": 18.82,
+          "end": 19.42
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 20.0,
+      "end": 23.54,
+      "text": " Mais bon, il faudrait que les profites aussi de 20 ans pendant l'été, les ordinateurs",
+      "tokens": [
+        6313,
+        4428,
+        11,
+        1930,
+        38694,
+        8645,
+        631,
+        1512,
+        1740,
+        3324,
+        6212,
+        368,
+        945,
+        1567,
+        17338,
+        287,
+        6,
+        21210,
+        11,
+        1512,
+        4792,
+        13923,
+        2156
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.566579490710216,
+      "compression_ratio": 1.605421686746988,
+      "no_speech_prob": 0.14170263707637787,
+      "words": [
+        {
+          "text": "Mais",
+          "start": 20.0,
+          "end": 20.22
+        },
+        {
+          "text": "bon,",
+          "start": 20.22,
+          "end": 20.56
+        },
+        {
+          "text": "il",
+          "start": 20.56,
+          "end": 20.66
+        },
+        {
+          "text": "faudrait",
+          "start": 20.66,
+          "end": 20.76
+        },
+        {
+          "text": "que",
+          "start": 20.76,
+          "end": 20.92
+        },
+        {
+          "text": "les",
+          "start": 20.92,
+          "end": 21.02
+        },
+        {
+          "text": "profites",
+          "start": 21.02,
+          "end": 21.26
+        },
+        {
+          "text": "aussi",
+          "start": 21.26,
+          "end": 21.7
+        },
+        {
+          "text": "de",
+          "start": 21.7,
+          "end": 21.84
+        },
+        {
+          "text": "20",
+          "start": 21.84,
+          "end": 22.08
+        },
+        {
+          "text": "ans",
+          "start": 22.08,
+          "end": 22.28
+        },
+        {
+          "text": "pendant",
+          "start": 22.28,
+          "end": 22.46
+        },
+        {
+          "text": "l'été,",
+          "start": 22.46,
+          "end": 22.96
+        },
+        {
+          "text": "les",
+          "start": 22.96,
+          "end": 23.06
+        },
+        {
+          "text": "ordinateurs",
+          "start": 23.06,
+          "end": 23.54
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "seek": 0,
+      "start": 23.58,
+      "end": 25.26,
+      "text": " nous ont appris à piquer sur des icônes.",
+      "tokens": [
+        4666,
+        6592,
+        724,
+        5714,
+        1531,
+        280,
+        23909,
+        1022,
+        730,
+        4376,
+        2851,
+        4081,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.566579490710216,
+      "compression_ratio": 1.605421686746988,
+      "no_speech_prob": 0.14170263707637787,
+      "words": [
+        {
+          "text": "nous",
+          "start": 23.58,
+          "end": 23.78
+        },
+        {
+          "text": "ont",
+          "start": 23.78,
+          "end": 23.88
+        },
+        {
+          "text": "appris",
+          "start": 23.88,
+          "end": 24.06
+        },
+        {
+          "text": "à",
+          "start": 24.06,
+          "end": 24.24
+        },
+        {
+          "text": "piquer",
+          "start": 24.24,
+          "end": 24.42
+        },
+        {
+          "text": "sur",
+          "start": 24.42,
+          "end": 24.7
+        },
+        {
+          "text": "des",
+          "start": 24.7,
+          "end": 24.8
+        },
+        {
+          "text": "icônes.",
+          "start": 24.8,
+          "end": 25.26
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "seek": 2556,
+      "start": 25.58,
+      "end": 30.64,
+      "text": " C'est ce que le smartphone ajoute le toucher, qui rend le contact plus direct, plus sensible.",
+      "tokens": [
+        383,
+        6,
+        377,
+        1769,
+        631,
+        476,
+        13307,
+        17680,
+        14040,
+        476,
+        2557,
+        260,
+        11,
+        1956,
+        6125,
+        476,
+        3385,
+        1804,
+        2047,
+        11,
+        1804,
+        25380,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4095459938049316,
+      "compression_ratio": 1.7522658610271904,
+      "no_speech_prob": 0.0006256799097172916,
+      "words": [
+        {
+          "text": "C'est",
+          "start": 25.58,
+          "end": 25.7
+        },
+        {
+          "text": "ce",
+          "start": 25.7,
+          "end": 25.8
+        },
+        {
+          "text": "que",
+          "start": 25.8,
+          "end": 26.08
+        },
+        {
+          "text": "le",
+          "start": 26.08,
+          "end": 26.6
+        },
+        {
+          "text": "smartphone",
+          "start": 26.6,
+          "end": 26.86
+        },
+        {
+          "text": "ajoute",
+          "start": 26.86,
+          "end": 27.42
+        },
+        {
+          "text": "le",
+          "start": 27.42,
+          "end": 27.64
+        },
+        {
+          "text": "toucher,",
+          "start": 27.64,
+          "end": 28.06
+        },
+        {
+          "text": "qui",
+          "start": 28.06,
+          "end": 28.18
+        },
+        {
+          "text": "rend",
+          "start": 28.18,
+          "end": 28.34
+        },
+        {
+          "text": "le",
+          "start": 28.34,
+          "end": 28.68
+        },
+        {
+          "text": "contact",
+          "start": 28.68,
+          "end": 28.96
+        },
+        {
+          "text": "plus",
+          "start": 28.96,
+          "end": 29.48
+        },
+        {
+          "text": "direct,",
+          "start": 29.48,
+          "end": 29.96
+        },
+        {
+          "text": "plus",
+          "start": 29.96,
+          "end": 30.24
+        },
+        {
+          "text": "sensible.",
+          "start": 30.24,
+          "end": 30.64
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "seek": 2556,
+      "start": 31.04,
+      "end": 34.34,
+      "text": " Et puis, évidemment, il faudrait parler aussi des applications qui permettent de contourner",
+      "tokens": [
+        3790,
+        9093,
+        11,
+        24724,
+        11,
+        1930,
+        38694,
+        8645,
+        16421,
+        6212,
+        730,
+        5821,
+        1956,
+        21540,
+        317,
+        368,
+        21234,
+        1193
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4095459938049316,
+      "compression_ratio": 1.7522658610271904,
+      "no_speech_prob": 0.0006256799097172916,
+      "words": [
+        {
+          "text": "Et",
+          "start": 31.04,
+          "end": 31.24
+        },
+        {
+          "text": "puis,",
+          "start": 31.24,
+          "end": 31.34
+        },
+        {
+          "text": "évidemment,",
+          "start": 31.34,
+          "end": 31.64
+        },
+        {
+          "text": "il",
+          "start": 31.64,
+          "end": 31.78
+        },
+        {
+          "text": "faudrait",
+          "start": 31.78,
+          "end": 31.88
+        },
+        {
+          "text": "parler",
+          "start": 31.88,
+          "end": 32.12
+        },
+        {
+          "text": "aussi",
+          "start": 32.12,
+          "end": 32.3
+        },
+        {
+          "text": "des",
+          "start": 32.3,
+          "end": 32.44
+        },
+        {
+          "text": "applications",
+          "start": 32.44,
+          "end": 32.78
+        },
+        {
+          "text": "qui",
+          "start": 32.78,
+          "end": 33.16
+        },
+        {
+          "text": "permettent",
+          "start": 33.16,
+          "end": 33.68
+        },
+        {
+          "text": "de",
+          "start": 33.68,
+          "end": 33.9
+        },
+        {
+          "text": "contourner",
+          "start": 33.9,
+          "end": 34.34
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "seek": 2556,
+      "start": 34.34,
+      "end": 37.84,
+      "text": " le côté tout flu de la navigation web pour aller directement en but.",
+      "tokens": [
+        476,
+        18437,
+        3486,
+        5029,
+        368,
+        635,
+        17346,
+        3670,
+        2016,
+        8722,
+        37297,
+        465,
+        457,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4095459938049316,
+      "compression_ratio": 1.7522658610271904,
+      "no_speech_prob": 0.0006256799097172916,
+      "words": [
+        {
+          "text": "le",
+          "start": 34.34,
+          "end": 34.78
+        },
+        {
+          "text": "côté",
+          "start": 34.78,
+          "end": 34.88
+        },
+        {
+          "text": "tout",
+          "start": 34.88,
+          "end": 34.98
+        },
+        {
+          "text": "flu",
+          "start": 34.98,
+          "end": 35.2
+        },
+        {
+          "text": "de",
+          "start": 35.2,
+          "end": 35.42
+        },
+        {
+          "text": "la",
+          "start": 35.42,
+          "end": 35.72
+        },
+        {
+          "text": "navigation",
+          "start": 35.72,
+          "end": 36.04
+        },
+        {
+          "text": "web",
+          "start": 36.04,
+          "end": 36.64
+        },
+        {
+          "text": "pour",
+          "start": 36.64,
+          "end": 36.76
+        },
+        {
+          "text": "aller",
+          "start": 36.76,
+          "end": 36.94
+        },
+        {
+          "text": "directement",
+          "start": 36.94,
+          "end": 37.46
+        },
+        {
+          "text": "en",
+          "start": 37.46,
+          "end": 37.68
+        },
+        {
+          "text": "but.",
+          "start": 37.68,
+          "end": 37.84
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "seek": 2556,
+      "start": 38.8,
+      "end": 43.13,
+      "text": " Bref, tout ça, ce sont les conditions qui permettent de créer cette objet, en Nicolas,",
+      "tokens": [
+        49957,
+        11,
+        3486,
+        2788,
+        11,
+        1769,
+        4900,
+        1512,
+        4487,
+        1956,
+        21540,
+        317,
+        368,
+        32062,
+        5550,
+        14964,
+        11,
+        465,
+        38268,
+        11
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4095459938049316,
+      "compression_ratio": 1.7522658610271904,
+      "no_speech_prob": 0.0006256799097172916,
+      "words": [
+        {
+          "text": "Bref,",
+          "start": 38.8,
+          "end": 38.9
+        },
+        {
+          "text": "tout",
+          "start": 38.9,
+          "end": 39.0
+        },
+        {
+          "text": "ça,",
+          "start": 39.0,
+          "end": 39.36
+        },
+        {
+          "text": "ce",
+          "start": 39.36,
+          "end": 39.68
+        },
+        {
+          "text": "sont",
+          "start": 39.68,
+          "end": 39.84
+        },
+        {
+          "text": "les",
+          "start": 39.84,
+          "end": 40.06
+        },
+        {
+          "text": "conditions",
+          "start": 40.06,
+          "end": 40.54
+        },
+        {
+          "text": "qui",
+          "start": 40.54,
+          "end": 40.9
+        },
+        {
+          "text": "permettent",
+          "start": 40.9,
+          "end": 41.54
+        },
+        {
+          "text": "de",
+          "start": 41.54,
+          "end": 41.64
+        },
+        {
+          "text": "créer",
+          "start": 41.64,
+          "end": 41.92
+        },
+        {
+          "text": "cette",
+          "start": 41.92,
+          "end": 42.3
+        },
+        {
+          "text": "objet,",
+          "start": 42.3,
+          "end": 42.7
+        },
+        {
+          "text": "en",
+          "start": 42.7,
+          "end": 42.8
+        },
+        {
+          "text": "Nicolas,",
+          "start": 42.8,
+          "end": 43.13
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "seek": 2556,
+      "start": 43.13,
+      "end": 46.6,
+      "text": " dit qu'il est très fondablement inédit dans l'histoire de l'humanité.",
+      "tokens": [
+        6176,
+        421,
+        6,
+        388,
+        871,
+        5732,
+        9557,
+        712,
+        518,
+        294,
+        7811,
+        270,
+        2680,
+        287,
+        6,
+        29093,
+        368,
+        287,
+        6,
+        18796,
+        5066,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4095459938049316,
+      "compression_ratio": 1.7522658610271904,
+      "no_speech_prob": 0.0006256799097172916,
+      "words": [
+        {
+          "text": "dit",
+          "start": 43.13,
+          "end": 43.52
+        },
+        {
+          "text": "qu'il",
+          "start": 43.52,
+          "end": 43.68
+        },
+        {
+          "text": "est",
+          "start": 43.68,
+          "end": 43.8
+        },
+        {
+          "text": "très",
+          "start": 43.8,
+          "end": 43.94
+        },
+        {
+          "text": "fondablement",
+          "start": 43.94,
+          "end": 44.68
+        },
+        {
+          "text": "inédit",
+          "start": 44.68,
+          "end": 45.52
+        },
+        {
+          "text": "dans",
+          "start": 45.52,
+          "end": 45.74
+        },
+        {
+          "text": "l'histoire",
+          "start": 45.74,
+          "end": 45.98
+        },
+        {
+          "text": "de",
+          "start": 45.98,
+          "end": 46.08
+        },
+        {
+          "text": "l'humanité.",
+          "start": 46.08,
+          "end": 46.6
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "seek": 2556,
+      "start": 47.06,
+      "end": 48.86,
+      "text": " Mais ça s'assoulait d'une autre interrogation.",
+      "tokens": [
+        6313,
+        2788,
+        262,
+        6,
+        640,
+        263,
+        35235,
+        274,
+        6,
+        2613,
+        15081,
+        24871,
+        399,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4095459938049316,
+      "compression_ratio": 1.7522658610271904,
+      "no_speech_prob": 0.0006256799097172916,
+      "words": [
+        {
+          "text": "Mais",
+          "start": 47.06,
+          "end": 47.16
+        },
+        {
+          "text": "ça",
+          "start": 47.16,
+          "end": 47.46
+        },
+        {
+          "text": "s'assoulait",
+          "start": 47.46,
+          "end": 47.78
+        },
+        {
+          "text": "d'une",
+          "start": 47.78,
+          "end": 48.0
+        },
+        {
+          "text": "autre",
+          "start": 48.0,
+          "end": 48.14
+        },
+        {
+          "text": "interrogation.",
+          "start": 48.14,
+          "end": 48.86
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "seek": 2556,
+      "start": 49.42,
+      "end": 54.46,
+      "text": " Est-ce que le fait que cette objet soit inédit un d'huies que notre rapport a lui est aussi",
+      "tokens": [
+        4410,
+        12,
+        384,
+        631,
+        476,
+        3887,
+        631,
+        5550,
+        14964,
+        12703,
+        294,
+        7811,
+        270,
+        517,
+        274,
+        6,
+        12086,
+        530,
+        631,
+        10349,
+        18018,
+        257,
+        8783,
+        871,
+        6212
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4095459938049316,
+      "compression_ratio": 1.7522658610271904,
+      "no_speech_prob": 0.0006256799097172916,
+      "words": [
+        {
+          "text": "Est-ce",
+          "start": 49.42,
+          "end": 49.7
+        },
+        {
+          "text": "que",
+          "start": 49.7,
+          "end": 49.8
+        },
+        {
+          "text": "le",
+          "start": 49.8,
+          "end": 49.9
+        },
+        {
+          "text": "fait",
+          "start": 49.9,
+          "end": 50.0
+        },
+        {
+          "text": "que",
+          "start": 50.0,
+          "end": 50.1
+        },
+        {
+          "text": "cette",
+          "start": 50.1,
+          "end": 50.24
+        },
+        {
+          "text": "objet",
+          "start": 50.24,
+          "end": 50.5
+        },
+        {
+          "text": "soit",
+          "start": 50.5,
+          "end": 50.96
+        },
+        {
+          "text": "inédit",
+          "start": 50.96,
+          "end": 51.78
+        },
+        {
+          "text": "un",
+          "start": 51.78,
+          "end": 52.06
+        },
+        {
+          "text": "d'huies",
+          "start": 52.06,
+          "end": 52.32
+        },
+        {
+          "text": "que",
+          "start": 52.32,
+          "end": 52.42
+        },
+        {
+          "text": "notre",
+          "start": 52.42,
+          "end": 52.58
+        },
+        {
+          "text": "rapport",
+          "start": 52.58,
+          "end": 53.1
+        },
+        {
+          "text": "a",
+          "start": 53.1,
+          "end": 53.44
+        },
+        {
+          "text": "lui",
+          "start": 53.44,
+          "end": 53.62
+        },
+        {
+          "text": "est",
+          "start": 53.62,
+          "end": 53.96
+        },
+        {
+          "text": "aussi",
+          "start": 53.96,
+          "end": 54.46
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "seek": 2556,
+      "start": 54.48,
+      "end": 55.44,
+      "text": " un rapport inédit?",
+      "tokens": [
+        517,
+        18018,
+        294,
+        7811,
+        270,
+        2506
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4095459938049316,
+      "compression_ratio": 1.7522658610271904,
+      "no_speech_prob": 0.0006256799097172916,
+      "words": [
+        {
+          "text": "un",
+          "start": 54.48,
+          "end": 54.72
+        },
+        {
+          "text": "rapport",
+          "start": 54.72,
+          "end": 54.94
+        },
+        {
+          "text": "inédit?",
+          "start": 54.94,
+          "end": 55.44
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 5548,
+      "start": 55.6,
+      "end": 58.6,
+      "text": " Je veux dire, est-ce que le rapport qu'on a au sein de foi n'est comparable à celui",
+      "tokens": [
+        2588,
+        16389,
+        1264,
+        11,
+        871,
+        12,
+        384,
+        631,
+        476,
+        18018,
+        421,
+        6,
+        266,
+        257,
+        1609,
+        6195,
+        368,
+        6901,
+        297,
+        6,
+        377,
+        6311,
+        712,
+        1531,
+        22829
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.6093524909167556,
+      "compression_ratio": 1.6292834890965733,
+      "no_speech_prob": 6.752492481609806e-05,
+      "words": [
+        {
+          "text": "Je",
+          "start": 55.6,
+          "end": 55.84
+        },
+        {
+          "text": "veux",
+          "start": 55.84,
+          "end": 55.94
+        },
+        {
+          "text": "dire,",
+          "start": 55.94,
+          "end": 56.16
+        },
+        {
+          "text": "est-ce",
+          "start": 56.16,
+          "end": 56.34
+        },
+        {
+          "text": "que",
+          "start": 56.34,
+          "end": 56.44
+        },
+        {
+          "text": "le",
+          "start": 56.44,
+          "end": 56.54
+        },
+        {
+          "text": "rapport",
+          "start": 56.54,
+          "end": 56.76
+        },
+        {
+          "text": "qu'on",
+          "start": 56.76,
+          "end": 57.1
+        },
+        {
+          "text": "a",
+          "start": 57.1,
+          "end": 57.2
+        },
+        {
+          "text": "au",
+          "start": 57.2,
+          "end": 57.3
+        },
+        {
+          "text": "sein",
+          "start": 57.3,
+          "end": 57.4
+        },
+        {
+          "text": "de",
+          "start": 57.4,
+          "end": 57.5
+        },
+        {
+          "text": "foi",
+          "start": 57.5,
+          "end": 57.6
+        },
+        {
+          "text": "n'est",
+          "start": 57.6,
+          "end": 57.78
+        },
+        {
+          "text": "comparable",
+          "start": 57.78,
+          "end": 58.32
+        },
+        {
+          "text": "à",
+          "start": 58.32,
+          "end": 58.46
+        },
+        {
+          "text": "celui",
+          "start": 58.46,
+          "end": 58.6
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "seek": 5548,
+      "start": 58.72,
+      "end": 63.16,
+      "text": " qu'on entretenait à d'autres objectes techniques comme la voiture ou le téléphone?",
+      "tokens": [
+        421,
+        6,
+        266,
+        3962,
+        1147,
+        1001,
+        1531,
+        274,
+        6,
+        16752,
+        2657,
+        279,
+        7512,
+        5173,
+        635,
+        38859,
+        2820,
+        476,
+        47159,
+        2506
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.6093524909167556,
+      "compression_ratio": 1.6292834890965733,
+      "no_speech_prob": 6.752492481609806e-05,
+      "words": [
+        {
+          "text": "qu'on",
+          "start": 58.72,
+          "end": 58.88
+        },
+        {
+          "text": "entretenait",
+          "start": 58.88,
+          "end": 59.38
+        },
+        {
+          "text": "à",
+          "start": 59.38,
+          "end": 59.48
+        },
+        {
+          "text": "d'autres",
+          "start": 59.48,
+          "end": 59.64
+        },
+        {
+          "text": "objectes",
+          "start": 59.64,
+          "end": 60.02
+        },
+        {
+          "text": "techniques",
+          "start": 60.02,
+          "end": 60.38
+        },
+        {
+          "text": "comme",
+          "start": 60.38,
+          "end": 60.86
+        },
+        {
+          "text": "la",
+          "start": 60.86,
+          "end": 61.46
+        },
+        {
+          "text": "voiture",
+          "start": 61.46,
+          "end": 61.8
+        },
+        {
+          "text": "ou",
+          "start": 61.8,
+          "end": 62.32
+        },
+        {
+          "text": "le",
+          "start": 62.32,
+          "end": 62.6
+        },
+        {
+          "text": "téléphone?",
+          "start": 62.6,
+          "end": 63.16
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "seek": 5548,
+      "start": 65.38,
+      "end": 66.19,
+      "text": " Il n'y a pas d'équivalent.",
+      "tokens": [
+        4416,
+        297,
+        6,
+        88,
+        257,
+        1736,
+        274,
+        6,
+        20183,
+        3576,
+        317,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.6093524909167556,
+      "compression_ratio": 1.6292834890965733,
+      "no_speech_prob": 6.752492481609806e-05,
+      "words": [
+        {
+          "text": "Il",
+          "start": 65.38,
+          "end": 65.48
+        },
+        {
+          "text": "n'y",
+          "start": 65.48,
+          "end": 65.58
+        },
+        {
+          "text": "a",
+          "start": 65.58,
+          "end": 65.68
+        },
+        {
+          "text": "pas",
+          "start": 65.68,
+          "end": 65.78
+        },
+        {
+          "text": "d'équivalent.",
+          "start": 65.78,
+          "end": 66.19
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "seek": 5548,
+      "start": 66.19,
+      "end": 69.94,
+      "text": " On s'est espécie de nous voter dans la relation à l'objet.",
+      "tokens": [
+        1282,
+        262,
+        6,
+        377,
+        7089,
+        526,
+        4260,
+        368,
+        4666,
+        21722,
+        2680,
+        635,
+        9721,
+        1531,
+        287,
+        6,
+        996,
+        7108,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.6093524909167556,
+      "compression_ratio": 1.6292834890965733,
+      "no_speech_prob": 6.752492481609806e-05,
+      "words": [
+        {
+          "text": "On",
+          "start": 66.19,
+          "end": 67.0
+        },
+        {
+          "text": "s'est",
+          "start": 67.0,
+          "end": 67.26
+        },
+        {
+          "text": "espécie",
+          "start": 67.26,
+          "end": 67.46
+        },
+        {
+          "text": "de",
+          "start": 67.46,
+          "end": 67.58
+        },
+        {
+          "text": "nous",
+          "start": 67.58,
+          "end": 67.8
+        },
+        {
+          "text": "voter",
+          "start": 67.8,
+          "end": 68.24
+        },
+        {
+          "text": "dans",
+          "start": 68.24,
+          "end": 68.68
+        },
+        {
+          "text": "la",
+          "start": 68.68,
+          "end": 68.88
+        },
+        {
+          "text": "relation",
+          "start": 68.88,
+          "end": 69.22
+        },
+        {
+          "text": "à",
+          "start": 69.22,
+          "end": 69.34
+        },
+        {
+          "text": "l'objet.",
+          "start": 69.34,
+          "end": 69.94
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "seek": 5548,
+      "start": 70.18,
+      "end": 74.78,
+      "text": " C'est facilement éterréciant parce qu'on a impression de, comme le 10, les utilisateurs",
+      "tokens": [
+        383,
+        6,
+        377,
+        23670,
+        518,
+        1136,
+        391,
+        10521,
+        537,
+        394,
+        6992,
+        421,
+        6,
+        266,
+        257,
+        9995,
+        368,
+        11,
+        5173,
+        476,
+        1266,
+        11,
+        1512,
+        33643,
+        25929
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.6093524909167556,
+      "compression_ratio": 1.6292834890965733,
+      "no_speech_prob": 6.752492481609806e-05,
+      "words": [
+        {
+          "text": "C'est",
+          "start": 70.18,
+          "end": 70.34
+        },
+        {
+          "text": "facilement",
+          "start": 70.34,
+          "end": 70.72
+        },
+        {
+          "text": "éterréciant",
+          "start": 70.72,
+          "end": 71.56
+        },
+        {
+          "text": "parce",
+          "start": 71.56,
+          "end": 71.82
+        },
+        {
+          "text": "qu'on",
+          "start": 71.82,
+          "end": 72.3
+        },
+        {
+          "text": "a",
+          "start": 72.3,
+          "end": 72.4
+        },
+        {
+          "text": "impression",
+          "start": 72.4,
+          "end": 72.74
+        },
+        {
+          "text": "de,",
+          "start": 72.74,
+          "end": 73.36
+        },
+        {
+          "text": "comme",
+          "start": 73.36,
+          "end": 73.8
+        },
+        {
+          "text": "le",
+          "start": 73.8,
+          "end": 73.96
+        },
+        {
+          "text": "10,",
+          "start": 73.96,
+          "end": 74.28
+        },
+        {
+          "text": "les",
+          "start": 74.28,
+          "end": 74.38
+        },
+        {
+          "text": "utilisateurs",
+          "start": 74.38,
+          "end": 74.78
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "seek": 5548,
+      "start": 74.8,
+      "end": 77.93,
+      "text": " et les efforts, elles aident dépendant de cette objet d'un lieu, en fait, une espèce de",
+      "tokens": [
+        1030,
+        1512,
+        6484,
+        11,
+        23576,
+        257,
+        1078,
+        45768,
+        394,
+        368,
+        5550,
+        14964,
+        274,
+        6,
+        409,
+        26036,
+        11,
+        465,
+        3887,
+        11,
+        2251,
+        7089,
+        30236,
+        368
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.6093524909167556,
+      "compression_ratio": 1.6292834890965733,
+      "no_speech_prob": 6.752492481609806e-05,
+      "words": [
+        {
+          "text": "et",
+          "start": 74.8,
+          "end": 74.92
+        },
+        {
+          "text": "les",
+          "start": 74.92,
+          "end": 75.02
+        },
+        {
+          "text": "efforts,",
+          "start": 75.02,
+          "end": 75.22
+        },
+        {
+          "text": "elles",
+          "start": 75.22,
+          "end": 75.32
+        },
+        {
+          "text": "aident",
+          "start": 75.32,
+          "end": 75.44
+        },
+        {
+          "text": "dépendant",
+          "start": 75.44,
+          "end": 76.0
+        },
+        {
+          "text": "de",
+          "start": 76.0,
+          "end": 76.16
+        },
+        {
+          "text": "cette",
+          "start": 76.16,
+          "end": 76.26
+        },
+        {
+          "text": "objet",
+          "start": 76.26,
+          "end": 76.48
+        },
+        {
+          "text": "d'un",
+          "start": 76.48,
+          "end": 76.86
+        },
+        {
+          "text": "lieu,",
+          "start": 76.86,
+          "end": 77.06
+        },
+        {
+          "text": "en",
+          "start": 77.06,
+          "end": 77.18
+        },
+        {
+          "text": "fait,",
+          "start": 77.18,
+          "end": 77.42
+        },
+        {
+          "text": "une",
+          "start": 77.42,
+          "end": 77.52
+        },
+        {
+          "text": "espèce",
+          "start": 77.52,
+          "end": 77.74
+        },
+        {
+          "text": "de",
+          "start": 77.74,
+          "end": 77.93
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "seek": 5548,
+      "start": 77.93,
+      "end": 82.98,
+      "text": " relation de médiation avec le monde qui rendent un peu avec la même sédiforme de",
+      "tokens": [
+        9721,
+        368,
+        42436,
+        399,
+        4163,
+        476,
+        10431,
+        1956,
+        6125,
+        317,
+        517,
+        5604,
+        4163,
+        635,
+        5698,
+        262,
+        7811,
+        8629,
+        68,
+        368
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.6093524909167556,
+      "compression_ratio": 1.6292834890965733,
+      "no_speech_prob": 6.752492481609806e-05,
+      "words": [
+        {
+          "text": "relation",
+          "start": 77.93,
+          "end": 78.34
+        },
+        {
+          "text": "de",
+          "start": 78.34,
+          "end": 78.7
+        },
+        {
+          "text": "médiation",
+          "start": 78.7,
+          "end": 79.4
+        },
+        {
+          "text": "avec",
+          "start": 79.4,
+          "end": 79.74
+        },
+        {
+          "text": "le",
+          "start": 79.74,
+          "end": 79.88
+        },
+        {
+          "text": "monde",
+          "start": 79.88,
+          "end": 80.24
+        },
+        {
+          "text": "qui",
+          "start": 80.24,
+          "end": 81.02
+        },
+        {
+          "text": "rendent",
+          "start": 81.02,
+          "end": 81.74
+        },
+        {
+          "text": "un",
+          "start": 81.74,
+          "end": 81.84
+        },
+        {
+          "text": "peu",
+          "start": 81.84,
+          "end": 81.94
+        },
+        {
+          "text": "avec",
+          "start": 81.94,
+          "end": 82.1
+        },
+        {
+          "text": "la",
+          "start": 82.1,
+          "end": 82.24
+        },
+        {
+          "text": "même",
+          "start": 82.24,
+          "end": 82.34
+        },
+        {
+          "text": "sédiforme",
+          "start": 82.34,
+          "end": 82.86
+        },
+        {
+          "text": "de",
+          "start": 82.86,
+          "end": 82.98
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "seek": 8298,
+      "start": 83.02,
+      "end": 87.68,
+      "text": " le jeu. Donc, à objets inédits, rapport inédits.",
+      "tokens": [
+        476,
+        16748,
+        13,
+        7477,
+        11,
+        1531,
+        1111,
+        25349,
+        294,
+        7811,
+        1208,
+        11,
+        18018,
+        294,
+        7811,
+        1208,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4346100035167876,
+      "compression_ratio": 1.5907335907335907,
+      "no_speech_prob": 3.121094050584361e-05,
+      "words": [
+        {
+          "text": "le",
+          "start": 83.02,
+          "end": 83.12
+        },
+        {
+          "text": "jeu.",
+          "start": 83.12,
+          "end": 83.64
+        },
+        {
+          "text": "Donc,",
+          "start": 83.64,
+          "end": 84.48
+        },
+        {
+          "text": "à",
+          "start": 84.48,
+          "end": 84.86
+        },
+        {
+          "text": "objets",
+          "start": 84.86,
+          "end": 85.36
+        },
+        {
+          "text": "inédits,",
+          "start": 85.36,
+          "end": 86.24
+        },
+        {
+          "text": "rapport",
+          "start": 86.24,
+          "end": 86.62
+        },
+        {
+          "text": "inédits.",
+          "start": 86.62,
+          "end": 87.68
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "seek": 8298,
+      "start": 88.08,
+      "end": 93.78,
+      "text": " Et, ce rapport, si j'en prends Nicolas, frère caractérisée par un mélange de dépenses",
+      "tokens": [
+        3790,
+        11,
+        1769,
+        18018,
+        11,
+        1511,
+        361,
+        6,
+        268,
+        46750,
+        38268,
+        11,
+        431,
+        4212,
+        1032,
+        578,
+        4198,
+        50027,
+        971,
+        517,
+        41953,
+        933,
+        368,
+        27998,
+        9085
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4346100035167876,
+      "compression_ratio": 1.5907335907335907,
+      "no_speech_prob": 3.121094050584361e-05,
+      "words": [
+        {
+          "text": "Et,",
+          "start": 88.08,
+          "end": 88.3
+        },
+        {
+          "text": "ce",
+          "start": 88.3,
+          "end": 88.8
+        },
+        {
+          "text": "rapport,",
+          "start": 88.8,
+          "end": 89.28
+        },
+        {
+          "text": "si",
+          "start": 89.28,
+          "end": 89.56
+        },
+        {
+          "text": "j'en",
+          "start": 89.56,
+          "end": 89.74
+        },
+        {
+          "text": "prends",
+          "start": 89.74,
+          "end": 89.84
+        },
+        {
+          "text": "Nicolas,",
+          "start": 89.84,
+          "end": 90.54
+        },
+        {
+          "text": "frère",
+          "start": 90.54,
+          "end": 91.06
+        },
+        {
+          "text": "caractérisée",
+          "start": 91.06,
+          "end": 91.7
+        },
+        {
+          "text": "par",
+          "start": 91.7,
+          "end": 92.12
+        },
+        {
+          "text": "un",
+          "start": 92.12,
+          "end": 92.32
+        },
+        {
+          "text": "mélange",
+          "start": 92.32,
+          "end": 92.96
+        },
+        {
+          "text": "de",
+          "start": 92.96,
+          "end": 93.24
+        },
+        {
+          "text": "dépenses",
+          "start": 93.24,
+          "end": 93.78
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "seek": 8298,
+      "start": 94.36,
+      "end": 95.0,
+      "text": " et de rojets.",
+      "tokens": [
+        1030,
+        368,
+        744,
+        73,
+        1385,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4346100035167876,
+      "compression_ratio": 1.5907335907335907,
+      "no_speech_prob": 3.121094050584361e-05,
+      "words": [
+        {
+          "text": "et",
+          "start": 94.36,
+          "end": 94.52
+        },
+        {
+          "text": "de",
+          "start": 94.52,
+          "end": 94.62
+        },
+        {
+          "text": "rojets.",
+          "start": 94.62,
+          "end": 95.0
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "seek": 8298,
+      "start": 96.3,
+      "end": 100.4,
+      "text": " Bon, en vrai, il faudrait remonter très très finement toute l'histoire des objectes",
+      "tokens": [
+        7368,
+        11,
+        465,
+        17815,
+        11,
+        1930,
+        38694,
+        8645,
+        890,
+        41806,
+        5732,
+        5732,
+        962,
+        1712,
+        14953,
+        287,
+        6,
+        29093,
+        730,
+        2657,
+        279
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4346100035167876,
+      "compression_ratio": 1.5907335907335907,
+      "no_speech_prob": 3.121094050584361e-05,
+      "words": [
+        {
+          "text": "Bon,",
+          "start": 96.3,
+          "end": 96.4
+        },
+        {
+          "text": "en",
+          "start": 96.4,
+          "end": 96.54
+        },
+        {
+          "text": "vrai,",
+          "start": 96.54,
+          "end": 96.88
+        },
+        {
+          "text": "il",
+          "start": 96.88,
+          "end": 97.1
+        },
+        {
+          "text": "faudrait",
+          "start": 97.1,
+          "end": 97.5
+        },
+        {
+          "text": "remonter",
+          "start": 97.5,
+          "end": 98.02
+        },
+        {
+          "text": "très",
+          "start": 98.02,
+          "end": 98.46
+        },
+        {
+          "text": "très",
+          "start": 98.46,
+          "end": 98.76
+        },
+        {
+          "text": "finement",
+          "start": 98.76,
+          "end": 99.36
+        },
+        {
+          "text": "toute",
+          "start": 99.36,
+          "end": 99.68
+        },
+        {
+          "text": "l'histoire",
+          "start": 99.68,
+          "end": 100.02
+        },
+        {
+          "text": "des",
+          "start": 100.02,
+          "end": 100.2
+        },
+        {
+          "text": "objectes",
+          "start": 100.2,
+          "end": 100.4
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "seek": 8298,
+      "start": 100.4,
+      "end": 105.14,
+      "text": " techniques et de leur infération dans le vie pour déterminer si ce rapport est totalement",
+      "tokens": [
+        7512,
+        1030,
+        368,
+        9580,
+        1536,
+        526,
+        2405,
+        2680,
+        476,
+        4941,
+        2016,
+        2795,
+        29725,
+        260,
+        1511,
+        1769,
+        18018,
+        871,
+        45203
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4346100035167876,
+      "compression_ratio": 1.5907335907335907,
+      "no_speech_prob": 3.121094050584361e-05,
+      "words": [
+        {
+          "text": "techniques",
+          "start": 100.4,
+          "end": 101.02
+        },
+        {
+          "text": "et",
+          "start": 101.02,
+          "end": 101.52
+        },
+        {
+          "text": "de",
+          "start": 101.52,
+          "end": 101.64
+        },
+        {
+          "text": "leur",
+          "start": 101.64,
+          "end": 101.78
+        },
+        {
+          "text": "infération",
+          "start": 101.78,
+          "end": 102.22
+        },
+        {
+          "text": "dans",
+          "start": 102.22,
+          "end": 102.46
+        },
+        {
+          "text": "le",
+          "start": 102.46,
+          "end": 102.56
+        },
+        {
+          "text": "vie",
+          "start": 102.56,
+          "end": 102.78
+        },
+        {
+          "text": "pour",
+          "start": 102.78,
+          "end": 103.06
+        },
+        {
+          "text": "déterminer",
+          "start": 103.06,
+          "end": 103.64
+        },
+        {
+          "text": "si",
+          "start": 103.64,
+          "end": 103.74
+        },
+        {
+          "text": "ce",
+          "start": 103.74,
+          "end": 103.86
+        },
+        {
+          "text": "rapport",
+          "start": 103.86,
+          "end": 104.1
+        },
+        {
+          "text": "est",
+          "start": 104.1,
+          "end": 104.88
+        },
+        {
+          "text": "totalement",
+          "start": 104.88,
+          "end": 105.14
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "seek": 8298,
+      "start": 105.26,
+      "end": 105.92,
+      "text": " inédit.",
+      "tokens": [
+        294,
+        7811,
+        270,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4346100035167876,
+      "compression_ratio": 1.5907335907335907,
+      "no_speech_prob": 3.121094050584361e-05,
+      "words": [
+        {
+          "text": "inédit.",
+          "start": 105.26,
+          "end": 105.92
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "seek": 8298,
+      "start": 106.14,
+      "end": 109.46,
+      "text": " Mais j'ai l'impression comme ça que Nicolas se trompe pas vraiment.",
+      "tokens": [
+        6313,
+        361,
+        6,
+        1301,
+        287,
+        6,
+        36107,
+        5173,
+        2788,
+        631,
+        38268,
+        369,
+        504,
+        298,
+        494,
+        1736,
+        8322,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4346100035167876,
+      "compression_ratio": 1.5907335907335907,
+      "no_speech_prob": 3.121094050584361e-05,
+      "words": [
+        {
+          "text": "Mais",
+          "start": 106.14,
+          "end": 106.34
+        },
+        {
+          "text": "j'ai",
+          "start": 106.34,
+          "end": 106.9
+        },
+        {
+          "text": "l'impression",
+          "start": 106.9,
+          "end": 107.28
+        },
+        {
+          "text": "comme",
+          "start": 107.28,
+          "end": 107.5
+        },
+        {
+          "text": "ça",
+          "start": 107.5,
+          "end": 107.68
+        },
+        {
+          "text": "que",
+          "start": 107.68,
+          "end": 107.96
+        },
+        {
+          "text": "Nicolas",
+          "start": 107.96,
+          "end": 108.34
+        },
+        {
+          "text": "se",
+          "start": 108.34,
+          "end": 108.66
+        },
+        {
+          "text": "trompe",
+          "start": 108.66,
+          "end": 109.0
+        },
+        {
+          "text": "pas",
+          "start": 109.0,
+          "end": 109.1
+        },
+        {
+          "text": "vraiment.",
+          "start": 109.1,
+          "end": 109.46
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "seek": 10970,
+      "start": 109.76,
+      "end": 114.26,
+      "text": " Pour autant, je sache. Il y a eu plein de discussions autour de la voiture ou même",
+      "tokens": [
+        8732,
+        34081,
+        11,
+        1506,
+        262,
+        6000,
+        13,
+        4416,
+        288,
+        257,
+        2228,
+        21088,
+        368,
+        11088,
+        30249,
+        368,
+        635,
+        38859,
+        2820,
+        5698
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.394765736144266,
+      "compression_ratio": 1.7249190938511327,
+      "no_speech_prob": 9.048193533089943e-06,
+      "words": [
+        {
+          "text": "Pour",
+          "start": 109.76,
+          "end": 110.08
+        },
+        {
+          "text": "autant,",
+          "start": 110.08,
+          "end": 110.36
+        },
+        {
+          "text": "je",
+          "start": 110.36,
+          "end": 110.46
+        },
+        {
+          "text": "sache.",
+          "start": 110.46,
+          "end": 110.86
+        },
+        {
+          "text": "Il",
+          "start": 110.86,
+          "end": 111.16
+        },
+        {
+          "text": "y",
+          "start": 111.16,
+          "end": 111.26
+        },
+        {
+          "text": "a",
+          "start": 111.26,
+          "end": 111.36
+        },
+        {
+          "text": "eu",
+          "start": 111.36,
+          "end": 111.46
+        },
+        {
+          "text": "plein",
+          "start": 111.46,
+          "end": 111.78
+        },
+        {
+          "text": "de",
+          "start": 111.78,
+          "end": 112.04
+        },
+        {
+          "text": "discussions",
+          "start": 112.04,
+          "end": 112.46
+        },
+        {
+          "text": "autour",
+          "start": 112.46,
+          "end": 112.96
+        },
+        {
+          "text": "de",
+          "start": 112.96,
+          "end": 113.46
+        },
+        {
+          "text": "la",
+          "start": 113.46,
+          "end": 113.56
+        },
+        {
+          "text": "voiture",
+          "start": 113.56,
+          "end": 113.8
+        },
+        {
+          "text": "ou",
+          "start": 113.8,
+          "end": 114.02
+        },
+        {
+          "text": "même",
+          "start": 114.02,
+          "end": 114.26
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "seek": 10970,
+      "start": 114.42,
+      "end": 118.76,
+      "text": " du téléphone. Mais la dépense n'était pas du même mort, donc le rejet n'en",
+      "tokens": [
+        1581,
+        47159,
+        13,
+        6313,
+        635,
+        27998,
+        1288,
+        297,
+        6,
+        9743,
+        1736,
+        1581,
+        5698,
+        6599,
+        11,
+        5926,
+        476,
+        319,
+        7108,
+        297,
+        6,
+        268
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.394765736144266,
+      "compression_ratio": 1.7249190938511327,
+      "no_speech_prob": 9.048193533089943e-06,
+      "words": [
+        {
+          "text": "du",
+          "start": 114.42,
+          "end": 114.6
+        },
+        {
+          "text": "téléphone.",
+          "start": 114.6,
+          "end": 115.16
+        },
+        {
+          "text": "Mais",
+          "start": 115.16,
+          "end": 115.72
+        },
+        {
+          "text": "la",
+          "start": 115.72,
+          "end": 116.0
+        },
+        {
+          "text": "dépense",
+          "start": 116.0,
+          "end": 116.38
+        },
+        {
+          "text": "n'était",
+          "start": 116.38,
+          "end": 116.62
+        },
+        {
+          "text": "pas",
+          "start": 116.62,
+          "end": 117.02
+        },
+        {
+          "text": "du",
+          "start": 117.02,
+          "end": 117.16
+        },
+        {
+          "text": "même",
+          "start": 117.16,
+          "end": 117.32
+        },
+        {
+          "text": "mort,",
+          "start": 117.32,
+          "end": 117.66
+        },
+        {
+          "text": "donc",
+          "start": 117.66,
+          "end": 117.78
+        },
+        {
+          "text": "le",
+          "start": 117.78,
+          "end": 118.32
+        },
+        {
+          "text": "rejet",
+          "start": 118.32,
+          "end": 118.58
+        },
+        {
+          "text": "n'en",
+          "start": 118.58,
+          "end": 118.76
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "seek": 10970,
+      "start": 118.76,
+      "end": 119.82,
+      "text": " plus n'était pas du même mort.",
+      "tokens": [
+        1804,
+        297,
+        6,
+        9743,
+        1736,
+        1581,
+        5698,
+        6599,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.394765736144266,
+      "compression_ratio": 1.7249190938511327,
+      "no_speech_prob": 9.048193533089943e-06,
+      "words": [
+        {
+          "text": "plus",
+          "start": 118.76,
+          "end": 118.9
+        },
+        {
+          "text": "n'était",
+          "start": 118.9,
+          "end": 119.1
+        },
+        {
+          "text": "pas",
+          "start": 119.1,
+          "end": 119.26
+        },
+        {
+          "text": "du",
+          "start": 119.26,
+          "end": 119.36
+        },
+        {
+          "text": "même",
+          "start": 119.36,
+          "end": 119.5
+        },
+        {
+          "text": "mort.",
+          "start": 119.5,
+          "end": 119.82
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "seek": 10970,
+      "start": 120.06,
+      "end": 123.24,
+      "text": " On peut adorer sa bagnure, en avoir besoin pour plein de choses.",
+      "tokens": [
+        1282,
+        5977,
+        614,
+        17618,
+        601,
+        3411,
+        77,
+        540,
+        11,
+        465,
+        10853,
+        19207,
+        2016,
+        21088,
+        368,
+        14488,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.394765736144266,
+      "compression_ratio": 1.7249190938511327,
+      "no_speech_prob": 9.048193533089943e-06,
+      "words": [
+        {
+          "text": "On",
+          "start": 120.06,
+          "end": 120.22
+        },
+        {
+          "text": "peut",
+          "start": 120.22,
+          "end": 120.32
+        },
+        {
+          "text": "adorer",
+          "start": 120.32,
+          "end": 120.64
+        },
+        {
+          "text": "sa",
+          "start": 120.64,
+          "end": 120.86
+        },
+        {
+          "text": "bagnure,",
+          "start": 120.86,
+          "end": 121.38
+        },
+        {
+          "text": "en",
+          "start": 121.38,
+          "end": 121.52
+        },
+        {
+          "text": "avoir",
+          "start": 121.52,
+          "end": 121.66
+        },
+        {
+          "text": "besoin",
+          "start": 121.66,
+          "end": 122.08
+        },
+        {
+          "text": "pour",
+          "start": 122.08,
+          "end": 122.36
+        },
+        {
+          "text": "plein",
+          "start": 122.36,
+          "end": 122.64
+        },
+        {
+          "text": "de",
+          "start": 122.64,
+          "end": 122.78
+        },
+        {
+          "text": "choses.",
+          "start": 122.78,
+          "end": 123.24
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "seek": 10970,
+      "start": 123.36,
+      "end": 126.56,
+      "text": " Et là, le soir, quand on va se coucher, on la laisse.",
+      "tokens": [
+        3790,
+        3684,
+        11,
+        476,
+        27105,
+        11,
+        6932,
+        322,
+        2773,
+        369,
+        1384,
+        6759,
+        11,
+        322,
+        635,
+        30969,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.394765736144266,
+      "compression_ratio": 1.7249190938511327,
+      "no_speech_prob": 9.048193533089943e-06,
+      "words": [
+        {
+          "text": "Et",
+          "start": 123.36,
+          "end": 123.48
+        },
+        {
+          "text": "là,",
+          "start": 123.48,
+          "end": 123.66
+        },
+        {
+          "text": "le",
+          "start": 123.66,
+          "end": 124.02
+        },
+        {
+          "text": "soir,",
+          "start": 124.02,
+          "end": 124.5
+        },
+        {
+          "text": "quand",
+          "start": 124.5,
+          "end": 124.9
+        },
+        {
+          "text": "on",
+          "start": 124.9,
+          "end": 125.02
+        },
+        {
+          "text": "va",
+          "start": 125.02,
+          "end": 125.12
+        },
+        {
+          "text": "se",
+          "start": 125.12,
+          "end": 125.22
+        },
+        {
+          "text": "coucher,",
+          "start": 125.22,
+          "end": 125.64
+        },
+        {
+          "text": "on",
+          "start": 125.64,
+          "end": 126.04
+        },
+        {
+          "text": "la",
+          "start": 126.04,
+          "end": 126.14
+        },
+        {
+          "text": "laisse.",
+          "start": 126.14,
+          "end": 126.56
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "seek": 10970,
+      "start": 127.06,
+      "end": 130.2,
+      "text": " On l'a pas dans la main, quand on est collis, quand on n'en mène pas au chiot.",
+      "tokens": [
+        1282,
+        287,
+        6,
+        64,
+        1736,
+        2680,
+        635,
+        2135,
+        11,
+        6932,
+        322,
+        871,
+        1263,
+        271,
+        11,
+        6932,
+        322,
+        297,
+        6,
+        268,
+        275,
+        18832,
+        1736,
+        1609,
+        417,
+        6471,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.394765736144266,
+      "compression_ratio": 1.7249190938511327,
+      "no_speech_prob": 9.048193533089943e-06,
+      "words": [
+        {
+          "text": "On",
+          "start": 127.06,
+          "end": 127.3
+        },
+        {
+          "text": "l'a",
+          "start": 127.3,
+          "end": 127.46
+        },
+        {
+          "text": "pas",
+          "start": 127.46,
+          "end": 127.64
+        },
+        {
+          "text": "dans",
+          "start": 127.64,
+          "end": 127.82
+        },
+        {
+          "text": "la",
+          "start": 127.82,
+          "end": 127.94
+        },
+        {
+          "text": "main,",
+          "start": 127.94,
+          "end": 128.3
+        },
+        {
+          "text": "quand",
+          "start": 128.3,
+          "end": 128.44
+        },
+        {
+          "text": "on",
+          "start": 128.44,
+          "end": 128.6
+        },
+        {
+          "text": "est",
+          "start": 128.6,
+          "end": 128.7
+        },
+        {
+          "text": "collis,",
+          "start": 128.7,
+          "end": 129.2
+        },
+        {
+          "text": "quand",
+          "start": 129.2,
+          "end": 129.3
+        },
+        {
+          "text": "on",
+          "start": 129.3,
+          "end": 129.4
+        },
+        {
+          "text": "n'en",
+          "start": 129.4,
+          "end": 129.5
+        },
+        {
+          "text": "mène",
+          "start": 129.5,
+          "end": 129.6
+        },
+        {
+          "text": "pas",
+          "start": 129.6,
+          "end": 129.72
+        },
+        {
+          "text": "au",
+          "start": 129.72,
+          "end": 129.82
+        },
+        {
+          "text": "chiot.",
+          "start": 129.82,
+          "end": 130.2
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "seek": 10970,
+      "start": 130.88,
+      "end": 135.1,
+      "text": " On pouvait être émervé par son mome qui occupeait la ligne de téléphone pendant une",
+      "tokens": [
+        1282,
+        45913,
+        7418,
+        1136,
+        936,
+        15797,
+        971,
+        1872,
+        275,
+        423,
+        1956,
+        2678,
+        84,
+        494,
+        1001,
+        635,
+        34207,
+        368,
+        47159,
+        17338,
+        2251
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.394765736144266,
+      "compression_ratio": 1.7249190938511327,
+      "no_speech_prob": 9.048193533089943e-06,
+      "words": [
+        {
+          "text": "On",
+          "start": 130.88,
+          "end": 131.0
+        },
+        {
+          "text": "pouvait",
+          "start": 131.0,
+          "end": 131.24
+        },
+        {
+          "text": "être",
+          "start": 131.24,
+          "end": 131.7
+        },
+        {
+          "text": "émervé",
+          "start": 131.7,
+          "end": 132.2
+        },
+        {
+          "text": "par",
+          "start": 132.2,
+          "end": 132.42
+        },
+        {
+          "text": "son",
+          "start": 132.42,
+          "end": 132.68
+        },
+        {
+          "text": "mome",
+          "start": 132.68,
+          "end": 133.04
+        },
+        {
+          "text": "qui",
+          "start": 133.04,
+          "end": 133.26
+        },
+        {
+          "text": "occupeait",
+          "start": 133.26,
+          "end": 133.72
+        },
+        {
+          "text": "la",
+          "start": 133.72,
+          "end": 133.82
+        },
+        {
+          "text": "ligne",
+          "start": 133.82,
+          "end": 134.0
+        },
+        {
+          "text": "de",
+          "start": 134.0,
+          "end": 134.14
+        },
+        {
+          "text": "téléphone",
+          "start": 134.14,
+          "end": 134.44
+        },
+        {
+          "text": "pendant",
+          "start": 134.44,
+          "end": 134.8
+        },
+        {
+          "text": "une",
+          "start": 134.8,
+          "end": 135.1
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "seek": 10970,
+      "start": 135.1,
+      "end": 136.88,
+      "text": " heure chaque soir pour discuter avec un copain.",
+      "tokens": [
+        30027,
+        18920,
+        27105,
+        2016,
+        2983,
+        20314,
+        4163,
+        517,
+        2971,
+        491,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.394765736144266,
+      "compression_ratio": 1.7249190938511327,
+      "no_speech_prob": 9.048193533089943e-06,
+      "words": [
+        {
+          "text": "heure",
+          "start": 135.1,
+          "end": 135.36
+        },
+        {
+          "text": "chaque",
+          "start": 135.36,
+          "end": 135.52
+        },
+        {
+          "text": "soir",
+          "start": 135.52,
+          "end": 135.76
+        },
+        {
+          "text": "pour",
+          "start": 135.76,
+          "end": 135.94
+        },
+        {
+          "text": "discuter",
+          "start": 135.94,
+          "end": 136.26
+        },
+        {
+          "text": "avec",
+          "start": 136.26,
+          "end": 136.44
+        },
+        {
+          "text": "un",
+          "start": 136.44,
+          "end": 136.6
+        },
+        {
+          "text": "copain.",
+          "start": 136.6,
+          "end": 136.88
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "seek": 13702,
+      "start": 137.24,
+      "end": 141.8,
+      "text": " Mais ça ne ressemble pas à ce qu'on peut ressentir à voir même mome aujourd'hui",
+      "tokens": [
+        6313,
+        2788,
+        408,
+        725,
+        37227,
+        1736,
+        1531,
+        1769,
+        421,
+        6,
+        266,
+        5977,
+        24689,
+        317,
+        347,
+        1531,
+        10695,
+        5698,
+        275,
+        423,
+        14023,
+        6,
+        10556
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5734858703613281,
+      "compression_ratio": 1.5562700964630225,
+      "no_speech_prob": 3.1260256037057843e-06,
+      "words": [
+        {
+          "text": "Mais",
+          "start": 137.24,
+          "end": 137.52
+        },
+        {
+          "text": "ça",
+          "start": 137.52,
+          "end": 137.62
+        },
+        {
+          "text": "ne",
+          "start": 137.62,
+          "end": 137.72
+        },
+        {
+          "text": "ressemble",
+          "start": 137.72,
+          "end": 138.14
+        },
+        {
+          "text": "pas",
+          "start": 138.14,
+          "end": 138.66
+        },
+        {
+          "text": "à",
+          "start": 138.66,
+          "end": 138.94
+        },
+        {
+          "text": "ce",
+          "start": 138.94,
+          "end": 139.04
+        },
+        {
+          "text": "qu'on",
+          "start": 139.04,
+          "end": 139.16
+        },
+        {
+          "text": "peut",
+          "start": 139.16,
+          "end": 139.3
+        },
+        {
+          "text": "ressentir",
+          "start": 139.3,
+          "end": 140.04
+        },
+        {
+          "text": "à",
+          "start": 140.04,
+          "end": 140.24
+        },
+        {
+          "text": "voir",
+          "start": 140.24,
+          "end": 140.48
+        },
+        {
+          "text": "même",
+          "start": 140.48,
+          "end": 140.86
+        },
+        {
+          "text": "mome",
+          "start": 140.86,
+          "end": 141.18
+        },
+        {
+          "text": "aujourd'hui",
+          "start": 141.18,
+          "end": 141.8
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "seek": 13702,
+      "start": 141.92,
+      "end": 145.76,
+      "text": " continuuellement avec son smartphone dans la main, comme c'était une sorte de estimateur",
+      "tokens": [
+        2993,
+        31816,
+        4163,
+        1872,
+        13307,
+        2680,
+        635,
+        2135,
+        11,
+        5173,
+        269,
+        6,
+        9743,
+        2251,
+        25559,
+        368,
+        8017,
+        15540
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5734858703613281,
+      "compression_ratio": 1.5562700964630225,
+      "no_speech_prob": 3.1260256037057843e-06,
+      "words": [
+        {
+          "text": "continuuellement",
+          "start": 141.92,
+          "end": 142.8
+        },
+        {
+          "text": "avec",
+          "start": 142.8,
+          "end": 143.18
+        },
+        {
+          "text": "son",
+          "start": 143.18,
+          "end": 143.36
+        },
+        {
+          "text": "smartphone",
+          "start": 143.36,
+          "end": 143.64
+        },
+        {
+          "text": "dans",
+          "start": 143.64,
+          "end": 143.92
+        },
+        {
+          "text": "la",
+          "start": 143.92,
+          "end": 144.02
+        },
+        {
+          "text": "main,",
+          "start": 144.02,
+          "end": 144.26
+        },
+        {
+          "text": "comme",
+          "start": 144.26,
+          "end": 144.52
+        },
+        {
+          "text": "c'était",
+          "start": 144.52,
+          "end": 144.78
+        },
+        {
+          "text": "une",
+          "start": 144.78,
+          "end": 144.94
+        },
+        {
+          "text": "sorte",
+          "start": 144.94,
+          "end": 145.1
+        },
+        {
+          "text": "de",
+          "start": 145.1,
+          "end": 145.2
+        },
+        {
+          "text": "estimateur",
+          "start": 145.2,
+          "end": 145.76
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "seek": 13702,
+      "start": 145.94,
+      "end": 148.9,
+      "text": " extère de l'intempis de lâcher à l'éantrénée, ça m'a eu immédiate.",
+      "tokens": [
+        1279,
+        4212,
+        368,
+        287,
+        6,
+        686,
+        15970,
+        271,
+        368,
+        48835,
+        6759,
+        1531,
+        287,
+        6,
+        526,
+        394,
+        81,
+        3516,
+        3856,
+        11,
+        2788,
+        275,
+        6,
+        64,
+        2228,
+        3397,
+        526,
+        4504,
+        473,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5734858703613281,
+      "compression_ratio": 1.5562700964630225,
+      "no_speech_prob": 3.1260256037057843e-06,
+      "words": [
+        {
+          "text": "extère",
+          "start": 145.94,
+          "end": 146.38
+        },
+        {
+          "text": "de",
+          "start": 146.38,
+          "end": 146.48
+        },
+        {
+          "text": "l'intempis",
+          "start": 146.48,
+          "end": 146.7
+        },
+        {
+          "text": "de",
+          "start": 146.7,
+          "end": 146.9
+        },
+        {
+          "text": "lâcher",
+          "start": 146.9,
+          "end": 147.32
+        },
+        {
+          "text": "à",
+          "start": 147.32,
+          "end": 147.44
+        },
+        {
+          "text": "l'éantrénée,",
+          "start": 147.44,
+          "end": 147.94
+        },
+        {
+          "text": "ça",
+          "start": 147.94,
+          "end": 148.04
+        },
+        {
+          "text": "m'a",
+          "start": 148.04,
+          "end": 148.26
+        },
+        {
+          "text": "eu",
+          "start": 148.26,
+          "end": 148.42
+        },
+        {
+          "text": "immédiate.",
+          "start": 148.42,
+          "end": 148.9
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "seek": 13702,
+      "start": 149.06,
+      "end": 152.18,
+      "text": " Bon, je dis ça pour le mome, mais évidemment, va là pour nos aussi.",
+      "tokens": [
+        7368,
+        11,
+        1506,
+        717,
+        2788,
+        2016,
+        476,
+        275,
+        423,
+        11,
+        2420,
+        24724,
+        11,
+        2773,
+        3684,
+        2016,
+        3269,
+        6212,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5734858703613281,
+      "compression_ratio": 1.5562700964630225,
+      "no_speech_prob": 3.1260256037057843e-06,
+      "words": [
+        {
+          "text": "Bon,",
+          "start": 149.06,
+          "end": 149.3
+        },
+        {
+          "text": "je",
+          "start": 149.3,
+          "end": 149.4
+        },
+        {
+          "text": "dis",
+          "start": 149.4,
+          "end": 149.5
+        },
+        {
+          "text": "ça",
+          "start": 149.5,
+          "end": 149.62
+        },
+        {
+          "text": "pour",
+          "start": 149.62,
+          "end": 149.72
+        },
+        {
+          "text": "le",
+          "start": 149.72,
+          "end": 149.82
+        },
+        {
+          "text": "mome,",
+          "start": 149.82,
+          "end": 150.24
+        },
+        {
+          "text": "mais",
+          "start": 150.24,
+          "end": 150.44
+        },
+        {
+          "text": "évidemment,",
+          "start": 150.44,
+          "end": 151.1
+        },
+        {
+          "text": "va",
+          "start": 151.1,
+          "end": 151.28
+        },
+        {
+          "text": "là",
+          "start": 151.28,
+          "end": 151.42
+        },
+        {
+          "text": "pour",
+          "start": 151.42,
+          "end": 151.62
+        },
+        {
+          "text": "nos",
+          "start": 151.62,
+          "end": 151.72
+        },
+        {
+          "text": "aussi.",
+          "start": 151.72,
+          "end": 152.18
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "seek": 13702,
+      "start": 152.66,
+      "end": 154.68,
+      "text": " Donc, rapport immédiate d'accord.",
+      "tokens": [
+        7477,
+        11,
+        18018,
+        3397,
+        526,
+        4504,
+        473,
+        274,
+        6,
+        19947,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5734858703613281,
+      "compression_ratio": 1.5562700964630225,
+      "no_speech_prob": 3.1260256037057843e-06,
+      "words": [
+        {
+          "text": "Donc,",
+          "start": 152.66,
+          "end": 153.0
+        },
+        {
+          "text": "rapport",
+          "start": 153.0,
+          "end": 153.42
+        },
+        {
+          "text": "immédiate",
+          "start": 153.42,
+          "end": 154.24
+        },
+        {
+          "text": "d'accord.",
+          "start": 154.24,
+          "end": 154.68
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "seek": 13702,
+      "start": 155.62,
+      "end": 158.36,
+      "text": " Mais pourquoi, à ton impression qu'on en sortira jamais?",
+      "tokens": [
+        6313,
+        19934,
+        11,
+        1531,
+        2952,
+        9995,
+        421,
+        6,
+        266,
+        465,
+        26906,
+        64,
+        14540,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5734858703613281,
+      "compression_ratio": 1.5562700964630225,
+      "no_speech_prob": 3.1260256037057843e-06,
+      "words": [
+        {
+          "text": "Mais",
+          "start": 155.62,
+          "end": 155.9
+        },
+        {
+          "text": "pourquoi,",
+          "start": 155.9,
+          "end": 156.36
+        },
+        {
+          "text": "à",
+          "start": 156.36,
+          "end": 156.48
+        },
+        {
+          "text": "ton",
+          "start": 156.48,
+          "end": 156.66
+        },
+        {
+          "text": "impression",
+          "start": 156.66,
+          "end": 156.96
+        },
+        {
+          "text": "qu'on",
+          "start": 156.96,
+          "end": 157.28
+        },
+        {
+          "text": "en",
+          "start": 157.28,
+          "end": 157.38
+        },
+        {
+          "text": "sortira",
+          "start": 157.38,
+          "end": 157.84
+        },
+        {
+          "text": "jamais?",
+          "start": 157.84,
+          "end": 158.36
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "seek": 13702,
+      "start": 159.16,
+      "end": 162.4,
+      "text": " Et puis, il faut en remettre la faute sur les gens qui ont créé cette",
+      "tokens": [
+        3790,
+        9093,
+        11,
+        1930,
+        8487,
+        465,
+        890,
+        40681,
+        635,
+        2050,
+        1169,
+        1022,
+        1512,
+        10668,
+        1956,
+        6592,
+        15609,
+        526,
+        5550
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5734858703613281,
+      "compression_ratio": 1.5562700964630225,
+      "no_speech_prob": 3.1260256037057843e-06,
+      "words": [
+        {
+          "text": "Et",
+          "start": 159.16,
+          "end": 159.26
+        },
+        {
+          "text": "puis,",
+          "start": 159.26,
+          "end": 159.58
+        },
+        {
+          "text": "il",
+          "start": 159.58,
+          "end": 159.68
+        },
+        {
+          "text": "faut",
+          "start": 159.68,
+          "end": 159.78
+        },
+        {
+          "text": "en",
+          "start": 159.78,
+          "end": 159.88
+        },
+        {
+          "text": "remettre",
+          "start": 159.88,
+          "end": 160.1
+        },
+        {
+          "text": "la",
+          "start": 160.1,
+          "end": 160.28
+        },
+        {
+          "text": "faute",
+          "start": 160.28,
+          "end": 160.62
+        },
+        {
+          "text": "sur",
+          "start": 160.62,
+          "end": 160.9
+        },
+        {
+          "text": "les",
+          "start": 160.9,
+          "end": 161.22
+        },
+        {
+          "text": "gens",
+          "start": 161.22,
+          "end": 161.42
+        },
+        {
+          "text": "qui",
+          "start": 161.42,
+          "end": 161.58
+        },
+        {
+          "text": "ont",
+          "start": 161.58,
+          "end": 161.68
+        },
+        {
+          "text": "créé",
+          "start": 161.68,
+          "end": 162.3
+        },
+        {
+          "text": "cette",
+          "start": 162.3,
+          "end": 162.4
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "seek": 16228,
+      "start": 162.4,
+      "end": 166.3,
+      "text": " route merveilleux et diabolique, qui a dit à bollique par coeur, merveilleux.",
+      "tokens": [
+        7955,
+        3551,
+        303,
+        3409,
+        2449,
+        1030,
+        33227,
+        401,
+        1925,
+        11,
+        1956,
+        257,
+        6176,
+        1531,
+        748,
+        285,
+        1925,
+        971,
+        45781,
+        11,
+        3551,
+        303,
+        3409,
+        2449,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.7643054464588994,
+      "compression_ratio": 1.544041450777202,
+      "no_speech_prob": 3.89045562769752e-05,
+      "words": [
+        {
+          "text": "route",
+          "start": 162.4,
+          "end": 162.62
+        },
+        {
+          "text": "merveilleux",
+          "start": 162.62,
+          "end": 163.32
+        },
+        {
+          "text": "et",
+          "start": 163.32,
+          "end": 163.42
+        },
+        {
+          "text": "diabolique,",
+          "start": 163.42,
+          "end": 163.82
+        },
+        {
+          "text": "qui",
+          "start": 163.82,
+          "end": 163.92
+        },
+        {
+          "text": "a",
+          "start": 163.92,
+          "end": 164.02
+        },
+        {
+          "text": "dit",
+          "start": 164.02,
+          "end": 164.12
+        },
+        {
+          "text": "à",
+          "start": 164.12,
+          "end": 164.22
+        },
+        {
+          "text": "bollique",
+          "start": 164.22,
+          "end": 164.32
+        },
+        {
+          "text": "par",
+          "start": 164.32,
+          "end": 164.52
+        },
+        {
+          "text": "coeur,",
+          "start": 164.52,
+          "end": 164.78
+        },
+        {
+          "text": "merveilleux.",
+          "start": 164.78,
+          "end": 166.3
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "seek": 16228,
+      "start": 167.36,
+      "end": 168.84,
+      "text": " Les économistes parlent de dépendance du santé.",
+      "tokens": [
+        6965,
+        31171,
+        22368,
+        13734,
+        317,
+        368,
+        45768,
+        719,
+        1581,
+        30068,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.7643054464588994,
+      "compression_ratio": 1.544041450777202,
+      "no_speech_prob": 3.89045562769752e-05,
+      "words": [
+        {
+          "text": "Les",
+          "start": 167.36,
+          "end": 167.46
+        },
+        {
+          "text": "économistes",
+          "start": 167.46,
+          "end": 167.56
+        },
+        {
+          "text": "parlent",
+          "start": 167.56,
+          "end": 167.78
+        },
+        {
+          "text": "de",
+          "start": 167.78,
+          "end": 167.88
+        },
+        {
+          "text": "dépendance",
+          "start": 167.88,
+          "end": 168.32
+        },
+        {
+          "text": "du",
+          "start": 168.32,
+          "end": 168.5
+        },
+        {
+          "text": "santé.",
+          "start": 168.5,
+          "end": 168.84
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "seek": 16228,
+      "start": 168.84,
+      "end": 172.72,
+      "text": " Ces vidéos, en fait, on est un santé qui a été établie, c'est un soit mon termine,",
+      "tokens": [
+        28414,
+        25417,
+        11,
+        465,
+        3887,
+        11,
+        322,
+        871,
+        517,
+        30068,
+        1956,
+        257,
+        8862,
+        4823,
+        455,
+        6302,
+        11,
+        269,
+        6,
+        377,
+        517,
+        12703,
+        1108,
+        1433,
+        533,
+        11
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.7643054464588994,
+      "compression_ratio": 1.544041450777202,
+      "no_speech_prob": 3.89045562769752e-05,
+      "words": [
+        {
+          "text": "Ces",
+          "start": 168.84,
+          "end": 169.14
+        },
+        {
+          "text": "vidéos,",
+          "start": 169.14,
+          "end": 169.5
+        },
+        {
+          "text": "en",
+          "start": 169.5,
+          "end": 169.62
+        },
+        {
+          "text": "fait,",
+          "start": 169.62,
+          "end": 169.72
+        },
+        {
+          "text": "on",
+          "start": 169.72,
+          "end": 169.82
+        },
+        {
+          "text": "est",
+          "start": 169.82,
+          "end": 169.92
+        },
+        {
+          "text": "un",
+          "start": 169.92,
+          "end": 170.16
+        },
+        {
+          "text": "santé",
+          "start": 170.16,
+          "end": 170.72
+        },
+        {
+          "text": "qui",
+          "start": 170.72,
+          "end": 170.88
+        },
+        {
+          "text": "a",
+          "start": 170.88,
+          "end": 170.98
+        },
+        {
+          "text": "été",
+          "start": 170.98,
+          "end": 171.08
+        },
+        {
+          "text": "établie,",
+          "start": 171.08,
+          "end": 171.6
+        },
+        {
+          "text": "c'est",
+          "start": 171.6,
+          "end": 171.74
+        },
+        {
+          "text": "un",
+          "start": 171.74,
+          "end": 171.88
+        },
+        {
+          "text": "soit",
+          "start": 171.88,
+          "end": 172.12
+        },
+        {
+          "text": "mon",
+          "start": 172.12,
+          "end": 172.28
+        },
+        {
+          "text": "termine,",
+          "start": 172.28,
+          "end": 172.72
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "seek": 17312,
+      "start": 173.14,
+      "end": 177.84,
+      "text": " soit définissant des beurs, on définisse un signalétique.",
+      "tokens": [
+        50364,
+        12703,
+        40763,
+        29492,
+        730,
+        312,
+        2156,
+        11,
+        322,
+        40763,
+        7746,
+        517,
+        6358,
+        42379,
+        13,
+        51436
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.9428024291992188,
+      "compression_ratio": 1.0169491525423728,
+      "no_speech_prob": 6.687085260637105e-05,
+      "words": [
+        {
+          "text": "soit",
+          "start": 173.14,
+          "end": 174.08
+        },
+        {
+          "text": "définissant",
+          "start": 174.08,
+          "end": 175.5
+        },
+        {
+          "text": "des",
+          "start": 175.5,
+          "end": 175.68
+        },
+        {
+          "text": "beurs,",
+          "start": 175.68,
+          "end": 175.96
+        },
+        {
+          "text": "on",
+          "start": 175.96,
+          "end": 176.06
+        },
+        {
+          "text": "définisse",
+          "start": 176.06,
+          "end": 176.42
+        },
+        {
+          "text": "un",
+          "start": 176.42,
+          "end": 176.6
+        },
+        {
+          "text": "signalétique.",
+          "start": 176.6,
+          "end": 177.84
+        }
+      ]
+    }
+  ],
+  "language": "fr"
+}
