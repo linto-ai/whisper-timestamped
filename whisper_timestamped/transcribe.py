@@ -27,7 +27,7 @@ import logging
 logger = logging.getLogger("whisper_timestamped")
 
 
-def transcribe(
+def transcribe_timestamped(
     # main Whisper options
     model,
     audio,
@@ -38,9 +38,9 @@ def transcribe(
     min_word_duration=0.1,
     plot_word_alignment=False,
     # other Whisper options
-    temperature=0.0,
+    temperature=0.0, # TODO: support list
     best_of=5,
-    beam_size=5,
+    beam_size=None, # TODO: support 5
     patience=None,
     length_penalty=None,
     compression_ratio_threshold=2.4,
@@ -783,7 +783,7 @@ def cli():
 
     for audio_path in audio_files:
 
-        result = transcribe(
+        result = transcribe_timestamped(
             model, audio_path,
             temperature=temperature,
             plot_word_alignment=plot_word_alignment,
