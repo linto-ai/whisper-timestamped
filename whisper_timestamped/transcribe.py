@@ -612,6 +612,15 @@ def write_srt_words(transcript, file):
             )
             i += 1
 
+def write_csv_words(transcript, file):
+    for segment in transcript:
+        for word in segment["words"]:
+            print(
+                f"{word['start']},{word['end']},{word['text']}\n",
+                file=file,
+                flush=True,
+            )
+
 def cli():
 
     import os
@@ -630,6 +639,13 @@ def cli():
     parser.add_argument("--model_dir", default=None, help="The path to save model files; uses ~/.cache/whisper by default", type=str)
     parser.add_argument("--device", default="cuda:0" if torch.cuda.is_available() else "cpu", help="device to use for PyTorch inference")
     parser.add_argument("--output_dir", "-o", default=None, help="directory to save the outputs", type=str)
+
+    parser.add_argument("--csv", default=True, help="directory to save the outputs", type=str2bool)
+    parser.add_argument("--json", default=False, help="directory to save the outputs", type=str2bool)
+    parser.add_argument("--srt", default=True, help="directory to save the outputs", type=str2bool)
+    parser.add_argument("--txt", default=True, help="directory to save the outputs", type=str2bool)
+    parser.add_argument("--vtt", default=True, help="directory to save the outputs", type=str2bool)
+
     parser.add_argument("--verbose", type=str2bool, default=False, help="Whether to print out the progress and debug messages of Whisper")
     
     parser.add_argument("--task", default="transcribe", help="Whether to perform X->X speech recognition ('transcribe') or X->English translation ('translate')", choices=["transcribe", "translate"], type=str)
@@ -665,6 +681,15 @@ def cli():
     model = args.pop("model")
     device = args.pop("device")
     model_dir = args.pop("model_dir")
+
+    csv_out = args.pop("csv")
+    json_out = args.pop("json")
+    srt_out = args.pop("srt")
+    txt_out = args.pop("txt")
+    vtt_out = args.pop("vtt")
+
+
+
     model = whisper.load_model(model, device=device, download_root=model_dir)
 
     plot_word_alignment = args.pop("plot")
@@ -684,26 +709,34 @@ def cli():
         if output_dir:
 
             outname = os.path.join(output_dir, os.path.basename(audio_path))
-
-            # save JSON
-            with open(outname + ".words.json", "w", encoding="utf-8") as js:
-                json.dump(result, js, indent=2, ensure_ascii=False)
+            if json_out:
+                # save JSON
+                with open(outname + ".words.json", "w", encoding="utf-8") as js:
+                    json.dump(result, js, indent=2, ensure_ascii=False)
 
             # save TXT
-            with open(outname + ".txt", "w", encoding="utf-8") as txt:
-                write_txt(result["segments"], file=txt)
+            if txt_out:
+                with open(outname + ".txt", "w", encoding="utf-8") as txt:
+                    write_txt(result["segments"], file=txt)
 
             # save VTT
-            with open(outname + ".vtt", "w", encoding="utf-8") as vtt:
-                write_vtt(result["segments"], file=vtt)
-            with open(outname + ".words.vtt", "w", encoding="utf-8") as vtt:
-                write_vtt_words(result["segments"], file=vtt)
+            if vtt_out:
+                with open(outname + ".vtt", "w", encoding="utf-8") as vtt:
+                    write_vtt(result["segments"], file=vtt)
+                with open(outname + ".words.vtt", "w", encoding="utf-8") as vtt:
+                    write_vtt_words(result["segments"], file=vtt)
 
             # save SRT
-            with open(outname + ".srt", "w", encoding="utf-8") as srt:
-                write_srt(result["segments"], file=srt)
-            with open(outname + ".words.srt", "w", encoding="utf-8") as srt:
-                write_srt_words(result["segments"], file=srt)
+            if srt_out:
+                with open(outname + ".srt", "w", encoding="utf-8") as srt:
+                    write_srt(result["segments"], file=srt)
+                with open(outname + ".words.srt", "w", encoding="utf-8") as srt:
+                    write_srt_words(result["segments"], file=srt)
+
+            # save CSV
+            if csv_out:
+                with open(outname + ".words.csv", "w", encoding="utf-8") as csv:
+                    write_csv_words(result["segments"], file=csv)
 
         elif not args["verbose"]:
 
