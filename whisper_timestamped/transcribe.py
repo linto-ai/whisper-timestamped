@@ -334,43 +334,47 @@ def transcribe_timestamped(
             if len(curr_tokens) == 1:
                 chunk_tokens_nosot.append(curr_tokens[-1].item())
 
-    # Add hooks to the model, to get tokens and attention weights on the fly
-    if plot_word_alignment:
-        def hook_mfcc(layer, ins, outs):
-            nonlocal mfcc
-            mfcc = ins[0]
-        model.encoder.conv1.register_forward_hook(hook_mfcc)
-    model.decoder.token_embedding.register_forward_hook(hook_input_tokens)
-    for i, block in enumerate(model.decoder.blocks):
-        block.cross_attn.register_forward_hook(
-            lambda layer, ins, outs, index=i: hook_attention_weights(layer, ins, outs, index))
+    embedding_weights = None 
+    def hook_output_logits(layer, ins, outs):
+        nonlocal no_speech_prob, chunk_logprobs, tok_indices, chunk_tokens, embedding_weights, has_started
+        
+        if embedding_weights is None:
+            embedding_weights = torch.transpose(model.decoder.token_embedding.weight, 0, 1).to(outs[0].dtype)
 
-    if no_speech_threshold is not None:
-        embedding_weights = torch.transpose(model.decoder.token_embedding.weight, 0, 1)
-        def hook_output_logits(layer, ins, outs):
-            nonlocal no_speech_prob, chunk_logprobs, tok_indices, chunk_tokens, embedding_weights, has_started
-            
-            if embedding_weights.dtype != outs[0].dtype:
-                embedding_weights = embedding_weights.to(outs[0].dtype)
+        # Get the probability of silence
+        if sot_index is not None:
+            logits = (outs[0][sot_index,:] @ embedding_weights).float()
+            logits = logits.softmax(dim=-1)
+            no_speech_prob = logits[tokenizer.no_speech].item()
+        
+        # Get the log-probabilities of tokens (we don't know yet which one will be chosen)
+        if has_started:
+            logits = (outs[0][-1:,:] @ embedding_weights).float()
+            tokens = torch.cat(chunk_tokens).unsqueeze(0)
+            for logit_filter in logit_filters:
+                logit_filter.apply(logits, tokens)
+            logits = F.log_softmax(logits.squeeze(0), dim=-1)
+            chunk_logprobs.append(logits)
 
-            # Get the probability of silence
-            if sot_index is not None:
-                logits = (outs[0][sot_index,:] @ embedding_weights).float()
-                logits = logits.softmax(dim=-1)
-                no_speech_prob = logits[tokenizer.no_speech].item()
-            
-            # Get the log-probabilities of tokens (we don't know yet which one will be chosen)
-            if has_started:
-                logits = (outs[0][-1:,:] @ embedding_weights).float()
-                tokens = torch.cat(chunk_tokens).unsqueeze(0)
-                for logit_filter in logit_filters:
-                    logit_filter.apply(logits, tokens)
-                logits = F.log_softmax(logits.squeeze(0), dim=-1)
-                chunk_logprobs.append(logits)
+    try:
 
-        model.decoder.ln.register_forward_hook(hook_output_logits)
+        # Add hooks to the model, to get tokens and attention weights on the fly
+        all_hooks = []
+        if plot_word_alignment:
+            def hook_mfcc(layer, ins, outs):
+                nonlocal mfcc
+                mfcc = ins[0]
+            all_hooks.append(model.encoder.conv1.register_forward_hook(hook_mfcc))
+        all_hooks.append(model.decoder.token_embedding.register_forward_hook(hook_input_tokens))
+        for i, block in enumerate(model.decoder.blocks):
+            all_hooks.append(
+                block.cross_attn.register_forward_hook(
+                    lambda layer, ins, outs, index=i: hook_attention_weights(layer, ins, outs, index))
+            )
+        if no_speech_threshold is not None:
+            all_hooks.append(model.decoder.ln.register_forward_hook(hook_output_logits))
 
-    transcription = model.transcribe(audio,
+        transcription = model.transcribe(audio,
                                      language=language,
                                      task=task,
                                      fp16=fp16,
@@ -387,6 +391,11 @@ def transcribe_timestamped(
                                      suppress_tokens=suppress_tokens,
                                      verbose=verbose
                                      )
+    finally:
+
+        # Remove hooks
+        for hook in all_hooks:
+            hook.remove()
 
     # Finalize (collect last segment)
     may_flush_segment()

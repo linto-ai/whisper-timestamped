@@ -162,9 +162,19 @@ class TestPythonImport(TestHelper):
 
         model = whisper_timestamped.load_model("tiny")
 
-        res = whisper_timestamped.transcribe(model, self.get_data_path("bonjour.wav"))
-        expected = json.load(open(self.get_expected_path("tiny_auto/bonjour.wav.words.json", check = True)))
-        self.assertClose(res, expected)
+        for filename in "bonjour.wav", "laugh1.mp3", "laugh2.mp3":
+            res = whisper_timestamped.transcribe(model, self.get_data_path(filename))
+            expected = self.get_expected(filename, "tiny_auto")
+            self.assertClose(res, expected)
+
+        for filename in "bonjour.wav", "laugh1.mp3", "laugh2.mp3":
+            res = whisper_timestamped.transcribe(model, self.get_data_path(filename), language="fr")
+            expected = self.get_expected(filename, "tiny_fr")
+            self.assertClose(res, expected)
+
+    def get_expected(self, input, dirname):
+        with open(self.get_expected_path(f"{dirname}/{input}.words.json", check = True)) as f:
+            return json.load(f)
 
 class TestHelperCli(TestHelper):
 

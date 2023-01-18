@@ -12,7 +12,7 @@ dependency_links = [
 setup(
     name="whisper-timestamped",
     py_modules=["whisper_timestamped"],
-    version="1.1",
+    version="1.2",
     description="Add to OpenAI Whisper the capability to give word timestamps",
     readme="README.md",
     python_requires=">=3.7",
