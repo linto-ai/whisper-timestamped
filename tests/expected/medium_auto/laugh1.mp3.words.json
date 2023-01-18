@@ -17,11 +17,13 @@
       "avg_logprob": -1.2422116279602051,
       "compression_ratio": 0.6666666666666666,
       "no_speech_prob": 0.5563598275184631,
+      "confidence": 0.146,
       "words": [
         {
           "text": "hahahaha",
           "start": 0.02,
-          "end": 1.42
+          "end": 1.42,
+          "confidence": 0.146
         }
       ]
     }

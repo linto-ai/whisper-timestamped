@@ -17,11 +17,13 @@
       "avg_logprob": -1.0973867416381835,
       "compression_ratio": 0.38461538461538464,
       "no_speech_prob": 0.5563598275184631,
+      "confidence": 0.265,
       "words": [
         {
           "text": "Rires",
           "start": 0.02,
-          "end": 1.7
+          "end": 1.7,
+          "confidence": 0.265
         }
       ]
     }

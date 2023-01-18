@@ -15,11 +15,13 @@
       "avg_logprob": -0.774240239461263,
       "compression_ratio": 0.8181818181818182,
       "no_speech_prob": 0.04296562075614929,
+      "confidence": 0.578,
       "words": [
         {
           "text": "Bonjour!",
           "start": 0.46,
-          "end": 1.36
+          "end": 1.36,
+          "confidence": 0.578
         }
       ]
     },
@@ -45,31 +47,37 @@
       "avg_logprob": -0.48053342645818536,
       "compression_ratio": 0.7714285714285715,
       "no_speech_prob": 0.04136796295642853,
+      "confidence": 0.655,
       "words": [
         {
           "text": "Est-ce",
           "start": 1.86,
-          "end": 2.14
+          "end": 2.14,
+          "confidence": 0.549
         },
         {
           "text": "que",
           "start": 2.14,
-          "end": 2.18
+          "end": 2.18,
+          "confidence": 0.849
         },
         {
           "text": "vous",
           "start": 2.18,
-          "end": 2.34
+          "end": 2.34,
+          "confidence": 0.993
         },
         {
           "text": "allez",
           "start": 2.34,
-          "end": 2.48
+          "end": 2.48,
+          "confidence": 0.299
         },
         {
           "text": "bien?",
           "start": 2.48,
-          "end": 3.06
+          "end": 3.06,
+          "confidence": 0.901
         }
       ]
     },
@@ -87,11 +95,13 @@
       "avg_logprob": -0.3400673548380534,
       "compression_ratio": 0.8181818181818182,
       "no_speech_prob": 0.5503692030906677,
+      "confidence": 0.933,
       "words": [
         {
           "text": "Bonjour!",
           "start": 33.0,
-          "end": 33.64
+          "end": 33.64,
+          "confidence": 0.933
         }
       ]
     },
@@ -109,11 +119,13 @@
       "avg_logprob": -0.2368337631225586,
       "compression_ratio": 0.8181818181818182,
       "no_speech_prob": 0.40514007210731506,
+      "confidence": 0.559,
       "words": [
         {
           "text": "Bonjour!",
           "start": 34.92,
-          "end": 34.96
+          "end": 34.96,
+          "confidence": 0.559
         }
       ]
     },
@@ -139,31 +151,37 @@
       "avg_logprob": -0.1729703816500577,
       "compression_ratio": 0.7714285714285715,
       "no_speech_prob": 0.5840025544166565,
+      "confidence": 0.883,
       "words": [
         {
           "text": "Est-ce",
           "start": 34.96,
-          "end": 35.0
+          "end": 35.0,
+          "confidence": 0.741
         },
         {
           "text": "que",
           "start": 35.0,
-          "end": 35.04
+          "end": 35.04,
+          "confidence": 0.979
         },
         {
           "text": "vous",
           "start": 35.04,
-          "end": 35.08
+          "end": 35.08,
+          "confidence": 0.999
         },
         {
           "text": "allez",
           "start": 35.08,
-          "end": 35.12
+          "end": 35.12,
+          "confidence": 0.959
         },
         {
           "text": "bien?",
           "start": 35.12,
-          "end": 35.58
+          "end": 35.58,
+          "confidence": 0.983
         }
       ]
     }

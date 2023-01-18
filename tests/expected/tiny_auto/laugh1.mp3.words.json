@@ -27,46 +27,55 @@
       "avg_logprob": -1.2209794362386068,
       "compression_ratio": 1.1379310344827587,
       "no_speech_prob": 0.3798484802246094,
+      "confidence": 0.285,
       "words": [
         {
           "text": "You",
           "start": 0.06,
-          "end": 0.6
+          "end": 0.6,
+          "confidence": 0.071
         },
         {
           "text": "can't",
           "start": 0.6,
-          "end": 0.78
+          "end": 0.78,
+          "confidence": 0.294
         },
         {
           "text": "do",
           "start": 0.78,
-          "end": 0.96
+          "end": 0.96,
+          "confidence": 0.101
         },
         {
           "text": "it,",
           "start": 0.96,
-          "end": 1.36
+          "end": 1.36,
+          "confidence": 0.179
         },
         {
           "text": "you",
           "start": 1.36,
-          "end": 1.4
+          "end": 1.4,
+          "confidence": 0.191
         },
         {
           "text": "can't",
           "start": 1.4,
-          "end": 1.7
+          "end": 1.7,
+          "confidence": 0.87
         },
         {
           "text": "do",
           "start": 1.7,
-          "end": 1.74
+          "end": 1.74,
+          "confidence": 0.314
         },
         {
           "text": "it.",
           "start": 1.74,
-          "end": 1.78
+          "end": 1.78,
+          "confidence": 0.57
         }
       ]
     }

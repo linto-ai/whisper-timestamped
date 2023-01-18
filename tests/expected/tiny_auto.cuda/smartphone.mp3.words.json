@@ -34,71 +34,85 @@
       "avg_logprob": -0.5397020744554925,
       "compression_ratio": 1.6505681818181819,
       "no_speech_prob": 0.14073589444160461,
+      "confidence": 0.67,
       "words": [
         {
           "text": "C'est",
           "start": 0.4,
-          "end": 0.66
+          "end": 0.66,
+          "confidence": 0.849
         },
         {
           "text": "évidence",
           "start": 0.66,
-          "end": 0.92
+          "end": 0.92,
+          "confidence": 0.367
         },
         {
           "text": "que",
           "start": 0.92,
-          "end": 1.06
+          "end": 1.06,
+          "confidence": 0.882
         },
         {
           "text": "dit",
           "start": 1.06,
-          "end": 1.16
+          "end": 1.16,
+          "confidence": 0.343
         },
         {
           "text": "Nicolas,",
           "start": 1.16,
-          "end": 1.56
+          "end": 1.56,
+          "confidence": 0.534
         },
         {
           "text": "mais",
           "start": 1.56,
-          "end": 2.1
+          "end": 2.1,
+          "confidence": 0.913
         },
         {
           "text": "je",
           "start": 2.1,
-          "end": 2.18
+          "end": 2.18,
+          "confidence": 0.781
         },
         {
           "text": "me",
           "start": 2.18,
-          "end": 2.3
+          "end": 2.3,
+          "confidence": 0.954
         },
         {
           "text": "l'étais",
           "start": 2.3,
-          "end": 2.54
+          "end": 2.54,
+          "confidence": 0.717
         },
         {
           "text": "jamais",
           "start": 2.54,
-          "end": 2.78
+          "end": 2.78,
+          "confidence": 0.946
         },
         {
           "text": "formulé",
           "start": 2.78,
-          "end": 3.24
+          "end": 3.24,
+          "confidence": 0.531
         },
         {
           "text": "comme",
           "start": 3.24,
-          "end": 3.36
+          "end": 3.36,
+          "confidence": 0.968
         },
         {
           "text": "ça.",
           "start": 3.36,
-          "end": 3.7
+          "end": 3.7,
+          "confidence": 0.691
         }
       ]
     },
@@ -137,91 +151,109 @@
       "avg_logprob": -0.5397020744554925,
       "compression_ratio": 1.6505681818181819,
       "no_speech_prob": 0.14073589444160461,
+      "confidence": 0.787,
       "words": [
         {
           "text": "Ce",
           "start": 4.14,
-          "end": 4.22
+          "end": 4.22,
+          "confidence": 0.392
         },
         {
           "text": "qui",
           "start": 4.22,
-          "end": 4.34
+          "end": 4.34,
+          "confidence": 0.938
         },
         {
           "text": "fait",
           "start": 4.34,
-          "end": 4.46
+          "end": 4.46,
+          "confidence": 0.733
         },
         {
           "text": "la",
           "start": 4.46,
-          "end": 4.56
+          "end": 4.56,
+          "confidence": 0.988
         },
         {
           "text": "force",
           "start": 4.56,
-          "end": 4.96
+          "end": 4.96,
+          "confidence": 0.93
         },
         {
           "text": "du",
           "start": 4.96,
-          "end": 5.14
+          "end": 5.14,
+          "confidence": 0.938
         },
         {
           "text": "smartphone,",
           "start": 5.14,
-          "end": 5.76
+          "end": 5.76,
+          "confidence": 0.876
         },
         {
           "text": "c'est",
           "start": 5.76,
-          "end": 6.12
+          "end": 6.12,
+          "confidence": 0.948
         },
         {
           "text": "pas",
           "start": 6.12,
-          "end": 6.2
+          "end": 6.2,
+          "confidence": 0.983
         },
         {
           "text": "seulement",
           "start": 6.2,
-          "end": 6.52
+          "end": 6.52,
+          "confidence": 0.993
         },
         {
           "text": "la",
           "start": 6.52,
-          "end": 6.76
+          "end": 6.76,
+          "confidence": 0.636
         },
         {
           "text": "cumulation",
           "start": 6.76,
-          "end": 7.2
+          "end": 7.2,
+          "confidence": 0.689
         },
         {
           "text": "des",
           "start": 7.2,
-          "end": 7.54
+          "end": 7.54,
+          "confidence": 0.789
         },
         {
           "text": "fonctions,",
           "start": 7.54,
-          "end": 8.14
+          "end": 8.14,
+          "confidence": 0.784
         },
         {
           "text": "mais",
           "start": 8.14,
-          "end": 8.46
+          "end": 8.46,
+          "confidence": 0.666
         },
         {
           "text": "la",
           "start": 8.46,
-          "end": 8.58
+          "end": 8.58,
+          "confidence": 0.716
         },
         {
           "text": "manière",
           "start": 8.58,
-          "end": 8.82
+          "end": 8.82,
+          "confidence": 0.498
         }
       ]
     },
@@ -245,26 +277,31 @@
       "avg_logprob": -0.5397020744554925,
       "compression_ratio": 1.6505681818181819,
       "no_speech_prob": 0.14073589444160461,
+      "confidence": 0.316,
       "words": [
         {
           "text": "dans",
           "start": 8.9,
-          "end": 9.04
+          "end": 9.04,
+          "confidence": 0.283
         },
         {
           "text": "quelques",
           "start": 9.04,
-          "end": 9.28
+          "end": 9.28,
+          "confidence": 0.284
         },
         {
           "text": "interagues",
           "start": 9.28,
-          "end": 10.18
+          "end": 10.18,
+          "confidence": 0.246
         },
         {
           "text": "entraîne.",
           "start": 10.18,
-          "end": 10.86
+          "end": 10.86,
+          "confidence": 0.436
         }
       ]
     },
@@ -301,56 +338,67 @@
       "avg_logprob": -0.5397020744554925,
       "compression_ratio": 1.6505681818181819,
       "no_speech_prob": 0.14073589444160461,
+      "confidence": 0.631,
       "words": [
         {
           "text": "Et",
           "start": 11.04,
-          "end": 11.12
+          "end": 11.12,
+          "confidence": 0.359
         },
         {
           "text": "il",
           "start": 11.12,
-          "end": 11.24
+          "end": 11.24,
+          "confidence": 0.144
         },
         {
           "text": "est",
           "start": 11.24,
-          "end": 11.38
+          "end": 11.38,
+          "confidence": 0.24
         },
         {
           "text": "d'ailleurs,",
           "start": 11.38,
-          "end": 11.6
+          "end": 11.6,
+          "confidence": 0.764
         },
         {
           "text": "c'est",
           "start": 11.6,
-          "end": 11.78
+          "end": 11.78,
+          "confidence": 0.885
         },
         {
           "text": "la",
           "start": 11.78,
-          "end": 11.82
+          "end": 11.82,
+          "confidence": 0.969
         },
         {
           "text": "photo",
           "start": 11.82,
-          "end": 11.92
+          "end": 11.92,
+          "confidence": 0.809
         },
         {
           "text": "c'est",
           "start": 11.92,
-          "end": 12.18
+          "end": 12.18,
+          "confidence": 0.784
         },
         {
           "text": "hyper",
           "start": 12.18,
-          "end": 12.38
+          "end": 12.38,
+          "confidence": 0.938
         },
         {
           "text": "convaincant.",
           "start": 12.38,
-          "end": 12.96
+          "end": 12.96,
+          "confidence": 0.569
         }
       ]
     },
@@ -387,76 +435,91 @@
       "avg_logprob": -0.5397020744554925,
       "compression_ratio": 1.6505681818181819,
       "no_speech_prob": 0.14073589444160461,
+      "confidence": 0.54,
       "words": [
         {
           "text": "Alors",
           "start": 13.26,
-          "end": 13.48
+          "end": 13.48,
+          "confidence": 0.893
         },
         {
           "text": "évidemment,",
           "start": 13.48,
-          "end": 13.92
+          "end": 13.92,
+          "confidence": 0.756
         },
         {
           "text": "il",
           "start": 13.92,
-          "end": 14.4
+          "end": 14.4,
+          "confidence": 0.965
         },
         {
           "text": "faudrait",
           "start": 14.4,
-          "end": 14.7
+          "end": 14.7,
+          "confidence": 0.855
         },
         {
           "text": "ajouter",
           "start": 14.7,
-          "end": 15.38
+          "end": 15.38,
+          "confidence": 0.884
         },
         {
           "text": "les",
           "start": 15.38,
-          "end": 15.62
+          "end": 15.62,
+          "confidence": 0.934
         },
         {
           "text": "interfaces",
           "start": 15.62,
-          "end": 15.86
+          "end": 15.86,
+          "confidence": 0.381
         },
         {
           "text": "les",
           "start": 15.86,
-          "end": 16.5
+          "end": 16.5,
+          "confidence": 0.463
         },
         {
           "text": "grand-attachilles",
           "start": 16.5,
-          "end": 17.1
+          "end": 17.1,
+          "confidence": 0.213
         },
         {
           "text": "à",
           "start": 17.1,
-          "end": 17.26
+          "end": 17.26,
+          "confidence": 0.405
         },
         {
           "text": "été",
           "start": 17.26,
-          "end": 17.5
+          "end": 17.5,
+          "confidence": 0.894
         },
         {
           "text": "beaucoup",
           "start": 17.5,
-          "end": 18.18
+          "end": 18.18,
+          "confidence": 0.795
         },
         {
           "text": "très",
           "start": 18.18,
-          "end": 18.6
+          "end": 18.6,
+          "confidence": 0.493
         },
         {
           "text": "souvent",
           "start": 18.6,
-          "end": 18.82
+          "end": 18.82,
+          "confidence": 0.824
         }
       ]
     },
@@ -476,11 +539,13 @@
       "avg_logprob": -0.5397020744554925,
       "compression_ratio": 1.6505681818181819,
       "no_speech_prob": 0.14073589444160461,
+      "confidence": 0.601,
       "words": [
         {
           "text": "mentionnées.",
           "start": 18.82,
-          "end": 19.44
+          "end": 19.44,
+          "confidence": 0.601
         }
       ]
     },
@@ -519,81 +584,97 @@
       "avg_logprob": -0.5397020744554925,
       "compression_ratio": 1.6505681818181819,
       "no_speech_prob": 0.14073589444160461,
+      "confidence": 0.666,
       "words": [
         {
           "text": "Mais",
           "start": 20.0,
-          "end": 20.22
+          "end": 20.22,
+          "confidence": 0.98
         },
         {
           "text": "bon,",
           "start": 20.22,
-          "end": 20.56
+          "end": 20.56,
+          "confidence": 0.661
         },
         {
           "text": "il",
           "start": 20.56,
-          "end": 20.6
+          "end": 20.6,
+          "confidence": 0.975
         },
         {
           "text": "faudrait",
           "start": 20.6,
-          "end": 20.74
+          "end": 20.74,
+          "confidence": 0.771
         },
         {
           "text": "que",
           "start": 20.74,
-          "end": 20.92
+          "end": 20.92,
+          "confidence": 0.388
         },
         {
           "text": "les",
           "start": 20.92,
-          "end": 20.98
+          "end": 20.98,
+          "confidence": 0.221
         },
         {
           "text": "profites",
           "start": 20.98,
-          "end": 21.26
+          "end": 21.26,
+          "confidence": 0.569
         },
         {
           "text": "aussi",
           "start": 21.26,
-          "end": 21.7
+          "end": 21.7,
+          "confidence": 0.521
         },
         {
           "text": "de",
           "start": 21.7,
-          "end": 21.84
+          "end": 21.84,
+          "confidence": 0.49
         },
         {
           "text": "20",
           "start": 21.84,
-          "end": 22.06
+          "end": 22.06,
+          "confidence": 0.915
         },
         {
           "text": "ans",
           "start": 22.06,
-          "end": 22.28
+          "end": 22.28,
+          "confidence": 0.942
         },
         {
           "text": "pendant",
           "start": 22.28,
-          "end": 22.46
+          "end": 22.46,
+          "confidence": 0.916
         },
         {
           "text": "l'été,",
           "start": 22.46,
-          "end": 23.0
+          "end": 23.0,
+          "confidence": 0.534
         },
         {
           "text": "les",
           "start": 23.0,
-          "end": 23.04
+          "end": 23.04,
+          "confidence": 0.902
         },
         {
           "text": "ordinateurs",
           "start": 23.04,
-          "end": 23.54
+          "end": 23.54,
+          "confidence": 0.946
         }
       ]
     },
@@ -635,86 +716,103 @@
       "avg_logprob": -0.5397020744554925,
       "compression_ratio": 1.6505681818181819,
       "no_speech_prob": 0.14073589444160461,
+      "confidence": 0.618,
       "words": [
         {
           "text": "nous",
           "start": 23.58,
-          "end": 23.76
+          "end": 23.76,
+          "confidence": 0.767
         },
         {
           "text": "ont",
           "start": 23.76,
-          "end": 23.86
+          "end": 23.86,
+          "confidence": 0.98
         },
         {
           "text": "appris",
           "start": 23.86,
-          "end": 24.06
+          "end": 24.06,
+          "confidence": 0.952
         },
         {
           "text": "à",
           "start": 24.06,
-          "end": 24.24
+          "end": 24.24,
+          "confidence": 0.34
         },
         {
           "text": "piquer",
           "start": 24.24,
-          "end": 24.44
+          "end": 24.44,
+          "confidence": 0.448
         },
         {
           "text": "sur",
           "start": 24.44,
-          "end": 24.68
+          "end": 24.68,
+          "confidence": 0.817
         },
         {
           "text": "des",
           "start": 24.68,
-          "end": 24.8
+          "end": 24.8,
+          "confidence": 0.96
         },
         {
           "text": "icônes,",
           "start": 24.8,
-          "end": 25.3
+          "end": 25.3,
+          "confidence": 0.569
         },
         {
           "text": "sauf",
           "start": 25.3,
-          "end": 25.74
+          "end": 25.74,
+          "confidence": 0.522
         },
         {
           "text": "que,",
           "start": 25.74,
-          "end": 26.16
+          "end": 26.16,
+          "confidence": 0.442
         },
         {
           "text": "alors",
           "start": 26.16,
-          "end": 26.48
+          "end": 26.48,
+          "confidence": 0.395
         },
         {
           "text": "le",
           "start": 26.48,
-          "end": 26.66
+          "end": 26.66,
+          "confidence": 0.823
         },
         {
           "text": "smartphone",
           "start": 26.66,
-          "end": 26.86
+          "end": 26.86,
+          "confidence": 0.977
         },
         {
           "text": "ajoute",
           "start": 26.86,
-          "end": 27.48
+          "end": 27.48,
+          "confidence": 0.675
         },
         {
           "text": "le",
           "start": 27.48,
-          "end": 27.62
+          "end": 27.62,
+          "confidence": 0.546
         },
         {
           "text": "toucher,",
           "start": 27.62,
-          "end": 27.98
+          "end": 27.98,
+          "confidence": 0.613
         }
       ]
     },
@@ -740,46 +838,55 @@
       "avg_logprob": -0.4152271584288715,
       "compression_ratio": 1.7156549520766773,
       "no_speech_prob": 0.0004042964137624949,
+      "confidence": 0.659,
       "words": [
         {
           "text": "qui",
           "start": 28.1,
-          "end": 28.18
+          "end": 28.18,
+          "confidence": 0.263
         },
         {
           "text": "rend",
           "start": 28.18,
-          "end": 28.42
+          "end": 28.42,
+          "confidence": 0.726
         },
         {
           "text": "le",
           "start": 28.42,
-          "end": 28.68
+          "end": 28.68,
+          "confidence": 0.987
         },
         {
           "text": "contact",
           "start": 28.68,
-          "end": 28.94
+          "end": 28.94,
+          "confidence": 0.787
         },
         {
           "text": "plus",
           "start": 28.94,
-          "end": 29.48
+          "end": 29.48,
+          "confidence": 0.837
         },
         {
           "text": "direct,",
           "start": 29.48,
-          "end": 30.02
+          "end": 30.02,
+          "confidence": 0.769
         },
         {
           "text": "plus",
           "start": 30.02,
-          "end": 30.24
+          "end": 30.24,
+          "confidence": 0.991
         },
         {
           "text": "sensible.",
           "start": 30.24,
-          "end": 30.66
+          "end": 30.66,
+          "confidence": 0.46
         }
       ]
     },
@@ -815,81 +922,97 @@
       "avg_logprob": -0.4152271584288715,
       "compression_ratio": 1.7156549520766773,
       "no_speech_prob": 0.0004042964137624949,
+      "confidence": 0.734,
       "words": [
         {
           "text": "Et",
           "start": 31.08,
-          "end": 31.14
+          "end": 31.14,
+          "confidence": 0.941
         },
         {
           "text": "puis,",
           "start": 31.14,
-          "end": 31.32
+          "end": 31.32,
+          "confidence": 0.535
         },
         {
           "text": "évidemment,",
           "start": 31.32,
-          "end": 31.66
+          "end": 31.66,
+          "confidence": 0.398
         },
         {
           "text": "il",
           "start": 31.66,
-          "end": 31.76
+          "end": 31.76,
+          "confidence": 0.958
         },
         {
           "text": "faudrait",
           "start": 31.76,
-          "end": 31.88
+          "end": 31.88,
+          "confidence": 0.994
         },
         {
           "text": "parler",
           "start": 31.88,
-          "end": 32.1
+          "end": 32.1,
+          "confidence": 0.824
         },
         {
           "text": "aussi",
           "start": 32.1,
-          "end": 32.3
+          "end": 32.3,
+          "confidence": 0.915
         },
         {
           "text": "des",
           "start": 32.3,
-          "end": 32.44
+          "end": 32.44,
+          "confidence": 0.92
         },
         {
           "text": "applications",
           "start": 32.44,
-          "end": 32.78
+          "end": 32.78,
+          "confidence": 0.855
         },
         {
           "text": "qui",
           "start": 32.78,
-          "end": 33.16
+          "end": 33.16,
+          "confidence": 0.665
         },
         {
           "text": "permettent",
           "start": 33.16,
-          "end": 33.76
+          "end": 33.76,
+          "confidence": 0.947
         },
         {
           "text": "de",
           "start": 33.76,
-          "end": 33.9
+          "end": 33.9,
+          "confidence": 0.942
         },
         {
           "text": "contourner",
           "start": 33.9,
-          "end": 34.36
+          "end": 34.36,
+          "confidence": 0.699
         },
         {
           "text": "le",
           "start": 34.36,
-          "end": 34.5
+          "end": 34.5,
+          "confidence": 0.545
         },
         {
           "text": "côté",
           "start": 34.5,
-          "end": 34.66
+          "end": 34.66,
+          "confidence": 0.577
         }
       ]
     },
@@ -917,61 +1040,73 @@
       "avg_logprob": -0.4152271584288715,
       "compression_ratio": 1.7156549520766773,
       "no_speech_prob": 0.0004042964137624949,
+      "confidence": 0.756,
       "words": [
         {
           "text": "tout",
           "start": 34.72,
-          "end": 35.0
+          "end": 35.0,
+          "confidence": 0.945
         },
         {
           "text": "flu",
           "start": 35.0,
-          "end": 35.18
+          "end": 35.18,
+          "confidence": 0.534
         },
         {
           "text": "de",
           "start": 35.18,
-          "end": 35.42
+          "end": 35.42,
+          "confidence": 0.39
         },
         {
           "text": "la",
           "start": 35.42,
-          "end": 35.72
+          "end": 35.72,
+          "confidence": 0.92
         },
         {
           "text": "navigation",
           "start": 35.72,
-          "end": 36.12
+          "end": 36.12,
+          "confidence": 0.911
         },
         {
           "text": "web",
           "start": 36.12,
-          "end": 36.64
+          "end": 36.64,
+          "confidence": 0.92
         },
         {
           "text": "pour",
           "start": 36.64,
-          "end": 36.76
+          "end": 36.76,
+          "confidence": 0.6
         },
         {
           "text": "aller",
           "start": 36.76,
-          "end": 36.94
+          "end": 36.94,
+          "confidence": 0.99
         },
         {
           "text": "directement",
           "start": 36.94,
-          "end": 37.44
+          "end": 37.44,
+          "confidence": 0.982
         },
         {
           "text": "en",
           "start": 37.44,
-          "end": 37.66
+          "end": 37.66,
+          "confidence": 0.675
         },
         {
           "text": "but.",
           "start": 37.66,
-          "end": 37.82
+          "end": 37.82,
+          "confidence": 0.762
         }
       ]
     },
@@ -1004,71 +1139,85 @@
       "avg_logprob": -0.4152271584288715,
       "compression_ratio": 1.7156549520766773,
       "no_speech_prob": 0.0004042964137624949,
+      "confidence": 0.767,
       "words": [
         {
           "text": "Bref,",
           "start": 38.8,
-          "end": 38.9
+          "end": 38.9,
+          "confidence": 0.947
         },
         {
           "text": "tout",
           "start": 38.9,
-          "end": 39.0
+          "end": 39.0,
+          "confidence": 0.825
         },
         {
           "text": "ça,",
           "start": 39.0,
-          "end": 39.36
+          "end": 39.36,
+          "confidence": 0.788
         },
         {
           "text": "ce",
           "start": 39.36,
-          "end": 39.7
+          "end": 39.7,
+          "confidence": 0.911
         },
         {
           "text": "sont",
           "start": 39.7,
-          "end": 39.84
+          "end": 39.84,
+          "confidence": 0.98
         },
         {
           "text": "les",
           "start": 39.84,
-          "end": 40.06
+          "end": 40.06,
+          "confidence": 0.981
         },
         {
           "text": "conditions",
           "start": 40.06,
-          "end": 40.52
+          "end": 40.52,
+          "confidence": 0.961
         },
         {
           "text": "qui",
           "start": 40.52,
-          "end": 40.9
+          "end": 40.9,
+          "confidence": 0.996
         },
         {
           "text": "permettent",
           "start": 40.9,
-          "end": 41.52
+          "end": 41.52,
+          "confidence": 0.992
         },
         {
           "text": "de",
           "start": 41.52,
-          "end": 41.62
+          "end": 41.62,
+          "confidence": 0.993
         },
         {
           "text": "créer",
           "start": 41.62,
-          "end": 41.94
+          "end": 41.94,
+          "confidence": 0.9
         },
         {
           "text": "cette",
           "start": 41.94,
-          "end": 42.3
+          "end": 42.3,
+          "confidence": 0.49
         },
         {
           "text": "objet,",
           "start": 42.3,
-          "end": 42.65
+          "end": 42.65,
+          "confidence": 0.257
         }
       ]
     },
@@ -1108,66 +1257,79 @@
       "avg_logprob": -0.4152271584288715,
       "compression_ratio": 1.7156549520766773,
       "no_speech_prob": 0.0004042964137624949,
+      "confidence": 0.699,
       "words": [
         {
           "text": "dont",
           "start": 42.65,
-          "end": 42.8
+          "end": 42.8,
+          "confidence": 0.222
         },
         {
           "text": "Nicolas",
           "start": 42.8,
-          "end": 43.16
+          "end": 43.16,
+          "confidence": 0.988
         },
         {
           "text": "dit",
           "start": 43.16,
-          "end": 43.5
+          "end": 43.5,
+          "confidence": 0.897
         },
         {
           "text": "qu'il",
           "start": 43.5,
-          "end": 43.68
+          "end": 43.68,
+          "confidence": 0.982
         },
         {
           "text": "est",
           "start": 43.68,
-          "end": 43.8
+          "end": 43.8,
+          "confidence": 0.84
         },
         {
           "text": "très",
           "start": 43.8,
-          "end": 43.96
+          "end": 43.96,
+          "confidence": 0.434
         },
         {
           "text": "symbolablement",
           "start": 43.96,
-          "end": 44.74
+          "end": 44.74,
+          "confidence": 0.287
         },
         {
           "text": "inédit",
           "start": 44.74,
-          "end": 45.48
+          "end": 45.48,
+          "confidence": 0.651
         },
         {
           "text": "dans",
           "start": 45.48,
-          "end": 45.74
+          "end": 45.74,
+          "confidence": 0.811
         },
         {
           "text": "l'histoire",
           "start": 45.74,
-          "end": 45.98
+          "end": 45.98,
+          "confidence": 0.826
         },
         {
           "text": "de",
           "start": 45.98,
-          "end": 46.12
+          "end": 46.12,
+          "confidence": 0.977
         },
         {
           "text": "l'humanité.",
           "start": 46.12,
-          "end": 46.62
+          "end": 46.62,
+          "confidence": 0.984
         }
       ]
     },
@@ -1197,36 +1359,43 @@
       "avg_logprob": -0.4152271584288715,
       "compression_ratio": 1.7156549520766773,
       "no_speech_prob": 0.0004042964137624949,
+      "confidence": 0.73,
       "words": [
         {
           "text": "Mais",
           "start": 47.06,
-          "end": 47.16
+          "end": 47.16,
+          "confidence": 0.924
         },
         {
           "text": "ça",
           "start": 47.16,
-          "end": 47.46
+          "end": 47.46,
+          "confidence": 0.771
         },
         {
           "text": "s'assoulait",
           "start": 47.46,
-          "end": 47.78
+          "end": 47.78,
+          "confidence": 0.615
         },
         {
           "text": "d'une",
           "start": 47.78,
-          "end": 48.12
+          "end": 48.12,
+          "confidence": 0.666
         },
         {
           "text": "autre",
           "start": 48.12,
-          "end": 48.16
+          "end": 48.16,
+          "confidence": 0.961
         },
         {
           "text": "interrogation.",
           "start": 48.16,
-          "end": 48.88
+          "end": 48.88,
+          "confidence": 0.88
         }
       ]
     },
@@ -1269,106 +1438,127 @@
       "avg_logprob": -0.4152271584288715,
       "compression_ratio": 1.7156549520766773,
       "no_speech_prob": 0.0004042964137624949,
+      "confidence": 0.703,
       "words": [
         {
           "text": "Est-ce",
           "start": 49.42,
-          "end": 49.7
+          "end": 49.7,
+          "confidence": 0.913
         },
         {
           "text": "que",
           "start": 49.7,
-          "end": 49.74
+          "end": 49.74,
+          "confidence": 0.988
         },
         {
           "text": "le",
           "start": 49.74,
-          "end": 49.78
+          "end": 49.78,
+          "confidence": 0.874
         },
         {
           "text": "fait",
           "start": 49.78,
-          "end": 49.96
+          "end": 49.96,
+          "confidence": 0.947
         },
         {
           "text": "que",
           "start": 49.96,
-          "end": 50.08
+          "end": 50.08,
+          "confidence": 0.927
         },
         {
           "text": "cette",
           "start": 50.08,
-          "end": 50.24
+          "end": 50.24,
+          "confidence": 0.939
         },
         {
           "text": "objet",
           "start": 50.24,
-          "end": 50.54
+          "end": 50.54,
+          "confidence": 0.962
         },
         {
           "text": "soit",
           "start": 50.54,
-          "end": 50.96
+          "end": 50.96,
+          "confidence": 0.99
         },
         {
           "text": "inédit",
           "start": 50.96,
-          "end": 51.8
+          "end": 51.8,
+          "confidence": 0.923
         },
         {
           "text": "un",
           "start": 51.8,
-          "end": 52.06
+          "end": 52.06,
+          "confidence": 0.5
         },
         {
           "text": "d'huits",
           "start": 52.06,
-          "end": 52.32
+          "end": 52.32,
+          "confidence": 0.237
         },
         {
           "text": "que",
           "start": 52.32,
-          "end": 52.4
+          "end": 52.4,
+          "confidence": 0.97
         },
         {
           "text": "notre",
           "start": 52.4,
-          "end": 52.6
+          "end": 52.6,
+          "confidence": 0.992
         },
         {
           "text": "rapport",
           "start": 52.6,
-          "end": 53.08
+          "end": 53.08,
+          "confidence": 0.783
         },
         {
           "text": "a",
           "start": 53.08,
-          "end": 53.44
+          "end": 53.44,
+          "confidence": 0.585
         },
         {
           "text": "lui",
           "start": 53.44,
-          "end": 53.62
+          "end": 53.62,
+          "confidence": 0.696
         },
         {
           "text": "est",
           "start": 53.62,
-          "end": 53.94
+          "end": 53.94,
+          "confidence": 0.88
         },
         {
           "text": "aussi",
           "start": 53.94,
-          "end": 54.48
+          "end": 54.48,
+          "confidence": 0.845
         },
         {
           "text": "un",
           "start": 54.48,
-          "end": 54.66
+          "end": 54.66,
+          "confidence": 0.53
         },
         {
           "text": "rapport",
           "start": 54.66,
-          "end": 54.92
+          "end": 54.92,
+          "confidence": 0.966
         }
       ]
     },
@@ -1388,11 +1578,13 @@
       "avg_logprob": -0.4152271584288715,
       "compression_ratio": 1.7156549520766773,
       "no_speech_prob": 0.0004042964137624949,
+      "confidence": 0.834,
       "words": [
         {
           "text": "inédit?",
           "start": 55.06,
-          "end": 55.66
+          "end": 55.66,
+          "confidence": 0.834
         }
       ]
     },
@@ -1434,86 +1626,103 @@
       "avg_logprob": -0.6200739720484594,
       "compression_ratio": 1.5729166666666667,
       "no_speech_prob": 0.00010550628212513402,
+      "confidence": 0.621,
       "words": [
         {
           "text": "Est-ce",
           "start": 55.98,
-          "end": 56.34
+          "end": 56.34,
+          "confidence": 0.549
         },
         {
           "text": "que",
           "start": 56.34,
-          "end": 56.4
+          "end": 56.4,
+          "confidence": 0.887
         },
         {
           "text": "le",
           "start": 56.4,
-          "end": 56.54
+          "end": 56.54,
+          "confidence": 0.983
         },
         {
           "text": "rapport",
           "start": 56.54,
-          "end": 56.78
+          "end": 56.78,
+          "confidence": 0.999
         },
         {
           "text": "qu'on",
           "start": 56.78,
-          "end": 57.1
+          "end": 57.1,
+          "confidence": 0.904
         },
         {
           "text": "a",
           "start": 57.1,
-          "end": 57.14
+          "end": 57.14,
+          "confidence": 0.961
         },
         {
           "text": "au",
           "start": 57.14,
-          "end": 57.26
+          "end": 57.26,
+          "confidence": 0.276
         },
         {
           "text": "sein",
           "start": 57.26,
-          "end": 57.36
+          "end": 57.36,
+          "confidence": 0.165
         },
         {
           "text": "de",
           "start": 57.36,
-          "end": 57.44
+          "end": 57.44,
+          "confidence": 0.229
         },
         {
           "text": "foi",
           "start": 57.44,
-          "end": 57.54
+          "end": 57.54,
+          "confidence": 0.113
         },
         {
           "text": "n'est",
           "start": 57.54,
-          "end": 57.76
+          "end": 57.76,
+          "confidence": 0.808
         },
         {
           "text": "comparable",
           "start": 57.76,
-          "end": 58.16
+          "end": 58.16,
+          "confidence": 0.574
         },
         {
           "text": "à",
           "start": 58.16,
-          "end": 58.48
+          "end": 58.48,
+          "confidence": 0.937
         },
         {
           "text": "celui",
           "start": 58.48,
-          "end": 58.6
+          "end": 58.6,
+          "confidence": 0.858
         },
         {
           "text": "qu'on",
           "start": 58.6,
-          "end": 58.86
+          "end": 58.86,
+          "confidence": 0.921
         },
         {
           "text": "entretenait",
           "start": 58.86,
-          "end": 59.32
+          "end": 59.32,
+          "confidence": 0.567
         }
       ]
     },
@@ -1543,56 +1752,67 @@
       "avg_logprob": -0.6200739720484594,
       "compression_ratio": 1.5729166666666667,
       "no_speech_prob": 0.00010550628212513402,
+      "confidence": 0.772,
       "words": [
         {
           "text": "à",
           "start": 59.32,
-          "end": 59.46
+          "end": 59.46,
+          "confidence": 0.954
         },
         {
           "text": "d'autres",
           "start": 59.46,
-          "end": 59.62
+          "end": 59.62,
+          "confidence": 0.869
         },
         {
           "text": "objectes",
           "start": 59.62,
-          "end": 60.02
+          "end": 60.02,
+          "confidence": 0.503
         },
         {
           "text": "techniques",
           "start": 60.02,
-          "end": 60.38
+          "end": 60.38,
+          "confidence": 0.467
         },
         {
           "text": "comme",
           "start": 60.38,
-          "end": 60.86
+          "end": 60.86,
+          "confidence": 0.679
         },
         {
           "text": "la",
           "start": 60.86,
-          "end": 61.46
+          "end": 61.46,
+          "confidence": 0.903
         },
         {
           "text": "voiture",
           "start": 61.46,
-          "end": 61.8
+          "end": 61.8,
+          "confidence": 0.948
         },
         {
           "text": "ou",
           "start": 61.8,
-          "end": 62.32
+          "end": 62.32,
+          "confidence": 0.75
         },
         {
           "text": "le",
           "start": 62.32,
-          "end": 62.6
+          "end": 62.6,
+          "confidence": 0.911
         },
         {
           "text": "téléphone?",
           "start": 62.6,
-          "end": 63.08
+          "end": 63.08,
+          "confidence": 0.951
         }
       ]
     },
@@ -1620,31 +1840,37 @@
       "avg_logprob": -0.6200739720484594,
       "compression_ratio": 1.5729166666666667,
       "no_speech_prob": 0.00010550628212513402,
+      "confidence": 0.83,
       "words": [
         {
           "text": "Il",
           "start": 65.38,
-          "end": 65.46
+          "end": 65.46,
+          "confidence": 0.907
         },
         {
           "text": "n'y",
           "start": 65.46,
-          "end": 65.52
+          "end": 65.52,
+          "confidence": 0.849
         },
         {
           "text": "a",
           "start": 65.52,
-          "end": 65.56
+          "end": 65.56,
+          "confidence": 0.963
         },
         {
           "text": "pas",
           "start": 65.56,
-          "end": 65.62
+          "end": 65.62,
+          "confidence": 0.998
         },
         {
           "text": "d'équivalent.",
           "start": 65.62,
-          "end": 66.13
+          "end": 66.13,
+          "confidence": 0.766
         }
       ]
     },
@@ -1680,61 +1906,73 @@
       "avg_logprob": -0.6200739720484594,
       "compression_ratio": 1.5729166666666667,
       "no_speech_prob": 0.00010550628212513402,
+      "confidence": 0.525,
       "words": [
         {
           "text": "On",
           "start": 66.13,
-          "end": 67.02
+          "end": 67.02,
+          "confidence": 0.332
         },
         {
           "text": "s'était",
           "start": 67.02,
-          "end": 67.28
+          "end": 67.28,
+          "confidence": 0.56
         },
         {
           "text": "stave",
           "start": 67.28,
-          "end": 67.5
+          "end": 67.5,
+          "confidence": 0.098
         },
         {
           "text": "de",
           "start": 67.5,
-          "end": 67.64
+          "end": 67.64,
+          "confidence": 0.983
         },
         {
           "text": "nous",
           "start": 67.64,
-          "end": 67.82
+          "end": 67.82,
+          "confidence": 0.564
         },
         {
           "text": "rôté",
           "start": 67.82,
-          "end": 68.46
+          "end": 68.46,
+          "confidence": 0.394
         },
         {
           "text": "dans",
           "start": 68.46,
-          "end": 68.7
+          "end": 68.7,
+          "confidence": 0.902
         },
         {
           "text": "la",
           "start": 68.7,
-          "end": 68.92
+          "end": 68.92,
+          "confidence": 0.559
         },
         {
           "text": "relation",
           "start": 68.92,
-          "end": 69.22
+          "end": 69.22,
+          "confidence": 0.949
         },
         {
           "text": "à",
           "start": 69.22,
-          "end": 69.34
+          "end": 69.34,
+          "confidence": 0.753
         },
         {
           "text": "l'objet.",
           "start": 69.34,
-          "end": 69.96
+          "end": 69.96,
+          "confidence": 0.818
         }
       ]
     },
@@ -1761,21 +1999,25 @@
       "avg_logprob": -0.6200739720484594,
       "compression_ratio": 1.5729166666666667,
       "no_speech_prob": 0.00010550628212513402,
+      "confidence": 0.426,
       "words": [
         {
           "text": "C'est",
           "start": 70.2,
-          "end": 70.32
+          "end": 70.32,
+          "confidence": 0.903
         },
         {
           "text": "facilement",
           "start": 70.32,
-          "end": 70.7
+          "end": 70.7,
+          "confidence": 0.601
         },
         {
           "text": "éterréciant?",
           "start": 70.7,
-          "end": 71.24
+          "end": 71.24,
+          "confidence": 0.261
         }
       ]
     },
@@ -1815,86 +2057,103 @@
       "avg_logprob": -0.6200739720484594,
       "compression_ratio": 1.5729166666666667,
       "no_speech_prob": 0.00010550628212513402,
+      "confidence": 0.439,
       "words": [
         {
           "text": "Parce",
           "start": 71.64,
-          "end": 71.82
+          "end": 71.82,
+          "confidence": 0.779
         },
         {
           "text": "que",
           "start": 71.82,
-          "end": 72.32
+          "end": 72.32,
+          "confidence": 0.61
         },
         {
           "text": "la",
           "start": 72.32,
-          "end": 72.54
+          "end": 72.54,
+          "confidence": 0.348
         },
         {
           "text": "passion",
           "start": 72.54,
-          "end": 72.8
+          "end": 72.8,
+          "confidence": 0.265
         },
         {
           "text": "de",
           "start": 72.8,
-          "end": 73.14
+          "end": 73.14,
+          "confidence": 0.343
         },
         {
           "text": "l'utilisateur",
           "start": 73.14,
-          "end": 74.78
+          "end": 74.78,
+          "confidence": 0.5
         },
         {
           "text": "et",
           "start": 74.78,
-          "end": 74.92
+          "end": 74.92,
+          "confidence": 0.484
         },
         {
           "text": "si",
           "start": 74.92,
-          "end": 74.96
+          "end": 74.96,
+          "confidence": 0.099
         },
         {
           "text": "la",
           "start": 74.96,
-          "end": 75.06
+          "end": 75.06,
+          "confidence": 0.276
         },
         {
           "text": "crise",
           "start": 75.06,
-          "end": 75.18
+          "end": 75.18,
+          "confidence": 0.191
         },
         {
           "text": "a",
           "start": 75.18,
-          "end": 75.32
+          "end": 75.32,
+          "confidence": 0.495
         },
         {
           "text": "dépendance,",
           "start": 75.32,
-          "end": 76.04
+          "end": 76.04,
+          "confidence": 0.52
         },
         {
           "text": "cette",
           "start": 76.04,
-          "end": 76.2
+          "end": 76.2,
+          "confidence": 0.27
         },
         {
           "text": "objet",
           "start": 76.2,
-          "end": 76.48
+          "end": 76.48,
+          "confidence": 0.937
         },
         {
           "text": "d'un",
           "start": 76.48,
-          "end": 76.86
+          "end": 76.86,
+          "confidence": 0.778
         },
         {
           "text": "lieu",
           "start": 76.86,
-          "end": 76.94
+          "end": 76.94,
+          "confidence": 0.27
         }
       ]
     },
@@ -1930,86 +2189,103 @@
       "avg_logprob": -0.6200739720484594,
       "compression_ratio": 1.5729166666666667,
       "no_speech_prob": 0.00010550628212513402,
+      "confidence": 0.664,
       "words": [
         {
           "text": "en",
           "start": 76.94,
-          "end": 77.2
+          "end": 77.2,
+          "confidence": 0.735
         },
         {
           "text": "fait,",
           "start": 77.2,
-          "end": 77.42
+          "end": 77.42,
+          "confidence": 0.712
         },
         {
           "text": "une",
           "start": 77.42,
-          "end": 77.46
+          "end": 77.46,
+          "confidence": 0.63
         },
         {
           "text": "espèce",
           "start": 77.46,
-          "end": 77.74
+          "end": 77.74,
+          "confidence": 0.956
         },
         {
           "text": "de",
           "start": 77.74,
-          "end": 77.92
+          "end": 77.92,
+          "confidence": 0.993
         },
         {
           "text": "relation",
           "start": 77.92,
-          "end": 78.3
+          "end": 78.3,
+          "confidence": 0.813
         },
         {
           "text": "de",
           "start": 78.3,
-          "end": 78.8
+          "end": 78.8,
+          "confidence": 0.704
         },
         {
           "text": "médiation",
           "start": 78.8,
-          "end": 79.4
+          "end": 79.4,
+          "confidence": 0.891
         },
         {
           "text": "avec",
           "start": 79.4,
-          "end": 79.74
+          "end": 79.74,
+          "confidence": 0.964
         },
         {
           "text": "le",
           "start": 79.74,
-          "end": 79.86
+          "end": 79.86,
+          "confidence": 0.986
         },
         {
           "text": "monde",
           "start": 79.86,
-          "end": 80.24
+          "end": 80.24,
+          "confidence": 0.899
         },
         {
           "text": "qui",
           "start": 80.24,
-          "end": 81.02
+          "end": 81.02,
+          "confidence": 0.832
         },
         {
           "text": "rendent",
           "start": 81.02,
-          "end": 81.74
+          "end": 81.74,
+          "confidence": 0.57
         },
         {
           "text": "un",
           "start": 81.74,
-          "end": 81.84
+          "end": 81.84,
+          "confidence": 0.2
         },
         {
           "text": "peu",
           "start": 81.84,
-          "end": 81.88
+          "end": 81.88,
+          "confidence": 0.111
         },
         {
           "text": "avec",
           "start": 81.88,
-          "end": 82.1
+          "end": 82.1,
+          "confidence": 0.569
         }
       ]
     },
@@ -2038,41 +2314,49 @@
       "avg_logprob": -0.4765726725260417,
       "compression_ratio": 1.589430894308943,
       "no_speech_prob": 3.373236540937796e-05,
+      "confidence": 0.466,
       "words": [
         {
           "text": "la",
           "start": 82.12,
-          "end": 82.18
+          "end": 82.18,
+          "confidence": 0.488
         },
         {
           "text": "maille",
           "start": 82.18,
-          "end": 82.38
+          "end": 82.38,
+          "confidence": 0.151
         },
         {
           "text": "de",
           "start": 82.38,
-          "end": 82.44
+          "end": 82.44,
+          "confidence": 0.61
         },
         {
           "text": "celles",
           "start": 82.44,
-          "end": 82.64
+          "end": 82.64,
+          "confidence": 0.544
         },
         {
           "text": "formes",
           "start": 82.64,
-          "end": 82.86
+          "end": 82.86,
+          "confidence": 0.794
         },
         {
           "text": "de",
           "start": 82.86,
-          "end": 82.98
+          "end": 82.98,
+          "confidence": 0.939
         },
         {
           "text": "rogeur.",
           "start": 82.98,
-          "end": 83.58
+          "end": 83.58,
+          "confidence": 0.452
         }
       ]
     },
@@ -2112,76 +2396,91 @@
       "avg_logprob": -0.4765726725260417,
       "compression_ratio": 1.589430894308943,
       "no_speech_prob": 3.373236540937796e-05,
+      "confidence": 0.636,
       "words": [
         {
           "text": "Et",
           "start": 88.08,
-          "end": 88.28
+          "end": 88.28,
+          "confidence": 0.32
         },
         {
           "text": "ce",
           "start": 88.28,
-          "end": 88.82
+          "end": 88.82,
+          "confidence": 0.275
         },
         {
           "text": "rapport,",
           "start": 88.82,
-          "end": 89.24
+          "end": 89.24,
+          "confidence": 0.902
         },
         {
           "text": "si",
           "start": 89.24,
-          "end": 89.56
+          "end": 89.56,
+          "confidence": 0.935
         },
         {
           "text": "j'en",
           "start": 89.56,
-          "end": 89.74
+          "end": 89.74,
+          "confidence": 0.771
         },
         {
           "text": "prends",
           "start": 89.74,
-          "end": 89.84
+          "end": 89.84,
+          "confidence": 0.299
         },
         {
           "text": "Nicolas,",
           "start": 89.84,
-          "end": 90.48
+          "end": 90.48,
+          "confidence": 0.725
         },
         {
           "text": "frère",
           "start": 90.48,
-          "end": 91.1
+          "end": 91.1,
+          "confidence": 0.487
         },
         {
           "text": "caractérisée",
           "start": 91.1,
-          "end": 91.72
+          "end": 91.72,
+          "confidence": 0.558
         },
         {
           "text": "par",
           "start": 91.72,
-          "end": 92.12
+          "end": 92.12,
+          "confidence": 0.946
         },
         {
           "text": "un",
           "start": 92.12,
-          "end": 92.32
+          "end": 92.32,
+          "confidence": 0.982
         },
         {
           "text": "mélange",
           "start": 92.32,
-          "end": 92.96
+          "end": 92.96,
+          "confidence": 0.924
         },
         {
           "text": "de",
           "start": 92.96,
-          "end": 93.24
+          "end": 93.24,
+          "confidence": 0.787
         },
         {
           "text": "dépendance",
           "start": 93.24,
-          "end": 94.14
+          "end": 94.14,
+          "confidence": 0.525
         }
       ]
     },
@@ -2203,21 +2502,25 @@
       "avg_logprob": -0.4765726725260417,
       "compression_ratio": 1.589430894308943,
       "no_speech_prob": 3.373236540937796e-05,
+      "confidence": 0.921,
       "words": [
         {
           "text": "et",
           "start": 94.38,
-          "end": 94.52
+          "end": 94.52,
+          "confidence": 0.926
         },
         {
           "text": "de",
           "start": 94.52,
-          "end": 94.56
+          "end": 94.56,
+          "confidence": 0.994
         },
         {
           "text": "rogeur.",
           "start": 94.56,
-          "end": 95.02
+          "end": 95.02,
+          "confidence": 0.902
         }
       ]
     },
@@ -2253,71 +2556,85 @@
       "avg_logprob": -0.4765726725260417,
       "compression_ratio": 1.589430894308943,
       "no_speech_prob": 3.373236540937796e-05,
+      "confidence": 0.711,
       "words": [
         {
           "text": "En",
           "start": 96.32,
-          "end": 96.48
+          "end": 96.48,
+          "confidence": 0.358
         },
         {
           "text": "vrai,",
           "start": 96.48,
-          "end": 97.08
+          "end": 97.08,
+          "confidence": 0.979
         },
         {
           "text": "il",
           "start": 97.08,
-          "end": 97.14
+          "end": 97.14,
+          "confidence": 0.973
         },
         {
           "text": "faudrait",
           "start": 97.14,
-          "end": 97.52
+          "end": 97.52,
+          "confidence": 0.923
         },
         {
           "text": "remonter",
           "start": 97.52,
-          "end": 98.08
+          "end": 98.08,
+          "confidence": 0.624
         },
         {
           "text": "très",
           "start": 98.08,
-          "end": 98.56
+          "end": 98.56,
+          "confidence": 0.885
         },
         {
           "text": "très",
           "start": 98.56,
-          "end": 98.76
+          "end": 98.76,
+          "confidence": 0.413
         },
         {
           "text": "finement",
           "start": 98.76,
-          "end": 99.4
+          "end": 99.4,
+          "confidence": 0.487
         },
         {
           "text": "tout",
           "start": 99.4,
-          "end": 99.62
+          "end": 99.62,
+          "confidence": 0.315
         },
         {
           "text": "l'histoire",
           "start": 99.62,
-          "end": 100.02
+          "end": 100.02,
+          "confidence": 0.896
         },
         {
           "text": "des",
           "start": 100.02,
-          "end": 100.2
+          "end": 100.2,
+          "confidence": 0.928
         },
         {
           "text": "objectes",
           "start": 100.2,
-          "end": 100.5
+          "end": 100.5,
+          "confidence": 0.835
         },
         {
           "text": "techniques",
           "start": 100.5,
-          "end": 100.92
+          "end": 100.92,
+          "confidence": 0.786
         }
       ]
     },
@@ -2355,81 +2672,97 @@
       "avg_logprob": -0.4765726725260417,
       "compression_ratio": 1.589430894308943,
       "no_speech_prob": 3.373236540937796e-05,
+      "confidence": 0.692,
       "words": [
         {
           "text": "et",
           "start": 101.32,
-          "end": 101.56
+          "end": 101.56,
+          "confidence": 0.998
         },
         {
           "text": "de",
           "start": 101.56,
-          "end": 101.64
+          "end": 101.64,
+          "confidence": 0.943
         },
         {
           "text": "leur",
           "start": 101.64,
-          "end": 101.78
+          "end": 101.78,
+          "confidence": 0.779
         },
         {
           "text": "infertion",
           "start": 101.78,
-          "end": 102.34
+          "end": 102.34,
+          "confidence": 0.336
         },
         {
           "text": "dans",
           "start": 102.34,
-          "end": 102.46
+          "end": 102.46,
+          "confidence": 0.222
         },
         {
           "text": "le",
           "start": 102.46,
-          "end": 102.54
+          "end": 102.54,
+          "confidence": 0.425
         },
         {
           "text": "vie",
           "start": 102.54,
-          "end": 102.78
+          "end": 102.78,
+          "confidence": 0.722
         },
         {
           "text": "pour",
           "start": 102.78,
-          "end": 103.06
+          "end": 103.06,
+          "confidence": 0.953
         },
         {
           "text": "déterminer",
           "start": 103.06,
-          "end": 103.64
+          "end": 103.64,
+          "confidence": 0.968
         },
         {
           "text": "si",
           "start": 103.64,
-          "end": 103.74
+          "end": 103.74,
+          "confidence": 0.264
         },
         {
           "text": "ce",
           "start": 103.74,
-          "end": 103.84
+          "end": 103.84,
+          "confidence": 0.977
         },
         {
           "text": "rapport",
           "start": 103.84,
-          "end": 104.1
+          "end": 104.1,
+          "confidence": 0.999
         },
         {
           "text": "est",
           "start": 104.1,
-          "end": 104.9
+          "end": 104.9,
+          "confidence": 0.944
         },
         {
           "text": "totalement",
           "start": 104.9,
-          "end": 105.16
+          "end": 105.16,
+          "confidence": 0.956
         },
         {
           "text": "inédit.",
           "start": 105.16,
-          "end": 105.78
+          "end": 105.78,
+          "confidence": 0.941
         }
       ]
     },
@@ -2463,61 +2796,73 @@
       "avg_logprob": -0.4765726725260417,
       "compression_ratio": 1.589430894308943,
       "no_speech_prob": 3.373236540937796e-05,
+      "confidence": 0.789,
       "words": [
         {
           "text": "Mais",
           "start": 106.16,
-          "end": 106.3
+          "end": 106.3,
+          "confidence": 0.611
         },
         {
           "text": "j'ai",
           "start": 106.3,
-          "end": 106.9
+          "end": 106.9,
+          "confidence": 0.941
         },
         {
           "text": "l'impression",
           "start": 106.9,
-          "end": 107.3
+          "end": 107.3,
+          "confidence": 0.958
         },
         {
           "text": "comme",
           "start": 107.3,
-          "end": 107.5
+          "end": 107.5,
+          "confidence": 0.642
         },
         {
           "text": "ça",
           "start": 107.5,
-          "end": 107.72
+          "end": 107.72,
+          "confidence": 0.94
         },
         {
           "text": "que",
           "start": 107.72,
-          "end": 107.88
+          "end": 107.88,
+          "confidence": 0.895
         },
         {
           "text": "Nicolas",
           "start": 107.88,
-          "end": 108.38
+          "end": 108.38,
+          "confidence": 0.998
         },
         {
           "text": "se",
           "start": 108.38,
-          "end": 108.64
+          "end": 108.64,
+          "confidence": 0.564
         },
         {
           "text": "trompe",
           "start": 108.64,
-          "end": 109.0
+          "end": 109.0,
+          "confidence": 0.517
         },
         {
           "text": "pas",
           "start": 109.0,
-          "end": 109.08
+          "end": 109.08,
+          "confidence": 0.9
         },
         {
           "text": "vraiment.",
           "start": 109.08,
-          "end": 109.44
+          "end": 109.44,
+          "confidence": 0.905
         }
       ]
     },
@@ -2553,96 +2898,115 @@
       "avg_logprob": -0.4092958496838081,
       "compression_ratio": 1.7106109324758842,
       "no_speech_prob": 1.0782517165353056e-05,
+      "confidence": 0.805,
       "words": [
         {
           "text": "Pour",
           "start": 109.92,
-          "end": 110.08
+          "end": 110.08,
+          "confidence": 0.937
         },
         {
           "text": "autant",
           "start": 110.08,
-          "end": 110.26
+          "end": 110.26,
+          "confidence": 0.986
         },
         {
           "text": "que",
           "start": 110.26,
-          "end": 110.36
+          "end": 110.36,
+          "confidence": 0.393
         },
         {
           "text": "je",
           "start": 110.36,
-          "end": 110.4
+          "end": 110.4,
+          "confidence": 0.746
         },
         {
           "text": "sache,",
           "start": 110.4,
-          "end": 111.0
+          "end": 111.0,
+          "confidence": 0.638
         },
         {
           "text": "il",
           "start": 111.0,
-          "end": 111.2
+          "end": 111.2,
+          "confidence": 0.988
         },
         {
           "text": "y",
           "start": 111.2,
-          "end": 111.24
+          "end": 111.24,
+          "confidence": 0.833
         },
         {
           "text": "a",
           "start": 111.24,
-          "end": 111.28
+          "end": 111.28,
+          "confidence": 0.923
         },
         {
           "text": "eu",
           "start": 111.28,
-          "end": 111.38
+          "end": 111.38,
+          "confidence": 0.854
         },
         {
           "text": "plein",
           "start": 111.38,
-          "end": 111.78
+          "end": 111.78,
+          "confidence": 0.844
         },
         {
           "text": "de",
           "start": 111.78,
-          "end": 112.04
+          "end": 112.04,
+          "confidence": 0.947
         },
         {
           "text": "discussions",
           "start": 112.04,
-          "end": 112.46
+          "end": 112.46,
+          "confidence": 0.654
         },
         {
           "text": "autour",
           "start": 112.46,
-          "end": 112.94
+          "end": 112.94,
+          "confidence": 0.979
         },
         {
           "text": "de",
           "start": 112.94,
-          "end": 113.46
+          "end": 113.46,
+          "confidence": 0.955
         },
         {
           "text": "la",
           "start": 113.46,
-          "end": 113.5
+          "end": 113.5,
+          "confidence": 0.958
         },
         {
           "text": "voiture",
           "start": 113.5,
-          "end": 113.82
+          "end": 113.82,
+          "confidence": 0.996
         },
         {
           "text": "ou",
           "start": 113.82,
-          "end": 114.04
+          "end": 114.04,
+          "confidence": 0.667
         },
         {
           "text": "même",
           "start": 114.04,
-          "end": 114.22
+          "end": 114.22,
+          "confidence": 0.925
         }
       ]
     },
@@ -2661,16 +3025,19 @@
       "avg_logprob": -0.4092958496838081,
       "compression_ratio": 1.7106109324758842,
       "no_speech_prob": 1.0782517165353056e-05,
+      "confidence": 0.687,
       "words": [
         {
           "text": "du",
           "start": 114.46,
-          "end": 114.58
+          "end": 114.58,
+          "confidence": 0.454
         },
         {
           "text": "téléphone.",
           "start": 114.58,
-          "end": 115.1
+          "end": 115.1,
+          "confidence": 0.845
         }
       ]
     },
@@ -2712,91 +3079,109 @@
       "avg_logprob": -0.4092958496838081,
       "compression_ratio": 1.7106109324758842,
       "no_speech_prob": 1.0782517165353056e-05,
+      "confidence": 0.695,
       "words": [
         {
           "text": "Mais",
           "start": 115.52,
-          "end": 115.8
+          "end": 115.8,
+          "confidence": 0.987
         },
         {
           "text": "la",
           "start": 115.8,
-          "end": 116.0
+          "end": 116.0,
+          "confidence": 0.789
         },
         {
           "text": "dépense",
           "start": 116.0,
-          "end": 116.38
+          "end": 116.38,
+          "confidence": 0.587
         },
         {
           "text": "n'était",
           "start": 116.38,
-          "end": 116.64
+          "end": 116.64,
+          "confidence": 0.961
         },
         {
           "text": "pas",
           "start": 116.64,
-          "end": 117.02
+          "end": 117.02,
+          "confidence": 0.994
         },
         {
           "text": "du",
           "start": 117.02,
-          "end": 117.16
+          "end": 117.16,
+          "confidence": 0.98
         },
         {
           "text": "même",
           "start": 117.16,
-          "end": 117.32
+          "end": 117.32,
+          "confidence": 0.917
         },
         {
           "text": "mort,",
           "start": 117.32,
-          "end": 117.66
+          "end": 117.66,
+          "confidence": 0.522
         },
         {
           "text": "donc",
           "start": 117.66,
-          "end": 117.8
+          "end": 117.8,
+          "confidence": 0.894
         },
         {
           "text": "le",
           "start": 117.8,
-          "end": 118.32
+          "end": 118.32,
+          "confidence": 0.979
         },
         {
           "text": "rejet",
           "start": 118.32,
-          "end": 118.64
+          "end": 118.64,
+          "confidence": 0.521
         },
         {
           "text": "n'en",
           "start": 118.64,
-          "end": 118.82
+          "end": 118.82,
+          "confidence": 0.526
         },
         {
           "text": "plus",
           "start": 118.82,
-          "end": 118.92
+          "end": 118.92,
+          "confidence": 0.101
         },
         {
           "text": "n'était",
           "start": 118.92,
-          "end": 119.1
+          "end": 119.1,
+          "confidence": 0.975
         },
         {
           "text": "pas",
           "start": 119.1,
-          "end": 119.28
+          "end": 119.28,
+          "confidence": 0.993
         },
         {
           "text": "du",
           "start": 119.28,
-          "end": 119.38
+          "end": 119.38,
+          "confidence": 0.669
         },
         {
           "text": "même",
           "start": 119.38,
-          "end": 119.5
+          "end": 119.5,
+          "confidence": 0.616
         }
       ]
     },
@@ -2814,11 +3199,13 @@
       "avg_logprob": -0.4092958496838081,
       "compression_ratio": 1.7106109324758842,
       "no_speech_prob": 1.0782517165353056e-05,
+      "confidence": 0.784,
       "words": [
         {
           "text": "mort.",
           "start": 119.5,
-          "end": 119.82
+          "end": 119.82,
+          "confidence": 0.784
         }
       ]
     },
@@ -2851,66 +3238,79 @@
       "avg_logprob": -0.4092958496838081,
       "compression_ratio": 1.7106109324758842,
       "no_speech_prob": 1.0782517165353056e-05,
+      "confidence": 0.687,
       "words": [
         {
           "text": "On",
           "start": 120.06,
-          "end": 120.22
+          "end": 120.22,
+          "confidence": 0.977
         },
         {
           "text": "peut",
           "start": 120.22,
-          "end": 120.34
+          "end": 120.34,
+          "confidence": 0.989
         },
         {
           "text": "adorer",
           "start": 120.34,
-          "end": 120.6
+          "end": 120.6,
+          "confidence": 0.841
         },
         {
           "text": "sa",
           "start": 120.6,
-          "end": 120.86
+          "end": 120.86,
+          "confidence": 0.907
         },
         {
           "text": "bagnure,",
           "start": 120.86,
-          "end": 121.38
+          "end": 121.38,
+          "confidence": 0.338
         },
         {
           "text": "en",
           "start": 121.38,
-          "end": 121.52
+          "end": 121.52,
+          "confidence": 0.572
         },
         {
           "text": "avoir",
           "start": 121.52,
-          "end": 121.66
+          "end": 121.66,
+          "confidence": 0.96
         },
         {
           "text": "besoin",
           "start": 121.66,
-          "end": 122.06
+          "end": 122.06,
+          "confidence": 0.997
         },
         {
           "text": "pour",
           "start": 122.06,
-          "end": 122.42
+          "end": 122.42,
+          "confidence": 0.958
         },
         {
           "text": "plein",
           "start": 122.42,
-          "end": 122.64
+          "end": 122.64,
+          "confidence": 0.896
         },
         {
           "text": "de",
           "start": 122.64,
-          "end": 122.78
+          "end": 122.78,
+          "confidence": 0.993
         },
         {
           "text": "choses.",
           "start": 122.78,
-          "end": 123.06
+          "end": 123.06,
+          "confidence": 0.667
         }
       ]
     },
@@ -2943,66 +3343,79 @@
       "avg_logprob": -0.4092958496838081,
       "compression_ratio": 1.7106109324758842,
       "no_speech_prob": 1.0782517165353056e-05,
+      "confidence": 0.837,
       "words": [
         {
           "text": "Et",
           "start": 123.36,
-          "end": 123.48
+          "end": 123.48,
+          "confidence": 0.499
         },
         {
           "text": "là,",
           "start": 123.48,
-          "end": 123.64
+          "end": 123.64,
+          "confidence": 0.719
         },
         {
           "text": "le",
           "start": 123.64,
-          "end": 123.94
+          "end": 123.94,
+          "confidence": 0.986
         },
         {
           "text": "soir,",
           "start": 123.94,
-          "end": 124.5
+          "end": 124.5,
+          "confidence": 0.892
         },
         {
           "text": "quand",
           "start": 124.5,
-          "end": 124.9
+          "end": 124.9,
+          "confidence": 0.794
         },
         {
           "text": "on",
           "start": 124.9,
-          "end": 125.02
+          "end": 125.02,
+          "confidence": 0.984
         },
         {
           "text": "va",
           "start": 125.02,
-          "end": 125.1
+          "end": 125.1,
+          "confidence": 0.967
         },
         {
           "text": "se",
           "start": 125.1,
-          "end": 125.18
+          "end": 125.18,
+          "confidence": 0.86
         },
         {
           "text": "coucher,",
           "start": 125.18,
-          "end": 125.68
+          "end": 125.68,
+          "confidence": 0.807
         },
         {
           "text": "on",
           "start": 125.68,
-          "end": 126.04
+          "end": 126.04,
+          "confidence": 0.975
         },
         {
           "text": "la",
           "start": 126.04,
-          "end": 126.12
+          "end": 126.12,
+          "confidence": 0.807
         },
         {
           "text": "laisse.",
           "start": 126.12,
-          "end": 126.46
+          "end": 126.46,
+          "confidence": 0.943
         }
       ]
     },
@@ -3045,86 +3458,103 @@
       "avg_logprob": -0.4092958496838081,
       "compression_ratio": 1.7106109324758842,
       "no_speech_prob": 1.0782517165353056e-05,
+      "confidence": 0.608,
       "words": [
         {
           "text": "On",
           "start": 127.06,
-          "end": 127.3
+          "end": 127.3,
+          "confidence": 0.661
         },
         {
           "text": "l'a",
           "start": 127.3,
-          "end": 127.46
+          "end": 127.46,
+          "confidence": 0.727
         },
         {
           "text": "pas",
           "start": 127.46,
-          "end": 127.64
+          "end": 127.64,
+          "confidence": 0.99
         },
         {
           "text": "dans",
           "start": 127.64,
-          "end": 127.82
+          "end": 127.82,
+          "confidence": 0.974
         },
         {
           "text": "la",
           "start": 127.82,
-          "end": 127.94
+          "end": 127.94,
+          "confidence": 0.957
         },
         {
           "text": "main",
           "start": 127.94,
-          "end": 128.26
+          "end": 128.26,
+          "confidence": 0.979
         },
         {
           "text": "quand",
           "start": 128.26,
-          "end": 128.42
+          "end": 128.42,
+          "confidence": 0.515
         },
         {
           "text": "on",
           "start": 128.42,
-          "end": 128.6
+          "end": 128.6,
+          "confidence": 0.993
         },
         {
           "text": "est",
           "start": 128.6,
-          "end": 128.68
+          "end": 128.68,
+          "confidence": 0.698
         },
         {
           "text": "collis,",
           "start": 128.68,
-          "end": 129.14
+          "end": 129.14,
+          "confidence": 0.438
         },
         {
           "text": "qu'on",
           "start": 129.14,
-          "end": 129.3
+          "end": 129.3,
+          "confidence": 0.766
         },
         {
           "text": "n'en",
           "start": 129.3,
-          "end": 129.36
+          "end": 129.36,
+          "confidence": 0.49
         },
         {
           "text": "mène",
           "start": 129.36,
-          "end": 129.56
+          "end": 129.56,
+          "confidence": 0.249
         },
         {
           "text": "pas",
           "start": 129.56,
-          "end": 129.72
+          "end": 129.72,
+          "confidence": 0.998
         },
         {
           "text": "au",
           "start": 129.72,
-          "end": 129.82
+          "end": 129.82,
+          "confidence": 0.812
         },
         {
           "text": "chiot.",
           "start": 129.82,
-          "end": 130.22
+          "end": 130.22,
+          "confidence": 0.427
         }
       ]
     },
@@ -3161,81 +3591,97 @@
       "avg_logprob": -0.4092958496838081,
       "compression_ratio": 1.7106109324758842,
       "no_speech_prob": 1.0782517165353056e-05,
+      "confidence": 0.659,
       "words": [
         {
           "text": "On",
           "start": 130.88,
-          "end": 131.0
+          "end": 131.0,
+          "confidence": 0.99
         },
         {
           "text": "pouvait",
           "start": 131.0,
-          "end": 131.26
+          "end": 131.26,
+          "confidence": 0.483
         },
         {
           "text": "être",
           "start": 131.26,
-          "end": 131.7
+          "end": 131.7,
+          "confidence": 0.419
         },
         {
           "text": "émervé",
           "start": 131.7,
-          "end": 132.2
+          "end": 132.2,
+          "confidence": 0.697
         },
         {
           "text": "par",
           "start": 132.2,
-          "end": 132.44
+          "end": 132.44,
+          "confidence": 0.905
         },
         {
           "text": "son",
           "start": 132.44,
-          "end": 132.66
+          "end": 132.66,
+          "confidence": 0.442
         },
         {
           "text": "mome",
           "start": 132.66,
-          "end": 133.1
+          "end": 133.1,
+          "confidence": 0.257
         },
         {
           "text": "qui",
           "start": 133.1,
-          "end": 133.26
+          "end": 133.26,
+          "confidence": 0.946
         },
         {
           "text": "occupeait",
           "start": 133.26,
-          "end": 133.72
+          "end": 133.72,
+          "confidence": 0.624
         },
         {
           "text": "la",
           "start": 133.72,
-          "end": 133.8
+          "end": 133.8,
+          "confidence": 0.831
         },
         {
           "text": "ligne",
           "start": 133.8,
-          "end": 134.0
+          "end": 134.0,
+          "confidence": 0.979
         },
         {
           "text": "de",
           "start": 134.0,
-          "end": 134.16
+          "end": 134.16,
+          "confidence": 0.936
         },
         {
           "text": "téléphone",
           "start": 134.16,
-          "end": 134.44
+          "end": 134.44,
+          "confidence": 0.981
         },
         {
           "text": "pendant",
           "start": 134.44,
-          "end": 134.8
+          "end": 134.8,
+          "confidence": 0.941
         },
         {
           "text": "une",
           "start": 134.8,
-          "end": 135.1
+          "end": 135.1,
+          "confidence": 0.862
         }
       ]
     },
@@ -3262,46 +3708,55 @@
       "avg_logprob": -0.4092958496838081,
       "compression_ratio": 1.7106109324758842,
       "no_speech_prob": 1.0782517165353056e-05,
+      "confidence": 0.912,
       "words": [
         {
           "text": "heure",
           "start": 135.16,
-          "end": 135.36
+          "end": 135.36,
+          "confidence": 0.609
         },
         {
           "text": "chaque",
           "start": 135.36,
-          "end": 135.52
+          "end": 135.52,
+          "confidence": 0.968
         },
         {
           "text": "soir",
           "start": 135.52,
-          "end": 135.76
+          "end": 135.76,
+          "confidence": 0.997
         },
         {
           "text": "pour",
           "start": 135.76,
-          "end": 135.94
+          "end": 135.94,
+          "confidence": 0.99
         },
         {
           "text": "discuter",
           "start": 135.94,
-          "end": 136.26
+          "end": 136.26,
+          "confidence": 0.87
         },
         {
           "text": "avec",
           "start": 136.26,
-          "end": 136.44
+          "end": 136.44,
+          "confidence": 0.993
         },
         {
           "text": "un",
           "start": 136.44,
-          "end": 136.6
+          "end": 136.6,
+          "confidence": 0.98
         },
         {
           "text": "copain.",
           "start": 136.6,
-          "end": 136.9
+          "end": 136.9,
+          "confidence": 0.945
         }
       ]
     },
@@ -3341,81 +3796,97 @@
       "avg_logprob": -0.5699985279756434,
       "compression_ratio": 1.6276276276276276,
       "no_speech_prob": 3.2885168366192374e-06,
+      "confidence": 0.706,
       "words": [
         {
           "text": "Mais",
           "start": 137.24,
-          "end": 137.48
+          "end": 137.48,
+          "confidence": 0.972
         },
         {
           "text": "ça",
           "start": 137.48,
-          "end": 137.6
+          "end": 137.6,
+          "confidence": 0.88
         },
         {
           "text": "ne",
           "start": 137.6,
-          "end": 137.68
+          "end": 137.68,
+          "confidence": 0.679
         },
         {
           "text": "ressemble",
           "start": 137.68,
-          "end": 138.14
+          "end": 138.14,
+          "confidence": 0.749
         },
         {
           "text": "pas",
           "start": 138.14,
-          "end": 138.68
+          "end": 138.68,
+          "confidence": 0.572
         },
         {
           "text": "à",
           "start": 138.68,
-          "end": 138.94
+          "end": 138.94,
+          "confidence": 0.979
         },
         {
           "text": "ce",
           "start": 138.94,
-          "end": 139.02
+          "end": 139.02,
+          "confidence": 0.596
         },
         {
           "text": "qu'on",
           "start": 139.02,
-          "end": 139.16
+          "end": 139.16,
+          "confidence": 0.96
         },
         {
           "text": "peut",
           "start": 139.16,
-          "end": 139.3
+          "end": 139.3,
+          "confidence": 0.53
         },
         {
           "text": "ressentir",
           "start": 139.3,
-          "end": 140.04
+          "end": 140.04,
+          "confidence": 0.895
         },
         {
           "text": "à",
           "start": 140.04,
-          "end": 140.24
+          "end": 140.24,
+          "confidence": 0.37
         },
         {
           "text": "voir",
           "start": 140.24,
-          "end": 140.48
+          "end": 140.48,
+          "confidence": 0.918
         },
         {
           "text": "même",
           "start": 140.48,
-          "end": 140.86
+          "end": 140.86,
+          "confidence": 0.375
         },
         {
           "text": "mome",
           "start": 140.86,
-          "end": 141.18
+          "end": 141.18,
+          "confidence": 0.401
         },
         {
           "text": "aujourd'hui,",
           "start": 141.18,
-          "end": 141.82
+          "end": 141.82,
+          "confidence": 0.749
         }
       ]
     },
@@ -3449,71 +3920,85 @@
       "avg_logprob": -0.5699985279756434,
       "compression_ratio": 1.6276276276276276,
       "no_speech_prob": 3.2885168366192374e-06,
+      "confidence": 0.587,
       "words": [
         {
           "text": "continuuellement",
           "start": 141.92,
-          "end": 142.8
+          "end": 142.8,
+          "confidence": 0.384
         },
         {
           "text": "avec",
           "start": 142.8,
-          "end": 143.18
+          "end": 143.18,
+          "confidence": 0.871
         },
         {
           "text": "son",
           "start": 143.18,
-          "end": 143.34
+          "end": 143.34,
+          "confidence": 0.856
         },
         {
           "text": "smartphone",
           "start": 143.34,
-          "end": 143.62
+          "end": 143.62,
+          "confidence": 0.495
         },
         {
           "text": "dans",
           "start": 143.62,
-          "end": 143.92
+          "end": 143.92,
+          "confidence": 0.549
         },
         {
           "text": "la",
           "start": 143.92,
-          "end": 144.0
+          "end": 144.0,
+          "confidence": 0.975
         },
         {
           "text": "main,",
           "start": 144.0,
-          "end": 144.18
+          "end": 144.18,
+          "confidence": 0.635
         },
         {
           "text": "comme",
           "start": 144.18,
-          "end": 144.52
+          "end": 144.52,
+          "confidence": 0.955
         },
         {
           "text": "c'était",
           "start": 144.52,
-          "end": 144.78
+          "end": 144.78,
+          "confidence": 0.576
         },
         {
           "text": "une",
           "start": 144.78,
-          "end": 144.94
+          "end": 144.94,
+          "confidence": 0.978
         },
         {
           "text": "sorte",
           "start": 144.94,
-          "end": 145.1
+          "end": 145.1,
+          "confidence": 0.647
         },
         {
           "text": "de",
           "start": 145.1,
-          "end": 145.18
+          "end": 145.18,
+          "confidence": 0.246
         },
         {
           "text": "estimateur",
           "start": 145.18,
-          "end": 145.76
+          "end": 145.76,
+          "confidence": 0.45
         }
       ]
     },
@@ -3555,51 +4040,61 @@
       "avg_logprob": -0.5699985279756434,
       "compression_ratio": 1.6276276276276276,
       "no_speech_prob": 3.2885168366192374e-06,
+      "confidence": 0.385,
       "words": [
         {
           "text": "extère",
           "start": 145.96,
-          "end": 146.4
+          "end": 146.4,
+          "confidence": 0.366
         },
         {
           "text": "de",
           "start": 146.4,
-          "end": 146.46
+          "end": 146.46,
+          "confidence": 0.232
         },
         {
           "text": "l'essayer",
           "start": 146.46,
-          "end": 147.3
+          "end": 147.3,
+          "confidence": 0.208
         },
         {
           "text": "à",
           "start": 147.3,
-          "end": 147.44
+          "end": 147.44,
+          "confidence": 0.545
         },
         {
           "text": "l'éantrénée,",
           "start": 147.44,
-          "end": 147.94
+          "end": 147.94,
+          "confidence": 0.386
         },
         {
           "text": "ça",
           "start": 147.94,
-          "end": 148.0
+          "end": 148.0,
+          "confidence": 0.773
         },
         {
           "text": "m'a",
           "start": 148.0,
-          "end": 148.28
+          "end": 148.28,
+          "confidence": 0.561
         },
         {
           "text": "eu",
           "start": 148.28,
-          "end": 148.38
+          "end": 148.38,
+          "confidence": 0.151
         },
         {
           "text": "immédiat.",
           "start": 148.38,
-          "end": 148.88
+          "end": 148.88,
+          "confidence": 0.558
         }
       ]
     },
@@ -3635,81 +4130,97 @@
       "avg_logprob": -0.5699985279756434,
       "compression_ratio": 1.6276276276276276,
       "no_speech_prob": 3.2885168366192374e-06,
+      "confidence": 0.578,
       "words": [
         {
           "text": "Bon,",
           "start": 149.06,
-          "end": 149.3
+          "end": 149.3,
+          "confidence": 0.439
         },
         {
           "text": "je",
           "start": 149.3,
-          "end": 149.34
+          "end": 149.34,
+          "confidence": 0.336
         },
         {
           "text": "dis",
           "start": 149.34,
-          "end": 149.42
+          "end": 149.42,
+          "confidence": 0.35
         },
         {
           "text": "ça",
           "start": 149.42,
-          "end": 149.62
+          "end": 149.62,
+          "confidence": 0.951
         },
         {
           "text": "pour",
           "start": 149.62,
-          "end": 149.72
+          "end": 149.72,
+          "confidence": 0.972
         },
         {
           "text": "le",
           "start": 149.72,
-          "end": 149.82
+          "end": 149.82,
+          "confidence": 0.993
         },
         {
           "text": "mome,",
           "start": 149.82,
-          "end": 150.4
+          "end": 150.4,
+          "confidence": 0.62
         },
         {
           "text": "mais",
           "start": 150.4,
-          "end": 150.44
+          "end": 150.44,
+          "confidence": 0.677
         },
         {
           "text": "évidemment,",
           "start": 150.44,
-          "end": 151.16
+          "end": 151.16,
+          "confidence": 0.639
         },
         {
           "text": "on",
           "start": 151.16,
-          "end": 151.2
+          "end": 151.2,
+          "confidence": 0.371
         },
         {
           "text": "va",
           "start": 151.2,
-          "end": 151.28
+          "end": 151.28,
+          "confidence": 0.985
         },
         {
           "text": "là",
           "start": 151.28,
-          "end": 151.4
+          "end": 151.4,
+          "confidence": 0.744
         },
         {
           "text": "pour",
           "start": 151.4,
-          "end": 151.62
+          "end": 151.62,
+          "confidence": 0.47
         },
         {
           "text": "nos",
           "start": 151.62,
-          "end": 151.7
+          "end": 151.7,
+          "confidence": 0.836
         },
         {
           "text": "aussi.",
           "start": 151.7,
-          "end": 152.08
+          "end": 152.08,
+          "confidence": 0.343
         }
       ]
     },
@@ -3736,26 +4247,31 @@
       "avg_logprob": -0.5699985279756434,
       "compression_ratio": 1.6276276276276276,
       "no_speech_prob": 3.2885168366192374e-06,
+      "confidence": 0.86,
       "words": [
         {
           "text": "Donc,",
           "start": 152.64,
-          "end": 153.0
+          "end": 153.0,
+          "confidence": 0.905
         },
         {
           "text": "rapport",
           "start": 153.0,
-          "end": 153.4
+          "end": 153.4,
+          "confidence": 0.974
         },
         {
           "text": "immédiat",
           "start": 153.4,
-          "end": 154.28
+          "end": 154.28,
+          "confidence": 0.764
         },
         {
           "text": "d'accord.",
           "start": 154.28,
-          "end": 154.68
+          "end": 154.68,
+          "confidence": 0.914
         }
       ]
     },
@@ -3785,51 +4301,61 @@
       "avg_logprob": -0.5699985279756434,
       "compression_ratio": 1.6276276276276276,
       "no_speech_prob": 3.2885168366192374e-06,
+      "confidence": 0.744,
       "words": [
         {
           "text": "Mais",
           "start": 155.62,
-          "end": 155.9
+          "end": 155.9,
+          "confidence": 0.982
         },
         {
           "text": "pourquoi,",
           "start": 155.9,
-          "end": 156.32
+          "end": 156.32,
+          "confidence": 0.81
         },
         {
           "text": "à",
           "start": 156.32,
-          "end": 156.48
+          "end": 156.48,
+          "confidence": 0.823
         },
         {
           "text": "ton",
           "start": 156.48,
-          "end": 156.66
+          "end": 156.66,
+          "confidence": 0.949
         },
         {
           "text": "impression",
           "start": 156.66,
-          "end": 156.96
+          "end": 156.96,
+          "confidence": 0.937
         },
         {
           "text": "qu'on",
           "start": 156.96,
-          "end": 157.28
+          "end": 157.28,
+          "confidence": 0.893
         },
         {
           "text": "en",
           "start": 157.28,
-          "end": 157.34
+          "end": 157.34,
+          "confidence": 0.761
         },
         {
           "text": "sortira",
           "start": 157.34,
-          "end": 157.84
+          "end": 157.84,
+          "confidence": 0.531
         },
         {
           "text": "jamais?",
           "start": 157.84,
-          "end": 158.38
+          "end": 158.38,
+          "confidence": 0.47
         }
       ]
     },
@@ -3869,91 +4395,109 @@
       "avg_logprob": -0.5699985279756434,
       "compression_ratio": 1.6276276276276276,
       "no_speech_prob": 3.2885168366192374e-06,
+      "confidence": 0.712,
       "words": [
         {
           "text": "Et",
           "start": 159.16,
-          "end": 159.26
+          "end": 159.26,
+          "confidence": 0.827
         },
         {
           "text": "puis,",
           "start": 159.26,
-          "end": 159.48
+          "end": 159.48,
+          "confidence": 0.532
         },
         {
           "text": "il",
           "start": 159.48,
-          "end": 159.52
+          "end": 159.52,
+          "confidence": 0.685
         },
         {
           "text": "faut",
           "start": 159.52,
-          "end": 159.56
+          "end": 159.56,
+          "confidence": 0.948
         },
         {
           "text": "en",
           "start": 159.56,
-          "end": 159.72
+          "end": 159.72,
+          "confidence": 0.918
         },
         {
           "text": "remettre",
           "start": 159.72,
-          "end": 160.1
+          "end": 160.1,
+          "confidence": 0.984
         },
         {
           "text": "la",
           "start": 160.1,
-          "end": 160.28
+          "end": 160.28,
+          "confidence": 0.687
         },
         {
           "text": "faute",
           "start": 160.28,
-          "end": 160.6
+          "end": 160.6,
+          "confidence": 0.582
         },
         {
           "text": "sur",
           "start": 160.6,
-          "end": 160.9
+          "end": 160.9,
+          "confidence": 0.951
         },
         {
           "text": "les",
           "start": 160.9,
-          "end": 161.22
+          "end": 161.22,
+          "confidence": 0.839
         },
         {
           "text": "gens",
           "start": 161.22,
-          "end": 161.44
+          "end": 161.44,
+          "confidence": 0.985
         },
         {
           "text": "qui",
           "start": 161.44,
-          "end": 161.58
+          "end": 161.58,
+          "confidence": 0.979
         },
         {
           "text": "ont",
           "start": 161.58,
-          "end": 161.62
+          "end": 161.62,
+          "confidence": 0.958
         },
         {
           "text": "créé",
           "start": 161.62,
-          "end": 162.3
+          "end": 162.3,
+          "confidence": 0.961
         },
         {
           "text": "cette",
           "start": 162.3,
-          "end": 162.42
+          "end": 162.42,
+          "confidence": 0.903
         },
         {
           "text": "petite",
           "start": 162.42,
-          "end": 162.68
+          "end": 162.68,
+          "confidence": 0.029
         },
         {
           "text": "merveilleux",
           "start": 162.68,
-          "end": 163.3
+          "end": 163.3,
+          "confidence": 0.845
         }
       ]
     },
@@ -3984,41 +4528,49 @@
       "avg_logprob": -0.5699985279756434,
       "compression_ratio": 1.6276276276276276,
       "no_speech_prob": 3.2885168366192374e-06,
+      "confidence": 0.707,
       "words": [
         {
           "text": "et",
           "start": 163.3,
-          "end": 163.42
+          "end": 163.42,
+          "confidence": 0.765
         },
         {
           "text": "diabolique",
           "start": 163.42,
-          "end": 163.84
+          "end": 163.84,
+          "confidence": 0.57
         },
         {
           "text": "et",
           "start": 163.84,
-          "end": 163.88
+          "end": 163.88,
+          "confidence": 0.218
         },
         {
           "text": "diabolique",
           "start": 163.88,
-          "end": 164.36
+          "end": 164.36,
+          "confidence": 0.876
         },
         {
           "text": "par",
           "start": 164.36,
-          "end": 164.52
+          "end": 164.52,
+          "confidence": 0.597
         },
         {
           "text": "que",
           "start": 164.52,
-          "end": 164.72
+          "end": 164.72,
+          "confidence": 0.508
         },
         {
           "text": "merveilleux.",
           "start": 164.72,
-          "end": 165.3
+          "end": 165.3,
+          "confidence": 0.974
         }
       ]
     },
@@ -4045,41 +4597,49 @@
       "avg_logprob": -0.6637287139892578,
       "compression_ratio": 1.4379084967320261,
       "no_speech_prob": 6.70581721351482e-05,
+      "confidence": 0.699,
       "words": [
         {
           "text": "Les",
           "start": 166.86,
-          "end": 167.02
+          "end": 167.02,
+          "confidence": 0.509
         },
         {
           "text": "économistes",
           "start": 167.02,
-          "end": 167.48
+          "end": 167.48,
+          "confidence": 0.92
         },
         {
           "text": "parlent",
           "start": 167.48,
-          "end": 167.72
+          "end": 167.72,
+          "confidence": 0.801
         },
         {
           "text": "de",
           "start": 167.72,
-          "end": 167.8
+          "end": 167.8,
+          "confidence": 0.826
         },
         {
           "text": "dépendance",
           "start": 167.8,
-          "end": 168.32
+          "end": 168.32,
+          "confidence": 0.69
         },
         {
           "text": "du",
           "start": 168.32,
-          "end": 168.46
+          "end": 168.46,
+          "confidence": 0.963
         },
         {
           "text": "santé.",
           "start": 168.46,
-          "end": 168.84
+          "end": 168.84,
+          "confidence": 0.433
         }
       ]
     },
@@ -4118,86 +4678,103 @@
       "avg_logprob": -0.6637287139892578,
       "compression_ratio": 1.4379084967320261,
       "no_speech_prob": 6.70581721351482e-05,
+      "confidence": 0.498,
       "words": [
         {
           "text": "Ces",
           "start": 168.84,
-          "end": 169.12
+          "end": 169.12,
+          "confidence": 0.404
         },
         {
           "text": "vidéos,",
           "start": 169.12,
-          "end": 169.44
+          "end": 169.44,
+          "confidence": 0.559
         },
         {
           "text": "en",
           "start": 169.44,
-          "end": 169.62
+          "end": 169.62,
+          "confidence": 0.732
         },
         {
           "text": "fait,",
           "start": 169.62,
-          "end": 169.68
+          "end": 169.68,
+          "confidence": 0.982
         },
         {
           "text": "on",
           "start": 169.68,
-          "end": 169.74
+          "end": 169.74,
+          "confidence": 0.374
         },
         {
           "text": "est",
           "start": 169.74,
-          "end": 169.84
+          "end": 169.84,
+          "confidence": 0.796
         },
         {
           "text": "un",
           "start": 169.84,
-          "end": 170.12
+          "end": 170.12,
+          "confidence": 0.271
         },
         {
           "text": "santé",
           "start": 170.12,
-          "end": 170.74
+          "end": 170.74,
+          "confidence": 0.942
         },
         {
           "text": "qui",
           "start": 170.74,
-          "end": 170.9
+          "end": 170.9,
+          "confidence": 0.845
         },
         {
           "text": "a",
           "start": 170.9,
-          "end": 171.0
+          "end": 171.0,
+          "confidence": 0.827
         },
         {
           "text": "été",
           "start": 171.0,
-          "end": 171.08
+          "end": 171.08,
+          "confidence": 0.994
         },
         {
           "text": "étabis,",
           "start": 171.08,
-          "end": 171.7
+          "end": 171.7,
+          "confidence": 0.368
         },
         {
           "text": "un",
           "start": 171.7,
-          "end": 171.84
+          "end": 171.84,
+          "confidence": 0.294
         },
         {
           "text": "soit",
           "start": 171.84,
-          "end": 172.1
+          "end": 172.1,
+          "confidence": 0.309
         },
         {
           "text": "mon",
           "start": 172.1,
-          "end": 172.26
+          "end": 172.26,
+          "confidence": 0.231
         },
         {
           "text": "termine,",
           "start": 172.26,
-          "end": 172.72
+          "end": 172.72,
+          "confidence": 0.389
         }
       ]
     },
@@ -4239,81 +4816,97 @@
       "avg_logprob": -0.8324870356807003,
       "compression_ratio": 1.1058823529411765,
       "no_speech_prob": 5.472532211570069e-05,
+      "confidence": 0.481,
       "words": [
         {
           "text": "un",
           "start": 172.74,
-          "end": 172.78
+          "end": 172.78,
+          "confidence": 0.163
         },
         {
           "text": "marchand",
           "start": 172.78,
-          "end": 173.06
+          "end": 173.06,
+          "confidence": 0.328
         },
         {
           "text": "de",
           "start": 173.06,
-          "end": 173.26
+          "end": 173.26,
+          "confidence": 0.297
         },
         {
           "text": "soleil,",
           "start": 173.26,
-          "end": 173.48
+          "end": 173.48,
+          "confidence": 0.31
         },
         {
           "text": "soit",
           "start": 173.48,
-          "end": 174.42
+          "end": 174.42,
+          "confidence": 0.939
         },
         {
           "text": "définissant",
           "start": 174.42,
-          "end": 175.5
+          "end": 175.5,
+          "confidence": 0.611
         },
         {
           "text": "des",
           "start": 175.5,
-          "end": 175.68
+          "end": 175.68,
+          "confidence": 0.784
         },
         {
           "text": "beurs,",
           "start": 175.68,
-          "end": 176.0
+          "end": 176.0,
+          "confidence": 0.557
         },
         {
           "text": "on",
           "start": 176.0,
-          "end": 176.04
+          "end": 176.04,
+          "confidence": 0.15
         },
         {
           "text": "définit",
           "start": 176.04,
-          "end": 176.38
+          "end": 176.38,
+          "confidence": 0.528
         },
         {
           "text": "ça",
           "start": 176.38,
-          "end": 176.48
+          "end": 176.48,
+          "confidence": 0.444
         },
         {
           "text": "en",
           "start": 176.48,
-          "end": 176.58
+          "end": 176.58,
+          "confidence": 0.801
         },
         {
           "text": "fait",
           "start": 176.58,
-          "end": 176.68
+          "end": 176.68,
+          "confidence": 0.57
         },
         {
           "text": "une",
           "start": 176.68,
-          "end": 176.78
+          "end": 176.78,
+          "confidence": 0.868
         },
         {
           "text": "signalétique.",
           "start": 176.78,
-          "end": 177.72
+          "end": 177.72,
+          "confidence": 0.758
         }
       ]
     }

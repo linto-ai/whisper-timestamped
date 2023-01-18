@@ -25,51 +25,61 @@
       "avg_logprob": -1.531521723820613,
       "compression_ratio": 0.8222222222222222,
       "no_speech_prob": 0.3798484802246094,
+      "confidence": 0.18,
       "words": [
         {
           "text": "Je",
           "start": 0.06,
-          "end": 0.68
+          "end": 0.68,
+          "confidence": 0.067
         },
         {
           "text": "ne",
           "start": 0.68,
-          "end": 0.78
+          "end": 0.78,
+          "confidence": 0.139
         },
         {
           "text": "suis",
           "start": 0.78,
-          "end": 0.96
+          "end": 0.96,
+          "confidence": 0.185
         },
         {
           "text": "pas",
           "start": 0.96,
-          "end": 1.12
+          "end": 1.12,
+          "confidence": 0.803
         },
         {
           "text": "en",
           "start": 1.12,
-          "end": 1.28
+          "end": 1.28,
+          "confidence": 0.107
         },
         {
           "text": "train",
           "start": 1.28,
-          "end": 1.38
+          "end": 1.38,
+          "confidence": 0.136
         },
         {
           "text": "de",
           "start": 1.38,
-          "end": 1.56
+          "end": 1.56,
+          "confidence": 0.632
         },
         {
           "text": "faire",
           "start": 1.56,
-          "end": 1.6
+          "end": 1.6,
+          "confidence": 0.105
         },
         {
           "text": "ça.",
           "start": 1.6,
-          "end": 1.64
+          "end": 1.64,
+          "confidence": 0.163
         }
       ]
     }

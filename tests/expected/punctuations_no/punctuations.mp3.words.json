@@ -29,31 +29,37 @@
       "avg_logprob": -0.30108165740966797,
       "compression_ratio": 0.8048780487804879,
       "no_speech_prob": 0.05284806713461876,
+      "confidence": 0.881,
       "words": [
         {
           "text": "Dis-moi",
           "start": 0.38,
-          "end": 1.3
+          "end": 1.3,
+          "confidence": 0.75
         },
         {
           "text": "est-ce",
           "start": 1.3,
-          "end": 1.46
+          "end": 1.46,
+          "confidence": 0.966
         },
         {
           "text": "que",
           "start": 1.46,
-          "end": 1.64
+          "end": 1.64,
+          "confidence": 0.977
         },
         {
           "text": "l'avion",
           "start": 1.64,
-          "end": 2.0
+          "end": 2.0,
+          "confidence": 0.994
         },
         {
           "text": "vole",
           "start": 2.0,
-          "end": 2.4
+          "end": 2.4,
+          "confidence": 0.786
         }
       ]
     }

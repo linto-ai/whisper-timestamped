@@ -25,36 +25,43 @@
       "avg_logprob": -0.9094077623807467,
       "compression_ratio": 0.7575757575757576,
       "no_speech_prob": 0.0011662691831588745,
+      "confidence": 0.443,
       "words": [
         {
           "text": "Dima",
           "start": 0.42,
-          "end": 0.74
+          "end": 0.74,
+          "confidence": 0.284
         },
         {
           "text": "et",
           "start": 0.74,
-          "end": 1.36
+          "end": 1.36,
+          "confidence": 0.328
         },
         {
           "text": "ce",
           "start": 1.36,
-          "end": 1.48
+          "end": 1.48,
+          "confidence": 0.529
         },
         {
           "text": "que",
           "start": 1.48,
-          "end": 1.6
+          "end": 1.6,
+          "confidence": 0.855
         },
         {
           "text": "l'on",
           "start": 1.6,
-          "end": 1.92
+          "end": 1.92,
+          "confidence": 0.573
         },
         {
           "text": "vole.",
           "start": 1.92,
-          "end": 2.54
+          "end": 2.54,
+          "confidence": 0.361
         }
       ]
     }
