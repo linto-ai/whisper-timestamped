@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.06,
-      "end": 6.1,
+      "end": 6.16,
       "text": " What are you telling me, guys?",
       "tokens": [
         708,
@@ -25,11 +25,11 @@
         {
           "text": "What",
           "start": 0.06,
-          "end": 4.92
+          "end": 4.9
         },
         {
           "text": "are",
-          "start": 4.92,
+          "start": 4.9,
           "end": 5.18
         },
         {
@@ -50,7 +50,7 @@
         {
           "text": "guys?",
           "start": 5.88,
-          "end": 6.1
+          "end": 6.16
         }
       ]
     },
@@ -111,7 +111,7 @@
       "id": 2,
       "seek": 0,
       "start": 7.57,
-      "end": 8.4,
+      "end": 8.38,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -156,7 +156,7 @@
         {
           "text": "dude?",
           "start": 8.16,
-          "end": 8.4
+          "end": 8.38
         }
       ]
     },
@@ -164,7 +164,7 @@
       "id": 3,
       "seek": 0,
       "start": 11.2,
-      "end": 11.86,
+      "end": 12.54,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -204,20 +204,20 @@
         {
           "text": "me,",
           "start": 11.66,
-          "end": 11.76
+          "end": 12.44
         },
         {
           "text": "dude?",
-          "start": 11.76,
-          "end": 11.86
+          "start": 12.44,
+          "end": 12.54
         }
       ]
     },
     {
       "id": 4,
       "seek": 0,
-      "start": 11.86,
-      "end": 13.14,
+      "start": 12.54,
+      "end": 16.48,
       "text": " What are you telling me, guys?",
       "tokens": [
         708,
@@ -236,33 +236,33 @@
       "words": [
         {
           "text": "What",
-          "start": 11.86,
-          "end": 12.4
+          "start": 12.54,
+          "end": 12.64
         },
         {
           "text": "are",
-          "start": 12.4,
-          "end": 12.5
+          "start": 12.64,
+          "end": 12.74
         },
         {
           "text": "you",
-          "start": 12.5,
-          "end": 12.6
+          "start": 12.74,
+          "end": 12.84
         },
         {
           "text": "telling",
-          "start": 12.6,
-          "end": 12.7
+          "start": 12.84,
+          "end": 12.94
         },
         {
           "text": "me,",
-          "start": 12.7,
-          "end": 13.04
+          "start": 12.94,
+          "end": 13.18
         },
         {
           "text": "guys?",
-          "start": 13.04,
-          "end": 13.14
+          "start": 13.18,
+          "end": 16.48
         }
       ]
     },
@@ -270,7 +270,7 @@
       "id": 5,
       "seek": 0,
       "start": 20.24,
-      "end": 21.48,
+      "end": 21.4,
       "text": " What are you telling me, guys?",
       "tokens": [
         708,
@@ -315,7 +315,7 @@
         {
           "text": "guys?",
           "start": 21.26,
-          "end": 21.48
+          "end": 21.4
         }
       ]
     },
@@ -428,8 +428,8 @@
     {
       "id": 8,
       "seek": 2600,
-      "start": 26.04,
-      "end": 28.8,
+      "start": 26.02,
+      "end": 28.86,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -448,17 +448,17 @@
       "words": [
         {
           "text": "What",
-          "start": 26.04,
-          "end": 26.14
+          "start": 26.02,
+          "end": 26.12
         },
         {
           "text": "are",
-          "start": 26.14,
-          "end": 27.6
+          "start": 26.12,
+          "end": 27.16
         },
         {
           "text": "you",
-          "start": 27.6,
+          "start": 27.16,
           "end": 28.24
         },
         {
@@ -474,7 +474,7 @@
         {
           "text": "dude?",
           "start": 28.7,
-          "end": 28.8
+          "end": 28.86
         }
       ]
     },
@@ -800,7 +800,7 @@
       "id": 15,
       "seek": 2600,
       "start": 41.96,
-      "end": 42.88,
+      "end": 42.94,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -840,12 +840,12 @@
         {
           "text": "me,",
           "start": 42.36,
-          "end": 42.78
+          "end": 42.82
         },
         {
           "text": "dude?",
-          "start": 42.78,
-          "end": 42.88
+          "start": 42.82,
+          "end": 42.94
         }
       ]
     },
@@ -905,8 +905,8 @@
     {
       "id": 17,
       "seek": 2600,
-      "start": 46.48,
-      "end": 47.08,
+      "start": 46.58,
+      "end": 48.0,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -925,41 +925,41 @@
       "words": [
         {
           "text": "What",
-          "start": 46.48,
-          "end": 46.58
-        },
-        {
-          "text": "are",
           "start": 46.58,
           "end": 46.68
         },
         {
-          "text": "you",
+          "text": "are",
           "start": 46.68,
           "end": 46.78
         },
         {
-          "text": "telling",
+          "text": "you",
           "start": 46.78,
           "end": 46.88
         },
         {
-          "text": "me,",
+          "text": "telling",
           "start": 46.88,
-          "end": 46.98
+          "end": 47.14
+        },
+        {
+          "text": "me,",
+          "start": 47.14,
+          "end": 47.24
         },
         {
           "text": "dude?",
-          "start": 46.98,
-          "end": 47.08
+          "start": 47.24,
+          "end": 48.0
         }
       ]
     },
     {
       "id": 18,
       "seek": 2600,
-      "start": 47.52,
-      "end": 48.52,
+      "start": 48.0,
+      "end": 48.6,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -978,33 +978,33 @@
       "words": [
         {
           "text": "What",
-          "start": 47.52,
-          "end": 47.62
+          "start": 48.0,
+          "end": 48.1
         },
         {
           "text": "are",
-          "start": 47.62,
-          "end": 48.04
+          "start": 48.1,
+          "end": 48.2
         },
         {
           "text": "you",
-          "start": 48.04,
-          "end": 48.14
+          "start": 48.2,
+          "end": 48.3
         },
         {
           "text": "telling",
-          "start": 48.14,
-          "end": 48.24
+          "start": 48.3,
+          "end": 48.4
         },
         {
           "text": "me,",
-          "start": 48.24,
-          "end": 48.42
+          "start": 48.4,
+          "end": 48.5
         },
         {
           "text": "dude?",
-          "start": 48.42,
-          "end": 48.52
+          "start": 48.5,
+          "end": 48.6
         }
       ]
     },
@@ -1085,11 +1085,11 @@
         {
           "text": "What",
           "start": 51.98,
-          "end": 52.18
+          "end": 52.14
         },
         {
           "text": "are",
-          "start": 52.18,
+          "start": 52.14,
           "end": 52.62
         },
         {
@@ -1100,11 +1100,11 @@
         {
           "text": "telling",
           "start": 52.72,
-          "end": 52.98
+          "end": 52.9
         },
         {
           "text": "me,",
-          "start": 52.98,
+          "start": 52.9,
           "end": 54.02
         },
         {
@@ -1118,7 +1118,7 @@
       "id": 21,
       "seek": 5400,
       "start": 54.25,
-      "end": 55.16,
+      "end": 55.42,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1163,7 +1163,7 @@
         {
           "text": "dude?",
           "start": 54.96,
-          "end": 55.16
+          "end": 55.42
         }
       ]
     },
@@ -1224,7 +1224,7 @@
       "id": 23,
       "seek": 5400,
       "start": 58.06,
-      "end": 59.16,
+      "end": 59.14,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1244,32 +1244,32 @@
         {
           "text": "What",
           "start": 58.06,
-          "end": 58.66
+          "end": 58.64
         },
         {
           "text": "are",
-          "start": 58.66,
-          "end": 58.76
+          "start": 58.64,
+          "end": 58.74
         },
         {
           "text": "you",
-          "start": 58.76,
-          "end": 58.86
+          "start": 58.74,
+          "end": 58.84
         },
         {
           "text": "telling",
-          "start": 58.86,
-          "end": 58.96
+          "start": 58.84,
+          "end": 58.94
         },
         {
           "text": "me,",
-          "start": 58.96,
-          "end": 59.06
+          "start": 58.94,
+          "end": 59.04
         },
         {
           "text": "dude?",
-          "start": 59.06,
-          "end": 59.16
+          "start": 59.04,
+          "end": 59.14
         }
       ]
     },
@@ -1383,7 +1383,7 @@
       "id": 26,
       "seek": 5400,
       "start": 63.52,
-      "end": 65.57,
+      "end": 65.6,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1408,16 +1408,16 @@
         {
           "text": "are",
           "start": 64.12,
-          "end": 64.24
+          "end": 64.26
         },
         {
           "text": "you",
-          "start": 64.24,
-          "end": 64.34
+          "start": 64.26,
+          "end": 64.36
         },
         {
           "text": "telling",
-          "start": 64.34,
+          "start": 64.36,
           "end": 64.6
         },
         {
@@ -1428,14 +1428,14 @@
         {
           "text": "dude?",
           "start": 65.02,
-          "end": 65.57
+          "end": 65.6
         }
       ]
     },
     {
       "id": 27,
       "seek": 5400,
-      "start": 65.57,
+      "start": 65.6,
       "end": 67.12,
       "text": " What are you telling me, dude?",
       "tokens": [
@@ -1455,7 +1455,7 @@
       "words": [
         {
           "text": "What",
-          "start": 65.57,
+          "start": 65.6,
           "end": 65.84
         },
         {
@@ -1542,7 +1542,7 @@
       "id": 29,
       "seek": 5400,
       "start": 70.86,
-      "end": 72.2,
+      "end": 72.18,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1582,20 +1582,20 @@
         {
           "text": "me,",
           "start": 71.26,
-          "end": 72.1
+          "end": 71.9
         },
         {
           "text": "dude?",
-          "start": 72.1,
-          "end": 72.2
+          "start": 71.9,
+          "end": 72.18
         }
       ]
     },
     {
       "id": 30,
       "seek": 5400,
-      "start": 72.2,
-      "end": 72.92,
+      "start": 72.18,
+      "end": 72.9,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1614,41 +1614,41 @@
       "words": [
         {
           "text": "What",
-          "start": 72.2,
-          "end": 72.42
+          "start": 72.18,
+          "end": 72.4
         },
         {
           "text": "are",
-          "start": 72.42,
-          "end": 72.52
+          "start": 72.4,
+          "end": 72.5
         },
         {
           "text": "you",
-          "start": 72.52,
-          "end": 72.62
+          "start": 72.5,
+          "end": 72.6
         },
         {
           "text": "telling",
-          "start": 72.62,
-          "end": 72.72
+          "start": 72.6,
+          "end": 72.7
         },
         {
           "text": "me,",
-          "start": 72.72,
-          "end": 72.82
+          "start": 72.7,
+          "end": 72.8
         },
         {
           "text": "dude?",
-          "start": 72.82,
-          "end": 72.92
+          "start": 72.8,
+          "end": 72.9
         }
       ]
     },
     {
       "id": 31,
       "seek": 5400,
-      "start": 74.04,
-      "end": 74.84,
+      "start": 74.08,
+      "end": 76.4,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1667,40 +1667,40 @@
       "words": [
         {
           "text": "What",
-          "start": 74.04,
-          "end": 74.34
+          "start": 74.08,
+          "end": 74.32
         },
         {
           "text": "are",
-          "start": 74.34,
-          "end": 74.44
+          "start": 74.32,
+          "end": 74.42
         },
         {
           "text": "you",
-          "start": 74.44,
-          "end": 74.54
+          "start": 74.42,
+          "end": 74.94
         },
         {
           "text": "telling",
-          "start": 74.54,
-          "end": 74.64
+          "start": 74.94,
+          "end": 75.56
         },
         {
           "text": "me,",
-          "start": 74.64,
-          "end": 74.74
+          "start": 75.56,
+          "end": 76.3
         },
         {
           "text": "dude?",
-          "start": 74.74,
-          "end": 74.84
+          "start": 76.3,
+          "end": 76.4
         }
       ]
     },
     {
       "id": 32,
       "seek": 5400,
-      "start": 75.52,
+      "start": 76.4,
       "end": 78.12,
       "text": " What are you telling me, dude?",
       "tokens": [
@@ -1720,7 +1720,7 @@
       "words": [
         {
           "text": "What",
-          "start": 75.52,
+          "start": 76.4,
           "end": 77.38
         },
         {
@@ -1807,7 +1807,7 @@
       "id": 34,
       "seek": 5400,
       "start": 80.22,
-      "end": 81.28,
+      "end": 82.25,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1832,34 +1832,34 @@
         {
           "text": "are",
           "start": 80.32,
-          "end": 80.62
+          "end": 80.6
         },
         {
           "text": "you",
-          "start": 80.62,
-          "end": 80.72
+          "start": 80.6,
+          "end": 80.7
         },
         {
           "text": "telling",
-          "start": 80.72,
-          "end": 80.94
+          "start": 80.7,
+          "end": 80.96
         },
         {
           "text": "me,",
-          "start": 80.94,
-          "end": 81.18
+          "start": 80.96,
+          "end": 81.62
         },
         {
           "text": "dude?",
-          "start": 81.18,
-          "end": 81.28
+          "start": 81.62,
+          "end": 82.25
         }
       ]
     },
     {
       "id": 35,
       "seek": 8200,
-      "start": 82.04,
+      "start": 82.25,
       "end": 83.1,
       "text": " What are you telling me, dude?",
       "tokens": [
@@ -1879,27 +1879,27 @@
       "words": [
         {
           "text": "What",
-          "start": 82.04,
-          "end": 82.14
+          "start": 82.25,
+          "end": 82.35
         },
         {
           "text": "are",
-          "start": 82.14,
-          "end": 82.28
+          "start": 82.35,
+          "end": 82.45
         },
         {
           "text": "you",
-          "start": 82.28,
-          "end": 82.38
+          "start": 82.45,
+          "end": 82.55
         },
         {
           "text": "telling",
-          "start": 82.38,
-          "end": 82.48
+          "start": 82.55,
+          "end": 82.65
         },
         {
           "text": "me,",
-          "start": 82.48,
+          "start": 82.65,
           "end": 82.86
         },
         {
@@ -1966,7 +1966,7 @@
       "id": 37,
       "seek": 8200,
       "start": 85.52,
-      "end": 87.98,
+      "end": 88.0,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2006,19 +2006,19 @@
         {
           "text": "me,",
           "start": 87.12,
-          "end": 87.88
+          "end": 87.9
         },
         {
           "text": "dude?",
-          "start": 87.88,
-          "end": 87.98
+          "start": 87.9,
+          "end": 88.0
         }
       ]
     },
     {
       "id": 38,
       "seek": 8200,
-      "start": 87.98,
+      "start": 88.0,
       "end": 90.21,
       "text": " What are you telling me, dude?",
       "tokens": [
@@ -2038,7 +2038,7 @@
       "words": [
         {
           "text": "What",
-          "start": 87.98,
+          "start": 88.0,
           "end": 88.34
         },
         {
@@ -2072,7 +2072,7 @@
       "id": 39,
       "seek": 8200,
       "start": 90.21,
-      "end": 90.81,
+      "end": 90.96,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2112,12 +2112,12 @@
         {
           "text": "me,",
           "start": 90.61,
-          "end": 90.71
+          "end": 90.86
         },
         {
           "text": "dude?",
-          "start": 90.71,
-          "end": 90.81
+          "start": 90.86,
+          "end": 90.96
         }
       ]
     },
@@ -2177,7 +2177,7 @@
     {
       "id": 41,
       "seek": 8200,
-      "start": 93.54,
+      "start": 93.52,
       "end": 94.68,
       "text": " What are you telling me, dude?",
       "tokens": [
@@ -2197,7 +2197,7 @@
       "words": [
         {
           "text": "What",
-          "start": 93.54,
+          "start": 93.52,
           "end": 94.04
         },
         {
@@ -2230,8 +2230,8 @@
     {
       "id": 42,
       "seek": 8200,
-      "start": 96.9,
-      "end": 98.54,
+      "start": 96.88,
+      "end": 98.5,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2250,7 +2250,7 @@
       "words": [
         {
           "text": "What",
-          "start": 96.9,
+          "start": 96.88,
           "end": 97.08
         },
         {
@@ -2271,20 +2271,20 @@
         {
           "text": "me,",
           "start": 97.72,
-          "end": 98.44
+          "end": 98.4
         },
         {
           "text": "dude?",
-          "start": 98.44,
-          "end": 98.54
+          "start": 98.4,
+          "end": 98.5
         }
       ]
     },
     {
       "id": 43,
       "seek": 8200,
-      "start": 98.54,
-      "end": 99.14,
+      "start": 98.5,
+      "end": 99.1,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2303,41 +2303,41 @@
       "words": [
         {
           "text": "What",
-          "start": 98.54,
-          "end": 98.64
+          "start": 98.5,
+          "end": 98.6
         },
         {
           "text": "are",
-          "start": 98.64,
-          "end": 98.74
+          "start": 98.6,
+          "end": 98.7
         },
         {
           "text": "you",
-          "start": 98.74,
-          "end": 98.84
+          "start": 98.7,
+          "end": 98.8
         },
         {
           "text": "telling",
-          "start": 98.84,
-          "end": 98.94
+          "start": 98.8,
+          "end": 98.9
         },
         {
           "text": "me,",
-          "start": 98.94,
-          "end": 99.04
+          "start": 98.9,
+          "end": 99.0
         },
         {
           "text": "dude?",
-          "start": 99.04,
-          "end": 99.14
+          "start": 99.0,
+          "end": 99.1
         }
       ]
     },
     {
       "id": 44,
       "seek": 8200,
-      "start": 100.96,
-      "end": 101.56,
+      "start": 99.52,
+      "end": 101.96,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2356,7 +2356,7 @@
       "words": [
         {
           "text": "What",
-          "start": 100.96,
+          "start": 99.52,
           "end": 101.06
         },
         {
@@ -2372,24 +2372,24 @@
         {
           "text": "telling",
           "start": 101.26,
-          "end": 101.36
+          "end": 101.44
         },
         {
           "text": "me,",
-          "start": 101.36,
-          "end": 101.46
+          "start": 101.44,
+          "end": 101.76
         },
         {
           "text": "dude?",
-          "start": 101.46,
-          "end": 101.56
+          "start": 101.76,
+          "end": 101.96
         }
       ]
     },
     {
       "id": 45,
       "seek": 8200,
-      "start": 101.56,
+      "start": 101.96,
       "end": 103.32,
       "text": " What are you telling me, dude?",
       "tokens": [
@@ -2409,7 +2409,7 @@
       "words": [
         {
           "text": "What",
-          "start": 101.56,
+          "start": 101.96,
           "end": 102.82
         },
         {
@@ -2442,8 +2442,8 @@
     {
       "id": 46,
       "seek": 8200,
-      "start": 105.06,
-      "end": 105.66,
+      "start": 104.78,
+      "end": 105.56,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2462,33 +2462,33 @@
       "words": [
         {
           "text": "What",
-          "start": 105.06,
-          "end": 105.16
+          "start": 104.78,
+          "end": 104.88
         },
         {
           "text": "are",
+          "start": 104.88,
+          "end": 105.16
+        },
+        {
+          "text": "you",
           "start": 105.16,
           "end": 105.26
         },
         {
-          "text": "you",
+          "text": "telling",
           "start": 105.26,
           "end": 105.36
         },
         {
-          "text": "telling",
+          "text": "me,",
           "start": 105.36,
           "end": 105.46
         },
         {
-          "text": "me,",
+          "text": "dude?",
           "start": 105.46,
           "end": 105.56
-        },
-        {
-          "text": "dude?",
-          "start": 105.56,
-          "end": 105.66
         }
       ]
     },
@@ -2601,8 +2601,8 @@
     {
       "id": 49,
       "seek": 11000,
-      "start": 110.04,
-      "end": 110.88,
+      "start": 110.02,
+      "end": 110.9,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2621,7 +2621,7 @@
       "words": [
         {
           "text": "What",
-          "start": 110.04,
+          "start": 110.02,
           "end": 110.16
         },
         {
@@ -2637,17 +2637,17 @@
         {
           "text": "telling",
           "start": 110.36,
-          "end": 110.5
+          "end": 110.48
         },
         {
           "text": "me,",
-          "start": 110.5,
-          "end": 110.6
+          "start": 110.48,
+          "end": 110.58
         },
         {
           "text": "dude?",
-          "start": 110.6,
-          "end": 110.88
+          "start": 110.58,
+          "end": 110.9
         }
       ]
     },
@@ -2728,16 +2728,16 @@
         {
           "text": "What",
           "start": 113.9,
-          "end": 114.08
+          "end": 114.06
         },
         {
           "text": "are",
-          "start": 114.08,
-          "end": 114.18
+          "start": 114.06,
+          "end": 114.16
         },
         {
           "text": "you",
-          "start": 114.18,
+          "start": 114.16,
           "end": 114.36
         },
         {
@@ -2781,26 +2781,26 @@
         {
           "text": "What",
           "start": 115.52,
-          "end": 116.54
+          "end": 116.56
         },
         {
           "text": "are",
-          "start": 116.54,
-          "end": 116.64
+          "start": 116.56,
+          "end": 116.66
         },
         {
           "text": "you",
-          "start": 116.64,
-          "end": 116.74
+          "start": 116.66,
+          "end": 116.76
         },
         {
           "text": "telling",
-          "start": 116.74,
-          "end": 116.84
+          "start": 116.76,
+          "end": 116.86
         },
         {
           "text": "me,",
-          "start": 116.84,
+          "start": 116.86,
           "end": 117.44
         },
         {
@@ -2814,7 +2814,7 @@
       "id": 53,
       "seek": 11000,
       "start": 118.18,
-      "end": 119.24,
+      "end": 120.48,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2854,20 +2854,20 @@
         {
           "text": "me,",
           "start": 118.84,
-          "end": 119.06
+          "end": 120.1
         },
         {
           "text": "dude?",
-          "start": 119.06,
-          "end": 119.24
+          "start": 120.1,
+          "end": 120.48
         }
       ]
     },
     {
       "id": 54,
       "seek": 11000,
-      "start": 119.52,
-      "end": 120.5,
+      "start": 120.48,
+      "end": 121.08,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2886,33 +2886,33 @@
       "words": [
         {
           "text": "What",
-          "start": 119.52,
-          "end": 119.62
+          "start": 120.48,
+          "end": 120.58
         },
         {
           "text": "are",
-          "start": 119.62,
-          "end": 119.72
+          "start": 120.58,
+          "end": 120.68
         },
         {
           "text": "you",
-          "start": 119.72,
-          "end": 119.82
+          "start": 120.68,
+          "end": 120.78
         },
         {
           "text": "telling",
-          "start": 119.82,
-          "end": 119.92
+          "start": 120.78,
+          "end": 120.88
         },
         {
           "text": "me,",
-          "start": 119.92,
-          "end": 120.1
+          "start": 120.88,
+          "end": 120.98
         },
         {
           "text": "dude?",
-          "start": 120.1,
-          "end": 120.5
+          "start": 120.98,
+          "end": 121.08
         }
       ]
     },
@@ -2920,7 +2920,7 @@
       "id": 55,
       "seek": 11000,
       "start": 121.52,
-      "end": 123.38,
+      "end": 123.34,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2945,27 +2945,27 @@
         {
           "text": "are",
           "start": 122.72,
-          "end": 122.98
+          "end": 122.94
         },
         {
           "text": "you",
-          "start": 122.98,
-          "end": 123.08
+          "start": 122.94,
+          "end": 123.04
         },
         {
           "text": "telling",
-          "start": 123.08,
-          "end": 123.18
+          "start": 123.04,
+          "end": 123.14
         },
         {
           "text": "me,",
-          "start": 123.18,
-          "end": 123.28
+          "start": 123.14,
+          "end": 123.24
         },
         {
           "text": "dude?",
-          "start": 123.28,
-          "end": 123.38
+          "start": 123.24,
+          "end": 123.34
         }
       ]
     },
@@ -3056,16 +3056,16 @@
         {
           "text": "you",
           "start": 126.9,
-          "end": 127.0
+          "end": 127.06
         },
         {
           "text": "telling",
-          "start": 127.0,
-          "end": 127.14
+          "start": 127.06,
+          "end": 127.16
         },
         {
           "text": "me,",
-          "start": 127.14,
+          "start": 127.16,
           "end": 127.54
         },
         {
@@ -3078,8 +3078,8 @@
     {
       "id": 58,
       "seek": 11000,
-      "start": 129.26,
-      "end": 129.86,
+      "start": 127.64,
+      "end": 129.48,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -3098,40 +3098,40 @@
       "words": [
         {
           "text": "What",
-          "start": 129.26,
-          "end": 129.36
+          "start": 127.64,
+          "end": 128.98
         },
         {
           "text": "are",
-          "start": 129.36,
-          "end": 129.46
+          "start": 128.98,
+          "end": 129.08
         },
         {
           "text": "you",
-          "start": 129.46,
-          "end": 129.56
+          "start": 129.08,
+          "end": 129.18
         },
         {
           "text": "telling",
-          "start": 129.56,
-          "end": 129.66
+          "start": 129.18,
+          "end": 129.28
         },
         {
           "text": "me,",
-          "start": 129.66,
-          "end": 129.76
+          "start": 129.28,
+          "end": 129.38
         },
         {
           "text": "dude?",
-          "start": 129.76,
-          "end": 129.86
+          "start": 129.38,
+          "end": 129.48
         }
       ]
     },
     {
       "id": 59,
       "seek": 11000,
-      "start": 129.86,
+      "start": 129.72,
       "end": 131.86,
       "text": " What are you telling me, dude?",
       "tokens": [
@@ -3151,7 +3151,7 @@
       "words": [
         {
           "text": "What",
-          "start": 129.86,
+          "start": 129.72,
           "end": 131.02
         },
         {
@@ -3205,31 +3205,31 @@
         {
           "text": "What",
           "start": 131.86,
-          "end": 132.22
+          "end": 132.36
         },
         {
           "text": "are",
-          "start": 132.22,
-          "end": 132.32
+          "start": 132.36,
+          "end": 132.46
         },
         {
           "text": "you",
-          "start": 132.32,
-          "end": 132.42
+          "start": 132.46,
+          "end": 132.56
         },
         {
           "text": "telling",
-          "start": 132.42,
-          "end": 132.52
+          "start": 132.56,
+          "end": 132.66
         },
         {
           "text": "me,",
-          "start": 132.52,
-          "end": 132.62
+          "start": 132.66,
+          "end": 132.76
         },
         {
           "text": "dude?",
-          "start": 132.62,
+          "start": 132.76,
           "end": 133.18
         }
       ]
@@ -3237,8 +3237,8 @@
     {
       "id": 61,
       "seek": 11000,
-      "start": 133.76,
-      "end": 135.14,
+      "start": 133.72,
+      "end": 135.6,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -3257,7 +3257,7 @@
       "words": [
         {
           "text": "What",
-          "start": 133.76,
+          "start": 133.72,
           "end": 134.08
         },
         {
@@ -3278,20 +3278,20 @@
         {
           "text": "me,",
           "start": 134.48,
-          "end": 135.04
+          "end": 135.5
         },
         {
           "text": "dude?",
-          "start": 135.04,
-          "end": 135.14
+          "start": 135.5,
+          "end": 135.6
         }
       ]
     },
     {
       "id": 62,
       "seek": 11000,
-      "start": 135.52,
-      "end": 137.84,
+      "start": 135.6,
+      "end": 136.96,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -3310,33 +3310,33 @@
       "words": [
         {
           "text": "What",
-          "start": 135.52,
-          "end": 137.34
+          "start": 135.6,
+          "end": 135.7
         },
         {
           "text": "are",
-          "start": 137.34,
-          "end": 137.44
+          "start": 135.7,
+          "end": 135.8
         },
         {
           "text": "you",
-          "start": 137.44,
-          "end": 137.54
+          "start": 135.8,
+          "end": 135.9
         },
         {
           "text": "telling",
-          "start": 137.54,
-          "end": 137.64
+          "start": 135.9,
+          "end": 136.0
         },
         {
           "text": "me,",
-          "start": 137.64,
-          "end": 137.74
+          "start": 136.0,
+          "end": 136.1
         },
         {
           "text": "dude?",
-          "start": 137.74,
-          "end": 137.84
+          "start": 136.1,
+          "end": 136.96
         }
       ]
     }

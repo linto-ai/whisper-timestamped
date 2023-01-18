@@ -4,7 +4,7 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.18,
+      "start": 0.24,
       "end": 0.6,
       "text": " Hehehe",
       "tokens": [
@@ -20,7 +20,7 @@
       "words": [
         {
           "text": "Hehehe",
-          "start": 0.18,
+          "start": 0.24,
           "end": 0.6
         }
       ]

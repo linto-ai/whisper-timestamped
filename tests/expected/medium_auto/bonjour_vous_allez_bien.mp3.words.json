@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.44,
-      "end": 3.32,
+      "end": 3.24,
       "text": " Bonjour! Est-ce que vous allez bien?",
       "tokens": [
         50364,
@@ -54,14 +54,14 @@
         {
           "text": "bien?",
           "start": 2.56,
-          "end": 3.32
+          "end": 3.24
         }
       ]
     },
     {
       "id": 1,
       "seek": 3000,
-      "start": 32.6,
+      "start": 32.96,
       "end": 35.48,
       "text": " Bonjour! Est-ce que vous allez bien?",
       "tokens": [
@@ -85,7 +85,7 @@
       "words": [
         {
           "text": "Bonjour!",
-          "start": 32.6,
+          "start": 32.96,
           "end": 34.24
         },
         {

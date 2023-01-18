@@ -4,7 +4,7 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.18,
+      "start": 0.16,
       "end": 0.64,
       "text": " Bonjour!",
       "tokens": [
@@ -20,7 +20,7 @@
       "words": [
         {
           "text": "Bonjour!",
-          "start": 0.18,
+          "start": 0.16,
           "end": 0.64
         }
       ]

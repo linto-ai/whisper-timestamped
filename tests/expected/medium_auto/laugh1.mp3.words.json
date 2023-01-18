@@ -4,8 +4,8 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.04,
-      "end": 1.4,
+      "start": 0.02,
+      "end": 1.42,
       "text": " hahahaha",
       "tokens": [
         50364,
@@ -20,8 +20,8 @@
       "words": [
         {
           "text": "hahahaha",
-          "start": 0.04,
-          "end": 1.4
+          "start": 0.02,
+          "end": 1.42
         }
       ]
     }

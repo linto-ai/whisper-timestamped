@@ -4,7 +4,7 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.14,
+      "start": 0.16,
       "end": 0.7,
       "text": " Thank you.",
       "tokens": [
@@ -21,12 +21,12 @@
       "words": [
         {
           "text": "Thank",
-          "start": 0.14,
-          "end": 0.4
+          "start": 0.16,
+          "end": 0.36
         },
         {
           "text": "you.",
-          "start": 0.4,
+          "start": 0.36,
           "end": 0.7
         }
       ]

@@ -4,7 +4,7 @@
     {
       "id": 0,
       "seek": 3000,
-      "start": 30.8,
+      "start": 30.82,
       "end": 35.6,
       "text": " Le plus important au poker ce ne sont pas les cartes, c'est ce que vous en faites.",
       "tokens": [
@@ -38,7 +38,7 @@
       "words": [
         {
           "text": "Le",
-          "start": 30.8,
+          "start": 30.82,
           "end": 30.98
         },
         {
@@ -126,8 +126,8 @@
     {
       "id": 1,
       "seek": 3000,
-      "start": 36.14,
-      "end": 38.82,
+      "start": 36.16,
+      "end": 38.78,
       "text": " Winamax, la référence du poker en ligne.",
       "tokens": [
         10427,
@@ -150,7 +150,7 @@
       "words": [
         {
           "text": "Winamax,",
-          "start": 36.14,
+          "start": 36.16,
           "end": 37.18
         },
         {
@@ -171,17 +171,17 @@
         {
           "text": "poker",
           "start": 37.94,
-          "end": 38.2
+          "end": 38.18
         },
         {
           "text": "en",
-          "start": 38.2,
+          "start": 38.18,
           "end": 38.4
         },
         {
           "text": "ligne.",
           "start": 38.4,
-          "end": 38.82
+          "end": 38.78
         }
       ]
     },
@@ -434,11 +434,11 @@
         {
           "text": "gros",
           "start": 53.84,
-          "end": 53.98
+          "end": 53.96
         },
         {
           "text": "plans,",
-          "start": 53.98,
+          "start": 53.96,
           "end": 54.28
         },
         {
@@ -449,16 +449,16 @@
         {
           "text": "analyses,",
           "start": 54.38,
-          "end": 54.78
+          "end": 54.82
         },
         {
           "text": "des",
-          "start": 54.78,
-          "end": 54.88
+          "start": 54.82,
+          "end": 54.92
         },
         {
           "text": "réactions",
-          "start": 54.88,
+          "start": 54.92,
           "end": 55.2
         },
         {
@@ -474,11 +474,11 @@
         {
           "text": "vous",
           "start": 55.5,
-          "end": 55.62
+          "end": 55.6
         },
         {
           "text": "proposons.",
-          "start": 55.62,
+          "start": 55.6,
           "end": 56.1
         }
       ]
@@ -703,11 +703,11 @@
         {
           "text": "la",
           "start": 65.88,
-          "end": 66.08
+          "end": 66.04
         },
         {
           "text": "CFDT",
-          "start": 66.08,
+          "start": 66.04,
           "end": 66.52
         },
         {
@@ -787,11 +787,11 @@
         {
           "text": "de",
           "start": 67.92,
-          "end": 68.08
+          "end": 68.06
         },
         {
           "text": "Nicolas",
-          "start": 68.08,
+          "start": 68.06,
           "end": 68.36
         },
         {
@@ -822,11 +822,11 @@
         {
           "text": "débat",
           "start": 70.98,
-          "end": 71.34
+          "end": 71.36
         },
         {
           "text": "sur",
-          "start": 71.34,
+          "start": 71.36,
           "end": 71.64
         },
         {
@@ -905,7 +905,7 @@
       "id": 7,
       "seek": 5600,
       "start": 76.78,
-      "end": 83.14,
+      "end": 83.16,
       "text": " Et puis il y a une bataille qui a démarré, celle entre Marine Le Pen et Bruno Gognich, la bataille de la succession de Jean-Marie Le Pen à la tête du Front National.",
       "tokens": [
         3790,
@@ -1124,7 +1124,7 @@
         {
           "text": "National.",
           "start": 82.62,
-          "end": 83.14
+          "end": 83.16
         }
       ]
     },
@@ -1688,16 +1688,16 @@
         {
           "text": "ans,",
           "start": 117.52,
-          "end": 118.28
+          "end": 118.3
         },
         {
           "text": "a",
-          "start": 118.28,
-          "end": 118.38
+          "start": 118.3,
+          "end": 118.4
         },
         {
           "text": "été",
-          "start": 118.38,
+          "start": 118.4,
           "end": 118.54
         },
         {

@@ -26,16 +26,16 @@
         {
           "text": "C'est",
           "start": 0.42,
-          "end": 0.7
+          "end": 0.66
         },
         {
           "text": "évidence",
-          "start": 0.7,
-          "end": 0.92
+          "start": 0.66,
+          "end": 0.94
         },
         {
           "text": "que",
-          "start": 0.92,
+          "start": 0.94,
           "end": 1.06
         },
         {
@@ -182,11 +182,11 @@
         {
           "text": "du",
           "start": 4.96,
-          "end": 5.14
+          "end": 5.16
         },
         {
           "text": "smartphone,",
-          "start": 5.14,
+          "start": 5.16,
           "end": 5.74
         },
         {
@@ -361,11 +361,11 @@
         {
           "text": "hyper",
           "start": 12.18,
-          "end": 12.36
+          "end": 12.38
         },
         {
           "text": "convaincant.",
-          "start": 12.36,
+          "start": 12.38,
           "end": 12.94
         }
       ]
@@ -374,7 +374,7 @@
       "id": 5,
       "seek": 0,
       "start": 13.26,
-      "end": 18.07,
+      "end": 18.03,
       "text": " Alors évidemment, il faudrait ajouter les interfaces les grand-attêtes qu'il a été beaucoup",
       "tokens": [
         9946,
@@ -467,14 +467,14 @@
         {
           "text": "beaucoup",
           "start": 17.5,
-          "end": 18.07
+          "end": 18.03
         }
       ]
     },
     {
       "id": 6,
       "seek": 0,
-      "start": 18.07,
+      "start": 18.03,
       "end": 19.42,
       "text": " très souvent ementionné.",
       "tokens": [
@@ -492,7 +492,7 @@
       "words": [
         {
           "text": "très",
-          "start": 18.07,
+          "start": 18.03,
           "end": 18.66
         },
         {
@@ -624,7 +624,7 @@
       "id": 8,
       "seek": 0,
       "start": 23.58,
-      "end": 25.26,
+      "end": 25.28,
       "text": " nous ont appris à piquer sur des icônes.",
       "tokens": [
         4666,
@@ -649,16 +649,16 @@
         {
           "text": "nous",
           "start": 23.58,
-          "end": 23.78
+          "end": 23.74
         },
         {
           "text": "ont",
-          "start": 23.78,
-          "end": 23.88
+          "start": 23.74,
+          "end": 23.86
         },
         {
           "text": "appris",
-          "start": 23.88,
+          "start": 23.86,
           "end": 24.06
         },
         {
@@ -674,17 +674,17 @@
         {
           "text": "sur",
           "start": 24.42,
-          "end": 24.7
+          "end": 24.68
         },
         {
           "text": "des",
-          "start": 24.7,
+          "start": 24.68,
           "end": 24.8
         },
         {
           "text": "icônes.",
           "start": 24.8,
-          "end": 25.26
+          "end": 25.28
         }
       ]
     },
@@ -727,21 +727,21 @@
         {
           "text": "C'est",
           "start": 25.58,
-          "end": 25.7
+          "end": 25.68
         },
         {
           "text": "ce",
-          "start": 25.7,
-          "end": 25.8
+          "start": 25.68,
+          "end": 25.78
         },
         {
           "text": "que",
-          "start": 25.8,
-          "end": 26.08
+          "start": 25.78,
+          "end": 25.94
         },
         {
           "text": "le",
-          "start": 26.08,
+          "start": 25.94,
           "end": 26.6
         },
         {
@@ -934,21 +934,21 @@
         {
           "text": "le",
           "start": 34.34,
-          "end": 34.78
+          "end": 34.52
         },
         {
           "text": "côté",
-          "start": 34.78,
-          "end": 34.88
+          "start": 34.52,
+          "end": 34.72
         },
         {
           "text": "tout",
-          "start": 34.88,
-          "end": 34.98
+          "start": 34.72,
+          "end": 34.96
         },
         {
           "text": "flu",
-          "start": 34.98,
+          "start": 34.96,
           "end": 35.2
         },
         {
@@ -1198,7 +1198,7 @@
     {
       "id": 14,
       "seek": 2556,
-      "start": 47.06,
+      "start": 47.08,
       "end": 48.86,
       "text": " Mais ça s'assoulait d'une autre interrogation.",
       "tokens": [
@@ -1224,12 +1224,12 @@
       "words": [
         {
           "text": "Mais",
-          "start": 47.06,
-          "end": 47.16
+          "start": 47.08,
+          "end": 47.18
         },
         {
           "text": "ça",
-          "start": 47.16,
+          "start": 47.18,
           "end": 47.46
         },
         {
@@ -1240,11 +1240,11 @@
         {
           "text": "d'une",
           "start": 47.78,
-          "end": 48.0
+          "end": 48.02
         },
         {
           "text": "autre",
-          "start": 48.0,
+          "start": 48.02,
           "end": 48.14
         },
         {
@@ -1258,7 +1258,7 @@
       "id": 15,
       "seek": 2556,
       "start": 49.42,
-      "end": 54.46,
+      "end": 54.34,
       "text": " Est-ce que le fait que cette objet soit inédit un d'huies que notre rapport a lui est aussi",
       "tokens": [
         4410,
@@ -1375,19 +1375,19 @@
         {
           "text": "est",
           "start": 53.62,
-          "end": 53.96
+          "end": 54.0
         },
         {
           "text": "aussi",
-          "start": 53.96,
-          "end": 54.46
+          "start": 54.0,
+          "end": 54.34
         }
       ]
     },
     {
       "id": 16,
       "seek": 2556,
-      "start": 54.48,
+      "start": 54.34,
       "end": 55.44,
       "text": " un rapport inédit?",
       "tokens": [
@@ -1405,7 +1405,7 @@
       "words": [
         {
           "text": "un",
-          "start": 54.48,
+          "start": 54.34,
           "end": 54.72
         },
         {
@@ -1549,7 +1549,7 @@
       "id": 18,
       "seek": 5548,
       "start": 58.72,
-      "end": 63.16,
+      "end": 63.18,
       "text": " qu'on entretenait à d'autres objectes techniques comme la voiture ou le téléphone?",
       "tokens": [
         421,
@@ -1636,7 +1636,7 @@
         {
           "text": "téléphone?",
           "start": 62.6,
-          "end": 63.16
+          "end": 63.18
         }
       ]
     },
@@ -1644,7 +1644,7 @@
       "id": 19,
       "seek": 5548,
       "start": 65.38,
-      "end": 66.19,
+      "end": 66.2,
       "text": " Il n'y a pas d'équivalent.",
       "tokens": [
         4416,
@@ -1688,14 +1688,14 @@
         {
           "text": "d'équivalent.",
           "start": 65.78,
-          "end": 66.19
+          "end": 66.2
         }
       ]
     },
     {
       "id": 20,
       "seek": 5548,
-      "start": 66.19,
+      "start": 66.2,
       "end": 69.94,
       "text": " On s'est espécie de nous voter dans la relation à l'objet.",
       "tokens": [
@@ -1726,7 +1726,7 @@
       "words": [
         {
           "text": "On",
-          "start": 66.19,
+          "start": 66.2,
           "end": 67.0
         },
         {
@@ -2041,11 +2041,11 @@
         {
           "text": "relation",
           "start": 77.93,
-          "end": 78.34
+          "end": 78.32
         },
         {
           "text": "de",
-          "start": 78.34,
+          "start": 78.32,
           "end": 78.7
         },
         {
@@ -2118,7 +2118,7 @@
     {
       "id": 24,
       "seek": 8298,
-      "start": 83.02,
+      "start": 83.0,
       "end": 87.68,
       "text": " le jeu. Donc, à objets inédits, rapport inédits.",
       "tokens": [
@@ -2147,7 +2147,7 @@
       "words": [
         {
           "text": "le",
-          "start": 83.02,
+          "start": 83.0,
           "end": 83.12
         },
         {
@@ -2301,7 +2301,7 @@
       "id": 26,
       "seek": 8298,
       "start": 94.36,
-      "end": 95.0,
+      "end": 95.02,
       "text": " et de rojets.",
       "tokens": [
         1030,
@@ -2329,7 +2329,7 @@
         {
           "text": "rojets.",
           "start": 94.62,
-          "end": 95.0
+          "end": 95.02
         }
       ]
     },
@@ -2337,7 +2337,7 @@
       "id": 27,
       "seek": 8298,
       "start": 96.3,
-      "end": 100.4,
+      "end": 100.48,
       "text": " Bon, en vrai, il faudrait remonter très très finement toute l'histoire des objectes",
       "tokens": [
         7368,
@@ -2430,14 +2430,14 @@
         {
           "text": "objectes",
           "start": 100.2,
-          "end": 100.4
+          "end": 100.48
         }
       ]
     },
     {
       "id": 28,
       "seek": 8298,
-      "start": 100.4,
+      "start": 101.3,
       "end": 105.14,
       "text": " techniques et de leur infération dans le vie pour déterminer si ce rapport est totalement",
       "tokens": [
@@ -2468,12 +2468,12 @@
       "words": [
         {
           "text": "techniques",
-          "start": 100.4,
-          "end": 101.02
+          "start": 101.3,
+          "end": 101.4
         },
         {
           "text": "et",
-          "start": 101.02,
+          "start": 101.4,
           "end": 101.52
         },
         {
@@ -2571,7 +2571,7 @@
       "id": 30,
       "seek": 8298,
       "start": 106.14,
-      "end": 109.46,
+      "end": 109.52,
       "text": " Mais j'ai l'impression comme ça que Nicolas se trompe pas vraiment.",
       "tokens": [
         6313,
@@ -2631,11 +2631,11 @@
         {
           "text": "Nicolas",
           "start": 107.96,
-          "end": 108.34
+          "end": 108.36
         },
         {
           "text": "se",
-          "start": 108.34,
+          "start": 108.36,
           "end": 108.66
         },
         {
@@ -2651,14 +2651,14 @@
         {
           "text": "vraiment.",
           "start": 109.1,
-          "end": 109.46
+          "end": 109.52
         }
       ]
     },
     {
       "id": 31,
       "seek": 10970,
-      "start": 109.76,
+      "start": 109.72,
       "end": 114.26,
       "text": " Pour autant, je sache. Il y a eu plein de discussions autour de la voiture ou même",
       "tokens": [
@@ -2690,7 +2690,7 @@
       "words": [
         {
           "text": "Pour",
-          "start": 109.76,
+          "start": 109.72,
           "end": 110.08
         },
         {
@@ -2731,11 +2731,11 @@
         {
           "text": "plein",
           "start": 111.46,
-          "end": 111.78
+          "end": 111.76
         },
         {
           "text": "de",
-          "start": 111.78,
+          "start": 111.76,
           "end": 112.04
         },
         {
@@ -2873,11 +2873,11 @@
         {
           "text": "rejet",
           "start": 118.32,
-          "end": 118.58
+          "end": 118.62
         },
         {
           "text": "n'en",
-          "start": 118.58,
+          "start": 118.62,
           "end": 118.76
         }
       ]
@@ -3009,11 +3009,11 @@
         {
           "text": "pour",
           "start": 122.08,
-          "end": 122.36
+          "end": 122.34
         },
         {
           "text": "plein",
-          "start": 122.36,
+          "start": 122.34,
           "end": 122.64
         },
         {
@@ -3032,7 +3032,7 @@
       "id": 35,
       "seek": 10970,
       "start": 123.36,
-      "end": 126.56,
+      "end": 126.64,
       "text": " Et là, le soir, quand on va se coucher, on la laisse.",
       "tokens": [
         3790,
@@ -3116,7 +3116,7 @@
         {
           "text": "laisse.",
           "start": 126.14,
-          "end": 126.56
+          "end": 126.64
         }
       ]
     },
@@ -3427,7 +3427,7 @@
     {
       "id": 39,
       "seek": 13702,
-      "start": 137.24,
+      "start": 137.26,
       "end": 141.8,
       "text": " Mais ça ne ressemble pas à ce qu'on peut ressentir à voir même mome aujourd'hui",
       "tokens": [
@@ -3462,7 +3462,7 @@
       "words": [
         {
           "text": "Mais",
-          "start": 137.24,
+          "start": 137.26,
           "end": 137.52
         },
         {
@@ -3738,7 +3738,7 @@
     {
       "id": 42,
       "seek": 13702,
-      "start": 149.06,
+      "start": 149.08,
       "end": 152.18,
       "text": " Bon, je dis ça pour le mome, mais évidemment, va là pour nos aussi.",
       "tokens": [
@@ -3769,7 +3769,7 @@
       "words": [
         {
           "text": "Bon,",
-          "start": 149.06,
+          "start": 149.08,
           "end": 149.3
         },
         {
@@ -3876,11 +3876,11 @@
         {
           "text": "immédiate",
           "start": 153.42,
-          "end": 154.24
+          "end": 154.26
         },
         {
           "text": "d'accord.",
-          "start": 154.24,
+          "start": 154.26,
           "end": 154.68
         }
       ]
@@ -3889,7 +3889,7 @@
       "id": 44,
       "seek": 13702,
       "start": 155.62,
-      "end": 158.36,
+      "end": 158.42,
       "text": " Mais pourquoi, à ton impression qu'on en sortira jamais?",
       "tokens": [
         6313,
@@ -3955,7 +3955,7 @@
         {
           "text": "jamais?",
           "start": 157.84,
-          "end": 158.36
+          "end": 158.42
         }
       ]
     },
@@ -4109,16 +4109,16 @@
         {
           "text": "route",
           "start": 162.4,
-          "end": 162.62
+          "end": 162.6
         },
         {
           "text": "merveilleux",
-          "start": 162.62,
-          "end": 163.32
+          "start": 162.6,
+          "end": 163.3
         },
         {
           "text": "et",
-          "start": 163.32,
+          "start": 163.3,
           "end": 163.42
         },
         {
@@ -4387,11 +4387,11 @@
         {
           "text": "soit",
           "start": 173.14,
-          "end": 174.08
+          "end": 174.04
         },
         {
           "text": "définissant",
-          "start": 174.08,
+          "start": 174.04,
           "end": 175.5
         },
         {

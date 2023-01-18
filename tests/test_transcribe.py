@@ -12,6 +12,7 @@ import json
 FAIL_IF_REFERENCE_NOT_FOUND = True
 GENERATE_NEW_ONLY = False
 GENERATE_ALL = False
+GENERATE_DEVICE_DEPENDENT = False
 
 class TestHelper(unittest.TestCase):
 
@@ -20,7 +21,7 @@ class TestHelper(unittest.TestCase):
         self.createdReferences = []
 
     def tearDown(self):
-        if GENERATE_ALL or GENERATE_NEW_ONLY or not FAIL_IF_REFERENCE_NOT_FOUND:
+        if GENERATE_ALL or GENERATE_NEW_ONLY or not FAIL_IF_REFERENCE_NOT_FOUND or GENERATE_DEVICE_DEPENDENT:
             if len(self.createdReferences) > 0:
                 print("WARNING: Created references: " + ", ".join(self.createdReferences).replace(self.get_data_path()+"/", ""))
         else:
@@ -65,11 +66,22 @@ class TestHelper(unittest.TestCase):
         """
         Check that a file/folder is the same as a reference file/folder.
         """
+        if isinstance(content, dict):
+            # Make a temporary file
+            with tempfile.NamedTemporaryFile(mode = "w", suffix=".json", delete=False) as f:
+                json.dump(content, f, indent=2, ensure_ascii=False)
+                content = f.name
+            res = self.assertNonRegression(f.name, reference)
+            os.remove(f.name)
+            return res
+        elif not isinstance(content, str):
+            raise ValueError(f"Invalid content type: {type(content)}")
+
         self.assertTrue(os.path.exists(content), f"Missing file: {content}")
         is_file = os.path.isfile(reference) if os.path.exists(reference) else os.path.isfile(content)
 
         reference = self.get_expected_path(reference, check = FAIL_IF_REFERENCE_NOT_FOUND)
-        if not os.path.exists(reference) or GENERATE_ALL:
+        if not os.path.exists(reference) or ((GENERATE_ALL or GENERATE_DEVICE_DEPENDENT) and reference not in self.createdReferences):
             dirname = os.path.dirname(reference)
             if not os.path.isdir(dirname):
                 os.makedirs(dirname)
@@ -110,7 +122,6 @@ class TestHelper(unittest.TestCase):
 
     def _check_file_non_regression(self, file, reference):
         if file.endswith(".json"):
-            import json
             with open(file) as f:
                 content = json.load(f)
             with open(reference) as f:
@@ -150,32 +161,6 @@ class TestHelper(unittest.TestCase):
         import torch
         return "cpu" if not torch.cuda.is_available() else "cuda"
 
-class TestPythonImport(TestHelper):
-
-    def test_python_import(self):
-
-        try:
-            import whisper_timestamped
-        except ModuleNotFoundError:
-            sys.path.append(os.path.realpath(os.path.dirname(os.path.dirname(__file__))))
-            import whisper_timestamped
-
-        model = whisper_timestamped.load_model("tiny")
-
-        for filename in "bonjour.wav", "laugh1.mp3", "laugh2.mp3":
-            res = whisper_timestamped.transcribe(model, self.get_data_path(filename))
-            expected = self.get_expected(filename, "tiny_auto")
-            self.assertClose(res, expected)
-
-        for filename in "bonjour.wav", "laugh1.mp3", "laugh2.mp3":
-            res = whisper_timestamped.transcribe(model, self.get_data_path(filename), language="fr")
-            expected = self.get_expected(filename, "tiny_fr")
-            self.assertClose(res, expected)
-
-    def get_expected(self, input, dirname):
-        with open(self.get_expected_path(f"{dirname}/{input}.words.json", check = True)) as f:
-            return json.load(f)
-
 class TestHelperCli(TestHelper):
 
     def _test_cli_(self, opts, name, files = None, extensions = ["words.json"]):
@@ -192,12 +177,20 @@ class TestHelperCli(TestHelper):
                 name_ += f".{self.get_device_str()}"
             def ref_name(output_filename):
                 return name_ + "/" + os.path.basename(output_filename)
+            generic_name = ref_name(input_filename + ".*")
 
-            if GENERATE_NEW_ONLY:
-                if min([os.path.exists(self.get_expected_path(ref_name(output_filename)))
-                    for output_filename in self.get_generated_files(input_filename, output_dir, extensions=extensions)]):
-                    print("Output already exists, skipping", input_filename)
-                    continue
+            if GENERATE_DEVICE_DEPENDENT and not name_.endswith("."+self.get_device_str()):
+                print("Skipping non-regression test", generic_name)
+                continue
+
+            if GENERATE_NEW_ONLY and min([os.path.exists(self.get_expected_path(ref_name(output_filename)))
+                    for output_filename in self.get_generated_files(input_filename, output_dir, extensions=extensions)]
+            ):
+                print("Skipping non-regression test", generic_name)
+                continue
+
+            print("Running non-regression test", generic_name)
+
             main_script = self.get_main_path("transcribe.py", check=False)
             if not os.path.exists(main_script):
                 main_script = "whisper_timestamped"
@@ -264,3 +257,27 @@ class TestTranscribeFormats(TestHelperCli):
             files=files,
             extensions=extensions
         )
+
+class TestPythonImport(TestHelper):
+
+    def test_python_import(self):
+
+        try:
+            import whisper_timestamped
+        except ModuleNotFoundError:
+            sys.path.append(os.path.realpath(os.path.dirname(os.path.dirname(__file__))))
+            import whisper_timestamped
+
+        model = whisper_timestamped.load_model("tiny")
+
+        for filename in "bonjour.wav", "laugh1.mp3", "laugh2.mp3":
+            res = whisper_timestamped.transcribe(model, self.get_data_path(filename))
+            self.assertNonRegression(res, f"tiny_auto/{filename}.words.json")
+
+        for filename in "bonjour.wav", "laugh1.mp3", "laugh2.mp3":
+            res = whisper_timestamped.transcribe(model, self.get_data_path(filename), language="fr")
+            self.assertNonRegression(res, f"tiny_fr/{filename}.words.json")
+
+    def get_expected(self, input, dirname):
+        with open(self.get_expected_path(f"{dirname}/{input}.words.json", check = True)) as f:
+            return json.load(f)

@@ -12,7 +12,8 @@ import torch.nn.functional as F
 # For alignment
 import numpy as np
 import dtw
-import scipy.signal
+# from scipy.signal import medfilt as median_filter
+from scipy.ndimage import median_filter # faster owing to https://github.com/openai/whisper/commit/f0083e7eb20d032390e42f6f6039947fa8669c93
 
 # Additional
 import string
@@ -459,8 +460,10 @@ def transcribe_timestamped(
             segment["words"].append(word)
         else:
             segment["words"] = [word]
-            segment["start"] = word["start"]
-        segment["end"] = word["end"]
+            if refine_whisper_precision:
+                segment["start"] = word["start"]
+        if refine_whisper_precision:
+            segment["end"] = word["end"]
 
     return transcription
 
@@ -550,7 +553,7 @@ def perform_word_alignment(
 
     weights = weights[:, :, :, start_token: end_token].cpu()
 
-    weights = scipy.signal.medfilt(weights, (1, 1, 1, medfilt_width))
+    weights = median_filter(weights, (1, 1, 1, medfilt_width))
 
     weights = torch.tensor(weights * qk_scale).softmax(dim=-1)
     # weights = weights.softmax(dim=-2)

@@ -4,7 +4,7 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.42,
+      "start": 0.4,
       "end": 3.7,
       "text": " C'est évidence que dit Nicolas, mais je me l'étais jamais formulé comme ça.",
       "tokens": [
@@ -37,7 +37,7 @@
       "words": [
         {
           "text": "C'est",
-          "start": 0.42,
+          "start": 0.4,
           "end": 0.66
         },
         {
@@ -272,7 +272,7 @@
       "id": 3,
       "seek": 0,
       "start": 11.04,
-      "end": 12.94,
+      "end": 12.96,
       "text": " Et il est d'ailleurs, c'est la photo c'est hyper convaincant.",
       "tokens": [
         3790,
@@ -350,7 +350,7 @@
         {
           "text": "convaincant.",
           "start": 12.38,
-          "end": 12.94
+          "end": 12.96
         }
       ]
     },
@@ -464,7 +464,7 @@
       "id": 5,
       "seek": 0,
       "start": 18.82,
-      "end": 19.42,
+      "end": 19.44,
       "text": " mentionnées.",
       "tokens": [
         2152,
@@ -480,7 +480,7 @@
         {
           "text": "mentionnées.",
           "start": 18.82,
-          "end": 19.42
+          "end": 19.44
         }
       ]
     },
@@ -659,11 +659,11 @@
         {
           "text": "piquer",
           "start": 24.24,
-          "end": 24.42
+          "end": 24.44
         },
         {
           "text": "sur",
-          "start": 24.42,
+          "start": 24.44,
           "end": 24.68
         },
         {
@@ -744,11 +744,11 @@
         {
           "text": "qui",
           "start": 28.1,
-          "end": 28.22
+          "end": 28.2
         },
         {
           "text": "rend",
-          "start": 28.22,
+          "start": 28.2,
           "end": 28.42
         },
         {
@@ -879,11 +879,11 @@
         {
           "text": "contourner",
           "start": 33.9,
-          "end": 34.38
+          "end": 34.36
         },
         {
           "text": "le",
-          "start": 34.38,
+          "start": 34.36,
           "end": 34.5
         },
         {
@@ -921,11 +921,11 @@
         {
           "text": "tout",
           "start": 34.72,
-          "end": 35.02
+          "end": 35.0
         },
         {
           "text": "flu",
-          "start": 35.02,
+          "start": 35.0,
           "end": 35.18
         },
         {
@@ -961,16 +961,16 @@
         {
           "text": "directement",
           "start": 36.94,
-          "end": 37.46
+          "end": 37.44
         },
         {
           "text": "en",
-          "start": 37.46,
-          "end": 37.58
+          "start": 37.44,
+          "end": 37.66
         },
         {
           "text": "but.",
-          "start": 37.58,
+          "start": 37.66,
           "end": 37.82
         }
       ]
@@ -1323,16 +1323,16 @@
         {
           "text": "d'huits",
           "start": 52.06,
-          "end": 52.34
+          "end": 52.32
         },
         {
           "text": "que",
-          "start": 52.34,
-          "end": 52.44
+          "start": 52.32,
+          "end": 52.42
         },
         {
           "text": "notre",
-          "start": 52.44,
+          "start": 52.42,
           "end": 52.6
         },
         {
@@ -1353,11 +1353,11 @@
         {
           "text": "est",
           "start": 53.62,
-          "end": 53.96
+          "end": 53.94
         },
         {
           "text": "aussi",
-          "start": 53.96,
+          "start": 53.94,
           "end": 54.48
         },
         {
@@ -1399,7 +1399,7 @@
     {
       "id": 16,
       "seek": 5596,
-      "start": 56.0,
+      "start": 55.98,
       "end": 59.32,
       "text": " Est-ce que le rapport qu'on a au sein de foi n'est comparable à celui qu'on entretenait",
       "tokens": [
@@ -1437,7 +1437,7 @@
       "words": [
         {
           "text": "Est-ce",
-          "start": 56.0,
+          "start": 55.98,
           "end": 56.34
         },
         {
@@ -1547,11 +1547,11 @@
         {
           "text": "à",
           "start": 59.32,
-          "end": 59.48
+          "end": 59.46
         },
         {
           "text": "d'autres",
-          "start": 59.48,
+          "start": 59.46,
           "end": 59.62
         },
         {
@@ -1572,26 +1572,26 @@
         {
           "text": "la",
           "start": 60.86,
-          "end": 61.44
+          "end": 61.46
         },
         {
           "text": "voiture",
-          "start": 61.44,
+          "start": 61.46,
           "end": 61.8
         },
         {
           "text": "ou",
           "start": 61.8,
-          "end": 62.3
+          "end": 62.32
         },
         {
           "text": "le",
-          "start": 62.3,
-          "end": 62.64
+          "start": 62.32,
+          "end": 62.6
         },
         {
           "text": "téléphone?",
-          "start": 62.64,
+          "start": 62.6,
           "end": 63.08
         }
       ]
@@ -1652,7 +1652,7 @@
       "id": 19,
       "seek": 5596,
       "start": 66.13,
-      "end": 69.98,
+      "end": 69.96,
       "text": " On s'était stave de nous rôté dans la relation à l'objet.",
       "tokens": [
         1282,
@@ -1709,11 +1709,11 @@
         {
           "text": "rôté",
           "start": 67.82,
-          "end": 68.44
+          "end": 68.46
         },
         {
           "text": "dans",
-          "start": 68.44,
+          "start": 68.46,
           "end": 68.7
         },
         {
@@ -1734,7 +1734,7 @@
         {
           "text": "l'objet.",
           "start": 69.34,
-          "end": 69.98
+          "end": 69.96
         }
       ]
     },
@@ -2257,11 +2257,11 @@
         {
           "text": "En",
           "start": 96.32,
-          "end": 96.5
+          "end": 96.48
         },
         {
           "text": "vrai,",
-          "start": 96.5,
+          "start": 96.48,
           "end": 97.08
         },
         {
@@ -2282,11 +2282,11 @@
         {
           "text": "très",
           "start": 98.08,
-          "end": 98.58
+          "end": 98.56
         },
         {
           "text": "très",
-          "start": 98.58,
+          "start": 98.56,
           "end": 98.76
         },
         {
@@ -2524,7 +2524,7 @@
     {
       "id": 29,
       "seek": 10958,
-      "start": 109.66,
+      "start": 109.92,
       "end": 114.22,
       "text": " Pour autant que je sache, il y a eu plein de discussions autour de la voiture ou même",
       "tokens": [
@@ -2556,7 +2556,7 @@
       "words": [
         {
           "text": "Pour",
-          "start": 109.66,
+          "start": 109.92,
           "end": 110.08
         },
         {
@@ -2786,11 +2786,11 @@
         {
           "text": "pas",
           "start": 119.1,
-          "end": 119.26
+          "end": 119.28
         },
         {
           "text": "du",
-          "start": 119.26,
+          "start": 119.28,
           "end": 119.38
         },
         {
@@ -2947,46 +2947,46 @@
         {
           "text": "Et",
           "start": 123.36,
-          "end": 123.5
+          "end": 123.48
         },
         {
           "text": "là,",
-          "start": 123.5,
-          "end": 123.66
+          "start": 123.48,
+          "end": 123.64
         },
         {
           "text": "le",
-          "start": 123.66,
+          "start": 123.64,
           "end": 123.94
         },
         {
           "text": "soir,",
           "start": 123.94,
-          "end": 124.48
+          "end": 124.5
         },
         {
           "text": "quand",
-          "start": 124.48,
+          "start": 124.5,
           "end": 124.9
         },
         {
           "text": "on",
           "start": 124.9,
-          "end": 125.0
+          "end": 125.02
         },
         {
           "text": "va",
-          "start": 125.0,
-          "end": 125.14
+          "start": 125.02,
+          "end": 125.12
         },
         {
           "text": "se",
-          "start": 125.14,
-          "end": 125.24
+          "start": 125.12,
+          "end": 125.22
         },
         {
           "text": "coucher,",
-          "start": 125.24,
+          "start": 125.22,
           "end": 125.68
         },
         {
@@ -3010,7 +3010,7 @@
       "id": 35,
       "seek": 10958,
       "start": 127.06,
-      "end": 130.2,
+      "end": 130.22,
       "text": " On l'a pas dans la main quand on est collis, qu'on n'en mène pas au chiot.",
       "tokens": [
         1282,
@@ -3124,7 +3124,7 @@
         {
           "text": "chiot.",
           "start": 129.82,
-          "end": 130.2
+          "end": 130.22
         }
       ]
     },
@@ -3185,11 +3185,11 @@
         {
           "text": "par",
           "start": 132.2,
-          "end": 132.46
+          "end": 132.44
         },
         {
           "text": "son",
-          "start": 132.46,
+          "start": 132.44,
           "end": 132.66
         },
         {
@@ -3308,7 +3308,7 @@
     {
       "id": 38,
       "seek": 13706,
-      "start": 137.22,
+      "start": 137.24,
       "end": 141.82,
       "text": " Mais ça ne ressemble pas à ce qu'on peut ressentir à voir même mome aujourd'hui,",
       "tokens": [
@@ -3344,7 +3344,7 @@
       "words": [
         {
           "text": "Mais",
-          "start": 137.22,
+          "start": 137.24,
           "end": 137.48
         },
         {
@@ -4243,11 +4243,11 @@
         {
           "text": "un",
           "start": 172.74,
-          "end": 172.86
+          "end": 172.84
         },
         {
           "text": "marchand",
-          "start": 172.86,
+          "start": 172.84,
           "end": 173.06
         },
         {
