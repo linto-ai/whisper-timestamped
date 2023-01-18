@@ -13,8 +13,9 @@ import numpy as np
 import dtw
 import scipy.signal
 
-# Additional for text tokenization
+# Additional
 import string
+import csv
 
 # Constant variables
 from whisper.utils import format_timestamp
@@ -655,6 +656,11 @@ def ensure_increasing_positions(segments, min_duration=0.1):
 
     return segments
 
+## Some utilities for writing transcripts to files
+
+_punctuations ='!"#$%&()*+,./:;<=>?@[\\]^_`{|}~'
+def remove_punctuation(text):
+    return text.translate(str.maketrans('', '', _punctuations))
 
 def write_vtt_words(transcript, file):
     print("WEBVTT\n", file=file)
@@ -681,17 +687,17 @@ def write_srt_words(transcript, file):
             )
             i += 1
 
+def write_csv(transcript, file):
+    # Use csv to write
+    csv.writer(file).writerows(
+        [[segment["text"].strip(), segment["start"], segment["end"]] for segment in transcript]
+    )
+
 def write_csv_words(transcript, file):
+    writer = csv.writer(file)
     for segment in transcript:
         for word in segment["words"]:
-            #strip punctuation from the isolated words
-            stripChars ='!"#$%&()*+,./:;<=>?@[\\]^_`{|}~'
-            aWord = word['text'].translate(str.maketrans('','',stripChars))
-            print(
-                f"{aWord},{word['start']},{word['end']}",
-                file=file,
-                flush=True,
-            )
+            writer.writerow([remove_punctuation(word['text']), word['start'], word['end']])
 
 def cli():
 
@@ -714,11 +720,11 @@ def cli():
     parser.add_argument('--plot', help="Plot word alignments", default=False, action="store_true")
     parser.add_argument("--verbose", type=str2bool, default=False, help="Whether to print out the progress and debug messages of Whisper")
 
-    parser.add_argument("--csv", default=True, help="Whether to save in CSV format", type=str2bool)
-    parser.add_argument("--json", default=False, help="Whether to save in JSON format", type=str2bool)
-    parser.add_argument("--srt", default=True, help="Whether to save in SRT format", type=str2bool)
-    parser.add_argument("--vtt", default=True, help="Whether to save in VTT format", type=str2bool)
     parser.add_argument("--txt", default=True, help="Whether to save in simple text format", type=str2bool)
+    parser.add_argument("--vtt", default=True, help="Whether to save in VTT format", type=str2bool)
+    parser.add_argument("--srt", default=True, help="Whether to save in SRT format", type=str2bool)
+    parser.add_argument("--csv", default=False, help="Whether to save in CSV format", type=str2bool)
+    parser.add_argument("--json", default=False, help="Whether to save in JSON format", type=str2bool)
     
     parser.add_argument("--task", default="transcribe", help="Whether to perform X->X speech recognition ('transcribe') or X->English translation ('translate')", choices=["transcribe", "translate"], type=str)
     parser.add_argument('--language', help=f"Language to use. Among : {', '.join(sorted(k+'('+v+')' for k,v in whisper.tokenizer.LANGUAGES.items()))}.", choices=sorted(whisper.tokenizer.LANGUAGES.keys()) + sorted([k.title() for k in whisper.tokenizer.TO_LANGUAGE_CODE.keys()]), default=None)
@@ -822,6 +828,8 @@ def cli():
 
             # save CSV
             if csv_out:
+                with open(outname + ".csv", "w", encoding="utf-8") as csv:
+                    write_csv(result["segments"], file=csv)
                 with open(outname + ".words.csv", "w", encoding="utf-8") as csv:
                     write_csv_words(result["segments"], file=csv)
 

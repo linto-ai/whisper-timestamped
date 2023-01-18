@@ -40,9 +40,11 @@ class TestHelper(unittest.TestCase):
         return [self.get_data_path(fn)
             for fn in (sorted(os.listdir(self.get_data_path()) if files is None else files))]
 
-    def get_generated_files(self, input_filename, output_path):
-        for ext in ["txt", "srt", "vtt", "words.srt", "words.vtt", "words.json"]:
-            yield os.path.join(output_path, os.path.basename(input_filename) + "." + ext)
+    def get_generated_files(self, input_filename, output_path, extensions=None):
+        if extensions is None:
+            extensions = ["txt", "srt", "vtt", "words.srt", "words.vtt", "words.json"]
+        for ext in extensions:
+            yield os.path.join(output_path, os.path.basename(input_filename) + "." + ext.lstrip("."))
 
     def assertRun(self, cmd):
         if isinstance(cmd, str):
@@ -194,8 +196,16 @@ class TestTranscribeCli(TestHelper):
             ["--model", "medium", "--language", "fr"],
             "medium_fr"
         )
+    def test_cli_csv(self):
+        # An audio / model combination that produces coma
+        self._test_cli_(
+            ["--model", "tiny", "--csv", "True"],
+            "tiny_auto",
+            files=["laugh1.mp3"],
+            extensions=[".csv", ".words.csv"]
+        )
 
-    def _test_cli_(self, opts, name, files = None):
+    def _test_cli_(self, opts, name, files = None, extensions = None):
 
         output_dir = self.get_output_path(name)
 
@@ -209,7 +219,7 @@ class TestTranscribeCli(TestHelper):
 
             if GENERATE_NEW_ONLY:
                 if min([os.path.exists(self.get_expected_path(ref_name(output_filename)))
-                    for output_filename in self.get_generated_files(input_filename, output_dir)]):
+                    for output_filename in self.get_generated_files(input_filename, output_dir, extensions=extensions)]):
                     print("Output already exists, skipping", input_filename)
                     continue
             (stdout, stderr) = self.assertRun([
@@ -221,7 +231,7 @@ class TestTranscribeCli(TestHelper):
             ])
             print(stdout)
             print(stderr)
-            for output_filename in self.get_generated_files(input_filename, output_dir):
+            for output_filename in self.get_generated_files(input_filename, output_dir, extensions=extensions):
                 self.assertNonRegression(output_filename, ref_name(output_filename))
 
         shutil.rmtree(output_dir, ignore_errors = True)
