@@ -8,9 +8,9 @@ RUN python3 -m pip install --upgrade pip
 
 # Python installation
 WORKDIR /usr/src/app
-COPY whisper_timestamped /usr/src/app/whisper_timestamped
 COPY requirements.txt /usr/src/app/requirements.txt
 COPY setup.py /usr/src/app/setup.py
+COPY whisper_timestamped /usr/src/app/whisper_timestamped
 
 RUN cd /usr/src/app/ && python3 setup.py install
 RUN rm -R /usr/src/app/requirements.txt /usr/src/app/setup.py /usr/src/app/whisper_timestamped
