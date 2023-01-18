@@ -11,7 +11,7 @@ setup(
     description="Add to OpenAI Whisper the capability to give word timestamps",
     readme="README.md",
     python_requires=">=3.7",
-    author="Jernoymous",
+    author="Jeronymous",
     url="https://github.com/Jeronymous/whisper-timestamped",
     license="MIT",
     packages=find_packages(exclude=["tests*"]),
