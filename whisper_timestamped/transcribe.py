@@ -684,8 +684,11 @@ def write_srt_words(transcript, file):
 def write_csv_words(transcript, file):
     for segment in transcript:
         for word in segment["words"]:
+            #strip punctuation from the isolated words
+            stripChars ='!"#$%&()*+,./:;<=>?@[\\]^_`{|}~'
+            aWord = word['text'].translate(str.maketrans('','',stripChars))
             print(
-                f"{word['start']},{word['end']},{word['text']}\n",
+                f"{aWord},{word['start']},{word['end']}",
                 file=file,
                 flush=True,
             )
