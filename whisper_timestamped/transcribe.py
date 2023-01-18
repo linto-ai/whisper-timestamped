@@ -38,6 +38,7 @@ def transcribe_timestamped(
     refine_whisper_precision=0.5,
     min_word_duration=0.1,
     plot_word_alignment=False,
+    remove_punctuation_from_words=False,
     # other Whisper options
     temperature=0.0, # TODO: support list
     best_of=5,
@@ -185,6 +186,7 @@ def transcribe_timestamped(
             add_even_if_missing_end_token=add_even_if_missing_end_token,
             mfcc=mfcc,
             plot=plot_word_alignment,
+            remove_punctuation_from_words=remove_punctuation_from_words,
         )
         if len(ws):
             timestamped_word_segments.append(ws)
@@ -363,6 +365,7 @@ def perform_word_alignment(
     most_top_layers=None,  # 6
     mfcc=None,
     plot=False,
+    remove_punctuation_from_words=False,
     debug=False,
 ):
     """
@@ -408,7 +411,7 @@ def perform_word_alignment(
     end_time = end_token * AUDIO_TIME_PER_TOKEN
 
     split_tokens = split_tokens_on_spaces if use_space else split_tokens_on_unicode
-    words, word_tokens = split_tokens(tokens, tokenizer)
+    words, word_tokens = split_tokens(tokens, tokenizer, remove_punctuation_from_words=remove_punctuation_from_words)
 
     weights = torch.cat(attention_weights) # layers * heads * tokens * frames
 
@@ -427,6 +430,9 @@ def perform_word_alignment(
             qk_scale=qk_scale,
             most_top_layers=most_top_layers,
             mfcc=mfcc,
+            plot=plot,
+            remove_punctuation_from_words=remove_punctuation_from_words,
+            debug=debug,
         )
 
     assert end_token <= weights.shape[-1]
@@ -585,7 +591,9 @@ def perform_word_alignment(
     ]
 
 
-def split_tokens_on_unicode(tokens: list, tokenizer, tokens_as_string=True):
+_punctuation = "".join(c for c in string.punctuation if c not in ["-", "'"])
+
+def split_tokens_on_unicode(tokens: list, tokenizer, tokens_as_string=True, remove_punctuation_from_words=False, isolate_punctuations=False):
     words = []
     word_tokens = []
     current_tokens = []
@@ -594,17 +602,27 @@ def split_tokens_on_unicode(tokens: list, tokenizer, tokens_as_string=True):
         current_tokens.append(token)
         decoded = tokenizer.decode_with_timestamps(current_tokens)
         if "\ufffd" not in decoded:
-            words.append(decoded)
-            word_tokens.append(
-                [decoded.strip()] if tokens_as_string else current_tokens)
+            punctuation = not isolate_punctuations and (decoded.strip() in _punctuation)
+            if punctuation:
+                if len(words) == 0:
+                    words = [""]
+                    word_tokens = [[]]
+                if not remove_punctuation_from_words:
+                    words[-1] += decoded
+                word_tokens[-1].append(
+                    decoded.strip() if tokens_as_string else current_tokens)
+            else:
+                words.append(decoded)
+                word_tokens.append(
+                    [decoded.strip()] if tokens_as_string else current_tokens)
             current_tokens = []
 
     return words, word_tokens
 
 
-def split_tokens_on_spaces(tokens: torch.Tensor, tokenizer, tokens_as_string=True):
+def split_tokens_on_spaces(tokens: torch.Tensor, tokenizer, tokens_as_string=True, remove_punctuation_from_words=False):
     subwords, subword_tokens_list = split_tokens_on_unicode(
-        tokens, tokenizer, tokens_as_string=tokens_as_string)
+        tokens, tokenizer, tokens_as_string=tokens_as_string, remove_punctuation_from_words=remove_punctuation_from_words)
     words = []
     word_tokens = []
 
@@ -612,7 +630,7 @@ def split_tokens_on_spaces(tokens: torch.Tensor, tokenizer, tokens_as_string=Tru
         special = (subword_tokens[0].startswith("<|")) if tokens_as_string else (subword_tokens[0] >= tokenizer.eot)
         previous_special = i > 0 and (subword_tokens_list[i-1][0].startswith("<|")) if tokens_as_string else (subword_tokens_list[i-1][0] >= tokenizer.eot)
         with_space = subword.startswith(" ")
-        punctuation = subword.strip() in string.punctuation
+        punctuation = subword.strip() in _punctuation
         if special or (with_space and not punctuation) or previous_special:
             words.append(subword.strip())
             word_tokens.append(subword_tokens)
@@ -658,9 +676,8 @@ def ensure_increasing_positions(segments, min_duration=0.1):
 
 ## Some utilities for writing transcripts to files
 
-_punctuations ='!"#$%&()*+,./:;<=>?@[\\]^_`{|}~'
-def remove_punctuation(text):
-    return text.translate(str.maketrans('', '', _punctuations))
+# def remove_punctuation(text):
+#     return text.translate(str.maketrans('', '', _punctuations))
 
 def write_vtt_words(transcript, file):
     print("WEBVTT\n", file=file)
@@ -697,7 +714,7 @@ def write_csv_words(transcript, file):
     writer = csv.writer(file)
     for segment in transcript:
         for word in segment["words"]:
-            writer.writerow([remove_punctuation(word['text']), word['start'], word['end']])
+            writer.writerow([word['text'], word['start'], word['end']])
 
 def cli():
 
@@ -720,6 +737,7 @@ def cli():
     parser.add_argument('--plot', help="Plot word alignments", default=False, action="store_true")
     parser.add_argument("--verbose", type=str2bool, default=False, help="Whether to print out the progress and debug messages of Whisper")
 
+    parser.add_argument("--punctuations", default=True, help="Whether to include punctuations within the words", type=str2bool)
     parser.add_argument("--txt", default=True, help="Whether to save in simple text format", type=str2bool)
     parser.add_argument("--vtt", default=True, help="Whether to save in VTT format", type=str2bool)
     parser.add_argument("--srt", default=True, help="Whether to save in SRT format", type=str2bool)
@@ -796,6 +814,7 @@ def cli():
             model, audio_path,
             temperature=temperature,
             plot_word_alignment=plot_word_alignment,
+            remove_punctuation_from_words=not args.pop("punctuations"),
             **args
         )
 

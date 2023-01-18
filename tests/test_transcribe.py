@@ -196,13 +196,23 @@ class TestTranscribeCli(TestHelper):
             ["--model", "medium", "--language", "fr"],
             "medium_fr"
         )
-    def test_cli_csv(self):
+    def test_cli_punctuations(self):
+        files = ["punctuations.mp3"]
+        extensions = ["txt", "srt", "vtt", "words.srt", "words.vtt", "words.json", ".csv", ".words.csv"]
+        opts = ["--model", "medium", "--language", "fr", "--csv", "True", "--json", "True"]
+        
         # An audio / model combination that produces coma
         self._test_cli_(
-            ["--model", "tiny", "--csv", "True"],
-            "tiny_auto",
-            files=["laugh1.mp3"],
-            extensions=[".csv", ".words.csv"]
+            opts,
+            "punctuations_yes",
+            files=files,
+            extensions=extensions
+        )
+        self._test_cli_(
+            opts + ["--punctuations", "False"],
+            "punctuations_no",
+            files=files,
+            extensions=extensions
         )
 
     def _test_cli_(self, opts, name, files = None, extensions = None):
