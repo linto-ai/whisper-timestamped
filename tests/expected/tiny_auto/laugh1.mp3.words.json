@@ -27,7 +27,7 @@
       "avg_logprob": -1.2209794362386068,
       "compression_ratio": 1.1379310344827587,
       "no_speech_prob": 0.3798484802246094,
-      "confidence": 0.285,
+      "confidence": 0.311,
       "words": [
         {
           "text": "You",
@@ -51,7 +51,7 @@
           "text": "it,",
           "start": 0.96,
           "end": 1.36,
-          "confidence": 0.179
+          "confidence": 0.341
         },
         {
           "text": "you",
@@ -75,7 +75,7 @@
           "text": "it.",
           "start": 1.74,
           "end": 1.78,
-          "confidence": 0.57
+          "confidence": 0.893
         }
       ]
     }

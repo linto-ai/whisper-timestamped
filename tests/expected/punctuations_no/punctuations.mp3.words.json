@@ -29,13 +29,13 @@
       "avg_logprob": -0.30108165740966797,
       "compression_ratio": 0.8048780487804879,
       "no_speech_prob": 0.05284806713461876,
-      "confidence": 0.881,
+      "confidence": 0.926,
       "words": [
         {
           "text": "Dis-moi",
           "start": 0.38,
           "end": 1.3,
-          "confidence": 0.75
+          "confidence": 0.803
         },
         {
           "text": "est-ce",
@@ -59,7 +59,7 @@
           "text": "vole",
           "start": 2.0,
           "end": 2.4,
-          "confidence": 0.786
+          "confidence": 0.891
         }
       ]
     }

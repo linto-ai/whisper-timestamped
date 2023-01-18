@@ -1,0 +1,318 @@
+{
+  "text": " Wie wieder zu dazu ist Meshfuchs von 1962 als Meshale für die außerordentliche Form des grullischen Rätos ist dann nicht so weitergegangen wie sich Papsbelle dick das gewünscht hatte. Das hat er als Meshale im Rätos.",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.9,
+      "end": 12.76,
+      "text": " Wie wieder zu dazu ist Meshfuchs von 1962 als Meshale für die außerordentliche Form des grullischen Rätos ist dann nicht so weitergegangen wie sich Papsbelle dick das gewünscht hatte.",
+      "tokens": [
+        9233,
+        6216,
+        2164,
+        13034,
+        1418,
+        376,
+        14935,
+        69,
+        37503,
+        2957,
+        39498,
+        3907,
+        376,
+        14935,
+        1220,
+        2959,
+        978,
+        39428,
+        765,
+        7698,
+        68,
+        10126,
+        730,
+        677,
+        858,
+        6282,
+        497,
+        3628,
+        329,
+        1418,
+        3594,
+        1979,
+        370,
+        8988,
+        432,
+        47152,
+        3355,
+        3041,
+        430,
+        2382,
+        65,
+        4434,
+        18659,
+        1482,
+        6906,
+        3412,
+        82,
+        4701,
+        13299,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.6559565617487981,
+      "compression_ratio": 1.2619047619047619,
+      "no_speech_prob": 0.11066971719264984,
+      "confidence": 0.541,
+      "words": [
+        {
+          "text": "Wie",
+          "start": 0.9,
+          "end": 1.06,
+          "confidence": 0.479
+        },
+        {
+          "text": "wieder",
+          "start": 1.06,
+          "end": 1.32,
+          "confidence": 0.9
+        },
+        {
+          "text": "zu",
+          "start": 1.32,
+          "end": 1.54,
+          "confidence": 0.249
+        },
+        {
+          "text": "dazu",
+          "start": 1.54,
+          "end": 1.86,
+          "confidence": 0.131
+        },
+        {
+          "text": "ist",
+          "start": 1.86,
+          "end": 2.12,
+          "confidence": 0.586
+        },
+        {
+          "text": "Meshfuchs",
+          "start": 2.12,
+          "end": 2.72,
+          "confidence": 0.333
+        },
+        {
+          "text": "von",
+          "start": 2.72,
+          "end": 2.94,
+          "confidence": 0.629
+        },
+        {
+          "text": "1962",
+          "start": 2.94,
+          "end": 4.72,
+          "confidence": 0.208
+        },
+        {
+          "text": "als",
+          "start": 4.72,
+          "end": 5.22,
+          "confidence": 0.887
+        },
+        {
+          "text": "Meshale",
+          "start": 5.22,
+          "end": 5.7,
+          "confidence": 0.385
+        },
+        {
+          "text": "für",
+          "start": 5.7,
+          "end": 5.9,
+          "confidence": 0.932
+        },
+        {
+          "text": "die",
+          "start": 5.9,
+          "end": 6.08,
+          "confidence": 0.972
+        },
+        {
+          "text": "außerordentliche",
+          "start": 6.08,
+          "end": 6.98,
+          "confidence": 0.899
+        },
+        {
+          "text": "Form",
+          "start": 6.98,
+          "end": 7.22,
+          "confidence": 0.655
+        },
+        {
+          "text": "des",
+          "start": 7.22,
+          "end": 7.58,
+          "confidence": 0.971
+        },
+        {
+          "text": "grullischen",
+          "start": 7.58,
+          "end": 8.04,
+          "confidence": 0.385
+        },
+        {
+          "text": "Rätos",
+          "start": 8.04,
+          "end": 8.58,
+          "confidence": 0.368
+        },
+        {
+          "text": "ist",
+          "start": 8.58,
+          "end": 9.6,
+          "confidence": 0.55
+        },
+        {
+          "text": "dann",
+          "start": 9.6,
+          "end": 9.74,
+          "confidence": 0.499
+        },
+        {
+          "text": "nicht",
+          "start": 9.74,
+          "end": 9.92,
+          "confidence": 0.936
+        },
+        {
+          "text": "so",
+          "start": 9.92,
+          "end": 10.08,
+          "confidence": 0.954
+        },
+        {
+          "text": "weitergegangen",
+          "start": 10.08,
+          "end": 10.86,
+          "confidence": 0.741
+        },
+        {
+          "text": "wie",
+          "start": 10.86,
+          "end": 11.04,
+          "confidence": 0.703
+        },
+        {
+          "text": "sich",
+          "start": 11.04,
+          "end": 11.22,
+          "confidence": 0.939
+        },
+        {
+          "text": "Papsbelle",
+          "start": 11.22,
+          "end": 11.62,
+          "confidence": 0.355
+        },
+        {
+          "text": "dick",
+          "start": 11.62,
+          "end": 11.84,
+          "confidence": 0.319
+        },
+        {
+          "text": "das",
+          "start": 11.84,
+          "end": 12.08,
+          "confidence": 0.844
+        },
+        {
+          "text": "gewünscht",
+          "start": 12.08,
+          "end": 12.48,
+          "confidence": 0.817
+        },
+        {
+          "text": "hatte.",
+          "start": 12.48,
+          "end": 12.76,
+          "confidence": 0.923
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "seek": 1300,
+      "start": 13.98,
+      "end": 15.22,
+      "text": " Das hat er als Meshale im Rätos.",
+      "tokens": [
+        50364,
+        2846,
+        2385,
+        1189,
+        3907,
+        376,
+        14935,
+        1220,
+        566,
+        497,
+        3628,
+        329,
+        13,
+        51314
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.9516821543375651,
+      "compression_ratio": 0.8048780487804879,
+      "no_speech_prob": 0.04523734375834465,
+      "confidence": 0.381,
+      "words": [
+        {
+          "text": "Das",
+          "start": 13.98,
+          "end": 14.2,
+          "confidence": 0.842
+        },
+        {
+          "text": "hat",
+          "start": 14.2,
+          "end": 14.32,
+          "confidence": 0.876
+        },
+        {
+          "text": "er",
+          "start": 14.32,
+          "end": 14.46,
+          "confidence": 0.603
+        },
+        {
+          "text": "als",
+          "start": 14.46,
+          "end": 14.7,
+          "confidence": 0.628
+        },
+        {
+          "text": "Meshale",
+          "start": 14.7,
+          "end": 15.0,
+          "confidence": 0.205
+        },
+        {
+          "text": "im",
+          "start": 15.0,
+          "end": 15.04,
+          "confidence": 0.1
+        },
+        {
+          "text": "Rätos.",
+          "start": 15.04,
+          "end": 15.22,
+          "confidence": 0.466
+        }
+      ]
+    }
+  ],
+  "language": "de"
+}

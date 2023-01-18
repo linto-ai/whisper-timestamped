@@ -25,7 +25,7 @@
       "avg_logprob": -0.9094077623807467,
       "compression_ratio": 0.7575757575757576,
       "no_speech_prob": 0.0011662691831588745,
-      "confidence": 0.443,
+      "confidence": 0.439,
       "words": [
         {
           "text": "Dima",
@@ -61,7 +61,7 @@
           "text": "vole.",
           "start": 1.92,
           "end": 2.54,
-          "confidence": 0.361
+          "confidence": 0.269
         }
       ]
     }

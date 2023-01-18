@@ -25,7 +25,7 @@
       "avg_logprob": -1.531521723820613,
       "compression_ratio": 0.8222222222222222,
       "no_speech_prob": 0.3798484802246094,
-      "confidence": 0.18,
+      "confidence": 0.174,
       "words": [
         {
           "text": "Je",
@@ -79,7 +79,7 @@
           "text": "ça.",
           "start": 1.6,
           "end": 1.64,
-          "confidence": 0.163
+          "confidence": 0.112
         }
       ]
     }

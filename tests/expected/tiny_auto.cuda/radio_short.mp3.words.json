@@ -21,7 +21,7 @@
       "avg_logprob": -0.40095538627810595,
       "compression_ratio": 4.660377358490566,
       "no_speech_prob": 0.5133081078529358,
-      "confidence": 0.369,
+      "confidence": 0.342,
       "words": [
         {
           "text": "What",
@@ -51,13 +51,13 @@
           "text": "me,",
           "start": 5.62,
           "end": 5.88,
-          "confidence": 0.376
+          "confidence": 0.612
         },
         {
           "text": "guys?",
           "start": 5.88,
           "end": 6.16,
-          "confidence": 0.531
+          "confidence": 0.303
         }
       ]
     },
@@ -81,7 +81,7 @@
       "avg_logprob": -0.40095538627810595,
       "compression_ratio": 4.660377358490566,
       "no_speech_prob": 0.5133081078529358,
-      "confidence": 0.736,
+      "confidence": 0.677,
       "words": [
         {
           "text": "What",
@@ -111,13 +111,13 @@
           "text": "me,",
           "start": 7.24,
           "end": 7.46,
-          "confidence": 0.948
+          "confidence": 0.984
         },
         {
           "text": "dude?",
           "start": 7.46,
           "end": 7.57,
-          "confidence": 0.36
+          "confidence": 0.131
         }
       ]
     },
@@ -141,7 +141,7 @@
       "avg_logprob": -0.40095538627810595,
       "compression_ratio": 4.660377358490566,
       "no_speech_prob": 0.5133081078529358,
-      "confidence": 0.863,
+      "confidence": 0.826,
       "words": [
         {
           "text": "What",
@@ -171,13 +171,13 @@
           "text": "me,",
           "start": 7.73,
           "end": 8.16,
-          "confidence": 0.962
+          "confidence": 0.95
         },
         {
           "text": "dude?",
           "start": 8.16,
           "end": 8.38,
-          "confidence": 0.923
+          "confidence": 0.856
         }
       ]
     },
@@ -201,7 +201,7 @@
       "avg_logprob": -0.40095538627810595,
       "compression_ratio": 4.660377358490566,
       "no_speech_prob": 0.5133081078529358,
-      "confidence": 0.819,
+      "confidence": 0.774,
       "words": [
         {
           "text": "What",
@@ -231,13 +231,13 @@
           "text": "me,",
           "start": 11.66,
           "end": 12.44,
-          "confidence": 0.949
+          "confidence": 0.956
         },
         {
           "text": "dude?",
           "start": 12.44,
           "end": 12.48,
-          "confidence": 0.913
+          "confidence": 0.836
         }
       ]
     },
@@ -261,7 +261,7 @@
       "avg_logprob": -0.40095538627810595,
       "compression_ratio": 4.660377358490566,
       "no_speech_prob": 0.5133081078529358,
-      "confidence": 0.809,
+      "confidence": 0.76,
       "words": [
         {
           "text": "What",
@@ -291,13 +291,13 @@
           "text": "me,",
           "start": 12.64,
           "end": 13.18,
-          "confidence": 0.959
+          "confidence": 0.962
         },
         {
           "text": "guys?",
           "start": 13.18,
           "end": 16.48,
-          "confidence": 0.75
+          "confidence": 0.565
         }
       ]
     },
@@ -321,7 +321,7 @@
       "avg_logprob": -0.40095538627810595,
       "compression_ratio": 4.660377358490566,
       "no_speech_prob": 0.5133081078529358,
-      "confidence": 0.95,
+      "confidence": 0.936,
       "words": [
         {
           "text": "What",
@@ -351,13 +351,13 @@
           "text": "me,",
           "start": 20.94,
           "end": 21.26,
-          "confidence": 0.943
+          "confidence": 0.897
         },
         {
           "text": "guys?",
           "start": 21.26,
           "end": 21.4,
-          "confidence": 0.983
+          "confidence": 0.969
         }
       ]
     },
@@ -381,7 +381,7 @@
       "avg_logprob": -0.40095538627810595,
       "compression_ratio": 4.660377358490566,
       "no_speech_prob": 0.5133081078529358,
-      "confidence": 0.964,
+      "confidence": 0.954,
       "words": [
         {
           "text": "What",
@@ -411,13 +411,13 @@
           "text": "me,",
           "start": 22.5,
           "end": 22.7,
-          "confidence": 0.99
+          "confidence": 0.984
         },
         {
           "text": "dude?",
           "start": 22.7,
           "end": 22.82,
-          "confidence": 0.982
+          "confidence": 0.966
         }
       ]
     },
@@ -441,7 +441,7 @@
       "avg_logprob": -0.40095538627810595,
       "compression_ratio": 4.660377358490566,
       "no_speech_prob": 0.5133081078529358,
-      "confidence": 0.883,
+      "confidence": 0.855,
       "words": [
         {
           "text": "What",
@@ -471,13 +471,13 @@
           "text": "me,",
           "start": 22.98,
           "end": 23.02,
-          "confidence": 0.96
+          "confidence": 0.975
         },
         {
           "text": "dude?",
           "start": 23.02,
           "end": 23.68,
-          "confidence": 0.977
+          "confidence": 0.955
         }
       ]
     },
@@ -501,7 +501,7 @@
       "avg_logprob": -0.2699087316339666,
       "compression_ratio": 9.136363636363637,
       "no_speech_prob": 0.004098172299563885,
-      "confidence": 0.61,
+      "confidence": 0.524,
       "words": [
         {
           "text": "What",
@@ -531,13 +531,13 @@
           "text": "me,",
           "start": 28.28,
           "end": 28.7,
-          "confidence": 0.935
+          "confidence": 0.927
         },
         {
           "text": "dude?",
           "start": 28.7,
           "end": 28.86,
-          "confidence": 0.822
+          "confidence": 0.682
         }
       ]
     },
@@ -561,7 +561,7 @@
       "avg_logprob": -0.2699087316339666,
       "compression_ratio": 9.136363636363637,
       "no_speech_prob": 0.004098172299563885,
-      "confidence": 0.664,
+      "confidence": 0.586,
       "words": [
         {
           "text": "What",
@@ -591,13 +591,13 @@
           "text": "me,",
           "start": 31.5,
           "end": 31.68,
-          "confidence": 0.918
+          "confidence": 0.895
         },
         {
           "text": "dude?",
           "start": 31.68,
           "end": 32.48,
-          "confidence": 0.878
+          "confidence": 0.776
         }
       ]
     },
@@ -621,7 +621,7 @@
       "avg_logprob": -0.2699087316339666,
       "compression_ratio": 9.136363636363637,
       "no_speech_prob": 0.004098172299563885,
-      "confidence": 0.721,
+      "confidence": 0.663,
       "words": [
         {
           "text": "What",
@@ -651,13 +651,13 @@
           "text": "me,",
           "start": 33.88,
           "end": 34.08,
-          "confidence": 0.878
+          "confidence": 0.891
         },
         {
           "text": "dude?",
           "start": 34.08,
           "end": 34.22,
-          "confidence": 0.919
+          "confidence": 0.85
         }
       ]
     },
@@ -681,7 +681,7 @@
       "avg_logprob": -0.2699087316339666,
       "compression_ratio": 9.136363636363637,
       "no_speech_prob": 0.004098172299563885,
-      "confidence": 0.755,
+      "confidence": 0.711,
       "words": [
         {
           "text": "What",
@@ -711,13 +711,13 @@
           "text": "me,",
           "start": 34.84,
           "end": 35.36,
-          "confidence": 0.859
+          "confidence": 0.901
         },
         {
           "text": "dude?",
           "start": 35.36,
           "end": 35.64,
-          "confidence": 0.935
+          "confidence": 0.88
         }
       ]
     },
@@ -741,7 +741,7 @@
       "avg_logprob": -0.2699087316339666,
       "compression_ratio": 9.136363636363637,
       "no_speech_prob": 0.004098172299563885,
-      "confidence": 0.785,
+      "confidence": 0.745,
       "words": [
         {
           "text": "What",
@@ -771,13 +771,13 @@
           "text": "me,",
           "start": 37.42,
           "end": 38.06,
-          "confidence": 0.888
+          "confidence": 0.928
         },
         {
           "text": "dude?",
           "start": 38.06,
           "end": 38.48,
-          "confidence": 0.946
+          "confidence": 0.899
         }
       ]
     },
@@ -801,7 +801,7 @@
       "avg_logprob": -0.2699087316339666,
       "compression_ratio": 9.136363636363637,
       "no_speech_prob": 0.004098172299563885,
-      "confidence": 0.819,
+      "confidence": 0.787,
       "words": [
         {
           "text": "What",
@@ -831,13 +831,13 @@
           "text": "me,",
           "start": 38.64,
           "end": 38.68,
-          "confidence": 0.897
+          "confidence": 0.935
         },
         {
           "text": "dude?",
           "start": 38.68,
           "end": 38.74,
-          "confidence": 0.957
+          "confidence": 0.921
         }
       ]
     },
@@ -861,7 +861,7 @@
       "avg_logprob": -0.2699087316339666,
       "compression_ratio": 9.136363636363637,
       "no_speech_prob": 0.004098172299563885,
-      "confidence": 0.838,
+      "confidence": 0.812,
       "words": [
         {
           "text": "What",
@@ -891,13 +891,13 @@
           "text": "me,",
           "start": 41.18,
           "end": 41.86,
-          "confidence": 0.897
+          "confidence": 0.941
         },
         {
           "text": "dude?",
           "start": 41.86,
           "end": 41.94,
-          "confidence": 0.964
+          "confidence": 0.936
         }
       ]
     },
@@ -921,7 +921,7 @@
       "avg_logprob": -0.2699087316339666,
       "compression_ratio": 9.136363636363637,
       "no_speech_prob": 0.004098172299563885,
-      "confidence": 0.856,
+      "confidence": 0.834,
       "words": [
         {
           "text": "What",
@@ -951,13 +951,13 @@
           "text": "me,",
           "start": 42.3,
           "end": 42.82,
-          "confidence": 0.907
+          "confidence": 0.953
         },
         {
           "text": "dude?",
           "start": 42.82,
           "end": 42.94,
-          "confidence": 0.965
+          "confidence": 0.938
         }
       ]
     },
@@ -981,7 +981,7 @@
       "avg_logprob": -0.2699087316339666,
       "compression_ratio": 9.136363636363637,
       "no_speech_prob": 0.004098172299563885,
-      "confidence": 0.827,
+      "confidence": 0.795,
       "words": [
         {
           "text": "What",
@@ -1011,13 +1011,13 @@
           "text": "me,",
           "start": 45.92,
           "end": 46.38,
-          "confidence": 0.912
+          "confidence": 0.951
         },
         {
           "text": "dude?",
           "start": 46.38,
           "end": 46.48,
-          "confidence": 0.962
+          "confidence": 0.932
         }
       ]
     },
@@ -1041,7 +1041,7 @@
       "avg_logprob": -0.2699087316339666,
       "compression_ratio": 9.136363636363637,
       "no_speech_prob": 0.004098172299563885,
-      "confidence": 0.815,
+      "confidence": 0.79,
       "words": [
         {
           "text": "What",
@@ -1071,13 +1071,13 @@
           "text": "me,",
           "start": 47.14,
           "end": 47.22,
-          "confidence": 0.877
+          "confidence": 0.948
         },
         {
           "text": "dude?",
           "start": 47.22,
           "end": 48.0,
-          "confidence": 0.962
+          "confidence": 0.933
         }
       ]
     },
@@ -1101,7 +1101,7 @@
       "avg_logprob": -0.2699087316339666,
       "compression_ratio": 9.136363636363637,
       "no_speech_prob": 0.004098172299563885,
-      "confidence": 0.814,
+      "confidence": 0.791,
       "words": [
         {
           "text": "What",
@@ -1131,13 +1131,13 @@
           "text": "me,",
           "start": 48.28,
           "end": 48.42,
-          "confidence": 0.869
+          "confidence": 0.951
         },
         {
           "text": "dude?",
           "start": 48.42,
           "end": 48.52,
-          "confidence": 0.963
+          "confidence": 0.936
         }
       ]
     },
@@ -1161,7 +1161,7 @@
       "avg_logprob": -0.2699087316339666,
       "compression_ratio": 9.136363636363637,
       "no_speech_prob": 0.004098172299563885,
-      "confidence": 0.85,
+      "confidence": 0.838,
       "words": [
         {
           "text": "What",
@@ -1191,13 +1191,13 @@
           "text": "me,",
           "start": 50.6,
           "end": 51.32,
-          "confidence": 0.87
+          "confidence": 0.95
         },
         {
           "text": "dude?",
           "start": 51.32,
           "end": 51.4,
-          "confidence": 0.966
+          "confidence": 0.942
         }
       ]
     },
@@ -1221,7 +1221,7 @@
       "avg_logprob": -0.2699087316339666,
       "compression_ratio": 9.136363636363637,
       "no_speech_prob": 0.004098172299563885,
-      "confidence": 0.807,
+      "confidence": 0.781,
       "words": [
         {
           "text": "What",
@@ -1251,13 +1251,13 @@
           "text": "me,",
           "start": 52.9,
           "end": 54.02,
-          "confidence": 0.868
+          "confidence": 0.943
         },
         {
           "text": "dude?",
           "start": 54.02,
           "end": 54.25,
-          "confidence": 0.967
+          "confidence": 0.945
         }
       ]
     },
@@ -1281,7 +1281,7 @@
       "avg_logprob": -0.17727346823249066,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.02431023120880127,
-      "confidence": 0.76,
+      "confidence": 0.699,
       "words": [
         {
           "text": "What",
@@ -1311,13 +1311,13 @@
           "text": "me,",
           "start": 54.5,
           "end": 54.96,
-          "confidence": 0.828
+          "confidence": 0.708
         },
         {
           "text": "dude?",
           "start": 54.96,
           "end": 55.42,
-          "confidence": 0.916
+          "confidence": 0.848
         }
       ]
     },
@@ -1341,7 +1341,7 @@
       "avg_logprob": -0.17727346823249066,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.02431023120880127,
-      "confidence": 0.789,
+      "confidence": 0.739,
       "words": [
         {
           "text": "What",
@@ -1371,13 +1371,13 @@
           "text": "me,",
           "start": 57.16,
           "end": 57.96,
-          "confidence": 0.863
+          "confidence": 0.804
         },
         {
           "text": "dude?",
           "start": 57.96,
           "end": 58.0,
-          "confidence": 0.944
+          "confidence": 0.896
         }
       ]
     },
@@ -1401,7 +1401,7 @@
       "avg_logprob": -0.17727346823249066,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.02431023120880127,
-      "confidence": 0.788,
+      "confidence": 0.74,
       "words": [
         {
           "text": "What",
@@ -1431,13 +1431,13 @@
           "text": "me,",
           "start": 58.76,
           "end": 58.8,
-          "confidence": 0.871
+          "confidence": 0.835
         },
         {
           "text": "dude?",
           "start": 58.8,
           "end": 58.84,
-          "confidence": 0.951
+          "confidence": 0.908
         }
       ]
     },
@@ -1461,7 +1461,7 @@
       "avg_logprob": -0.17727346823249066,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.02431023120880127,
-      "confidence": 0.815,
+      "confidence": 0.783,
       "words": [
         {
           "text": "What",
@@ -1491,13 +1491,13 @@
           "text": "me,",
           "start": 60.26,
           "end": 60.38,
-          "confidence": 0.852
+          "confidence": 0.853
         },
         {
           "text": "dude?",
           "start": 60.38,
           "end": 61.16,
-          "confidence": 0.953
+          "confidence": 0.911
         }
       ]
     },
@@ -1521,7 +1521,7 @@
       "avg_logprob": -0.17727346823249066,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.02431023120880127,
-      "confidence": 0.831,
+      "confidence": 0.803,
       "words": [
         {
           "text": "What",
@@ -1551,13 +1551,13 @@
           "text": "me,",
           "start": 62.74,
           "end": 62.78,
-          "confidence": 0.869
+          "confidence": 0.892
         },
         {
           "text": "dude?",
           "start": 62.78,
           "end": 62.96,
-          "confidence": 0.957
+          "confidence": 0.918
         }
       ]
     },
@@ -1581,7 +1581,7 @@
       "avg_logprob": -0.17727346823249066,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.02431023120880127,
-      "confidence": 0.857,
+      "confidence": 0.835,
       "words": [
         {
           "text": "What",
@@ -1611,13 +1611,13 @@
           "text": "me,",
           "start": 64.6,
           "end": 65.02,
-          "confidence": 0.881
+          "confidence": 0.901
         },
         {
           "text": "dude?",
           "start": 65.02,
           "end": 65.6,
-          "confidence": 0.957
+          "confidence": 0.919
         }
       ]
     },
@@ -1641,7 +1641,7 @@
       "avg_logprob": -0.17727346823249066,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.02431023120880127,
-      "confidence": 0.853,
+      "confidence": 0.825,
       "words": [
         {
           "text": "What",
@@ -1671,13 +1671,13 @@
           "text": "me,",
           "start": 65.96,
           "end": 66.86,
-          "confidence": 0.907
+          "confidence": 0.918
         },
         {
           "text": "dude?",
           "start": 66.86,
           "end": 67.12,
-          "confidence": 0.961
+          "confidence": 0.927
         }
       ]
     },
@@ -1701,7 +1701,7 @@
       "avg_logprob": -0.17727346823249066,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.02431023120880127,
-      "confidence": 0.852,
+      "confidence": 0.82,
       "words": [
         {
           "text": "What",
@@ -1731,13 +1731,13 @@
           "text": "me,",
           "start": 68.06,
           "end": 68.74,
-          "confidence": 0.921
+          "confidence": 0.923
         },
         {
           "text": "dude?",
           "start": 68.74,
           "end": 69.44,
-          "confidence": 0.963
+          "confidence": 0.931
         }
       ]
     },
@@ -1761,7 +1761,7 @@
       "avg_logprob": -0.17727346823249066,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.02431023120880127,
-      "confidence": 0.862,
+      "confidence": 0.831,
       "words": [
         {
           "text": "What",
@@ -1797,7 +1797,7 @@
           "text": "dude?",
           "start": 71.9,
           "end": 72.18,
-          "confidence": 0.964
+          "confidence": 0.932
         }
       ]
     },
@@ -1821,7 +1821,7 @@
       "avg_logprob": -0.17727346823249066,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.02431023120880127,
-      "confidence": 0.849,
+      "confidence": 0.813,
       "words": [
         {
           "text": "What",
@@ -1851,13 +1851,13 @@
           "text": "me,",
           "start": 72.6,
           "end": 72.72,
-          "confidence": 0.939
+          "confidence": 0.942
         },
         {
           "text": "dude?",
           "start": 72.72,
           "end": 72.8,
-          "confidence": 0.966
+          "confidence": 0.936
         }
       ]
     },
@@ -1881,7 +1881,7 @@
       "avg_logprob": -0.17727346823249066,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.02431023120880127,
-      "confidence": 0.877,
+      "confidence": 0.85,
       "words": [
         {
           "text": "What",
@@ -1911,13 +1911,13 @@
           "text": "me,",
           "start": 75.56,
           "end": 76.3,
-          "confidence": 0.937
+          "confidence": 0.943
         },
         {
           "text": "dude?",
           "start": 76.3,
           "end": 76.36,
-          "confidence": 0.966
+          "confidence": 0.936
         }
       ]
     },
@@ -1941,7 +1941,7 @@
       "avg_logprob": -0.17727346823249066,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.02431023120880127,
-      "confidence": 0.868,
+      "confidence": 0.839,
       "words": [
         {
           "text": "What",
@@ -1971,13 +1971,13 @@
           "text": "me,",
           "start": 77.54,
           "end": 77.94,
-          "confidence": 0.931
+          "confidence": 0.938
         },
         {
           "text": "dude?",
           "start": 77.94,
           "end": 78.12,
-          "confidence": 0.966
+          "confidence": 0.936
         }
       ]
     },
@@ -2001,7 +2001,7 @@
       "avg_logprob": -0.17727346823249066,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.02431023120880127,
-      "confidence": 0.878,
+      "confidence": 0.849,
       "words": [
         {
           "text": "What",
@@ -2031,13 +2031,13 @@
           "text": "me,",
           "start": 78.96,
           "end": 79.04,
-          "confidence": 0.948
+          "confidence": 0.954
         },
         {
           "text": "dude?",
           "start": 79.04,
           "end": 79.12,
-          "confidence": 0.968
+          "confidence": 0.94
         }
       ]
     },
@@ -2061,7 +2061,7 @@
       "avg_logprob": -0.17727346823249066,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.02431023120880127,
-      "confidence": 0.848,
+      "confidence": 0.812,
       "words": [
         {
           "text": "What",
@@ -2091,13 +2091,13 @@
           "text": "me,",
           "start": 80.96,
           "end": 81.62,
-          "confidence": 0.946
+          "confidence": 0.96
         },
         {
           "text": "dude?",
           "start": 81.62,
           "end": 82.25,
-          "confidence": 0.968
+          "confidence": 0.941
         }
       ]
     },
@@ -2121,7 +2121,7 @@
       "avg_logprob": -0.12532896391102966,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0009717326611280441,
-      "confidence": 0.821,
+      "confidence": 0.773,
       "words": [
         {
           "text": "What",
@@ -2151,13 +2151,13 @@
           "text": "me,",
           "start": 82.42,
           "end": 82.86,
-          "confidence": 0.948
+          "confidence": 0.92
         },
         {
           "text": "dude?",
           "start": 82.86,
           "end": 83.1,
-          "confidence": 0.974
+          "confidence": 0.956
         }
       ]
     },
@@ -2181,7 +2181,7 @@
       "avg_logprob": -0.12532896391102966,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0009717326611280441,
-      "confidence": 0.83,
+      "confidence": 0.785,
       "words": [
         {
           "text": "What",
@@ -2211,13 +2211,13 @@
           "text": "me,",
           "start": 85.16,
           "end": 85.26,
-          "confidence": 0.947
+          "confidence": 0.931
         },
         {
           "text": "dude?",
           "start": 85.26,
           "end": 85.44,
-          "confidence": 0.972
+          "confidence": 0.952
         }
       ]
     },
@@ -2241,7 +2241,7 @@
       "avg_logprob": -0.12532896391102966,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0009717326611280441,
-      "confidence": 0.87,
+      "confidence": 0.836,
       "words": [
         {
           "text": "What",
@@ -2271,13 +2271,13 @@
           "text": "me,",
           "start": 87.02,
           "end": 87.9,
-          "confidence": 0.952
+          "confidence": 0.942
         },
         {
           "text": "dude?",
           "start": 87.9,
           "end": 87.94,
-          "confidence": 0.975
+          "confidence": 0.955
         }
       ]
     },
@@ -2301,7 +2301,7 @@
       "avg_logprob": -0.12532896391102966,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0009717326611280441,
-      "confidence": 0.878,
+      "confidence": 0.849,
       "words": [
         {
           "text": "What",
@@ -2331,13 +2331,13 @@
           "text": "me,",
           "start": 89.48,
           "end": 89.52,
-          "confidence": 0.952
+          "confidence": 0.953
         },
         {
           "text": "dude?",
           "start": 89.52,
           "end": 90.21,
-          "confidence": 0.975
+          "confidence": 0.954
         }
       ]
     },
@@ -2361,7 +2361,7 @@
       "avg_logprob": -0.12532896391102966,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0009717326611280441,
-      "confidence": 0.886,
+      "confidence": 0.859,
       "words": [
         {
           "text": "What",
@@ -2391,13 +2391,13 @@
           "text": "me,",
           "start": 90.5,
           "end": 90.86,
-          "confidence": 0.949
+          "confidence": 0.944
         },
         {
           "text": "dude?",
           "start": 90.86,
           "end": 90.9,
-          "confidence": 0.977
+          "confidence": 0.959
         }
       ]
     },
@@ -2421,7 +2421,7 @@
       "avg_logprob": -0.12532896391102966,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0009717326611280441,
-      "confidence": 0.881,
+      "confidence": 0.851,
       "words": [
         {
           "text": "What",
@@ -2451,13 +2451,13 @@
           "text": "me,",
           "start": 91.72,
           "end": 92.16,
-          "confidence": 0.949
+          "confidence": 0.944
         },
         {
           "text": "dude?",
           "start": 92.16,
           "end": 92.32,
-          "confidence": 0.977
+          "confidence": 0.958
         }
       ]
     },
@@ -2481,7 +2481,7 @@
       "avg_logprob": -0.12532896391102966,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0009717326611280441,
-      "confidence": 0.891,
+      "confidence": 0.863,
       "words": [
         {
           "text": "What",
@@ -2511,13 +2511,13 @@
           "text": "me,",
           "start": 94.28,
           "end": 94.36,
-          "confidence": 0.958
+          "confidence": 0.949
         },
         {
           "text": "dude?",
           "start": 94.36,
           "end": 94.68,
-          "confidence": 0.979
+          "confidence": 0.961
         }
       ]
     },
@@ -2541,7 +2541,7 @@
       "avg_logprob": -0.12532896391102966,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0009717326611280441,
-      "confidence": 0.894,
+      "confidence": 0.867,
       "words": [
         {
           "text": "What",
@@ -2571,13 +2571,13 @@
           "text": "me,",
           "start": 97.72,
           "end": 98.4,
-          "confidence": 0.955
+          "confidence": 0.951
         },
         {
           "text": "dude?",
           "start": 98.4,
           "end": 98.48,
-          "confidence": 0.979
+          "confidence": 0.962
         }
       ]
     },
@@ -2601,7 +2601,7 @@
       "avg_logprob": -0.12532896391102966,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0009717326611280441,
-      "confidence": 0.908,
+      "confidence": 0.884,
       "words": [
         {
           "text": "What",
@@ -2631,13 +2631,13 @@
           "text": "me,",
           "start": 98.82,
           "end": 98.86,
-          "confidence": 0.968
+          "confidence": 0.965
         },
         {
           "text": "dude?",
           "start": 98.86,
           "end": 99.04,
-          "confidence": 0.98
+          "confidence": 0.964
         }
       ]
     },
@@ -2661,7 +2661,7 @@
       "avg_logprob": -0.12532896391102966,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0009717326611280441,
-      "confidence": 0.909,
+      "confidence": 0.887,
       "words": [
         {
           "text": "What",
@@ -2691,13 +2691,13 @@
           "text": "me,",
           "start": 101.44,
           "end": 101.76,
-          "confidence": 0.964
+          "confidence": 0.972
         },
         {
           "text": "dude?",
           "start": 101.76,
           "end": 101.96,
-          "confidence": 0.982
+          "confidence": 0.966
         }
       ]
     },
@@ -2721,7 +2721,7 @@
       "avg_logprob": -0.12532896391102966,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0009717326611280441,
-      "confidence": 0.903,
+      "confidence": 0.881,
       "words": [
         {
           "text": "What",
@@ -2751,13 +2751,13 @@
           "text": "me,",
           "start": 102.94,
           "end": 102.98,
-          "confidence": 0.962
+          "confidence": 0.97
         },
         {
           "text": "dude?",
           "start": 102.98,
           "end": 103.02,
-          "confidence": 0.981
+          "confidence": 0.966
         }
       ]
     },
@@ -2781,7 +2781,7 @@
       "avg_logprob": -0.12532896391102966,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0009717326611280441,
-      "confidence": 0.91,
+      "confidence": 0.888,
       "words": [
         {
           "text": "What",
@@ -2811,13 +2811,13 @@
           "text": "me,",
           "start": 105.24,
           "end": 105.3,
-          "confidence": 0.965
+          "confidence": 0.974
         },
         {
           "text": "dude?",
           "start": 105.3,
           "end": 105.36,
-          "confidence": 0.982
+          "confidence": 0.967
         }
       ]
     },
@@ -2841,7 +2841,7 @@
       "avg_logprob": -0.12532896391102966,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0009717326611280441,
-      "confidence": 0.899,
+      "confidence": 0.874,
       "words": [
         {
           "text": "What",
@@ -2871,13 +2871,13 @@
           "text": "me,",
           "start": 107.18,
           "end": 107.76,
-          "confidence": 0.963
+          "confidence": 0.971
         },
         {
           "text": "dude?",
           "start": 107.76,
           "end": 108.0,
-          "confidence": 0.983
+          "confidence": 0.968
         }
       ]
     },
@@ -2901,7 +2901,7 @@
       "avg_logprob": -0.12532896391102966,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0009717326611280441,
-      "confidence": 0.856,
+      "confidence": 0.82,
       "words": [
         {
           "text": "What",
@@ -2931,13 +2931,13 @@
           "text": "me,",
           "start": 108.34,
           "end": 109.48,
-          "confidence": 0.961
+          "confidence": 0.97
         },
         {
           "text": "dude?",
           "start": 109.48,
           "end": 109.78,
-          "confidence": 0.983
+          "confidence": 0.97
         }
       ]
     },
@@ -2961,7 +2961,7 @@
       "avg_logprob": -0.11628666729994223,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0005114182713441551,
-      "confidence": 0.778,
+      "confidence": 0.721,
       "words": [
         {
           "text": "What",
@@ -2991,13 +2991,13 @@
           "text": "me,",
           "start": 110.48,
           "end": 110.52,
-          "confidence": 0.938
+          "confidence": 0.904
         },
         {
           "text": "dude?",
           "start": 110.52,
           "end": 110.9,
-          "confidence": 0.977
+          "confidence": 0.964
         }
       ]
     },
@@ -3021,7 +3021,7 @@
       "avg_logprob": -0.11628666729994223,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0005114182713441551,
-      "confidence": 0.869,
+      "confidence": 0.835,
       "words": [
         {
           "text": "What",
@@ -3051,13 +3051,13 @@
           "text": "me,",
           "start": 113.44,
           "end": 113.48,
-          "confidence": 0.946
+          "confidence": 0.933
         },
         {
           "text": "dude?",
           "start": 113.48,
           "end": 113.52,
-          "confidence": 0.977
+          "confidence": 0.962
         }
       ]
     },
@@ -3081,7 +3081,7 @@
       "avg_logprob": -0.11628666729994223,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0005114182713441551,
-      "confidence": 0.867,
+      "confidence": 0.832,
       "words": [
         {
           "text": "What",
@@ -3111,13 +3111,13 @@
           "text": "me,",
           "start": 114.4,
           "end": 114.86,
-          "confidence": 0.951
+          "confidence": 0.934
         },
         {
           "text": "dude?",
           "start": 114.86,
           "end": 115.0,
-          "confidence": 0.98
+          "confidence": 0.967
         }
       ]
     },
@@ -3141,7 +3141,7 @@
       "avg_logprob": -0.11628666729994223,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0005114182713441551,
-      "confidence": 0.888,
+      "confidence": 0.86,
       "words": [
         {
           "text": "What",
@@ -3171,13 +3171,13 @@
           "text": "me,",
           "start": 116.68,
           "end": 117.44,
-          "confidence": 0.953
+          "confidence": 0.946
         },
         {
           "text": "dude?",
           "start": 117.44,
           "end": 117.74,
-          "confidence": 0.98
+          "confidence": 0.965
         }
       ]
     },
@@ -3201,7 +3201,7 @@
       "avg_logprob": -0.11628666729994223,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0005114182713441551,
-      "confidence": 0.902,
+      "confidence": 0.88,
       "words": [
         {
           "text": "What",
@@ -3231,13 +3231,13 @@
           "text": "me,",
           "start": 118.82,
           "end": 120.1,
-          "confidence": 0.95
+          "confidence": 0.948
         },
         {
           "text": "dude?",
           "start": 120.1,
           "end": 120.48,
-          "confidence": 0.982
+          "confidence": 0.968
         }
       ]
     },
@@ -3261,7 +3261,7 @@
       "avg_logprob": -0.11628666729994223,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0005114182713441551,
-      "confidence": 0.906,
+      "confidence": 0.884,
       "words": [
         {
           "text": "What",
@@ -3291,13 +3291,13 @@
           "text": "me,",
           "start": 120.64,
           "end": 120.68,
-          "confidence": 0.953
+          "confidence": 0.954
         },
         {
           "text": "dude?",
           "start": 120.68,
           "end": 120.72,
-          "confidence": 0.981
+          "confidence": 0.966
         }
       ]
     },
@@ -3321,7 +3321,7 @@
       "avg_logprob": -0.11628666729994223,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0005114182713441551,
-      "confidence": 0.899,
+      "confidence": 0.873,
       "words": [
         {
           "text": "What",
@@ -3351,13 +3351,13 @@
           "text": "me,",
           "start": 123.02,
           "end": 123.14,
-          "confidence": 0.961
+          "confidence": 0.952
         },
         {
           "text": "dude?",
           "start": 123.14,
           "end": 123.2,
-          "confidence": 0.982
+          "confidence": 0.968
         }
       ]
     },
@@ -3381,7 +3381,7 @@
       "avg_logprob": -0.11628666729994223,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0005114182713441551,
-      "confidence": 0.905,
+      "confidence": 0.882,
       "words": [
         {
           "text": "What",
@@ -3411,13 +3411,13 @@
           "text": "me,",
           "start": 125.06,
           "end": 125.1,
-          "confidence": 0.956
+          "confidence": 0.952
         },
         {
           "text": "dude?",
           "start": 125.1,
           "end": 125.14,
-          "confidence": 0.982
+          "confidence": 0.968
         }
       ]
     },
@@ -3441,7 +3441,7 @@
       "avg_logprob": -0.11628666729994223,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0005114182713441551,
-      "confidence": 0.916,
+      "confidence": 0.894,
       "words": [
         {
           "text": "What",
@@ -3471,13 +3471,13 @@
           "text": "me,",
           "start": 127.14,
           "end": 127.54,
-          "confidence": 0.967
+          "confidence": 0.961
         },
         {
           "text": "dude?",
           "start": 127.54,
           "end": 127.58,
-          "confidence": 0.983
+          "confidence": 0.97
         }
       ]
     },
@@ -3501,7 +3501,7 @@
       "avg_logprob": -0.11628666729994223,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0005114182713441551,
-      "confidence": 0.917,
+      "confidence": 0.896,
       "words": [
         {
           "text": "What",
@@ -3531,13 +3531,13 @@
           "text": "me,",
           "start": 129.1,
           "end": 129.14,
-          "confidence": 0.967
+          "confidence": 0.965
         },
         {
           "text": "dude?",
           "start": 129.14,
           "end": 129.46,
-          "confidence": 0.984
+          "confidence": 0.971
         }
       ]
     },
@@ -3561,7 +3561,7 @@
       "avg_logprob": -0.11628666729994223,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0005114182713441551,
-      "confidence": 0.912,
+      "confidence": 0.89,
       "words": [
         {
           "text": "What",
@@ -3591,13 +3591,13 @@
           "text": "me,",
           "start": 131.54,
           "end": 131.64,
-          "confidence": 0.965
+          "confidence": 0.964
         },
         {
           "text": "dude?",
           "start": 131.64,
           "end": 131.68,
-          "confidence": 0.984
+          "confidence": 0.97
         }
       ]
     },
@@ -3621,7 +3621,7 @@
       "avg_logprob": -0.11628666729994223,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0005114182713441551,
-      "confidence": 0.922,
+      "confidence": 0.903,
       "words": [
         {
           "text": "What",
@@ -3651,13 +3651,13 @@
           "text": "me,",
           "start": 132.48,
           "end": 132.68,
-          "confidence": 0.967
+          "confidence": 0.969
         },
         {
           "text": "dude?",
           "start": 132.68,
           "end": 133.18,
-          "confidence": 0.985
+          "confidence": 0.972
         }
       ]
     },
@@ -3681,7 +3681,7 @@
       "avg_logprob": -0.11628666729994223,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0005114182713441551,
-      "confidence": 0.912,
+      "confidence": 0.891,
       "words": [
         {
           "text": "What",
@@ -3711,13 +3711,13 @@
           "text": "me,",
           "start": 134.42,
           "end": 135.5,
-          "confidence": 0.966
+          "confidence": 0.971
         },
         {
           "text": "dude?",
           "start": 135.5,
           "end": 135.54,
-          "confidence": 0.985
+          "confidence": 0.973
         }
       ]
     },
@@ -3741,7 +3741,7 @@
       "avg_logprob": -0.11628666729994223,
       "compression_ratio": 9.840909090909092,
       "no_speech_prob": 0.0005114182713441551,
-      "confidence": 0.883,
+      "confidence": 0.854,
       "words": [
         {
           "text": "What",
@@ -3771,13 +3771,13 @@
           "text": "me,",
           "start": 135.7,
           "end": 135.74,
-          "confidence": 0.964
+          "confidence": 0.972
         },
         {
           "text": "dude?",
           "start": 135.74,
           "end": 136.96,
-          "confidence": 0.986
+          "confidence": 0.975
         }
       ]
     }

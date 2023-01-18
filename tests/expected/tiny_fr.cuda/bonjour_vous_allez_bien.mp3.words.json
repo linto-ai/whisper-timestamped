@@ -15,13 +15,13 @@
       "avg_logprob": -0.774240239461263,
       "compression_ratio": 0.8181818181818182,
       "no_speech_prob": 0.04296562075614929,
-      "confidence": 0.578,
+      "confidence": 0.689,
       "words": [
         {
           "text": "Bonjour!",
           "start": 0.46,
           "end": 1.36,
-          "confidence": 0.578
+          "confidence": 0.689
         }
       ]
     },
@@ -47,7 +47,7 @@
       "avg_logprob": -0.48053342645818536,
       "compression_ratio": 0.7714285714285715,
       "no_speech_prob": 0.04136796295642853,
-      "confidence": 0.655,
+      "confidence": 0.634,
       "words": [
         {
           "text": "Est-ce",
@@ -77,7 +77,7 @@
           "text": "bien?",
           "start": 2.48,
           "end": 3.06,
-          "confidence": 0.901
+          "confidence": 0.979
         }
       ]
     },
@@ -95,13 +95,13 @@
       "avg_logprob": -0.3400673548380534,
       "compression_ratio": 0.8181818181818182,
       "no_speech_prob": 0.5503692030906677,
-      "confidence": 0.933,
+      "confidence": 0.917,
       "words": [
         {
           "text": "Bonjour!",
           "start": 33.0,
           "end": 33.64,
-          "confidence": 0.933
+          "confidence": 0.917
         }
       ]
     },
@@ -119,13 +119,13 @@
       "avg_logprob": -0.2368337631225586,
       "compression_ratio": 0.8181818181818182,
       "no_speech_prob": 0.40514007210731506,
-      "confidence": 0.559,
+      "confidence": 0.329,
       "words": [
         {
           "text": "Bonjour!",
           "start": 34.92,
           "end": 34.96,
-          "confidence": 0.559
+          "confidence": 0.329
         }
       ]
     },
@@ -151,7 +151,7 @@
       "avg_logprob": -0.1729703816500577,
       "compression_ratio": 0.7714285714285715,
       "no_speech_prob": 0.5840025544166565,
-      "confidence": 0.883,
+      "confidence": 0.871,
       "words": [
         {
           "text": "Est-ce",
@@ -181,7 +181,7 @@
           "text": "bien?",
           "start": 35.12,
           "end": 35.58,
-          "confidence": 0.983
+          "confidence": 1.0
         }
       ]
     }

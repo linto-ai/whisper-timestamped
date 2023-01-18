@@ -25,13 +25,13 @@
       "avg_logprob": -0.3618113077603854,
       "compression_ratio": 0.8181818181818182,
       "no_speech_prob": 0.07167890667915344,
-      "confidence": 0.849,
+      "confidence": 0.937,
       "words": [
         {
           "text": "Bonjour!",
           "start": 0.44,
           "end": 1.66,
-          "confidence": 0.562
+          "confidence": 0.874
         },
         {
           "text": "Est-ce",
@@ -61,7 +61,7 @@
           "text": "bien?",
           "start": 2.56,
           "end": 3.24,
-          "confidence": 0.953
+          "confidence": 0.999
         }
       ]
     },
@@ -89,13 +89,13 @@
       "avg_logprob": -0.23405993901766264,
       "compression_ratio": 0.8181818181818182,
       "no_speech_prob": 0.33330824971199036,
-      "confidence": 0.95,
+      "confidence": 0.955,
       "words": [
         {
           "text": "Bonjour!",
           "start": 32.96,
           "end": 34.24,
-          "confidence": 0.87
+          "confidence": 0.831
         },
         {
           "text": "Est-ce",
@@ -125,7 +125,7 @@
           "text": "bien?",
           "start": 35.08,
           "end": 35.48,
-          "confidence": 0.971
+          "confidence": 0.999
         }
       ]
     }

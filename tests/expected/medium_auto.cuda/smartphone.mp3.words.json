@@ -36,7 +36,7 @@
       "avg_logprob": -0.23650398001765574,
       "compression_ratio": 1.6238532110091743,
       "no_speech_prob": 0.15368112921714783,
-      "confidence": 0.903,
+      "confidence": 0.935,
       "words": [
         {
           "text": "C'est",
@@ -72,7 +72,7 @@
           "text": "Nicolas,",
           "start": 1.18,
           "end": 1.74,
-          "confidence": 0.657
+          "confidence": 0.91
         },
         {
           "text": "mais",
@@ -126,7 +126,7 @@
           "text": "ça.",
           "start": 3.4,
           "end": 3.68,
-          "confidence": 0.901
+          "confidence": 0.975
         }
       ]
     },
@@ -164,7 +164,7 @@
       "avg_logprob": -0.23650398001765574,
       "compression_ratio": 1.6238532110091743,
       "no_speech_prob": 0.15368112921714783,
-      "confidence": 0.898,
+      "confidence": 0.93,
       "words": [
         {
           "text": "Ce",
@@ -206,7 +206,7 @@
           "text": "smartphone,",
           "start": 5.2,
           "end": 5.78,
-          "confidence": 0.8
+          "confidence": 0.912
         },
         {
           "text": "c'est",
@@ -242,7 +242,7 @@
           "text": "fonctions,",
           "start": 7.56,
           "end": 8.02,
-          "confidence": 0.824
+          "confidence": 0.987
         }
       ]
     },
@@ -269,7 +269,7 @@
       "avg_logprob": -0.23650398001765574,
       "compression_ratio": 1.6238532110091743,
       "no_speech_prob": 0.15368112921714783,
-      "confidence": 0.947,
+      "confidence": 0.977,
       "words": [
         {
           "text": "mais",
@@ -317,7 +317,7 @@
           "text": "elles.",
           "start": 10.58,
           "end": 10.92,
-          "confidence": 0.828
+          "confidence": 0.989
         }
       ]
     },
@@ -352,7 +352,7 @@
       "avg_logprob": -0.23650398001765574,
       "compression_ratio": 1.6238532110091743,
       "no_speech_prob": 0.15368112921714783,
-      "confidence": 0.888,
+      "confidence": 0.906,
       "words": [
         {
           "text": "Ce",
@@ -394,7 +394,7 @@
           "text": "photo,",
           "start": 11.76,
           "end": 12.1,
-          "confidence": 0.778
+          "confidence": 0.994
         },
         {
           "text": "c'est",
@@ -412,7 +412,7 @@
           "text": "convaincant.",
           "start": 12.38,
           "end": 12.96,
-          "confidence": 0.97
+          "confidence": 0.982
         }
       ]
     },
@@ -439,7 +439,7 @@
       "avg_logprob": -0.23650398001765574,
       "compression_ratio": 1.6238532110091743,
       "no_speech_prob": 0.15368112921714783,
-      "confidence": 0.89,
+      "confidence": 0.913,
       "words": [
         {
           "text": "Alors",
@@ -451,7 +451,7 @@
           "text": "évidemment,",
           "start": 13.64,
           "end": 14.02,
-          "confidence": 0.806
+          "confidence": 0.834
         },
         {
           "text": "il",
@@ -481,7 +481,7 @@
           "text": "interfaces.",
           "start": 15.5,
           "end": 16.3,
-          "confidence": 0.895
+          "confidence": 0.984
         }
       ]
     },
@@ -510,7 +510,7 @@
       "avg_logprob": -0.23650398001765574,
       "compression_ratio": 1.6238532110091743,
       "no_speech_prob": 0.15368112921714783,
-      "confidence": 0.875,
+      "confidence": 0.923,
       "words": [
         {
           "text": "L'écran",
@@ -558,7 +558,7 @@
           "text": "mentionné.",
           "start": 18.88,
           "end": 19.38,
-          "confidence": 0.763
+          "confidence": 0.978
         }
       ]
     },
@@ -610,7 +610,7 @@
       "avg_logprob": -0.23650398001765574,
       "compression_ratio": 1.6238532110091743,
       "no_speech_prob": 0.15368112921714783,
-      "confidence": 0.906,
+      "confidence": 0.921,
       "words": [
         {
           "text": "Mais",
@@ -622,7 +622,7 @@
           "text": "bon,",
           "start": 20.22,
           "end": 20.48,
-          "confidence": 0.741
+          "confidence": 0.666
         },
         {
           "text": "il",
@@ -748,7 +748,7 @@
           "text": "icônes.",
           "start": 24.94,
           "end": 25.62,
-          "confidence": 0.869
+          "confidence": 0.992
         }
       ]
     },
@@ -786,7 +786,7 @@
       "avg_logprob": -0.07914166572766426,
       "compression_ratio": 1.6254416961130742,
       "no_speech_prob": 3.237752707718755e-06,
-      "confidence": 0.958,
+      "confidence": 0.969,
       "words": [
         {
           "text": "Sauf",
@@ -828,7 +828,7 @@
           "text": "toucher,",
           "start": 27.58,
           "end": 28.18,
-          "confidence": 0.941
+          "confidence": 0.988
         },
         {
           "text": "ce",
@@ -870,7 +870,7 @@
           "text": "direct,",
           "start": 29.46,
           "end": 30.16,
-          "confidence": 0.944
+          "confidence": 0.995
         },
         {
           "text": "plus",
@@ -882,7 +882,7 @@
           "text": "sensible.",
           "start": 30.2,
           "end": 30.7,
-          "confidence": 0.959
+          "confidence": 0.997
         }
       ]
     },
@@ -948,7 +948,7 @@
           "text": "évidemment,",
           "start": 31.3,
           "end": 31.64,
-          "confidence": 0.841
+          "confidence": 0.875
         },
         {
           "text": "il",
@@ -1080,7 +1080,7 @@
           "text": "but.",
           "start": 37.68,
           "end": 37.83,
-          "confidence": 0.991
+          "confidence": 0.995
         }
       ]
     },
@@ -1138,13 +1138,13 @@
       "avg_logprob": -0.07914166572766426,
       "compression_ratio": 1.6254416961130742,
       "no_speech_prob": 3.237752707718755e-06,
-      "confidence": 0.963,
+      "confidence": 0.974,
       "words": [
         {
           "text": "Bref,",
           "start": 37.83,
           "end": 38.7,
-          "confidence": 0.918
+          "confidence": 0.987
         },
         {
           "text": "tout",
@@ -1156,7 +1156,7 @@
           "text": "ça,",
           "start": 38.98,
           "end": 39.38,
-          "confidence": 0.822
+          "confidence": 0.994
         },
         {
           "text": "ce",
@@ -1309,7 +1309,7 @@
       "avg_logprob": -0.07914166572766426,
       "compression_ratio": 1.6254416961130742,
       "no_speech_prob": 3.237752707718755e-06,
-      "confidence": 0.966,
+      "confidence": 0.97,
       "words": [
         {
           "text": "Mais",
@@ -1321,7 +1321,7 @@
           "text": "ça,",
           "start": 47.2,
           "end": 47.6,
-          "confidence": 0.925
+          "confidence": 0.935
         },
         {
           "text": "ça",
@@ -1351,7 +1351,7 @@
           "text": "interrogation.",
           "start": 48.22,
           "end": 48.8,
-          "confidence": 0.992
+          "confidence": 0.997
         }
       ]
     },
@@ -1395,7 +1395,7 @@
       "avg_logprob": -0.10741387929347966,
       "compression_ratio": 1.662379421221865,
       "no_speech_prob": 1.321184026892297e-05,
-      "confidence": 0.984,
+      "confidence": 0.988,
       "words": [
         {
           "text": "Est-ce",
@@ -1515,7 +1515,7 @@
           "text": "inédit?",
           "start": 54.98,
           "end": 55.46,
-          "confidence": 0.967
+          "confidence": 0.996
         }
       ]
     },
@@ -1571,7 +1571,7 @@
       "avg_logprob": -0.10741387929347966,
       "compression_ratio": 1.662379421221865,
       "no_speech_prob": 1.321184026892297e-05,
-      "confidence": 0.963,
+      "confidence": 0.965,
       "words": [
         {
           "text": "Je",
@@ -1589,7 +1589,7 @@
           "text": "dire,",
           "start": 55.98,
           "end": 56.24,
-          "confidence": 0.945
+          "confidence": 0.997
         },
         {
           "text": "est-ce",
@@ -1733,7 +1733,7 @@
           "text": "téléphone?",
           "start": 62.68,
           "end": 63.32,
-          "confidence": 0.968
+          "confidence": 0.999
         }
       ]
     },
@@ -1763,7 +1763,7 @@
       "avg_logprob": -0.10741387929347966,
       "compression_ratio": 1.662379421221865,
       "no_speech_prob": 1.321184026892297e-05,
-      "confidence": 0.916,
+      "confidence": 0.936,
       "words": [
         {
           "text": "Il",
@@ -1805,7 +1805,7 @@
           "text": "fait.",
           "start": 66.38,
           "end": 66.64,
-          "confidence": 0.832
+          "confidence": 0.996
         }
       ]
     },
@@ -1850,7 +1850,7 @@
       "avg_logprob": -0.10741387929347966,
       "compression_ratio": 1.662379421221865,
       "no_speech_prob": 1.321184026892297e-05,
-      "confidence": 0.924,
+      "confidence": 0.953,
       "words": [
         {
           "text": "Et",
@@ -1916,7 +1916,7 @@
           "text": "l'objet,",
           "start": 69.36,
           "end": 70.24,
-          "confidence": 0.95
+          "confidence": 0.997
         },
         {
           "text": "c'est",
@@ -1940,7 +1940,7 @@
           "text": "terrifiant.",
           "start": 70.74,
           "end": 71.52,
-          "confidence": 0.817
+          "confidence": 0.977
         }
       ]
     },
@@ -1984,7 +1984,7 @@
       "avg_logprob": -0.10741387929347966,
       "compression_ratio": 1.662379421221865,
       "no_speech_prob": 1.321184026892297e-05,
-      "confidence": 0.792,
+      "confidence": 0.814,
       "words": [
         {
           "text": "Parce",
@@ -2008,7 +2008,7 @@
           "text": "l'impression,",
           "start": 72.4,
           "end": 73.5,
-          "confidence": 0.836
+          "confidence": 0.998
         },
         {
           "text": "comme",
@@ -2056,7 +2056,7 @@
           "text": "services,",
           "start": 74.98,
           "end": 75.22,
-          "confidence": 0.447
+          "confidence": 0.215
         },
         {
           "text": "d'être",
@@ -2086,7 +2086,7 @@
           "text": "objet,",
           "start": 76.22,
           "end": 76.52,
-          "confidence": 0.743
+          "confidence": 0.996
         }
       ]
     },
@@ -2141,7 +2141,7 @@
       "avg_logprob": -0.06936022814582377,
       "compression_ratio": 1.6787003610108304,
       "no_speech_prob": 5.771887572336709e-06,
-      "confidence": 0.914,
+      "confidence": 0.917,
       "words": [
         {
           "text": "d'induire",
@@ -2183,7 +2183,7 @@
           "text": "relation,",
           "start": 78.08,
           "end": 78.48,
-          "confidence": 0.667
+          "confidence": 0.597
         },
         {
           "text": "de",
@@ -2291,7 +2291,7 @@
           "text": "rejet.",
           "start": 82.98,
           "end": 83.36,
-          "confidence": 0.914
+          "confidence": 0.883
         }
       ]
     },
@@ -2320,13 +2320,13 @@
       "avg_logprob": -0.06936022814582377,
       "compression_ratio": 1.6787003610108304,
       "no_speech_prob": 5.771887572336709e-06,
-      "confidence": 0.902,
+      "confidence": 0.962,
       "words": [
         {
           "text": "Donc,",
           "start": 83.9,
           "end": 84.78,
-          "confidence": 0.706
+          "confidence": 0.971
         },
         {
           "text": "à",
@@ -2344,7 +2344,7 @@
           "text": "inédit,",
           "start": 85.34,
           "end": 86.54,
-          "confidence": 0.974
+          "confidence": 0.993
         },
         {
           "text": "rapport",
@@ -2356,7 +2356,7 @@
           "text": "inédit.",
           "start": 86.88,
           "end": 87.66,
-          "confidence": 0.951
+          "confidence": 0.998
         }
       ]
     },
@@ -2400,7 +2400,7 @@
       "avg_logprob": -0.06936022814582377,
       "compression_ratio": 1.6787003610108304,
       "no_speech_prob": 5.771887572336709e-06,
-      "confidence": 0.968,
+      "confidence": 0.972,
       "words": [
         {
           "text": "Et",
@@ -2418,7 +2418,7 @@
           "text": "rapport,",
           "start": 88.82,
           "end": 89.26,
-          "confidence": 0.935
+          "confidence": 0.998
         },
         {
           "text": "si",
@@ -2442,7 +2442,7 @@
           "text": "Nicolas,",
           "start": 89.86,
           "end": 90.48,
-          "confidence": 0.807
+          "confidence": 0.683
         },
         {
           "text": "serait",
@@ -2502,7 +2502,7 @@
           "text": "rejet.",
           "start": 94.62,
           "end": 95.12,
-          "confidence": 0.993
+          "confidence": 0.992
         }
       ]
     },
@@ -2549,13 +2549,13 @@
       "avg_logprob": -0.06936022814582377,
       "compression_ratio": 1.6787003610108304,
       "no_speech_prob": 5.771887572336709e-06,
-      "confidence": 0.931,
+      "confidence": 0.942,
       "words": [
         {
           "text": "Bon,",
           "start": 95.76,
           "end": 96.24,
-          "confidence": 0.813
+          "confidence": 0.793
         },
         {
           "text": "en",
@@ -2567,7 +2567,7 @@
           "text": "vrai,",
           "start": 96.5,
           "end": 97.12,
-          "confidence": 0.868
+          "confidence": 0.994
         },
         {
           "text": "il",
@@ -2704,7 +2704,7 @@
       "avg_logprob": -0.06936022814582377,
       "compression_ratio": 1.6787003610108304,
       "no_speech_prob": 5.771887572336709e-06,
-      "confidence": 0.982,
+      "confidence": 0.981,
       "words": [
         {
           "text": "pour",
@@ -2752,7 +2752,7 @@
           "text": "inédit.",
           "start": 105.24,
           "end": 105.74,
-          "confidence": 0.997
+          "confidence": 0.999
         }
       ]
     },
@@ -2787,7 +2787,7 @@
       "avg_logprob": -0.07378943978923641,
       "compression_ratio": 1.685512367491166,
       "no_speech_prob": 5.3074043535161763e-05,
-      "confidence": 0.942,
+      "confidence": 0.94,
       "words": [
         {
           "text": "Mais",
@@ -2859,7 +2859,7 @@
           "text": "vraiment.",
           "start": 109.02,
           "end": 109.44,
-          "confidence": 0.985
+          "confidence": 0.991
         }
       ]
     },
@@ -2898,7 +2898,7 @@
       "avg_logprob": -0.07378943978923641,
       "compression_ratio": 1.685512367491166,
       "no_speech_prob": 5.3074043535161763e-05,
-      "confidence": 0.951,
+      "confidence": 0.969,
       "words": [
         {
           "text": "Pour",
@@ -2928,7 +2928,7 @@
           "text": "sache,",
           "start": 110.44,
           "end": 111.12,
-          "confidence": 0.962
+          "confidence": 0.963
         },
         {
           "text": "il",
@@ -3018,7 +3018,7 @@
           "text": "téléphone.",
           "start": 114.58,
           "end": 115.0,
-          "confidence": 0.792
+          "confidence": 0.999
         }
       ]
     },
@@ -3062,7 +3062,7 @@
       "avg_logprob": -0.07378943978923641,
       "compression_ratio": 1.685512367491166,
       "no_speech_prob": 5.3074043535161763e-05,
-      "confidence": 0.948,
+      "confidence": 0.972,
       "words": [
         {
           "text": "Mais",
@@ -3110,7 +3110,7 @@
           "text": "ordre.",
           "start": 117.42,
           "end": 117.76,
-          "confidence": 0.776
+          "confidence": 0.999
         },
         {
           "text": "Donc",
@@ -3170,7 +3170,7 @@
           "text": "ordre.",
           "start": 119.56,
           "end": 119.84,
-          "confidence": 0.997
+          "confidence": 0.999
         }
       ]
     },
@@ -3203,7 +3203,7 @@
       "avg_logprob": -0.07378943978923641,
       "compression_ratio": 1.685512367491166,
       "no_speech_prob": 5.3074043535161763e-05,
-      "confidence": 0.97,
+      "confidence": 0.991,
       "words": [
         {
           "text": "On",
@@ -3233,7 +3233,7 @@
           "text": "bagnole,",
           "start": 120.86,
           "end": 121.46,
-          "confidence": 0.926
+          "confidence": 0.984
         },
         {
           "text": "en",
@@ -3275,7 +3275,7 @@
           "text": "choses.",
           "start": 122.78,
           "end": 123.12,
-          "confidence": 0.94
+          "confidence": 0.989
         }
       ]
     },
@@ -3308,7 +3308,7 @@
       "avg_logprob": -0.07378943978923641,
       "compression_ratio": 1.685512367491166,
       "no_speech_prob": 5.3074043535161763e-05,
-      "confidence": 0.87,
+      "confidence": 0.895,
       "words": [
         {
           "text": "Et",
@@ -3320,7 +3320,7 @@
           "text": "bien,",
           "start": 123.46,
           "end": 123.82,
-          "confidence": 0.557
+          "confidence": 0.47
         },
         {
           "text": "le",
@@ -3332,7 +3332,7 @@
           "text": "soir,",
           "start": 123.98,
           "end": 124.58,
-          "confidence": 0.83
+          "confidence": 0.999
         },
         {
           "text": "quand",
@@ -3362,7 +3362,7 @@
           "text": "coucher,",
           "start": 125.3,
           "end": 125.58,
-          "confidence": 0.98
+          "confidence": 0.987
         },
         {
           "text": "on",
@@ -3380,7 +3380,7 @@
           "text": "laisse.",
           "start": 126.18,
           "end": 126.54,
-          "confidence": 0.947
+          "confidence": 0.999
         }
       ]
     },
@@ -3424,7 +3424,7 @@
       "avg_logprob": -0.07378943978923641,
       "compression_ratio": 1.685512367491166,
       "no_speech_prob": 5.3074043535161763e-05,
-      "confidence": 0.909,
+      "confidence": 0.914,
       "words": [
         {
           "text": "On",
@@ -3496,7 +3496,7 @@
           "text": "lit,",
           "start": 129.02,
           "end": 129.1,
-          "confidence": 0.873
+          "confidence": 0.999
         },
         {
           "text": "on",
@@ -3532,7 +3532,7 @@
           "text": "chiottes.",
           "start": 129.88,
           "end": 130.22,
-          "confidence": 0.855
+          "confidence": 0.829
         }
       ]
     },
@@ -3578,7 +3578,7 @@
       "avg_logprob": -0.06181593808260831,
       "compression_ratio": 1.6127167630057804,
       "no_speech_prob": 1.5689405699959025e-05,
-      "confidence": 0.953,
+      "confidence": 0.955,
       "words": [
         {
           "text": "On",
@@ -3716,7 +3716,7 @@
           "text": "copain.",
           "start": 136.56,
           "end": 136.9,
-          "confidence": 0.971
+          "confidence": 0.998
         }
       ]
     },
@@ -3759,7 +3759,7 @@
       "avg_logprob": -0.06181593808260831,
       "compression_ratio": 1.6127167630057804,
       "no_speech_prob": 1.5689405699959025e-05,
-      "confidence": 0.921,
+      "confidence": 0.959,
       "words": [
         {
           "text": "Mais",
@@ -3855,7 +3855,7 @@
           "text": "aujourd'hui,",
           "start": 141.28,
           "end": 141.76,
-          "confidence": 0.75
+          "confidence": 0.988
         }
       ]
     },
@@ -3895,7 +3895,7 @@
       "avg_logprob": -0.06181593808260831,
       "compression_ratio": 1.6127167630057804,
       "no_speech_prob": 1.5689405699959025e-05,
-      "confidence": 0.937,
+      "confidence": 0.963,
       "words": [
         {
           "text": "continuellement",
@@ -3937,7 +3937,7 @@
           "text": "main,",
           "start": 144.0,
           "end": 144.24,
-          "confidence": 0.763
+          "confidence": 0.998
         },
         {
           "text": "comme",
@@ -3985,7 +3985,7 @@
           "text": "externe,",
           "start": 145.8,
           "end": 146.32,
-          "confidence": 0.948
+          "confidence": 0.992
         }
       ]
     },
@@ -4072,7 +4072,7 @@
           "text": "immédiate.",
           "start": 148.2,
           "end": 148.88,
-          "confidence": 0.994
+          "confidence": 0.997
         }
       ]
     },
@@ -4110,13 +4110,13 @@
       "avg_logprob": -0.06181593808260831,
       "compression_ratio": 1.6127167630057804,
       "no_speech_prob": 1.5689405699959025e-05,
-      "confidence": 0.953,
+      "confidence": 0.974,
       "words": [
         {
           "text": "Bon,",
           "start": 149.02,
           "end": 149.24,
-          "confidence": 0.893
+          "confidence": 0.918
         },
         {
           "text": "je",
@@ -4152,7 +4152,7 @@
           "text": "môme,",
           "start": 149.86,
           "end": 150.16,
-          "confidence": 0.909
+          "confidence": 0.998
         },
         {
           "text": "mais",
@@ -4194,7 +4194,7 @@
           "text": "aussi.",
           "start": 151.74,
           "end": 151.98,
-          "confidence": 0.975
+          "confidence": 0.996
         }
       ]
     },
@@ -4241,13 +4241,13 @@
       "avg_logprob": -0.06181593808260831,
       "compression_ratio": 1.6127167630057804,
       "no_speech_prob": 1.5689405699959025e-05,
-      "confidence": 0.915,
+      "confidence": 0.948,
       "words": [
         {
           "text": "Donc,",
           "start": 152.56,
           "end": 153.42,
-          "confidence": 0.816
+          "confidence": 0.991
         },
         {
           "text": "rapport",
@@ -4259,13 +4259,13 @@
           "text": "inédit.",
           "start": 153.62,
           "end": 154.18,
-          "confidence": 0.834
+          "confidence": 0.996
         },
         {
           "text": "D'accord.",
           "start": 154.18,
           "end": 155.42,
-          "confidence": 0.965
+          "confidence": 0.978
         },
         {
           "text": "Mais",
@@ -4313,7 +4313,7 @@
           "text": "jamais?",
           "start": 157.74,
           "end": 158.4,
-          "confidence": 0.943
+          "confidence": 0.997
         }
       ]
     },
@@ -4372,7 +4372,7 @@
       "avg_logprob": -0.07990394626651798,
       "compression_ratio": 1.6517857142857142,
       "no_speech_prob": 5.7385808759136125e-05,
-      "confidence": 0.948,
+      "confidence": 0.962,
       "words": [
         {
           "text": "Est-ce",
@@ -4480,7 +4480,7 @@
           "text": "diabolique,",
           "start": 163.48,
           "end": 163.84,
-          "confidence": 0.857
+          "confidence": 0.991
         },
         {
           "text": "et",
@@ -4510,7 +4510,7 @@
           "text": "merveilleux?",
           "start": 164.76,
           "end": 165.3,
-          "confidence": 0.981
+          "confidence": 0.997
         }
       ]
     },
@@ -4538,7 +4538,7 @@
       "avg_logprob": -0.07990394626651798,
       "compression_ratio": 1.6517857142857142,
       "no_speech_prob": 5.7385808759136125e-05,
-      "confidence": 0.97,
+      "confidence": 0.984,
       "words": [
         {
           "text": "Les",
@@ -4580,7 +4580,7 @@
           "text": "sentier.",
           "start": 168.48,
           "end": 168.88,
-          "confidence": 0.923
+          "confidence": 0.978
         }
       ]
     },
@@ -4643,7 +4643,7 @@
       "avg_logprob": -0.10416143139203389,
       "compression_ratio": 1.3916666666666666,
       "no_speech_prob": 3.9441460103262216e-05,
-      "confidence": 0.923,
+      "confidence": 0.93,
       "words": [
         {
           "text": "C'est",
@@ -4709,7 +4709,7 @@
           "text": "établi,",
           "start": 171.12,
           "end": 171.68,
-          "confidence": 0.893
+          "confidence": 0.995
         },
         {
           "text": "soit",
@@ -4739,7 +4739,7 @@
           "text": "dessus,",
           "start": 173.02,
           "end": 174.26,
-          "confidence": 0.959
+          "confidence": 0.972
         },
         {
           "text": "soit",
@@ -4769,7 +4769,7 @@
           "text": "bornes,",
           "start": 175.7,
           "end": 176.04,
-          "confidence": 0.972
+          "confidence": 0.975
         },
         {
           "text": "en",
@@ -4793,7 +4793,7 @@
           "text": "signalétique.",
           "start": 176.82,
           "end": 177.72,
-          "confidence": 0.717
+          "confidence": 0.642
         }
       ]
     }

@@ -37,11 +37,12 @@ def transcribe_timestamped(
     language=None,
     task="transcribe",
     # additional options for word alignment
+    remove_punctuation_from_words=False,
+    compute_word_confidence=True,
+    include_punctuation_in_confidence=False,
     refine_whisper_precision=0.5,
     min_word_duration=0.04,
     plot_word_alignment=False,
-    remove_punctuation_from_words=False,
-    compute_word_confidence=True,
     # other Whisper options
     temperature=0.0, # TODO: support list
     best_of=None,
@@ -74,14 +75,23 @@ def transcribe_timestamped(
     task: str
         The task to perform: either "transcribe" or "translate".
 
+    remove_punctuation_from_words: bool
+        If False, words will be glued with the next punctuation mark (if any).
+        If True, there will be no punctuation mark in the `words[:]["text"]` list.
+        It only affects these strings; This has no influence on the computation of the word confidence, whatever the value of `include_punctuation_in_confidence` is.
+
+    compute_word_confidence: bool
+        Whether to compute word confidence.
+        If True, a finer confidence for each segment will be computed as well.
+    
+    include_punctuation_in_confidence: bool
+        Whether to include proba of punctuation in the computation of the (previous) word confidence.
+
     refine_whisper_precision: float
         How much can we refine Whisper segment positions, in seconds. Must be a multiple of 0.02.
 
     min_word_duration: float
         Minimum duration of a word, in seconds. If a word is shorter than this, timestamps will be adjusted.
-
-    remove_punctuation_from_words: bool
-        Whether to remove punctuation from words.
 
     plot_word_alignment: bool
         Whether to plot the word alignment for each segment. matplotlib must be installed to use this option.
@@ -460,14 +470,28 @@ def transcribe_timestamped(
 
         if compute_word_confidence:
             assert abs(segment["avg_logprob"] - avglogprob) < 1e-3, f"Got inconsistent logprob at index {i}: {segment['avg_logprob']} != {avglogprob}"
-            segment["confidence"] = round(logprobs.mean().exp().item(), 3)
+            if include_punctuation_in_confidence:
+                segment["confidence"] = round_confidence(logprobs.mean().exp().item())
+            else:
+                logprobs_nopunc = []
             i_end = 0
             for timestamped_word in timestamped_words:
                 i_start = i_end
-                i_end += len(timestamped_word["tokens"])
+                tokens = timestamped_word["tokens"]
+                i_end += len(tokens)
                 assert i_end <= len(logprobs), f"Got inconsistent logprob at index {i}: {i_end} > {len(logprobs)}"
-                timestamped_word["confidence"] = round(logprobs[i_start:i_end].mean().exp().item(), 3)
+                if include_punctuation_in_confidence:
+                    word_logprobs = logprobs[i_start:i_end]
+                else:
+                    while len(tokens) > 1 and tokens[-1][-1] in _punctuation: # Note: look at the last character of token, to take into account "...", "!!", etc.
+                        tokens = tokens[:-1]
+                    word_logprobs = logprobs[i_start:i_start + len(tokens)]
+                    logprobs_nopunc.append(word_logprobs)
+                timestamped_word["confidence"] = round_confidence(word_logprobs.mean().exp().item())
             assert i_end == len(logprobs), f"Got inconsistent logprobs length : {len(logprobs)} != {i_end}"
+            if not include_punctuation_in_confidence:
+                logprobs_nopunc = torch.cat(logprobs_nopunc)
+                segment["confidence"] = round_confidence(logprobs_nopunc.mean().exp().item())
 
         if len(timestamped_words):
             segment_start = segment["start"]
@@ -542,7 +566,7 @@ def perform_word_alignment(
         if add_even_if_missing_end_token:
             if debug:
                 logger.debug(f"Missing end token in {tokenizer.decode_with_timestamps(tokens)}")
-            return [dict(text="", start=round(start_token * AUDIO_TIME_PER_TOKEN, 2), end=round(end_token * AUDIO_TIME_PER_TOKEN, 2))]
+            return [dict(text="", start=round_timestamp(start_token * AUDIO_TIME_PER_TOKEN), end=round_timestamp(end_token * AUDIO_TIME_PER_TOKEN))]
         else:
             return []
     if end_token == start_token and refine_whisper_precision_nsamples == 0:
@@ -648,7 +672,7 @@ def perform_word_alignment(
         plt.plot(alignment.index2s, alignment.index1s, color="red")
 
         xticks = np.arange(0, weights.shape[1], 1 / AUDIO_TIME_PER_TOKEN)
-        xticklabels = [round(x, 2) for x in xticks * AUDIO_TIME_PER_TOKEN + start_time]
+        xticklabels = [round_timestamp(x) for x in xticks * AUDIO_TIME_PER_TOKEN + start_time]
 
         ylims = plt.gca().get_ylim()
 
@@ -749,8 +773,8 @@ def perform_word_alignment(
     return [
         dict(
             text=word,
-            start=round(begin + start_time, 2),
-            end=round(end + start_time, 2),
+            start=round_timestamp(begin + start_time),
+            end=round_timestamp(end + start_time),
             tokens=tokens,
         )
         for word, begin, end, tokens in zip(words, begin_times, end_times, word_tokens)
@@ -768,8 +792,12 @@ def find_start_padding(mfcc):
                 return candidate_index + 1
             candidate_index -= 1
         return 0 # WTF!?
-            
 
+def round_confidence(x):
+    return round(x, 3)
+
+def round_timestamp(x):
+    return round(x, 2)
 
 _punctuation = "".join(c for c in string.punctuation if c not in ["-", "'"])
 
@@ -833,7 +861,7 @@ def ensure_increasing_positions(segments, min_duration=0):
     for i, seg in enumerate(segments):
         if seg["start"] < previous_end:
             assert i > 0
-            new_start = round((previous_end + seg["start"]) / 2, 2)
+            new_start = round_timestamp((previous_end + seg["start"]) / 2)
             if new_start < segments[i-1]["start"] + min_duration:
                 new_start = previous_end
             else:
@@ -848,8 +876,8 @@ def ensure_increasing_positions(segments, min_duration=0):
 
     previous_end = 0
     for seg in segments:
-        seg["start"] = round(seg["start"], 2)
-        seg["end"] = round(seg["end"], 2)
+        seg["start"] = round_timestamp(seg["start"])
+        seg["end"] = round_timestamp(seg["end"])
         assert seg["start"] >= previous_end, f"Got segment {seg} coming before the previous finishes ({previous_end})"
         assert seg["end"] > seg["start"], f"Got segment {seg} with end <= start"
         previous_end = seg["end"]

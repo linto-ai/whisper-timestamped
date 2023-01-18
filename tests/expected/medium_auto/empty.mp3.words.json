@@ -19,7 +19,7 @@
       "avg_logprob": -0.899906975882394,
       "compression_ratio": 0.7142857142857143,
       "no_speech_prob": 0.6660081148147583,
-      "confidence": 0.391,
+      "confidence": 0.372,
       "words": [
         {
           "text": "Thanks",
@@ -37,7 +37,7 @@
           "text": "watching!",
           "start": 0.62,
           "end": 2.98,
-          "confidence": 0.652
+          "confidence": 0.936
         }
       ]
     }

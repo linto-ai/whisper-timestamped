@@ -35,7 +35,7 @@
       "avg_logprob": -0.1936618947537146,
       "compression_ratio": 1.5084745762711864,
       "no_speech_prob": 0.5573732852935791,
-      "confidence": 0.876,
+      "confidence": 0.92,
       "words": [
         {
           "text": "Le",
@@ -101,7 +101,7 @@
           "text": "cartes,",
           "start": 32.38,
           "end": 33.34,
-          "confidence": 0.769
+          "confidence": 0.996
         },
         {
           "text": "c'est",
@@ -137,7 +137,7 @@
           "text": "faites.",
           "start": 34.0,
           "end": 35.6,
-          "confidence": 0.75
+          "confidence": 0.893
         }
       ]
     },
@@ -165,13 +165,13 @@
       "avg_logprob": -0.1936618947537146,
       "compression_ratio": 1.5084745762711864,
       "no_speech_prob": 0.5573732852935791,
-      "confidence": 0.903,
+      "confidence": 0.967,
       "words": [
         {
           "text": "Winamax,",
           "start": 36.16,
           "end": 37.18,
-          "confidence": 0.836
+          "confidence": 0.905
         },
         {
           "text": "la",
@@ -207,7 +207,7 @@
           "text": "ligne.",
           "start": 38.4,
           "end": 38.78,
-          "confidence": 0.787
+          "confidence": 0.993
         }
       ]
     },
@@ -264,7 +264,7 @@
       "avg_logprob": -0.1936618947537146,
       "compression_ratio": 1.5084745762711864,
       "no_speech_prob": 0.5573732852935791,
-      "confidence": 0.859,
+      "confidence": 0.906,
       "words": [
         {
           "text": "Bonsoir",
@@ -294,7 +294,7 @@
           "text": "tous,",
           "start": 46.16,
           "end": 46.68,
-          "confidence": 0.714
+          "confidence": 0.981
         },
         {
           "text": "vous",
@@ -324,7 +324,7 @@
           "text": "TV,",
           "start": 47.5,
           "end": 47.86,
-          "confidence": 0.645
+          "confidence": 0.853
         },
         {
           "text": "nous",
@@ -348,7 +348,7 @@
           "text": "direct,",
           "start": 48.2,
           "end": 48.7,
-          "confidence": 0.608
+          "confidence": 0.998
         },
         {
           "text": "c'est",
@@ -414,7 +414,7 @@
           "text": "l'actualité.",
           "start": 50.72,
           "end": 51.36,
-          "confidence": 0.954
+          "confidence": 0.994
         }
       ]
     },
@@ -452,7 +452,7 @@
       "avg_logprob": -0.1936618947537146,
       "compression_ratio": 1.5084745762711864,
       "no_speech_prob": 0.5573732852935791,
-      "confidence": 0.94,
+      "confidence": 0.948,
       "words": [
         {
           "text": "Durant",
@@ -500,7 +500,7 @@
           "text": "plans,",
           "start": 53.96,
           "end": 54.28,
-          "confidence": 0.907
+          "confidence": 0.958
         },
         {
           "text": "des",
@@ -512,7 +512,7 @@
           "text": "analyses,",
           "start": 54.36,
           "end": 54.82,
-          "confidence": 0.885
+          "confidence": 0.913
         },
         {
           "text": "des",
@@ -548,7 +548,7 @@
           "text": "proposons.",
           "start": 55.6,
           "end": 56.1,
-          "confidence": 0.98
+          "confidence": 0.991
         }
       ]
     },
@@ -607,7 +607,7 @@
       "avg_logprob": -0.12767816358996975,
       "compression_ratio": 1.5705329153605017,
       "no_speech_prob": 6.302506517386064e-05,
-      "confidence": 0.842,
+      "confidence": 0.858,
       "words": [
         {
           "text": "Comment",
@@ -715,7 +715,7 @@
           "text": "affaire,",
           "start": 62.62,
           "end": 63.12,
-          "confidence": 0.834
+          "confidence": 0.993
         },
         {
           "text": "l'affaire",
@@ -727,7 +727,7 @@
           "text": "Verth-Bettancourt?",
           "start": 63.2,
           "end": 63.96,
-          "confidence": 0.693
+          "confidence": 0.713
         }
       ]
     },
@@ -759,7 +759,7 @@
       "avg_logprob": -0.12767816358996975,
       "compression_ratio": 1.5705329153605017,
       "no_speech_prob": 6.302506517386064e-05,
-      "confidence": 0.87,
+      "confidence": 0.896,
       "words": [
         {
           "text": "Question",
@@ -825,7 +825,7 @@
           "text": "CGT.",
           "start": 66.64,
           "end": 67.2,
-          "confidence": 0.818
+          "confidence": 0.987
         }
       ]
     },
@@ -880,7 +880,7 @@
       "avg_logprob": -0.12767816358996975,
       "compression_ratio": 1.5705329153605017,
       "no_speech_prob": 6.302506517386064e-05,
-      "confidence": 0.943,
+      "confidence": 0.968,
       "words": [
         {
           "text": "Réponse",
@@ -904,7 +904,7 @@
           "text": "Sarkozy,",
           "start": 68.36,
           "end": 68.98,
-          "confidence": 0.91
+          "confidence": 0.988
         },
         {
           "text": "Eric",
@@ -952,7 +952,7 @@
           "text": "retraites,",
           "start": 71.8,
           "end": 72.28,
-          "confidence": 0.806
+          "confidence": 0.996
         },
         {
           "text": "on",
@@ -1024,7 +1024,7 @@
           "text": "CFDT.",
           "start": 75.84,
           "end": 76.38,
-          "confidence": 0.993
+          "confidence": 0.998
         }
       ]
     },
@@ -1087,7 +1087,7 @@
       "avg_logprob": -0.12767816358996975,
       "compression_ratio": 1.5705329153605017,
       "no_speech_prob": 6.302506517386064e-05,
-      "confidence": 0.864,
+      "confidence": 0.871,
       "words": [
         {
           "text": "Et",
@@ -1147,7 +1147,7 @@
           "text": "démarré,",
           "start": 77.72,
           "end": 78.1,
-          "confidence": 0.947
+          "confidence": 0.987
         },
         {
           "text": "celle",
@@ -1195,7 +1195,7 @@
           "text": "Gognich,",
           "start": 79.54,
           "end": 80.16,
-          "confidence": 0.295
+          "confidence": 0.24
         },
         {
           "text": "la",
@@ -1285,7 +1285,7 @@
           "text": "National.",
           "start": 82.62,
           "end": 83.16,
-          "confidence": 0.897
+          "confidence": 0.836
         }
       ]
     },
@@ -1332,7 +1332,7 @@
       "avg_logprob": -0.10752125653353604,
       "compression_ratio": 1.3591549295774648,
       "no_speech_prob": 0.00011234736302867532,
-      "confidence": 0.946,
+      "confidence": 0.958,
       "words": [
         {
           "text": "La",
@@ -1410,7 +1410,7 @@
           "text": "Var,",
           "start": 86.38,
           "end": 86.72,
-          "confidence": 0.581
+          "confidence": 0.523
         },
         {
           "text": "Marine",
@@ -1464,7 +1464,7 @@
           "text": "story.",
           "start": 88.66,
           "end": 88.92,
-          "confidence": 0.901
+          "confidence": 0.829
         }
       ]
     },
@@ -1498,7 +1498,7 @@
       "avg_logprob": -0.10752125653353604,
       "compression_ratio": 1.3591549295774648,
       "no_speech_prob": 0.00011234736302867532,
-      "confidence": 0.892,
+      "confidence": 0.937,
       "words": [
         {
           "text": "Restez",
@@ -1564,7 +1564,7 @@
           "text": "minutes,",
           "start": 91.46,
           "end": 91.86,
-          "confidence": 0.647
+          "confidence": 0.985
         },
         {
           "text": "à",
@@ -1588,7 +1588,7 @@
           "text": "suite.",
           "start": 92.08,
           "end": 92.13,
-          "confidence": 0.925
+          "confidence": 0.999
         }
       ]
     },
@@ -1669,7 +1669,7 @@
       "avg_logprob": -0.15090540717629825,
       "compression_ratio": 1.4545454545454546,
       "no_speech_prob": 8.090532355709001e-05,
-      "confidence": 0.877,
+      "confidence": 0.897,
       "words": [
         {
           "text": "L'actualité",
@@ -1711,7 +1711,7 @@
           "text": "adieu,",
           "start": 108.78,
           "end": 109.1,
-          "confidence": 0.826
+          "confidence": 0.982
         },
         {
           "text": "dernier",
@@ -1741,7 +1741,7 @@
           "text": "Fignon,",
           "start": 110.38,
           "end": 111.04,
-          "confidence": 0.766
+          "confidence": 0.816
         },
         {
           "text": "c'était",
@@ -1789,7 +1789,7 @@
           "text": "Paris.",
           "start": 113.08,
           "end": 113.54,
-          "confidence": 0.838
+          "confidence": 0.998
         }
       ]
     },
@@ -1842,7 +1842,7 @@
       "avg_logprob": -0.10672580568413985,
       "compression_ratio": 1.1160714285714286,
       "no_speech_prob": 0.0002530302735976875,
-      "confidence": 0.911,
+      "confidence": 0.933,
       "words": [
         {
           "text": "L'ancien",
@@ -1884,7 +1884,7 @@
           "text": "France,",
           "start": 115.5,
           "end": 115.98,
-          "confidence": 0.849
+          "confidence": 0.999
         },
         {
           "text": "vaincu",
@@ -1926,7 +1926,7 @@
           "text": "ans,",
           "start": 117.52,
           "end": 118.3,
-          "confidence": 0.845
+          "confidence": 0.989
         },
         {
           "text": "a",
@@ -1968,7 +1968,7 @@
           "text": "aujourd'hui.",
           "start": 120.16,
           "end": 120.48,
-          "confidence": 0.862
+          "confidence": 0.929
         }
       ]
     }
