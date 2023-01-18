@@ -40,9 +40,7 @@ class TestHelper(unittest.TestCase):
         return [self.get_data_path(fn)
             for fn in (sorted(os.listdir(self.get_data_path()) if files is None else files))]
 
-    def get_generated_files(self, input_filename, output_path, extensions=None):
-        if extensions is None:
-            extensions = ["txt", "srt", "vtt", "words.srt", "words.vtt", "words.json"]
+    def get_generated_files(self, input_filename, output_path, extensions):
         for ext in extensions:
             yield os.path.join(output_path, os.path.basename(input_filename) + "." + ext.lstrip("."))
 
@@ -165,13 +163,47 @@ class TestPythonImport(TestHelper):
         model = whisper_timestamped.load_model("tiny")
 
         res = whisper_timestamped.transcribe(model, self.get_data_path("bonjour.wav"))
-
         expected = json.load(open(self.get_expected_path("tiny_auto/bonjour.wav.words.json", check = True)))
-
         self.assertClose(res, expected)
 
+class TestHelperCli(TestHelper):
 
-class TestTranscribeCli(TestHelper):
+    def _test_cli_(self, opts, name, files = None, extensions = ["words.json"]):
+
+        output_dir = self.get_output_path(name)
+
+        for input_filename in self.get_data_files(files):
+
+            # Butterfly effect: Results are different depending on the device for long files
+            duration = self.get_audio_duration(input_filename)
+            device_dependent = duration > 60 or (duration > 30 and "tiny_fr" in name)
+            name_ = name
+            if device_dependent:
+                name_ += f".{self.get_device_str()}"
+            def ref_name(output_filename):
+                return name_ + "/" + os.path.basename(output_filename)
+
+            if GENERATE_NEW_ONLY:
+                if min([os.path.exists(self.get_expected_path(ref_name(output_filename)))
+                    for output_filename in self.get_generated_files(input_filename, output_dir, extensions=extensions)]):
+                    print("Output already exists, skipping", input_filename)
+                    continue
+            (stdout, stderr) = self.assertRun([
+                self.get_main_path("transcribe.py"),
+                input_filename,
+                "--output_dir", output_dir,
+                "--csv", "True",
+                "--json", "True",
+                *opts,
+            ])
+            print(stdout)
+            print(stderr)
+            for output_filename in self.get_generated_files(input_filename, output_dir, extensions=extensions):
+                self.assertNonRegression(output_filename, ref_name(output_filename))
+
+        shutil.rmtree(output_dir, ignore_errors = True)
+
+class TestTranscribeTiny(TestHelperCli):
 
     def test_cli_tiny_auto(self):
         self._test_cli_(
@@ -185,6 +217,8 @@ class TestTranscribeCli(TestHelper):
             "tiny_fr"
         )
 
+class TestTranscribeMedium(TestHelperCli):
+
     def test_cli_medium_auto(self):
         self._test_cli_(
             ["--model", "medium"],
@@ -196,10 +230,13 @@ class TestTranscribeCli(TestHelper):
             ["--model", "medium", "--language", "fr"],
             "medium_fr"
         )
+
+class TestTranscribeFormats(TestHelperCli):
+
     def test_cli_punctuations(self):
         files = ["punctuations.mp3"]
         extensions = ["txt", "srt", "vtt", "words.srt", "words.vtt", "words.json", ".csv", ".words.csv"]
-        opts = ["--model", "medium", "--language", "fr", "--csv", "True", "--json", "True"]
+        opts = ["--model", "medium", "--language", "fr"]
         
         # An audio / model combination that produces coma
         self._test_cli_(
@@ -214,34 +251,3 @@ class TestTranscribeCli(TestHelper):
             files=files,
             extensions=extensions
         )
-
-    def _test_cli_(self, opts, name, files = None, extensions = None):
-
-        output_dir = self.get_output_path(name)
-
-        for input_filename in self.get_data_files(files):
-
-            # Butterfly effect: Results are different depending on the device for long files
-            duration = self.get_audio_duration(input_filename)
-            device_dependent = duration > 60 or (duration > 30 and "tiny_fr" in name)
-            def ref_name(output_filename):
-                return name + (f".{self.get_device_str()}" if device_dependent else "")+ "/" + os.path.basename(output_filename)
-
-            if GENERATE_NEW_ONLY:
-                if min([os.path.exists(self.get_expected_path(ref_name(output_filename)))
-                    for output_filename in self.get_generated_files(input_filename, output_dir, extensions=extensions)]):
-                    print("Output already exists, skipping", input_filename)
-                    continue
-            (stdout, stderr) = self.assertRun([
-                self.get_main_path("transcribe.py"),
-                input_filename,
-                "--output_dir", output_dir,
-                "--json", "True",
-                *opts,
-            ])
-            print(stdout)
-            print(stderr)
-            for output_filename in self.get_generated_files(input_filename, output_dir, extensions=extensions):
-                self.assertNonRegression(output_filename, ref_name(output_filename))
-
-        shutil.rmtree(output_dir, ignore_errors = True)

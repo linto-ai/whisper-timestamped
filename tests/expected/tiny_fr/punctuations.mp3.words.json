@@ -1,0 +1,63 @@
+{
+  "text": " Dima et ce que l'on vole.",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.42,
+      "end": 2.54,
+      "text": " Dima et ce que l'on vole.",
+      "tokens": [
+        50364,
+        413,
+        4775,
+        1030,
+        1769,
+        631,
+        287,
+        6,
+        266,
+        49877,
+        13,
+        50494
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.9094077623807467,
+      "compression_ratio": 0.7575757575757576,
+      "no_speech_prob": 0.0011662691831588745,
+      "words": [
+        {
+          "text": "Dima",
+          "start": 0.42,
+          "end": 0.74
+        },
+        {
+          "text": "et",
+          "start": 0.74,
+          "end": 1.38
+        },
+        {
+          "text": "ce",
+          "start": 1.38,
+          "end": 1.48
+        },
+        {
+          "text": "que",
+          "start": 1.48,
+          "end": 1.6
+        },
+        {
+          "text": "l'on",
+          "start": 1.6,
+          "end": 1.92
+        },
+        {
+          "text": "vole.",
+          "start": 1.92,
+          "end": 2.54
+        }
+      ]
+    }
+  ],
+  "language": "fr"
+}
