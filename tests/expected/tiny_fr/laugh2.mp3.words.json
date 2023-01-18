@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.16,
-      "end": 0.82,
+      "end": 0.72,
       "text": " Merci beaucoup.",
       "tokens": [
         50364,
@@ -27,7 +27,7 @@
         {
           "text": "beaucoup.",
           "start": 0.42,
-          "end": 0.82
+          "end": 0.72
         }
       ]
     }

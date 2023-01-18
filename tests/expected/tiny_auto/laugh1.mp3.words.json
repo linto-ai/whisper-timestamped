@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.06,
-      "end": 1.9,
+      "end": 1.78,
       "text": " You can't do it, you can't do it.",
       "tokens": [
         50364,
@@ -51,22 +51,22 @@
         {
           "text": "you",
           "start": 1.36,
-          "end": 1.46
+          "end": 1.4
         },
         {
           "text": "can't",
-          "start": 1.46,
+          "start": 1.4,
           "end": 1.7
         },
         {
           "text": "do",
           "start": 1.7,
-          "end": 1.8
+          "end": 1.74
         },
         {
           "text": "it.",
-          "start": 1.8,
-          "end": 1.9
+          "start": 1.74,
+          "end": 1.78
         }
       ]
     }

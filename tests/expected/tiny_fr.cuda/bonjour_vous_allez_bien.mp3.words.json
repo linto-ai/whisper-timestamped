@@ -54,11 +54,11 @@
         {
           "text": "que",
           "start": 2.14,
-          "end": 2.24
+          "end": 2.18
         },
         {
           "text": "vous",
-          "start": 2.24,
+          "start": 2.18,
           "end": 2.34
         },
         {
@@ -99,7 +99,7 @@
       "id": 3,
       "seek": 3348,
       "start": 34.92,
-      "end": 35.02,
+      "end": 34.96,
       "text": " Bonjour!",
       "tokens": [
         25431,
@@ -113,14 +113,14 @@
         {
           "text": "Bonjour!",
           "start": 34.92,
-          "end": 35.02
+          "end": 34.96
         }
       ]
     },
     {
       "id": 4,
       "seek": 3448,
-      "start": 35.02,
+      "start": 34.96,
       "end": 35.58,
       "text": " Est-ce que vous allez bien?",
       "tokens": [
@@ -142,27 +142,27 @@
       "words": [
         {
           "text": "Est-ce",
-          "start": 35.02,
-          "end": 35.12
+          "start": 34.96,
+          "end": 35.0
         },
         {
           "text": "que",
-          "start": 35.12,
-          "end": 35.22
+          "start": 35.0,
+          "end": 35.04
         },
         {
           "text": "vous",
-          "start": 35.22,
-          "end": 35.32
+          "start": 35.04,
+          "end": 35.08
         },
         {
           "text": "allez",
-          "start": 35.32,
-          "end": 35.42
+          "start": 35.08,
+          "end": 35.12
         },
         {
           "text": "bien?",
-          "start": 35.42,
+          "start": 35.12,
           "end": 35.58
         }
       ]

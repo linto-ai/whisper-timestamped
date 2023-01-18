@@ -38,7 +38,7 @@ def transcribe_timestamped(
     task="transcribe",
     # additional options for word alignment
     refine_whisper_precision=0.5,
-    min_word_duration=0.1,
+    min_word_duration=0.04,
     plot_word_alignment=False,
     remove_punctuation_from_words=False,
     # other Whisper options
@@ -78,6 +78,9 @@ def transcribe_timestamped(
 
     min_word_duration: float
         Minimum duration of a word, in seconds. If a word is shorter than this, timestamps will be adjusted.
+
+    remove_punctuation_from_words: bool
+        Whether to remove punctuation from words.
 
     plot_word_alignment: bool
         Whether to plot the word alignment for each segment. matplotlib must be installed to use this option.
@@ -119,10 +122,10 @@ def transcribe_timestamped(
 
     debug = logger.getEffectiveLevel() >= logging.DEBUG
 
-    assert refine_whisper_precision >= 0 and refine_whisper_precision / AUDIO_TIME_PER_TOKEN == round(
-        refine_whisper_precision / AUDIO_TIME_PER_TOKEN), f"refine_whisper_precision must be a positive multiple of {AUDIO_TIME_PER_TOKEN}"
-    refine_whisper_precision_nsamples = round(
-        refine_whisper_precision / AUDIO_TIME_PER_TOKEN)
+    # Check input options
+    assert refine_whisper_precision >= 0 and refine_whisper_precision / AUDIO_TIME_PER_TOKEN == round(refine_whisper_precision / AUDIO_TIME_PER_TOKEN), f"refine_whisper_precision must be a positive multiple of {AUDIO_TIME_PER_TOKEN}"
+    refine_whisper_precision_nsamples = round(refine_whisper_precision / AUDIO_TIME_PER_TOKEN)
+    assert min_word_duration >= 0, f"min_word_duration must be a positive number"
 
     if isinstance(temperature, (list, tuple)) and len(temperature) > 1:
         raise NotImplementedError("Transcription with several temperatures not implemented")
@@ -158,7 +161,7 @@ def transcribe_timestamped(
     logit_filters = get_logit_filters(initial_prompt)
     tokenizer = whisper.tokenizer.get_tokenizer(model.is_multilingual, language=language)
 
-    # Check
+    # Safety check
     input_stride = N_FRAMES // model.dims.n_audio_ctx
     time_precision = input_stride * HOP_LENGTH / SAMPLE_RATE
     assert time_precision == AUDIO_TIME_PER_TOKEN
@@ -183,9 +186,8 @@ def transcribe_timestamped(
     chunk_tokens = []               # tokens for the current 30 sec chunk (list of Torch tensors)
     chunk_tokens_nosot = []         # tokens for the current 30 sec chunk, without the SOT tokens (list of indices)
     has_started = False             # whether we have started decoding
-    # Variables for plotting and debugging
     mfcc = None                     # MFCC features for the current 30 sec chunk
-    num_inference_steps = 0         # number of inference steps performed so far
+    num_inference_steps = 0         # number of inference steps performed so far (for debugging only)
 
     def reset(add_segment, keep_last_token):
         """ Reset the list of tokens for the current speech segment, and corresponding cross-attention weights """
@@ -305,6 +307,10 @@ def transcribe_timestamped(
             w = w[:, :, -1:, :]
         tok_attweights[index].append(w)
 
+    def hook_mfcc(layer, ins, outs):
+        nonlocal mfcc
+        mfcc = ins[0]
+
     def hook_input_tokens(layer, ins, outs):
         nonlocal tok_indices, sot_index, chunk_tokens, chunk_tokens_nosot, logit_filters, has_started, language, num_inference_steps
         num_inference_steps += 1
@@ -361,11 +367,7 @@ def transcribe_timestamped(
 
         # Add hooks to the model, to get tokens and attention weights on the fly
         all_hooks = []
-        if plot_word_alignment:
-            def hook_mfcc(layer, ins, outs):
-                nonlocal mfcc
-                mfcc = ins[0]
-            all_hooks.append(model.encoder.conv1.register_forward_hook(hook_mfcc))
+        all_hooks.append(model.encoder.conv1.register_forward_hook(hook_mfcc))
         all_hooks.append(model.decoder.token_embedding.register_forward_hook(hook_input_tokens))
         for i, block in enumerate(model.decoder.blocks):
             all_hooks.append(
@@ -499,6 +501,7 @@ def perform_word_alignment(
     start_token = tokens[0] - tokenizer.timestamp_begin
     end_token = tokens[-1] - tokenizer.timestamp_begin
 
+    # Check start / end tokens
     if start_token < 0:
         raise RuntimeError(f"Missing start token in {tokenizer.decode_with_timestamps(tokens)}")
     if len(tokens) == 1 or end_token < 0:
@@ -513,9 +516,17 @@ def perform_word_alignment(
             logger.debug(f"Got empty segment in {tokenizer.decode_with_timestamps(tokens)}")
         return []
 
+    # Put some margin around the segment
     if refine_whisper_precision_nsamples > 0:
         start_token = max(start_token - refine_whisper_precision_nsamples, 0)
         end_token = min(end_token + refine_whisper_precision_nsamples, N_FRAMES // 2)
+
+    # Get the limit of audio duration
+    max_duration = None
+    if mfcc is not None:
+        max_duration = find_start_padding(mfcc)
+        if max_duration is not None:
+            max_duration = max_duration // 2
 
     if end_token <= start_token:
         raise RuntimeError(f"Got segment with null or negative duration {tokenizer.decode_with_timestamps(tokens)}: {start_token} {end_token}")
@@ -565,6 +576,13 @@ def perform_word_alignment(
     weights = weights.mean(axis=(0, 1))  # average over layers and heads
     weights = -weights.double().numpy()
 
+    # Enforce the max duration
+    if max_duration:
+        if start_token >= max_duration:
+            logger.warn(f"Got start time outside of audio boundary")
+        else:
+            weights[:-1,max_duration:] = 0
+
     # We could enforce to not go outside real boundaries of the segments, for words in the middle...
     # if refine_whisper_precision_start:
     #     weights[1 + len(word_tokens[1]):, :refine_whisper_precision_start] = 0
@@ -589,8 +607,7 @@ def perform_word_alignment(
         if mfcc is None:
             plt.figure(figsize=(16, 9), frameon=False)
         else:
-            plt.subplots(2, 1, figsize=(16, 9), gridspec_kw={
-                         'height_ratios': [3, 1]})
+            plt.subplots(2, 1, figsize=(16, 9), gridspec_kw={'height_ratios': [3, 1]})
             plt.subplot(2, 1, 1, frameon=False)
 
         plt.imshow(-weights, aspect="auto")
@@ -640,8 +657,7 @@ def perform_word_alignment(
             xticks *= 2
 
             plt.subplot(2, 1, 2, frameon=False)
-            plt.imshow(mfcc[0, :, start_token *
-                       2: end_token * 2], aspect="auto")
+            plt.imshow(mfcc[0, :, start_token * 2: end_token * 2], aspect="auto")
             plt.yticks([])
             plt.ylabel("MFCC")
 
@@ -703,6 +719,19 @@ def perform_word_alignment(
         if not word.startswith("<|")
     ]
 
+def find_start_padding(mfcc):
+    """ Return start of padding given the mfcc, or None if there is no padding """
+    last_mfcc = mfcc[0, :, -1]
+    if torch.min(last_mfcc) == torch.max(last_mfcc) == 0:
+        candidate_index = mfcc.shape[-1] - 2
+        while candidate_index > 0:
+            candidate = mfcc[0, :, candidate_index]
+            if not torch.equal(candidate, last_mfcc):
+                return candidate_index + 1
+            candidate_index -= 1
+        return 0 # WTF!?
+            
+
 
 _punctuation = "".join(c for c in string.punctuation if c not in ["-", "'"])
 
@@ -757,7 +786,7 @@ def flatten_list(list_of_lists):
     return [item for sublist in list_of_lists for item in sublist]
 
 
-def ensure_increasing_positions(segments, min_duration=0.1):
+def ensure_increasing_positions(segments, min_duration=0):
     """
     Ensure that "start" and "end" come in increasing order
     """

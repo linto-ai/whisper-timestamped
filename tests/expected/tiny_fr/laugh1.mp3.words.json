@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.06,
-      "end": 1.76,
+      "end": 1.64,
       "text": " Je ne suis pas en train de faire ça.",
       "tokens": [
         50364,
@@ -64,12 +64,12 @@
         {
           "text": "faire",
           "start": 1.56,
-          "end": 1.66
+          "end": 1.6
         },
         {
           "text": "ça.",
-          "start": 1.66,
-          "end": 1.76
+          "start": 1.6,
+          "end": 1.64
         }
       ]
     }

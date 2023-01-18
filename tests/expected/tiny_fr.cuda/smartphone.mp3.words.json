@@ -68,11 +68,11 @@
         {
           "text": "je",
           "start": 2.1,
-          "end": 2.2
+          "end": 2.18
         },
         {
           "text": "me",
-          "start": 2.2,
+          "start": 2.18,
           "end": 2.3
         },
         {
@@ -141,11 +141,11 @@
         {
           "text": "Ce",
           "start": 4.14,
-          "end": 4.24
+          "end": 4.22
         },
         {
           "text": "qui",
-          "start": 4.24,
+          "start": 4.22,
           "end": 4.34
         },
         {
@@ -181,11 +181,11 @@
         {
           "text": "pas",
           "start": 6.12,
-          "end": 6.22
+          "end": 6.2
         },
         {
           "text": "seulement",
-          "start": 6.22,
+          "start": 6.2,
           "end": 6.52
         },
         {
@@ -305,11 +305,11 @@
         {
           "text": "Et",
           "start": 11.04,
-          "end": 11.14
+          "end": 11.12
         },
         {
           "text": "il",
-          "start": 11.14,
+          "start": 11.12,
           "end": 11.24
         },
         {
@@ -330,16 +330,16 @@
         {
           "text": "la",
           "start": 11.78,
-          "end": 11.88
+          "end": 11.82
         },
         {
           "text": "photo",
-          "start": 11.88,
-          "end": 11.98
+          "start": 11.82,
+          "end": 11.92
         },
         {
           "text": "c'est",
-          "start": 11.98,
+          "start": 11.92,
           "end": 12.18
         },
         {
@@ -533,26 +533,26 @@
         {
           "text": "il",
           "start": 20.56,
-          "end": 20.66
+          "end": 20.6
         },
         {
           "text": "faudrait",
-          "start": 20.66,
-          "end": 20.76
+          "start": 20.6,
+          "end": 20.74
         },
         {
           "text": "que",
-          "start": 20.76,
+          "start": 20.74,
           "end": 20.92
         },
         {
           "text": "les",
           "start": 20.92,
-          "end": 21.02
+          "end": 20.98
         },
         {
           "text": "profites",
-          "start": 21.02,
+          "start": 20.98,
           "end": 21.26
         },
         {
@@ -588,11 +588,11 @@
         {
           "text": "les",
           "start": 23.0,
-          "end": 23.1
+          "end": 23.04
         },
         {
           "text": "ordinateurs",
-          "start": 23.1,
+          "start": 23.04,
           "end": 23.54
         }
       ]
@@ -744,11 +744,11 @@
         {
           "text": "qui",
           "start": 28.1,
-          "end": 28.2
+          "end": 28.18
         },
         {
           "text": "rend",
-          "start": 28.2,
+          "start": 28.18,
           "end": 28.42
         },
         {
@@ -819,11 +819,11 @@
         {
           "text": "Et",
           "start": 31.08,
-          "end": 31.18
+          "end": 31.14
         },
         {
           "text": "puis,",
-          "start": 31.18,
+          "start": 31.14,
           "end": 31.32
         },
         {
@@ -1221,11 +1221,11 @@
         {
           "text": "autre",
           "start": 48.12,
-          "end": 48.22
+          "end": 48.16
         },
         {
           "text": "interrogation.",
-          "start": 48.22,
+          "start": 48.16,
           "end": 48.88
         }
       ]
@@ -1278,26 +1278,26 @@
         {
           "text": "que",
           "start": 49.7,
-          "end": 49.8
+          "end": 49.74
         },
         {
           "text": "le",
-          "start": 49.8,
-          "end": 49.9
+          "start": 49.74,
+          "end": 49.78
         },
         {
           "text": "fait",
-          "start": 49.9,
-          "end": 50.0
+          "start": 49.78,
+          "end": 49.96
         },
         {
           "text": "que",
-          "start": 50.0,
-          "end": 50.1
+          "start": 49.96,
+          "end": 50.08
         },
         {
           "text": "cette",
-          "start": 50.1,
+          "start": 50.08,
           "end": 50.24
         },
         {
@@ -1328,11 +1328,11 @@
         {
           "text": "que",
           "start": 52.32,
-          "end": 52.42
+          "end": 52.4
         },
         {
           "text": "notre",
-          "start": 52.42,
+          "start": 52.4,
           "end": 52.6
         },
         {
@@ -1443,11 +1443,11 @@
         {
           "text": "que",
           "start": 56.34,
-          "end": 56.44
+          "end": 56.4
         },
         {
           "text": "le",
-          "start": 56.44,
+          "start": 56.4,
           "end": 56.54
         },
         {
@@ -1463,31 +1463,31 @@
         {
           "text": "a",
           "start": 57.1,
-          "end": 57.2
+          "end": 57.14
         },
         {
           "text": "au",
-          "start": 57.2,
-          "end": 57.3
+          "start": 57.14,
+          "end": 57.26
         },
         {
           "text": "sein",
-          "start": 57.3,
-          "end": 57.4
+          "start": 57.26,
+          "end": 57.36
         },
         {
           "text": "de",
-          "start": 57.4,
-          "end": 57.5
+          "start": 57.36,
+          "end": 57.44
         },
         {
           "text": "foi",
-          "start": 57.5,
-          "end": 57.6
+          "start": 57.44,
+          "end": 57.54
         },
         {
           "text": "n'est",
-          "start": 57.6,
+          "start": 57.54,
           "end": 57.76
         },
         {
@@ -1624,26 +1624,26 @@
         {
           "text": "Il",
           "start": 65.38,
-          "end": 65.48
+          "end": 65.46
         },
         {
           "text": "n'y",
-          "start": 65.48,
-          "end": 65.58
+          "start": 65.46,
+          "end": 65.52
         },
         {
           "text": "a",
-          "start": 65.58,
-          "end": 65.68
+          "start": 65.52,
+          "end": 65.56
         },
         {
           "text": "pas",
-          "start": 65.68,
-          "end": 65.78
+          "start": 65.56,
+          "end": 65.62
         },
         {
           "text": "d'équivalent.",
-          "start": 65.78,
+          "start": 65.62,
           "end": 66.13
         }
       ]
@@ -1783,7 +1783,7 @@
       "id": 21,
       "seek": 5596,
       "start": 71.64,
-      "end": 77.0,
+      "end": 76.94,
       "text": " Parce que la passion de l'utilisateur et si la crise a dépendance, cette objet d'un lieu",
       "tokens": [
         20429,
@@ -1854,21 +1854,21 @@
         {
           "text": "si",
           "start": 74.92,
-          "end": 75.02
+          "end": 74.96
         },
         {
           "text": "la",
-          "start": 75.02,
-          "end": 75.12
+          "start": 74.96,
+          "end": 75.06
         },
         {
           "text": "crise",
-          "start": 75.12,
-          "end": 75.22
+          "start": 75.06,
+          "end": 75.18
         },
         {
           "text": "a",
-          "start": 75.22,
+          "start": 75.18,
           "end": 75.32
         },
         {
@@ -1894,14 +1894,14 @@
         {
           "text": "lieu",
           "start": 76.86,
-          "end": 77.0
+          "end": 76.94
         }
       ]
     },
     {
       "id": 22,
       "seek": 5596,
-      "start": 77.0,
+      "start": 76.94,
       "end": 82.1,
       "text": " en fait, une espèce de relation de médiation avec le monde qui rendent un peu avec",
       "tokens": [
@@ -1933,7 +1933,7 @@
       "words": [
         {
           "text": "en",
-          "start": 77.0,
+          "start": 76.94,
           "end": 77.2
         },
         {
@@ -1944,11 +1944,11 @@
         {
           "text": "une",
           "start": 77.42,
-          "end": 77.52
+          "end": 77.46
         },
         {
           "text": "espèce",
-          "start": 77.52,
+          "start": 77.46,
           "end": 77.74
         },
         {
@@ -2004,11 +2004,11 @@
         {
           "text": "peu",
           "start": 81.84,
-          "end": 81.94
+          "end": 81.88
         },
         {
           "text": "avec",
-          "start": 81.94,
+          "start": 81.88,
           "end": 82.1
         }
       ]
@@ -2042,21 +2042,21 @@
         {
           "text": "la",
           "start": 82.12,
-          "end": 82.22
+          "end": 82.18
         },
         {
           "text": "maille",
-          "start": 82.22,
+          "start": 82.18,
           "end": 82.38
         },
         {
           "text": "de",
           "start": 82.38,
-          "end": 82.48
+          "end": 82.44
         },
         {
           "text": "celles",
-          "start": 82.48,
+          "start": 82.44,
           "end": 82.64
         },
         {
@@ -2212,11 +2212,11 @@
         {
           "text": "de",
           "start": 94.52,
-          "end": 94.62
+          "end": 94.56
         },
         {
           "text": "rogeur.",
-          "start": 94.62,
+          "start": 94.56,
           "end": 95.02
         }
       ]
@@ -2267,11 +2267,11 @@
         {
           "text": "il",
           "start": 97.08,
-          "end": 97.18
+          "end": 97.14
         },
         {
           "text": "faudrait",
-          "start": 97.18,
+          "start": 97.14,
           "end": 97.52
         },
         {
@@ -2364,11 +2364,11 @@
         {
           "text": "de",
           "start": 101.56,
-          "end": 101.66
+          "end": 101.64
         },
         {
           "text": "leur",
-          "start": 101.66,
+          "start": 101.64,
           "end": 101.78
         },
         {
@@ -2384,11 +2384,11 @@
         {
           "text": "le",
           "start": 102.46,
-          "end": 102.56
+          "end": 102.54
         },
         {
           "text": "vie",
-          "start": 102.56,
+          "start": 102.54,
           "end": 102.78
         },
         {
@@ -2512,11 +2512,11 @@
         {
           "text": "pas",
           "start": 109.0,
-          "end": 109.1
+          "end": 109.08
         },
         {
           "text": "vraiment.",
-          "start": 109.1,
+          "start": 109.08,
           "end": 109.44
         }
       ]
@@ -2572,11 +2572,11 @@
         {
           "text": "je",
           "start": 110.36,
-          "end": 110.46
+          "end": 110.4
         },
         {
           "text": "sache,",
-          "start": 110.46,
+          "start": 110.4,
           "end": 111.0
         },
         {
@@ -2587,21 +2587,21 @@
         {
           "text": "y",
           "start": 111.2,
-          "end": 111.3
+          "end": 111.24
         },
         {
           "text": "a",
-          "start": 111.3,
-          "end": 111.4
+          "start": 111.24,
+          "end": 111.28
         },
         {
           "text": "eu",
-          "start": 111.4,
-          "end": 111.5
+          "start": 111.28,
+          "end": 111.38
         },
         {
           "text": "plein",
-          "start": 111.5,
+          "start": 111.38,
           "end": 111.78
         },
         {
@@ -2627,11 +2627,11 @@
         {
           "text": "la",
           "start": 113.46,
-          "end": 113.56
+          "end": 113.5
         },
         {
           "text": "voiture",
-          "start": 113.56,
+          "start": 113.5,
           "end": 113.82
         },
         {
@@ -2977,16 +2977,16 @@
         {
           "text": "va",
           "start": 125.02,
-          "end": 125.12
+          "end": 125.1
         },
         {
           "text": "se",
-          "start": 125.12,
-          "end": 125.22
+          "start": 125.1,
+          "end": 125.18
         },
         {
           "text": "coucher,",
-          "start": 125.22,
+          "start": 125.18,
           "end": 125.68
         },
         {
@@ -2997,11 +2997,11 @@
         {
           "text": "la",
           "start": 126.04,
-          "end": 126.14
+          "end": 126.12
         },
         {
           "text": "laisse.",
-          "start": 126.14,
+          "start": 126.12,
           "end": 126.46
         }
       ]
@@ -3089,11 +3089,11 @@
         {
           "text": "est",
           "start": 128.6,
-          "end": 128.7
+          "end": 128.68
         },
         {
           "text": "collis,",
-          "start": 128.7,
+          "start": 128.68,
           "end": 129.14
         },
         {
@@ -3104,11 +3104,11 @@
         {
           "text": "n'en",
           "start": 129.3,
-          "end": 129.4
+          "end": 129.36
         },
         {
           "text": "mène",
-          "start": 129.4,
+          "start": 129.36,
           "end": 129.56
         },
         {
@@ -3210,11 +3210,11 @@
         {
           "text": "la",
           "start": 133.72,
-          "end": 133.82
+          "end": 133.8
         },
         {
           "text": "ligne",
-          "start": 133.82,
+          "start": 133.8,
           "end": 134.0
         },
         {
@@ -3355,11 +3355,11 @@
         {
           "text": "ne",
           "start": 137.6,
-          "end": 137.7
+          "end": 137.68
         },
         {
           "text": "ressemble",
-          "start": 137.7,
+          "start": 137.68,
           "end": 138.14
         },
         {
@@ -3375,11 +3375,11 @@
         {
           "text": "ce",
           "start": 138.94,
-          "end": 139.04
+          "end": 139.02
         },
         {
           "text": "qu'on",
-          "start": 139.04,
+          "start": 139.02,
           "end": 139.16
         },
         {
@@ -3478,11 +3478,11 @@
         {
           "text": "la",
           "start": 143.92,
-          "end": 144.02
+          "end": 144.0
         },
         {
           "text": "main,",
-          "start": 144.02,
+          "start": 144.0,
           "end": 144.18
         },
         {
@@ -3508,11 +3508,11 @@
         {
           "text": "de",
           "start": 145.1,
-          "end": 145.2
+          "end": 145.18
         },
         {
           "text": "estimateur",
-          "start": 145.2,
+          "start": 145.18,
           "end": 145.76
         }
       ]
@@ -3564,11 +3564,11 @@
         {
           "text": "de",
           "start": 146.4,
-          "end": 146.5
+          "end": 146.46
         },
         {
           "text": "l'essayer",
-          "start": 146.5,
+          "start": 146.46,
           "end": 147.3
         },
         {
@@ -3584,11 +3584,11 @@
         {
           "text": "ça",
           "start": 147.94,
-          "end": 148.04
+          "end": 148.0
         },
         {
           "text": "m'a",
-          "start": 148.04,
+          "start": 148.0,
           "end": 148.28
         },
         {
@@ -3644,16 +3644,16 @@
         {
           "text": "je",
           "start": 149.3,
-          "end": 149.4
+          "end": 149.34
         },
         {
           "text": "dis",
-          "start": 149.4,
-          "end": 149.5
+          "start": 149.34,
+          "end": 149.42
         },
         {
           "text": "ça",
-          "start": 149.5,
+          "start": 149.42,
           "end": 149.62
         },
         {
@@ -3674,41 +3674,41 @@
         {
           "text": "mais",
           "start": 150.4,
-          "end": 150.5
+          "end": 150.44
         },
         {
           "text": "évidemment,",
-          "start": 150.5,
+          "start": 150.44,
           "end": 151.16
         },
         {
           "text": "on",
           "start": 151.16,
-          "end": 151.26
+          "end": 151.2
         },
         {
           "text": "va",
-          "start": 151.26,
-          "end": 151.36
+          "start": 151.2,
+          "end": 151.28
         },
         {
           "text": "là",
-          "start": 151.36,
-          "end": 151.46
+          "start": 151.28,
+          "end": 151.4
         },
         {
           "text": "pour",
-          "start": 151.46,
+          "start": 151.4,
           "end": 151.62
         },
         {
           "text": "nos",
           "start": 151.62,
-          "end": 151.72
+          "end": 151.7
         },
         {
           "text": "aussi.",
-          "start": 151.72,
+          "start": 151.7,
           "end": 152.08
         }
       ]
@@ -3819,11 +3819,11 @@
         {
           "text": "en",
           "start": 157.28,
-          "end": 157.38
+          "end": 157.34
         },
         {
           "text": "sortira",
-          "start": 157.38,
+          "start": 157.34,
           "end": 157.84
         },
         {
@@ -3883,21 +3883,21 @@
         {
           "text": "il",
           "start": 159.48,
-          "end": 159.58
+          "end": 159.52
         },
         {
           "text": "faut",
-          "start": 159.58,
-          "end": 159.68
+          "start": 159.52,
+          "end": 159.56
         },
         {
           "text": "en",
-          "start": 159.68,
-          "end": 159.78
+          "start": 159.56,
+          "end": 159.72
         },
         {
           "text": "remettre",
-          "start": 159.78,
+          "start": 159.72,
           "end": 160.1
         },
         {
@@ -3933,11 +3933,11 @@
         {
           "text": "ont",
           "start": 161.58,
-          "end": 161.68
+          "end": 161.62
         },
         {
           "text": "créé",
-          "start": 161.68,
+          "start": 161.62,
           "end": 162.3
         },
         {
@@ -3998,11 +3998,11 @@
         {
           "text": "et",
           "start": 163.84,
-          "end": 163.94
+          "end": 163.88
         },
         {
           "text": "diabolique",
-          "start": 163.94,
+          "start": 163.88,
           "end": 164.36
         },
         {
@@ -4064,11 +4064,11 @@
         {
           "text": "de",
           "start": 167.72,
-          "end": 167.82
+          "end": 167.8
         },
         {
           "text": "dépendance",
-          "start": 167.82,
+          "start": 167.8,
           "end": 168.32
         },
         {
@@ -4137,21 +4137,21 @@
         {
           "text": "fait,",
           "start": 169.62,
-          "end": 169.72
+          "end": 169.68
         },
         {
           "text": "on",
-          "start": 169.72,
-          "end": 169.82
+          "start": 169.68,
+          "end": 169.74
         },
         {
           "text": "est",
-          "start": 169.82,
-          "end": 169.92
+          "start": 169.74,
+          "end": 169.84
         },
         {
           "text": "un",
-          "start": 169.92,
+          "start": 169.84,
           "end": 170.12
         },
         {
@@ -4172,11 +4172,11 @@
         {
           "text": "été",
           "start": 171.0,
-          "end": 171.1
+          "end": 171.08
         },
         {
           "text": "étabis,",
-          "start": 171.1,
+          "start": 171.08,
           "end": 171.7
         },
         {
@@ -4205,7 +4205,7 @@
       "id": 48,
       "seek": 17272,
       "start": 172.74,
-      "end": 177.84,
+      "end": 177.72,
       "text": " un marchand de soleil, soit définissant des beurs, on définit ça en fait une signalétique.",
       "tokens": [
         50364,
@@ -4243,11 +4243,11 @@
         {
           "text": "un",
           "start": 172.74,
-          "end": 172.84
+          "end": 172.78
         },
         {
           "text": "marchand",
-          "start": 172.84,
+          "start": 172.78,
           "end": 173.06
         },
         {
@@ -4283,11 +4283,11 @@
         {
           "text": "on",
           "start": 176.0,
-          "end": 176.1
+          "end": 176.04
         },
         {
           "text": "définit",
-          "start": 176.1,
+          "start": 176.04,
           "end": 176.38
         },
         {
@@ -4313,7 +4313,7 @@
         {
           "text": "signalétique.",
           "start": 176.78,
-          "end": 177.84
+          "end": 177.72
         }
       ]
     }
