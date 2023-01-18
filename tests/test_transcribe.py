@@ -26,8 +26,8 @@ class TestHelper(unittest.TestCase):
         else:
             self.assertEqual(self.createdReferences, [], "Created references: " + ", ".join(self.createdReferences).replace(self.get_data_path()+"/", ""))
     
-    def get_main_path(self, fn = None):
-        return self._get_path("whisper_timestamped", fn)
+    def get_main_path(self, fn = None, check = False):
+        return self._get_path("whisper_timestamped", fn, check = check)
 
     def get_output_path(self, fn = None):
         if fn == None: return tempfile.gettempdir()
@@ -198,8 +198,11 @@ class TestHelperCli(TestHelper):
                     for output_filename in self.get_generated_files(input_filename, output_dir, extensions=extensions)]):
                     print("Output already exists, skipping", input_filename)
                     continue
+            main_script = self.get_main_path("transcribe.py", check=False)
+            if not os.path.exists(main_script):
+                main_script = "whisper_timestamped"
             (stdout, stderr) = self.assertRun([
-                self.get_main_path("transcribe.py"),
+                main_script,
                 input_filename,
                 "--output_dir", output_dir,
                 "--csv", "True",
