@@ -8,6 +8,7 @@ import subprocess
 import shutil
 import tempfile
 import json
+import torch
 
 FAIL_IF_REFERENCE_NOT_FOUND = True
 GENERATE_NEW_ONLY = False
@@ -15,6 +16,9 @@ GENERATE_ALL = False
 GENERATE_DEVICE_DEPENDENT = False
 
 class TestHelper(unittest.TestCase):
+
+    def skipLongTests(self):
+        return not torch.cuda.is_available()
 
     def setUp(self):
         self.maxDiff = None
@@ -34,12 +38,15 @@ class TestHelper(unittest.TestCase):
         if fn == None: return tempfile.gettempdir()
         return os.path.join(tempfile.gettempdir(), fn)
 
-    def get_expected_path(self, fn = None, check = False):
+    def get_expected_path(self, fn = None, check=False):
         return self._get_path("tests/expected", fn, check = check)
 
-    def get_data_files(self, files = None):
-        return [self.get_data_path(fn)
-            for fn in (sorted(os.listdir(self.get_data_path()) if files is None else files))]
+    def get_data_files(self, files=None, excluded_by_default=["apollo11.mp3", "music.mp4"]):
+        if files == None:
+            files = os.listdir(self.get_data_path())
+            files = [f for f in files if f not in excluded_by_default]
+            files = sorted(files)
+        return [self.get_data_path(fn) for fn in files]
 
     def get_generated_files(self, input_filename, output_path, extensions):
         for ext in extensions:
@@ -163,7 +170,7 @@ class TestHelper(unittest.TestCase):
 
 class TestHelperCli(TestHelper):
 
-    def _test_cli_(self, opts, name, files = None, extensions = ["words.json"]):
+    def _test_cli_(self, opts, name, files=None, extensions=["words.json"], prefix=None):
 
         output_dir = self.get_output_path(name)
 
@@ -176,7 +183,7 @@ class TestHelperCli(TestHelper):
             if device_dependent:
                 name_ += f".{self.get_device_str()}"
             def ref_name(output_filename):
-                return name_ + "/" + os.path.basename(output_filename)
+                return name_ + "/" + (f"{prefix}_" if prefix else "") + os.path.basename(output_filename)
             generic_name = ref_name(input_filename + ".*")
 
             if GENERATE_DEVICE_DEPENDENT and not name_.endswith("."+self.get_device_str()):
@@ -235,6 +242,47 @@ class TestTranscribeMedium(TestHelperCli):
         self._test_cli_(
             ["--model", "medium", "--language", "fr"],
             "medium_fr"
+        )
+
+class TestTranscribeCornerCases(TestHelperCli):
+
+    def test_stucked_lm(self):
+        if self.skipLongTests(): return
+
+        self._test_cli_(
+            ["--model", "small", "--language", "en"],
+            "corner_cases",
+            files=["apollo11.mp3"],
+            prefix="stucked_lm",
+        )
+
+    def test_temperature(self):
+
+        self._test_cli_(
+            ["--model", "small", "--language", "en", "--condition", "False", "--temperature", "0.1"],
+            "corner_cases",
+            files=["apollo11.mp3"],
+            prefix="random.nocond",
+        )
+
+        if self.skipLongTests(): return
+
+        self._test_cli_(
+            ["--model", "small", "--language", "en", "--temperature", "0.2"],
+            "corner_cases",
+            files=["apollo11.mp3"],
+            prefix="random",
+        )
+
+    def test_not_conditioned(self):
+        if not os.path.exists(self.get_data_path("music.mp4", check=False)): return
+        if self.skipLongTests(): return
+        
+        self._test_cli_(
+            ["--model", "medium", "--language", "en", "--condition", "False"],
+            "corner_cases",
+            files=["music.mp4"],
+            prefix="not_conditioned",
         )
 
 class TestTranscribeFormats(TestHelperCli):
