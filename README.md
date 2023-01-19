@@ -10,6 +10,7 @@ Multilingual Automatic Speech Recognition with word-level timestamps and confide
    * [Plotting word alignment](#plotting-word-alignment)
    * [Example output](#example-output)
 * [Acknowlegment](#acknowlegment)
+* [Citations](#citations)
 
 ## Description
 [Whisper](https://openai.com/blog/whisper/) is a set of multi-lingual robust speech recognition models, trained by OpenAI,
@@ -25,9 +26,12 @@ The main addition to this notebook is that **no additional inference steps are r
 Word alignment is done on the fly, after each speech segment is decoded.
 In particular, little additional memory is used with respect to the regular use of the model.
 
-Note that another relevant approach to recover word-level timestamps consists in using wav2vec models that predict characters,
+### Note on other approaches
+
+Another relevant approach to recover word-level timestamps consists in using wav2vec models that predict characters,
 as successfully implemented in [whisperX](https://github.com/m-bain/whisperX).
-But these approaches have several drawbacks, which does not have approachs based on cross-attention weights like `whisper_timestamped`:
+But these approaches have several drawbacks, which does not have approaches based on cross-attention weights such as `whisper_timestamped`.
+These drawbacks are:
 * The need to perform twice the inference (once with Whisper, once with wav2vec), which has an impact on the Real Time Factor.
 * The need to handle (at least) an additional neural network, which consumes memory.
 * The need to find one wav2vec model per language to support.
@@ -189,3 +193,42 @@ whisper_timestamped AUDIO_FILE.wav --model tiny --language fr
 ## Acknowlegment
 * [whisper](https://github.com/openai/whisper): Whisper speech recognition (License MIT).
 * [dtw-python](https://pypi.org/project/dtw-python): Dynamic Time Warping (License GPL v3).
+
+## Citations
+If you use this in your research, just cite the repo,
+
+```bibtex
+@misc{louradour2023whispertimestamped,
+  title={whisper-timestamped},
+  author={Louradour, J{\'e}r{\^o}me},
+  journal={GitHub repository},
+  year={2023},
+  publisher={GitHub},
+  howpublished = {\url{https://github.com/Jeronymous/whisper-timestamped}}
+}
+```
+
+as well as OpenAI Whisper paper,
+
+```bibtex
+@article{radford2022robust,
+  title={Robust speech recognition via large-scale weak supervision},
+  author={Radford, Alec and Kim, Jong Wook and Xu, Tao and Brockman, Greg and McLeavey, Christine and Sutskever, Ilya},
+  journal={arXiv preprint arXiv:2212.04356},
+  year={2022}
+}
+```
+
+and this paper for Dynamic-Time-Warping
+
+```bibtex
+@article{JSSv031i07,
+  title={Computing and Visualizing Dynamic Time Warping Alignments in R: The dtw Package},
+  author={Giorgino, Toni},
+  journal={Journal of Statistical Software},
+  year={2009},
+  volume={31},
+  number={7},
+  doi={10.18637/jss.v031.i07}
+}
+```
