@@ -29,7 +29,6 @@ AUDIO_TIME_PER_TOKEN = AUDIO_SAMPLES_PER_TOKEN / SAMPLE_RATE # 0.02
 import logging
 logger = logging.getLogger("whisper_timestamped")
 
-
 def transcribe_timestamped(
     # main Whisper options
     model,
@@ -210,7 +209,6 @@ def transcribe_timestamped(
     chunk_tokens = []               # tokens for the current 30 sec chunk (list of Torch tensors)
     chunk_tokens_nosot = []         # tokens for the current 30 sec chunk, without the SOT tokens (list of indices)
     last_token_fallback = None      # last token to use as a fallback if the model gets stuck
-    last_token_fallback_reliable = True # whether the last token fallback is a reliable
     has_started = False             # whether we have started decoding
     mfcc = None                     # MFCC features for the current 30 sec chunk
     num_inference_steps = 0         # number of inference steps performed so far (for debugging only)
@@ -269,7 +267,7 @@ def transcribe_timestamped(
         """ Add a speech segment with the new tokens if necessary.
             May also remove the last collected segments if filtered out by Whisper (no_speech_prob <= no_speech_threshold)
         """
-        nonlocal segment_tokens, segment_attweights, timestamped_word_segments, has_started, no_speech_prob, chunk_tokens, chunk_tokens_nosot, chunk_logprobs, mfcc, logit_filters, index_begin_30sec_chunck, last_token_fallback, last_token_fallback_reliable, num_inference_steps
+        nonlocal segment_tokens, segment_attweights, timestamped_word_segments, has_started, no_speech_prob, chunk_tokens, chunk_tokens_nosot, chunk_logprobs, mfcc, logit_filters, index_begin_30sec_chunck, last_token_fallback, num_inference_steps
 
         # Check if a new segment should be added
         unfinished_decoding = False
@@ -281,6 +279,7 @@ def transcribe_timestamped(
             # When the decoding hit the max limit (number of tokens) -- usually when the language model gets stuck --
             # then we have to recover the last token from what is send to the decoder
             unfinished_decoding = len(tokens) and tokens[-1] < tokenizer.timestamp_begin
+            last_token_reliable = True
             if unfinished_decoding:
                 # The last token chosen is in the prompt for the new chunk
                 if curr_tokens is not None and curr_tokens[0] == tokenizer.sot_prev:
@@ -288,8 +287,7 @@ def transcribe_timestamped(
                 # Fallback for the last segment, or without prompt: Assume greedy decoding
                 else:
                     last_token_fallback = torch.argmax(chunk_logprobs[-1]).item()
-                    if temperature != 0:
-                        last_token_fallback_reliable = False
+                    last_token_reliable = (temperature == 0)
                 if debug:
                     logger.debug(f"WARNING: also add last token: {tokenizer.decode_with_timestamps([last_token_fallback])}")
                 tokens.append(last_token_fallback)
@@ -311,6 +309,9 @@ def transcribe_timestamped(
             add_segment = len(ws) > 0
             if add_segment:
                 timestamped_word_segments.append(ws)
+                # Add info about the dedoding that did not go well...
+                if unfinished_decoding:
+                    timestamped_word_segments[-1][-1]["avg_logprob_reliable"] = last_token_reliable
             else:
                 logger.debug(f"Not added!")
             reset(add_segment, curr_tokens is not None and len(curr_tokens) == 1)
@@ -331,7 +332,9 @@ def transcribe_timestamped(
                         last_tokens = [last_token_fallback]
                         n += 1
                     elif len(chunk_tokens_nosot) == max_sample_len - 1:
-                        last_tokens = [chunk_tokens_nosot[-1]]
+                        # there were segments in the 30sec chunck, and then the LM got stuck
+                        last_tokens = [torch.argmax(chunk_logprobs[-1]).item()]
+                        timestamped_word_segments[-1][-1]["avg_logprob_reliable"] = (temperature == 0)
                     else:
                         last_tokens = [tokenizer.eot]
                     chunck_indices = chunk_tokens_nosot + last_tokens
@@ -506,8 +509,8 @@ def transcribe_timestamped(
         timestamped_tokens = filter_tokens(token)
         whisper_tokens = filter_tokens(segment["tokens"])
         if timestamped_tokens != whisper_tokens:
-            assert len(timestamped_tokens) < len(whisper_tokens) and timestamped_tokens == whisper_tokens[:len(timestamped_tokens)], f"Got inconsistent segments at index {i}:\n{tokenizer.decode(timestamped_tokens)}\n!=\n{tokenizer.decode(whisper_tokens)}"      
-            logger.warning(f"Got inconsistent segments at index {i}:\n{tokenizer.decode(timestamped_tokens)}\n!=\n{tokenizer.decode(whisper_tokens)}")
+            assert len(timestamped_tokens) < len(whisper_tokens) and timestamped_tokens == whisper_tokens[:len(timestamped_tokens)], f"Fatal Error: Got inconsistent text for segment {i}:\n{tokenizer.decode(timestamped_tokens)}\n!=\n{tokenizer.decode(whisper_tokens)}"      
+            logger.warning(f"Text had to be shortned on segment {i}:\n{tokenizer.decode(timestamped_tokens)}\n!=\n{tokenizer.decode(whisper_tokens)}")
 
         offset = segment["seek"] * HOP_LENGTH / SAMPLE_RATE
         for timestamped_word in timestamped_words:
@@ -517,7 +520,8 @@ def transcribe_timestamped(
 
         if compute_word_confidence:
             # TODO: make this assert a warning?
-            assert abs(segment["avg_logprob"] - avglogprob) < 1e-2, f"Got inconsistent logprob at index {i}: {segment['avg_logprob']} != {avglogprob}"
+            if "avg_logprob_reliable" not in timestamped_words[-1] or timestamped_words[-1]["avg_logprob_reliable"]:
+                assert abs(segment["avg_logprob"] - avglogprob) < 1e-2, f"Fatal Error: Got inconsistent logprob for segment {i}: {avglogprob} != {segment['avg_logprob']}"
             if include_punctuation_in_confidence:
                 segment["confidence"] = round_confidence(logprobs.mean().exp().item())
             else:
@@ -527,18 +531,21 @@ def transcribe_timestamped(
                 i_start = i_end
                 tokens = timestamped_word["tokens"]
                 i_end += len(tokens)
-                if i_end > len(logprobs):
-                    import pdb; pdb.set_trace()
+
                 assert i_end <= len(logprobs), f"Fatal Error: Got out-of-bound index for segment {i}: {i_end} > {len(logprobs)}"
                 if include_punctuation_in_confidence:
                     word_logprobs = logprobs[i_start:i_end]
                 else:
-                    while len(tokens) > 1 and tokens[-1][-1] in _punctuation: # Note: look at the last character of token, to take into account "...", "!!", etc.
+                    tokens_str = [tokenizer.decode([t]) for t in tokens]
+                    while len(tokens_str) > 1 and tokens_str[-1][-1] in _punctuation: # Note: look at the last character of token, to take into account "...", "!!", etc.
+                        tokens_str = tokens_str[:-1]
                         tokens = tokens[:-1]
                     word_logprobs = logprobs[i_start:i_start + len(tokens)]
                     logprobs_nopunc.append(word_logprobs)
+
                 timestamped_word["confidence"] = round_confidence(word_logprobs.mean().exp().item())
-            assert i_end == len(logprobs), f"Fatal Error: Got inconsistent logprobs length : {len(logprobs)} != {i_end}"
+
+            assert i_end == len(logprobs), f"Fatal Error: Got inconsistent logprobs length for segment {i}: {len(logprobs)} != {i_end}"
             if not include_punctuation_in_confidence:
                 logprobs_nopunc = torch.cat(logprobs_nopunc)
                 segment["confidence"] = round_confidence(logprobs_nopunc.mean().exp().item())
@@ -564,6 +571,8 @@ def transcribe_timestamped(
         if verbose:
             print(f"[{format_timestamp(word['start'])} --> {format_timestamp(word['end'])}]  {word['text']}")
         word.pop("tokens")
+        if "avg_logprob_reliable" in word:
+            word.pop("avg_logprob_reliable")
         idx_segment = word.pop("idx_segment")
         segment = whisper_segments[idx_segment]
         if "words" in segment:
@@ -703,6 +712,8 @@ def perform_word_alignment(
         import matplotlib.pyplot as plt
         import matplotlib.ticker as ticker
 
+        word_tokens_str = [tokenizer.decode_with_timestamps(t) for t in word_tokens]
+
         if mfcc is None:
             plt.figure(figsize=(16, 9), frameon=False)
         else:
@@ -736,7 +747,7 @@ def perform_word_alignment(
 
         words_with_subwords = [
             w if len(s) == 1 else "|".join(s)
-            for (w, s) in zip(words, word_tokens)
+            for (w, s) in zip(words, word_tokens_str)
         ]
 
         ax.yaxis.set_minor_locator(ticker.FixedLocator(minor_ticks))
@@ -848,7 +859,7 @@ def round_timestamp(x):
 
 _punctuation = "".join(c for c in string.punctuation if c not in ["-", "'"])
 
-def split_tokens_on_unicode(tokens: list, tokenizer, tokens_as_string=True, remove_punctuation_from_words=False, isolate_punctuations=False):
+def split_tokens_on_unicode(tokens: list, tokenizer, tokens_as_string=False, remove_punctuation_from_words=False, isolate_punctuations=False):
     words = []
     word_tokens = []
     current_tokens = []
@@ -857,15 +868,17 @@ def split_tokens_on_unicode(tokens: list, tokenizer, tokens_as_string=True, remo
         current_tokens.append(token)
         decoded = tokenizer.decode_with_timestamps(current_tokens)
         if "\ufffd" not in decoded:
-            punctuation = not isolate_punctuations and (decoded.strip() in _punctuation)
+            punctuation = not isolate_punctuations and (decoded.strip() and decoded.strip() in _punctuation)
             if punctuation:
                 if len(words) == 0:
                     words = [""]
                     word_tokens = [[]]
                 if not remove_punctuation_from_words:
                     words[-1] += decoded
-                word_tokens[-1].append(
-                    decoded.strip() if tokens_as_string else current_tokens)
+                if tokens_as_string:
+                    word_tokens[-1].append(decoded.strip())
+                else:
+                    word_tokens[-1].extend(current_tokens)
             else:
                 words.append(decoded)
                 word_tokens.append(
@@ -875,7 +888,7 @@ def split_tokens_on_unicode(tokens: list, tokenizer, tokens_as_string=True, remo
     return words, word_tokens
 
 
-def split_tokens_on_spaces(tokens: torch.Tensor, tokenizer, tokens_as_string=True, remove_punctuation_from_words=False):
+def split_tokens_on_spaces(tokens: torch.Tensor, tokenizer, tokens_as_string=False, remove_punctuation_from_words=False):
     subwords, subword_tokens_list = split_tokens_on_unicode(
         tokens, tokenizer, tokens_as_string=tokens_as_string, remove_punctuation_from_words=remove_punctuation_from_words)
     words = []

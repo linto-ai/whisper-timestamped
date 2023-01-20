@@ -41,7 +41,7 @@ class TestHelper(unittest.TestCase):
     def get_expected_path(self, fn = None, check=False):
         return self._get_path("tests/expected", fn, check = check)
 
-    def get_data_files(self, files=None, excluded_by_default=["apollo11.mp3", "music.mp4"]):
+    def get_data_files(self, files=None, excluded_by_default=["apollo11.mp3", "music.mp4", "arabic.mp3"]):
         if files == None:
             files = os.listdir(self.get_data_path())
             files = [f for f in files if f not in excluded_by_default]
@@ -221,13 +221,13 @@ class TestTranscribeTiny(TestHelperCli):
     def test_cli_tiny_auto(self):
         self._test_cli_(
             ["--model", "tiny"],
-            "tiny_auto"
+            "tiny_auto",
         )
 
     def test_cli_tiny_fr(self):
         self._test_cli_(
             ["--model", "tiny", "--language", "fr"],
-            "tiny_fr"
+            "tiny_fr",
         )
 
 class TestTranscribeMedium(TestHelperCli):
@@ -235,13 +235,13 @@ class TestTranscribeMedium(TestHelperCli):
     def test_cli_medium_auto(self):
         self._test_cli_(
             ["--model", "medium"],
-            "medium_auto"
+            "medium_auto",
         )
 
     def test_cli_medium_fr(self):
         self._test_cli_(
             ["--model", "medium", "--language", "fr"],
-            "medium_fr"
+            "medium_fr",
         )
 
 class TestTranscribeCornerCases(TestHelperCli):
@@ -259,7 +259,7 @@ class TestTranscribeCornerCases(TestHelperCli):
     def test_temperature(self):
 
         self._test_cli_(
-            ["--model", "small", "--language", "en", "--condition", "False", "--temperature", "0.1"],
+            ["--model", "small", "--language", "English", "--condition", "False", "--temperature", "0.1"],
             "corner_cases",
             files=["apollo11.mp3"],
             prefix="random.nocond",
@@ -277,13 +277,37 @@ class TestTranscribeCornerCases(TestHelperCli):
     def test_not_conditioned(self):
         if not os.path.exists(self.get_data_path("music.mp4", check=False)): return
         if self.skipLongTests(): return
-        
+
         self._test_cli_(
             ["--model", "medium", "--language", "en", "--condition", "False"],
             "corner_cases",
             files=["music.mp4"],
-            prefix="not_conditioned",
+            prefix="nocond",
         )
+
+        self._test_cli_(
+            ["--model", "medium", "--language", "en", "--condition", "False", "--temperature", "0.4"],
+            "corner_cases",
+            files=["music.mp4"],
+            prefix="nocond.random",
+        )
+
+    def test_large(self):
+        if self.skipLongTests(): return
+
+        self._test_cli_(
+            ["--model", "large-v2", "--language", "en", "--condition", "False", "--temperature", "0.4"],
+            "corner_cases",
+            files=["apollo11.mp3"],
+            prefix="large",
+        )
+
+        if os.path.exists(self.get_data_path("arabic.mp3", check=False)):
+            self._test_cli_(
+                ["--model", "large-v2", "--language", "Arabic"],
+                "corner_cases",
+                files=["arabic.mp3"]
+            )
 
 class TestTranscribeFormats(TestHelperCli):
 
@@ -306,7 +330,7 @@ class TestTranscribeFormats(TestHelperCli):
             extensions=extensions
         )
 
-class TestPythonImport(TestHelper):
+class TestZZZPythonImport(TestHelper): # "ZZZ" to run this test at last (because it will fill the CUDA with some memory)
 
     def test_python_import(self):
 
@@ -325,6 +349,31 @@ class TestPythonImport(TestHelper):
         for filename in "bonjour.wav", "laugh1.mp3", "laugh2.mp3":
             res = whisper_timestamped.transcribe(model, self.get_data_path(filename), language="fr")
             self.assertNonRegression(res, f"tiny_fr/{filename}.words.json")
+
+    def test_split_tokens(self):
+
+        import whisper_timestamped as whisper
+        from whisper_timestamped.transcribe import split_tokens_on_spaces
+
+        tokenizer = whisper.tokenizer.get_tokenizer(True, language=None)
+
+        # 220 means space
+        tokens = [50364, 220, 6455, 11, 2232, 11, 286, 2041, 11, 2232, 11, 8660, 291, 808, 493, 220, 365, 11, 220, 445, 718, 505, 458, 13, 220, 50714]
+
+        self.assertEqual(
+            split_tokens_on_spaces(tokens, tokenizer),
+            (['<|0.00|>', 'So,', 'uh,', 'I', 'guess,', 'uh,', 'wherever', 'you', 'come', 'up', 'with,', 'just', 'let', 'us', 'know.', '<|7.00|>'],
+             [[50364],
+                [220, 6455, 11],
+                [2232, 11], [286], [2041, 11], [2232, 11], [8660], [291], [808],
+                [493, 220],
+                [365, 11, 220],
+                [445], [718], [505],
+                [458, 13, 220],
+                [50714]
+            ])
+        )
+
 
     def get_expected(self, input, dirname):
         with open(self.get_expected_path(f"{dirname}/{input}.words.json", check = True)) as f:
