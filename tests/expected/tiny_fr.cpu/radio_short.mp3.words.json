@@ -16,11 +16,13 @@
       "avg_logprob": -1.4265364408493042,
       "compression_ratio": 0.2727272727272727,
       "no_speech_prob": 0.5112143754959106,
+      "confidence": 0.224,
       "words": [
         {
           "text": "...",
           "start": 0.08,
-          "end": 0.76
+          "end": 0.76,
+          "confidence": 0.224
         }
       ]
     },
@@ -39,11 +41,13 @@
       "avg_logprob": -0.973953366279602,
       "compression_ratio": 0.2727272727272727,
       "no_speech_prob": 0.8780310153961182,
+      "confidence": 0.466,
       "words": [
         {
           "text": "...",
           "start": 60.02,
-          "end": 69.4
+          "end": 69.4,
+          "confidence": 0.466
         }
       ]
     },
@@ -60,11 +64,13 @@
       "avg_logprob": -0.8283956527709961,
       "compression_ratio": 0.2727272727272727,
       "no_speech_prob": 0.641629695892334,
+      "confidence": 0.842,
       "words": [
         {
           "text": "...",
           "start": 96.42,
-          "end": 96.46
+          "end": 96.46,
+          "confidence": 0.842
         }
       ]
     },
@@ -83,11 +89,13 @@
       "avg_logprob": -0.728730320930481,
       "compression_ratio": 0.2727272727272727,
       "no_speech_prob": 0.25682491064071655,
+      "confidence": 0.764,
       "words": [
         {
           "text": "...",
           "start": 105.04,
-          "end": 117.76
+          "end": 117.76,
+          "confidence": 0.764
         }
       ]
     }
