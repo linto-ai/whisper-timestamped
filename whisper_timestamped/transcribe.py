@@ -179,7 +179,7 @@ def transcribe_timestamped(
         return decoding_task.logit_filters
     
     logit_filters = get_logit_filters(initial_prompt)
-    tokenizer = whisper.tokenizer.get_tokenizer(model.is_multilingual, language=language)
+    tokenizer = whisper.tokenizer.get_tokenizer(model.is_multilingual, task=task, language=language)
     max_sample_len = sample_len or model.dims.n_text_ctx // 2 
 
     # Safety check
@@ -712,7 +712,7 @@ def perform_word_alignment(
         import matplotlib.pyplot as plt
         import matplotlib.ticker as ticker
 
-        word_tokens_str = [tokenizer.decode_with_timestamps(t) for t in word_tokens]
+        word_tokens_str = [[tokenizer.decode_with_timestamps([ti]) for ti in t] for t in word_tokens]
 
         if mfcc is None:
             plt.figure(figsize=(16, 9), frameon=False)
@@ -745,10 +745,7 @@ def perform_word_alignment(
             current_y += len(word_token)
             major_ticks.append(current_y - 0.5)
 
-        words_with_subwords = [
-            w if len(s) == 1 else "|".join(s)
-            for (w, s) in zip(words, word_tokens_str)
-        ]
+        words_with_subwords = ["|".join(s) for (w, s) in zip(words, word_tokens_str)]
 
         ax.yaxis.set_minor_locator(ticker.FixedLocator(minor_ticks))
         ax.yaxis.set_minor_formatter(
