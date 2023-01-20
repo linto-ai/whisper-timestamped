@@ -4,10 +4,12 @@ from setuptools import setup, find_packages
 
 install_requires = open(os.path.join(os.path.dirname(__file__), "requirements.txt")).readlines()
 
+version = open(os.path.join(os.path.dirname(__file__), "whisper_timestamped", "version.py")).readlines()[-1].split()[-1].strip("\"'")
+
 setup(
     name="whisper-timestamped",
     py_modules=["whisper_timestamped"],
-    version="1.5.4",
+    version=version,
     description="Add to OpenAI Whisper the capability to give word timestamps",
     readme="README.md",
     python_requires=">=3.7",

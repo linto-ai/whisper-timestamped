@@ -340,6 +340,8 @@ class TestZZZPythonImport(TestHelper): # "ZZZ" to run this test at last (because
             sys.path.append(os.path.realpath(os.path.dirname(os.path.dirname(__file__))))
             import whisper_timestamped
 
+        self.assertTrue(isinstance(whisper_timestamped.__version__,str))
+
         model = whisper_timestamped.load_model("tiny")
 
         for filename in "bonjour.wav", "laugh1.mp3", "laugh2.mp3":

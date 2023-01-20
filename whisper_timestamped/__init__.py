@@ -6,3 +6,5 @@ from whisper.model import Whisper, ModelDimensions
 
 from .transcribe import transcribe_timestamped
 from .transcribe import transcribe_timestamped as transcribe
+
+from .version import __version__
