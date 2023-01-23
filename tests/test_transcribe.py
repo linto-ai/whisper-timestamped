@@ -205,8 +205,6 @@ class TestHelperCli(TestHelper):
                 main_script,
                 input_filename,
                 "--output_dir", output_dir,
-                "--csv", "True",
-                "--json", "True",
                 *opts,
             ])
             print(stdout)
@@ -313,7 +311,7 @@ class TestTranscribeFormats(TestHelperCli):
 
     def test_cli_punctuations(self):
         files = ["punctuations.mp3"]
-        extensions = ["txt", "srt", "vtt", "words.srt", "words.vtt", "words.json", ".csv", ".words.csv"]
+        extensions = ["txt", "srt", "vtt", "words.srt", "words.vtt", "words.json", "csv", "words.csv", "tsv", "words.tsv"]
         opts = ["--model", "medium", "--language", "fr"]
         
         # An audio / model combination that produces coma

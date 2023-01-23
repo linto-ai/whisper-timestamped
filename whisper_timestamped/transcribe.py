@@ -1120,10 +1120,6 @@ def split_tokens_on_spaces(tokens: torch.Tensor, tokenizer, tokens_as_string=Fal
 
     return words, word_tokens
 
-def flatten_list(list_of_lists):
-    return [item for sublist in list_of_lists for item in sublist]
-
-
 def ensure_increasing_positions(segments, min_duration=0):
     """
     Ensure that "start" and "end" come in increasing order
@@ -1158,45 +1154,26 @@ def ensure_increasing_positions(segments, min_duration=0):
 
 ## Some utilities for writing transcripts to files
 
-# def remove_punctuation(text):
-#     return text.translate(str.maketrans('', '', _punctuations))
+def flatten(list_of_lists, key = None):
+    for sublist in list_of_lists:
+        for item in sublist[key] if key else sublist:
+            yield item
 
-def write_vtt_words(transcript, file):
-    print("WEBVTT\n", file=file)
-    for segment in transcript:
-        for word in segment["words"]:
-            print(
-                f"{format_timestamp(word['start'])} --> {format_timestamp(word['end'])}\n"
-                f"{word['text']}\n",
-                file=file,
-                flush=True,
-            )
-
-def write_srt_words(transcript, file):
-    i = 1
-    for segment in transcript:
-        for word in segment["words"]:
-            print(
-                f"{i}\n"
-                f"{format_timestamp(word['start'], always_include_hours=True, decimal_marker=',')} --> "
-                f"{format_timestamp(word['end'], always_include_hours=True, decimal_marker=',')}\n"
-                f"{word['text']}\n",
-                file=file,
-                flush=True,
-            )
-            i += 1
-
-def write_csv(transcript, file):
-    # Use csv to write
-    csv.writer(file).writerows(
-        [[segment["text"].strip(), segment["start"], segment["end"]] for segment in transcript]
-    )
-
-def write_csv_words(transcript, file):
-    writer = csv.writer(file)
-    for segment in transcript:
-        for word in segment["words"]:
-            writer.writerow([word['text'], word['start'], word['end']])
+def write_csv(transcript, file, sep = ",", text_first=True, format_timestamps=None, header=False):
+    writer = csv.writer(file, delimiter=sep)
+    if format_timestamps is None: format_timestamps = lambda x: x
+    if header is True:
+        header = ["text", "start", "end"] if text_first else ["start", "end", "text"]
+    if header:
+        writer.writerow(header)
+    if text_first:
+        writer.writerows(
+            [[segment["text"].strip(), format_timestamps(segment["start"]), format_timestamps(segment["end"])] for segment in transcript]
+        )
+    else:
+        writer.writerows(
+            [[format_timestamps(segment["start"]), format_timestamps(segment["end"]), segment["text"].strip()] for segment in transcript]
+        )
 
 def cli():
 
@@ -1205,7 +1182,28 @@ def cli():
     import argparse
     import json
 
-    from whisper.utils import str2bool, optional_float, optional_int, write_txt, write_srt, write_vtt
+    from whisper.utils import str2bool, optional_float, optional_int
+    
+    try:
+        # Old whisper version # Before https://github.com/openai/whisper/commit/da600abd2b296a5450770b872c3765d0a5a5c769
+        from whisper.utils import write_txt, write_srt, write_vtt
+        write_tsv = lambda transcript, file: write_csv(transcript, file, sep="\t", header=True, text_first=False, format_timestamps=lambda x: round(1000 * x))
+    
+    except ImportError:
+
+        # New whisper version
+        from whisper.utils import get_writer
+
+        def do_write(transcript, file, format):
+            writer = get_writer(format, os.path.curdir)
+            return writer.write_result({"segments": transcript}, file)
+        def get_do_write(format):
+            return lambda transcript, file: do_write(transcript, file, format)
+
+        write_txt = get_do_write("txt")
+        write_srt = get_do_write("srt")
+        write_vtt = get_do_write("vtt")
+        write_tsv = get_do_write("tsv")
 
     parser = argparse.ArgumentParser(
         description='Transcribe a single audio with whisper and compute word timestamps',
@@ -1216,24 +1214,20 @@ def cli():
     parser.add_argument("--model_dir", default=None, help="The path to save model files; uses ~/.cache/whisper by default", type=str)
     parser.add_argument("--device", default="cuda:0" if torch.cuda.is_available() else "cpu", help="device to use for PyTorch inference")
     parser.add_argument("--output_dir", "-o", default=None, help="directory to save the outputs", type=str)
-    parser.add_argument('--plot', help="Plot word alignments", default=False, action="store_true")
-    parser.add_argument("--verbose", type=str2bool, default=False, help="Whether to print out the progress and debug messages of Whisper")
-    parser.add_argument('--naive', help="Use naive approach, doing inference twice.", default=False, action="store_true")
+    parser.add_argument("--output_format", "-f", type=str, default="all", help="format of the output file; if not specified, all available formats will be produced", choices=["txt", "vtt", "srt", "tsv", "csv", "json", "all"])
 
-    parser.add_argument("--punctuations", default=True, help="Whether to include punctuations within the words", type=str2bool)
-    parser.add_argument("--txt", default=True, help="Whether to save in simple text format", type=str2bool)
-    parser.add_argument("--vtt", default=True, help="Whether to save in VTT format", type=str2bool)
-    parser.add_argument("--srt", default=True, help="Whether to save in SRT format", type=str2bool)
-    parser.add_argument("--csv", default=False, help="Whether to save in CSV format", type=str2bool)
-    parser.add_argument("--json", default=False, help="Whether to save in JSON format", type=str2bool)
-    
+    parser.add_argument('--naive', help="Use naive approach, doing inference twice (once to get the transcription, once to get word timestamps and confidence scores).", default=False, action="store_true")
+
     parser.add_argument("--task", default="transcribe", help="Whether to perform X->X speech recognition ('transcribe') or X->English translation ('translate')", choices=["transcribe", "translate"], type=str)
     parser.add_argument('--language', help=f"Language to use. Among : {', '.join(sorted(k+'('+v+')' for k,v in whisper.tokenizer.LANGUAGES.items()))}.", choices=sorted(whisper.tokenizer.LANGUAGES.keys()) + sorted([k.title() for k in whisper.tokenizer.TO_LANGUAGE_CODE.keys()]), default=None)
-    
+
+    parser.add_argument("--verbose", type=str2bool, default=False, help="Whether to print out the progress and debug messages of Whisper")
+    parser.add_argument('--plot', help="Plot word alignments", default=False, action="store_true")
+
+    parser.add_argument("--punctuations_with_words", default=True, help="Whether to include punctuations within the words", type=str2bool)
+        
     parser.add_argument("--temperature", default=0.0, help="Temperature to use for sampling", type=float)
-    # TODO: should we make default best_of 5?
     parser.add_argument("--best_of", type=optional_int, default=None, help="number of candidates when sampling with non-zero temperature")
-    # TODO: should we make default beam_size 5?
     parser.add_argument("--beam_size", type=optional_int, default=None, help="number of beams in beam search, only applicable when temperature is zero")
     parser.add_argument("--patience", type=float, default=None, help="optional patience value to use in beam decoding, as in https://arxiv.org/abs/2204.05424, the default (1.0) is equivalent to conventional beam search")
     parser.add_argument("--length_penalty", type=float, default=None, help="optional token length penalty coefficient (alpha) as in https://arxiv.org/abs/1609.08144, uses simple length normalization by default")
@@ -1243,7 +1237,6 @@ def cli():
     parser.add_argument("--condition_on_previous_text", default=True, help="if True, provide the previous output of the model as a prompt for the next window; disabling may make the text inconsistent across windows, but the model becomes less prone to getting stuck in a failure loop", type=str2bool)
     parser.add_argument("--fp16", default=None, help="whether to perform inference in fp16; Automatic by default (True if GPU available, False otherwise)", type=str2bool)
 
-    # TODO: should we make default support 0.2?
     parser.add_argument("--temperature_increment_on_fallback", default=None, help="temperature to increase when falling back when the decoding fails to meet either of the thresholds below", type=optional_float)
     parser.add_argument("--compression_ratio_threshold", default=2.4, help="If the gzip compression ratio is higher than this value, treat the decoding as failed", type=optional_float)
     parser.add_argument("--logprob_threshold", default=-1.0, help="If the average log probability is lower than this value, treat the decoding as failed", type=optional_float)
@@ -1271,11 +1264,11 @@ def cli():
     device = args.pop("device")
     model_dir = args.pop("model_dir")
 
-    csv_out = args.pop("csv")
-    json_out = args.pop("json")
-    srt_out = args.pop("srt")
-    txt_out = args.pop("txt")
-    vtt_out = args.pop("vtt")
+    output_format = args.pop("output_format")
+    if output_format == "all":
+        output_format = ["txt", "srt", "vtt", "tsv", "json", "csv"]
+    else:
+        output_format = output_format.split(",")
 
     model = whisper.load_model(model, device=device, download_root=model_dir)
 
@@ -1298,43 +1291,50 @@ def cli():
             temperature=temperature,
             plot_word_alignment=plot_word_alignment,
             naive_approach=args.pop("naive"),
-            remove_punctuation_from_words=not args.pop("punctuations"),
+            remove_punctuation_from_words=not args.pop("punctuations_with_words"),
             **args
         )
 
         if output_dir:
 
             outname = os.path.join(output_dir, os.path.basename(audio_path))
-            if json_out:
+            if "json" in output_format:
                 # save JSON
                 with open(outname + ".words.json", "w", encoding="utf-8") as js:
                     json.dump(result, js, indent=2, ensure_ascii=False)
 
             # save TXT
-            if txt_out:
+            if "txt" in output_format:
                 with open(outname + ".txt", "w", encoding="utf-8") as txt:
                     write_txt(result["segments"], file=txt)
 
             # save VTT
-            if vtt_out:
+            if "vtt" in output_format:
                 with open(outname + ".vtt", "w", encoding="utf-8") as vtt:
                     write_vtt(result["segments"], file=vtt)
                 with open(outname + ".words.vtt", "w", encoding="utf-8") as vtt:
-                    write_vtt_words(result["segments"], file=vtt)
+                    write_vtt(flatten(result["segments"], "words"), file=vtt)
 
             # save SRT
-            if srt_out:
+            if "srt" in output_format:
                 with open(outname + ".srt", "w", encoding="utf-8") as srt:
                     write_srt(result["segments"], file=srt)
                 with open(outname + ".words.srt", "w", encoding="utf-8") as srt:
-                    write_srt_words(result["segments"], file=srt)
+                    write_srt(flatten(result["segments"], "words"), file=srt)
 
             # save CSV
-            if csv_out:
+            if "csv" in output_format:
                 with open(outname + ".csv", "w", encoding="utf-8") as csv:
                     write_csv(result["segments"], file=csv)
                 with open(outname + ".words.csv", "w", encoding="utf-8") as csv:
-                    write_csv_words(result["segments"], file=csv)
+                    write_csv(flatten(result["segments"], "words"), file=csv)
+
+            # save TSV
+            if "tsv" in output_format:
+                with open(outname + ".tsv", "w", encoding="utf-8") as csv:
+                    write_tsv(result["segments"], file=csv)
+                with open(outname + ".words.tsv", "w", encoding="utf-8") as csv:
+                    write_tsv(flatten(result["segments"], "words"), file=csv)
 
         elif not args["verbose"]:
 
