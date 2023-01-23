@@ -43,15 +43,15 @@ This involves awkward language-dependent conversions, like converting numbers to
 
 Requirements:
 * `python3` (version higher or equal to 3.7, at least 3.9 is recommended)
-* `ffmpeg` (see instructions for installation on the [whisper repository README.md](https://github.com/openai/whisper)
+* `ffmpeg` (see instructions for installation on the [whisper repository](https://github.com/openai/whisper)
 
 You can install `whisper-timestamped` either by using pip:
 ```bash
-pip3 install git+https://github.com/Jeronymous/whisper-timestamped
+pip3 install git+https://github.com/linto-ai/whisper-timestamped
 ```
 or by cloning this repository and running installation:
 ```bash
-git clone https://github.com/Jeronymous/whisper-timestamped
+git clone https://github.com/linto-ai/whisper-timestamped
 cd whisper-timestamped/
 python3 setup.py install
 ```
@@ -198,13 +198,13 @@ whisper_timestamped AUDIO_FILE.wav --model tiny --language fr
 If you use this in your research, just cite the repo,
 
 ```bibtex
-@misc{louradour2023whispertimestamped,
+@misc{lintoai2023whispertimestamped,
   title={whisper-timestamped},
   author={Louradour, J{\'e}r{\^o}me},
   journal={GitHub repository},
   year={2023},
   publisher={GitHub},
-  howpublished = {\url{https://github.com/Jeronymous/whisper-timestamped}}
+  howpublished = {\url{https://github.com/linto-ai/whisper-timestamped}}
 }
 ```
 
