@@ -204,7 +204,7 @@ def transcribe_timestamped(
     )
 
     if naive_approach:
-        (transcription, words) = _transcribe_timestamped_naive(model, audio, **alignment_options, **whisper_options, **other_options)
+        (transcription, words) = _transcribe_timestamped_naive(model, audio, min_word_duration=min_word_duration, **alignment_options, **whisper_options, **other_options)
     else:
         (transcription, words) = _transcribe_timestamped_efficient(model, audio, **alignment_options, **whisper_options, **other_options)
 
@@ -636,6 +636,7 @@ def _transcribe_timestamped_naive(
     include_punctuation_in_confidence,
     refine_whisper_precision_nframes,
     plot_word_alignment,
+    min_word_duration,
     **whisper_options,
 ):
     if isinstance(audio, str):
@@ -643,7 +644,7 @@ def _transcribe_timestamped_naive(
     if isinstance(audio, np.ndarray):
         audio = torch.Tensor(audio)
     else:
-        assert isinstance(audio, torch.Tensor)
+        assert isinstance(audio, torch.Tensor), f"Got unexpected audio of type {type(audio)}"
 
     audio = audio.to(model.device)
 
@@ -669,24 +670,38 @@ def _transcribe_timestamped_naive(
             )
 
         words = []
-
         previous_end = 0
+        whisper_segments = transcription["segments"]
+        for i_segment, segment in enumerate(whisper_segments):
 
-        for i_segment, segment in enumerate(transcription["segments"]):
-            start = max(previous_end, segment["start"] - refine_whisper_precision_nframes * AUDIO_TIME_PER_TOKEN)
+            start = segment["start"]
             end = segment["end"]
-
             if end <= start:
-                raise RuntimeError(f"Got inconsistent segment start/end for segment {i_segment}: {start} > {end}")
-            
-            start_sample = round(start * SAMPLE_RATE)
-            end_sample = round(end * SAMPLE_RATE)
-            if refine_whisper_precision_nframes:
-                end_sample2 = min(audio.shape[-1], round(end_sample + refine_whisper_precision_nframes * AUDIO_SAMPLES_PER_TOKEN))
+                logger.warn(f"Got too short segment {i_segment}. Words won't be located for this segment.")
+                continue
 
+            start = max(previous_end, start - refine_whisper_precision_nframes * AUDIO_TIME_PER_TOKEN)
+            start_sample = round(start * SAMPLE_RATE)
+            end_sample2 = end_sample = round(end * SAMPLE_RATE)
+            if refine_whisper_precision_nframes:
+                maximum = audio.shape[-1]
+                if min_word_duration and i_segment < len(whisper_segments) - 1:
+                    next_end = whisper_segments[i_segment + 1]["end"]
+                    maximum = min(maximum,
+                        round((next_end + refine_whisper_precision_nframes * AUDIO_TIME_PER_TOKEN - min_word_duration) * SAMPLE_RATE))
+                
+                end_sample2 = min(maximum,
+                    round(end_sample + refine_whisper_precision_nframes * AUDIO_SAMPLES_PER_TOKEN))
+
+            if end_sample2 == start_sample:
+                # Too short segment to detect something. Probably Whisper LM is stucked
+                logger.warn(f"Got too short segment {i_segment} after refinement. Words won't be located for this segment.")
+                continue
+            elif end_sample2 < start_sample:
+                raise RuntimeError(f"Got inconsistent segment start/end for segment {i_segment}: start {start_sample / SAMPLE_RATE} > end {end_sample2 / SAMPLE_RATE}")
             assert end_sample2 <= audio.shape[-1], f"Fatal Error: Got out-of-bound index for segment {i_segment}: {end_sample2} > {audio.shape[-1]}"
 
-            sub_audio = audio[start_sample:end_sample2]
+            sub_audio = audio_minimum_padding(audio[start_sample:end_sample2])
 
             mfcc = whisper.log_mel_spectrogram(sub_audio).to(model.device)
             mfcc = whisper.pad_or_trim(mfcc, N_FRAMES)
@@ -761,6 +776,12 @@ def _transcribe_timestamped_naive(
             hook.remove()
 
     return (transcription, words)
+
+def audio_minimum_padding(audio):
+    if audio.shape[-1] < 200:
+        return whisper.pad_or_trim(audio, 200)
+    return audio
+
 
 def should_use_space(language):
     return norm_language(language) not in ["zh", "ja", "th", "lo", "my"]
@@ -1156,7 +1177,7 @@ def ensure_increasing_positions(segments, min_duration=0):
 
 def flatten(list_of_lists, key = None):
     for sublist in list_of_lists:
-        for item in sublist[key] if key else sublist:
+        for item in sublist.get(key, []) if key else sublist:
             yield item
 
 def write_csv(transcript, file, sep = ",", text_first=True, format_timestamps=None, header=False):

@@ -280,6 +280,14 @@ class TestTranscribeNaive(TestHelperCli):
             prefix="accurate",
         )
 
+    def test_stucked_segments(self):
+        self._test_cli_(
+            ["--model", "tiny", "--accurate"],
+            "corner_cases",
+            files=["apollo11.mp3"],
+            prefix="accurate.tiny",
+        )
+
 
 class TestTranscribeCornerCases(TestHelperCli):
 
