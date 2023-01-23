@@ -184,11 +184,13 @@ class TestHelper(unittest.TestCase):
 
 class TestHelperCli(TestHelper):
 
-    def _test_cli_(self, opts, name, files=None, extensions=["words.json"], prefix=None):
+    def _test_cli_(self, opts, name, files=None, extensions=["words.json"], prefix=None, one_per_call=True):
 
         output_dir = self.get_output_path(name)
 
-        for input_filename in self.get_data_files(files):
+        input_filenames = self.get_data_files(files)
+
+        for i, input_filename in enumerate(input_filenames):
 
             # Butterfly effect: Results are different depending on the device for long files
             duration = self.get_audio_duration(input_filename)
@@ -214,17 +216,17 @@ class TestHelperCli(TestHelper):
 
             print("Running non-regression test", generic_name)
 
-            main_script = self.get_main_path("transcribe.py", check=False)
-            if not os.path.exists(main_script):
-                main_script = "whisper_timestamped"
-            (stdout, stderr) = self.assertRun([
-                main_script,
-                input_filename,
-                "--output_dir", output_dir,
-                *opts,
-            ])
-            print(stdout)
-            print(stderr)
+            if one_per_call or i == 0:
+                main_script = self.get_main_path("transcribe.py", check=False)
+                if not os.path.exists(main_script):
+                    main_script = "whisper_timestamped"
+                if one_per_call:
+                    (stdout, stderr) = self.assertRun([main_script, input_filename, "--output_dir", output_dir, *opts])
+                else:
+                    (stdout, stderr) = self.assertRun([main_script, *input_filenames, "--output_dir", output_dir, *opts])
+                print(stdout)
+                print(stderr)
+
             for output_filename in self.get_generated_files(input_filename, output_dir, extensions=extensions):
                 self.assertNonRegression(
                     output_filename, ref_name(output_filename))
@@ -365,8 +367,8 @@ class TestTranscribeCornerCases(TestHelperCli):
 
 class TestTranscribeFormats(TestHelperCli):
 
-    def test_cli_punctuations(self):
-        files = ["punctuations.mp3"]
+    def test_cli_outputs(self):
+        files = ["punctuations.mp3", "bonjour.wav"]
         extensions = ["txt", "srt", "vtt", "words.srt", "words.vtt",
                       "words.json", "csv", "words.csv", "tsv", "words.tsv"]
         opts = ["--model", "medium", "--language", "fr"]
@@ -376,13 +378,15 @@ class TestTranscribeFormats(TestHelperCli):
             opts,
             "punctuations_yes",
             files=files,
-            extensions=extensions
+            extensions=extensions,
+            one_per_call=False,
         )
         self._test_cli_(
             opts + ["--punctuations", "False"],
             "punctuations_no",
             files=files,
-            extensions=extensions
+            extensions=extensions,
+            one_per_call=False,
         )
 
 
