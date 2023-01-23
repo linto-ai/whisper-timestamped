@@ -1295,14 +1295,17 @@ def cli():
     if output_dir and not os.path.isdir(output_dir):
         os.makedirs(output_dir)
 
+    naive_approach=args.pop("naive")
+    remove_punctuation_from_words=not args.pop("punctuations_with_words")
+
     for audio_path in audio_files:
 
         result = transcribe_timestamped(
             model, audio_path,
             temperature=temperature,
             plot_word_alignment=plot_word_alignment,
-            naive_approach=args.pop("naive"),
-            remove_punctuation_from_words=not args.pop("punctuations_with_words"),
+            naive_approach=naive_approach,
+            remove_punctuation_from_words=remove_punctuation_from_words,
             **args
         )
 
