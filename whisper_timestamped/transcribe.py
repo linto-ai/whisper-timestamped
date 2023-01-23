@@ -743,12 +743,12 @@ def _transcribe_timestamped_naive(
                     word_logprobs = [logprobs[:, step, tok] for (step, tok) in zip(range(i_start, i_start + len(tokens)), tokens)]
                     i_start = i_end
                     word_logprobs = torch.cat(word_logprobs)
-                    w.update({"confidence": word_logprobs.mean().exp().item()})
+                    w.update({"confidence": round_confidence(word_logprobs.mean().exp().item())})
                     segment_logprobs.append(word_logprobs)
 
                 words.append(w)
 
-            segment.update({"confidence": torch.cat(segment_logprobs).mean().exp().item()})
+            segment.update({"confidence": round_confidence(torch.cat(segment_logprobs).mean().exp().item())})
 
             if len(ws):
                 previous_end = ws[-1]["end"]
@@ -1190,7 +1190,6 @@ def cli():
         write_tsv = lambda transcript, file: write_csv(transcript, file, sep="\t", header=True, text_first=False, format_timestamps=lambda x: round(1000 * x))
     
     except ImportError:
-
         # New whisper version
         from whisper.utils import get_writer
 
@@ -1205,6 +1204,15 @@ def cli():
         write_vtt = get_do_write("vtt")
         write_tsv = get_do_write("tsv")
 
+    class ActionSetAccurate(argparse.Action):
+        def __init__(self, option_strings, dest, nargs=None, **kwargs):
+            assert nargs is None
+            super().__init__(option_strings, dest, nargs=0, **kwargs)
+        def __call__(self, parser, namespace, values, option_string=None):
+            setattr(namespace, "best_of", 5)
+            setattr(namespace, "beam_size", 5)
+            setattr(namespace, "temperature_increment_on_fallback", 0.2)
+
     parser = argparse.ArgumentParser(
         description='Transcribe a single audio with whisper and compute word timestamps',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
@@ -1216,6 +1224,7 @@ def cli():
     parser.add_argument("--output_dir", "-o", default=None, help="directory to save the outputs", type=str)
     parser.add_argument("--output_format", "-f", type=str, default="all", help="format of the output file; if not specified, all available formats will be produced", choices=["txt", "vtt", "srt", "tsv", "csv", "json", "all"])
 
+    parser.add_argument('--accurate', help="This is a shortcut to use the same default option as in Whisper (best_of=5, beam_search=5, temperature_increment_on_fallback=0.2)", action=ActionSetAccurate)
     parser.add_argument('--naive', help="Use naive approach, doing inference twice (once to get the transcription, once to get word timestamps and confidence scores).", default=False, action="store_true")
 
     parser.add_argument("--task", default="transcribe", help="Whether to perform X->X speech recognition ('transcribe') or X->English translation ('translate')", choices=["transcribe", "translate"], type=str)
@@ -1246,6 +1255,8 @@ def cli():
     parser.add_argument('--debug', help="Print some debug information for word alignement", default=False, action="store_true")
 
     args = parser.parse_args().__dict__
+
+    args.pop("accurate")
 
     temperature = args.pop("temperature")
     temperature_increment_on_fallback = args.pop("temperature_increment_on_fallback")

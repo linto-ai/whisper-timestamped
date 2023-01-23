@@ -22,9 +22,10 @@ Besides, a confidence score is assigned to each word and each segment (both comp
 
 The approach is based on approach Dynamic Time Warping (DTW) applied to cross-attention weights,
 as done by [this notebook by Jong Wook Kim](https://github.com/openai/whisper/blob/f82bc59f5ea234d4b97fb2860842ed38519f7e65/notebooks/Multilingual_ASR.ipynb).
-The main addition to this notebook is that **no additional inference steps are required to predict word timestamps**.
-Word alignment is done on the fly, after each speech segment is decoded.
-In particular, little additional memory is used with respect to the regular use of the model.
+There are some additions to this notebook:
+* The start/end estimation is more accurate
+* **If possible (without beam search...), there no additional inference steps are required to predict word timestamps** (word alignment is done on the fly, after each speech segment is decoded).
+* There is a special care about memory usage: `whisper-timestamped` is able to process long files, with little additional memory with respect to the regular use of Whisper model.
 
 ### Note on other approaches
 
@@ -72,19 +73,18 @@ help(whisper_timestamped.transcribe)
 ```
 The main differences with `whisper.transcribe()` are:
 * The output will include a key `"words"` for all segments, with the word start and end position. Note that word will include punctuation. See example [below](#example-output).
-* The options related to beam search and temperature fallback are not available (only "best prediction" decoding is currently supported to get word timestamps).
+* By default, all options that require several steps of decoding are disabled, in favour of an efficient decoding strategy.
+  Use ```beam_size=5, best_of=5, temperature=(0.0, 0.2, 0.4, 0.6, 0.8, 1.0)``` for Whisper default.
 
-In general, by importing `whisper_timestamped` instead of `whisper` in your python script, it should do the job
-* if you don't use beam search options in transcribe
-* if you use `transcribe(model, ...)` instead of `model.transcribe(...)`
+In general, by importing `whisper_timestamped` instead of `whisper` in your python script, it should do the job, if you use `transcribe(model, ...)` instead of `model.transcribe(...)`:
 ```
 import whisper_timestamped as whisper
 
 audio = whisper.load_audio("AUDIO.wav")
 
-model = whisper.load_model("tiny", device = "cpu")
+model = whisper.load_model("tiny", device="cpu")
 
-result = whisper.transcribe(model, audio, language = "fr")
+result = whisper.transcribe(model, audio, language="fr")
 
 import json
 print(json.dumps(result, indent = 2, ensure_ascii = False))
@@ -94,12 +94,21 @@ print(json.dumps(result, indent = 2, ensure_ascii = False))
 
 You can also use `whisper_timestamped` on the command line, similarly to `whisper`. See help with:
 ```bash
-whisper_timestamped -h
+whisper_timestamped --help
 ```
 
 The main differences with `whisper` CLI are:
-* If an output folder is specified (with option `--output_dir`), then additional files `*.words.srt` and `*.words.vtt` with timestamps of words in `SRT` and `VTT` format will be saved by default. A `json` file that corresponds to the output of `transcribe` (see example [below](#example-output)) can also be dumped using `--json True`.
-* The options related to beam search and temperature fallback are not available (only "best prediction" decoding is currently supported to get word timestamps).
+* The output JSON contains word timestamps and confidence scores. See example [below](#example-output).
+* There is an additional CSV output format
+* For SRT, VTT, TSV formats, there will be additional files saved with word timestamps
+* By default, no output folder is set: Use `--output_dir .` for Whisper default
+* By default, all options that require several steps of decoding are disabled, in favour of an efficient decoding strategy.
+  Use ```--accurate``` for Whisper default (which is an alias for ```--beam_search 5 --temperature_increment_on_fallback 0.2 --best_of 5```)
+
+An example command line to process several files with the `tiny` model and output results in the current folder as whisper would do by default:
+```
+whisper_timestamped audio1.flac audio2.mp3 audio3.wav --model tiny --accurate --output_dir .
+```
 
 ### Plot of word alignment
 
