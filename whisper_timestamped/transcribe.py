@@ -18,6 +18,7 @@ from scipy.ndimage import median_filter # faster owing to https://github.com/ope
 # Additional
 import string
 import csv
+import sys
 
 # Constant variables
 from whisper.utils import format_timestamp
@@ -208,16 +209,14 @@ def transcribe_timestamped(
     else:
         (transcription, words) = _transcribe_timestamped_efficient(model, audio, **alignment_options, **whisper_options, **other_options)
 
+    # Refine word positions
 
     ensure_increasing_positions(words, min_duration=min_word_duration)
-
-    if verbose:
-        print(f"Detected {len(words)} words:")
     
     whisper_segments = transcription["segments"]
     for word in words:
-        if verbose:
-            print(f"[{format_timestamp(word['start'])} --> {format_timestamp(word['end'])}]  {word['text']}")
+        if verbose and not naive_approach:
+            print_timestamped(word)
         word.pop("tokens")
         if "avg_logprob_reliable" in word:
             word.pop("avg_logprob_reliable")
@@ -251,6 +250,10 @@ def _transcribe_timestamped_efficient(
     temperature = whisper_options["temperature"]
     no_speech_threshold = whisper_options["no_speech_threshold"]
     logprob_threshold = whisper_options["logprob_threshold"]
+    verbose = whisper_options["verbose"]
+    # Note: "on-the-fly" verbose is not implementable in the current state (we don't know the absolute position of the current chunk). See issue #18
+    verbose_bugged = False
+    whisper_options["verbose"] = None if whisper_options["verbose"] is True else False  # We will print intermediate results ourselves
 
     logit_filters = get_logit_filters(model, whisper_options)
     language = whisper_options["language"]
@@ -403,6 +406,7 @@ def _transcribe_timestamped_efficient(
             mfcc = new_mfcc
 
             # Get word confidence and/or check if previous segments shoud have been skipped
+            should_skip = False
             if compute_word_confidence or no_speech_threshold is not None:
 
                 # no voice activity check
@@ -456,6 +460,11 @@ def _transcribe_timestamped_efficient(
                     segment_logprobs.append(None)
                     segment_avglogprobs.append(None)
 
+            if verbose_bugged and not should_skip:
+                for segment in timestamped_word_segments[i_start:]:
+                    for word in segment:
+                        print_timestamped(word)
+
             # Reset counters
             chunk_tokens = []
             chunk_tokens_nosot = []
@@ -489,6 +498,12 @@ def _transcribe_timestamped_efficient(
             if not has_started and language is None:
                 language = tokenizer.decode(curr_tokens[1:2])[2:-2]
                 whisper_options["language"] = language
+
+                if verbose and not whisper_options["verbose"]:
+                    # Reproduce whisper verbose (2/2)
+                    print(f"Detected language: {whisper.tokenizer.LANGUAGES[language].title()}")
+                    sys.stdout.flush()
+
             logit_filters = get_logit_filters(model, whisper_options, prompt = chunk_prompt[1:-3])
         
         may_flush_segment(curr_tokens)
@@ -509,6 +524,10 @@ def _transcribe_timestamped_efficient(
             chunk_tokens.append(curr_tokens)
             if len(curr_tokens) == 1:
                 chunk_tokens_nosot.append(curr_tokens[-1].item())
+        else:
+            if verbose and not whisper_options["verbose"]:
+                # Reproduce whisper verbose (1/2)
+                print("Detecting language using up to the first 30 seconds. Use `--language` to specify the language")
 
     embedding_weights = None 
     def hook_output_logits(layer, ins, outs):
@@ -640,6 +659,10 @@ def _transcribe_timestamped_naive(
     min_word_duration,
     **whisper_options,
 ):
+    verbose = whisper_options["verbose"]
+    whisper_options["verbose"] = None if whisper_options["verbose"] is True else False  # We will print intermediate results ourselves
+    language = whisper_options["language"]
+
     if isinstance(audio, str):
         audio = whisper.load_audio(audio)
     if isinstance(audio, np.ndarray):
@@ -649,7 +672,16 @@ def _transcribe_timestamped_naive(
 
     audio = audio.to(model.device)
 
+    if verbose and language is None and not whisper_options["verbose"]:
+        # Reproduce whisper verbose (1/2)
+        print("Detecting language using up to the first 30 seconds. Use `--language` to specify the language")
+
     transcription = model.transcribe(audio, **whisper_options)
+
+    if verbose and language is None and not whisper_options["verbose"]:
+        # Reproduce whisper verbose (2/2)
+        print(f"Detected language: {whisper.tokenizer.LANGUAGES[transcription['language']].title()}")
+        sys.stdout.flush()
 
     language = norm_language(transcription["language"])
 
@@ -764,6 +796,9 @@ def _transcribe_timestamped_naive(
 
                 words.append(w)
 
+                if verbose:
+                    print_timestamped(w)
+
             segment.update({"confidence": round_confidence(torch.cat(segment_logprobs).mean().exp().item())})
 
             if len(ws):
@@ -789,6 +824,14 @@ def should_use_space(language):
 
 def norm_language(language):
     return whisper.tokenizer.TO_LANGUAGE_CODE.get(language.lower(), language)
+
+def print_timestamped(w):
+    line = f"[{format_timestamp(w['start'])} --> {format_timestamp(w['end'])}] {w['text']}\n"
+    # compared to just `print(line)`, this replaces any character not representable using
+    # the system default encoding with an '?', avoiding UnicodeEncodeError.
+    sys.stdout.buffer.write(line.encode(sys.getdefaultencoding(), errors="replace"))
+    sys.stdout.flush()
+
 
 def get_logit_filters(model, whisper_options, prompt = None):
     decoding_options = get_decoding_options(whisper_options)

@@ -76,13 +76,13 @@ class TestHelper(unittest.TestCase):
         self.assertEqual(p.returncode, 0, msg=stderr.decode("utf-8"))
         return (stdout.decode("utf-8"), stderr.decode("utf-8"))
 
-    def assertNonRegression(self, content, reference):
+    def assertNonRegression(self, content, reference, string_is_file=True):
         """
         Check that a file/folder is the same as a reference file/folder.
         """
         if isinstance(content, dict):
             # Make a temporary file
-            with tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False) as f:
+            with tempfile.NamedTemporaryFile(mode="w", suffix=".json", encoding="utf8", delete=False) as f:
                 json.dump(content, f, indent=2, ensure_ascii=False)
                 content = f.name
             res = self.assertNonRegression(f.name, reference)
@@ -91,9 +91,16 @@ class TestHelper(unittest.TestCase):
         elif not isinstance(content, str):
             raise ValueError(f"Invalid content type: {type(content)}")
 
+        if not string_is_file:
+            with tempfile.NamedTemporaryFile(mode="w", suffix=".txt", encoding="utf8", delete=False) as f:
+                f.write(content)
+                content = f.name 
+            res = self.assertNonRegression(f.name, reference)
+            os.remove(f.name)
+            return res
+
         self.assertTrue(os.path.exists(content), f"Missing file: {content}")
-        is_file = os.path.isfile(reference) if os.path.exists(
-            reference) else os.path.isfile(content)
+        is_file = os.path.isfile(reference) if os.path.exists(reference) else os.path.isfile(content)
 
         reference = self.get_expected_path(
             reference, check=FAIL_IF_REFERENCE_NOT_FOUND)
@@ -185,6 +192,15 @@ class TestHelper(unittest.TestCase):
 class TestHelperCli(TestHelper):
 
     def _test_cli_(self, opts, name, files=None, extensions=["words.json"], prefix=None, one_per_call=True):
+        """
+        Test command line
+        opts: list of options
+        name: name of the test
+        files: list of files to process
+        extensions: list of extensions to check, or None to test the stdout
+        prefix: prefix to add to the reference files
+        one_per_call: if True, each file is processed separately, otherwise all files are processed by a single process
+        """
 
         output_dir = self.get_output_path(name)
 
@@ -227,9 +243,13 @@ class TestHelperCli(TestHelper):
                 print(stdout)
                 print(stderr)
 
-            for output_filename in self.get_generated_files(input_filename, output_dir, extensions=extensions):
-                self.assertNonRegression(
-                    output_filename, ref_name(output_filename))
+            if extensions is None:
+                output_filename = list(self.get_generated_files(input_filename, output_dir, extensions=["stdout"]))[0]
+                self.assertNonRegression(stdout, ref_name(output_filename), string_is_file=False)
+            else:
+                for output_filename in self.get_generated_files(input_filename, output_dir, extensions=extensions):
+                    self.assertNonRegression(
+                        output_filename, ref_name(output_filename))
 
         shutil.rmtree(output_dir, ignore_errors=True)
 
@@ -387,6 +407,35 @@ class TestTranscribeFormats(TestHelperCli):
             files=files,
             extensions=extensions,
             one_per_call=False,
+        )
+
+    def test_verbose(self):
+
+        files = ["bonjour_vous_allez_bien.mp3"]
+        opts = ["--model", "tiny", "--verbose", "True"]
+
+        self._test_cli_(
+            opts,
+            "verbose", files=files, extensions=None,
+            prefix="efficient.auto",
+        )
+
+        self._test_cli_(
+            ["--language", "fr", *opts],
+            "verbose", files=files, extensions=None,
+            prefix="efficient.fr",
+        )
+
+        self._test_cli_(
+            ["--accurate", *opts],
+            "verbose", files=files, extensions=None,
+            prefix="accurate.auto",
+        )
+
+        self._test_cli_(
+            ["--accurate", "--language", "fr", *opts],
+            "verbose", files=files, extensions=None,
+            prefix="accurate.fr",
         )
 
 
