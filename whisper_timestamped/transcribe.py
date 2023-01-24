@@ -254,6 +254,7 @@ def _transcribe_timestamped_efficient(
 
     logit_filters = get_logit_filters(model, whisper_options)
     language = whisper_options["language"]
+    auto_language = language is None
     tokenizer = whisper.tokenizer.get_tokenizer(model.is_multilingual, task=whisper_options["task"], language=language)
 
     max_sample_len = sample_len or model.dims.n_text_ctx // 2 
@@ -412,7 +413,7 @@ def _transcribe_timestamped_efficient(
                         assert last_token_fallback is not None
                         last_tokens = [last_token_fallback]
                         n += 1
-                    elif len(chunk_tokens_nosot) == max_sample_len - 1:
+                    elif len(chunk_tokens_nosot) >= max_sample_len - (3 if auto_language else 1):
                         # there were segments in the 30sec chunck, and then the LM got stuck
                         last_tokens = [torch.argmax(chunk_logprobs[-1]).item()]
                         timestamped_word_segments[-1][-1]["avg_logprob_reliable"] = (temperature == 0)
