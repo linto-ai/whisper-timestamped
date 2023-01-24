@@ -814,8 +814,8 @@ def _transcribe_timestamped_naive(
     return (transcription, words)
 
 def audio_minimum_padding(audio):
-    if audio.shape[-1] < 200:
-        return whisper.pad_or_trim(audio, 200)
+    if audio.shape[-1] <= 200:
+        return whisper.pad_or_trim(audio, 201)
     return audio
 
 
