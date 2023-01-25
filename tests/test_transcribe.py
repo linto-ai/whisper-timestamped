@@ -197,7 +197,7 @@ class TestHelper(unittest.TestCase):
 
 class TestHelperCli(TestHelper):
 
-    def _test_cli_(self, opts, name, files=None, extensions=["words.json"], prefix=None, one_per_call=True):
+    def _test_cli_(self, opts, name, files=None, extensions=["words.json"], prefix=None, one_per_call=True, device_specific=None):
         """
         Test command line
         opts: list of options
@@ -216,10 +216,13 @@ class TestHelperCli(TestHelper):
 
             # Butterfly effect: Results are different depending on the device for long files
             duration = self.get_audio_duration(input_filename)
-            device_dependent = duration > 60 or (
-                duration > 30 and "tiny_fr" in name)
+            if device_specific is None:
+                device_dependent = duration > 60 or (
+                    duration > 30 and "tiny_fr" in name)
+            else:
+                device_dependent = device_specific
             name_ = name
-            if device_dependent:
+            if device_dependent and self.get_device_str() != "cuda":
                 name_ += f".{self.get_device_str()}"
 
             def ref_name(output_filename):
@@ -421,24 +424,28 @@ class TestTranscribeFormats(TestHelperCli):
             opts,
             "verbose", files=files, extensions=None,
             prefix="efficient.auto",
+            device_specific=True,
         )
 
         self._test_cli_(
             ["--language", "fr", *opts],
             "verbose", files=files, extensions=None,
             prefix="efficient.fr",
+            device_specific=True,
         )
 
         self._test_cli_(
             ["--accurate", *opts],
             "verbose", files=files, extensions=None,
             prefix="accurate.auto",
+            device_specific=True,
         )
 
         self._test_cli_(
             ["--accurate", "--language", "fr", *opts],
             "verbose", files=files, extensions=None,
             prefix="accurate.fr",
+            device_specific=True,
         )
 
 
