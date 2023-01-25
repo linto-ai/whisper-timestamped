@@ -4,7 +4,13 @@ from setuptools import setup, find_packages
 
 install_requires = open(os.path.join(os.path.dirname(__file__), "requirements.txt")).readlines()
 
-version = open(os.path.join(os.path.dirname(__file__), "whisper_timestamped", "version.py")).readlines()[-1].split()[-1].strip("\"'")
+version = None
+with open(os.path.join(os.path.dirname(__file__), "whisper_timestamped", "transcribe.py")) as f:
+    for line in f:
+        if line.strip().startswith("__version__"):
+            version = line.split("=")[1].strip().strip("\"'")
+            break
+assert version
 
 setup(
     name="whisper-timestamped",

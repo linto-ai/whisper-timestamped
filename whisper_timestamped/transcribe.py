@@ -2,7 +2,8 @@
 
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
-__license__ = "MIT"
+__license__ = "GPLv3"
+__version__ = "1.6.7"
 
 # Whisper and Torch
 import whisper
@@ -1282,25 +1283,26 @@ def cli():
         description='Transcribe a single audio with whisper and compute word timestamps',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
-    parser.add_argument('audio', help="Audio file to transcribe", nargs='+')
-    parser.add_argument('--model', help=f"Name of the Whisper model to use.", choices=whisper.available_models(), default="small")
-    parser.add_argument("--model_dir", default=None, help="The path to save model files; uses ~/.cache/whisper by default", type=str)
+    parser.add_argument('audio', help="audio file(s) to transcribe", nargs='+')
+    parser.add_argument('--model', help=f"name of the Whisper model to use.", choices=whisper.available_models(), default="small")
+    parser.add_argument("--model_dir", default=None, help="the path to save model files; uses ~/.cache/whisper by default", type=str)
     parser.add_argument("--device", default="cuda:0" if torch.cuda.is_available() else "cpu", help="device to use for PyTorch inference")
     parser.add_argument("--output_dir", "-o", default=None, help="directory to save the outputs", type=str)
     parser.add_argument("--output_format", "-f", type=str, default="all", help="format of the output file; if not specified, all available formats will be produced", choices=["txt", "vtt", "srt", "tsv", "csv", "json", "all"])
+    parser.add_argument("--verbose", type=str2bool, default=False, help="whether to print out the progress and debug messages of Whisper")
 
-    parser.add_argument('--accurate', help="This is a shortcut to use the same default option as in Whisper (best_of=5, beam_search=5, temperature_increment_on_fallback=0.2)", action=ActionSetAccurate)
-    parser.add_argument('--naive', help="Use naive approach, doing inference twice (once to get the transcription, once to get word timestamps and confidence scores).", default=False, action="store_true")
+    parser.add_argument('--accurate', help="this is a shortcut to use the same default option as in Whisper (best_of=5, beam_search=5, temperature_increment_on_fallback=0.2)", action=ActionSetAccurate)
+    parser.add_argument('--naive', help="use naive approach, doing inference twice (once to get the transcription, once to get word timestamps and confidence scores).", default=False, action="store_true")
 
-    parser.add_argument("--task", default="transcribe", help="Whether to perform X->X speech recognition ('transcribe') or X->English translation ('translate')", choices=["transcribe", "translate"], type=str)
-    parser.add_argument('--language', help=f"Language to use. Among : {', '.join(sorted(k+'('+v+')' for k,v in whisper.tokenizer.LANGUAGES.items()))}.", choices=sorted(whisper.tokenizer.LANGUAGES.keys()) + sorted([k.title() for k in whisper.tokenizer.TO_LANGUAGE_CODE.keys()]), default=None)
+    parser.add_argument("--task", default="transcribe", help="whether to perform X->X speech recognition ('transcribe') or X->English translation ('translate')", choices=["transcribe", "translate"], type=str)
+    parser.add_argument('--language', help=f"language spoken in the audio, specify None to perform language detection.", choices=sorted(whisper.tokenizer.LANGUAGES.keys()) + sorted([k.title() for k in whisper.tokenizer.TO_LANGUAGE_CODE.keys()]), default=None)
+    # f"{', '.join(sorted(k+'('+v+')' for k,v in whisper.tokenizer.LANGUAGES.items()))}
 
-    parser.add_argument("--verbose", type=str2bool, default=False, help="Whether to print out the progress and debug messages of Whisper")
-    parser.add_argument('--plot', help="Plot word alignments", default=False, action="store_true")
+    parser.add_argument('--plot', help="plot word alignments", default=False, action="store_true")
 
-    parser.add_argument("--punctuations_with_words", default=True, help="Whether to include punctuations within the words", type=str2bool)
+    parser.add_argument("--punctuations_with_words", default=True, help="whether to include punctuations within the words", type=str2bool)
         
-    parser.add_argument("--temperature", default=0.0, help="Temperature to use for sampling", type=float)
+    parser.add_argument("--temperature", default=0.0, help="temperature to use for sampling", type=float)
     parser.add_argument("--best_of", type=optional_int, default=None, help="number of candidates when sampling with non-zero temperature")
     parser.add_argument("--beam_size", type=optional_int, default=None, help="number of beams in beam search, only applicable when temperature is zero")
     parser.add_argument("--patience", type=float, default=None, help="optional patience value to use in beam decoding, as in https://arxiv.org/abs/2204.05424, the default (1.0) is equivalent to conventional beam search")
@@ -1312,12 +1314,13 @@ def cli():
     parser.add_argument("--fp16", default=None, help="whether to perform inference in fp16; Automatic by default (True if GPU available, False otherwise)", type=str2bool)
 
     parser.add_argument("--temperature_increment_on_fallback", default=None, help="temperature to increase when falling back when the decoding fails to meet either of the thresholds below", type=optional_float)
-    parser.add_argument("--compression_ratio_threshold", default=2.4, help="If the gzip compression ratio is higher than this value, treat the decoding as failed", type=optional_float)
-    parser.add_argument("--logprob_threshold", default=-1.0, help="If the average log probability is lower than this value, treat the decoding as failed", type=optional_float)
-    parser.add_argument("--no_speech_threshold", default=0.6, help="If the probability of the <|nospeech|> token is higher than this value AND the decoding has failed due to `logprob_threshold`, consider the segment as silence", type=optional_float)
-    parser.add_argument("--threads", default=0, help="Number of threads used by torch for CPU inference; supercedes MKL_NUM_THREADS/OMP_NUM_THREADS", type=optional_int)
+    parser.add_argument("--compression_ratio_threshold", default=2.4, help="if the gzip compression ratio is higher than this value, treat the decoding as failed", type=optional_float)
+    parser.add_argument("--logprob_threshold", default=-1.0, help="if the average log probability is lower than this value, treat the decoding as failed", type=optional_float)
+    parser.add_argument("--no_speech_threshold", default=0.6, help="if the probability of the <|nospeech|> token is higher than this value AND the decoding has failed due to `logprob_threshold`, consider the segment as silence", type=optional_float)
+    parser.add_argument("--threads", default=0, help="number of threads used by torch for CPU inference; supercedes MKL_NUM_THREADS/OMP_NUM_THREADS", type=optional_int)
 
-    parser.add_argument('--debug', help="Print some debug information for word alignement", default=False, action="store_true")
+    parser.add_argument('--debug', help="print some debug information for word alignement", default=False, action="store_true")
+    parser.add_argument('--version', '-v', help="show version and exit", action='version', version=f'{__version__}')
 
     args = parser.parse_args().__dict__
 

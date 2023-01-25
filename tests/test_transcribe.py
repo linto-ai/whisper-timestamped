@@ -57,6 +57,12 @@ class TestHelper(unittest.TestCase):
         for ext in extensions:
             yield os.path.join(output_path, os.path.basename(input_filename) + "." + ext.lstrip("."))
 
+    def main_script(self):
+        main_script = self.get_main_path("transcribe.py", check=False)
+        if not os.path.exists(main_script):
+            main_script = "whisper_timestamped"
+        return main_script
+
     def assertRun(self, cmd):
         if isinstance(cmd, str):
             return self.assertRun(cmd.split())
@@ -233,13 +239,10 @@ class TestHelperCli(TestHelper):
             print("Running non-regression test", generic_name)
 
             if one_per_call or i == 0:
-                main_script = self.get_main_path("transcribe.py", check=False)
-                if not os.path.exists(main_script):
-                    main_script = "whisper_timestamped"
                 if one_per_call:
-                    (stdout, stderr) = self.assertRun([main_script, input_filename, "--output_dir", output_dir, *opts])
+                    (stdout, stderr) = self.assertRun([self.main_script(), input_filename, "--output_dir", output_dir, *opts])
                 else:
-                    (stdout, stderr) = self.assertRun([main_script, *input_filenames, "--output_dir", output_dir, *opts])
+                    (stdout, stderr) = self.assertRun([self.main_script(), *input_filenames, "--output_dir", output_dir, *opts])
                 print(stdout)
                 print(stderr)
 
@@ -451,7 +454,11 @@ class TestZZZPythonImport(TestHelper):
                 os.path.dirname(os.path.dirname(__file__))))
             import whisper_timestamped
 
-        self.assertTrue(isinstance(whisper_timestamped.__version__, str))
+        version = whisper_timestamped.__version__
+        self.assertTrue(isinstance(version, str))
+
+        (stdout, sterr) = self.assertRun([self.main_script(), "-v"])
+        self.assertEqual(stdout.strip(), version)
 
         model = whisper_timestamped.load_model("tiny")
 
@@ -490,7 +497,3 @@ class TestZZZPythonImport(TestHelper):
                 [50714]
               ])
         )
-
-    def get_expected(self, input, dirname):
-        with open(self.get_expected_path(f"{dirname}/{input}.words.json", check=True)) as f:
-            return json.load(f)
