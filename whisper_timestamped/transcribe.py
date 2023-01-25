@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.6.7"
+__version__ = "1.6.8"
 
 # Whisper and Torch
 import whisper
@@ -361,16 +361,21 @@ def _transcribe_timestamped_efficient(
             # then we have to recover the last token from what is send to the decoder
             unfinished_decoding = len(tokens) and tokens[-1] < tokenizer.timestamp_begin
             last_token_reliable = True
+
             if unfinished_decoding:
+                logger.debug(f"WARNING: decoding hit the max limit for segment {segment_tokens} (It usually happens when the language model gets stuck)")
                 # The last token chosen is in the prompt for the new chunk
                 if curr_tokens is not None and curr_tokens[0] == tokenizer.sot_prev:
+                    logger.debug("         Guess last token from the prompt for the new chunk")
                     last_token_fallback = curr_tokens[-4].item()
                 # Fallback for the last segment, or without prompt: Assume greedy decoding
                 else:
+                    logger.debug(f"         Guess last token using probas (assuming greedy decoding)")
                     last_token_fallback = torch.argmax(chunk_logprobs[-1]).item()
                     last_token_reliable = (temperature == 0)
                 if debug:
                     logger.debug(f"WARNING: also add last token: {tokenizer.decode_with_timestamps([last_token_fallback])}")
+
                 tokens.append(last_token_fallback)
                 segment_tokens[-1].append(last_token_fallback)
                 attention_weights = [torch.cat(w, dim=-2) for w in segment_attweights]
@@ -392,9 +397,6 @@ def _transcribe_timestamped_efficient(
             add_segment = len(ws) > 0
             if add_segment:
                 timestamped_word_segments.append(ws)
-                # Add info about the dedoding that did not go well...
-                if unfinished_decoding:
-                    timestamped_word_segments[-1][-1]["avg_logprob_reliable"] = last_token_reliable
             else:
                 logger.debug(f"Not added!")
             reset(add_segment, curr_tokens is not None and len(curr_tokens) == 1)
@@ -417,6 +419,7 @@ def _transcribe_timestamped_efficient(
                     if unfinished_decoding:
                         assert last_token_fallback is not None
                         last_tokens = [last_token_fallback]
+                        timestamped_word_segments[-1][-1]["avg_logprob_reliable"] = last_token_reliable
                         n += 1
                     elif len(chunk_tokens_nosot) >= max_sample_len - (3 if auto_language else 1):
                         # there were segments in the 30sec chunck, and then the LM got stuck
@@ -604,8 +607,13 @@ def _transcribe_timestamped_efficient(
         timestamped_tokens = filter_tokens(token)
         whisper_tokens = filter_tokens(segment["tokens"])
         if timestamped_tokens != whisper_tokens:
-            assert len(timestamped_tokens) < len(whisper_tokens) and timestamped_tokens == whisper_tokens[:len(timestamped_tokens)], f"Fatal Error: Got inconsistent text for segment {i}:\n{tokenizer.decode(timestamped_tokens)}\n!=\n{tokenizer.decode(whisper_tokens)}"      
-            logger.warning(f"Text had to be shortned on segment {i}:\n{tokenizer.decode(timestamped_tokens)}\n!=\n{tokenizer.decode(whisper_tokens)}")
+            if len(timestamped_tokens) == len(whisper_tokens) + 1:
+                logger.warn(f"An additional token was added on segment {i}")
+            else:
+                assert len(timestamped_tokens) < len(whisper_tokens) and timestamped_tokens == whisper_tokens[:len(timestamped_tokens)], \
+                    f"Fatal Error: Got inconsistent text for segment {i}:\n({tokenizer.decode(timestamped_tokens)}) {timestamped_tokens}\n!=({len(whisper_tokens)}) \n{tokenizer.decode(whisper_tokens)}"
+                logger.warn(f"Text had to be shortned on segment {i}:\n{tokenizer.decode(timestamped_tokens)}\n!=\n{tokenizer.decode(whisper_tokens)}")
+            timestamped_words[-1]["avg_logprob_reliable"] = False
 
         offset = segment["seek"] * HOP_LENGTH / SAMPLE_RATE
         for timestamped_word in timestamped_words:
