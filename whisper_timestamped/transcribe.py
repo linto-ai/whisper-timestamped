@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.7.0"
+__version__ = "1.7.1"
 
 # Whisper and Torch
 import whisper
@@ -309,7 +309,7 @@ def _transcribe_timestamped_efficient(
         if debug:
             logger.debug(f"Reset last segment to: {tokenizer.decode_with_timestamps(segment_tokens[-1])}")
 
-    saw_consecutive_timestamps = True
+    saw_consecutive_timestamps = False
     def must_flush_segment(curr_tokens):
         """ Return whether or not the previously collected tokens must be used to add a new speech segment """
 
@@ -324,7 +324,7 @@ def _transcribe_timestamped_efficient(
                 consecutive_timestamps = True
             return consecutive_timestamps
         else: # Several tokens as a prompt or must flush last segments
-            must_flush = not saw_consecutive_timestamps
+            must_flush = not saw_consecutive_timestamps and len(segment_tokens[-1]) > 1
             logger.debug(f"New prompt: flushing = {must_flush}")
             if not must_flush:
                 # Discard the end of the last transcription
@@ -356,6 +356,7 @@ def _transcribe_timestamped_efficient(
 
             if debug:
                 logger.debug(f"Adding segment {len(timestamped_word_segments)+1} at step {num_inference_steps}:\n\t{tokenizer.decode_with_timestamps(segment_tokens[-1])}")
+
             tokens = segment_tokens[-1][1:]
             # When the decoding hit the max limit (number of tokens) -- usually when the language model gets stuck --
             # then we have to recover the last token from what is send to the decoder
@@ -416,6 +417,8 @@ def _transcribe_timestamped_efficient(
                 should_skip = (no_speech_prob > no_speech_threshold) if (no_speech_threshold is not None) else False
                 if compute_word_confidence or (should_skip and logprob_threshold is not None):
                     n = len(chunk_logprobs)
+                    if n == len(chunk_tokens_nosot):
+                        chunk_tokens_nosot = chunk_tokens_nosot[1:]
                     if unfinished_decoding:
                         assert last_token_fallback is not None
                         last_tokens = [last_token_fallback]
@@ -430,7 +433,8 @@ def _transcribe_timestamped_efficient(
                     chunck_indices = chunk_tokens_nosot + last_tokens
                     assert len(chunk_logprobs) == len(chunck_indices), f"{len(chunk_logprobs)} != {len(chunck_indices)}"
                     logprobs = torch.cat([logprob[i].unsqueeze(0) for (logprob, i) in zip(chunk_logprobs, chunck_indices)])
-                    assert min([p.isfinite().item() for p in logprobs]), f"Got infinite logprob among ({len(logprobs)}) {[(i, v.item()) for (i,v) in zip(chunck_indices, logprobs)]}"
+                    assert min([p.isfinite().item() for p in logprobs]), \
+                        f"Got infinite logprob among ({len(logprobs)}) {[(i, tokenizer.decode_with_timestamps([i]), v.item()) for (i,v) in zip(chunck_indices, logprobs)]}"
                     sum_logprob = sum(logprobs)
                     avg_logprob = sum_logprob/n
                     # don't skip if the logprob is high enough, despite the no_speech_prob
@@ -497,18 +501,21 @@ def _transcribe_timestamped_efficient(
         assert curr_tokens.shape[0] == 1, "Batch decoding is not supported"
         curr_tokens = curr_tokens.squeeze(0)
 
-        if len(curr_tokens) > 1:
+        if len(curr_tokens) > 1 or curr_tokens[0] == tokenizer.sot:
             chunk_prompt = curr_tokens.tolist()
             if not has_started and language is None:
-                language = tokenizer.decode(curr_tokens[1:2])[2:-2]
+                if len(curr_tokens) == 1: # English model
+                    language = "en"
+                else:
+                    language = tokenizer.decode(curr_tokens[1:2])[2:-2]
                 whisper_options["language"] = language
 
-                if verbose and not whisper_options["verbose"]:
+                if verbose and not whisper_options["verbose"] and len(curr_tokens) > 1:
                     # Reproduce whisper verbose (2/2)
                     print(f"Detected language: {whisper.tokenizer.LANGUAGES[language].title()}")
                     sys.stdout.flush()
 
-            logit_filters = get_logit_filters(model, whisper_options, prompt = chunk_prompt[1:-3])
+            logit_filters = get_logit_filters(model, whisper_options, prompt = chunk_prompt[1:-len(tokenizer.sot_sequence)])
         
         may_flush_segment(curr_tokens)
 
@@ -516,7 +523,7 @@ def _transcribe_timestamped_efficient(
         segment_tokens[-1].append(curr_tokens[-1].item())
 
         # Get the index of the <|startoftranscript|> tokens (to get proba of silence later)
-        if len(curr_tokens) > 1:
+        if len(curr_tokens) > 1 or curr_tokens[0] == tokenizer.sot:
             has_started = True
             if no_speech_threshold is not None:
                 sot_index = curr_tokens.tolist().index(tokenizer.sot)
@@ -774,12 +781,14 @@ def _transcribe_timestamped_naive(
                     tokenizer.timestamp_begin,
                 ] + tokens
 
+            i_start = len(tokenizer.sot_sequence)
+
             with torch.no_grad():
                 logprobs = model(mfcc, torch.Tensor(tokens).int().to(model.device).unsqueeze(0))
                 logprobs = F.log_softmax(logprobs, dim=-1)
 
-            tokens = tokens[3:] + [tokenizer.timestamp_begin + round((end_sample - start_sample) // AUDIO_SAMPLES_PER_TOKEN)]
-            attention_weights = [w[:, :, 2:, :] for w in attention_weights]
+            tokens = tokens[i_start:] + [tokenizer.timestamp_begin + round((end_sample - start_sample) // AUDIO_SAMPLES_PER_TOKEN)]
+            attention_weights = [w[:, :, i_start-1:, :] for w in attention_weights]
 
             ws = perform_word_alignment(
                 tokens,
@@ -792,7 +801,6 @@ def _transcribe_timestamped_naive(
                 plot=plot_word_alignment,
             )
 
-            i_start = 3
             segment_logprobs = []
             for w in ws:
 
@@ -919,7 +927,7 @@ def perform_word_alignment(
 
     # Check start / end tokens
     if start_token < 0:
-        raise RuntimeError(f"Missing start token in {tokenizer.decode_with_timestamps(tokens)}")
+        raise RuntimeError(f"Missing start token in: {tokenizer.decode_with_timestamps(tokens)}")
     if len(tokens) == 1 or end_token < 0:
         # This can happens when Whisper is stucked as a Language Model
         if debug:

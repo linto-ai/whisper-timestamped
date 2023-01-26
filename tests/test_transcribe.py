@@ -389,6 +389,26 @@ class TestTranscribeCornerCases(TestHelperCli):
                 files=["arabic.mp3"]
             )
 
+class TestTranscribeMonolingual(TestHelperCli):
+
+    def test_monolingual(self):
+
+        files = ["bonjour_vous_allez_bien.mp3"]
+
+        self._test_cli_(
+            ["--model", "tiny.en", "--efficient"],
+            "tiny.en",
+            files=files,
+            prefix="efficient",
+        )
+
+        self._test_cli_(
+            ["--model", "tiny.en", "--accurate"],
+            "tiny.en",
+            files=files,
+            prefix="accurate",
+        )
+
 
 class TestTranscribeFormats(TestHelperCli):
 
