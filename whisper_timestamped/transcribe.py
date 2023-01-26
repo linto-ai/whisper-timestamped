@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.7.1"
+__version__ = "1.7.2"
 
 # Whisper and Torch
 import whisper
@@ -31,6 +31,8 @@ AUDIO_TIME_PER_TOKEN = AUDIO_SAMPLES_PER_TOKEN / SAMPLE_RATE # 0.02
 import logging
 logger = logging.getLogger("whisper_timestamped")
 
+USE_EFFICIENT_BY_DEFAULT = True
+
 def transcribe_timestamped(
     # Main Whisper options
     model,
@@ -52,7 +54,7 @@ def transcribe_timestamped(
     naive_approach=False,
 
     # Other Whisper options
-    temperature=(0.0, 0.2, 0.4, 0.6, 0.8, 1.0),
+    temperature=0.0 if USE_EFFICIENT_BY_DEFAULT else (0.0, 0.2, 0.4, 0.6, 0.8, 1.0),
     best_of=None,
     beam_size=None,
     patience=None,
@@ -1322,8 +1324,8 @@ def cli():
     parser.add_argument("--compute_confidence", default=True, help="whether to compute confidence scores for words", type=str2bool)
         
     parser.add_argument("--temperature", default=0.0, help="temperature to use for sampling", type=float)
-    parser.add_argument("--best_of", type=optional_int, default=5, help="number of candidates when sampling with non-zero temperature")
-    parser.add_argument("--beam_size", type=optional_int, default=5, help="number of beams in beam search, only applicable when temperature is zero")
+    parser.add_argument("--best_of", type=optional_int, default=None if USE_EFFICIENT_BY_DEFAULT else 5, help="number of candidates when sampling with non-zero temperature")
+    parser.add_argument("--beam_size", type=optional_int, default=None if USE_EFFICIENT_BY_DEFAULT else 5, help="number of beams in beam search, only applicable when temperature is zero")
     parser.add_argument("--patience", type=float, default=None, help="optional patience value to use in beam decoding, as in https://arxiv.org/abs/2204.05424, the default (1.0) is equivalent to conventional beam search")
     parser.add_argument("--length_penalty", type=float, default=None, help="optional token length penalty coefficient (alpha) as in https://arxiv.org/abs/1609.08144, uses simple length normalization by default")
 
@@ -1332,7 +1334,7 @@ def cli():
     parser.add_argument("--condition_on_previous_text", default=True, help="if True, provide the previous output of the model as a prompt for the next window; disabling may make the text inconsistent across windows, but the model becomes less prone to getting stuck in a failure loop", type=str2bool)
     parser.add_argument("--fp16", default=None, help="whether to perform inference in fp16; Automatic by default (True if GPU available, False otherwise)", type=str2bool)
 
-    parser.add_argument("--temperature_increment_on_fallback", default=0.2, help="temperature to increase when falling back when the decoding fails to meet either of the thresholds below", type=optional_float)
+    parser.add_argument("--temperature_increment_on_fallback", default=0.0 if USE_EFFICIENT_BY_DEFAULT else 0.2, help="temperature to increase when falling back when the decoding fails to meet either of the thresholds below", type=optional_float)
     parser.add_argument("--compression_ratio_threshold", default=2.4, help="if the gzip compression ratio is higher than this value, treat the decoding as failed", type=optional_float)
     parser.add_argument("--logprob_threshold", default=-1.0, help="if the average log probability is lower than this value, treat the decoding as failed", type=optional_float)
     parser.add_argument("--no_speech_threshold", default=0.6, help="if the probability of the <|nospeech|> token is higher than this value AND the decoding has failed due to `logprob_threshold`, consider the segment as silence", type=optional_float)
@@ -1350,7 +1352,7 @@ def cli():
             setattr(namespace, "best_of", 5)
             setattr(namespace, "beam_size", 5)
             setattr(namespace, "temperature_increment_on_fallback", 0.2)
-    parser.add_argument('--accurate', help="Deprecated option", action=ActionSetAccurate)
+    parser.add_argument('--accurate', help="Shortcut to use the same default option as in Whisper (best_of=5, beam_search=5, temperature_increment_on_fallback=0.2)", action=ActionSetAccurate)
 
     class ActionSetEfficient(argparse.Action):
         def __init__(self, option_strings, dest, nargs=None, **kwargs):
@@ -1360,7 +1362,7 @@ def cli():
             setattr(namespace, "best_of", None)
             setattr(namespace, "beam_size", None)
             setattr(namespace, "temperature_increment_on_fallback", None)
-    parser.add_argument('--efficient', help="Disable beam size and options that requires to sample several times, for an efficient decoding", action=ActionSetEfficient)
+    parser.add_argument('--efficient', help="Shortcut to disable beam size and options that requires to sample several times, for an efficient decoding", action=ActionSetEfficient)
 
     args = parser.parse_args().__dict__
 
