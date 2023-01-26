@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.6.8"
+__version__ = "1.7.0"
 
 # Whisper and Torch
 import whisper
@@ -52,7 +52,7 @@ def transcribe_timestamped(
     naive_approach=False,
 
     # Other Whisper options
-    temperature=0.0,
+    temperature=(0.0, 0.2, 0.4, 0.6, 0.8, 1.0),
     best_of=None,
     beam_size=None,
     patience=None,
@@ -622,9 +622,9 @@ def _transcribe_timestamped_efficient(
             timestamped_word["idx_segment"] = i
 
         if compute_word_confidence:
-            # TODO: make this assert a warning?
             if "avg_logprob_reliable" not in timestamped_words[-1] or timestamped_words[-1]["avg_logprob_reliable"]:
-                assert abs(segment["avg_logprob"] - avglogprob) < 1e-2, f"Fatal Error: Got inconsistent logprob for segment {i}: {avglogprob} != {segment['avg_logprob']}"
+                if abs(segment["avg_logprob"] - avglogprob) >= 1e-2:
+                    logger.warn(f"Recomputed different logprob for segment {i}: {avglogprob} != {segment['avg_logprob']}")
             if include_punctuation_in_confidence:
                 segment["confidence"] = round_confidence(logprobs.mean().exp().item())
             else:
@@ -671,6 +671,7 @@ def _transcribe_timestamped_naive(
     verbose = whisper_options["verbose"]
     whisper_options["verbose"] = None if whisper_options["verbose"] is True else False  # We will print intermediate results ourselves
     language = whisper_options["language"]
+    refine_whisper_precision_sec = refine_whisper_precision_nframes * AUDIO_TIME_PER_TOKEN
 
     if isinstance(audio, str):
         audio = whisper.load_audio(audio)
@@ -680,6 +681,7 @@ def _transcribe_timestamped_naive(
         assert isinstance(audio, torch.Tensor), f"Got unexpected audio of type {type(audio)}"
 
     audio = audio.to(model.device)
+    audio_duration = audio.shape[-1] / SAMPLE_RATE
 
     if verbose and language is None and not whisper_options["verbose"]:
         # Reproduce whisper verbose (1/2)
@@ -718,32 +720,42 @@ def _transcribe_timestamped_naive(
 
             start = segment["start"]
             end = segment["end"]
-            if end <= start:
-                logger.warn(f"Got too short segment {i_segment}. Words won't be located for this segment.")
+
+            start_margin_min = start - refine_whisper_precision_sec
+            start_margin_max = start + refine_whisper_precision_sec
+            if start >= audio_duration - min_word_duration or (previous_end >= start_margin_min and previous_end <= start_margin_max):
+                # Make start as accurate as possible (as the decoding will start with timestamp <|0|>)
+                start = previous_end
+            else:
+                # Fallback
+                start = start_margin_min
+
+            if start > audio_duration - min_word_duration:
+                # Skip last segment if too short
+                logger.warn(f"Skipping segment outside of audio duration {audio_duration} (original: {segment['start']}-{segment['end']}, new: {start}-XXX)")
                 continue
 
-            start = max(previous_end, start - refine_whisper_precision_nframes * AUDIO_TIME_PER_TOKEN)
-            start_sample = round(start * SAMPLE_RATE)
-            end_sample2 = end_sample = round(end * SAMPLE_RATE)
-            if refine_whisper_precision_nframes:
-                maximum = audio.shape[-1]
-                if min_word_duration and i_segment < len(whisper_segments) - 1:
-                    next_end = whisper_segments[i_segment + 1]["end"]
-                    maximum = min(maximum,
-                        round((next_end + refine_whisper_precision_nframes * AUDIO_TIME_PER_TOKEN - min_word_duration) * SAMPLE_RATE))
-                
-                end_sample2 = min(maximum,
-                    round(end_sample + refine_whisper_precision_nframes * AUDIO_SAMPLES_PER_TOKEN))
+            end_margin_min = end - refine_whisper_precision_sec
+            end_margin_max = end + refine_whisper_precision_sec
+            if i_segment < len(whisper_segments) - 1:
+                # Try to enforce:
+                #   end + min_word_duration <= next start + refine_whisper_precision_sec
+                end_margin_max2 = whisper_segments[i_segment + 1]["start"] + refine_whisper_precision_sec - min_word_duration
+                if end_margin_max2 >= end_margin_min:
+                    end_margin_max = min(end_margin_max2, end_margin_max)
+            end = min(audio_duration, end_margin_max)
 
-            if end_sample2 == start_sample:
-                # Too short segment to detect something. Probably Whisper LM is stucked
-                logger.warn(f"Got too short segment {i_segment} after refinement. Words won't be located for this segment.")
-                continue
-            elif end_sample2 < start_sample:
-                raise RuntimeError(f"Got inconsistent segment start/end for segment {i_segment}: start {start_sample / SAMPLE_RATE} > end {end_sample2 / SAMPLE_RATE}")
-            assert end_sample2 <= audio.shape[-1], f"Fatal Error: Got out-of-bound index for segment {i_segment}: {end_sample2} > {audio.shape[-1]}"
+            if end < start + min_word_duration:
+                logger.warn(f"Got super short segment (original from whisper: {segment['start']}-{segment['end']}, new: {start, end})")
+                end = min(audio_duration, start + min_word_duration)
+                if end <= start:
+                    logger.warn(f"Skipping this short segment occuring too close to the end of the audio")
+                    continue
+            
+            start_sample = min(round(start * SAMPLE_RATE), audio.shape[-1])
+            end_sample = min(round(end * SAMPLE_RATE), audio.shape[-1])
 
-            sub_audio = audio_minimum_padding(audio[start_sample:end_sample2])
+            sub_audio = audio_minimum_padding(audio[start_sample:end_sample])
 
             mfcc = whisper.log_mel_spectrogram(sub_audio).to(model.device)
             mfcc = whisper.pad_or_trim(mfcc, N_FRAMES)
@@ -808,7 +820,8 @@ def _transcribe_timestamped_naive(
                 if verbose:
                     print_timestamped(w)
 
-            segment.update({"confidence": round_confidence(torch.cat(segment_logprobs).mean().exp().item())})
+            if len(segment_logprobs):
+                segment.update({"confidence": round_confidence(torch.cat(segment_logprobs).mean().exp().item())})
 
             if len(ws):
                 previous_end = ws[-1]["end"]
@@ -945,11 +958,10 @@ def perform_word_alignment(
     num_tokens = weights.shape[-2]
     num_frames = end_token - start_token
     if num_tokens > num_frames:
-        # TODO: test this case
         logger.warning(f"Too much text ({num_tokens} tokens) for the given number of frames ({num_frames}) in: {tokenizer.decode_with_timestamps(tokens)}\nThe end of the text will be removed.")
         return perform_word_alignment(
             tokens[:num_frames-1] + [tokens[-1]],
-            [[w[:, :, :num_frames-1, :], w[:, :, -1:, :]]
+            [torch.cat([w[:, :, :num_frames-1, :], w[:, :, -1:, :]], dim=-2)
                 for w in attention_weights],
             tokenizer,
             use_space=use_space,
@@ -1278,19 +1290,12 @@ def cli():
         write_vtt = get_do_write("vtt")
         write_tsv = get_do_write("tsv")
 
-    class ActionSetAccurate(argparse.Action):
-        def __init__(self, option_strings, dest, nargs=None, **kwargs):
-            assert nargs is None
-            super().__init__(option_strings, dest, nargs=0, **kwargs)
-        def __call__(self, parser, namespace, values, option_string=None):
-            setattr(namespace, "best_of", 5)
-            setattr(namespace, "beam_size", 5)
-            setattr(namespace, "temperature_increment_on_fallback", 0.2)
-
     parser = argparse.ArgumentParser(
         description='Transcribe a single audio with whisper and compute word timestamps',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
+    parser.add_argument('-v', '--version', help="show version and exit", action='version', version=f'{__version__}')
+
     parser.add_argument('audio', help="audio file(s) to transcribe", nargs='+')
     parser.add_argument('--model', help=f"name of the Whisper model to use.", choices=whisper.available_models(), default="small")
     parser.add_argument("--model_dir", default=None, help="the path to save model files; uses ~/.cache/whisper by default", type=str)
@@ -1299,9 +1304,6 @@ def cli():
     parser.add_argument("--output_format", "-f", type=str, default="all", help="format of the output file; if not specified, all available formats will be produced", choices=["txt", "vtt", "srt", "tsv", "csv", "json", "all"])
     parser.add_argument("--verbose", type=str2bool, default=False, help="whether to print out the progress and debug messages of Whisper")
 
-    parser.add_argument('--accurate', help="this is a shortcut to use the same default option as in Whisper (best_of=5, beam_search=5, temperature_increment_on_fallback=0.2)", action=ActionSetAccurate)
-    parser.add_argument('--naive', help="use naive approach, doing inference twice (once to get the transcription, once to get word timestamps and confidence scores).", default=False, action="store_true")
-
     parser.add_argument("--task", default="transcribe", help="whether to perform X->X speech recognition ('transcribe') or X->English translation ('translate')", choices=["transcribe", "translate"], type=str)
     parser.add_argument('--language', help=f"language spoken in the audio, specify None to perform language detection.", choices=sorted(whisper.tokenizer.LANGUAGES.keys()) + sorted([k.title() for k in whisper.tokenizer.TO_LANGUAGE_CODE.keys()]), default=None)
     # f"{', '.join(sorted(k+'('+v+')' for k,v in whisper.tokenizer.LANGUAGES.items()))}
@@ -1309,10 +1311,11 @@ def cli():
     parser.add_argument('--plot', help="plot word alignments", default=False, action="store_true")
 
     parser.add_argument("--punctuations_with_words", default=True, help="whether to include punctuations within the words", type=str2bool)
+    parser.add_argument("--compute_confidence", default=True, help="whether to compute confidence scores for words", type=str2bool)
         
     parser.add_argument("--temperature", default=0.0, help="temperature to use for sampling", type=float)
-    parser.add_argument("--best_of", type=optional_int, default=None, help="number of candidates when sampling with non-zero temperature")
-    parser.add_argument("--beam_size", type=optional_int, default=None, help="number of beams in beam search, only applicable when temperature is zero")
+    parser.add_argument("--best_of", type=optional_int, default=5, help="number of candidates when sampling with non-zero temperature")
+    parser.add_argument("--beam_size", type=optional_int, default=5, help="number of beams in beam search, only applicable when temperature is zero")
     parser.add_argument("--patience", type=float, default=None, help="optional patience value to use in beam decoding, as in https://arxiv.org/abs/2204.05424, the default (1.0) is equivalent to conventional beam search")
     parser.add_argument("--length_penalty", type=float, default=None, help="optional token length penalty coefficient (alpha) as in https://arxiv.org/abs/1609.08144, uses simple length normalization by default")
 
@@ -1321,18 +1324,40 @@ def cli():
     parser.add_argument("--condition_on_previous_text", default=True, help="if True, provide the previous output of the model as a prompt for the next window; disabling may make the text inconsistent across windows, but the model becomes less prone to getting stuck in a failure loop", type=str2bool)
     parser.add_argument("--fp16", default=None, help="whether to perform inference in fp16; Automatic by default (True if GPU available, False otherwise)", type=str2bool)
 
-    parser.add_argument("--temperature_increment_on_fallback", default=None, help="temperature to increase when falling back when the decoding fails to meet either of the thresholds below", type=optional_float)
+    parser.add_argument("--temperature_increment_on_fallback", default=0.2, help="temperature to increase when falling back when the decoding fails to meet either of the thresholds below", type=optional_float)
     parser.add_argument("--compression_ratio_threshold", default=2.4, help="if the gzip compression ratio is higher than this value, treat the decoding as failed", type=optional_float)
     parser.add_argument("--logprob_threshold", default=-1.0, help="if the average log probability is lower than this value, treat the decoding as failed", type=optional_float)
     parser.add_argument("--no_speech_threshold", default=0.6, help="if the probability of the <|nospeech|> token is higher than this value AND the decoding has failed due to `logprob_threshold`, consider the segment as silence", type=optional_float)
     parser.add_argument("--threads", default=0, help="number of threads used by torch for CPU inference; supercedes MKL_NUM_THREADS/OMP_NUM_THREADS", type=optional_int)
 
     parser.add_argument('--debug', help="print some debug information for word alignement", default=False, action="store_true")
-    parser.add_argument('--version', '-v', help="show version and exit", action='version', version=f'{__version__}')
+
+    parser.add_argument('--naive', help="use naive approach, doing inference twice (once to get the transcription, once to get word timestamps and confidence scores).", default=False, action="store_true")
+
+    class ActionSetAccurate(argparse.Action):
+        def __init__(self, option_strings, dest, nargs=None, **kwargs):
+            assert nargs is None
+            super().__init__(option_strings, dest, nargs=0, **kwargs)
+        def __call__(self, parser, namespace, values, option_string=None):
+            setattr(namespace, "best_of", 5)
+            setattr(namespace, "beam_size", 5)
+            setattr(namespace, "temperature_increment_on_fallback", 0.2)
+    parser.add_argument('--accurate', help="Deprecated option", action=ActionSetAccurate)
+
+    class ActionSetEfficient(argparse.Action):
+        def __init__(self, option_strings, dest, nargs=None, **kwargs):
+            assert nargs is None
+            super().__init__(option_strings, dest, nargs=0, **kwargs)
+        def __call__(self, parser, namespace, values, option_string=None):
+            setattr(namespace, "best_of", None)
+            setattr(namespace, "beam_size", None)
+            setattr(namespace, "temperature_increment_on_fallback", None)
+    parser.add_argument('--efficient', help="Disable beam size and options that requires to sample several times, for an efficient decoding", action=ActionSetEfficient)
 
     args = parser.parse_args().__dict__
 
     args.pop("accurate")
+    args.pop("efficient")
 
     temperature = args.pop("temperature")
     temperature_increment_on_fallback = args.pop("temperature_increment_on_fallback")
@@ -1373,6 +1398,7 @@ def cli():
 
     naive_approach=args.pop("naive")
     remove_punctuation_from_words=not args.pop("punctuations_with_words")
+    compute_word_confidence = args.pop("compute_confidence")
 
     for audio_path in audio_files:
 
@@ -1382,6 +1408,7 @@ def cli():
             plot_word_alignment=plot_word_alignment,
             naive_approach=naive_approach,
             remove_punctuation_from_words=remove_punctuation_from_words,
+            compute_word_confidence=compute_word_confidence,
             **args
         )
 

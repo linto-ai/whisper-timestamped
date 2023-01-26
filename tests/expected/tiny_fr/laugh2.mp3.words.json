@@ -1,36 +1,43 @@
 {
-  "text": " Merci beaucoup.",
+  "text": " OK et plus...",
   "segments": [
     {
       "id": 0,
       "seek": 0,
-      "start": 0.16,
+      "start": 0.18,
       "end": 0.72,
-      "text": " Merci beaucoup.",
+      "text": " OK et plus...",
       "tokens": [
         50364,
-        19856,
-        8796,
-        13,
-        50414
+        2264,
+        1030,
+        1804,
+        485,
+        50408
       ],
-      "temperature": 0.0,
-      "avg_logprob": -1.3000399271647136,
-      "compression_ratio": 0.6521739130434783,
-      "no_speech_prob": 0.43056344985961914,
-      "confidence": 0.124,
+      "temperature": 1.0,
+      "avg_logprob": -3.6782133919852122,
+      "compression_ratio": 0.6190476190476191,
+      "no_speech_prob": 0.42993900179862976,
+      "confidence": 0.005,
       "words": [
         {
-          "text": "Merci",
-          "start": 0.16,
-          "end": 0.42,
-          "confidence": 0.072
+          "text": "OK",
+          "start": 0.18,
+          "end": 0.4,
+          "confidence": 0.001
         },
         {
-          "text": "beaucoup.",
-          "start": 0.42,
+          "text": "et",
+          "start": 0.4,
+          "end": 0.5,
+          "confidence": 0.004
+        },
+        {
+          "text": "plus...",
+          "start": 0.5,
           "end": 0.72,
-          "confidence": 0.216
+          "confidence": 0.011
         }
       ]
     }

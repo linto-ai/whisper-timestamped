@@ -1,85 +1,71 @@
 {
-  "text": " Je ne suis pas en train de faire ça.",
+  "text": " Uns quota ça que ça va faire.",
   "segments": [
     {
       "id": 0,
       "seek": 0,
       "start": 0.06,
-      "end": 1.64,
-      "text": " Je ne suis pas en train de faire ça.",
+      "end": 1.66,
+      "text": " Uns quota ça que ça va faire.",
       "tokens": [
         50364,
-        2588,
-        408,
-        7624,
-        1736,
-        465,
-        3847,
-        368,
-        4865,
+        25017,
+        45171,
         2788,
+        631,
+        2788,
+        2773,
+        4865,
         13,
-        50464
+        50454
       ],
-      "temperature": 0.0,
-      "avg_logprob": -1.531521723820613,
-      "compression_ratio": 0.8222222222222222,
-      "no_speech_prob": 0.3798484802246094,
-      "confidence": 0.174,
+      "temperature": 1.0,
+      "avg_logprob": -4.611271251331676,
+      "compression_ratio": 0.9117647058823529,
+      "no_speech_prob": 0.37783098220825195,
+      "confidence": 0.003,
       "words": [
         {
-          "text": "Je",
+          "text": "Uns",
           "start": 0.06,
-          "end": 0.68,
-          "confidence": 0.067
+          "end": 0.92,
+          "confidence": 0.0
         },
         {
-          "text": "ne",
-          "start": 0.68,
-          "end": 0.78,
-          "confidence": 0.139
-        },
-        {
-          "text": "suis",
-          "start": 0.78,
+          "text": "quota",
+          "start": 0.92,
           "end": 0.96,
-          "confidence": 0.185
+          "confidence": 0.0
         },
         {
-          "text": "pas",
+          "text": "ça",
           "start": 0.96,
-          "end": 1.12,
-          "confidence": 0.803
+          "end": 1.0,
+          "confidence": 0.003
         },
         {
-          "text": "en",
-          "start": 1.12,
-          "end": 1.28,
-          "confidence": 0.107
+          "text": "que",
+          "start": 1.0,
+          "end": 1.06,
+          "confidence": 0.007
         },
         {
-          "text": "train",
-          "start": 1.28,
-          "end": 1.38,
-          "confidence": 0.136
+          "text": "ça",
+          "start": 1.06,
+          "end": 1.1,
+          "confidence": 0.046
         },
         {
-          "text": "de",
-          "start": 1.38,
-          "end": 1.56,
-          "confidence": 0.632
+          "text": "va",
+          "start": 1.1,
+          "end": 1.18,
+          "confidence": 0.263
         },
         {
-          "text": "faire",
-          "start": 1.56,
-          "end": 1.6,
-          "confidence": 0.105
-        },
-        {
-          "text": "ça.",
-          "start": 1.6,
-          "end": 1.64,
-          "confidence": 0.112
+          "text": "faire.",
+          "start": 1.18,
+          "end": 1.66,
+          "confidence": 0.101
         }
       ]
     }

@@ -1,101 +1,2303 @@
 {
-  "text": "............",
+  "text": "... Le plus important au poker, ce ne sont pas les cartes. C'est ce que vous en faites. Oui, Namas, la référence du poker en ligne. Bonsoir, bonsoir à tous et tous, vous êtes sur BFM TV, nous sommes en direct, c'est bien sur BFM Storie avec tout ce qui fait l'actualité. Durant 60 minutes, ce sont des droplants des analyses des réactions que vous proposons. Il y avait eu un peu encore soutenir la réforme des retraites. Alors, ce qui est en gué. On s'apprends à faire. La faire verre, mais t'en coup, question posée par les leaders de la CFDT, répondons de Nicolas Sarposie et Rigber. Portura, le débat sur les retraites, on en parle dans BFM Storie, avec le numéro de la CFDT. Et puis, une bataille qui a démarré, c'est l'entre-marin Nepen, et Bruno Gonnich, la bataille du successeau de Jean-Maré Lepen, la tête du Frondationnel, la tournée, c'est de campagne de Marin Nepen, comme en faisant aujourd'hui dans le verre, Marin Nepen sera en directe dans BFM Storie. Reste avec nous, Marin Nepen, dans moins de 3.0. Mais l'actualité, c'est aussi aujourd'hui, un dernier adieu dernier adieu à Laurent Finion, c'était aussi ma terre du père-la-chèse, à Paris, l'ancien double vainqueur du tour de France, vainqueur par le cancer à 50 ans, a été incineré en petit comité aujourd'hui.",
   "segments": [
     {
       "id": 0,
       "seek": 0,
-      "start": 0.08,
-      "end": 0.76,
+      "start": 0.02,
+      "end": 0.52,
       "text": "...",
       "tokens": [
         50364,
         1097,
-        50614
+        50664
       ],
-      "temperature": 0.0,
-      "avg_logprob": -1.4265364408493042,
+      "temperature": 1.0,
+      "avg_logprob": -1.652937889099121,
       "compression_ratio": 0.2727272727272727,
-      "no_speech_prob": 0.5112143754959106,
-      "confidence": 0.224,
+      "no_speech_prob": 0.5112144351005554,
+      "confidence": 0.058,
       "words": [
         {
           "text": "...",
-          "start": 0.08,
-          "end": 0.76,
-          "confidence": 0.224
+          "start": 0.02,
+          "end": 0.52,
+          "confidence": 0.058
         }
       ]
     },
     {
       "id": 1,
-      "seek": 6000,
-      "start": 60.02,
-      "end": 69.4,
-      "text": "...",
+      "seek": 3000,
+      "start": 29.52,
+      "end": 32.84,
+      "text": " Le plus important au poker, ce ne sont pas les cartes.",
       "tokens": [
-        50364,
-        1097,
-        51714
+        1456,
+        1804,
+        1021,
+        1609,
+        36863,
+        11,
+        1769,
+        408,
+        4900,
+        1736,
+        1512,
+        5467,
+        279,
+        13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.973953366279602,
-      "compression_ratio": 0.2727272727272727,
-      "no_speech_prob": 0.8780310153961182,
-      "confidence": 0.466,
+      "avg_logprob": -0.4651767005605146,
+      "compression_ratio": 1.518987341772152,
+      "no_speech_prob": 0.27455028891563416,
+      "confidence": 0.439,
       "words": [
         {
-          "text": "...",
-          "start": 60.02,
-          "end": 69.4,
-          "confidence": 0.466
+          "text": "Le",
+          "start": 29.52,
+          "end": 30.96,
+          "confidence": 0.174
+        },
+        {
+          "text": "plus",
+          "start": 30.96,
+          "end": 31.14,
+          "confidence": 0.841
+        },
+        {
+          "text": "important",
+          "start": 31.14,
+          "end": 31.42,
+          "confidence": 0.991
+        },
+        {
+          "text": "au",
+          "start": 31.42,
+          "end": 31.58,
+          "confidence": 0.324
+        },
+        {
+          "text": "poker,",
+          "start": 31.58,
+          "end": 31.9,
+          "confidence": 0.044
+        },
+        {
+          "text": "ce",
+          "start": 31.9,
+          "end": 31.96,
+          "confidence": 0.496
+        },
+        {
+          "text": "ne",
+          "start": 31.96,
+          "end": 32.06,
+          "confidence": 0.506
+        },
+        {
+          "text": "sont",
+          "start": 32.06,
+          "end": 32.12,
+          "confidence": 0.979
+        },
+        {
+          "text": "pas",
+          "start": 32.12,
+          "end": 32.26,
+          "confidence": 0.994
+        },
+        {
+          "text": "les",
+          "start": 32.26,
+          "end": 32.36,
+          "confidence": 0.719
+        },
+        {
+          "text": "cartes.",
+          "start": 32.36,
+          "end": 32.84,
+          "confidence": 0.85
         }
       ]
     },
     {
       "id": 2,
-      "seek": 9000,
-      "start": 96.42,
-      "end": 96.46,
-      "text": "...",
+      "seek": 3000,
+      "start": 33.38,
+      "end": 34.24,
+      "text": " C'est ce que vous en faites.",
       "tokens": [
-        1097
+        383,
+        6,
+        377,
+        1769,
+        631,
+        2630,
+        465,
+        29902,
+        13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.8283956527709961,
-      "compression_ratio": 0.2727272727272727,
-      "no_speech_prob": 0.641629695892334,
-      "confidence": 0.842,
+      "avg_logprob": -0.4651767005605146,
+      "compression_ratio": 1.518987341772152,
+      "no_speech_prob": 0.27455028891563416,
+      "confidence": 0.6,
       "words": [
         {
-          "text": "...",
-          "start": 96.42,
-          "end": 96.46,
-          "confidence": 0.842
+          "text": "C'est",
+          "start": 33.38,
+          "end": 33.62,
+          "confidence": 0.556
+        },
+        {
+          "text": "ce",
+          "start": 33.62,
+          "end": 33.66,
+          "confidence": 0.345
+        },
+        {
+          "text": "que",
+          "start": 33.66,
+          "end": 33.7,
+          "confidence": 0.724
+        },
+        {
+          "text": "vous",
+          "start": 33.7,
+          "end": 33.84,
+          "confidence": 0.989
+        },
+        {
+          "text": "en",
+          "start": 33.84,
+          "end": 33.94,
+          "confidence": 0.869
+        },
+        {
+          "text": "faites.",
+          "start": 33.94,
+          "end": 34.24,
+          "confidence": 0.525
         }
       ]
     },
     {
       "id": 3,
-      "seek": 10500,
-      "start": 105.04,
-      "end": 117.76,
-      "text": "...",
+      "seek": 3000,
+      "start": 34.52,
+      "end": 38.86,
+      "text": " Oui, Namas, la référence du poker en ligne.",
       "tokens": [
-        50364,
-        1097,
-        51714
+        14005,
+        11,
+        10684,
+        296,
+        11,
+        635,
+        30170,
+        41635,
+        1581,
+        36863,
+        465,
+        34207,
+        13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.728730320930481,
-      "compression_ratio": 0.2727272727272727,
-      "no_speech_prob": 0.25682491064071655,
-      "confidence": 0.764,
+      "avg_logprob": -0.4651767005605146,
+      "compression_ratio": 1.518987341772152,
+      "no_speech_prob": 0.27455028891563416,
+      "confidence": 0.217,
       "words": [
         {
-          "text": "...",
-          "start": 105.04,
-          "end": 117.76,
-          "confidence": 0.764
+          "text": "Oui,",
+          "start": 34.52,
+          "end": 36.42,
+          "confidence": 0.098
+        },
+        {
+          "text": "Namas,",
+          "start": 36.42,
+          "end": 37.18,
+          "confidence": 0.24
+        },
+        {
+          "text": "la",
+          "start": 37.18,
+          "end": 37.26,
+          "confidence": 0.455
+        },
+        {
+          "text": "référence",
+          "start": 37.26,
+          "end": 37.68,
+          "confidence": 0.38
+        },
+        {
+          "text": "du",
+          "start": 37.68,
+          "end": 37.9,
+          "confidence": 0.864
+        },
+        {
+          "text": "poker",
+          "start": 37.9,
+          "end": 38.12,
+          "confidence": 0.023
+        },
+        {
+          "text": "en",
+          "start": 38.12,
+          "end": 38.36,
+          "confidence": 0.023
+        },
+        {
+          "text": "ligne.",
+          "start": 38.36,
+          "end": 38.86,
+          "confidence": 0.765
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "seek": 3000,
+      "start": 44.88,
+      "end": 46.46,
+      "text": " Bonsoir, bonsoir à tous et tous,",
+      "tokens": [
+        7368,
+        539,
+        347,
+        11,
+        4428,
+        539,
+        347,
+        1531,
+        8317,
+        1030,
+        8317,
+        11
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4651767005605146,
+      "compression_ratio": 1.518987341772152,
+      "no_speech_prob": 0.27455028891563416,
+      "confidence": 0.665,
+      "words": [
+        {
+          "text": "Bonsoir,",
+          "start": 44.88,
+          "end": 45.42,
+          "confidence": 0.569
+        },
+        {
+          "text": "bonsoir",
+          "start": 45.42,
+          "end": 45.76,
+          "confidence": 0.921
+        },
+        {
+          "text": "à",
+          "start": 45.76,
+          "end": 45.82,
+          "confidence": 0.567
+        },
+        {
+          "text": "tous",
+          "start": 45.82,
+          "end": 45.92,
+          "confidence": 0.549
+        },
+        {
+          "text": "et",
+          "start": 45.92,
+          "end": 46.1,
+          "confidence": 0.555
+        },
+        {
+          "text": "tous,",
+          "start": 46.1,
+          "end": 46.46,
+          "confidence": 0.727
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "seek": 3000,
+      "start": 46.52,
+      "end": 49.46,
+      "text": " vous êtes sur BFM TV, nous sommes en direct,",
+      "tokens": [
+        2630,
+        18935,
+        1022,
+        363,
+        37,
+        44,
+        3558,
+        11,
+        4666,
+        25232,
+        465,
+        2047,
+        11
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4651767005605146,
+      "compression_ratio": 1.518987341772152,
+      "no_speech_prob": 0.27455028891563416,
+      "confidence": 0.371,
+      "words": [
+        {
+          "text": "vous",
+          "start": 46.52,
+          "end": 46.68,
+          "confidence": 0.045
+        },
+        {
+          "text": "êtes",
+          "start": 46.68,
+          "end": 46.84,
+          "confidence": 0.946
+        },
+        {
+          "text": "sur",
+          "start": 46.84,
+          "end": 47.06,
+          "confidence": 0.43
+        },
+        {
+          "text": "BFM",
+          "start": 47.06,
+          "end": 47.52,
+          "confidence": 0.512
+        },
+        {
+          "text": "TV,",
+          "start": 47.52,
+          "end": 47.84,
+          "confidence": 0.18
+        },
+        {
+          "text": "nous",
+          "start": 47.84,
+          "end": 47.88,
+          "confidence": 0.903
+        },
+        {
+          "text": "sommes",
+          "start": 47.88,
+          "end": 48.02,
+          "confidence": 0.995
+        },
+        {
+          "text": "en",
+          "start": 48.02,
+          "end": 48.16,
+          "confidence": 0.725
+        },
+        {
+          "text": "direct,",
+          "start": 48.16,
+          "end": 49.46,
+          "confidence": 0.22
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "seek": 3000,
+      "start": 49.48,
+      "end": 51.54,
+      "text": " c'est bien sur BFM Storie avec tout ce qui fait l'actualité.",
+      "tokens": [
+        269,
+        6,
+        377,
+        3610,
+        1022,
+        363,
+        37,
+        44,
+        745,
+        17473,
+        4163,
+        3486,
+        1769,
+        1956,
+        3887,
+        287,
+        6,
+        578,
+        901,
+        5066,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4651767005605146,
+      "compression_ratio": 1.518987341772152,
+      "no_speech_prob": 0.27455028891563416,
+      "confidence": 0.141,
+      "words": [
+        {
+          "text": "c'est",
+          "start": 49.48,
+          "end": 49.64,
+          "confidence": 0.221
+        },
+        {
+          "text": "bien",
+          "start": 49.64,
+          "end": 49.74,
+          "confidence": 0.003
+        },
+        {
+          "text": "sur",
+          "start": 49.74,
+          "end": 49.78,
+          "confidence": 0.003
+        },
+        {
+          "text": "BFM",
+          "start": 49.78,
+          "end": 49.82,
+          "confidence": 0.01
+        },
+        {
+          "text": "Storie",
+          "start": 49.82,
+          "end": 50.0,
+          "confidence": 0.075
+        },
+        {
+          "text": "avec",
+          "start": 50.0,
+          "end": 50.24,
+          "confidence": 0.702
+        },
+        {
+          "text": "tout",
+          "start": 50.24,
+          "end": 50.36,
+          "confidence": 0.039
+        },
+        {
+          "text": "ce",
+          "start": 50.36,
+          "end": 50.52,
+          "confidence": 0.836
+        },
+        {
+          "text": "qui",
+          "start": 50.52,
+          "end": 50.58,
+          "confidence": 0.668
+        },
+        {
+          "text": "fait",
+          "start": 50.58,
+          "end": 50.64,
+          "confidence": 0.963
+        },
+        {
+          "text": "l'actualité.",
+          "start": 50.64,
+          "end": 51.54,
+          "confidence": 0.741
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "seek": 3000,
+      "start": 51.92,
+      "end": 54.2,
+      "text": " Durant 60 minutes, ce sont des droplants",
+      "tokens": [
+        13710,
+        394,
+        4060,
+        2077,
+        11,
+        1769,
+        4900,
+        730,
+        3789,
+        564,
+        1719
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4651767005605146,
+      "compression_ratio": 1.518987341772152,
+      "no_speech_prob": 0.27455028891563416,
+      "confidence": 0.306,
+      "words": [
+        {
+          "text": "Durant",
+          "start": 51.92,
+          "end": 52.3,
+          "confidence": 0.033
+        },
+        {
+          "text": "60",
+          "start": 52.3,
+          "end": 52.64,
+          "confidence": 0.766
+        },
+        {
+          "text": "minutes,",
+          "start": 52.64,
+          "end": 53.08,
+          "confidence": 0.458
+        },
+        {
+          "text": "ce",
+          "start": 53.08,
+          "end": 53.3,
+          "confidence": 0.744
+        },
+        {
+          "text": "sont",
+          "start": 53.3,
+          "end": 53.62,
+          "confidence": 0.797
+        },
+        {
+          "text": "des",
+          "start": 53.62,
+          "end": 53.8,
+          "confidence": 0.956
+        },
+        {
+          "text": "droplants",
+          "start": 53.8,
+          "end": 54.2,
+          "confidence": 0.283
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "seek": 3000,
+      "start": 54.22,
+      "end": 56.4,
+      "text": " des analyses des réactions que vous proposons.",
+      "tokens": [
+        730,
+        37560,
+        730,
+        3960,
+        12299,
+        631,
+        2630,
+        7532,
+        892,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4651767005605146,
+      "compression_ratio": 1.518987341772152,
+      "no_speech_prob": 0.27455028891563416,
+      "confidence": 0.379,
+      "words": [
+        {
+          "text": "des",
+          "start": 54.22,
+          "end": 54.42,
+          "confidence": 0.148
+        },
+        {
+          "text": "analyses",
+          "start": 54.42,
+          "end": 54.68,
+          "confidence": 0.303
+        },
+        {
+          "text": "des",
+          "start": 54.68,
+          "end": 54.86,
+          "confidence": 0.137
+        },
+        {
+          "text": "réactions",
+          "start": 54.86,
+          "end": 55.18,
+          "confidence": 0.338
+        },
+        {
+          "text": "que",
+          "start": 55.18,
+          "end": 55.4,
+          "confidence": 0.683
+        },
+        {
+          "text": "vous",
+          "start": 55.4,
+          "end": 55.54,
+          "confidence": 0.981
+        },
+        {
+          "text": "proposons.",
+          "start": 55.54,
+          "end": 56.4,
+          "confidence": 0.508
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "seek": 5700,
+      "start": 56.66,
+      "end": 59.76,
+      "text": " Il y avait eu un peu encore soutenir la réforme des retraites.",
+      "tokens": [
+        4416,
+        288,
+        11853,
+        2228,
+        517,
+        5604,
+        10122,
+        29350,
+        268,
+        347,
+        635,
+        3960,
+        44562,
+        730,
+        49356,
+        3324,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5324652898879279,
+      "compression_ratio": 1.5975975975975976,
+      "no_speech_prob": 0.014059656299650669,
+      "confidence": 0.236,
+      "words": [
+        {
+          "text": "Il",
+          "start": 56.66,
+          "end": 57.02,
+          "confidence": 0.002
+        },
+        {
+          "text": "y",
+          "start": 57.02,
+          "end": 57.06,
+          "confidence": 0.098
+        },
+        {
+          "text": "avait",
+          "start": 57.06,
+          "end": 57.12,
+          "confidence": 0.067
+        },
+        {
+          "text": "eu",
+          "start": 57.12,
+          "end": 57.28,
+          "confidence": 0.053
+        },
+        {
+          "text": "un",
+          "start": 57.28,
+          "end": 57.38,
+          "confidence": 0.246
+        },
+        {
+          "text": "peu",
+          "start": 57.38,
+          "end": 57.42,
+          "confidence": 0.637
+        },
+        {
+          "text": "encore",
+          "start": 57.42,
+          "end": 57.92,
+          "confidence": 0.157
+        },
+        {
+          "text": "soutenir",
+          "start": 57.92,
+          "end": 58.6,
+          "confidence": 0.325
+        },
+        {
+          "text": "la",
+          "start": 58.6,
+          "end": 58.7,
+          "confidence": 0.908
+        },
+        {
+          "text": "réforme",
+          "start": 58.7,
+          "end": 59.1,
+          "confidence": 0.971
+        },
+        {
+          "text": "des",
+          "start": 59.1,
+          "end": 59.34,
+          "confidence": 0.742
+        },
+        {
+          "text": "retraites.",
+          "start": 59.34,
+          "end": 59.76,
+          "confidence": 0.376
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "seek": 5700,
+      "start": 59.78,
+      "end": 61.36,
+      "text": " Alors, ce qui est en gué.",
+      "tokens": [
+        9946,
+        11,
+        1769,
+        1956,
+        871,
+        465,
+        695,
+        526,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5324652898879279,
+      "compression_ratio": 1.5975975975975976,
+      "no_speech_prob": 0.014059656299650669,
+      "confidence": 0.17,
+      "words": [
+        {
+          "text": "Alors,",
+          "start": 59.78,
+          "end": 60.06,
+          "confidence": 0.16
+        },
+        {
+          "text": "ce",
+          "start": 60.06,
+          "end": 60.1,
+          "confidence": 0.926
+        },
+        {
+          "text": "qui",
+          "start": 60.1,
+          "end": 60.14,
+          "confidence": 0.655
+        },
+        {
+          "text": "est",
+          "start": 60.14,
+          "end": 60.3,
+          "confidence": 0.342
+        },
+        {
+          "text": "en",
+          "start": 60.3,
+          "end": 60.92,
+          "confidence": 0.026
+        },
+        {
+          "text": "gué.",
+          "start": 60.92,
+          "end": 61.36,
+          "confidence": 0.095
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "seek": 5700,
+      "start": 61.56,
+      "end": 62.94,
+      "text": " On s'apprends à faire.",
+      "tokens": [
+        1282,
+        262,
+        6,
+        1746,
+        4542,
+        82,
+        1531,
+        4865,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5324652898879279,
+      "compression_ratio": 1.5975975975975976,
+      "no_speech_prob": 0.014059656299650669,
+      "confidence": 0.152,
+      "words": [
+        {
+          "text": "On",
+          "start": 61.56,
+          "end": 62.08,
+          "confidence": 0.019
+        },
+        {
+          "text": "s'apprends",
+          "start": 62.08,
+          "end": 62.7,
+          "confidence": 0.244
+        },
+        {
+          "text": "à",
+          "start": 62.7,
+          "end": 62.74,
+          "confidence": 0.155
+        },
+        {
+          "text": "faire.",
+          "start": 62.74,
+          "end": 62.94,
+          "confidence": 0.131
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "seek": 5700,
+      "start": 62.96,
+      "end": 64.0,
+      "text": " La faire verre, mais t'en coup,",
+      "tokens": [
+        2369,
+        4865,
+        1306,
+        265,
+        11,
+        2420,
+        256,
+        6,
+        268,
+        8682,
+        11
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5324652898879279,
+      "compression_ratio": 1.5975975975975976,
+      "no_speech_prob": 0.014059656299650669,
+      "confidence": 0.23,
+      "words": [
+        {
+          "text": "La",
+          "start": 62.96,
+          "end": 63.1,
+          "confidence": 0.044
+        },
+        {
+          "text": "faire",
+          "start": 63.1,
+          "end": 63.22,
+          "confidence": 0.24
+        },
+        {
+          "text": "verre,",
+          "start": 63.22,
+          "end": 63.54,
+          "confidence": 0.148
+        },
+        {
+          "text": "mais",
+          "start": 63.54,
+          "end": 63.58,
+          "confidence": 0.711
+        },
+        {
+          "text": "t'en",
+          "start": 63.58,
+          "end": 63.76,
+          "confidence": 0.619
+        },
+        {
+          "text": "coup,",
+          "start": 63.76,
+          "end": 64.0,
+          "confidence": 0.129
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "seek": 5700,
+      "start": 64.02,
+      "end": 66.62,
+      "text": " question posée par les leaders de la CFDT,",
+      "tokens": [
+        1168,
+        1366,
+        3856,
+        971,
+        1512,
+        3523,
+        368,
+        635,
+        383,
+        37,
+        35,
+        51,
+        11
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5324652898879279,
+      "compression_ratio": 1.5975975975975976,
+      "no_speech_prob": 0.014059656299650669,
+      "confidence": 0.356,
+      "words": [
+        {
+          "text": "question",
+          "start": 64.02,
+          "end": 64.32,
+          "confidence": 0.044
+        },
+        {
+          "text": "posée",
+          "start": 64.32,
+          "end": 64.68,
+          "confidence": 0.661
+        },
+        {
+          "text": "par",
+          "start": 64.68,
+          "end": 64.88,
+          "confidence": 0.928
+        },
+        {
+          "text": "les",
+          "start": 64.88,
+          "end": 65.04,
+          "confidence": 0.865
+        },
+        {
+          "text": "leaders",
+          "start": 65.04,
+          "end": 65.42,
+          "confidence": 0.533
+        },
+        {
+          "text": "de",
+          "start": 65.42,
+          "end": 65.8,
+          "confidence": 0.899
+        },
+        {
+          "text": "la",
+          "start": 65.8,
+          "end": 65.94,
+          "confidence": 0.984
+        },
+        {
+          "text": "CFDT,",
+          "start": 65.94,
+          "end": 66.62,
+          "confidence": 0.183
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "seek": 5700,
+      "start": 66.64,
+      "end": 69.42,
+      "text": " répondons de Nicolas Sarposie et Rigber.",
+      "tokens": [
+        26027,
+        892,
+        368,
+        38268,
+        318,
+        6529,
+        329,
+        414,
+        1030,
+        42720,
+        607,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5324652898879279,
+      "compression_ratio": 1.5975975975975976,
+      "no_speech_prob": 0.014059656299650669,
+      "confidence": 0.219,
+      "words": [
+        {
+          "text": "répondons",
+          "start": 66.64,
+          "end": 67.98,
+          "confidence": 0.004
+        },
+        {
+          "text": "de",
+          "start": 67.98,
+          "end": 68.02,
+          "confidence": 0.777
+        },
+        {
+          "text": "Nicolas",
+          "start": 68.02,
+          "end": 68.26,
+          "confidence": 0.888
+        },
+        {
+          "text": "Sarposie",
+          "start": 68.26,
+          "end": 68.9,
+          "confidence": 0.375
+        },
+        {
+          "text": "et",
+          "start": 68.9,
+          "end": 69.04,
+          "confidence": 0.798
+        },
+        {
+          "text": "Rigber.",
+          "start": 69.04,
+          "end": 69.42,
+          "confidence": 0.397
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "seek": 5700,
+      "start": 69.8,
+      "end": 72.26,
+      "text": " Portura, le débat sur les retraites,",
+      "tokens": [
+        6733,
+        2991,
+        11,
+        476,
+        2795,
+        11980,
+        1022,
+        1512,
+        49356,
+        3324,
+        11
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5324652898879279,
+      "compression_ratio": 1.5975975975975976,
+      "no_speech_prob": 0.014059656299650669,
+      "confidence": 0.425,
+      "words": [
+        {
+          "text": "Portura,",
+          "start": 69.8,
+          "end": 70.52,
+          "confidence": 0.076
+        },
+        {
+          "text": "le",
+          "start": 70.52,
+          "end": 70.94,
+          "confidence": 0.896
+        },
+        {
+          "text": "débat",
+          "start": 70.94,
+          "end": 71.36,
+          "confidence": 0.952
+        },
+        {
+          "text": "sur",
+          "start": 71.36,
+          "end": 71.66,
+          "confidence": 0.944
+        },
+        {
+          "text": "les",
+          "start": 71.66,
+          "end": 71.76,
+          "confidence": 0.966
+        },
+        {
+          "text": "retraites,",
+          "start": 71.76,
+          "end": 72.26,
+          "confidence": 0.632
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "seek": 5700,
+      "start": 72.28,
+      "end": 74.46,
+      "text": " on en parle dans BFM Storie,",
+      "tokens": [
+        322,
+        465,
+        18508,
+        2680,
+        363,
+        37,
+        44,
+        745,
+        17473,
+        11
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5324652898879279,
+      "compression_ratio": 1.5975975975975976,
+      "no_speech_prob": 0.014059656299650669,
+      "confidence": 0.021,
+      "words": [
+        {
+          "text": "on",
+          "start": 72.28,
+          "end": 72.46,
+          "confidence": 0.11
+        },
+        {
+          "text": "en",
+          "start": 72.46,
+          "end": 72.56,
+          "confidence": 0.282
+        },
+        {
+          "text": "parle",
+          "start": 72.56,
+          "end": 72.94,
+          "confidence": 0.98
+        },
+        {
+          "text": "dans",
+          "start": 72.94,
+          "end": 73.3,
+          "confidence": 0.023
+        },
+        {
+          "text": "BFM",
+          "start": 73.3,
+          "end": 74.38,
+          "confidence": 0.081
+        },
+        {
+          "text": "Storie,",
+          "start": 74.38,
+          "end": 74.46,
+          "confidence": 0.0
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 5700,
+      "start": 74.54,
+      "end": 76.42,
+      "text": " avec le numéro de la CFDT.",
+      "tokens": [
+        4163,
+        476,
+        49525,
+        368,
+        635,
+        383,
+        37,
+        35,
+        51,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5324652898879279,
+      "compression_ratio": 1.5975975975975976,
+      "no_speech_prob": 0.014059656299650669,
+      "confidence": 0.356,
+      "words": [
+        {
+          "text": "avec",
+          "start": 74.54,
+          "end": 74.98,
+          "confidence": 0.368
+        },
+        {
+          "text": "le",
+          "start": 74.98,
+          "end": 75.24,
+          "confidence": 0.294
+        },
+        {
+          "text": "numéro",
+          "start": 75.24,
+          "end": 75.48,
+          "confidence": 0.929
+        },
+        {
+          "text": "de",
+          "start": 75.48,
+          "end": 75.68,
+          "confidence": 0.989
+        },
+        {
+          "text": "la",
+          "start": 75.68,
+          "end": 75.78,
+          "confidence": 0.944
+        },
+        {
+          "text": "CFDT.",
+          "start": 75.78,
+          "end": 76.42,
+          "confidence": 0.204
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "seek": 5700,
+      "start": 76.78,
+      "end": 78.18,
+      "text": " Et puis, une bataille qui a démarré,",
+      "tokens": [
+        3790,
+        9093,
+        11,
+        2251,
+        272,
+        3274,
+        3409,
+        1956,
+        257,
+        22761,
+        2284,
+        526,
+        11
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5324652898879279,
+      "compression_ratio": 1.5975975975975976,
+      "no_speech_prob": 0.014059656299650669,
+      "confidence": 0.632,
+      "words": [
+        {
+          "text": "Et",
+          "start": 76.78,
+          "end": 76.94,
+          "confidence": 0.51
+        },
+        {
+          "text": "puis,",
+          "start": 76.94,
+          "end": 77.22,
+          "confidence": 0.403
+        },
+        {
+          "text": "une",
+          "start": 77.22,
+          "end": 77.26,
+          "confidence": 0.76
+        },
+        {
+          "text": "bataille",
+          "start": 77.26,
+          "end": 77.58,
+          "confidence": 0.837
+        },
+        {
+          "text": "qui",
+          "start": 77.58,
+          "end": 77.64,
+          "confidence": 0.748
+        },
+        {
+          "text": "a",
+          "start": 77.64,
+          "end": 77.68,
+          "confidence": 0.415
+        },
+        {
+          "text": "démarré,",
+          "start": 77.68,
+          "end": 78.18,
+          "confidence": 0.69
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "seek": 5700,
+      "start": 78.2,
+      "end": 79.24,
+      "text": " c'est l'entre-marin Nepen,",
+      "tokens": [
+        269,
+        6,
+        377,
+        287,
+        6,
+        24570,
+        12,
+        6209,
+        259,
+        426,
+        595,
+        268,
+        11
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5324652898879279,
+      "compression_ratio": 1.5975975975975976,
+      "no_speech_prob": 0.014059656299650669,
+      "confidence": 0.17,
+      "words": [
+        {
+          "text": "c'est",
+          "start": 78.2,
+          "end": 78.28,
+          "confidence": 0.207
+        },
+        {
+          "text": "l'entre-marin",
+          "start": 78.28,
+          "end": 78.9,
+          "confidence": 0.444
+        },
+        {
+          "text": "Nepen,",
+          "start": 78.9,
+          "end": 79.24,
+          "confidence": 0.035
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "seek": 5700,
+      "start": 79.26,
+      "end": 80.04,
+      "text": " et Bruno Gonnich,",
+      "tokens": [
+        1030,
+        23046,
+        460,
+        19968,
+        480,
+        11
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5324652898879279,
+      "compression_ratio": 1.5975975975975976,
+      "no_speech_prob": 0.014059656299650669,
+      "confidence": 0.015,
+      "words": [
+        {
+          "text": "et",
+          "start": 79.26,
+          "end": 79.3,
+          "confidence": 0.045
+        },
+        {
+          "text": "Bruno",
+          "start": 79.3,
+          "end": 79.48,
+          "confidence": 0.002
+        },
+        {
+          "text": "Gonnich,",
+          "start": 79.48,
+          "end": 80.04,
+          "confidence": 0.02
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "seek": 5700,
+      "start": 80.06,
+      "end": 82.0,
+      "text": " la bataille du successeau de Jean-Maré Lepen,",
+      "tokens": [
+        635,
+        272,
+        3274,
+        3409,
+        1581,
+        1965,
+        887,
+        405,
+        1459,
+        368,
+        13854,
+        12,
+        16639,
+        526,
+        441,
+        595,
+        268,
+        11
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5324652898879279,
+      "compression_ratio": 1.5975975975975976,
+      "no_speech_prob": 0.014059656299650669,
+      "confidence": 0.177,
+      "words": [
+        {
+          "text": "la",
+          "start": 80.06,
+          "end": 80.26,
+          "confidence": 0.139
+        },
+        {
+          "text": "bataille",
+          "start": 80.26,
+          "end": 80.6,
+          "confidence": 0.4
+        },
+        {
+          "text": "du",
+          "start": 80.6,
+          "end": 80.68,
+          "confidence": 0.641
+        },
+        {
+          "text": "successeau",
+          "start": 80.68,
+          "end": 81.22,
+          "confidence": 0.177
+        },
+        {
+          "text": "de",
+          "start": 81.22,
+          "end": 81.34,
+          "confidence": 0.807
+        },
+        {
+          "text": "Jean-Maré",
+          "start": 81.34,
+          "end": 81.68,
+          "confidence": 0.273
+        },
+        {
+          "text": "Lepen,",
+          "start": 81.68,
+          "end": 82.0,
+          "confidence": 0.033
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "seek": 5700,
+      "start": 82.18,
+      "end": 83.18,
+      "text": " la tête du Frondationnel,",
+      "tokens": [
+        635,
+        24661,
+        1581,
+        1526,
+        684,
+        399,
+        6396,
+        11
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5324652898879279,
+      "compression_ratio": 1.5975975975975976,
+      "no_speech_prob": 0.014059656299650669,
+      "confidence": 0.106,
+      "words": [
+        {
+          "text": "la",
+          "start": 82.18,
+          "end": 82.22,
+          "confidence": 0.01
+        },
+        {
+          "text": "tête",
+          "start": 82.22,
+          "end": 82.32,
+          "confidence": 0.032
+        },
+        {
+          "text": "du",
+          "start": 82.32,
+          "end": 82.42,
+          "confidence": 0.69
+        },
+        {
+          "text": "Frondationnel,",
+          "start": 82.42,
+          "end": 83.18,
+          "confidence": 0.147
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "seek": 5700,
+      "start": 83.3,
+      "end": 85.44,
+      "text": " la tournée, c'est de campagne de Marin Nepen,",
+      "tokens": [
+        635,
+        3512,
+        77,
+        3856,
+        11,
+        269,
+        6,
+        377,
+        368,
+        2255,
+        13887,
+        368,
+        2039,
+        259,
+        426,
+        595,
+        268,
+        11
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5324652898879279,
+      "compression_ratio": 1.5975975975975976,
+      "no_speech_prob": 0.014059656299650669,
+      "confidence": 0.094,
+      "words": [
+        {
+          "text": "la",
+          "start": 83.3,
+          "end": 83.56,
+          "confidence": 0.037
+        },
+        {
+          "text": "tournée,",
+          "start": 83.56,
+          "end": 84.12,
+          "confidence": 0.254
+        },
+        {
+          "text": "c'est",
+          "start": 84.12,
+          "end": 84.22,
+          "confidence": 0.484
+        },
+        {
+          "text": "de",
+          "start": 84.22,
+          "end": 84.36,
+          "confidence": 0.378
+        },
+        {
+          "text": "campagne",
+          "start": 84.36,
+          "end": 84.74,
+          "confidence": 0.043
+        },
+        {
+          "text": "de",
+          "start": 84.74,
+          "end": 84.88,
+          "confidence": 0.865
+        },
+        {
+          "text": "Marin",
+          "start": 84.88,
+          "end": 85.14,
+          "confidence": 0.042
+        },
+        {
+          "text": "Nepen,",
+          "start": 85.14,
+          "end": 85.44,
+          "confidence": 0.011
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "seek": 8500,
+      "start": 85.46,
+      "end": 87.38,
+      "text": " comme en faisant aujourd'hui dans le verre,",
+      "tokens": [
+        5173,
+        465,
+        12153,
+        394,
+        14023,
+        6,
+        10556,
+        2680,
+        476,
+        1306,
+        265,
+        11
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.41841821763121967,
+      "compression_ratio": 1.4627659574468086,
+      "no_speech_prob": 2.1622050553560257e-05,
+      "confidence": 0.373,
+      "words": [
+        {
+          "text": "comme",
+          "start": 85.46,
+          "end": 85.62,
+          "confidence": 0.074
+        },
+        {
+          "text": "en",
+          "start": 85.62,
+          "end": 85.74,
+          "confidence": 0.693
+        },
+        {
+          "text": "faisant",
+          "start": 85.74,
+          "end": 85.94,
+          "confidence": 0.115
+        },
+        {
+          "text": "aujourd'hui",
+          "start": 85.94,
+          "end": 86.14,
+          "confidence": 0.516
+        },
+        {
+          "text": "dans",
+          "start": 86.14,
+          "end": 86.24,
+          "confidence": 0.882
+        },
+        {
+          "text": "le",
+          "start": 86.24,
+          "end": 86.34,
+          "confidence": 0.95
+        },
+        {
+          "text": "verre,",
+          "start": 86.34,
+          "end": 87.38,
+          "confidence": 0.456
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "seek": 8500,
+      "start": 87.4,
+      "end": 88.94,
+      "text": " Marin Nepen sera en directe dans BFM Storie.",
+      "tokens": [
+        2039,
+        259,
+        426,
+        595,
+        268,
+        15021,
+        465,
+        2047,
+        68,
+        2680,
+        363,
+        37,
+        44,
+        745,
+        17473,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.41841821763121967,
+      "compression_ratio": 1.4627659574468086,
+      "no_speech_prob": 2.1622050553560257e-05,
+      "confidence": 0.016,
+      "words": [
+        {
+          "text": "Marin",
+          "start": 87.4,
+          "end": 87.58,
+          "confidence": 0.001
+        },
+        {
+          "text": "Nepen",
+          "start": 87.58,
+          "end": 87.88,
+          "confidence": 0.0
+        },
+        {
+          "text": "sera",
+          "start": 87.88,
+          "end": 87.92,
+          "confidence": 0.001
+        },
+        {
+          "text": "en",
+          "start": 87.92,
+          "end": 87.96,
+          "confidence": 0.091
+        },
+        {
+          "text": "directe",
+          "start": 87.96,
+          "end": 88.06,
+          "confidence": 0.818
+        },
+        {
+          "text": "dans",
+          "start": 88.06,
+          "end": 88.28,
+          "confidence": 0.586
+        },
+        {
+          "text": "BFM",
+          "start": 88.28,
+          "end": 88.68,
+          "confidence": 0.505
+        },
+        {
+          "text": "Storie.",
+          "start": 88.68,
+          "end": 88.94,
+          "confidence": 0.01
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "seek": 8500,
+      "start": 89.0,
+      "end": 89.9,
+      "text": " Reste avec nous,",
+      "tokens": [
+        497,
+        8887,
+        4163,
+        4666,
+        11
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.41841821763121967,
+      "compression_ratio": 1.4627659574468086,
+      "no_speech_prob": 2.1622050553560257e-05,
+      "confidence": 0.238,
+      "words": [
+        {
+          "text": "Reste",
+          "start": 89.0,
+          "end": 89.24,
+          "confidence": 0.079
+        },
+        {
+          "text": "avec",
+          "start": 89.24,
+          "end": 89.56,
+          "confidence": 0.443
+        },
+        {
+          "text": "nous,",
+          "start": 89.56,
+          "end": 89.9,
+          "confidence": 0.526
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "seek": 8500,
+      "start": 89.92,
+      "end": 91.78,
+      "text": " Marin Nepen, dans moins de 3.0.",
+      "tokens": [
+        2039,
+        259,
+        426,
+        595,
+        268,
+        11,
+        2680,
+        13099,
+        368,
+        805,
+        13,
+        15,
+        13
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.41841821763121967,
+      "compression_ratio": 1.4627659574468086,
+      "no_speech_prob": 2.1622050553560257e-05,
+      "confidence": 0.089,
+      "words": [
+        {
+          "text": "Marin",
+          "start": 89.92,
+          "end": 90.24,
+          "confidence": 0.047
+        },
+        {
+          "text": "Nepen,",
+          "start": 90.24,
+          "end": 90.68,
+          "confidence": 0.025
+        },
+        {
+          "text": "dans",
+          "start": 90.68,
+          "end": 91.0,
+          "confidence": 0.547
+        },
+        {
+          "text": "moins",
+          "start": 91.0,
+          "end": 91.18,
+          "confidence": 0.293
+        },
+        {
+          "text": "de",
+          "start": 91.18,
+          "end": 91.34,
+          "confidence": 0.583
+        },
+        {
+          "text": "3.0.",
+          "start": 91.34,
+          "end": 91.78,
+          "confidence": 0.129
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "seek": 8500,
+      "start": 106.82,
+      "end": 108.34,
+      "text": " Mais l'actualité, c'est aussi aujourd'hui,",
+      "tokens": [
+        6313,
+        287,
+        6,
+        578,
+        901,
+        5066,
+        11,
+        269,
+        6,
+        377,
+        6212,
+        14023,
+        6,
+        10556,
+        11
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.41841821763121967,
+      "compression_ratio": 1.4627659574468086,
+      "no_speech_prob": 2.1622050553560257e-05,
+      "confidence": 0.592,
+      "words": [
+        {
+          "text": "Mais",
+          "start": 106.82,
+          "end": 106.94,
+          "confidence": 0.459
+        },
+        {
+          "text": "l'actualité,",
+          "start": 106.94,
+          "end": 107.52,
+          "confidence": 0.583
+        },
+        {
+          "text": "c'est",
+          "start": 107.52,
+          "end": 107.62,
+          "confidence": 0.974
+        },
+        {
+          "text": "aussi",
+          "start": 107.62,
+          "end": 107.8,
+          "confidence": 0.383
+        },
+        {
+          "text": "aujourd'hui,",
+          "start": 107.8,
+          "end": 108.34,
+          "confidence": 0.495
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "seek": 8500,
+      "start": 108.52,
+      "end": 110.94,
+      "text": " un dernier adieu dernier adieu à Laurent Finion,",
+      "tokens": [
+        517,
+        29332,
+        614,
+        19347,
+        29332,
+        614,
+        19347,
+        1531,
+        49357,
+        3773,
+        313,
+        11
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.41841821763121967,
+      "compression_ratio": 1.4627659574468086,
+      "no_speech_prob": 2.1622050553560257e-05,
+      "confidence": 0.31,
+      "words": [
+        {
+          "text": "un",
+          "start": 108.52,
+          "end": 108.56,
+          "confidence": 0.003
+        },
+        {
+          "text": "dernier",
+          "start": 108.56,
+          "end": 108.78,
+          "confidence": 0.269
+        },
+        {
+          "text": "adieu",
+          "start": 108.78,
+          "end": 109.2,
+          "confidence": 0.428
+        },
+        {
+          "text": "dernier",
+          "start": 109.2,
+          "end": 109.28,
+          "confidence": 0.124
+        },
+        {
+          "text": "adieu",
+          "start": 109.28,
+          "end": 109.94,
+          "confidence": 0.965
+        },
+        {
+          "text": "à",
+          "start": 109.94,
+          "end": 110.1,
+          "confidence": 0.701
+        },
+        {
+          "text": "Laurent",
+          "start": 110.1,
+          "end": 110.32,
+          "confidence": 0.573
+        },
+        {
+          "text": "Finion,",
+          "start": 110.32,
+          "end": 110.94,
+          "confidence": 0.491
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "seek": 8500,
+      "start": 110.96,
+      "end": 112.88,
+      "text": " c'était aussi ma terre du père-la-chèse,",
+      "tokens": [
+        269,
+        6,
+        9743,
+        6212,
+        463,
+        31815,
+        1581,
+        37653,
+        12,
+        875,
+        12,
+        339,
+        45238,
+        11
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.41841821763121967,
+      "compression_ratio": 1.4627659574468086,
+      "no_speech_prob": 2.1622050553560257e-05,
+      "confidence": 0.287,
+      "words": [
+        {
+          "text": "c'était",
+          "start": 110.96,
+          "end": 111.2,
+          "confidence": 0.715
+        },
+        {
+          "text": "aussi",
+          "start": 111.2,
+          "end": 111.5,
+          "confidence": 0.123
+        },
+        {
+          "text": "ma",
+          "start": 111.5,
+          "end": 111.64,
+          "confidence": 0.035
+        },
+        {
+          "text": "terre",
+          "start": 111.64,
+          "end": 111.84,
+          "confidence": 0.218
+        },
+        {
+          "text": "du",
+          "start": 111.84,
+          "end": 112.04,
+          "confidence": 0.523
+        },
+        {
+          "text": "père-la-chèse,",
+          "start": 112.04,
+          "end": 112.88,
+          "confidence": 0.282
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "seek": 11300,
+      "start": 112.96,
+      "end": 115.86,
+      "text": " à Paris, l'ancien double vainqueur du tour de France,",
+      "tokens": [
+        1531,
+        8380,
+        11,
+        287,
+        6,
+        38840,
+        268,
+        3834,
+        22240,
+        1077,
+        374,
+        1581,
+        3512,
+        368,
+        6190,
+        11
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.3108041182808254,
+      "compression_ratio": 1.2,
+      "no_speech_prob": 6.426234176615253e-05,
+      "confidence": 0.643,
+      "words": [
+        {
+          "text": "à",
+          "start": 112.96,
+          "end": 113.12,
+          "confidence": 0.074
+        },
+        {
+          "text": "Paris,",
+          "start": 113.12,
+          "end": 113.54,
+          "confidence": 0.617
+        },
+        {
+          "text": "l'ancien",
+          "start": 113.54,
+          "end": 114.32,
+          "confidence": 0.864
+        },
+        {
+          "text": "double",
+          "start": 114.32,
+          "end": 114.54,
+          "confidence": 0.673
+        },
+        {
+          "text": "vainqueur",
+          "start": 114.54,
+          "end": 114.98,
+          "confidence": 0.786
+        },
+        {
+          "text": "du",
+          "start": 114.98,
+          "end": 115.14,
+          "confidence": 0.979
+        },
+        {
+          "text": "tour",
+          "start": 115.14,
+          "end": 115.34,
+          "confidence": 0.763
+        },
+        {
+          "text": "de",
+          "start": 115.34,
+          "end": 115.46,
+          "confidence": 0.981
+        },
+        {
+          "text": "France,",
+          "start": 115.46,
+          "end": 115.86,
+          "confidence": 0.475
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "seek": 11300,
+      "start": 115.88,
+      "end": 117.96,
+      "text": " vainqueur par le cancer à 50 ans,",
+      "tokens": [
+        22240,
+        1077,
+        374,
+        971,
+        476,
+        5592,
+        1531,
+        2625,
+        1567,
+        11
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.3108041182808254,
+      "compression_ratio": 1.2,
+      "no_speech_prob": 6.426234176615253e-05,
+      "confidence": 0.152,
+      "words": [
+        {
+          "text": "vainqueur",
+          "start": 115.88,
+          "end": 116.54,
+          "confidence": 0.007
+        },
+        {
+          "text": "par",
+          "start": 116.54,
+          "end": 116.64,
+          "confidence": 0.71
+        },
+        {
+          "text": "le",
+          "start": 116.64,
+          "end": 116.78,
+          "confidence": 0.985
+        },
+        {
+          "text": "cancer",
+          "start": 116.78,
+          "end": 117.04,
+          "confidence": 0.186
+        },
+        {
+          "text": "à",
+          "start": 117.04,
+          "end": 117.26,
+          "confidence": 0.905
+        },
+        {
+          "text": "50",
+          "start": 117.26,
+          "end": 117.44,
+          "confidence": 0.85
+        },
+        {
+          "text": "ans,",
+          "start": 117.44,
+          "end": 117.96,
+          "confidence": 0.474
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "seek": 11800,
+      "start": 118.18,
+      "end": 120.48,
+      "text": " a été incineré en petit comité aujourd'hui.",
+      "tokens": [
+        50364,
+        257,
+        8862,
+        834,
+        4564,
+        526,
+        465,
+        9686,
+        395,
+        5066,
+        14023,
+        6,
+        10556,
+        13,
+        51164
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.40177011489868164,
+      "compression_ratio": 0.9038461538461539,
+      "no_speech_prob": 0.00019113364396616817,
+      "confidence": 0.596,
+      "words": [
+        {
+          "text": "a",
+          "start": 118.18,
+          "end": 118.32,
+          "confidence": 0.168
+        },
+        {
+          "text": "été",
+          "start": 118.32,
+          "end": 118.52,
+          "confidence": 0.815
+        },
+        {
+          "text": "incineré",
+          "start": 118.52,
+          "end": 119.18,
+          "confidence": 0.547
+        },
+        {
+          "text": "en",
+          "start": 119.18,
+          "end": 119.44,
+          "confidence": 0.856
+        },
+        {
+          "text": "petit",
+          "start": 119.44,
+          "end": 119.66,
+          "confidence": 0.58
+        },
+        {
+          "text": "comité",
+          "start": 119.66,
+          "end": 120.1,
+          "confidence": 0.8
+        },
+        {
+          "text": "aujourd'hui.",
+          "start": 120.1,
+          "end": 120.48,
+          "confidence": 0.641
         }
       ]
     }

@@ -14,16 +14,16 @@
         50402
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.629585075378418,
+      "avg_logprob": -0.629339599609375,
       "compression_ratio": 0.5,
-      "no_speech_prob": 0.10433679074048996,
-      "confidence": 0.961,
+      "no_speech_prob": 0.10434164106845856,
+      "confidence": 0.796,
       "words": [
         {
           "text": "Bonjour",
           "start": 0.16,
           "end": 0.78,
-          "confidence": 0.961
+          "confidence": 0.796
         }
       ]
     }

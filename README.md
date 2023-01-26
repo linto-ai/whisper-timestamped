@@ -23,8 +23,9 @@ Besides, a confidence score is assigned to each word and each segment (both comp
 The approach is based on approach Dynamic Time Warping (DTW) applied to cross-attention weights,
 as done by [this notebook by Jong Wook Kim](https://github.com/openai/whisper/blob/f82bc59f5ea234d4b97fb2860842ed38519f7e65/notebooks/Multilingual_ASR.ipynb).
 There are some additions to this notebook:
-* The start/end estimation is more accurate
-* **If possible (without beam search...), there no additional inference steps are required to predict word timestamps** (word alignment is done on the fly, after each speech segment is decoded).
+* The start/end estimation is more accurate.
+* Confidence scores are assigned to each word.
+* **If possible (without beam search...)**, there no additional inference steps are required to predict word timestamps (word alignment is done on the fly, after each speech segment is decoded).
 * There is a special care about memory usage: `whisper-timestamped` is able to process long files, with little additional memory with respect to the regular use of Whisper model.
 
 ### Note on other approaches
@@ -71,10 +72,10 @@ In python, you can use the function `whisper_timestamped.transcribe()` that is s
 import whisper_timestamped
 help(whisper_timestamped.transcribe)
 ```
-The main differences with `whisper.transcribe()` are:
-* The output will include a key `"words"` for all segments, with the word start and end position. Note that word will include punctuation. See example [below](#example-output).
-* By default, all options that require several steps of decoding are disabled, in favour of an efficient decoding strategy.
-  Use ```beam_size=5, best_of=5, temperature=(0.0, 0.2, 0.4, 0.6, 0.8, 1.0)``` for Whisper default.
+The main difference with `whisper.transcribe()` is that
+the output will include a key `"words"` for all segments, with the word start and end position. Note that word will include punctuation. See example [below](#example-output).
+
+There are also additional options related to word alignement.
 
 In general, by importing `whisper_timestamped` instead of `whisper` in your python script, it should do the job, if you use `transcribe(model, ...)` instead of `model.transcribe(...)`:
 ```
@@ -98,16 +99,23 @@ whisper_timestamped --help
 ```
 
 The main differences with `whisper` CLI are:
-* The output JSON contains word timestamps and confidence scores. See example [below](#example-output).
-* There is an additional CSV output format
-* For SRT, VTT, TSV formats, there will be additional files saved with word timestamps
-* By default, no output folder is set: Use `--output_dir .` for Whisper default
-* By default, all options that require several steps of decoding are disabled, in favour of an efficient decoding strategy.
-  Use ```--accurate``` for Whisper default (which is an alias for ```--beam_search 5 --temperature_increment_on_fallback 0.2 --best_of 5```)
+* Output files:
+  * The output JSON contains word timestamps and confidence scores. See example [below](#example-output).
+  * There is an additional CSV output format
+  * For SRT, VTT, TSV formats, there will be additional files saved with word timestamps
+* Some default options are different:
+  * By default, no output folder is set: Use `--output_dir .` for Whisper default
+  * By default, there is no verbose: Use `--verbose True` for Whisper default
+* There are some specific options added
+  * `--efficient` to use a faster greedy decoding (without beam search neither several sampling at each step),
+  which enables a special path where word timestamps are computed on the fly (no need to run inference twice).
+  Note that transcription results might be significantly worse on challenging audios with this option.
+  * `--compute_confidence` to enable/disable the computation of confidence scores for each word
+  * `--punctuations_with_words` to decide whether punctuation marks should be included or not with preceding words.
 
 An example command line to process several files with the `tiny` model and output results in the current folder as whisper would do by default:
 ```
-whisper_timestamped audio1.flac audio2.mp3 audio3.wav --model tiny --accurate --output_dir .
+whisper_timestamped audio1.flac audio2.mp3 audio3.wav --model tiny --output_dir .
 ```
 
 ### Plot of word alignment

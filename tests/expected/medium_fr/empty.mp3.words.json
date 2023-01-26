@@ -1,5 +1,63 @@
 {
-  "text": "",
-  "segments": [],
+  "text": " Merci d'avoir regardé cette vidéo!",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.02,
+      "end": 3.16,
+      "text": " Merci d'avoir regardé cette vidéo!",
+      "tokens": [
+        50364,
+        19856,
+        274,
+        6,
+        17239,
+        3843,
+        526,
+        5550,
+        11660,
+        2298,
+        50520
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.7380433877309164,
+      "compression_ratio": 0.8372093023255814,
+      "no_speech_prob": 0.6659334897994995,
+      "confidence": 0.447,
+      "words": [
+        {
+          "text": "Merci",
+          "start": 0.02,
+          "end": 0.4,
+          "confidence": 0.011
+        },
+        {
+          "text": "d'avoir",
+          "start": 0.4,
+          "end": 2.56,
+          "confidence": 0.803
+        },
+        {
+          "text": "regardé",
+          "start": 2.56,
+          "end": 3.0,
+          "confidence": 0.897
+        },
+        {
+          "text": "cette",
+          "start": 3.0,
+          "end": 3.04,
+          "confidence": 0.292
+        },
+        {
+          "text": "vidéo!",
+          "start": 3.04,
+          "end": 3.16,
+          "confidence": 0.718
+        }
+      ]
+    }
+  ],
   "language": "fr"
 }

@@ -1,67 +1,66 @@
 {
-  "text": " Dima et ce que l'on vole.",
+  "text": " Dis-moi, est-ce que l'avion volent?",
   "segments": [
     {
       "id": 0,
       "seek": 0,
       "start": 0.42,
-      "end": 2.54,
-      "text": " Dima et ce que l'on vole.",
+      "end": 2.52,
+      "text": " Dis-moi, est-ce que l'avion volent?",
       "tokens": [
         50364,
-        413,
-        4775,
-        1030,
-        1769,
+        4208,
+        12,
+        29292,
+        11,
+        871,
+        12,
+        384,
         631,
         287,
         6,
-        266,
-        49877,
-        13,
-        50494
+        706,
+        313,
+        1996,
+        317,
+        2506,
+        50514
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.9094077623807467,
-      "compression_ratio": 0.7575757575757576,
-      "no_speech_prob": 0.0011662691831588745,
-      "confidence": 0.439,
+      "avg_logprob": -0.7870002852545844,
+      "compression_ratio": 0.813953488372093,
+      "no_speech_prob": 0.001157282735221088,
+      "confidence": 0.487,
       "words": [
         {
-          "text": "Dima",
+          "text": "Dis-moi,",
           "start": 0.42,
-          "end": 0.74,
-          "confidence": 0.284
+          "end": 1.04,
+          "confidence": 0.369
         },
         {
-          "text": "et",
-          "start": 0.74,
-          "end": 1.36,
-          "confidence": 0.328
-        },
-        {
-          "text": "ce",
-          "start": 1.36,
-          "end": 1.48,
-          "confidence": 0.529
+          "text": "est-ce",
+          "start": 1.04,
+          "end": 1.54,
+          "confidence": 0.771
         },
         {
           "text": "que",
-          "start": 1.48,
+          "start": 1.54,
           "end": 1.6,
-          "confidence": 0.855
+          "confidence": 0.979
         },
         {
-          "text": "l'on",
+          "text": "l'avion",
           "start": 1.6,
-          "end": 1.92,
-          "confidence": 0.573
+          "end": 2.04,
+          "confidence": 0.424
         },
         {
-          "text": "vole.",
-          "start": 1.92,
-          "end": 2.54,
-          "confidence": 0.269
+          "text": "volent?",
+          "start": 2.04,
+          "end": 2.52,
+          "confidence": 0.424
         }
       ]
     }

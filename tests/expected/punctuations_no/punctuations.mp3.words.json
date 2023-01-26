@@ -26,16 +26,16 @@
         50494
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.30108165740966797,
+      "avg_logprob": -0.30168788573321176,
       "compression_ratio": 0.8048780487804879,
-      "no_speech_prob": 0.05284806713461876,
-      "confidence": 0.926,
+      "no_speech_prob": 0.052100103348493576,
+      "confidence": 0.877,
       "words": [
         {
           "text": "Dis-moi",
           "start": 0.38,
           "end": 1.3,
-          "confidence": 0.803
+          "confidence": 0.739
         },
         {
           "text": "est-ce",
@@ -59,7 +59,7 @@
           "text": "vole",
           "start": 2.0,
           "end": 2.4,
-          "confidence": 0.891
+          "confidence": 0.784
         }
       ]
     }

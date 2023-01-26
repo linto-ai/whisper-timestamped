@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.44,
-      "end": 3.24,
+      "end": 3.36,
       "text": " Bonjour! Est-ce que vous allez bien?",
       "tokens": [
         50364,
@@ -22,28 +22,28 @@
         50564
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3618113077603854,
+      "avg_logprob": -0.3618502616882324,
       "compression_ratio": 0.8181818181818182,
-      "no_speech_prob": 0.07167890667915344,
-      "confidence": 0.937,
+      "no_speech_prob": 0.07169269770383835,
+      "confidence": 0.87,
       "words": [
         {
           "text": "Bonjour!",
           "start": 0.44,
-          "end": 1.66,
-          "confidence": 0.874
+          "end": 1.72,
+          "confidence": 0.617
         },
         {
           "text": "Est-ce",
-          "start": 1.66,
+          "start": 1.72,
           "end": 2.18,
-          "confidence": 0.886
+          "confidence": 0.894
         },
         {
           "text": "que",
           "start": 2.18,
           "end": 2.22,
-          "confidence": 0.988
+          "confidence": 0.987
         },
         {
           "text": "vous",
@@ -55,21 +55,21 @@
           "text": "allez",
           "start": 2.34,
           "end": 2.56,
-          "confidence": 0.99
+          "confidence": 0.992
         },
         {
           "text": "bien?",
           "start": 2.56,
-          "end": 3.24,
-          "confidence": 0.999
+          "end": 3.36,
+          "confidence": 0.964
         }
       ]
     },
     {
       "id": 1,
       "seek": 3000,
-      "start": 32.96,
-      "end": 35.48,
+      "start": 29.74,
+      "end": 35.46,
       "text": " Bonjour! Est-ce que vous allez bien?",
       "tokens": [
         50414,
@@ -86,46 +86,46 @@
         50614
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.23405993901766264,
+      "avg_logprob": -0.23397623575650728,
       "compression_ratio": 0.8181818181818182,
-      "no_speech_prob": 0.33330824971199036,
-      "confidence": 0.955,
+      "no_speech_prob": 0.3333122432231903,
+      "confidence": 0.0,
       "words": [
         {
           "text": "Bonjour!",
-          "start": 32.96,
-          "end": 34.24,
-          "confidence": 0.831
+          "start": 29.74,
+          "end": 34.26,
+          "confidence": 0.022
         },
         {
           "text": "Est-ce",
-          "start": 34.24,
-          "end": 34.72,
-          "confidence": 0.944
+          "start": 34.26,
+          "end": 34.7,
+          "confidence": 0.001
         },
         {
           "text": "que",
-          "start": 34.72,
-          "end": 34.76,
-          "confidence": 0.997
+          "start": 34.7,
+          "end": 34.74,
+          "confidence": 0.0
         },
         {
           "text": "vous",
-          "start": 34.76,
-          "end": 34.86,
-          "confidence": 0.999
+          "start": 34.74,
+          "end": 34.88,
+          "confidence": 0.001
         },
         {
           "text": "allez",
-          "start": 34.86,
+          "start": 34.88,
           "end": 35.08,
-          "confidence": 0.997
+          "confidence": 0.0
         },
         {
           "text": "bien?",
           "start": 35.08,
-          "end": 35.48,
-          "confidence": 0.999
+          "end": 35.46,
+          "confidence": 0.0
         }
       ]
     }

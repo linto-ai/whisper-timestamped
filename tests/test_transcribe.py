@@ -229,7 +229,7 @@ class TestHelperCli(TestHelper):
                 return name_ + "/" + (f"{prefix}_" if prefix else "") + os.path.basename(output_filename)
             generic_name = ref_name(input_filename + ".*")
 
-            if GENERATE_DEVICE_DEPENDENT and not name_.endswith("."+self.get_device_str()):
+            if GENERATE_DEVICE_DEPENDENT and not device_dependent:
                 print("Skipping non-regression test", generic_name)
                 continue
 
@@ -254,8 +254,7 @@ class TestHelperCli(TestHelper):
                 self.assertNonRegression(stdout, ref_name(output_filename), string_is_file=False)
             else:
                 for output_filename in self.get_generated_files(input_filename, output_dir, extensions=extensions):
-                    self.assertNonRegression(
-                        output_filename, ref_name(output_filename))
+                    self.assertNonRegression(output_filename, ref_name(output_filename))
 
         shutil.rmtree(output_dir, ignore_errors=True)
 
@@ -295,7 +294,7 @@ class TestTranscribeNaive(TestHelperCli):
     def test_naive(self):
 
         self._test_cli_(
-            ["--model", "small", "--language", "en", "--naive"],
+            ["--model", "small", "--language", "en", "--efficient", "--naive"],
             "naive",
             files=["apollo11.mp3"],
             prefix="naive",
@@ -310,7 +309,7 @@ class TestTranscribeNaive(TestHelperCli):
 
     def test_stucked_segments(self):
         self._test_cli_(
-            ["--model", "tiny", "--accurate"],
+            ["--model", "tiny"],
             "corner_cases",
             files=["apollo11.mp3"],
             prefix="accurate.tiny",
@@ -324,7 +323,7 @@ class TestTranscribeCornerCases(TestHelperCli):
             return
 
         self._test_cli_(
-            ["--model", "small", "--language", "en"],
+            ["--model", "small", "--language", "en", "--efficient"],
             "corner_cases",
             files=["apollo11.mp3"],
             prefix="stucked_lm",
@@ -334,7 +333,7 @@ class TestTranscribeCornerCases(TestHelperCli):
 
         self._test_cli_(
             ["--model", "small", "--language", "English",
-                "--condition", "False", "--temperature", "0.1"],
+                "--condition", "False", "--temperature", "0.1", "--efficient"],
             "corner_cases",
             files=["apollo11.mp3"],
             prefix="random.nocond",
@@ -344,7 +343,7 @@ class TestTranscribeCornerCases(TestHelperCli):
             return
 
         self._test_cli_(
-            ["--model", "small", "--language", "en", "--temperature", "0.2"],
+            ["--model", "small", "--language", "en", "--temperature", "0.2", "--efficient"],
             "corner_cases",
             files=["apollo11.mp3"],
             prefix="random",
@@ -357,7 +356,7 @@ class TestTranscribeCornerCases(TestHelperCli):
             return
 
         self._test_cli_(
-            ["--model", "medium", "--language", "en", "--condition", "False"],
+            ["--model", "medium", "--language", "en", "--condition", "False", "--efficient"],
             "corner_cases",
             files=["music.mp4"],
             prefix="nocond",
@@ -365,7 +364,7 @@ class TestTranscribeCornerCases(TestHelperCli):
 
         self._test_cli_(
             ["--model", "medium", "--language", "en",
-                "--condition", "False", "--temperature", "0.4"],
+                "--condition", "False", "--temperature", "0.4", "--efficient"],
             "corner_cases",
             files=["music.mp4"],
             prefix="nocond.random",
@@ -377,7 +376,7 @@ class TestTranscribeCornerCases(TestHelperCli):
 
         self._test_cli_(
             ["--model", "large-v2", "--language", "en",
-                "--condition", "False", "--temperature", "0.4"],
+                "--condition", "False", "--temperature", "0.4", "--efficient"],
             "corner_cases",
             files=["apollo11.mp3"],
             prefix="large",
@@ -385,7 +384,7 @@ class TestTranscribeCornerCases(TestHelperCli):
 
         if os.path.exists(self.get_data_path("arabic.mp3", check=False)):
             self._test_cli_(
-                ["--model", "large-v2", "--language", "Arabic"],
+                ["--model", "large-v2", "--language", "Arabic", "--efficient"],
                 "corner_cases",
                 files=["arabic.mp3"]
             )
@@ -421,28 +420,28 @@ class TestTranscribeFormats(TestHelperCli):
         opts = ["--model", "tiny", "--verbose", "True"]
 
         self._test_cli_(
-            opts,
+            ["--efficient", *opts],
             "verbose", files=files, extensions=None,
             prefix="efficient.auto",
             device_specific=True,
         )
 
         self._test_cli_(
-            ["--language", "fr", *opts],
+            ["--language", "fr", "--efficient", *opts],
             "verbose", files=files, extensions=None,
             prefix="efficient.fr",
             device_specific=True,
         )
 
         self._test_cli_(
-            ["--accurate", *opts],
+            opts,
             "verbose", files=files, extensions=None,
             prefix="accurate.auto",
             device_specific=True,
         )
 
         self._test_cli_(
-            ["--accurate", "--language", "fr", *opts],
+            ["--language", "fr", *opts],
             "verbose", files=files, extensions=None,
             prefix="accurate.fr",
             device_specific=True,
@@ -461,6 +460,7 @@ class TestZZZPythonImport(TestHelper):
                 os.path.dirname(os.path.dirname(__file__))))
             import whisper_timestamped
 
+        # Test version
         version = whisper_timestamped.__version__
         self.assertTrue(isinstance(version, str))
 
@@ -469,15 +469,21 @@ class TestZZZPythonImport(TestHelper):
 
         model = whisper_timestamped.load_model("tiny")
 
+        # Check processing of different files
         for filename in "bonjour.wav", "laugh1.mp3", "laugh2.mp3":
             res = whisper_timestamped.transcribe(
                 model, self.get_data_path(filename))
-            self.assertNonRegression(res, f"tiny_auto/{filename}.words.json")
+            if self._can_generate_reference():
+                self.assertNonRegression(res, f"tiny_auto/{filename}.words.json")
 
         for filename in "bonjour.wav", "laugh1.mp3", "laugh2.mp3":
             res = whisper_timestamped.transcribe(
                 model, self.get_data_path(filename), language="fr")
-            self.assertNonRegression(res, f"tiny_fr/{filename}.words.json")
+            if self._can_generate_reference():
+                self.assertNonRegression(res, f"tiny_fr/{filename}.words.json")
+
+    def _can_generate_reference(self):
+        return not GENERATE_DEVICE_DEPENDENT or self.get_device_str() != "cpu"
 
     def test_split_tokens(self):
 

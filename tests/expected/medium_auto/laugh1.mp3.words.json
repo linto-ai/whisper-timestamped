@@ -1,29 +1,29 @@
 {
-  "text": " hahahaha",
+  "text": " Bread!",
   "segments": [
     {
       "id": 0,
       "seek": 0,
       "start": 0.02,
-      "end": 1.42,
-      "text": " hahahaha",
+      "end": 1.68,
+      "text": " Bread!",
       "tokens": [
         50364,
-        17206,
-        15380,
-        50464
+        35357,
+        0,
+        50434
       ],
-      "temperature": 0.0,
-      "avg_logprob": -1.2422116279602051,
-      "compression_ratio": 0.6666666666666666,
-      "no_speech_prob": 0.5563598275184631,
-      "confidence": 0.146,
+      "temperature": 1.0,
+      "avg_logprob": -3.627205657958984,
+      "compression_ratio": 0.42857142857142855,
+      "no_speech_prob": 0.5532587170600891,
+      "confidence": 0.001,
       "words": [
         {
-          "text": "hahahaha",
+          "text": "Bread!",
           "start": 0.02,
-          "end": 1.42,
-          "confidence": 0.146
+          "end": 1.68,
+          "confidence": 0.001
         }
       ]
     }
