@@ -1,17 +1,18 @@
 {
-  "text": " La recommandation du Messe-Bouche de 1962 comme missale pour la forme exceptionnelle du rétus romain n'est pas passée comme l'a voulu le Père Benedicte. La rétus romain n'est pas passée comme l'a voulu le Père Benedicte.",
+  "text": " La réapparition du Messe-Bouche de 1962 en tant que missale pour la forme exceptionnelle du roi de la Réthos n'est pas encore la même chose que l'a voulu le Père de Benedict. La réapparition du Messe-Bouche de 1962 en tant que missale pour la forme exceptionnelle du roi de la Réthos n'est pas encore la même chose que l'a voulu le Père de Benedict.",
   "segments": [
     {
       "id": 0,
       "seek": 0,
       "start": 0.02,
       "end": 12.64,
-      "text": " La recommandation du Messe-Bouche de 1962 comme missale pour la forme exceptionnelle du rétus romain n'est pas passée comme l'a voulu le Père Benedicte.",
+      "text": " La réapparition du Messe-Bouche de 1962 en tant que missale pour la forme exceptionnelle du roi de la Réthos n'est pas encore la même chose que l'a voulu le Père de Benedict.",
       "tokens": [
         2369,
-        2616,
-        474,
-        399,
+        3960,
+        1746,
+        289,
+        849,
         1581,
         376,
         7357,
@@ -21,7 +22,9 @@
         1876,
         368,
         39498,
-        5173,
+        465,
+        12095,
+        631,
         1713,
         1220,
         2016,
@@ -30,18 +33,23 @@
         11183,
         37365,
         1581,
-        3960,
-        83,
-        301,
-        7438,
-        491,
+        744,
+        72,
+        368,
+        635,
+        497,
+        526,
+        392,
+        329,
         297,
         6,
         377,
         1736,
-        1320,
-        3856,
-        5173,
+        10122,
+        635,
+        5698,
+        5111,
+        631,
         287,
         6,
         64,
@@ -50,184 +58,260 @@
         476,
         430,
         4212,
-        39753,
-        299,
-        975,
+        368,
+        47837,
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.8304414891484958,
-      "compression_ratio": 1.3006535947712419,
-      "no_speech_prob": 0.5753375887870789,
-      "confidence": 0.429,
+      "avg_logprob": -1.0270439281798245,
+      "compression_ratio": 1.2275862068965517,
+      "no_speech_prob": 0.575347363948822,
+      "confidence": 0.36,
       "words": [
         {
           "text": "La",
           "start": 0.02,
           "end": 1.08,
-          "confidence": 0.211
+          "confidence": 0.158
         },
         {
-          "text": "recommandation",
+          "text": "réapparition",
           "start": 1.08,
-          "end": 1.92,
-          "confidence": 0.384
+          "end": 1.76,
+          "confidence": 0.267
         },
         {
           "text": "du",
-          "start": 1.92,
-          "end": 2.1,
-          "confidence": 0.735
+          "start": 1.76,
+          "end": 2.08,
+          "confidence": 0.763
         },
         {
           "text": "Messe-Bouche",
-          "start": 2.1,
-          "end": 2.72,
-          "confidence": 0.352
+          "start": 2.08,
+          "end": 2.7,
+          "confidence": 0.344
         },
         {
           "text": "de",
-          "start": 2.72,
-          "end": 2.98,
-          "confidence": 0.683
+          "start": 2.7,
+          "end": 2.94,
+          "confidence": 0.664
         },
         {
           "text": "1962",
-          "start": 2.98,
-          "end": 4.9,
-          "confidence": 0.971
+          "start": 2.94,
+          "end": 4.88,
+          "confidence": 0.961
         },
         {
-          "text": "comme",
-          "start": 4.9,
-          "end": 5.2,
-          "confidence": 0.115
+          "text": "en",
+          "start": 4.88,
+          "end": 5.16,
+          "confidence": 0.358
+        },
+        {
+          "text": "tant",
+          "start": 5.16,
+          "end": 5.26,
+          "confidence": 0.146
+        },
+        {
+          "text": "que",
+          "start": 5.26,
+          "end": 5.3,
+          "confidence": 0.831
         },
         {
           "text": "missale",
-          "start": 5.2,
+          "start": 5.3,
           "end": 5.74,
-          "confidence": 0.35
+          "confidence": 0.301
         },
         {
           "text": "pour",
           "start": 5.74,
-          "end": 5.92,
-          "confidence": 0.605
+          "end": 5.9,
+          "confidence": 0.504
         },
         {
           "text": "la",
-          "start": 5.92,
+          "start": 5.9,
           "end": 6.08,
-          "confidence": 0.597
+          "confidence": 0.59
         },
         {
           "text": "forme",
           "start": 6.08,
           "end": 6.12,
-          "confidence": 0.978
+          "confidence": 0.977
         },
         {
           "text": "exceptionnelle",
           "start": 6.12,
           "end": 7.3,
-          "confidence": 0.705
+          "confidence": 0.693
         },
         {
           "text": "du",
           "start": 7.3,
           "end": 7.62,
-          "confidence": 0.797
+          "confidence": 0.738
         },
         {
-          "text": "rétus",
+          "text": "roi",
           "start": 7.62,
-          "end": 8.5,
-          "confidence": 0.255
+          "end": 7.76,
+          "confidence": 0.312
         },
         {
-          "text": "romain",
-          "start": 8.5,
-          "end": 8.54,
-          "confidence": 0.371
+          "text": "de",
+          "start": 7.76,
+          "end": 7.9,
+          "confidence": 0.138
+        },
+        {
+          "text": "la",
+          "start": 7.9,
+          "end": 8.06,
+          "confidence": 0.182
+        },
+        {
+          "text": "Réthos",
+          "start": 8.06,
+          "end": 8.6,
+          "confidence": 0.353
         },
         {
           "text": "n'est",
-          "start": 8.54,
-          "end": 9.58,
-          "confidence": 0.683
+          "start": 8.6,
+          "end": 9.56,
+          "confidence": 0.603
         },
         {
           "text": "pas",
-          "start": 9.58,
-          "end": 9.86,
-          "confidence": 0.733
+          "start": 9.56,
+          "end": 9.9,
+          "confidence": 0.78
         },
         {
-          "text": "passée",
-          "start": 9.86,
-          "end": 10.8,
-          "confidence": 0.166
+          "text": "encore",
+          "start": 9.9,
+          "end": 10.02,
+          "confidence": 0.055
         },
         {
-          "text": "comme",
-          "start": 10.8,
-          "end": 10.96,
-          "confidence": 0.464
+          "text": "la",
+          "start": 10.02,
+          "end": 10.66,
+          "confidence": 0.045
+        },
+        {
+          "text": "même",
+          "start": 10.66,
+          "end": 10.7,
+          "confidence": 0.041
+        },
+        {
+          "text": "chose",
+          "start": 10.7,
+          "end": 10.74,
+          "confidence": 0.116
+        },
+        {
+          "text": "que",
+          "start": 10.74,
+          "end": 11.02,
+          "confidence": 0.805
         },
         {
           "text": "l'a",
-          "start": 10.96,
-          "end": 11.16,
-          "confidence": 0.364
+          "start": 11.02,
+          "end": 11.14,
+          "confidence": 0.579
         },
         {
           "text": "voulu",
-          "start": 11.16,
-          "end": 11.2,
-          "confidence": 0.644
+          "start": 11.14,
+          "end": 11.18,
+          "confidence": 0.719
         },
         {
           "text": "le",
-          "start": 11.2,
+          "start": 11.18,
           "end": 11.24,
-          "confidence": 0.32
+          "confidence": 0.287
         },
         {
           "text": "Père",
           "start": 11.24,
-          "end": 11.46,
-          "confidence": 0.354
+          "end": 11.44,
+          "confidence": 0.408
         },
         {
-          "text": "Benedicte.",
-          "start": 11.46,
+          "text": "de",
+          "start": 11.44,
+          "end": 11.48,
+          "confidence": 0.298
+        },
+        {
+          "text": "Benedict.",
+          "start": 11.48,
           "end": 12.64,
-          "confidence": 0.575
+          "confidence": 0.389
         }
       ]
     },
     {
       "id": 1,
       "seek": 1300,
-      "start": 13.98,
-      "end": 15.22,
-      "text": " La rétus romain n'est pas passée comme l'a voulu le Père Benedicte.",
+      "start": 13.02,
+      "end": 15.62,
+      "text": " La réapparition du Messe-Bouche de 1962 en tant que missale pour la forme exceptionnelle du roi de la Réthos n'est pas encore la même chose que l'a voulu le Père de Benedict.",
       "tokens": [
         50364,
         2369,
         3960,
-        83,
-        301,
-        7438,
-        491,
+        1746,
+        289,
+        849,
+        1581,
+        376,
+        7357,
+        12,
+        33,
+        263,
+        1876,
+        368,
+        39498,
+        465,
+        12095,
+        631,
+        1713,
+        1220,
+        2016,
+        635,
+        28670,
+        11183,
+        37365,
+        1581,
+        744,
+        72,
+        368,
+        635,
+        497,
+        526,
+        392,
+        329,
         297,
         6,
         377,
         1736,
-        1320,
-        3856,
-        5173,
+        10122,
+        635,
+        5698,
+        5111,
+        631,
         287,
         6,
         64,
@@ -236,89 +320,208 @@
         476,
         430,
         4212,
-        39753,
-        299,
-        975,
+        368,
+        47837,
         13,
         51614
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3272256170000349,
-      "compression_ratio": 0.9210526315789473,
-      "no_speech_prob": 0.002399301156401634,
-      "confidence": 0.023,
+      "avg_logprob": -0.18656882217952184,
+      "compression_ratio": 1.2275862068965517,
+      "no_speech_prob": 0.004438234493136406,
+      "confidence": 0.865,
       "words": [
         {
           "text": "La",
-          "start": 13.98,
-          "end": 14.16,
-          "confidence": 0.005
+          "start": 13.02,
+          "end": 14.22,
+          "confidence": 0.201
         },
         {
-          "text": "rétus",
-          "start": 14.16,
-          "end": 14.24,
-          "confidence": 0.004
+          "text": "réapparition",
+          "start": 14.22,
+          "end": 14.36,
+          "confidence": 0.898
         },
         {
-          "text": "romain",
-          "start": 14.24,
-          "end": 14.28,
-          "confidence": 0.0
+          "text": "du",
+          "start": 14.36,
+          "end": 14.4,
+          "confidence": 0.519
+        },
+        {
+          "text": "Messe-Bouche",
+          "start": 14.4,
+          "end": 14.5,
+          "confidence": 0.899
+        },
+        {
+          "text": "de",
+          "start": 14.5,
+          "end": 14.54,
+          "confidence": 0.943
+        },
+        {
+          "text": "1962",
+          "start": 14.54,
+          "end": 14.58,
+          "confidence": 0.191
+        },
+        {
+          "text": "en",
+          "start": 14.58,
+          "end": 14.62,
+          "confidence": 0.467
+        },
+        {
+          "text": "tant",
+          "start": 14.62,
+          "end": 14.66,
+          "confidence": 0.997
+        },
+        {
+          "text": "que",
+          "start": 14.66,
+          "end": 14.7,
+          "confidence": 0.99
+        },
+        {
+          "text": "missale",
+          "start": 14.7,
+          "end": 14.74,
+          "confidence": 0.584
+        },
+        {
+          "text": "pour",
+          "start": 14.74,
+          "end": 14.78,
+          "confidence": 0.942
+        },
+        {
+          "text": "la",
+          "start": 14.78,
+          "end": 14.82,
+          "confidence": 0.989
+        },
+        {
+          "text": "forme",
+          "start": 14.82,
+          "end": 14.86,
+          "confidence": 0.99
+        },
+        {
+          "text": "exceptionnelle",
+          "start": 14.86,
+          "end": 14.9,
+          "confidence": 0.97
+        },
+        {
+          "text": "du",
+          "start": 14.9,
+          "end": 14.94,
+          "confidence": 0.91
+        },
+        {
+          "text": "roi",
+          "start": 14.94,
+          "end": 14.98,
+          "confidence": 0.987
+        },
+        {
+          "text": "de",
+          "start": 14.98,
+          "end": 15.02,
+          "confidence": 0.986
+        },
+        {
+          "text": "la",
+          "start": 15.02,
+          "end": 15.06,
+          "confidence": 0.985
+        },
+        {
+          "text": "Réthos",
+          "start": 15.06,
+          "end": 15.1,
+          "confidence": 0.994
         },
         {
           "text": "n'est",
-          "start": 14.28,
-          "end": 14.42,
-          "confidence": 0.183
+          "start": 15.1,
+          "end": 15.14,
+          "confidence": 0.948
         },
         {
           "text": "pas",
-          "start": 14.42,
-          "end": 14.46,
-          "confidence": 0.855
+          "start": 15.14,
+          "end": 15.18,
+          "confidence": 0.991
         },
         {
-          "text": "passée",
-          "start": 14.46,
-          "end": 14.5,
-          "confidence": 0.017
+          "text": "encore",
+          "start": 15.18,
+          "end": 15.22,
+          "confidence": 0.966
         },
         {
-          "text": "comme",
-          "start": 14.5,
-          "end": 14.54,
-          "confidence": 0.038
+          "text": "la",
+          "start": 15.22,
+          "end": 15.26,
+          "confidence": 0.995
+        },
+        {
+          "text": "même",
+          "start": 15.26,
+          "end": 15.3,
+          "confidence": 0.999
+        },
+        {
+          "text": "chose",
+          "start": 15.3,
+          "end": 15.34,
+          "confidence": 0.994
+        },
+        {
+          "text": "que",
+          "start": 15.34,
+          "end": 15.38,
+          "confidence": 0.989
         },
         {
           "text": "l'a",
-          "start": 14.54,
-          "end": 15.04,
-          "confidence": 0.132
+          "start": 15.38,
+          "end": 15.42,
+          "confidence": 0.998
         },
         {
           "text": "voulu",
-          "start": 15.04,
-          "end": 15.08,
-          "confidence": 0.051
+          "start": 15.42,
+          "end": 15.46,
+          "confidence": 0.998
         },
         {
           "text": "le",
-          "start": 15.08,
-          "end": 15.12,
-          "confidence": 0.021
+          "start": 15.46,
+          "end": 15.5,
+          "confidence": 0.94
         },
         {
           "text": "Père",
-          "start": 15.12,
-          "end": 15.16,
-          "confidence": 0.01
+          "start": 15.5,
+          "end": 15.54,
+          "confidence": 0.994
         },
         {
-          "text": "Benedicte.",
-          "start": 15.16,
-          "end": 15.22,
-          "confidence": 0.024
+          "text": "de",
+          "start": 15.54,
+          "end": 15.58,
+          "confidence": 0.994
+        },
+        {
+          "text": "Benedict.",
+          "start": 15.58,
+          "end": 15.62,
+          "confidence": 0.995
         }
       ]
     }

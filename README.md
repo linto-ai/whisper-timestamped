@@ -41,7 +41,14 @@ These drawbacks are:
 This involves awkward language-dependent conversions, like converting numbers to words ("2" -> "two"), symbols to words ("%" -> "percent", "€" -> "euro(s)")...
 * The lack of robustness around speech disfluencies (fillers, hesitations, repeated words...) that are usually removed by Whisper.
 
-An alternative approacj
+An alternative approach, that does not require an additional model, is to look at the probabilities of timestamp tokens
+estimated by the Whisper model after each (sub)word token is predicted.
+It was implemented for instance in [whisper.cpp](https://github.com/ggerganov/whisper.cpp) and [stable-ts](https://github.com/jianfch/stable-ts).
+But this approach lacks of robustness, because Whisper models do not have been trained to output meaningful timestamps after each word.
+Whisper models tend to predict timestamps only after a certain number of words have been predicted (typically at the end of a sentence),
+and the probability distribution of timestamps outside this condition may be inaccurate.
+In practice, these methods can produce results that are totally out-of-sync on some periods of time (we observed that especially when there is jingle music).
+Also the timestamp precision of Whisper models tend to be rounded to 1 second (as in many video subtitles), which is too inaccurate for words, and reaching a better accuracy is tricky.
 
 ## Installation
 

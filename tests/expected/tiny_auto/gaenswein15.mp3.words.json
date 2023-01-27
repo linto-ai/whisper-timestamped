@@ -1,26 +1,27 @@
 {
-  "text": " Wie wieder Zulassung des Messfuchs von 1962 als Missale für die außerordentliche Form des grullischen Rätus ist dann nicht so weitergegangen wie sich Papsbelle dick das gewünscht hatte. Das hat er als Emeritzung.",
+  "text": " Wie wieder zu dazu ist Meshfuchs von 1962 als Meshale für die außerordentliche Form des grullischen Rätos ist dann nicht so weitergegangen wie sich Papsbelle dick das gewünscht hatte. Das hat er als Meshale im Rätos.",
   "segments": [
     {
       "id": 0,
       "seek": 0,
-      "start": 0.88,
-      "end": 12.9,
-      "text": " Wie wieder Zulassung des Messfuchs von 1962 als Missale für die außerordentliche Form des grullischen Rätus ist dann nicht so weitergegangen wie sich Papsbelle dick das gewünscht hatte.",
+      "start": 0.9,
+      "end": 12.76,
+      "text": " Wie wieder zu dazu ist Meshfuchs von 1962 als Meshale für die außerordentliche Form des grullischen Rätos ist dann nicht so weitergegangen wie sich Papsbelle dick das gewünscht hatte.",
       "tokens": [
         9233,
         6216,
-        1176,
-        425,
-        40828,
-        730,
-        9847,
+        2164,
+        13034,
+        1418,
+        376,
+        14935,
         69,
         37503,
         2957,
         39498,
         3907,
-        5275,
+        376,
+        14935,
         1220,
         2959,
         978,
@@ -35,7 +36,7 @@
         6282,
         497,
         3628,
-        301,
+        329,
         1418,
         3594,
         1979,
@@ -59,178 +60,184 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.5873738527297974,
-      "compression_ratio": 1.2738095238095237,
-      "no_speech_prob": 0.1106976643204689,
-      "confidence": 0.577,
+      "avg_logprob": -0.6559565617487981,
+      "compression_ratio": 1.2619047619047619,
+      "no_speech_prob": 0.11066971719264984,
+      "confidence": 0.541,
       "words": [
         {
           "text": "Wie",
-          "start": 0.88,
+          "start": 0.9,
           "end": 1.06,
-          "confidence": 0.524
+          "confidence": 0.479
         },
         {
           "text": "wieder",
           "start": 1.06,
           "end": 1.32,
-          "confidence": 0.907
+          "confidence": 0.9
         },
         {
-          "text": "Zulassung",
+          "text": "zu",
           "start": 1.32,
-          "end": 1.92,
-          "confidence": 0.421
+          "end": 1.54,
+          "confidence": 0.249
         },
         {
-          "text": "des",
-          "start": 1.92,
-          "end": 2.14,
-          "confidence": 0.55
+          "text": "dazu",
+          "start": 1.54,
+          "end": 1.86,
+          "confidence": 0.131
         },
         {
-          "text": "Messfuchs",
-          "start": 2.14,
+          "text": "ist",
+          "start": 1.86,
+          "end": 2.12,
+          "confidence": 0.586
+        },
+        {
+          "text": "Meshfuchs",
+          "start": 2.12,
           "end": 2.72,
-          "confidence": 0.697
+          "confidence": 0.333
         },
         {
           "text": "von",
           "start": 2.72,
-          "end": 3.0,
-          "confidence": 0.692
+          "end": 2.94,
+          "confidence": 0.629
         },
         {
           "text": "1962",
-          "start": 3.0,
-          "end": 4.7,
-          "confidence": 0.185
+          "start": 2.94,
+          "end": 4.72,
+          "confidence": 0.208
         },
         {
           "text": "als",
-          "start": 4.7,
-          "end": 5.2,
-          "confidence": 0.917
+          "start": 4.72,
+          "end": 5.22,
+          "confidence": 0.887
         },
         {
-          "text": "Missale",
-          "start": 5.2,
-          "end": 5.68,
-          "confidence": 0.232
+          "text": "Meshale",
+          "start": 5.22,
+          "end": 5.7,
+          "confidence": 0.385
         },
         {
           "text": "für",
-          "start": 5.68,
+          "start": 5.7,
           "end": 5.9,
-          "confidence": 0.923
+          "confidence": 0.932
         },
         {
           "text": "die",
           "start": 5.9,
           "end": 6.08,
-          "confidence": 0.965
+          "confidence": 0.972
         },
         {
           "text": "außerordentliche",
           "start": 6.08,
-          "end": 7.0,
-          "confidence": 0.896
+          "end": 6.98,
+          "confidence": 0.899
         },
         {
           "text": "Form",
-          "start": 7.0,
+          "start": 6.98,
           "end": 7.22,
-          "confidence": 0.598
+          "confidence": 0.655
         },
         {
           "text": "des",
           "start": 7.22,
           "end": 7.58,
-          "confidence": 0.982
+          "confidence": 0.971
         },
         {
           "text": "grullischen",
           "start": 7.58,
           "end": 8.04,
-          "confidence": 0.388
+          "confidence": 0.385
         },
         {
-          "text": "Rätus",
+          "text": "Rätos",
           "start": 8.04,
-          "end": 8.6,
-          "confidence": 0.302
+          "end": 8.58,
+          "confidence": 0.368
         },
         {
           "text": "ist",
-          "start": 8.6,
+          "start": 8.58,
           "end": 9.6,
-          "confidence": 0.715
+          "confidence": 0.55
         },
         {
           "text": "dann",
           "start": 9.6,
-          "end": 9.76,
-          "confidence": 0.513
+          "end": 9.74,
+          "confidence": 0.499
         },
         {
           "text": "nicht",
-          "start": 9.76,
+          "start": 9.74,
           "end": 9.92,
-          "confidence": 0.937
+          "confidence": 0.936
         },
         {
           "text": "so",
           "start": 9.92,
-          "end": 10.06,
-          "confidence": 0.953
+          "end": 10.08,
+          "confidence": 0.954
         },
         {
           "text": "weitergegangen",
-          "start": 10.06,
+          "start": 10.08,
           "end": 10.86,
-          "confidence": 0.771
+          "confidence": 0.741
         },
         {
           "text": "wie",
           "start": 10.86,
           "end": 11.04,
-          "confidence": 0.652
+          "confidence": 0.703
         },
         {
           "text": "sich",
           "start": 11.04,
           "end": 11.22,
-          "confidence": 0.961
+          "confidence": 0.939
         },
         {
           "text": "Papsbelle",
           "start": 11.22,
           "end": 11.62,
-          "confidence": 0.328
+          "confidence": 0.355
         },
         {
           "text": "dick",
           "start": 11.62,
           "end": 11.84,
-          "confidence": 0.368
+          "confidence": 0.319
         },
         {
           "text": "das",
           "start": 11.84,
           "end": 12.08,
-          "confidence": 0.862
+          "confidence": 0.844
         },
         {
           "text": "gewünscht",
           "start": 12.08,
           "end": 12.48,
-          "confidence": 0.787
+          "confidence": 0.817
         },
         {
           "text": "hatte.",
           "start": 12.48,
-          "end": 12.9,
-          "confidence": 0.821
+          "end": 12.76,
+          "confidence": 0.923
         }
       ]
     },
@@ -239,54 +246,70 @@
       "seek": 1300,
       "start": 13.98,
       "end": 15.22,
-      "text": " Das hat er als Emeritzung.",
+      "text": " Das hat er als Meshale im Rätos.",
       "tokens": [
         50364,
         2846,
         2385,
         1189,
         3907,
-        18477,
-        6862,
-        1063,
+        376,
+        14935,
+        1220,
+        566,
+        497,
+        3628,
+        329,
         13,
         51314
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.8094146034934304,
-      "compression_ratio": 0.7647058823529411,
-      "no_speech_prob": 0.04796886816620827,
-      "confidence": 0.434,
+      "avg_logprob": -0.9516821543375651,
+      "compression_ratio": 0.8048780487804879,
+      "no_speech_prob": 0.04523734375834465,
+      "confidence": 0.381,
       "words": [
         {
           "text": "Das",
           "start": 13.98,
-          "end": 14.16,
-          "confidence": 0.596
+          "end": 14.2,
+          "confidence": 0.842
         },
         {
           "text": "hat",
-          "start": 14.16,
+          "start": 14.2,
           "end": 14.32,
-          "confidence": 0.899
+          "confidence": 0.876
         },
         {
           "text": "er",
           "start": 14.32,
           "end": 14.46,
-          "confidence": 0.587
+          "confidence": 0.603
         },
         {
           "text": "als",
           "start": 14.46,
           "end": 14.7,
-          "confidence": 0.744
+          "confidence": 0.628
         },
         {
-          "text": "Emeritzung.",
+          "text": "Meshale",
           "start": 14.7,
+          "end": 15.0,
+          "confidence": 0.205
+        },
+        {
+          "text": "im",
+          "start": 15.0,
+          "end": 15.04,
+          "confidence": 0.1
+        },
+        {
+          "text": "Rätos.",
+          "start": 15.04,
           "end": 15.22,
-          "confidence": 0.27
+          "confidence": 0.466
         }
       ]
     }

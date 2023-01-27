@@ -1,36 +1,81 @@
 {
-  "text": " This is...",
+  "text": " You can't do it, you can't do it.",
   "segments": [
     {
       "id": 0,
       "seek": 0,
-      "start": 0.02,
-      "end": 1.16,
-      "text": " This is...",
+      "start": 0.06,
+      "end": 1.78,
+      "text": " You can't do it, you can't do it.",
       "tokens": [
         50364,
-        639,
-        307,
-        1097,
-        50489
+        509,
+        393,
+        380,
+        360,
+        309,
+        11,
+        291,
+        393,
+        380,
+        360,
+        309,
+        13,
+        50464
       ],
-      "temperature": 1.0,
-      "avg_logprob": -2.9029016494750977,
-      "compression_ratio": 0.5555555555555556,
-      "no_speech_prob": 0.37783098220825195,
-      "confidence": 0.01,
+      "temperature": 0.0,
+      "avg_logprob": -1.2209794362386068,
+      "compression_ratio": 1.1379310344827587,
+      "no_speech_prob": 0.3798484802246094,
+      "confidence": 0.311,
       "words": [
         {
-          "text": "This",
-          "start": 0.02,
-          "end": 0.76,
-          "confidence": 0.002
+          "text": "You",
+          "start": 0.06,
+          "end": 0.6,
+          "confidence": 0.071
         },
         {
-          "text": "is...",
-          "start": 0.76,
-          "end": 1.16,
-          "confidence": 0.023
+          "text": "can't",
+          "start": 0.6,
+          "end": 0.78,
+          "confidence": 0.294
+        },
+        {
+          "text": "do",
+          "start": 0.78,
+          "end": 0.96,
+          "confidence": 0.101
+        },
+        {
+          "text": "it,",
+          "start": 0.96,
+          "end": 1.36,
+          "confidence": 0.341
+        },
+        {
+          "text": "you",
+          "start": 1.36,
+          "end": 1.4,
+          "confidence": 0.191
+        },
+        {
+          "text": "can't",
+          "start": 1.4,
+          "end": 1.7,
+          "confidence": 0.87
+        },
+        {
+          "text": "do",
+          "start": 1.7,
+          "end": 1.74,
+          "confidence": 0.314
+        },
+        {
+          "text": "it.",
+          "start": 1.74,
+          "end": 1.78,
+          "confidence": 0.893
         }
       ]
     }

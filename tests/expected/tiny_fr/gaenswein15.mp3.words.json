@@ -1,186 +1,68 @@
 {
-  "text": " Vivez le plade duכולum? La debates n°stanke est satisfait, c'était le fait qu'il y s'y a le",
+  "text": " Leur de l'Ontario est de la",
   "segments": [
     {
       "id": 0,
       "seek": 0,
-      "start": 0.92,
-      "end": 2.78,
-      "text": " Vivez le plade duכולum?",
+      "start": 0.1,
+      "end": 12.08,
+      "text": " Leur de l'Ontario est de la",
       "tokens": [
-        44288,
-        89,
-        476,
-        499,
-        762,
-        1581,
-        32822,
-        449,
-        30
-      ],
-      "temperature": 1.0,
-      "avg_logprob": -3.617841767101753,
-      "compression_ratio": 0.9696969696969697,
-      "no_speech_prob": 0.1106976643204689,
-      "confidence": 0.005,
-      "words": [
-        {
-          "text": "Vivez",
-          "start": 0.92,
-          "end": 1.24,
-          "confidence": 0.039
-        },
-        {
-          "text": "le",
-          "start": 1.24,
-          "end": 1.36,
-          "confidence": 0.03
-        },
-        {
-          "text": "plade",
-          "start": 1.36,
-          "end": 1.76,
-          "confidence": 0.001
-        },
-        {
-          "text": "duכולum?",
-          "start": 1.76,
-          "end": 2.78,
-          "confidence": 0.002
-        }
-      ]
-    },
-    {
-      "id": 1,
-      "seek": 0,
-      "start": 3.18,
-      "end": 4.84,
-      "text": " La debates n°stanke est satisfait,",
-      "tokens": [
-        2369,
-        24203,
-        297,
-        11782,
-        18758,
-        330,
+        50364,
+        1456,
+        374,
+        368,
+        287,
+        6,
+        46,
+        580,
+        4912,
         871,
-        5519,
-        1001,
-        11
+        368,
+        635,
+        51571
       ],
-      "temperature": 1.0,
-      "avg_logprob": -3.617841767101753,
-      "compression_ratio": 0.9696969696969697,
-      "no_speech_prob": 0.1106976643204689,
-      "confidence": 0.003,
+      "temperature": 0.0,
+      "avg_logprob": -1.8289165496826172,
+      "compression_ratio": 0.84375,
+      "no_speech_prob": 0.11066971719264984,
+      "confidence": 0.15,
       "words": [
         {
-          "text": "La",
-          "start": 3.18,
-          "end": 3.22,
-          "confidence": 0.002
+          "text": "Leur",
+          "start": 0.1,
+          "end": 1.46,
+          "confidence": 0.057
         },
         {
-          "text": "debates",
-          "start": 3.22,
-          "end": 3.3,
-          "confidence": 0.0
+          "text": "de",
+          "start": 1.46,
+          "end": 1.5,
+          "confidence": 0.121
         },
         {
-          "text": "n°stanke",
-          "start": 3.3,
-          "end": 3.7,
-          "confidence": 0.001
+          "text": "l'Ontario",
+          "start": 1.5,
+          "end": 8.58,
+          "confidence": 0.289
         },
         {
           "text": "est",
-          "start": 3.7,
-          "end": 3.74,
-          "confidence": 0.063
+          "start": 8.58,
+          "end": 11.0,
+          "confidence": 0.123
         },
         {
-          "text": "satisfait,",
-          "start": 3.74,
-          "end": 4.84,
-          "confidence": 0.015
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "seek": 0,
-      "start": 14.16,
-      "end": 15.26,
-      "text": " c'était le fait qu'il y s'y a le",
-      "tokens": [
-        269,
-        6,
-        9743,
-        476,
-        3887,
-        421,
-        6,
-        388,
-        288,
-        262,
-        6,
-        88,
-        257,
-        476
-      ],
-      "temperature": 1.0,
-      "avg_logprob": -3.617841767101753,
-      "compression_ratio": 0.9696969696969697,
-      "no_speech_prob": 0.1106976643204689,
-      "confidence": 0.094,
-      "words": [
-        {
-          "text": "c'était",
-          "start": 14.16,
-          "end": 14.34,
-          "confidence": 0.069
+          "text": "de",
+          "start": 11.0,
+          "end": 11.04,
+          "confidence": 0.067
         },
         {
-          "text": "le",
-          "start": 14.34,
-          "end": 14.42,
-          "confidence": 0.034
-        },
-        {
-          "text": "fait",
-          "start": 14.42,
-          "end": 14.46,
-          "confidence": 0.045
-        },
-        {
-          "text": "qu'il",
-          "start": 14.46,
-          "end": 14.54,
-          "confidence": 0.332
-        },
-        {
-          "text": "y",
-          "start": 14.54,
-          "end": 14.58,
-          "confidence": 0.282
-        },
-        {
-          "text": "s'y",
-          "start": 14.58,
-          "end": 15.18,
-          "confidence": 0.054
-        },
-        {
-          "text": "a",
-          "start": 15.18,
-          "end": 15.22,
-          "confidence": 0.462
-        },
-        {
-          "text": "le",
-          "start": 15.22,
-          "end": 15.26,
-          "confidence": 0.01
+          "text": "la",
+          "start": 11.04,
+          "end": 12.08,
+          "confidence": 0.132
         }
       ]
     }

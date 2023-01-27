@@ -1,11 +1,11 @@
 {
-  "text": " Die Wiederzulassung des Messbuchs von 1962 als Missale für die außerordentliche Form des römischen Rethus ist dann nicht so weitergegangen, wie sich Papst Benedikt das gewünscht hatte. Das hat er als Amerikaner zu tun.",
+  "text": " Die Wiederzulassung des Messbuchs von 1962 als Missale für die außerordentliche Form des römischen Rethus ist dann nicht so weitergegangen, wie sich Papst Benedikt das gewünscht hatte. Das hat er als Emeritus...",
   "segments": [
     {
       "id": 0,
       "seek": 0,
-      "start": 0.82,
-      "end": 8.58,
+      "start": 0.78,
+      "end": 8.52,
       "text": " Die Wiederzulassung des Messbuchs von 1962 als Missale für die außerordentliche Form des römischen Rethus",
       "tokens": [
         3229,
@@ -38,108 +38,108 @@
         301
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.26453775072854663,
+      "avg_logprob": -0.26476896376836867,
       "compression_ratio": 1.2285714285714286,
-      "no_speech_prob": 0.5753375887870789,
-      "confidence": 0.828,
+      "no_speech_prob": 0.575347363948822,
+      "confidence": 0.857,
       "words": [
         {
           "text": "Die",
-          "start": 0.82,
+          "start": 0.78,
           "end": 1.08,
-          "confidence": 0.61
+          "confidence": 0.873
         },
         {
           "text": "Wiederzulassung",
           "start": 1.08,
           "end": 1.92,
-          "confidence": 0.974
+          "confidence": 0.976
         },
         {
           "text": "des",
           "start": 1.92,
           "end": 2.12,
-          "confidence": 0.981
+          "confidence": 0.985
         },
         {
           "text": "Messbuchs",
           "start": 2.12,
           "end": 2.72,
-          "confidence": 0.942
+          "confidence": 0.939
         },
         {
           "text": "von",
           "start": 2.72,
-          "end": 2.98,
-          "confidence": 0.963
+          "end": 2.94,
+          "confidence": 0.971
         },
         {
           "text": "1962",
-          "start": 2.98,
-          "end": 4.72,
-          "confidence": 0.975
+          "start": 2.94,
+          "end": 4.74,
+          "confidence": 0.976
         },
         {
           "text": "als",
-          "start": 4.72,
+          "start": 4.74,
           "end": 5.2,
-          "confidence": 0.928
+          "confidence": 0.926
         },
         {
           "text": "Missale",
           "start": 5.2,
           "end": 5.74,
-          "confidence": 0.934
+          "confidence": 0.905
         },
         {
           "text": "für",
           "start": 5.74,
           "end": 5.94,
-          "confidence": 0.955
+          "confidence": 0.949
         },
         {
           "text": "die",
           "start": 5.94,
           "end": 6.1,
-          "confidence": 0.989
+          "confidence": 0.988
         },
         {
           "text": "außerordentliche",
           "start": 6.1,
-          "end": 6.92,
-          "confidence": 0.915
+          "end": 6.94,
+          "confidence": 0.94
         },
         {
           "text": "Form",
-          "start": 6.92,
+          "start": 6.94,
           "end": 7.28,
-          "confidence": 0.792
+          "confidence": 0.827
         },
         {
           "text": "des",
           "start": 7.28,
           "end": 7.58,
-          "confidence": 0.857
+          "confidence": 0.793
         },
         {
           "text": "römischen",
           "start": 7.58,
           "end": 8.02,
-          "confidence": 0.604
+          "confidence": 0.654
         },
         {
           "text": "Rethus",
           "start": 8.02,
-          "end": 8.58,
-          "confidence": 0.528
+          "end": 8.52,
+          "confidence": 0.6
         }
       ]
     },
     {
       "id": 1,
       "seek": 0,
-      "start": 9.4,
-      "end": 12.78,
+      "start": 9.42,
+      "end": 12.76,
       "text": " ist dann nicht so weitergegangen, wie sich Papst Benedikt das gewünscht hatte.",
       "tokens": [
         1418,
@@ -165,152 +165,137 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.26453775072854663,
+      "avg_logprob": -0.26476896376836867,
       "compression_ratio": 1.2285714285714286,
-      "no_speech_prob": 0.5753375887870789,
-      "confidence": 0.845,
+      "no_speech_prob": 0.575347363948822,
+      "confidence": 0.893,
       "words": [
         {
           "text": "ist",
-          "start": 9.4,
+          "start": 9.42,
           "end": 9.6,
-          "confidence": 0.722
+          "confidence": 0.964
         },
         {
           "text": "dann",
           "start": 9.6,
-          "end": 9.76,
-          "confidence": 0.439
+          "end": 9.78,
+          "confidence": 0.693
         },
         {
           "text": "nicht",
-          "start": 9.76,
-          "end": 9.92,
+          "start": 9.78,
+          "end": 9.94,
           "confidence": 0.996
         },
         {
           "text": "so",
-          "start": 9.92,
-          "end": 10.12,
-          "confidence": 0.996
+          "start": 9.94,
+          "end": 10.08,
+          "confidence": 0.991
         },
         {
           "text": "weitergegangen,",
-          "start": 10.12,
-          "end": 10.92,
-          "confidence": 0.809
+          "start": 10.08,
+          "end": 11.0,
+          "confidence": 0.819
         },
         {
           "text": "wie",
-          "start": 10.92,
-          "end": 11.02,
-          "confidence": 0.959
+          "start": 11.0,
+          "end": 11.04,
+          "confidence": 0.987
         },
         {
           "text": "sich",
-          "start": 11.02,
+          "start": 11.04,
           "end": 11.2,
-          "confidence": 0.963
+          "confidence": 0.959
         },
         {
           "text": "Papst",
           "start": 11.2,
           "end": 11.52,
-          "confidence": 0.927
+          "confidence": 0.891
         },
         {
           "text": "Benedikt",
           "start": 11.52,
           "end": 11.88,
-          "confidence": 0.913
+          "confidence": 0.945
         },
         {
           "text": "das",
           "start": 11.88,
           "end": 12.04,
-          "confidence": 0.437
+          "confidence": 0.52
         },
         {
           "text": "gewünscht",
           "start": 12.04,
           "end": 12.42,
-          "confidence": 0.985
+          "confidence": 0.998
         },
         {
           "text": "hatte.",
           "start": 12.42,
-          "end": 12.78,
-          "confidence": 0.887
+          "end": 12.76,
+          "confidence": 0.934
         }
       ]
     },
     {
       "id": 2,
       "seek": 1300,
-      "start": 14.0,
-      "end": 15.24,
-      "text": " Das hat er als Amerikaner zu tun.",
+      "start": 13.02,
+      "end": 15.22,
+      "text": " Das hat er als Emeritus...",
       "tokens": [
         50364,
         2846,
         2385,
         1189,
         3907,
-        22597,
-        16048,
-        260,
-        2164,
-        4267,
-        13,
-        51614
+        18477,
+        30973,
+        1097,
+        51764
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.7203598022460938,
-      "compression_ratio": 0.8461538461538461,
-      "no_speech_prob": 0.0009689051657915115,
-      "confidence": 0.467,
+      "avg_logprob": -0.8177267074584961,
+      "compression_ratio": 0.7647058823529411,
+      "no_speech_prob": 0.0009689098806120455,
+      "confidence": 0.642,
       "words": [
         {
           "text": "Das",
-          "start": 14.0,
-          "end": 14.1,
-          "confidence": 0.557
+          "start": 13.02,
+          "end": 14.12,
+          "confidence": 0.779
         },
         {
           "text": "hat",
-          "start": 14.1,
-          "end": 14.32,
-          "confidence": 0.88
+          "start": 14.12,
+          "end": 14.34,
+          "confidence": 0.824
         },
         {
           "text": "er",
-          "start": 14.32,
+          "start": 14.34,
           "end": 14.54,
-          "confidence": 0.972
+          "confidence": 0.991
         },
         {
           "text": "als",
           "start": 14.54,
-          "end": 14.62,
-          "confidence": 0.916
+          "end": 14.64,
+          "confidence": 0.944
         },
         {
-          "text": "Amerikaner",
-          "start": 14.62,
-          "end": 15.16,
-          "confidence": 0.335
-        },
-        {
-          "text": "zu",
-          "start": 15.16,
-          "end": 15.2,
-          "confidence": 0.097
-        },
-        {
-          "text": "tun.",
-          "start": 15.2,
-          "end": 15.24,
-          "confidence": 0.555
+          "text": "Emeritus...",
+          "start": 14.64,
+          "end": 15.22,
+          "confidence": 0.341
         }
       ]
     }

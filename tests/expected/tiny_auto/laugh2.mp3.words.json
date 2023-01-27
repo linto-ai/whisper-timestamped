@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.16,
-      "end": 0.68,
+      "end": 0.7,
       "text": " Thank you.",
       "tokens": [
         50364,
@@ -15,22 +15,22 @@
         50414
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.9013299147288004,
+      "avg_logprob": -0.9029281139373779,
       "compression_ratio": 0.5555555555555556,
-      "no_speech_prob": 0.42993900179862976,
-      "confidence": 0.35,
+      "no_speech_prob": 0.43056344985961914,
+      "confidence": 0.428,
       "words": [
         {
           "text": "Thank",
           "start": 0.16,
           "end": 0.36,
-          "confidence": 0.078
+          "confidence": 0.187
         },
         {
           "text": "you.",
           "start": 0.36,
-          "end": 0.68,
-          "confidence": 0.743
+          "end": 0.7,
+          "confidence": 0.979
         }
       ]
     }

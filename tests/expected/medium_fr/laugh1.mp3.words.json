@@ -1,73 +1,29 @@
 {
-  "text": " Sous-titres réalisés para la communauté d'Amara.org",
+  "text": " Rires",
   "segments": [
     {
       "id": 0,
       "seek": 0,
       "start": 0.02,
-      "end": 3.5,
-      "text": " Sous-titres réalisés para la communauté d'Amara.org",
+      "end": 1.7,
+      "text": " Rires",
       "tokens": [
         50364,
-        318,
-        563,
-        12,
-        27689,
-        495,
-        18911,
-        47151,
-        1690,
-        635,
-        49056,
-        274,
-        6,
-        16833,
-        2419,
-        13,
-        4646,
-        50514
+        497,
+        3145,
+        50576
       ],
-      "temperature": 1.0,
-      "avg_logprob": -0.3517357173718904,
-      "compression_ratio": 0.8852459016393442,
-      "no_speech_prob": 0.5532587170600891,
-      "confidence": 0.635,
+      "temperature": 0.0,
+      "avg_logprob": -1.0973867416381835,
+      "compression_ratio": 0.38461538461538464,
+      "no_speech_prob": 0.5563598275184631,
+      "confidence": 0.265,
       "words": [
         {
-          "text": "Sous-titres",
+          "text": "Rires",
           "start": 0.02,
-          "end": 1.34,
-          "confidence": 0.298
-        },
-        {
-          "text": "réalisés",
-          "start": 1.34,
-          "end": 1.84,
-          "confidence": 0.663
-        },
-        {
-          "text": "para",
-          "start": 1.84,
-          "end": 2.56,
-          "confidence": 0.888
-        },
-        {
-          "text": "la",
-          "start": 2.56,
-          "end": 2.78,
-          "confidence": 0.888
-        },
-        {
-          "text": "communauté",
-          "start": 2.78,
-          "end": 2.98,
-          "confidence": 0.931
-        },
-        {
-          "text": "d'Amara.org",
-          "start": 2.98,
-          "end": 3.5,
-          "confidence": 0.985
+          "end": 1.7,
+          "confidence": 0.265
         }
       ]
     }
