@@ -28,18 +28,20 @@ There are some additions to this notebook:
 * **If possible (without beam search...)**, there no additional inference steps are required to predict word timestamps (word alignment is done on the fly, after each speech segment is decoded).
 * There is a special care about memory usage: `whisper-timestamped` is able to process long files, with little additional memory with respect to the regular use of Whisper model.
 
-### Note on other approaches
+### Notes on other approaches
 
-Another relevant approach to recover word-level timestamps consists in using wav2vec models that predict characters,
+An alternative relevant approach to recover word-level timestamps consists in using wav2vec models that predict characters,
 as successfully implemented in [whisperX](https://github.com/m-bain/whisperX).
 But these approaches have several drawbacks, which does not have approaches based on cross-attention weights such as `whisper_timestamped`.
 These drawbacks are:
 * The need to perform twice the inference (once with Whisper, once with wav2vec), which has an impact on the Real Time Factor.
-* The need to handle (at least) an additional neural network, which consumes memory.
+* The need to handle (at least) one additional neural network, which consumes memory.
 * The need to find one wav2vec model per language to support.
 * The need to normalize characters in whisper transcription to match the character set of wav2vec model.
 This involves awkward language-dependent conversions, like converting numbers to words ("2" -> "two"), symbols to words ("%" -> "percent", "€" -> "euro(s)")...
 * The lack of robustness around speech disfluencies (fillers, hesitations, repeated words...) that are usually removed by Whisper.
+
+An alternative approacj
 
 ## Installation
 
@@ -75,6 +77,9 @@ help(whisper_timestamped.transcribe)
 The main difference with `whisper.transcribe()` is that
 the output will include a key `"words"` for all segments, with the word start and end position. Note that word will include punctuation. See example [below](#example-output).
 
+Besides, default decoding options are different, in order to favour efficient decoding (greedy decoding instead of beam search, and no temperature sampling fallback).
+To have same default as in `whisper`, use ```beam_size=5, best_of=5, temperature=(0.0, 0.2, 0.4, 0.6, 0.8, 1.0)```.
+
 There are also additional options related to word alignement.
 
 In general, by importing `whisper_timestamped` instead of `whisper` in your python script, it should do the job, if you use `transcribe(model, ...)` instead of `model.transcribe(...)`:
@@ -106,11 +111,13 @@ The main differences with `whisper` CLI are:
 * Some default options are different:
   * By default, no output folder is set: Use `--output_dir .` for Whisper default
   * By default, there is no verbose: Use `--verbose True` for Whisper default
-* There are some specific options added
-  * `--efficient` to use a faster greedy decoding (without beam search neither several sampling at each step),
+  * By default, beam search decoding and temperature sampling fallback are disabled, to favour an efficient decoding.
+    To set the same as Whisper default, you can use `--accurate` (which is an alias for ```--beam_search 5 --temperature_increment_on_fallback 0.2 --best_of 5```).
+* There are some additional specific options:
+  <!-- * `--efficient` to use a faster greedy decoding (without beam search neither several sampling at each step),
   which enables a special path where word timestamps are computed on the fly (no need to run inference twice).
-  Note that transcription results might be significantly worse on challenging audios with this option.
-  * `--compute_confidence` to enable/disable the computation of confidence scores for each word
+  Note that transcription results might be significantly worse on challenging audios with this option. -->
+  * `--compute_confidence` to enable/disable the computation of confidence scores for each word.
   * `--punctuations_with_words` to decide whether punctuation marks should be included or not with preceding words.
 
 An example command line to process several files with the `tiny` model and output results in the current folder as whisper would do by default:
