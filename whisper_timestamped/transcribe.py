@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.7.3"
+__version__ = "1.7.4"
 
 # Whisper and Torch
 import whisper
@@ -381,8 +381,20 @@ def _transcribe_timestamped_efficient(
                 tokens.append(last_token_fallback)
                 segment_tokens[-1].append(last_token_fallback)
                 attention_weights = [torch.cat(w, dim=-2) for w in segment_attweights]
+                last_logprobs = chunk_logprobs[-1]
             else:
                 attention_weights = [torch.cat(w[:-1], dim=-2) for w in segment_attweights]
+                last_logprobs = chunk_logprobs[-2]
+
+            # Check prediction of last token
+            end_token = tokens[-1]
+            if end_token >= tokenizer.timestamp_begin:
+                start_token = tokens[0]
+                assert start_token >= tokenizer.timestamp_begin
+                # If Whisper prediction of the end is obviously wrong, we predict it again (constrained)
+                if end_token <= start_token: 
+                    end_token = last_logprobs[start_token+1:].argmax() + start_token + 1
+                    tokens[-1] = end_token
 
             ws = perform_word_alignment(
                 tokens,
@@ -729,6 +741,9 @@ def _transcribe_timestamped_naive(
 
             start = segment["start"]
             end = segment["end"]
+            if end < start:
+                # Whisper is wrong on the prediction of segment end
+                end = min(audio_duration, start + 30.0)
 
             start_margin_min = start - refine_whisper_precision_sec
             start_margin_max = start + refine_whisper_precision_sec
