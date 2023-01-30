@@ -119,7 +119,7 @@ The main differences with `whisper` CLI are:
   * By default, no output folder is set: Use `--output_dir .` for Whisper default
   * By default, there is no verbose: Use `--verbose True` for Whisper default
   * By default, beam search decoding and temperature sampling fallback are disabled, to favour an efficient decoding.
-    To set the same as Whisper default, you can use `--accurate` (which is an alias for ```--beam_search 5 --temperature_increment_on_fallback 0.2 --best_of 5```).
+    To set the same as Whisper default, you can use `--accurate` (which is an alias for ```--beam_size 5 --temperature_increment_on_fallback 0.2 --best_of 5```).
 * There are some additional specific options:
   <!-- * `--efficient` to use a faster greedy decoding (without beam search neither several sampling at each step),
   which enables a special path where word timestamps are computed on the fly (no need to run inference twice).
