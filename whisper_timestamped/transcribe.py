@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.7.2"
+__version__ = "1.7.3"
 
 # Whisper and Torch
 import whisper
@@ -656,8 +656,9 @@ def _transcribe_timestamped_efficient(
 
                 timestamped_word["confidence"] = round_confidence(word_logprobs.mean().exp().item())
 
-            assert i_end == len(logprobs), f"Fatal Error: Got inconsistent logprobs length for segment {i}: {len(logprobs)} != {i_end}"
-            if not include_punctuation_in_confidence:
+            if i_end != len(logprobs):
+                logger.warn(f"Got inconsistent length for segment {i} ({len(logprobs)} != {i_end}). Some words have been ignored.")
+            if not include_punctuation_in_confidence:   
                 logprobs_nopunc = torch.cat(logprobs_nopunc)
                 segment["confidence"] = round_confidence(logprobs_nopunc.mean().exp().item())
 
@@ -1270,6 +1271,14 @@ def write_csv(transcript, file, sep = ",", text_first=True, format_timestamps=No
             [[format_timestamps(segment["start"]), format_timestamps(segment["end"]), segment["text"].strip()] for segment in transcript]
         )
 
+# https://stackoverflow.com/questions/66588715/runtimeerror-cudnn-error-cudnn-status-not-initialized-using-pytorch
+# CUDA initialization may fail on old GPU card
+def force_cudnn_initialization(device=None, s=32):
+    if device is None:
+        device = torch.device('cuda')
+    torch.nn.functional.conv2d(torch.zeros(s, s, s, s, device=device), torch.zeros(s, s, s, s, device=device))
+
+
 def cli():
 
     import os
@@ -1384,6 +1393,9 @@ def cli():
     model = args.pop("model")
     device = args.pop("device")
     model_dir = args.pop("model_dir")
+
+    if device.lower().startswith("cuda"):
+        force_cudnn_initialization(device)
 
     output_format = args.pop("output_format")
     if output_format == "all":
