@@ -256,7 +256,7 @@ def _transcribe_timestamped_efficient(
     verbose = whisper_options["verbose"]
     # Note: "on-the-fly" verbose is not implementable in the current state (we don't know the absolute position of the current chunk). See issue #18
     verbose_bugged = False
-    whisper_options["verbose"] = None if whisper_options["verbose"] is True else False  # We will print intermediate results ourselves
+    whisper_options["verbose"] = None if whisper_options["verbose"] is True else whisper_options["verbose"]  # We will print intermediate results ourselves
 
     logit_filters = get_logit_filters(model, whisper_options)
     language = whisper_options["language"]
@@ -690,7 +690,7 @@ def _transcribe_timestamped_naive(
     **whisper_options,
 ):
     verbose = whisper_options["verbose"]
-    whisper_options["verbose"] = None if whisper_options["verbose"] is True else False  # We will print intermediate results ourselves
+    whisper_options["verbose"] = None if whisper_options["verbose"] is True else whisper_options["verbose"]  # We will print intermediate results ourselves
     language = whisper_options["language"]
     refine_whisper_precision_sec = refine_whisper_precision_nframes * AUDIO_TIME_PER_TOKEN
 
