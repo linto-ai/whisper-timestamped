@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.7.4"
+__version__ = "1.7.5"
 
 # Whisper and Torch
 import whisper
@@ -392,9 +392,11 @@ def _transcribe_timestamped_efficient(
                 start_token = tokens[0]
                 assert start_token >= tokenizer.timestamp_begin
                 # If Whisper prediction of the end is obviously wrong, we predict it again (constrained)
-                if end_token <= start_token: 
-                    end_token = last_logprobs[start_token+1:].argmax() + start_token + 1
-                    tokens[-1] = end_token
+                if end_token <= start_token:
+                    new_end_token = last_logprobs[start_token+1:].argmax() + start_token + 1
+                    tokens[-1] = new_end_token.item()
+                    if debug:
+                        logger.debug(f"Re-estimated end token {tokenizer.decode_with_timestamps([new_end_token])} (was {tokenizer.decode_with_timestamps([end_token])}) to be after start token {tokenizer.decode_with_timestamps([start_token])}")
 
             ws = perform_word_alignment(
                 tokens,
