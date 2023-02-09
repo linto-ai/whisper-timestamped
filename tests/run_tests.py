@@ -7,6 +7,9 @@ import test_transcribe
 if __name__ == '__main__':
 
     # Handle several ways of generating expected outputs
+    if "--long" in sys.argv:
+        test_transcribe.SKIP_LONG_TEST_IF_CPU = False
+        sys.argv.remove("--long")
     if "--generate" in sys.argv:
         test_transcribe.FAIL_IF_REFERENCE_NOT_FOUND = False
         sys.argv.remove("--generate")

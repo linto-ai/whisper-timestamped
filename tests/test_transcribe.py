@@ -15,12 +15,13 @@ FAIL_IF_REFERENCE_NOT_FOUND = True
 GENERATE_NEW_ONLY = False
 GENERATE_ALL = False
 GENERATE_DEVICE_DEPENDENT = False
+SKIP_LONG_TEST_IF_CPU = True
 
 
 class TestHelper(unittest.TestCase):
 
     def skipLongTests(self):
-        return not torch.cuda.is_available()
+        return SKIP_LONG_TEST_IF_CPU and not torch.cuda.is_available()
 
     def setUp(self):
         self.maxDiff = None
