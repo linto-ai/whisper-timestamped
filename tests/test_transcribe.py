@@ -217,8 +217,7 @@ class TestHelperCli(TestHelper):
             # Butterfly effect: Results are different depending on the device for long files
             duration = self.get_audio_duration(input_filename)
             if device_specific is None:
-                device_dependent = duration > 60 or (
-                    duration > 30 and "tiny_fr" in name)
+                device_dependent = duration > 60 or (duration > 30 and "tiny_fr" in name) or ("empty" in input_filename and "medium_auto" in name)
             else:
                 device_dependent = device_specific
             name_ = name
@@ -423,6 +422,7 @@ class TestTranscribeMonolingual(TestHelperCli):
             ["--model", "small.en", "--condition", "True", "--efficient"],
             "small.en",
             files=["arabic.mp3"],
+            device_specific=True,
         )
 
 
