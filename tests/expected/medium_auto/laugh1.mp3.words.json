@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.02,
-      "end": 1.42,
+      "end": 1.64,
       "text": " hahahaha",
       "tokens": [
         50364,
@@ -14,16 +14,16 @@
         50464
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.2422116279602051,
+      "avg_logprob": -1.2410529136657715,
       "compression_ratio": 0.6666666666666666,
-      "no_speech_prob": 0.5563598275184631,
-      "confidence": 0.146,
+      "no_speech_prob": 0.5549651980400085,
+      "confidence": 0.147,
       "words": [
         {
           "text": "hahahaha",
           "start": 0.02,
-          "end": 1.42,
-          "confidence": 0.146
+          "end": 1.64,
+          "confidence": 0.147
         }
       ]
     }

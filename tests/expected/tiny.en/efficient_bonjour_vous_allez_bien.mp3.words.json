@@ -23,22 +23,22 @@
         50513
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.8026032447814941,
+      "avg_logprob": -0.801825932094029,
       "compression_ratio": 0.7894736842105263,
-      "no_speech_prob": 0.11794709414243698,
-      "confidence": 0.495,
+      "no_speech_prob": 0.11799175292253494,
+      "confidence": 0.496,
       "words": [
         {
           "text": "Mohoo!",
           "start": 0.44,
           "end": 1.72,
-          "confidence": 0.27
+          "confidence": 0.271
         },
         {
           "text": "Let's",
           "start": 1.72,
           "end": 2.04,
-          "confidence": 0.677
+          "confidence": 0.676
         },
         {
           "text": "go",
@@ -50,7 +50,7 @@
           "text": "with",
           "start": 2.18,
           "end": 2.38,
-          "confidence": 0.234
+          "confidence": 0.233
         },
         {
           "text": "it",
@@ -88,9 +88,9 @@
         50663
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.17857762745448522,
+      "avg_logprob": -0.17847936494009836,
       "compression_ratio": 0.7894736842105263,
-      "no_speech_prob": 0.16926728188991547,
+      "no_speech_prob": 0.1688624918460846,
       "confidence": 0.955,
       "words": [
         {
@@ -103,7 +103,7 @@
           "text": "Let's",
           "start": 34.44,
           "end": 34.58,
-          "confidence": 0.871
+          "confidence": 0.869
         },
         {
           "text": "go",
@@ -121,7 +121,7 @@
           "text": "it",
           "start": 34.96,
           "end": 35.0,
-          "confidence": 0.987
+          "confidence": 0.988
         },
         {
           "text": "again!",

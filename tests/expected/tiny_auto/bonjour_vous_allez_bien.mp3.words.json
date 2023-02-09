@@ -16,16 +16,16 @@
         0
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.9459300794099507,
+      "avg_logprob": -0.9448580490915399,
       "compression_ratio": 0.8166666666666667,
-      "no_speech_prob": 0.04296562075614929,
-      "confidence": 0.316,
+      "no_speech_prob": 0.042649365961551666,
+      "confidence": 0.317,
       "words": [
         {
           "text": "Боже",
           "start": 0.46,
           "end": 0.78,
-          "confidence": 0.422
+          "confidence": 0.423
         },
         {
           "text": "улыл!",
@@ -52,9 +52,9 @@
         50464
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.2705641852484808,
+      "avg_logprob": -1.272515508863661,
       "compression_ratio": 0.7441860465116279,
-      "no_speech_prob": 0.12119204550981522,
+      "no_speech_prob": 0.12040600180625916,
       "confidence": 0.132,
       "words": [
         {
@@ -73,7 +73,7 @@
           "text": "на",
           "start": 2.4,
           "end": 2.46,
-          "confidence": 0.078
+          "confidence": 0.077
         },
         {
           "text": "меня!",
@@ -98,16 +98,16 @@
         0
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.813320889192469,
+      "avg_logprob": -0.8131243761848,
       "compression_ratio": 0.8363636363636363,
-      "no_speech_prob": 0.6143094301223755,
-      "confidence": 0.726,
+      "no_speech_prob": 0.6122337579727173,
+      "confidence": 0.725,
       "words": [
         {
           "text": "Боже",
           "start": 32.98,
           "end": 33.26,
-          "confidence": 0.601
+          "confidence": 0.6
         },
         {
           "text": "улыл!",
@@ -134,9 +134,9 @@
         50464
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.0258605745103624,
+      "avg_logprob": -1.0267661412556965,
       "compression_ratio": 0.7105263157894737,
-      "no_speech_prob": 0.1261528581380844,
+      "no_speech_prob": 0.12534433603286743,
       "confidence": 0.187,
       "words": [
         {

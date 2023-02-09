@@ -29,10 +29,10 @@
         18527
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.1883477750031843,
+      "avg_logprob": -1.1823576222295347,
       "compression_ratio": 1.52020202020202,
-      "no_speech_prob": 0.3539488911628723,
-      "confidence": 0.323,
+      "no_speech_prob": 0.3504664897918701,
+      "confidence": 0.324,
       "words": [
         {
           "text": "I'm",
@@ -44,7 +44,7 @@
           "text": "all",
           "start": 0.74,
           "end": 1.02,
-          "confidence": 0.082
+          "confidence": 0.083
         },
         {
           "text": "around",
@@ -56,7 +56,7 @@
           "text": "my",
           "start": 1.24,
           "end": 1.42,
-          "confidence": 0.128
+          "confidence": 0.129
         },
         {
           "text": "business",
@@ -74,7 +74,7 @@
           "text": "we",
           "start": 1.9,
           "end": 1.98,
-          "confidence": 0.937
+          "confidence": 0.938
         },
         {
           "text": "got",
@@ -86,19 +86,19 @@
           "text": "a",
           "start": 2.12,
           "end": 2.28,
-          "confidence": 0.639
+          "confidence": 0.642
         },
         {
           "text": "recommendation",
           "start": 2.28,
           "end": 2.88,
-          "confidence": 0.597
+          "confidence": 0.598
         },
         {
           "text": "for",
           "start": 2.88,
           "end": 3.46,
-          "confidence": 0.371
+          "confidence": 0.37
         },
         {
           "text": "you",
@@ -110,7 +110,7 @@
           "text": "on",
           "start": 3.62,
           "end": 3.82,
-          "confidence": 0.799
+          "confidence": 0.803
         },
         {
           "text": "your",
@@ -122,19 +122,19 @@
           "text": "door",
           "start": 4.36,
           "end": 4.62,
-          "confidence": 0.144
+          "confidence": 0.146
         },
         {
           "text": "to",
           "start": 4.62,
           "end": 4.84,
-          "confidence": 0.181
+          "confidence": 0.182
         },
         {
           "text": "the",
           "start": 4.84,
           "end": 4.9,
-          "confidence": 0.5
+          "confidence": 0.501
         },
         {
           "text": "VA",
@@ -158,10 +158,10 @@
         311
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.1883477750031843,
+      "avg_logprob": -1.1823576222295347,
       "compression_ratio": 1.52020202020202,
-      "no_speech_prob": 0.3539488911628723,
-      "confidence": 0.174,
+      "no_speech_prob": 0.3504664897918701,
+      "confidence": 0.175,
       "words": [
         {
           "text": "We",
@@ -173,13 +173,13 @@
           "text": "have",
           "start": 5.62,
           "end": 5.74,
-          "confidence": 0.652
+          "confidence": 0.65
         },
         {
           "text": "18A's",
           "start": 5.74,
           "end": 6.82,
-          "confidence": 0.181
+          "confidence": 0.182
         }
       ]
     },
@@ -213,16 +213,16 @@
         264
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.1883477750031843,
+      "avg_logprob": -1.1823576222295347,
       "compression_ratio": 1.52020202020202,
-      "no_speech_prob": 0.3539488911628723,
-      "confidence": 0.327,
+      "no_speech_prob": 0.3504664897918701,
+      "confidence": 0.326,
       "words": [
         {
           "text": "Okay,",
           "start": 12.04,
           "end": 12.76,
-          "confidence": 0.66
+          "confidence": 0.662
         },
         {
           "text": "okay,",
@@ -234,13 +234,13 @@
           "text": "I",
           "start": 13.04,
           "end": 13.22,
-          "confidence": 0.209
+          "confidence": 0.208
         },
         {
           "text": "think",
           "start": 13.22,
           "end": 13.58,
-          "confidence": 0.262
+          "confidence": 0.261
         },
         {
           "text": "I'll",
@@ -252,13 +252,13 @@
           "text": "just",
           "start": 13.82,
           "end": 13.98,
-          "confidence": 0.171
+          "confidence": 0.17
         },
         {
           "text": "get",
           "start": 13.98,
           "end": 14.2,
-          "confidence": 0.25
+          "confidence": 0.248
         },
         {
           "text": "him",
@@ -282,7 +282,7 @@
           "text": "they",
           "start": 14.88,
           "end": 15.4,
-          "confidence": 0.606
+          "confidence": 0.608
         },
         {
           "text": "like",
@@ -294,19 +294,19 @@
           "text": "just",
           "start": 15.66,
           "end": 15.94,
-          "confidence": 0.463
+          "confidence": 0.46
         },
         {
           "text": "want",
           "start": 15.94,
           "end": 16.1,
-          "confidence": 0.763
+          "confidence": 0.766
         },
         {
           "text": "to",
           "start": 16.1,
           "end": 16.26,
-          "confidence": 0.912
+          "confidence": 0.91
         },
         {
           "text": "go",
@@ -324,7 +324,7 @@
           "text": "the",
           "start": 16.64,
           "end": 16.76,
-          "confidence": 0.582
+          "confidence": 0.583
         }
       ]
     },
@@ -349,70 +349,70 @@
         16
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.1883477750031843,
+      "avg_logprob": -1.1823576222295347,
       "compression_ratio": 1.52020202020202,
-      "no_speech_prob": 0.3539488911628723,
-      "confidence": 0.471,
+      "no_speech_prob": 0.3504664897918701,
+      "confidence": 0.472,
       "words": [
         {
           "text": "Yeah,",
           "start": 16.76,
           "end": 17.08,
-          "confidence": 0.28
+          "confidence": 0.281
         },
         {
           "text": "now",
           "start": 17.08,
           "end": 17.3,
-          "confidence": 0.364
+          "confidence": 0.362
         },
         {
           "text": "what",
           "start": 17.3,
           "end": 17.42,
-          "confidence": 0.739
+          "confidence": 0.744
         },
         {
           "text": "you",
           "start": 17.42,
           "end": 17.54,
-          "confidence": 0.931
+          "confidence": 0.932
         },
         {
           "text": "want",
           "start": 17.54,
           "end": 17.78,
-          "confidence": 0.744
+          "confidence": 0.742
         },
         {
           "text": "is",
           "start": 17.78,
           "end": 17.92,
-          "confidence": 0.673
+          "confidence": 0.675
         },
         {
           "text": "on",
           "start": 17.92,
           "end": 18.04,
-          "confidence": 0.329
+          "confidence": 0.328
         },
         {
           "text": "having",
           "start": 18.04,
           "end": 18.4,
-          "confidence": 0.563
+          "confidence": 0.566
         },
         {
           "text": "a",
           "start": 18.4,
           "end": 18.46,
-          "confidence": 0.286
+          "confidence": 0.287
         },
         {
           "text": "B1",
           "start": 18.46,
           "end": 18.87,
-          "confidence": 0.369
+          "confidence": 0.371
         }
       ]
     },
@@ -434,40 +434,40 @@
         452
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.1883477750031843,
+      "avg_logprob": -1.1823576222295347,
       "compression_ratio": 1.52020202020202,
-      "no_speech_prob": 0.3539488911628723,
-      "confidence": 0.515,
+      "no_speech_prob": 0.3504664897918701,
+      "confidence": 0.516,
       "words": [
         {
           "text": "And",
           "start": 18.87,
           "end": 20.2,
-          "confidence": 0.272
+          "confidence": 0.273
         },
         {
           "text": "you",
           "start": 20.2,
           "end": 20.36,
-          "confidence": 0.846
+          "confidence": 0.847
         },
         {
           "text": "just",
           "start": 20.36,
           "end": 20.52,
-          "confidence": 0.693
+          "confidence": 0.694
         },
         {
           "text": "get",
           "start": 20.52,
           "end": 20.72,
-          "confidence": 0.134
+          "confidence": 0.133
         },
         {
           "text": "the",
           "start": 20.72,
           "end": 20.9,
-          "confidence": 0.651
+          "confidence": 0.652
         },
         {
           "text": "other",
@@ -485,13 +485,13 @@
           "text": "on",
           "start": 21.2,
           "end": 21.42,
-          "confidence": 0.872
+          "confidence": 0.875
         },
         {
           "text": "my",
           "start": 21.42,
           "end": 21.88,
-          "confidence": 0.23
+          "confidence": 0.232
         }
       ]
     },
@@ -507,9 +507,9 @@
         50864
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.805708885192871,
+      "avg_logprob": -1.8049055337905884,
       "compression_ratio": 0.1111111111111111,
-      "no_speech_prob": 0.07443947345018387,
+      "no_speech_prob": 0.07337585091590881,
       "confidence": 0.064,
       "words": [
         {
@@ -523,7 +523,7 @@
     {
       "id": 6,
       "seek": 5196,
-      "start": 56.62,
+      "start": 56.58,
       "end": 56.84,
       "text": " Yeah, we're",
       "tokens": [
@@ -533,22 +533,22 @@
         434
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.2720836400985718,
+      "avg_logprob": -1.2670259475708008,
       "compression_ratio": 1.1714285714285715,
-      "no_speech_prob": 0.16988438367843628,
-      "confidence": 0.232,
+      "no_speech_prob": 0.16988693177700043,
+      "confidence": 0.231,
       "words": [
         {
           "text": "Yeah,",
-          "start": 56.62,
+          "start": 56.58,
           "end": 56.7,
-          "confidence": 0.118
+          "confidence": 0.119
         },
         {
           "text": "we're",
           "start": 56.7,
           "end": 56.84,
-          "confidence": 0.326
+          "confidence": 0.323
         }
       ]
     },
@@ -566,10 +566,10 @@
         300
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.2720836400985718,
+      "avg_logprob": -1.2670259475708008,
       "compression_ratio": 1.1714285714285715,
-      "no_speech_prob": 0.16988438367843628,
-      "confidence": 0.287,
+      "no_speech_prob": 0.16988693177700043,
+      "confidence": 0.286,
       "words": [
         {
           "text": "We",
@@ -581,7 +581,7 @@
           "text": "want",
           "start": 63.2,
           "end": 63.54,
-          "confidence": 0.257
+          "confidence": 0.258
         },
         {
           "text": "to",
@@ -593,13 +593,13 @@
           "text": "hear",
           "start": 63.58,
           "end": 63.78,
-          "confidence": 0.17
+          "confidence": 0.168
         },
         {
           "text": "that",
           "start": 63.78,
           "end": 63.98,
-          "confidence": 0.808
+          "confidence": 0.81
         }
       ]
     },
@@ -617,40 +617,40 @@
         300
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.2720836400985718,
+      "avg_logprob": -1.2670259475708008,
       "compression_ratio": 1.1714285714285715,
-      "no_speech_prob": 0.16988438367843628,
-      "confidence": 0.45,
+      "no_speech_prob": 0.16988693177700043,
+      "confidence": 0.451,
       "words": [
         {
           "text": "We",
           "start": 63.98,
           "end": 65.42,
-          "confidence": 0.242
+          "confidence": 0.24
         },
         {
           "text": "want",
           "start": 65.42,
           "end": 67.36,
-          "confidence": 0.167
+          "confidence": 0.168
         },
         {
           "text": "to",
           "start": 67.36,
           "end": 67.4,
-          "confidence": 0.639
+          "confidence": 0.64
         },
         {
           "text": "hear",
           "start": 67.4,
           "end": 68.42,
-          "confidence": 0.857
+          "confidence": 0.858
         },
         {
           "text": "that",
           "start": 68.42,
           "end": 68.46,
-          "confidence": 0.833
+          "confidence": 0.837
         }
       ]
     },
@@ -671,52 +671,52 @@
         452
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.2720836400985718,
+      "avg_logprob": -1.2670259475708008,
       "compression_ratio": 1.1714285714285715,
-      "no_speech_prob": 0.16988438367843628,
-      "confidence": 0.275,
+      "no_speech_prob": 0.16988693177700043,
+      "confidence": 0.276,
       "words": [
         {
           "text": "So",
           "start": 68.46,
           "end": 69.54,
-          "confidence": 0.202
+          "confidence": 0.2
         },
         {
           "text": "I",
           "start": 69.54,
           "end": 70.0,
-          "confidence": 0.634
+          "confidence": 0.635
         },
         {
           "text": "guess",
           "start": 70.0,
           "end": 70.7,
-          "confidence": 0.235
+          "confidence": 0.233
         },
         {
           "text": "I'm",
           "start": 70.7,
           "end": 71.24,
-          "confidence": 0.298
+          "confidence": 0.3
         },
         {
           "text": "working",
           "start": 71.24,
           "end": 71.28,
-          "confidence": 0.247
+          "confidence": 0.249
         },
         {
           "text": "on",
           "start": 71.28,
           "end": 71.32,
-          "confidence": 0.296
+          "confidence": 0.294
         },
         {
           "text": "my",
           "start": 71.32,
           "end": 71.44,
-          "confidence": 0.169
+          "confidence": 0.171
         }
       ]
     },
@@ -730,16 +730,16 @@
         1606
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.2440052032470703,
+      "avg_logprob": -1.236487524850028,
       "compression_ratio": 0.6190476190476191,
-      "no_speech_prob": 0.09388942271471024,
-      "confidence": 0.076,
+      "no_speech_prob": 0.0952218696475029,
+      "confidence": 0.078,
       "words": [
         {
           "text": "business",
           "start": 84.42,
           "end": 84.46,
-          "confidence": 0.076
+          "confidence": 0.078
         }
       ]
     },
@@ -755,9 +755,9 @@
         50714
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.0990567207336426,
+      "avg_logprob": -1.0967516899108887,
       "compression_ratio": 0.3333333333333333,
-      "no_speech_prob": 0.4338739514350891,
+      "no_speech_prob": 0.43369942903518677,
       "confidence": 0.162,
       "words": [
         {

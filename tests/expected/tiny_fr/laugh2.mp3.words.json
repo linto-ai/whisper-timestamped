@@ -15,22 +15,22 @@
         50414
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.3000399271647136,
+      "avg_logprob": -1.2974982261657715,
       "compression_ratio": 0.6521739130434783,
-      "no_speech_prob": 0.43056344985961914,
-      "confidence": 0.124,
+      "no_speech_prob": 0.43118345737457275,
+      "confidence": 0.125,
       "words": [
         {
           "text": "Merci",
           "start": 0.16,
           "end": 0.42,
-          "confidence": 0.072
+          "confidence": 0.071
         },
         {
           "text": "beaucoup.",
           "start": 0.42,
           "end": 0.72,
-          "confidence": 0.216
+          "confidence": 0.217
         }
       ]
     }

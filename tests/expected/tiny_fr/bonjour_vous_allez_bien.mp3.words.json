@@ -12,16 +12,16 @@
         2298
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.774240239461263,
+      "avg_logprob": -0.7726690928141277,
       "compression_ratio": 0.8181818181818182,
-      "no_speech_prob": 0.04296562075614929,
-      "confidence": 0.689,
+      "no_speech_prob": 0.042649365961551666,
+      "confidence": 0.69,
       "words": [
         {
           "text": "Bonjour!",
           "start": 0.46,
           "end": 1.36,
-          "confidence": 0.689
+          "confidence": 0.69
         }
       ]
     },
@@ -44,10 +44,10 @@
         50464
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.48053342645818536,
+      "avg_logprob": -0.480386040427468,
       "compression_ratio": 0.7714285714285715,
-      "no_speech_prob": 0.04136796295642853,
-      "confidence": 0.634,
+      "no_speech_prob": 0.04199185222387314,
+      "confidence": 0.633,
       "words": [
         {
           "text": "Est-ce",
@@ -92,16 +92,16 @@
         2298
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3400673548380534,
+      "avg_logprob": -0.3405381520589193,
       "compression_ratio": 0.8181818181818182,
-      "no_speech_prob": 0.5503692030906677,
-      "confidence": 0.917,
+      "no_speech_prob": 0.5542086958885193,
+      "confidence": 0.918,
       "words": [
         {
           "text": "Bonjour!",
           "start": 33.0,
           "end": 33.64,
-          "confidence": 0.917
+          "confidence": 0.918
         }
       ]
     },
@@ -116,16 +116,16 @@
         2298
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2368337631225586,
+      "avg_logprob": -0.23719367980957032,
       "compression_ratio": 0.8181818181818182,
-      "no_speech_prob": 0.40514007210731506,
-      "confidence": 0.329,
+      "no_speech_prob": 0.40503013134002686,
+      "confidence": 0.326,
       "words": [
         {
           "text": "Bonjour!",
           "start": 34.92,
           "end": 34.96,
-          "confidence": 0.329
+          "confidence": 0.326
         }
       ]
     },
@@ -148,9 +148,9 @@
         50464
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.1729703816500577,
+      "avg_logprob": -0.17275135083632034,
       "compression_ratio": 0.7714285714285715,
-      "no_speech_prob": 0.5840025544166565,
+      "no_speech_prob": 0.5836873650550842,
       "confidence": 0.871,
       "words": [
         {

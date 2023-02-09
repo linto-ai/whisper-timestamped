@@ -22,9 +22,9 @@
         50464
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.531521723820613,
+      "avg_logprob": -1.5315840794489934,
       "compression_ratio": 0.8222222222222222,
-      "no_speech_prob": 0.3798484802246094,
+      "no_speech_prob": 0.37774592638015747,
       "confidence": 0.174,
       "words": [
         {
@@ -43,7 +43,7 @@
           "text": "suis",
           "start": 0.78,
           "end": 0.96,
-          "confidence": 0.185
+          "confidence": 0.184
         },
         {
           "text": "pas",
@@ -55,7 +55,7 @@
           "text": "en",
           "start": 1.12,
           "end": 1.28,
-          "confidence": 0.107
+          "confidence": 0.106
         },
         {
           "text": "train",

@@ -24,9 +24,9 @@
         50464
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.2209794362386068,
+      "avg_logprob": -1.2200188954671225,
       "compression_ratio": 1.1379310344827587,
-      "no_speech_prob": 0.3798484802246094,
+      "no_speech_prob": 0.37774592638015747,
       "confidence": 0.311,
       "words": [
         {
@@ -39,19 +39,19 @@
           "text": "can't",
           "start": 0.6,
           "end": 0.78,
-          "confidence": 0.294
+          "confidence": 0.295
         },
         {
           "text": "do",
           "start": 0.78,
           "end": 0.96,
-          "confidence": 0.101
+          "confidence": 0.102
         },
         {
           "text": "it,",
           "start": 0.96,
           "end": 1.36,
-          "confidence": 0.341
+          "confidence": 0.34
         },
         {
           "text": "you",

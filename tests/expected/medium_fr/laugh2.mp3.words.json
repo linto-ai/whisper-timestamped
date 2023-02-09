@@ -4,8 +4,8 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.22,
-      "end": 0.6,
+      "start": 0.18,
+      "end": 0.62,
       "text": " Hehehe",
       "tokens": [
         50364,
@@ -14,16 +14,16 @@
         50402
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.3025227546691895,
+      "avg_logprob": -1.301303768157959,
       "compression_ratio": 0.5,
-      "no_speech_prob": 0.451229065656662,
-      "confidence": 0.153,
+      "no_speech_prob": 0.45130959153175354,
+      "confidence": 0.154,
       "words": [
         {
           "text": "Hehehe",
-          "start": 0.22,
-          "end": 0.6,
-          "confidence": 0.153
+          "start": 0.18,
+          "end": 0.62,
+          "confidence": 0.154
         }
       ]
     }

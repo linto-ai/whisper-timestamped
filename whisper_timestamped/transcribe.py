@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.7.5"
+__version__ = "1.7.6"
 
 # Whisper and Torch
 import whisper
@@ -47,6 +47,7 @@ def transcribe_timestamped(
     refine_whisper_precision=0.5,
     min_word_duration=0.04,
     plot_word_alignment=False,
+    word_alignement_most_top_layers=6,
 
     # Reproducibility
     seed=1234,
@@ -158,6 +159,7 @@ def transcribe_timestamped(
     assert refine_whisper_precision >= 0 and refine_whisper_precision / AUDIO_TIME_PER_TOKEN == round(refine_whisper_precision / AUDIO_TIME_PER_TOKEN), f"refine_whisper_precision must be a positive multiple of {AUDIO_TIME_PER_TOKEN}"
     refine_whisper_precision_nframes = round(refine_whisper_precision / AUDIO_TIME_PER_TOKEN)
     assert min_word_duration >= 0, f"min_word_duration must be a positive number"
+    assert word_alignement_most_top_layers > 0, f"word_alignement_most_top_layers must be a strictly positive number"
 
     if isinstance(temperature, (list, tuple)) and len(temperature) == 1:
         temperature = temperature[0]
@@ -185,6 +187,7 @@ def transcribe_timestamped(
             include_punctuation_in_confidence=include_punctuation_in_confidence,
             refine_whisper_precision_nframes=refine_whisper_precision_nframes,
             plot_word_alignment=plot_word_alignment,
+            word_alignement_most_top_layers=word_alignement_most_top_layers,
     )
     whisper_options = dict(
             language=language,
@@ -244,6 +247,7 @@ def _transcribe_timestamped_efficient(
     include_punctuation_in_confidence,
     refine_whisper_precision_nframes,
     plot_word_alignment,
+    word_alignement_most_top_layers,
     # Whisper specific options
     **whisper_options,
 ):
@@ -275,7 +279,7 @@ def _transcribe_timestamped_efficient(
     timestamped_word_segments = []  # list of timestamped word segments that have been collected so far
     # Main variables to be accumulated
     segment_tokens = [[]]              # list of lists of token indices that have been collected so far (one list per segment)
-    segment_attweights = [[] for _ in range(len(model.decoder.blocks))]
+    segment_attweights = [[] for _ in range(min(word_alignement_most_top_layers, len(model.decoder.blocks)))]
                                     # attention weights on the last segments
     segment_avglogprobs = []        # average log probability for each segment (actually of the corresponding chunk, as computed by whisper)
     segment_logprobs = []           # token log probabilities for each segment
@@ -583,11 +587,16 @@ def _transcribe_timestamped_efficient(
         all_hooks = []
         all_hooks.append(model.encoder.conv1.register_forward_hook(hook_mfcc))
         all_hooks.append(model.decoder.token_embedding.register_forward_hook(hook_input_tokens))
+        nblocks = len(model.decoder.blocks)
+        j = 0
         for i, block in enumerate(model.decoder.blocks):
+            if i < nblocks - word_alignement_most_top_layers:
+                continue
             all_hooks.append(
                 block.cross_attn.register_forward_hook(
-                    lambda layer, ins, outs, index=i: hook_attention_weights(layer, ins, outs, index))
+                    lambda layer, ins, outs, index=j: hook_attention_weights(layer, ins, outs, index))
             )
+            j += 1
         if compute_word_confidence or no_speech_threshold is not None:
             all_hooks.append(model.decoder.ln.register_forward_hook(hook_output_logits))
 
@@ -688,6 +697,7 @@ def _transcribe_timestamped_naive(
     include_punctuation_in_confidence,
     refine_whisper_precision_nframes,
     plot_word_alignment,
+    word_alignement_most_top_layers,
     min_word_duration,
     **whisper_options,
 ):
@@ -722,19 +732,24 @@ def _transcribe_timestamped_naive(
     tokenizer = whisper.tokenizer.get_tokenizer(model.is_multilingual, task=whisper_options["task"], language=language)
     use_space = should_use_space(language)
 
-    attention_weights = [[] for _ in range(len(model.decoder.blocks))]
+    attention_weights = [[] for _ in range(min(word_alignement_most_top_layers,len(model.decoder.blocks)))]
 
     try:
 
         all_hooks = []
 
         # Hook the model
+        nblocks = len(model.decoder.blocks)
+        j = 0
         for i, block in enumerate(model.decoder.blocks):
+            if i < nblocks - word_alignement_most_top_layers:
+                continue
             all_hooks.append(
                 block.cross_attn.register_forward_hook(
-                    lambda layer, ins, outs, index=i: attention_weights.__setitem__(index, outs[-1])
+                    lambda layer, ins, outs, index=j: attention_weights.__setitem__(index, outs[-1])
                 )
             )
+            j += 1
 
         words = []
         previous_end = 0

@@ -22,9 +22,9 @@
         50501
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.7670458280123197,
+      "avg_logprob": -0.7688669791588416,
       "compression_ratio": 0.7837837837837838,
-      "no_speech_prob": 0.11795500665903091,
+      "no_speech_prob": 0.11803241819143295,
       "confidence": 0.485,
       "words": [
         {
@@ -86,9 +86,9 @@
         50663
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.37833675971397984,
+      "avg_logprob": -0.37818329150860125,
       "compression_ratio": 0.7837837837837838,
-      "no_speech_prob": 0.10371549427509308,
+      "no_speech_prob": 0.10409244894981384,
       "confidence": 0.001,
       "words": [
         {
