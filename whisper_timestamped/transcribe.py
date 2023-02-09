@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.7.7"
+__version__ = "1.7.8"
 
 # Whisper and Torch
 import whisper
@@ -371,13 +371,17 @@ def _transcribe_timestamped_efficient(
                 logger.debug(f"WARNING: decoding hit the max limit for segment {segment_tokens} (It usually happens when the language model gets stuck)")
                 # The last token chosen is in the prompt for the new chunk
                 if curr_tokens is not None and curr_tokens[0] == tokenizer.sot_prev:
-                    logger.debug("         Guess last token from the prompt for the new chunk")
-                    last_token_fallback = curr_tokens[-4].item()
+                    index_sot =  (curr_tokens == tokenizer.sot).nonzero(as_tuple=True)
+                    assert len(index_sot) == 1
+                    index_sot = index_sot[0].item()
+                    assert index_sot > 0 
+                    last_token_fallback = curr_tokens[index_sot-1].item()
+                    logger.debug(f"         Guessed last token from the prompt for the new chunk: {last_token_fallback}")
                 # Fallback for the last segment, or without prompt: Assume greedy decoding
                 else:
-                    logger.debug(f"         Guess last token using probas (assuming greedy decoding)")
                     last_token_fallback = torch.argmax(chunk_logprobs[-1]).item()
                     last_token_reliable = (temperature == 0)
+                    logger.debug(f"         Guess last token using probas (assuming greedy decoding): {last_token_fallback}")
                 if debug:
                     logger.debug(f"WARNING: also add last token: {tokenizer.decode_with_timestamps([last_token_fallback])}")
 
@@ -640,7 +644,7 @@ def _transcribe_timestamped_efficient(
                 logger.warn(f"An additional token was added on segment {i}")
             else:
                 assert len(timestamped_tokens) < len(whisper_tokens) and timestamped_tokens == whisper_tokens[:len(timestamped_tokens)], \
-                    f"Fatal Error: Got inconsistent text for segment {i}:\n({tokenizer.decode(timestamped_tokens)}) {timestamped_tokens}\n!=({len(whisper_tokens)}) \n{tokenizer.decode(whisper_tokens)}"
+                    f"Fatal Error: Got inconsistent text for segment {i}:\n({len(timestamped_tokens)})\n{tokenizer.decode_with_timestamps(timestamped_tokens)}\n{timestamped_tokens}\n!=\n({len(whisper_tokens)})\n{tokenizer.decode_with_timestamps(whisper_tokens)}\n{whisper_tokens[:len(timestamped_tokens)]}"
                 logger.warn(f"Text had to be shortned on segment {i}:\n{tokenizer.decode(timestamped_tokens)}\n!=\n{tokenizer.decode(whisper_tokens)}")
             timestamped_words[-1]["avg_logprob_reliable"] = False
 
@@ -1438,6 +1442,7 @@ def cli():
     plot_word_alignment = args.pop("plot")
 
     debug = args.pop("debug")
+    logging.basicConfig()
     if debug:
         logger.setLevel(logging.DEBUG)
         # This supposes to plug a logger with name "WHISPER" into Whisper source code (no harm if it's not set)

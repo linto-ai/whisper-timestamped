@@ -392,7 +392,7 @@ class TestTranscribeCornerCases(TestHelperCli):
 
 class TestTranscribeMonolingual(TestHelperCli):
 
-    def test_monolingual(self):
+    def test_monolingual_tiny(self):
 
         files = ["bonjour_vous_allez_bien.mp3"]
 
@@ -415,6 +415,14 @@ class TestTranscribeMonolingual(TestHelperCli):
             "tiny.en",
             files=files,
             prefix="nocond",
+        )
+
+    def test_monolingual_small(self):
+
+        self._test_cli_(
+            ["--model", "small.en", "--condition", "True", "--efficient"],
+            "small.en",
+            files=["arabic.mp3"],
         )
 
 
