@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.7.6"
+__version__ = "1.7.7"
 
 # Whisper and Torch
 import whisper
@@ -268,11 +268,6 @@ def _transcribe_timestamped_efficient(
 
     max_sample_len = sample_len or model.dims.n_text_ctx // 2 
 
-    # Note: we cannot trust the token in the middle of tokenizer.sot_sequence which refers to the language
-    #       (arbitrarily set to <|en|> if it's actually None/unknown)
-    token_sot = tokenizer.sot
-    token_eot = tokenizer.eot
-
     debug = logger.getEffectiveLevel() >= logging.DEBUG
 
     # The main outcome
@@ -294,6 +289,9 @@ def _transcribe_timestamped_efficient(
     mfcc = None                     # MFCC features for the current 30 sec chunk
     new_mfcc = None                 #
     num_inference_steps = 0         # number of inference steps performed so far (for debugging only)
+
+    def is_sot(curr_tokens):
+        return curr_tokens is None or len(curr_tokens) > 1 or curr_tokens[0] == tokenizer.sot
 
     def reset(add_segment, keep_last_token):
         """ Reset the list of tokens for the current speech segment, and corresponding cross-attention weights """
@@ -319,7 +317,7 @@ def _transcribe_timestamped_efficient(
         """ Return whether or not the previously collected tokens must be used to add a new speech segment """
 
         nonlocal segment_tokens, saw_consecutive_timestamps, chunk_tokens_nosot
-        if curr_tokens is not None and len(curr_tokens) == 1:
+        if not is_sot(curr_tokens):
             is_timestamp = curr_tokens[0] >= tokenizer.timestamp_begin
             is_previous_timestamp = segment_tokens[-1][-1] >= tokenizer.timestamp_begin if len(segment_tokens[-1]) > 0 else False
             consecutive_timestamps = is_timestamp and is_previous_timestamp
@@ -341,10 +339,11 @@ def _transcribe_timestamped_efficient(
     def get_index_begin_30sec_chunck(curr_tokens):
         nonlocal index_begin_30sec_chunck
 
-        if curr_tokens is None or len(curr_tokens) > 1:
+        if is_sot(curr_tokens):
             res = index_begin_30sec_chunck
             index_begin_30sec_chunck = len(segment_tokens)-1
             return res
+
 
     def may_flush_segment(curr_tokens = None):
         """ Add a speech segment with the new tokens if necessary.
@@ -419,7 +418,7 @@ def _transcribe_timestamped_efficient(
                 timestamped_word_segments.append(ws)
             else:
                 logger.debug(f"Not added!")
-            reset(add_segment, curr_tokens is not None and len(curr_tokens) == 1)
+            reset(add_segment, not is_sot(curr_tokens))
 
         i_start = get_index_begin_30sec_chunck(curr_tokens)
 
@@ -520,7 +519,7 @@ def _transcribe_timestamped_efficient(
         assert curr_tokens.shape[0] == 1, "Batch decoding is not supported"
         curr_tokens = curr_tokens.squeeze(0)
 
-        if len(curr_tokens) > 1 or curr_tokens[0] == tokenizer.sot:
+        if is_sot(curr_tokens):
             chunk_prompt = curr_tokens.tolist()
             if not has_started and language is None:
                 if len(curr_tokens) == 1: # English model
@@ -542,7 +541,7 @@ def _transcribe_timestamped_efficient(
         segment_tokens[-1].append(curr_tokens[-1].item())
 
         # Get the index of the <|startoftranscript|> tokens (to get proba of silence later)
-        if len(curr_tokens) > 1 or curr_tokens[0] == tokenizer.sot:
+        if is_sot(curr_tokens):
             has_started = True
             if no_speech_threshold is not None:
                 sot_index = curr_tokens.tolist().index(tokenizer.sot)
@@ -552,7 +551,7 @@ def _transcribe_timestamped_efficient(
         # Accumulate tokens
         if has_started:
             chunk_tokens.append(curr_tokens)
-            if len(curr_tokens) == 1:
+            if not is_sot(curr_tokens):
                 chunk_tokens_nosot.append(curr_tokens[-1].item())
         else:
             if verbose and not whisper_options["verbose"]:
@@ -612,8 +611,7 @@ def _transcribe_timestamped_efficient(
     may_flush_segment()
     segment_tokens.pop(-1)
 
-    token_special_idx = min(token_sot, token_eot)
-
+    token_special_idx = min(tokenizer.sot, tokenizer.eot)
     def filter_tokens(tokens):
         while len(tokens) and tokens[0] >= token_special_idx:
             tokens = tokens[1:]

@@ -350,6 +350,7 @@ class TestTranscribeCornerCases(TestHelperCli):
         )
 
     def test_not_conditioned(self):
+
         if not os.path.exists(self.get_data_path("music.mp4", check=False)):
             return
         if self.skipLongTests():
@@ -407,6 +408,13 @@ class TestTranscribeMonolingual(TestHelperCli):
             "tiny.en",
             files=files,
             prefix="accurate",
+        )
+
+        self._test_cli_(
+            ["--model", "tiny.en", "--condition", "False", "--efficient"],
+            "tiny.en",
+            files=files,
+            prefix="nocond",
         )
 
 
