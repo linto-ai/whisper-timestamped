@@ -47,7 +47,7 @@ class TestHelper(unittest.TestCase):
     def get_expected_path(self, fn=None, check=False):
         return self._get_path("tests/expected", fn, check=check)
 
-    def get_data_files(self, files=None, excluded_by_default=["apollo11.mp3", "music.mp4", "arabic.mp3"]):
+    def get_data_files(self, files=None, excluded_by_default=["apollo11.mp3", "music.mp4", "arabic.mp3", "empty.wav"]):
         if files == None:
             files = os.listdir(self.get_data_path())
             files = [f for f in files if f not in excluded_by_default]
@@ -329,6 +329,16 @@ class TestTranscribeCornerCases(TestHelperCli):
             prefix="stucked_lm",
         )
 
+    def test_punctuation_only(self):
+
+        # When there is only a punctuation detected in a segment, it could cause issue #24
+        self._test_cli_(
+            ["--model", "medium.en", "--efficient", "--punctuations", "False"],
+            "corner_cases",
+            files=["empty.wav"],
+            prefix="issue24",
+        )
+
     def test_temperature(self):
 
         self._test_cli_(
@@ -547,3 +557,16 @@ class TestZZZPythonImport(TestHelper):
                 [50714]
               ])
         )
+
+        tokenizer = whisper.tokenizer.get_tokenizer(False, language="en")
+
+        # Just a punctuation character
+        tokens = [50363, 764, 51813]
+
+        self.assertEqual(
+            split_tokens_on_spaces(tokens, tokenizer),
+            (['<|0.00|>', '.', '<|29.00|>'],
+                [[50363], [764], [51813]]
+            )
+        )
+

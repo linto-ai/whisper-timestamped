@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.7.8"
+__version__ = "1.7.9"
 
 # Whisper and Torch
 import whisper
@@ -415,6 +415,7 @@ def _transcribe_timestamped_efficient(
                 unfinished_decoding=unfinished_decoding,
                 mfcc=mfcc,
                 plot=plot_word_alignment,
+                debug=debug,
             )
 
             add_segment = len(ws) > 0
@@ -459,8 +460,8 @@ def _transcribe_timestamped_efficient(
                         f"Got infinite logprob among ({len(logprobs)}) {[(i, tokenizer.decode_with_timestamps([i]), v.item()) for (i,v) in zip(chunck_indices, logprobs)]}"
                     sum_logprob = sum(logprobs)
                     avg_logprob = sum_logprob/n
-                    # don't skip if the logprob is high enough, despite the no_speech_prob
-                    if avg_logprob > logprob_threshold:
+                    # don't skip if the logprob is high enough, whatever the no_speech_prob is
+                    if logprob_threshold is not None and avg_logprob > logprob_threshold:
                         should_skip = False
                 
                 if should_skip:
@@ -656,6 +657,8 @@ def _transcribe_timestamped_efficient(
 
         if compute_word_confidence:
             if "avg_logprob_reliable" not in timestamped_words[-1] or timestamped_words[-1]["avg_logprob_reliable"]:
+                # NOCOMMIT ?
+                assert abs(segment["avg_logprob"] - avglogprob) < 1e-2, f"Fatal Error: Got inconsistent logprob for segment {i}: {segment['avg_logprob']} != {avglogprob}"
                 if abs(segment["avg_logprob"] - avglogprob) >= 1e-2:
                     logger.warn(f"Recomputed different logprob for segment {i}: {avglogprob} != {segment['avg_logprob']}")
             if include_punctuation_in_confidence:
@@ -1211,7 +1214,8 @@ def split_tokens_on_unicode(tokens: list, tokenizer, tokens_as_string=False, rem
         decoded = tokenizer.decode_with_timestamps(current_tokens)
         if "\ufffd" not in decoded:
             punctuation = not isolate_punctuations and (decoded.strip() and decoded.strip() in _punctuation)
-            if punctuation:
+            previous_special = len(word_tokens) > 0 and ((word_tokens[-1][-1].startswith("<|")) if tokens_as_string else (word_tokens[-1][-1] >= tokenizer.eot))
+            if punctuation and not previous_special:
                 if len(words) == 0:
                     words = [""]
                     word_tokens = [[]]
@@ -1238,7 +1242,7 @@ def split_tokens_on_spaces(tokens: torch.Tensor, tokenizer, tokens_as_string=Fal
 
     for i, (subword, subword_tokens) in enumerate(zip(subwords, subword_tokens_list)):
         special = (subword_tokens[0].startswith("<|")) if tokens_as_string else (subword_tokens[0] >= tokenizer.eot)
-        previous_special = i > 0 and (subword_tokens_list[i-1][0].startswith("<|")) if tokens_as_string else (subword_tokens_list[i-1][0] >= tokenizer.eot)
+        previous_special = i > 0 and ((subword_tokens_list[i-1][0].startswith("<|")) if tokens_as_string else (subword_tokens_list[i-1][0] >= tokenizer.eot))
         with_space = subword.startswith(" ")
         punctuation = subword.strip() in _punctuation
         if special or (with_space and not punctuation) or previous_special:
