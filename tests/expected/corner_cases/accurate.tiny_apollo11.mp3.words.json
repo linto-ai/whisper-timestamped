@@ -186,7 +186,7 @@
     {
       "id": 2,
       "seek": 0,
-      "start": 12.04,
+      "start": 10.92,
       "end": 16.76,
       "text": " Okay, okay, I think I'll just get him or if they like just want to go on the",
       "tokens": [
@@ -220,7 +220,7 @@
       "words": [
         {
           "text": "Okay,",
-          "start": 12.04,
+          "start": 10.92,
           "end": 12.76,
           "confidence": 0.662
         },
@@ -498,8 +498,8 @@
     {
       "id": 5,
       "seek": 2196,
-      "start": 32.42,
-      "end": 32.46,
+      "start": 21.98,
+      "end": 28.28,
       "text": " I",
       "tokens": [
         50364,
@@ -514,8 +514,8 @@
       "words": [
         {
           "text": "I",
-          "start": 32.42,
-          "end": 32.46,
+          "start": 21.98,
+          "end": 28.28,
           "confidence": 0.064
         }
       ]
@@ -523,7 +523,7 @@
     {
       "id": 6,
       "seek": 5196,
-      "start": 56.58,
+      "start": 51.98,
       "end": 56.84,
       "text": " Yeah, we're",
       "tokens": [
@@ -540,7 +540,7 @@
       "words": [
         {
           "text": "Yeah,",
-          "start": 56.58,
+          "start": 51.98,
           "end": 56.7,
           "confidence": 0.119
         },
@@ -723,8 +723,8 @@
     {
       "id": 10,
       "seek": 7096,
-      "start": 84.42,
-      "end": 84.46,
+      "start": 71.44,
+      "end": 75.86,
       "text": " business",
       "tokens": [
         1606
@@ -737,8 +737,8 @@
       "words": [
         {
           "text": "business",
-          "start": 84.42,
-          "end": 84.46,
+          "start": 71.44,
+          "end": 75.86,
           "confidence": 0.078
         }
       ]
@@ -746,8 +746,8 @@
     {
       "id": 11,
       "seek": 8396,
-      "start": 89.2,
-      "end": 89.24,
+      "start": 83.98,
+      "end": 89.2,
       "text": " Yeah",
       "tokens": [
         50364,
@@ -762,8 +762,8 @@
       "words": [
         {
           "text": "Yeah",
-          "start": 89.2,
-          "end": 89.24,
+          "start": 83.98,
+          "end": 89.2,
           "confidence": 0.162
         }
       ]

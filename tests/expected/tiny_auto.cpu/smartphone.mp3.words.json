@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.42,
-      "end": 1.5,
+      "end": 1.38,
       "text": " C'est évidence que dit Nicolas.",
       "tokens": [
         383,
@@ -51,7 +51,7 @@
         {
           "text": "Nicolas.",
           "start": 1.16,
-          "end": 1.5,
+          "end": 1.38,
           "confidence": 0.921
         }
       ]
@@ -60,7 +60,7 @@
       "id": 1,
       "seek": 0,
       "start": 1.66,
-      "end": 3.7,
+      "end": 3.62,
       "text": " Mais je me l'étais jamais formulé comme ça.",
       "tokens": [
         6313,
@@ -128,7 +128,7 @@
         {
           "text": "ça.",
           "start": 3.34,
-          "end": 3.7,
+          "end": 3.62,
           "confidence": 0.979
         }
       ]
@@ -278,7 +278,7 @@
       "id": 3,
       "seek": 0,
       "start": 8.9,
-      "end": 10.86,
+      "end": 10.84,
       "text": " dans quelques interagues entraîne.",
       "tokens": [
         2680,
@@ -317,7 +317,7 @@
         {
           "text": "entraîne.",
           "start": 10.18,
-          "end": 10.86,
+          "end": 10.84,
           "confidence": 0.421
         }
       ]
@@ -326,7 +326,7 @@
       "id": 4,
       "seek": 0,
       "start": 11.04,
-      "end": 12.94,
+      "end": 12.92,
       "text": " Et il est d'ailleurs, c'est la photo c'est hyper convaincant.",
       "tokens": [
         3790,
@@ -414,7 +414,7 @@
         {
           "text": "convaincant.",
           "start": 12.38,
-          "end": 12.94,
+          "end": 12.92,
           "confidence": 0.494
         }
       ]
@@ -538,7 +538,7 @@
       "id": 6,
       "seek": 0,
       "start": 18.03,
-      "end": 19.42,
+      "end": 19.26,
       "text": " très souvent ementionné.",
       "tokens": [
         5732,
@@ -569,7 +569,7 @@
         {
           "text": "ementionné.",
           "start": 18.82,
-          "end": 19.42,
+          "end": 19.26,
           "confidence": 0.365
         }
       ]
@@ -577,7 +577,7 @@
     {
       "id": 7,
       "seek": 0,
-      "start": 20.0,
+      "start": 19.86,
       "end": 23.54,
       "text": " Mais bon, il faudrait que les profites aussi de 20 ans pendant l'été, les ordinateurs",
       "tokens": [
@@ -613,7 +613,7 @@
       "words": [
         {
           "text": "Mais",
-          "start": 20.0,
+          "start": 19.86,
           "end": 20.22,
           "confidence": 0.975
         },
@@ -707,7 +707,7 @@
       "id": 8,
       "seek": 0,
       "start": 23.58,
-      "end": 25.28,
+      "end": 25.26,
       "text": " nous ont appris à piquer sur des icônes.",
       "tokens": [
         4666,
@@ -775,7 +775,7 @@
         {
           "text": "icônes.",
           "start": 24.8,
-          "end": 25.28,
+          "end": 25.26,
           "confidence": 0.656
         }
       ]
@@ -784,7 +784,7 @@
       "id": 9,
       "seek": 2556,
       "start": 25.58,
-      "end": 30.64,
+      "end": 30.56,
       "text": " C'est ce que le smartphone ajoute le toucher, qui rend le contact plus direct, plus sensible.",
       "tokens": [
         383,
@@ -910,7 +910,7 @@
         {
           "text": "sensible.",
           "start": 30.24,
-          "end": 30.64,
+          "end": 30.56,
           "confidence": 0.332
         }
       ]
@@ -1031,7 +1031,7 @@
       "id": 11,
       "seek": 2556,
       "start": 34.34,
-      "end": 37.84,
+      "end": 37.72,
       "text": " le côté tout flu de la navigation web pour aller directement en but.",
       "tokens": [
         476,
@@ -1130,7 +1130,7 @@
         {
           "text": "but.",
           "start": 37.68,
-          "end": 37.84,
+          "end": 37.72,
           "confidence": 0.689
         }
       ]
@@ -1138,8 +1138,8 @@
     {
       "id": 12,
       "seek": 2556,
-      "start": 38.8,
-      "end": 43.13,
+      "start": 37.72,
+      "end": 43.06,
       "text": " Bref, tout ça, ce sont les conditions qui permettent de créer cette objet, en Nicolas,",
       "tokens": [
         49957,
@@ -1171,7 +1171,7 @@
       "words": [
         {
           "text": "Bref,",
-          "start": 38.8,
+          "start": 37.72,
           "end": 38.9,
           "confidence": 0.967
         },
@@ -1256,7 +1256,7 @@
         {
           "text": "Nicolas,",
           "start": 42.8,
-          "end": 43.13,
+          "end": 43.06,
           "confidence": 0.508
         }
       ]
@@ -1264,8 +1264,8 @@
     {
       "id": 13,
       "seek": 2556,
-      "start": 43.13,
-      "end": 46.6,
+      "start": 43.1,
+      "end": 46.48,
       "text": " dit qu'il est très fondablement inédit dans l'histoire de l'humanité.",
       "tokens": [
         6176,
@@ -1299,7 +1299,7 @@
       "words": [
         {
           "text": "dit",
-          "start": 43.13,
+          "start": 43.1,
           "end": 43.52,
           "confidence": 0.551
         },
@@ -1354,7 +1354,7 @@
         {
           "text": "l'humanité.",
           "start": 46.08,
-          "end": 46.6,
+          "end": 46.48,
           "confidence": 0.991
         }
       ]
@@ -1362,8 +1362,8 @@
     {
       "id": 14,
       "seek": 2556,
-      "start": 47.08,
-      "end": 48.86,
+      "start": 47.06,
+      "end": 48.76,
       "text": " Mais ça s'assoulait d'une autre interrogation.",
       "tokens": [
         6313,
@@ -1389,7 +1389,7 @@
       "words": [
         {
           "text": "Mais",
-          "start": 47.08,
+          "start": 47.06,
           "end": 47.16,
           "confidence": 0.939
         },
@@ -1420,7 +1420,7 @@
         {
           "text": "interrogation.",
           "start": 48.14,
-          "end": 48.86,
+          "end": 48.76,
           "confidence": 0.833
         }
       ]
@@ -1428,7 +1428,7 @@
     {
       "id": 15,
       "seek": 2556,
-      "start": 49.42,
+      "start": 49.26,
       "end": 54.34,
       "text": " Est-ce que le fait que cette objet soit inédit un d'huies que notre rapport a lui est aussi",
       "tokens": [
@@ -1466,7 +1466,7 @@
       "words": [
         {
           "text": "Est-ce",
-          "start": 49.42,
+          "start": 49.26,
           "end": 49.7,
           "confidence": 0.804
         },
@@ -1578,7 +1578,7 @@
       "id": 16,
       "seek": 2556,
       "start": 54.34,
-      "end": 55.44,
+      "end": 55.32,
       "text": " un rapport inédit?",
       "tokens": [
         517,
@@ -1609,7 +1609,7 @@
         {
           "text": "inédit?",
           "start": 54.94,
-          "end": 55.44,
+          "end": 55.32,
           "confidence": 0.956
         }
       ]
@@ -1761,7 +1761,7 @@
       "id": 18,
       "seek": 5548,
       "start": 58.72,
-      "end": 63.18,
+      "end": 62.81,
       "text": " qu'on entretenait à d'autres objectes techniques comme la voiture ou le téléphone?",
       "tokens": [
         421,
@@ -1860,7 +1860,7 @@
         {
           "text": "téléphone?",
           "start": 62.6,
-          "end": 63.18,
+          "end": 62.81,
           "confidence": 0.979
         }
       ]
@@ -1868,8 +1868,8 @@
     {
       "id": 19,
       "seek": 5548,
-      "start": 65.38,
-      "end": 66.2,
+      "start": 62.81,
+      "end": 66.07,
       "text": " Il n'y a pas d'équivalent.",
       "tokens": [
         4416,
@@ -1893,7 +1893,7 @@
       "words": [
         {
           "text": "Il",
-          "start": 65.38,
+          "start": 62.81,
           "end": 65.42,
           "confidence": 0.866
         },
@@ -1918,7 +1918,7 @@
         {
           "text": "d'équivalent.",
           "start": 65.62,
-          "end": 66.2,
+          "end": 66.07,
           "confidence": 0.858
         }
       ]
@@ -1926,8 +1926,8 @@
     {
       "id": 20,
       "seek": 5548,
-      "start": 66.2,
-      "end": 69.94,
+      "start": 66.07,
+      "end": 69.74,
       "text": " On s'est espécie de nous voter dans la relation à l'objet.",
       "tokens": [
         1282,
@@ -1958,7 +1958,7 @@
       "words": [
         {
           "text": "On",
-          "start": 66.2,
+          "start": 66.07,
           "end": 67.0,
           "confidence": 0.29
         },
@@ -2019,7 +2019,7 @@
         {
           "text": "l'objet.",
           "start": 69.34,
-          "end": 69.94,
+          "end": 69.74,
           "confidence": 0.889
         }
       ]
@@ -2409,7 +2409,7 @@
       "id": 24,
       "seek": 8298,
       "start": 83.0,
-      "end": 87.68,
+      "end": 87.66,
       "text": " le jeu. Donc, à objets inédits, rapport inédits.",
       "tokens": [
         476,
@@ -2481,7 +2481,7 @@
         {
           "text": "inédits.",
           "start": 86.62,
-          "end": 87.68,
+          "end": 87.66,
           "confidence": 0.921
         }
       ]
@@ -2615,7 +2615,7 @@
       "id": 26,
       "seek": 8298,
       "start": 94.36,
-      "end": 95.02,
+      "end": 94.98,
       "text": " et de rojets.",
       "tokens": [
         1030,
@@ -2646,7 +2646,7 @@
         {
           "text": "rojets.",
           "start": 94.56,
-          "end": 95.02,
+          "end": 94.98,
           "confidence": 0.41
         }
       ]
@@ -2654,8 +2654,8 @@
     {
       "id": 27,
       "seek": 8298,
-      "start": 96.3,
-      "end": 100.48,
+      "start": 95.8,
+      "end": 100.4,
       "text": " Bon, en vrai, il faudrait remonter très très finement toute l'histoire des objectes",
       "tokens": [
         7368,
@@ -2688,13 +2688,13 @@
       "words": [
         {
           "text": "Bon,",
-          "start": 96.3,
-          "end": 96.34,
+          "start": 95.8,
+          "end": 96.06,
           "confidence": 0.71
         },
         {
           "text": "en",
-          "start": 96.34,
+          "start": 96.06,
           "end": 96.54,
           "confidence": 0.92
         },
@@ -2761,7 +2761,7 @@
         {
           "text": "objectes",
           "start": 100.2,
-          "end": 100.48,
+          "end": 100.4,
           "confidence": 0.805
         }
       ]
@@ -2769,7 +2769,7 @@
     {
       "id": 28,
       "seek": 8298,
-      "start": 101.3,
+      "start": 100.4,
       "end": 105.14,
       "text": " techniques et de leur infération dans le vie pour déterminer si ce rapport est totalement",
       "tokens": [
@@ -2801,13 +2801,13 @@
       "words": [
         {
           "text": "techniques",
-          "start": 101.3,
-          "end": 101.34,
+          "start": 100.4,
+          "end": 101.02,
           "confidence": 0.954
         },
         {
           "text": "et",
-          "start": 101.34,
+          "start": 101.02,
           "end": 101.52,
           "confidence": 0.967
         },
@@ -2895,7 +2895,7 @@
       "id": 29,
       "seek": 8298,
       "start": 105.26,
-      "end": 105.92,
+      "end": 105.78,
       "text": " inédit.",
       "tokens": [
         294,
@@ -2912,7 +2912,7 @@
         {
           "text": "inédit.",
           "start": 105.26,
-          "end": 105.92,
+          "end": 105.78,
           "confidence": 0.943
         }
       ]
@@ -2921,7 +2921,7 @@
       "id": 30,
       "seek": 8298,
       "start": 106.14,
-      "end": 109.52,
+      "end": 109.36,
       "text": " Mais j'ai l'impression comme ça que Nicolas se trompe pas vraiment.",
       "tokens": [
         6313,
@@ -3012,7 +3012,7 @@
         {
           "text": "vraiment.",
           "start": 109.1,
-          "end": 109.52,
+          "end": 109.36,
           "confidence": 0.923
         }
       ]
@@ -3281,7 +3281,7 @@
       "id": 33,
       "seek": 10970,
       "start": 118.76,
-      "end": 119.82,
+      "end": 119.66,
       "text": " plus n'était pas du même mort.",
       "tokens": [
         1804,
@@ -3333,7 +3333,7 @@
         {
           "text": "mort.",
           "start": 119.5,
-          "end": 119.82,
+          "end": 119.66,
           "confidence": 0.984
         }
       ]
@@ -3342,7 +3342,7 @@
       "id": 34,
       "seek": 10970,
       "start": 120.06,
-      "end": 123.24,
+      "end": 122.94,
       "text": " On peut adorer sa bagnure, en avoir besoin pour plein de choses.",
       "tokens": [
         1282,
@@ -3438,7 +3438,7 @@
         {
           "text": "choses.",
           "start": 122.78,
-          "end": 123.24,
+          "end": 122.94,
           "confidence": 0.994
         }
       ]
@@ -3447,7 +3447,7 @@
       "id": 35,
       "seek": 10970,
       "start": 123.36,
-      "end": 126.64,
+      "end": 126.38,
       "text": " Et là, le soir, quand on va se coucher, on la laisse.",
       "tokens": [
         3790,
@@ -3543,7 +3543,7 @@
         {
           "text": "laisse.",
           "start": 126.12,
-          "end": 126.64,
+          "end": 126.38,
           "confidence": 0.981
         }
       ]
@@ -3552,7 +3552,7 @@
       "id": 36,
       "seek": 10970,
       "start": 127.06,
-      "end": 130.2,
+      "end": 130.0,
       "text": " On l'a pas dans la main, quand on est collis, quand on n'en mène pas au chiot.",
       "tokens": [
         1282,
@@ -3688,7 +3688,7 @@
         {
           "text": "chiot.",
           "start": 129.82,
-          "end": 130.2,
+          "end": 130.0,
           "confidence": 0.473
         }
       ]
@@ -3824,7 +3824,7 @@
       "id": 38,
       "seek": 10970,
       "start": 135.1,
-      "end": 136.88,
+      "end": 136.84,
       "text": " heure chaque soir pour discuter avec un copain.",
       "tokens": [
         30027,
@@ -3890,7 +3890,7 @@
         {
           "text": "copain.",
           "start": 136.6,
-          "end": 136.88,
+          "end": 136.84,
           "confidence": 0.948
         }
       ]
@@ -4140,7 +4140,7 @@
       "id": 41,
       "seek": 13702,
       "start": 145.94,
-      "end": 148.9,
+      "end": 148.88,
       "text": " extère de l'intempis de lâcher à l'éantrénée, ça m'a eu immédiate.",
       "tokens": [
         1279,
@@ -4243,7 +4243,7 @@
         {
           "text": "immédiate.",
           "start": 148.42,
-          "end": 148.9,
+          "end": 148.88,
           "confidence": 0.537
         }
       ]
@@ -4252,7 +4252,7 @@
       "id": 42,
       "seek": 13702,
       "start": 149.08,
-      "end": 152.18,
+      "end": 152.02,
       "text": " Bon, je dis ça pour le mome, mais évidemment, va là pour nos aussi.",
       "tokens": [
         7368,
@@ -4362,7 +4362,7 @@
         {
           "text": "aussi.",
           "start": 151.7,
-          "end": 152.18,
+          "end": 152.02,
           "confidence": 0.145
         }
       ]
@@ -4371,7 +4371,7 @@
       "id": 43,
       "seek": 13702,
       "start": 152.66,
-      "end": 154.68,
+      "end": 154.4,
       "text": " Donc, rapport immédiate d'accord.",
       "tokens": [
         7477,
@@ -4413,7 +4413,7 @@
         {
           "text": "d'accord.",
           "start": 154.26,
-          "end": 154.68,
+          "end": 154.4,
           "confidence": 0.806
         }
       ]
@@ -4421,8 +4421,8 @@
     {
       "id": 44,
       "seek": 13702,
-      "start": 155.62,
-      "end": 158.42,
+      "start": 154.4,
+      "end": 157.95,
       "text": " Mais pourquoi, à ton impression qu'on en sortira jamais?",
       "tokens": [
         6313,
@@ -4448,7 +4448,7 @@
       "words": [
         {
           "text": "Mais",
-          "start": 155.62,
+          "start": 154.4,
           "end": 155.9,
           "confidence": 0.984
         },
@@ -4497,7 +4497,7 @@
         {
           "text": "jamais?",
           "start": 157.84,
-          "end": 158.42,
+          "end": 157.95,
           "confidence": 0.503
         }
       ]
@@ -4505,7 +4505,7 @@
     {
       "id": 45,
       "seek": 13702,
-      "start": 159.16,
+      "start": 157.95,
       "end": 162.37,
       "text": " Et puis, il faut en remettre la faute sur les gens qui ont créé cette",
       "tokens": [
@@ -4537,7 +4537,7 @@
       "words": [
         {
           "text": "Et",
-          "start": 159.16,
+          "start": 157.95,
           "end": 159.26,
           "confidence": 0.838
         },
@@ -4631,7 +4631,7 @@
       "id": 46,
       "seek": 16228,
       "start": 162.37,
-      "end": 166.3,
+      "end": 165.3,
       "text": " route merveilleux et diabolique, qui a dit à bollique par coeur, merveilleux.",
       "tokens": [
         7955,
@@ -4735,7 +4735,7 @@
         {
           "text": "merveilleux.",
           "start": 164.78,
-          "end": 166.3,
+          "end": 165.3,
           "confidence": 0.982
         }
       ]
@@ -4744,7 +4744,7 @@
       "id": 47,
       "seek": 16228,
       "start": 167.36,
-      "end": 168.84,
+      "end": 168.7,
       "text": " Les économistes parlent de dépendance du santé.",
       "tokens": [
         6965,
@@ -4804,7 +4804,7 @@
         {
           "text": "santé.",
           "start": 168.5,
-          "end": 168.84,
+          "end": 168.7,
           "confidence": 0.389
         }
       ]
@@ -4813,7 +4813,7 @@
       "id": 48,
       "seek": 16228,
       "start": 168.84,
-      "end": 172.72,
+      "end": 172.66,
       "text": " Ces vidéos, en fait, on est un santé qui a été établie, c'est un soit mon termine,",
       "tokens": [
         28414,
@@ -4948,7 +4948,7 @@
         {
           "text": "termine,",
           "start": 172.28,
-          "end": 172.72,
+          "end": 172.66,
           "confidence": 0.288
         }
       ]
@@ -4957,7 +4957,7 @@
       "id": 49,
       "seek": 17312,
       "start": 173.14,
-      "end": 177.66,
+      "end": 177.42,
       "text": " soit définissant des beurs, on définisse un signalétique.",
       "tokens": [
         50364,
@@ -5028,7 +5028,7 @@
         {
           "text": "signalétique.",
           "start": 176.6,
-          "end": 177.66,
+          "end": 177.42,
           "confidence": 0.544
         }
       ]

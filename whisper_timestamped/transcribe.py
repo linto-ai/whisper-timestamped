@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.7.9"
+__version__ = "1.8.0"
 
 # Whisper and Torch
 import whisper
@@ -657,8 +657,7 @@ def _transcribe_timestamped_efficient(
 
         if compute_word_confidence:
             if "avg_logprob_reliable" not in timestamped_words[-1] or timestamped_words[-1]["avg_logprob_reliable"]:
-                # NOCOMMIT ?
-                assert abs(segment["avg_logprob"] - avglogprob) < 1e-2, f"Fatal Error: Got inconsistent logprob for segment {i}: {segment['avg_logprob']} != {avglogprob}"
+                # assert abs(segment["avg_logprob"] - avglogprob) < 1e-2, f"Fatal Error: Got inconsistent logprob for segment {i}: {segment['avg_logprob']} != {avglogprob}"
                 if abs(segment["avg_logprob"] - avglogprob) >= 1e-2:
                     logger.warn(f"Recomputed different logprob for segment {i}: {avglogprob} != {segment['avg_logprob']}")
             if include_punctuation_in_confidence:
@@ -797,7 +796,7 @@ def _transcribe_timestamped_naive(
                 if end <= start:
                     logger.warn(f"Skipping this short segment occuring too close to the end of the audio")
                     continue
-            
+
             start_sample = min(round(start * SAMPLE_RATE), audio.shape[-1])
             end_sample = min(round(end * SAMPLE_RATE), audio.shape[-1])
 
@@ -998,6 +997,15 @@ def perform_word_alignment(
     split_tokens = split_tokens_on_spaces if use_space else split_tokens_on_unicode
     words, word_tokens = split_tokens(tokens, tokenizer, remove_punctuation_from_words=remove_punctuation_from_words)
 
+    # If the last token is a punctuation that comes after a word
+    # group this final punctuation with the final timestamp
+    # This is to avoid assigning the final punctuation to a big silence or a noise/music background coming after
+    word_tokens_nofinalpunct = word_tokens
+    if not unfinished_decoding:
+        assert len(word_tokens) >= 3
+        if len(word_tokens[-2]) > 1 and tokenizer.decode([word_tokens[-2][-1]]) in _punctuation:
+            word_tokens_nofinalpunct = word_tokens[:-2] + [word_tokens[-2][:-1], [word_tokens[-2][-1]]+word_tokens[-1]]
+
     for i, w in enumerate(attention_weights):
         assert w.shape[-2] == len(tokens), f"Attention weights have wrong shape: {w.shape[-2]} (expected {len(tokens)})."
     weights = torch.cat(attention_weights) # layers * heads * tokens * frames
@@ -1046,6 +1054,10 @@ def perform_word_alignment(
             logger.warn(f"Got start time outside of audio boundary")
         else:
             weights[:-1, max_duration:] = 0
+
+    # Encourage to start early
+    weights[0, 0] = weights.min()
+    weights[0, refine_whisper_precision_nframes*2:] = 0
 
     # Similar as "symmetric1" but without the possibility to have the same timestamp for two tokens
     step_pattern = dtw.stepPattern.StepPattern(dtw.stepPattern._c(
@@ -1128,7 +1140,7 @@ def perform_word_alignment(
                         constant_values=end_time - start_time)
 
     # display the word-level timestamps in a table
-    word_boundaries = np.cumsum([len(t) for t in word_tokens])
+    word_boundaries = np.cumsum([len(t) for t in word_tokens_nofinalpunct])
     word_boundaries = np.pad(word_boundaries, (1, 0))
     begin_times = jump_times[word_boundaries[:-1]]
     end_times = jump_times[word_boundaries[1:]]
@@ -1202,7 +1214,7 @@ def round_confidence(x):
 def round_timestamp(x):
     return round(x, 2)
 
-_punctuation = "".join(c for c in string.punctuation if c not in ["-", "'"])
+_punctuation = "".join(c for c in string.punctuation if c not in ["-", "'"]) + "…"
 
 def split_tokens_on_unicode(tokens: list, tokenizer, tokens_as_string=False, remove_punctuation_from_words=False, isolate_punctuations=False):
     words = []

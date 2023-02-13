@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.38,
-      "end": 3.74,
+      "end": 3.62,
       "text": " C'est évident ce que dit Nicolas, mais je ne me l'étais jamais formulé comme ça.",
       "tokens": [
         383,
@@ -125,7 +125,7 @@
         {
           "text": "ça.",
           "start": 3.42,
-          "end": 3.74,
+          "end": 3.62,
           "confidence": 0.975
         }
       ]
@@ -134,7 +134,7 @@
       "id": 1,
       "seek": 0,
       "start": 4.08,
-      "end": 8.14,
+      "end": 7.92,
       "text": " Ce qui fait la force du smartphone, c'est pas seulement l'accumulation des fonctions,",
       "tokens": [
         8257,
@@ -241,7 +241,7 @@
         {
           "text": "fonctions,",
           "start": 7.56,
-          "end": 8.14,
+          "end": 7.92,
           "confidence": 0.987
         }
       ]
@@ -250,7 +250,7 @@
       "id": 2,
       "seek": 0,
       "start": 8.32,
-      "end": 10.92,
+      "end": 10.88,
       "text": " mais la manière dont elles interagissent entre elles.",
       "tokens": [
         2420,
@@ -316,7 +316,7 @@
         {
           "text": "elles.",
           "start": 10.58,
-          "end": 10.92,
+          "end": 10.88,
           "confidence": 0.99
         }
       ]
@@ -325,7 +325,7 @@
       "id": 3,
       "seek": 0,
       "start": 10.96,
-      "end": 13.02,
+      "end": 13.0,
       "text": " Ce qui dit d'ailleurs sur la photo, c'est hyper convaincant.",
       "tokens": [
         8257,
@@ -411,7 +411,7 @@
         {
           "text": "convaincant.",
           "start": 12.42,
-          "end": 13.02,
+          "end": 13.0,
           "confidence": 0.982
         }
       ]
@@ -419,8 +419,8 @@
     {
       "id": 4,
       "seek": 0,
-      "start": 13.38,
-      "end": 16.37,
+      "start": 13.34,
+      "end": 16.02,
       "text": " Alors évidemment, il faudrait ajouter les interfaces.",
       "tokens": [
         9946,
@@ -443,7 +443,7 @@
       "words": [
         {
           "text": "Alors",
-          "start": 13.38,
+          "start": 13.34,
           "end": 13.62,
           "confidence": 0.585
         },
@@ -480,7 +480,7 @@
         {
           "text": "interfaces.",
           "start": 15.52,
-          "end": 16.37,
+          "end": 16.02,
           "confidence": 0.984
         }
       ]
@@ -488,8 +488,8 @@
     {
       "id": 5,
       "seek": 0,
-      "start": 16.37,
-      "end": 19.38,
+      "start": 16.22,
+      "end": 19.36,
       "text": " L'écran tactile a été beaucoup très souvent mentionné.",
       "tokens": [
         441,
@@ -514,7 +514,7 @@
       "words": [
         {
           "text": "L'écran",
-          "start": 16.37,
+          "start": 16.22,
           "end": 16.7,
           "confidence": 0.996
         },
@@ -557,7 +557,7 @@
         {
           "text": "mentionné.",
           "start": 18.9,
-          "end": 19.38,
+          "end": 19.36,
           "confidence": 0.978
         }
       ]
@@ -565,8 +565,8 @@
     {
       "id": 6,
       "seek": 0,
-      "start": 19.94,
-      "end": 25.62,
+      "start": 19.84,
+      "end": 25.26,
       "text": " Mais bon, il faut dire qu'il profite aussi de 20 ans pendant lesquels les ordinateurs nous ont appris à cliquer sur des icônes.",
       "tokens": [
         6313,
@@ -614,7 +614,7 @@
       "words": [
         {
           "text": "Mais",
-          "start": 19.94,
+          "start": 19.84,
           "end": 20.22,
           "confidence": 0.944
         },
@@ -747,7 +747,7 @@
         {
           "text": "icônes.",
           "start": 24.94,
-          "end": 25.62,
+          "end": 25.26,
           "confidence": 0.992
         }
       ]
@@ -755,8 +755,8 @@
     {
       "id": 7,
       "seek": 2534,
-      "start": 25.62,
-      "end": 30.72,
+      "start": 25.42,
+      "end": 30.64,
       "text": " Sauf que le smartphone ajoute le toucher, ce qui rend le contact plus direct, plus sensible.",
       "tokens": [
         318,
@@ -790,7 +790,7 @@
       "words": [
         {
           "text": "Sauf",
-          "start": 25.62,
+          "start": 25.42,
           "end": 25.76,
           "confidence": 0.99
         },
@@ -881,7 +881,7 @@
         {
           "text": "sensible.",
           "start": 30.26,
-          "end": 30.72,
+          "end": 30.64,
           "confidence": 0.997
         }
       ]
@@ -890,7 +890,7 @@
       "id": 8,
       "seek": 2534,
       "start": 31.04,
-      "end": 37.86,
+      "end": 37.82,
       "text": " Et puis évidemment, il faudrait parler aussi des applications qui permettent de contourner le côté touffu de la navigation web pour aller directement au but.",
       "tokens": [
         3790,
@@ -1079,7 +1079,7 @@
         {
           "text": "but.",
           "start": 37.68,
-          "end": 37.86,
+          "end": 37.82,
           "confidence": 0.995
         }
       ]
@@ -1087,8 +1087,8 @@
     {
       "id": 9,
       "seek": 2534,
-      "start": 37.86,
-      "end": 46.76,
+      "start": 37.82,
+      "end": 46.54,
       "text": " Bref, tout ça, ce sont les conditions qui permettent de créer cet objet dont Nicolas dit qu'il est vraisemblablement inédit dans l'histoire de l'humanité.",
       "tokens": [
         49957,
@@ -1142,7 +1142,7 @@
       "words": [
         {
           "text": "Bref,",
-          "start": 37.86,
+          "start": 37.82,
           "end": 38.76,
           "confidence": 0.987
         },
@@ -1281,7 +1281,7 @@
         {
           "text": "l'humanité.",
           "start": 46.18,
-          "end": 46.76,
+          "end": 46.54,
           "confidence": 0.992
         }
       ]
@@ -1289,8 +1289,8 @@
     {
       "id": 10,
       "seek": 2534,
-      "start": 46.76,
-      "end": 48.92,
+      "start": 46.54,
+      "end": 48.82,
       "text": " Mais ça, ça soulève une autre interrogation.",
       "tokens": [
         6313,
@@ -1313,7 +1313,7 @@
       "words": [
         {
           "text": "Mais",
-          "start": 46.76,
+          "start": 46.54,
           "end": 47.24,
           "confidence": 0.846
         },
@@ -1350,7 +1350,7 @@
         {
           "text": "interrogation.",
           "start": 48.26,
-          "end": 48.92,
+          "end": 48.82,
           "confidence": 0.997
         }
       ]
@@ -1359,7 +1359,7 @@
       "id": 11,
       "seek": 4884,
       "start": 49.22,
-      "end": 55.47,
+      "end": 55.46,
       "text": " Est-ce que le fait que cet objet soit inédit induit que notre rapport à lui est aussi un rapport inédit?",
       "tokens": [
         4410,
@@ -1514,7 +1514,7 @@
         {
           "text": "inédit?",
           "start": 55.0,
-          "end": 55.47,
+          "end": 55.46,
           "confidence": 0.996
         }
       ]
@@ -1522,8 +1522,8 @@
     {
       "id": 12,
       "seek": 4884,
-      "start": 55.47,
-      "end": 63.8,
+      "start": 55.46,
+      "end": 63.12,
       "text": " Je veux dire, est-ce que le rapport qu'on a au smartphone est comparable à celui qu'on entretenait à d'autres objets techniques comme la voiture ou le téléphone?",
       "tokens": [
         2588,
@@ -1575,7 +1575,7 @@
       "words": [
         {
           "text": "Je",
-          "start": 55.47,
+          "start": 55.46,
           "end": 55.9,
           "confidence": 0.88
         },
@@ -1732,7 +1732,7 @@
         {
           "text": "téléphone?",
           "start": 62.68,
-          "end": 63.8,
+          "end": 63.12,
           "confidence": 0.999
         }
       ]
@@ -1740,8 +1740,8 @@
     {
       "id": 13,
       "seek": 4884,
-      "start": 63.8,
-      "end": 66.88,
+      "start": 63.36,
+      "end": 66.66,
       "text": " Il n'y a pas d'équivalent en fait.",
       "tokens": [
         4416,
@@ -1767,7 +1767,7 @@
       "words": [
         {
           "text": "Il",
-          "start": 63.8,
+          "start": 63.36,
           "end": 65.42,
           "confidence": 0.779
         },
@@ -1804,7 +1804,7 @@
         {
           "text": "fait.",
           "start": 66.42,
-          "end": 66.88,
+          "end": 66.66,
           "confidence": 0.996
         }
       ]
@@ -1813,7 +1813,7 @@
       "id": 14,
       "seek": 4884,
       "start": 66.88,
-      "end": 71.54,
+      "end": 71.52,
       "text": " Et donc cette espèce de nouveauté dans la relation à l'objet, c'est fascinant et terrifiant.",
       "tokens": [
         3790,
@@ -1939,7 +1939,7 @@
         {
           "text": "terrifiant.",
           "start": 70.76,
-          "end": 71.54,
+          "end": 71.52,
           "confidence": 0.977
         }
       ]
@@ -1948,7 +1948,7 @@
       "id": 15,
       "seek": 4884,
       "start": 71.62,
-      "end": 76.58,
+      "end": 76.48,
       "text": " Parce qu'on a l'impression, comme le disent les utilisateurs et les services, d'être dépendants de cet objet,",
       "tokens": [
         20429,
@@ -2085,7 +2085,7 @@
         {
           "text": "objet,",
           "start": 76.26,
-          "end": 76.58,
+          "end": 76.48,
           "confidence": 0.996
         }
       ]
@@ -2094,7 +2094,7 @@
       "id": 16,
       "seek": 7684,
       "start": 76.86,
-      "end": 83.4,
+      "end": 83.26,
       "text": " d'induire en fait une espèce de relation, de médiation avec le monde qui rend de l'ampleur et qui amène aussi à des formes de rejet.",
       "tokens": [
         274,
@@ -2290,7 +2290,7 @@
         {
           "text": "rejet.",
           "start": 83.02,
-          "end": 83.4,
+          "end": 83.26,
           "confidence": 0.883
         }
       ]
@@ -2299,7 +2299,7 @@
       "id": 17,
       "seek": 7684,
       "start": 83.94,
-      "end": 87.96,
+      "end": 87.8,
       "text": " Donc, à objet inédit, rapport inédit.",
       "tokens": [
         7477,
@@ -2355,7 +2355,7 @@
         {
           "text": "inédit.",
           "start": 87.0,
-          "end": 87.96,
+          "end": 87.8,
           "confidence": 0.998
         }
       ]
@@ -2364,7 +2364,7 @@
       "id": 18,
       "seek": 7684,
       "start": 88.02,
-      "end": 95.42,
+      "end": 95.14,
       "text": " Et ce rapport, si j'en crois Nicolas, serait caractérisé par un mélange de dépendance et de rejet.",
       "tokens": [
         3790,
@@ -2501,7 +2501,7 @@
         {
           "text": "rejet.",
           "start": 94.68,
-          "end": 95.42,
+          "end": 95.14,
           "confidence": 0.993
         }
       ]
@@ -2683,7 +2683,7 @@
       "id": 20,
       "seek": 7684,
       "start": 102.9,
-      "end": 105.76,
+      "end": 105.74,
       "text": " pour déterminer si ce rapport est totalement inédit.",
       "tokens": [
         2016,
@@ -2751,7 +2751,7 @@
         {
           "text": "inédit.",
           "start": 105.3,
-          "end": 105.76,
+          "end": 105.74,
           "confidence": 0.999
         }
       ]
@@ -2760,7 +2760,7 @@
       "id": 21,
       "seek": 10584,
       "start": 106.1,
-      "end": 109.76,
+      "end": 109.34,
       "text": " Mais j'ai l'impression comme ça que Nicolas ne se trompe pas vraiment.",
       "tokens": [
         6313,
@@ -2858,7 +2858,7 @@
         {
           "text": "vraiment.",
           "start": 109.08,
-          "end": 109.76,
+          "end": 109.34,
           "confidence": 0.991
         }
       ]
@@ -2867,7 +2867,7 @@
       "id": 22,
       "seek": 10584,
       "start": 109.88,
-      "end": 115.02,
+      "end": 114.98,
       "text": " Pour autant que je sache, il y a eu plein de discussions autour de la voiture ou même du téléphone.",
       "tokens": [
         8732,
@@ -3017,7 +3017,7 @@
         {
           "text": "téléphone.",
           "start": 114.6,
-          "end": 115.02,
+          "end": 114.98,
           "confidence": 0.999
         }
       ]
@@ -3025,8 +3025,8 @@
     {
       "id": 23,
       "seek": 10584,
-      "start": 115.48,
-      "end": 119.86,
+      "start": 115.34,
+      "end": 119.84,
       "text": " Mais la dépendance n'était pas du même ordre. Donc le rejet non plus n'était pas du même ordre.",
       "tokens": [
         6313,
@@ -3066,7 +3066,7 @@
       "words": [
         {
           "text": "Mais",
-          "start": 115.48,
+          "start": 115.34,
           "end": 115.72,
           "confidence": 0.994
         },
@@ -3169,7 +3169,7 @@
         {
           "text": "ordre.",
           "start": 119.56,
-          "end": 119.86,
+          "end": 119.84,
           "confidence": 0.999
         }
       ]
@@ -3178,7 +3178,7 @@
       "id": 24,
       "seek": 10584,
       "start": 119.98,
-      "end": 123.14,
+      "end": 123.02,
       "text": " On peut adorer sa bagnole, en avoir besoin pour plein de choses.",
       "tokens": [
         1282,
@@ -3274,7 +3274,7 @@
         {
           "text": "choses.",
           "start": 122.8,
-          "end": 123.14,
+          "end": 123.02,
           "confidence": 0.989
         }
       ]
@@ -3283,7 +3283,7 @@
       "id": 25,
       "seek": 10584,
       "start": 123.28,
-      "end": 127.0,
+      "end": 126.36,
       "text": " Et bien, le soir, quand on va se coucher, on la laisse.",
       "tokens": [
         3790,
@@ -3379,7 +3379,7 @@
         {
           "text": "laisse.",
           "start": 126.22,
-          "end": 127.0,
+          "end": 126.36,
           "confidence": 0.999
         }
       ]
@@ -3387,8 +3387,8 @@
     {
       "id": 26,
       "seek": 10584,
-      "start": 127.0,
-      "end": 130.56,
+      "start": 126.98,
+      "end": 130.48,
       "text": " On ne l'a pas dans la main quand on est au lit, on ne l'emmène pas au chiottes.",
       "tokens": [
         1282,
@@ -3428,7 +3428,7 @@
       "words": [
         {
           "text": "On",
-          "start": 127.0,
+          "start": 126.98,
           "end": 127.32,
           "confidence": 0.954
         },
@@ -3531,7 +3531,7 @@
         {
           "text": "chiottes.",
           "start": 129.86,
-          "end": 130.56,
+          "end": 130.48,
           "confidence": 0.828
         }
       ]
@@ -3540,7 +3540,7 @@
       "id": 27,
       "seek": 13084,
       "start": 130.86,
-      "end": 137.04,
+      "end": 136.9,
       "text": " On pouvait être énervé par son môme qui occupait la ligne de téléphone pendant une heure chaque soir pour discuter avec un copain.",
       "tokens": [
         1282,
@@ -3715,7 +3715,7 @@
         {
           "text": "copain.",
           "start": 136.6,
-          "end": 137.04,
+          "end": 136.9,
           "confidence": 0.998
         }
       ]
@@ -3724,7 +3724,7 @@
       "id": 28,
       "seek": 13084,
       "start": 137.28,
-      "end": 142.32,
+      "end": 141.88,
       "text": " Mais ça ne ressemblait pas à ce qu'on peut ressentir à voir ce même môme aujourd'hui,",
       "tokens": [
         6313,
@@ -3854,7 +3854,7 @@
         {
           "text": "aujourd'hui,",
           "start": 141.34,
-          "end": 142.32,
+          "end": 141.88,
           "confidence": 0.988
         }
       ]
@@ -3862,8 +3862,8 @@
     {
       "id": 29,
       "seek": 13084,
-      "start": 142.42,
-      "end": 146.32,
+      "start": 142.14,
+      "end": 146.3,
       "text": " continuellement avec son smartphone dans la main, comme si c'était une sorte de pacemaker externe,",
       "tokens": [
         2354,
@@ -3899,7 +3899,7 @@
       "words": [
         {
           "text": "continuellement",
-          "start": 142.42,
+          "start": 142.14,
           "end": 142.94,
           "confidence": 0.971
         },
@@ -3984,7 +3984,7 @@
         {
           "text": "externe,",
           "start": 145.82,
-          "end": 146.32,
+          "end": 146.3,
           "confidence": 0.992
         }
       ]
@@ -3992,8 +3992,8 @@
     {
       "id": 30,
       "seek": 13084,
-      "start": 146.42,
-      "end": 148.98,
+      "start": 146.34,
+      "end": 148.84,
       "text": " comme si le lâcher allait entraîner sa mort immédiate.",
       "tokens": [
         5173,
@@ -4022,7 +4022,7 @@
       "words": [
         {
           "text": "comme",
-          "start": 146.42,
+          "start": 146.34,
           "end": 146.58,
           "confidence": 0.996
         },
@@ -4071,7 +4071,7 @@
         {
           "text": "immédiate.",
           "start": 148.22,
-          "end": 148.98,
+          "end": 148.84,
           "confidence": 0.997
         }
       ]
@@ -4080,7 +4080,7 @@
       "id": 31,
       "seek": 13084,
       "start": 149.04,
-      "end": 152.04,
+      "end": 151.96,
       "text": " Bon, je dis ça pour le môme, mais c'est évidemment valable pour nous aussi.",
       "tokens": [
         7368,
@@ -4193,7 +4193,7 @@
         {
           "text": "aussi.",
           "start": 151.76,
-          "end": 152.04,
+          "end": 151.96,
           "confidence": 0.996
         }
       ]
@@ -4201,8 +4201,8 @@
     {
       "id": 32,
       "seek": 13084,
-      "start": 152.62,
-      "end": 158.89,
+      "start": 152.34,
+      "end": 158.22,
       "text": " Donc, rapport inédit. D'accord. Mais pourquoi a-t-on l'impression qu'on n'en sortira jamais?",
       "tokens": [
         7477,
@@ -4245,7 +4245,7 @@
       "words": [
         {
           "text": "Donc,",
-          "start": 152.62,
+          "start": 152.34,
           "end": 153.46,
           "confidence": 0.991
         },
@@ -4312,7 +4312,7 @@
         {
           "text": "jamais?",
           "start": 157.9,
-          "end": 158.89,
+          "end": 158.22,
           "confidence": 0.998
         }
       ]
@@ -4320,8 +4320,8 @@
     {
       "id": 33,
       "seek": 15884,
-      "start": 158.89,
-      "end": 165.34,
+      "start": 158.86,
+      "end": 165.32,
       "text": " Est-ce qu'il faut en remettre la faute sur les gens qui ont créé cet outil merveilleux et diabolique, et diabolique parce que merveilleux?",
       "tokens": [
         4410,
@@ -4376,7 +4376,7 @@
       "words": [
         {
           "text": "Est-ce",
-          "start": 158.89,
+          "start": 158.86,
           "end": 159.34,
           "confidence": 0.981
         },
@@ -4509,7 +4509,7 @@
         {
           "text": "merveilleux?",
           "start": 164.84,
-          "end": 165.34,
+          "end": 165.32,
           "confidence": 0.997
         }
       ]
@@ -4517,8 +4517,8 @@
     {
       "id": 34,
       "seek": 15884,
-      "start": 166.78,
-      "end": 168.91,
+      "start": 166.34,
+      "end": 168.82,
       "text": " Les économistes parlent de dépendance du sentier.",
       "tokens": [
         6965,
@@ -4542,7 +4542,7 @@
       "words": [
         {
           "text": "Les",
-          "start": 166.78,
+          "start": 166.34,
           "end": 167.04,
           "confidence": 0.926
         },
@@ -4579,7 +4579,7 @@
         {
           "text": "sentier.",
           "start": 168.5,
-          "end": 168.91,
+          "end": 168.82,
           "confidence": 0.978
         }
       ]
@@ -4587,8 +4587,8 @@
     {
       "id": 35,
       "seek": 16884,
-      "start": 168.91,
-      "end": 177.72,
+      "start": 168.86,
+      "end": 177.42,
       "text": " C'est l'idée qu'on est sur un sentier qui a été établi, soit volontairement en marchant dessus, soit en définissant des bornes, en définissant une signalétique.",
       "tokens": [
         50364,
@@ -4647,7 +4647,7 @@
       "words": [
         {
           "text": "C'est",
-          "start": 168.91,
+          "start": 168.86,
           "end": 169.1,
           "confidence": 0.952
         },
@@ -4792,7 +4792,7 @@
         {
           "text": "signalétique.",
           "start": 176.82,
-          "end": 177.72,
+          "end": 177.42,
           "confidence": 0.642
         }
       ]

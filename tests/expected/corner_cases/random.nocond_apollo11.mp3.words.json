@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.64,
-      "end": 6.94,
+      "end": 6.7,
       "text": " Apollo 11, Houston we got a recommendation for you on your Soyuz VEA GLEME GVA.",
       "tokens": [
         25187,
@@ -125,7 +125,7 @@
         {
           "text": "GVA.",
           "start": 6.04,
-          "end": 6.94,
+          "end": 6.7,
           "confidence": 0.394
         }
       ]
@@ -133,8 +133,8 @@
     {
       "id": 1,
       "seek": 0,
-      "start": 10.82,
-      "end": 15.32,
+      "start": 7.5,
+      "end": 14.64,
       "text": " Alright, okay, we like to see you guys.",
       "tokens": [
         2798,
@@ -157,7 +157,7 @@
       "words": [
         {
           "text": "Alright,",
-          "start": 10.82,
+          "start": 7.5,
           "end": 12.5,
           "confidence": 0.302
         },
@@ -200,7 +200,7 @@
         {
           "text": "guys.",
           "start": 14.26,
-          "end": 15.32,
+          "end": 14.64,
           "confidence": 0.711
         }
       ]
@@ -208,8 +208,8 @@
     {
       "id": 2,
       "seek": 0,
-      "start": 15.32,
-      "end": 17.28,
+      "start": 15.2,
+      "end": 17.26,
       "text": " They make it one or two on the helmet.",
       "tokens": [
         814,
@@ -231,7 +231,7 @@
       "words": [
         {
           "text": "They",
-          "start": 15.32,
+          "start": 15.2,
           "end": 15.58,
           "confidence": 0.525
         },
@@ -280,7 +280,7 @@
         {
           "text": "helmet.",
           "start": 16.96,
-          "end": 17.28,
+          "end": 17.26,
           "confidence": 0.727
         }
       ]
@@ -289,7 +289,7 @@
       "id": 3,
       "seek": 0,
       "start": 17.32,
-      "end": 24.72,
+      "end": 24.7,
       "text": " We're going to have a B1 and you can put the other one on the mic helmet with those GVA blizzard frames.",
       "tokens": [
         492,
@@ -455,7 +455,7 @@
         {
           "text": "frames.",
           "start": 24.32,
-          "end": 24.72,
+          "end": 24.7,
           "confidence": 0.226
         }
       ]
@@ -463,8 +463,8 @@
     {
       "id": 4,
       "seek": 2500,
-      "start": 31.36,
-      "end": 35.23,
+      "start": 25.02,
+      "end": 35.1,
       "text": " I got them better now than you want.",
       "tokens": [
         286,
@@ -485,7 +485,7 @@
       "words": [
         {
           "text": "I",
-          "start": 31.36,
+          "start": 25.02,
           "end": 31.58,
           "confidence": 0.121
         },
@@ -528,7 +528,7 @@
         {
           "text": "want.",
           "start": 34.76,
-          "end": 35.23,
+          "end": 35.1,
           "confidence": 0.811
         }
       ]
@@ -536,8 +536,8 @@
     {
       "id": 5,
       "seek": 2500,
-      "start": 35.23,
-      "end": 36.54,
+      "start": 35.16,
+      "end": 36.5,
       "text": " I got the other one right there.",
       "tokens": [
         286,
@@ -557,7 +557,7 @@
       "words": [
         {
           "text": "I",
-          "start": 35.23,
+          "start": 35.16,
           "end": 35.4,
           "confidence": 0.288
         },
@@ -594,7 +594,7 @@
         {
           "text": "there.",
           "start": 36.14,
-          "end": 36.54,
+          "end": 36.5,
           "confidence": 0.455
         }
       ]
@@ -602,8 +602,8 @@
     {
       "id": 6,
       "seek": 2500,
-      "start": 37.72,
-      "end": 39.44,
+      "start": 37.5,
+      "end": 39.32,
       "text": " They're going to the leak reshaping.",
       "tokens": [
         814,
@@ -626,7 +626,7 @@
       "words": [
         {
           "text": "They're",
-          "start": 37.72,
+          "start": 37.5,
           "end": 38.22,
           "confidence": 0.315
         },
@@ -657,7 +657,7 @@
         {
           "text": "reshaping.",
           "start": 38.84,
-          "end": 39.44,
+          "end": 39.32,
           "confidence": 0.278
         }
       ]
@@ -665,8 +665,8 @@
     {
       "id": 7,
       "seek": 2500,
-      "start": 39.94,
-      "end": 41.26,
+      "start": 39.5,
+      "end": 41.14,
       "text": " We got them in there.",
       "tokens": [
         492,
@@ -684,7 +684,7 @@
       "words": [
         {
           "text": "We",
-          "start": 39.94,
+          "start": 39.5,
           "end": 40.28,
           "confidence": 0.564
         },
@@ -709,7 +709,7 @@
         {
           "text": "there.",
           "start": 40.88,
-          "end": 41.26,
+          "end": 41.14,
           "confidence": 0.586
         }
       ]
@@ -718,7 +718,7 @@
       "id": 8,
       "seek": 2500,
       "start": 41.4,
-      "end": 42.76,
+      "end": 42.1,
       "text": " I'm in the bag.",
       "tokens": [
         286,
@@ -755,7 +755,7 @@
         {
           "text": "bag.",
           "start": 42.06,
-          "end": 42.76,
+          "end": 42.1,
           "confidence": 0.551
         }
       ]
@@ -763,8 +763,8 @@
     {
       "id": 9,
       "seek": 2500,
-      "start": 43.56,
-      "end": 45.32,
+      "start": 43.5,
+      "end": 45.3,
       "text": " And I just, I don't know how to speak to you.",
       "tokens": [
         400,
@@ -790,7 +790,7 @@
       "words": [
         {
           "text": "And",
-          "start": 43.56,
+          "start": 43.5,
           "end": 43.96,
           "confidence": 0.464
         },
@@ -851,7 +851,7 @@
         {
           "text": "you.",
           "start": 45.26,
-          "end": 45.32,
+          "end": 45.3,
           "confidence": 0.585
         }
       ]
@@ -859,8 +859,8 @@
     {
       "id": 10,
       "seek": 2500,
-      "start": 46.26,
-      "end": 46.3,
+      "start": 45.5,
+      "end": 45.54,
       "text": " Yeah.",
       "tokens": [
         865,
@@ -874,8 +874,8 @@
       "words": [
         {
           "text": "Yeah.",
-          "start": 46.26,
-          "end": 46.3,
+          "start": 45.5,
+          "end": 45.54,
           "confidence": 0.357
         }
       ]
@@ -883,8 +883,8 @@
     {
       "id": 11,
       "seek": 2500,
-      "start": 46.3,
-      "end": 47.8,
+      "start": 46.24,
+      "end": 47.48,
       "text": " I'm in the helmet bag.",
       "tokens": [
         286,
@@ -903,7 +903,7 @@
       "words": [
         {
           "text": "I'm",
-          "start": 46.3,
+          "start": 46.24,
           "end": 46.46,
           "confidence": 0.479
         },
@@ -928,7 +928,7 @@
         {
           "text": "bag.",
           "start": 47.12,
-          "end": 47.8,
+          "end": 47.48,
           "confidence": 0.762
         }
       ]
@@ -937,7 +937,7 @@
       "id": 12,
       "seek": 2500,
       "start": 48.34,
-      "end": 49.0,
+      "end": 48.84,
       "text": " I'm in the leases.",
       "tokens": [
         286,
@@ -975,7 +975,7 @@
         {
           "text": "leases.",
           "start": 48.64,
-          "end": 49.0,
+          "end": 48.84,
           "confidence": 0.425
         }
       ]
@@ -983,8 +983,8 @@
     {
       "id": 13,
       "seek": 2500,
-      "start": 49.0,
-      "end": 49.78,
+      "start": 48.98,
+      "end": 49.64,
       "text": " I'm in the bag.",
       "tokens": [
         286,
@@ -1002,7 +1002,7 @@
       "words": [
         {
           "text": "I'm",
-          "start": 49.0,
+          "start": 48.98,
           "end": 49.22,
           "confidence": 0.821
         },
@@ -1021,7 +1021,7 @@
         {
           "text": "bag.",
           "start": 49.34,
-          "end": 49.78,
+          "end": 49.64,
           "confidence": 0.349
         }
       ]
@@ -1030,7 +1030,7 @@
       "id": 14,
       "seek": 2500,
       "start": 50.18,
-      "end": 50.86,
+      "end": 50.68,
       "text": " Right here.",
       "tokens": [
         1779,
@@ -1052,7 +1052,7 @@
         {
           "text": "here.",
           "start": 50.46,
-          "end": 50.86,
+          "end": 50.68,
           "confidence": 0.587
         }
       ]
@@ -1060,8 +1060,8 @@
     {
       "id": 15,
       "seek": 2500,
-      "start": 51.58,
-      "end": 52.1,
+      "start": 51.5,
+      "end": 51.96,
       "text": " Right here.",
       "tokens": [
         1779,
@@ -1076,14 +1076,14 @@
       "words": [
         {
           "text": "Right",
-          "start": 51.58,
+          "start": 51.5,
           "end": 51.8,
           "confidence": 0.713
         },
         {
           "text": "here.",
           "start": 51.8,
-          "end": 52.1,
+          "end": 51.96,
           "confidence": 0.928
         }
       ]
@@ -1091,8 +1091,8 @@
     {
       "id": 16,
       "seek": 2500,
-      "start": 53.3,
-      "end": 54.48,
+      "start": 52.5,
+      "end": 54.46,
       "text": " I'm thinking Nick and me ought to say,",
       "tokens": [
         286,
@@ -1114,7 +1114,7 @@
       "words": [
         {
           "text": "I'm",
-          "start": 53.3,
+          "start": 52.5,
           "end": 53.48,
           "confidence": 0.522
         },
@@ -1157,7 +1157,7 @@
         {
           "text": "say,",
           "start": 54.4,
-          "end": 54.48,
+          "end": 54.46,
           "confidence": 0.292
         }
       ]
@@ -1165,8 +1165,8 @@
     {
       "id": 17,
       "seek": 5400,
-      "start": 56.58,
-      "end": 57.84,
+      "start": 54.46,
+      "end": 57.66,
       "text": " Okay, fine, we weren't sure of that, just a suggestion.",
       "tokens": [
         1033,
@@ -1193,25 +1193,25 @@
       "words": [
         {
           "text": "Okay,",
-          "start": 56.58,
-          "end": 56.62,
+          "start": 54.46,
+          "end": 54.5,
           "confidence": 0.077
         },
         {
           "text": "fine,",
-          "start": 56.62,
-          "end": 56.66,
+          "start": 54.5,
+          "end": 55.28,
           "confidence": 0.183
         },
         {
           "text": "we",
-          "start": 56.66,
-          "end": 56.7,
+          "start": 55.28,
+          "end": 55.32,
           "confidence": 0.91
         },
         {
           "text": "weren't",
-          "start": 56.7,
+          "start": 55.32,
           "end": 57.22,
           "confidence": 0.973
         },
@@ -1248,7 +1248,7 @@
         {
           "text": "suggestion.",
           "start": 57.62,
-          "end": 57.84,
+          "end": 57.66,
           "confidence": 0.996
         }
       ]
@@ -1256,8 +1256,8 @@
     {
       "id": 18,
       "seek": 5400,
-      "start": 65.36,
-      "end": 66.52,
+      "start": 60.52,
+      "end": 60.84,
       "text": " We thought we'd, you could check it out.",
       "tokens": [
         492,
@@ -1280,50 +1280,50 @@
       "words": [
         {
           "text": "We",
-          "start": 65.36,
-          "end": 65.44,
+          "start": 60.52,
+          "end": 60.56,
           "confidence": 0.624
         },
         {
           "text": "thought",
-          "start": 65.44,
-          "end": 65.6,
+          "start": 60.56,
+          "end": 60.6,
           "confidence": 0.965
         },
         {
           "text": "we'd,",
-          "start": 65.6,
-          "end": 65.94,
+          "start": 60.6,
+          "end": 60.64,
           "confidence": 0.65
         },
         {
           "text": "you",
-          "start": 65.94,
-          "end": 66.3,
+          "start": 60.64,
+          "end": 60.68,
           "confidence": 0.42
         },
         {
           "text": "could",
-          "start": 66.3,
-          "end": 66.4,
+          "start": 60.68,
+          "end": 60.72,
           "confidence": 0.775
         },
         {
           "text": "check",
-          "start": 66.4,
-          "end": 66.44,
+          "start": 60.72,
+          "end": 60.76,
           "confidence": 0.774
         },
         {
           "text": "it",
-          "start": 66.44,
-          "end": 66.48,
+          "start": 60.76,
+          "end": 60.8,
           "confidence": 0.986
         },
         {
           "text": "out.",
-          "start": 66.48,
-          "end": 66.52,
+          "start": 60.8,
+          "end": 60.84,
           "confidence": 0.995
         }
       ]
@@ -1331,8 +1331,8 @@
     {
       "id": 19,
       "seek": 5400,
-      "start": 70.46,
-      "end": 72.48,
+      "start": 66.5,
+      "end": 72.46,
       "text": " I guess we're going to come up with it, let us know.",
       "tokens": [
         286,
@@ -1359,19 +1359,19 @@
       "words": [
         {
           "text": "I",
-          "start": 70.46,
-          "end": 70.5,
+          "start": 66.5,
+          "end": 66.72,
           "confidence": 0.202
         },
         {
           "text": "guess",
-          "start": 70.5,
-          "end": 70.54,
+          "start": 66.72,
+          "end": 69.72,
           "confidence": 0.486
         },
         {
           "text": "we're",
-          "start": 70.54,
+          "start": 69.72,
           "end": 71.12,
           "confidence": 0.557
         },
@@ -1426,7 +1426,7 @@
         {
           "text": "know.",
           "start": 72.3,
-          "end": 72.48,
+          "end": 72.46,
           "confidence": 0.996
         }
       ]
@@ -1434,8 +1434,8 @@
     {
       "id": 20,
       "seek": 5400,
-      "start": 74.2,
-      "end": 74.5,
+      "start": 72.46,
+      "end": 72.58,
       "text": " Okay, no problem.",
       "tokens": [
         1033,
@@ -1452,20 +1452,20 @@
       "words": [
         {
           "text": "Okay,",
-          "start": 74.2,
-          "end": 74.42,
+          "start": 72.46,
+          "end": 72.5,
           "confidence": 0.546
         },
         {
           "text": "no",
-          "start": 74.42,
-          "end": 74.46,
+          "start": 72.5,
+          "end": 72.54,
           "confidence": 0.913
         },
         {
           "text": "problem.",
-          "start": 74.46,
-          "end": 74.5,
+          "start": 72.54,
+          "end": 72.58,
           "confidence": 0.965
         }
       ]
@@ -1473,8 +1473,8 @@
     {
       "id": 21,
       "seek": 5400,
-      "start": 74.5,
-      "end": 75.48,
+      "start": 74.4,
+      "end": 75.2,
       "text": " No problem.",
       "tokens": [
         883,
@@ -1489,14 +1489,14 @@
       "words": [
         {
           "text": "No",
-          "start": 74.5,
-          "end": 74.54,
+          "start": 74.4,
+          "end": 74.44,
           "confidence": 0.25
         },
         {
           "text": "problem.",
-          "start": 74.54,
-          "end": 75.48,
+          "start": 74.44,
+          "end": 75.2,
           "confidence": 0.941
         }
       ]
@@ -1504,8 +1504,8 @@
     {
       "id": 22,
       "seek": 5400,
-      "start": 76.02,
-      "end": 76.25,
+      "start": 75.5,
+      "end": 76.46,
       "text": " No problem.",
       "tokens": [
         883,
@@ -1520,14 +1520,14 @@
       "words": [
         {
           "text": "No",
-          "start": 76.02,
+          "start": 75.5,
           "end": 76.2,
           "confidence": 0.296
         },
         {
           "text": "problem.",
           "start": 76.2,
-          "end": 76.25,
+          "end": 76.46,
           "confidence": 0.191
         }
       ]
@@ -1535,8 +1535,8 @@
     {
       "id": 23,
       "seek": 7600,
-      "start": 76.25,
-      "end": 76.79,
+      "start": 76.46,
+      "end": 76.62,
       "text": " No problem.",
       "tokens": [
         883,
@@ -1551,14 +1551,14 @@
       "words": [
         {
           "text": "No",
-          "start": 76.25,
-          "end": 76.29,
+          "start": 76.46,
+          "end": 76.5,
           "confidence": 0.463
         },
         {
           "text": "problem.",
-          "start": 76.29,
-          "end": 76.79,
+          "start": 76.5,
+          "end": 76.62,
           "confidence": 0.922
         }
       ]
@@ -1566,7 +1566,7 @@
     {
       "id": 24,
       "seek": 7600,
-      "start": 76.79,
+      "start": 76.66,
       "end": 78.28,
       "text": " We'll let you know when the end of the night.",
       "tokens": [
@@ -1591,7 +1591,7 @@
       "words": [
         {
           "text": "We'll",
-          "start": 76.79,
+          "start": 76.66,
           "end": 77.02,
           "confidence": 0.617
         },
@@ -1655,7 +1655,7 @@
       "id": 25,
       "seek": 7800,
       "start": 78.28,
-      "end": 78.4,
+      "end": 78.32,
       "text": " Bye.",
       "tokens": [
         50364,
@@ -1672,7 +1672,7 @@
         {
           "text": "Bye.",
           "start": 78.28,
-          "end": 78.4,
+          "end": 78.32,
           "confidence": 0.047
         }
       ]

@@ -109,7 +109,7 @@
     {
       "id": 2,
       "seek": 6000,
-      "start": 70.9,
+      "start": 70.54,
       "end": 76.38,
       "text": " Spare the sympathy Everybody wants to be my enemy",
       "tokens": [
@@ -132,7 +132,7 @@
       "words": [
         {
           "text": "Spare",
-          "start": 70.9,
+          "start": 70.54,
           "end": 71.4,
           "confidence": 0.814
         },
@@ -189,7 +189,7 @@
     {
       "id": 3,
       "seek": 6000,
-      "start": 79.94,
+      "start": 76.86,
       "end": 82.58,
       "text": " Look out for yourself My enemy",
       "tokens": [
@@ -208,13 +208,13 @@
       "words": [
         {
           "text": "Look",
-          "start": 79.94,
-          "end": 80.14,
+          "start": 76.86,
+          "end": 78.28,
           "confidence": 0.43
         },
         {
           "text": "out",
-          "start": 80.14,
+          "start": 78.28,
           "end": 80.46,
           "confidence": 0.99
         },
@@ -247,7 +247,7 @@
     {
       "id": 4,
       "seek": 6000,
-      "start": 86.18,
+      "start": 82.98,
       "end": 88.46,
       "text": " Look out for yourself But I'm ready",
       "tokens": [
@@ -268,13 +268,13 @@
       "words": [
         {
           "text": "Look",
-          "start": 86.18,
-          "end": 86.4,
+          "start": 82.98,
+          "end": 84.12,
           "confidence": 0.748
         },
         {
           "text": "out",
-          "start": 86.4,
+          "start": 84.12,
           "end": 86.64,
           "confidence": 0.988
         },
@@ -936,7 +936,7 @@
       "id": 12,
       "seek": 11312,
       "start": 119.94,
-      "end": 126.08,
+      "end": 125.86,
       "text": " Spare the sympathy Everybody wants to be my enemy",
       "tokens": [
         1738,
@@ -1007,7 +1007,7 @@
         {
           "text": "enemy",
           "start": 125.58,
-          "end": 126.08,
+          "end": 125.86,
           "confidence": 0.998
         }
       ]
@@ -1015,7 +1015,7 @@
     {
       "id": 13,
       "seek": 11312,
-      "start": 129.86,
+      "start": 125.86,
       "end": 132.32,
       "text": " Look out for yourself My enemy",
       "tokens": [
@@ -1034,13 +1034,13 @@
       "words": [
         {
           "text": "Look",
-          "start": 129.86,
-          "end": 130.08,
+          "start": 125.86,
+          "end": 126.86,
           "confidence": 0.593
         },
         {
           "text": "out",
-          "start": 130.08,
+          "start": 126.86,
           "end": 130.3,
           "confidence": 0.893
         },
@@ -1073,7 +1073,7 @@
     {
       "id": 14,
       "seek": 11312,
-      "start": 133.7,
+      "start": 132.62,
       "end": 137.14,
       "text": " Look out for yourself",
       "tokens": [
@@ -1090,7 +1090,7 @@
       "words": [
         {
           "text": "Look",
-          "start": 133.7,
+          "start": 132.62,
           "end": 134.62,
           "confidence": 0.906
         },
@@ -1117,7 +1117,7 @@
     {
       "id": 15,
       "seek": 11312,
-      "start": 137.64,
+      "start": 137.62,
       "end": 140.16,
       "text": " Look, okay I'm hoping that somebody pray for me",
       "tokens": [
@@ -1141,7 +1141,7 @@
       "words": [
         {
           "text": "Look,",
-          "start": 137.64,
+          "start": 137.62,
           "end": 138.46,
           "confidence": 0.728
         },
@@ -1199,7 +1199,7 @@
       "id": 16,
       "seek": 14012,
       "start": 140.18,
-      "end": 141.7,
+      "end": 141.68,
       "text": " I'm praying that somebody hold for me.",
       "tokens": [
         286,
@@ -1257,7 +1257,7 @@
         {
           "text": "me.",
           "start": 141.52,
-          "end": 141.7,
+          "end": 141.68,
           "confidence": 0.999
         }
       ]
@@ -1266,7 +1266,7 @@
       "id": 17,
       "seek": 14012,
       "start": 141.72,
-      "end": 143.43,
+      "end": 143.2,
       "text": " I'm staying where nobody's supposed to be.",
       "tokens": [
         286,
@@ -1325,7 +1325,7 @@
         {
           "text": "be.",
           "start": 143.12,
-          "end": 143.43,
+          "end": 143.2,
           "confidence": 0.997
         }
       ]
@@ -1333,8 +1333,8 @@
     {
       "id": 18,
       "seek": 14012,
-      "start": 143.43,
-      "end": 145.29,
+      "start": 143.22,
+      "end": 144.88,
       "text": " I propose to be in a wreck of emotions.",
       "tokens": [
         286,
@@ -1356,13 +1356,13 @@
       "words": [
         {
           "text": "I",
-          "start": 143.43,
-          "end": 143.47,
+          "start": 143.22,
+          "end": 143.4,
           "confidence": 0.492
         },
         {
           "text": "propose",
-          "start": 143.47,
+          "start": 143.4,
           "end": 143.66,
           "confidence": 0.333
         },
@@ -1405,7 +1405,7 @@
         {
           "text": "emotions.",
           "start": 144.54,
-          "end": 145.29,
+          "end": 144.88,
           "confidence": 0.953
         }
       ]
@@ -1413,8 +1413,8 @@
     {
       "id": 19,
       "seek": 14012,
-      "start": 145.29,
-      "end": 146.56,
+      "start": 145.06,
+      "end": 146.28,
       "text": " Ready to go whenever you let me know.",
       "tokens": [
         9944,
@@ -1435,13 +1435,13 @@
       "words": [
         {
           "text": "Ready",
-          "start": 145.29,
-          "end": 145.33,
+          "start": 145.06,
+          "end": 145.26,
           "confidence": 0.951
         },
         {
           "text": "to",
-          "start": 145.33,
+          "start": 145.26,
           "end": 145.5,
           "confidence": 0.997
         },
@@ -1478,7 +1478,7 @@
         {
           "text": "know.",
           "start": 146.16,
-          "end": 146.56,
+          "end": 146.28,
           "confidence": 0.977
         }
       ]
@@ -1486,8 +1486,8 @@
     {
       "id": 20,
       "seek": 14012,
-      "start": 146.56,
-      "end": 147.86,
+      "start": 146.36,
+      "end": 147.84,
       "text": " The road is long, so put the pedal into the flow.",
       "tokens": [
         440,
@@ -1512,13 +1512,13 @@
       "words": [
         {
           "text": "The",
-          "start": 146.56,
-          "end": 146.6,
+          "start": 146.36,
+          "end": 146.48,
           "confidence": 0.99
         },
         {
           "text": "road",
-          "start": 146.6,
+          "start": 146.48,
           "end": 146.66,
           "confidence": 0.99
         },
@@ -1573,7 +1573,7 @@
         {
           "text": "flow.",
           "start": 147.74,
-          "end": 147.86,
+          "end": 147.84,
           "confidence": 0.856
         }
       ]
@@ -1582,7 +1582,7 @@
       "id": 21,
       "seek": 14012,
       "start": 147.94,
-      "end": 150.22,
+      "end": 149.78,
       "text": " The enemy on my trail, my energy unavailable.",
       "tokens": [
         440,
@@ -1648,7 +1648,7 @@
         {
           "text": "unavailable.",
           "start": 149.06,
-          "end": 150.22,
+          "end": 149.78,
           "confidence": 0.978
         }
       ]
@@ -1656,8 +1656,8 @@
     {
       "id": 22,
       "seek": 14012,
-      "start": 150.22,
-      "end": 151.35,
+      "start": 150.0,
+      "end": 151.31,
       "text": " I'ma tell them I said away, go away.",
       "tokens": [
         286,
@@ -1681,7 +1681,7 @@
       "words": [
         {
           "text": "I'ma",
-          "start": 150.22,
+          "start": 150.0,
           "end": 150.26,
           "confidence": 0.765
         },
@@ -1724,7 +1724,7 @@
         {
           "text": "away.",
           "start": 151.18,
-          "end": 151.35,
+          "end": 151.31,
           "confidence": 0.781
         }
       ]
@@ -1732,8 +1732,8 @@
     {
       "id": 23,
       "seek": 14012,
-      "start": 151.35,
-      "end": 152.78,
+      "start": 151.31,
+      "end": 152.52,
       "text": " When I'm plotting, I'ma drive to the top.",
       "tokens": [
         1133,
@@ -1758,7 +1758,7 @@
       "words": [
         {
           "text": "When",
-          "start": 151.35,
+          "start": 151.31,
           "end": 151.54,
           "confidence": 0.886
         },
@@ -1801,7 +1801,7 @@
         {
           "text": "top.",
           "start": 152.38,
-          "end": 152.78,
+          "end": 152.52,
           "confidence": 0.999
         }
       ]
@@ -1809,8 +1809,8 @@
     {
       "id": 24,
       "seek": 14012,
-      "start": 152.78,
-      "end": 153.76,
+      "start": 152.54,
+      "end": 153.7,
       "text": " I've been out of shape, thinking out of the box.",
       "tokens": [
         286,
@@ -1835,19 +1835,19 @@
       "words": [
         {
           "text": "I've",
-          "start": 152.78,
-          "end": 152.82,
+          "start": 152.54,
+          "end": 152.7,
           "confidence": 0.723
         },
         {
           "text": "been",
-          "start": 152.82,
-          "end": 152.86,
+          "start": 152.7,
+          "end": 152.78,
           "confidence": 0.998
         },
         {
           "text": "out",
-          "start": 152.86,
+          "start": 152.78,
           "end": 152.9,
           "confidence": 0.905
         },
@@ -1890,7 +1890,7 @@
         {
           "text": "box.",
           "start": 153.58,
-          "end": 153.76,
+          "end": 153.7,
           "confidence": 0.998
         }
       ]
@@ -1898,8 +1898,8 @@
     {
       "id": 25,
       "seek": 14012,
-      "start": 153.76,
-      "end": 155.34,
+      "start": 153.7,
+      "end": 155.32,
       "text": " I'm an astronaut, blasted off the planet.",
       "tokens": [
         286,
@@ -1922,7 +1922,7 @@
       "words": [
         {
           "text": "I'm",
-          "start": 153.76,
+          "start": 153.7,
           "end": 153.9,
           "confidence": 0.996
         },
@@ -1959,7 +1959,7 @@
         {
           "text": "planet.",
           "start": 155.16,
-          "end": 155.34,
+          "end": 155.32,
           "confidence": 0.997
         }
       ]
@@ -2042,7 +2042,7 @@
       "id": 27,
       "seek": 14012,
       "start": 157.11,
-      "end": 157.93,
+      "end": 157.92,
       "text": " because I had it now.",
       "tokens": [
         570,
@@ -2085,7 +2085,7 @@
         {
           "text": "now.",
           "start": 157.76,
-          "end": 157.93,
+          "end": 157.92,
           "confidence": 0.237
         }
       ]
@@ -2093,8 +2093,8 @@
     {
       "id": 28,
       "seek": 14012,
-      "start": 157.93,
-      "end": 160.1,
+      "start": 157.92,
+      "end": 159.72,
       "text": " Had I thought about wreaking havoc on an opposition.",
       "tokens": [
         12298,
@@ -2117,7 +2117,7 @@
       "words": [
         {
           "text": "Had",
-          "start": 157.93,
+          "start": 157.92,
           "end": 158.12,
           "confidence": 0.843
         },
@@ -2166,7 +2166,7 @@
         {
           "text": "opposition.",
           "start": 159.44,
-          "end": 160.1,
+          "end": 159.72,
           "confidence": 0.991
         }
       ]
@@ -2174,8 +2174,8 @@
     {
       "id": 29,
       "seek": 14012,
-      "start": 160.1,
-      "end": 161.04,
+      "start": 159.88,
+      "end": 161.02,
       "text": " Kind of shocking, they want it static.",
       "tokens": [
         9242,
@@ -2196,13 +2196,13 @@
       "words": [
         {
           "text": "Kind",
-          "start": 160.1,
-          "end": 160.14,
+          "start": 159.88,
+          "end": 160.08,
           "confidence": 0.661
         },
         {
           "text": "of",
-          "start": 160.14,
+          "start": 160.08,
           "end": 160.22,
           "confidence": 0.995
         },
@@ -2233,7 +2233,7 @@
         {
           "text": "static.",
           "start": 160.84,
-          "end": 161.04,
+          "end": 161.02,
           "confidence": 0.993
         }
       ]
@@ -2242,7 +2242,7 @@
       "id": 30,
       "seek": 14012,
       "start": 161.08,
-      "end": 162.14,
+      "end": 162.12,
       "text": " With precision, I'm automatic.",
       "tokens": [
         2022,
@@ -2280,7 +2280,7 @@
         {
           "text": "automatic.",
           "start": 161.78,
-          "end": 162.14,
+          "end": 162.12,
           "confidence": 0.987
         }
       ]
@@ -2289,7 +2289,7 @@
       "id": 31,
       "seek": 14012,
       "start": 162.24,
-      "end": 163.36,
+      "end": 163.34,
       "text": " Quarterback, I ain't talking second.",
       "tokens": [
         43794,
@@ -2335,7 +2335,7 @@
         {
           "text": "second.",
           "start": 163.1,
-          "end": 163.36,
+          "end": 163.34,
           "confidence": 0.327
         }
       ]
@@ -2344,7 +2344,7 @@
       "id": 32,
       "seek": 14012,
       "start": 163.4,
-      "end": 164.17,
+      "end": 164.09,
       "text": " Pack it, pack it up.",
       "tokens": [
         18466,
@@ -2388,7 +2388,7 @@
         {
           "text": "up.",
           "start": 163.98,
-          "end": 164.17,
+          "end": 164.09,
           "confidence": 0.979
         }
       ]
@@ -2396,8 +2396,8 @@
     {
       "id": 33,
       "seek": 14012,
-      "start": 164.17,
-      "end": 165.1,
+      "start": 164.09,
+      "end": 165.06,
       "text": " I don't panic, better, better.",
       "tokens": [
         286,
@@ -2418,13 +2418,13 @@
       "words": [
         {
           "text": "I",
-          "start": 164.17,
-          "end": 164.21,
+          "start": 164.09,
+          "end": 164.18,
           "confidence": 0.984
         },
         {
           "text": "don't",
-          "start": 164.21,
+          "start": 164.18,
           "end": 164.34,
           "confidence": 0.912
         },
@@ -2443,7 +2443,7 @@
         {
           "text": "better.",
           "start": 164.84,
-          "end": 165.1,
+          "end": 165.06,
           "confidence": 0.555
         }
       ]
@@ -2498,7 +2498,7 @@
       "id": 35,
       "seek": 16572,
       "start": 165.76,
-      "end": 166.86,
+      "end": 166.84,
       "text": " it don't matter cause we is your enemy.",
       "tokens": [
         50364,
@@ -2565,7 +2565,7 @@
         {
           "text": "enemy.",
           "start": 166.74,
-          "end": 166.86,
+          "end": 166.84,
           "confidence": 0.257
         }
       ]

@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 3000,
       "start": 30.86,
-      "end": 36.02,
+      "end": 34.26,
       "text": " Le plus important au poker ce ne sont pas les cartes, c'est ce que vous en faites.",
       "tokens": [
         1456,
@@ -136,7 +136,7 @@
         {
           "text": "faites.",
           "start": 34.04,
-          "end": 36.02,
+          "end": 34.26,
           "confidence": 0.893
         }
       ]
@@ -145,7 +145,7 @@
       "id": 1,
       "seek": 3000,
       "start": 36.18,
-      "end": 39.06,
+      "end": 38.76,
       "text": " Winamax, la référence du poker en ligne.",
       "tokens": [
         10427,
@@ -206,7 +206,7 @@
         {
           "text": "ligne.",
           "start": 38.4,
-          "end": 39.06,
+          "end": 38.76,
           "confidence": 0.993
         }
       ]
@@ -215,7 +215,7 @@
       "id": 2,
       "seek": 3000,
       "start": 44.94,
-      "end": 51.4,
+      "end": 51.38,
       "text": " Bonsoir à toutes et tous, vous êtes sur BFM TV, nous sommes en direct, c'est bien sûr BFM story avec tout ce qui fait l'actualité.",
       "tokens": [
         7368,
@@ -413,7 +413,7 @@
         {
           "text": "l'actualité.",
           "start": 50.72,
-          "end": 51.4,
+          "end": 51.38,
           "confidence": 0.994
         }
       ]
@@ -421,8 +421,8 @@
     {
       "id": 3,
       "seek": 3000,
-      "start": 52.02,
-      "end": 56.12,
+      "start": 51.5,
+      "end": 56.11,
       "text": " Durant 60 minutes ce sont des gros plans, des analyses, des réactions que nous vous proposons.",
       "tokens": [
         13710,
@@ -456,7 +456,7 @@
       "words": [
         {
           "text": "Durant",
-          "start": 52.02,
+          "start": 51.5,
           "end": 52.3,
           "confidence": 0.935
         },
@@ -547,7 +547,7 @@
         {
           "text": "proposons.",
           "start": 55.64,
-          "end": 56.12,
+          "end": 56.11,
           "confidence": 0.991
         }
       ]
@@ -555,8 +555,8 @@
     {
       "id": 4,
       "seek": 5600,
-      "start": 56.12,
-      "end": 64.24,
+      "start": 56.11,
+      "end": 63.98,
       "text": " Comment Eric Verth peut-il encore soutenir la réforme des retraites alors qu'il est englué dans sa propre affaire, l'affaire Verth-Bettancourt?",
       "tokens": [
         16328,
@@ -611,7 +611,7 @@
       "words": [
         {
           "text": "Comment",
-          "start": 56.12,
+          "start": 56.11,
           "end": 56.94,
           "confidence": 0.966
         },
@@ -726,7 +726,7 @@
         {
           "text": "Verth-Bettancourt?",
           "start": 63.24,
-          "end": 64.24,
+          "end": 63.98,
           "confidence": 0.712
         }
       ]
@@ -734,8 +734,8 @@
     {
       "id": 5,
       "seek": 5600,
-      "start": 64.24,
-      "end": 67.22,
+      "start": 64.0,
+      "end": 67.18,
       "text": " Question posée par les leaders de la CFDT et la CGT.",
       "tokens": [
         14464,
@@ -763,7 +763,7 @@
       "words": [
         {
           "text": "Question",
-          "start": 64.24,
+          "start": 64.0,
           "end": 64.3,
           "confidence": 0.64
         },
@@ -824,7 +824,7 @@
         {
           "text": "CGT.",
           "start": 66.66,
-          "end": 67.22,
+          "end": 67.18,
           "confidence": 0.987
         }
       ]
@@ -833,7 +833,7 @@
       "id": 6,
       "seek": 5600,
       "start": 67.44,
-      "end": 76.44,
+      "end": 76.42,
       "text": " Réponse de Nicolas Sarkozy, Eric Verth portera le débat sur les retraites, on en parle dans BFM story avec le numéro de la CFDT.",
       "tokens": [
         41587,
@@ -1023,7 +1023,7 @@
         {
           "text": "CFDT.",
           "start": 75.9,
-          "end": 76.44,
+          "end": 76.42,
           "confidence": 0.998
         }
       ]
@@ -1031,8 +1031,8 @@
     {
       "id": 7,
       "seek": 5600,
-      "start": 76.8,
-      "end": 83.2,
+      "start": 76.5,
+      "end": 83.0,
       "text": " Et puis il y a une bataille qui a démarré, celle entre Marine Le Pen et Bruno Gognich, la bataille de la succession de Jean-Marie Le Pen à la tête du Front National.",
       "tokens": [
         3790,
@@ -1091,7 +1091,7 @@
       "words": [
         {
           "text": "Et",
-          "start": 76.8,
+          "start": 76.5,
           "end": 76.96,
           "confidence": 0.911
         },
@@ -1284,7 +1284,7 @@
         {
           "text": "National.",
           "start": 82.64,
-          "end": 83.2,
+          "end": 83.0,
           "confidence": 0.836
         }
       ]
@@ -1293,7 +1293,7 @@
       "id": 8,
       "seek": 8300,
       "start": 83.3,
-      "end": 88.96,
+      "end": 88.82,
       "text": " La tournée de campagne de Marine Le Pen commence aujourd'hui dans le Var, Marine Le Pen sera en direct dans BFM story.",
       "tokens": [
         2369,
@@ -1463,7 +1463,7 @@
         {
           "text": "story.",
           "start": 88.72,
-          "end": 88.96,
+          "end": 88.82,
           "confidence": 0.828
         }
       ]
@@ -1472,7 +1472,7 @@
       "id": 9,
       "seek": 8300,
       "start": 89.0,
-      "end": 92.16,
+      "end": 92.15,
       "text": " Restez avec nous Marine Le Pen dans moins de 3 minutes, à tout de suite.",
       "tokens": [
         13094,
@@ -1587,7 +1587,7 @@
         {
           "text": "suite.",
           "start": 92.1,
-          "end": 92.16,
+          "end": 92.15,
           "confidence": 0.999
         }
       ]
@@ -1595,7 +1595,7 @@
     {
       "id": 10,
       "seek": 9200,
-      "start": 92.16,
+      "start": 92.15,
       "end": 93.72,
       "text": " Musique",
       "tokens": [
@@ -1610,7 +1610,7 @@
       "words": [
         {
           "text": "Musique",
-          "start": 92.16,
+          "start": 92.15,
           "end": 93.72,
           "confidence": 0.328
         }
@@ -1620,7 +1620,7 @@
       "id": 11,
       "seek": 9200,
       "start": 106.7,
-      "end": 113.78,
+      "end": 113.5,
       "text": " L'actualité c'est aussi aujourd'hui un dernier adieu, dernier adieu à Laurent Fignon, c'était au cimetière du Père Lachaise à Paris.",
       "tokens": [
         441,
@@ -1788,7 +1788,7 @@
         {
           "text": "Paris.",
           "start": 113.12,
-          "end": 113.78,
+          "end": 113.5,
           "confidence": 0.998
         }
       ]
@@ -1797,7 +1797,7 @@
       "id": 12,
       "seek": 11400,
       "start": 114.02,
-      "end": 120.48,
+      "end": 120.46,
       "text": " L'ancien double vainqueur du Tour de France, vaincu par le cancer à 50 ans, a été incinéré en petit comité aujourd'hui.",
       "tokens": [
         50364,
@@ -1967,7 +1967,7 @@
         {
           "text": "aujourd'hui.",
           "start": 120.18,
-          "end": 120.48,
+          "end": 120.46,
           "confidence": 0.928
         }
       ]

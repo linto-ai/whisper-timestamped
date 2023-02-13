@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.4,
-      "end": 2.62,
+      "end": 2.34,
       "text": " Dis-moi, est-ce que l'avion vole?",
       "tokens": [
         50364,
@@ -58,7 +58,7 @@
         {
           "text": "vole",
           "start": 2.02,
-          "end": 2.62,
+          "end": 2.34,
           "confidence": 0.891
         }
       ]

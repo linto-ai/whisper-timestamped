@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.44,
-      "end": 2.98,
+      "end": 2.7,
       "text": " Mohoo! Let's go with it again!",
       "tokens": [
         50363,
@@ -61,7 +61,7 @@
         {
           "text": "again!",
           "start": 2.44,
-          "end": 2.98,
+          "end": 2.7,
           "confidence": 0.996
         }
       ]
@@ -70,7 +70,7 @@
       "id": 1,
       "seek": 3000,
       "start": 30.52,
-      "end": 35.56,
+      "end": 35.26,
       "text": " Mohoo! Let's go with it again!",
       "tokens": [
         50413,
@@ -126,7 +126,7 @@
         {
           "text": "again!",
           "start": 35.0,
-          "end": 35.56,
+          "end": 35.26,
           "confidence": 0.997
         }
       ]

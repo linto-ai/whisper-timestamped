@@ -139,7 +139,7 @@
       "id": 1,
       "seek": 0,
       "start": 9.46,
-      "end": 12.8,
+      "end": 12.74,
       "text": " ist dann nicht so weitergegangen, wie sich Papst Benedikt das gewünscht hatte.",
       "tokens": [
         1418,
@@ -239,7 +239,7 @@
         {
           "text": "hatte.",
           "start": 12.46,
-          "end": 12.8,
+          "end": 12.74,
           "confidence": 0.934
         }
       ]

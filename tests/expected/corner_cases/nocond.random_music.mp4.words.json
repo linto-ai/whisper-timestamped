@@ -84,7 +84,7 @@
     {
       "id": 1,
       "seek": 6000,
-      "start": 70.9,
+      "start": 70.58,
       "end": 76.38,
       "text": " Spare the sympathy Everybody wants to be my enemy",
       "tokens": [
@@ -107,7 +107,7 @@
       "words": [
         {
           "text": "Spare",
-          "start": 70.9,
+          "start": 70.58,
           "end": 71.4,
           "confidence": 0.794
         },
@@ -164,7 +164,7 @@
     {
       "id": 2,
       "seek": 6000,
-      "start": 79.94,
+      "start": 76.9,
       "end": 82.58,
       "text": " Look out for yourself My enemy",
       "tokens": [
@@ -183,13 +183,13 @@
       "words": [
         {
           "text": "Look",
-          "start": 79.94,
-          "end": 80.14,
+          "start": 76.9,
+          "end": 78.28,
           "confidence": 0.391
         },
         {
           "text": "out",
-          "start": 80.14,
+          "start": 78.28,
           "end": 80.46,
           "confidence": 0.99
         },
@@ -222,7 +222,7 @@
     {
       "id": 3,
       "seek": 6000,
-      "start": 86.18,
+      "start": 82.98,
       "end": 88.46,
       "text": " Look out for yourself But I'm ready",
       "tokens": [
@@ -243,13 +243,13 @@
       "words": [
         {
           "text": "Look",
-          "start": 86.18,
-          "end": 86.38,
+          "start": 82.98,
+          "end": 84.12,
           "confidence": 0.739
         },
         {
           "text": "out",
-          "start": 86.38,
+          "start": 84.12,
           "end": 86.64,
           "confidence": 0.986
         },
@@ -1234,7 +1234,7 @@
     {
       "id": 16,
       "seek": 12632,
-      "start": 141.9,
+      "start": 141.82,
       "end": 144.72,
       "text": " Staying where nobody's supposed to be, I propose to be in a wreck of emotions",
       "tokens": [
@@ -1265,7 +1265,7 @@
       "words": [
         {
           "text": "Staying",
-          "start": 141.9,
+          "start": 141.82,
           "end": 142.24,
           "confidence": 0.806
         },
@@ -1358,7 +1358,7 @@
     {
       "id": 17,
       "seek": 12632,
-      "start": 145.1,
+      "start": 144.82,
       "end": 147.8,
       "text": " Ready to go whenever she let me know, the road is long so put the pedal into the flow",
       "tokens": [
@@ -1391,7 +1391,7 @@
       "words": [
         {
           "text": "Ready",
-          "start": 145.1,
+          "start": 144.82,
           "end": 145.26,
           "confidence": 0.976
         },
@@ -1508,7 +1508,7 @@
     {
       "id": 18,
       "seek": 12632,
-      "start": 147.96,
+      "start": 147.82,
       "end": 151.32,
       "text": " The energy on my trail, my energy unavailable, I'ma tell her my silhouette go away",
       "tokens": [
@@ -1541,7 +1541,7 @@
       "words": [
         {
           "text": "The",
-          "start": 147.96,
+          "start": 147.82,
           "end": 148.08,
           "confidence": 0.941
         },

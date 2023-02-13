@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.02,
-      "end": 12.76,
+      "end": 11.84,
       "text": " La réapparition du Messe-Bouche de 1962 en tant que missale pour la forme exceptionnelle du roi de la Réthos n'est pas encore la même chose que l'a voulu le Père de Benedict.",
       "tokens": [
         2369,
@@ -257,7 +257,7 @@
         {
           "text": "Benedict.",
           "start": 11.78,
-          "end": 12.76,
+          "end": 11.84,
           "confidence": 0.392
         }
       ]

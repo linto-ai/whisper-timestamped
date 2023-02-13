@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.9,
-      "end": 12.76,
+      "end": 12.74,
       "text": " Wie wieder zu dazu ist Meshfuchs von 1962 als Meshale für die außerordentliche Form des grullischen Rätos ist dann nicht so weitergegangen wie sich Papsbelle dick das gewünscht hatte.",
       "tokens": [
         9233,
@@ -236,7 +236,7 @@
         {
           "text": "hatte.",
           "start": 12.48,
-          "end": 12.76,
+          "end": 12.74,
           "confidence": 0.923
         }
       ]
@@ -245,7 +245,7 @@
       "id": 1,
       "seek": 1300,
       "start": 13.98,
-      "end": 15.22,
+      "end": 15.2,
       "text": " Das hat er als Meshale im Rätos.",
       "tokens": [
         50364,
@@ -308,7 +308,7 @@
         {
           "text": "Rätos.",
           "start": 15.04,
-          "end": 15.22,
+          "end": 15.2,
           "confidence": 0.467
         }
       ]

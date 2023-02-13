@@ -1049,7 +1049,7 @@
       "id": 10,
       "seek": 5600,
       "start": 60.52,
-      "end": 66.48,
+      "end": 66.02,
       "text": " We're on the highway, we're on the highway",
       "tokens": [
         492,
@@ -1115,7 +1115,7 @@
         {
           "text": "highway",
           "start": 63.7,
-          "end": 66.48,
+          "end": 66.02,
           "confidence": 0.945
         }
       ]
@@ -1123,7 +1123,7 @@
     {
       "id": 11,
       "seek": 5600,
-      "start": 66.84,
+      "start": 66.02,
       "end": 69.04,
       "text": " We want to hear that, this is the case, we know we can't get that much of our business",
       "tokens": [
@@ -1158,103 +1158,103 @@
       "words": [
         {
           "text": "We",
-          "start": 66.84,
-          "end": 67.12,
+          "start": 66.02,
+          "end": 66.06,
           "confidence": 0.369
         },
         {
           "text": "want",
-          "start": 67.12,
-          "end": 67.26,
+          "start": 66.06,
+          "end": 66.1,
           "confidence": 0.335
         },
         {
           "text": "to",
-          "start": 67.26,
-          "end": 67.3,
+          "start": 66.1,
+          "end": 66.14,
           "confidence": 0.662
         },
         {
           "text": "hear",
-          "start": 67.3,
-          "end": 67.48,
+          "start": 66.14,
+          "end": 66.18,
           "confidence": 0.323
         },
         {
           "text": "that,",
-          "start": 67.48,
-          "end": 67.88,
+          "start": 66.18,
+          "end": 66.22,
           "confidence": 0.878
         },
         {
           "text": "this",
-          "start": 67.88,
-          "end": 68.14,
+          "start": 66.22,
+          "end": 66.26,
           "confidence": 0.265
         },
         {
           "text": "is",
-          "start": 68.14,
-          "end": 68.18,
+          "start": 66.26,
+          "end": 66.3,
           "confidence": 0.806
         },
         {
           "text": "the",
-          "start": 68.18,
-          "end": 68.22,
+          "start": 66.3,
+          "end": 66.34,
           "confidence": 0.286
         },
         {
           "text": "case,",
-          "start": 68.22,
-          "end": 68.26,
+          "start": 66.34,
+          "end": 66.38,
           "confidence": 0.195
         },
         {
           "text": "we",
-          "start": 68.26,
-          "end": 68.3,
+          "start": 66.38,
+          "end": 66.92,
           "confidence": 0.423
         },
         {
           "text": "know",
-          "start": 68.3,
-          "end": 68.34,
+          "start": 66.92,
+          "end": 66.96,
           "confidence": 0.736
         },
         {
           "text": "we",
-          "start": 68.34,
-          "end": 68.38,
+          "start": 66.96,
+          "end": 67.06,
           "confidence": 0.814
         },
         {
           "text": "can't",
-          "start": 68.38,
-          "end": 68.42,
+          "start": 67.06,
+          "end": 67.3,
           "confidence": 0.339
         },
         {
           "text": "get",
-          "start": 68.42,
-          "end": 68.46,
+          "start": 67.3,
+          "end": 67.4,
           "confidence": 0.219
         },
         {
           "text": "that",
-          "start": 68.46,
-          "end": 68.5,
+          "start": 67.4,
+          "end": 67.64,
           "confidence": 0.209
         },
         {
           "text": "much",
-          "start": 68.5,
-          "end": 68.54,
+          "start": 67.64,
+          "end": 68.46,
           "confidence": 0.213
         },
         {
           "text": "of",
-          "start": 68.54,
+          "start": 68.46,
           "end": 68.7,
           "confidence": 0.59
         },
@@ -1385,8 +1385,8 @@
     {
       "id": 13,
       "seek": 7400,
-      "start": 89.2,
-      "end": 89.6,
+      "start": 74.02,
+      "end": 78.4,
       "text": " Okay, it's not over, it's not over, it's not over",
       "tokens": [
         50364,
@@ -1416,62 +1416,62 @@
       "words": [
         {
           "text": "Okay,",
-          "start": 89.2,
-          "end": 89.24,
+          "start": 74.02,
+          "end": 75.9,
           "confidence": 0.147
         },
         {
           "text": "it's",
-          "start": 89.24,
-          "end": 89.28,
+          "start": 75.9,
+          "end": 76.16,
           "confidence": 0.589
         },
         {
           "text": "not",
-          "start": 89.28,
-          "end": 89.32,
+          "start": 76.16,
+          "end": 76.22,
           "confidence": 0.956
         },
         {
           "text": "over,",
-          "start": 89.32,
-          "end": 89.36,
+          "start": 76.22,
+          "end": 76.76,
           "confidence": 0.89
         },
         {
           "text": "it's",
-          "start": 89.36,
-          "end": 89.4,
+          "start": 76.76,
+          "end": 77.08,
           "confidence": 0.647
         },
         {
           "text": "not",
-          "start": 89.4,
-          "end": 89.44,
+          "start": 77.08,
+          "end": 77.18,
           "confidence": 0.897
         },
         {
           "text": "over,",
-          "start": 89.44,
-          "end": 89.48,
+          "start": 77.18,
+          "end": 77.36,
           "confidence": 0.962
         },
         {
           "text": "it's",
-          "start": 89.48,
-          "end": 89.52,
+          "start": 77.36,
+          "end": 77.86,
           "confidence": 0.869
         },
         {
           "text": "not",
-          "start": 89.52,
-          "end": 89.56,
+          "start": 77.86,
+          "end": 78.26,
           "confidence": 0.955
         },
         {
           "text": "over",
-          "start": 89.56,
-          "end": 89.6,
+          "start": 78.26,
+          "end": 78.4,
           "confidence": 0.934
         }
       ]

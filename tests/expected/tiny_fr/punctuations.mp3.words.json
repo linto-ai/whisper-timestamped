@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.42,
-      "end": 2.54,
+      "end": 2.22,
       "text": " Dima et ce que l'on vole.",
       "tokens": [
         50364,
@@ -60,7 +60,7 @@
         {
           "text": "vole.",
           "start": 1.92,
-          "end": 2.54,
+          "end": 2.22,
           "confidence": 0.269
         }
       ]

@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.46,
-      "end": 1.36,
+      "end": 0.68,
       "text": " Bonjour!",
       "tokens": [
         25431,
@@ -20,7 +20,7 @@
         {
           "text": "Bonjour!",
           "start": 0.46,
-          "end": 1.36,
+          "end": 0.68,
           "confidence": 0.69
         }
       ]
@@ -29,7 +29,7 @@
       "id": 1,
       "seek": 148,
       "start": 1.86,
-      "end": 3.08,
+      "end": 2.8,
       "text": " Est-ce que vous allez bien?",
       "tokens": [
         50364,
@@ -76,7 +76,7 @@
         {
           "text": "bien?",
           "start": 2.48,
-          "end": 3.08,
+          "end": 2.8,
           "confidence": 0.979
         }
       ]
@@ -84,8 +84,8 @@
     {
       "id": 2,
       "seek": 3148,
-      "start": 33.0,
-      "end": 33.64,
+      "start": 32.98,
+      "end": 33.16,
       "text": " Bonjour!",
       "tokens": [
         25431,
@@ -99,8 +99,8 @@
       "words": [
         {
           "text": "Bonjour!",
-          "start": 33.0,
-          "end": 33.64,
+          "start": 32.98,
+          "end": 33.16,
           "confidence": 0.919
         }
       ]
@@ -108,8 +108,8 @@
     {
       "id": 3,
       "seek": 3348,
-      "start": 34.92,
-      "end": 34.96,
+      "start": 34.4,
+      "end": 34.61,
       "text": " Bonjour!",
       "tokens": [
         25431,
@@ -123,8 +123,8 @@
       "words": [
         {
           "text": "Bonjour!",
-          "start": 34.92,
-          "end": 34.96,
+          "start": 34.4,
+          "end": 34.61,
           "confidence": 0.331
         }
       ]
@@ -132,8 +132,8 @@
     {
       "id": 4,
       "seek": 3448,
-      "start": 34.96,
-      "end": 35.58,
+      "start": 34.61,
+      "end": 35.34,
       "text": " Est-ce que vous allez bien?",
       "tokens": [
         50364,
@@ -155,32 +155,32 @@
       "words": [
         {
           "text": "Est-ce",
-          "start": 34.96,
-          "end": 35.0,
+          "start": 34.61,
+          "end": 34.66,
           "confidence": 0.741
         },
         {
           "text": "que",
-          "start": 35.0,
-          "end": 35.04,
+          "start": 34.66,
+          "end": 34.72,
           "confidence": 0.979
         },
         {
           "text": "vous",
-          "start": 35.04,
-          "end": 35.08,
+          "start": 34.72,
+          "end": 34.86,
           "confidence": 0.999
         },
         {
           "text": "allez",
-          "start": 35.08,
-          "end": 35.12,
+          "start": 34.86,
+          "end": 35.0,
           "confidence": 0.959
         },
         {
           "text": "bien?",
-          "start": 35.12,
-          "end": 35.58,
+          "start": 35.0,
+          "end": 35.34,
           "confidence": 1.0
         }
       ]

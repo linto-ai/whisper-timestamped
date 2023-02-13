@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.16,
-      "end": 0.64,
+      "end": 0.34,
       "text": " Bonjour!",
       "tokens": [
         50364,
@@ -22,7 +22,7 @@
         {
           "text": "Bonjour!",
           "start": 0.16,
-          "end": 0.64,
+          "end": 0.34,
           "confidence": 0.853
         }
       ]
