@@ -30,7 +30,10 @@ setup(
     packages=find_packages(exclude=["tests*"]),
     install_requires=install_requires,
     entry_points = {
-        'console_scripts': ['whisper_timestamped=whisper_timestamped.transcribe:cli'],
+        'console_scripts': [
+            'whisper_timestamped=whisper_timestamped.transcribe:cli',
+            'whisper_timestamped_make_subtitles=whisper_timestamped.make_subtitles:cli'
+        ],
     },
     include_package_data=True,
     extras_require={'dev': ['matplotlib']},

@@ -50,7 +50,7 @@ class TestHelper(unittest.TestCase):
     def get_data_files(self, files=None, excluded_by_default=["apollo11.mp3", "music.mp4", "arabic.mp3", "empty.wav"]):
         if files == None:
             files = os.listdir(self.get_data_path())
-            files = [f for f in files if f not in excluded_by_default]
+            files = [f for f in files if f not in excluded_by_default and not f.endswith("json")]
             files = sorted(files)
         return [self.get_data_path(fn) for fn in files]
 
@@ -58,10 +58,10 @@ class TestHelper(unittest.TestCase):
         for ext in extensions:
             yield os.path.join(output_path, os.path.basename(input_filename) + "." + ext.lstrip("."))
 
-    def main_script(self):
-        main_script = self.get_main_path("transcribe.py", check=False)
+    def main_script(self, pyscript = "transcribe.py", exename = "whisper_timestamped"):
+        main_script = self.get_main_path(pyscript, check=False)
         if not os.path.exists(main_script):
-            main_script = "whisper_timestamped"
+            main_script = exename
         return main_script
 
     def assertRun(self, cmd):
@@ -494,6 +494,38 @@ class TestTranscribeFormats(TestHelperCli):
             device_specific=True,
         )
 
+class TestMakeSubtitles(TestHelper):
+
+    def test_make_subtitles(self):
+
+        main_script = self.main_script("make_subtitles.py", "whisper_timestamped_make_subtitles")
+
+        inputs = [
+            self.get_data_path("smartphone.mp3.words.json"),
+            self.get_expected_path("punctuations_no/punctuations.mp3.words.json", check=True),
+            self.get_expected_path("punctuations_yes/punctuations.mp3.words.json", check=True),
+        ]
+
+        for i, input in enumerate(inputs):
+            filename = os.path.basename(input).replace(".words.json", "")
+            for len in 6, 20, 50:
+                output_dir = self.get_output_path()
+                self.assertRun([main_script, 
+                    input if i > 0 else self.get_data_path(), output_dir,
+                    "--max_length", str(len),
+                ])
+                for format in "vtt", "srt",:
+                    output_file = os.path.join(output_dir, f"{filename}.{format}")
+                    self.assertTrue(os.path.isfile(output_file), msg=f"File {output_file} not found")
+                    expected_file = f"split_subtitles/{filename}_{len}.{format}"
+                    self.assertNonRegression(output_file, expected_file)
+                    os.remove(output_file)
+                    self.assertRun([main_script, 
+                        input, output_file,
+                        "--max_length", str(len),
+                    ])
+                    self.assertTrue(os.path.isfile(output_file), msg=f"File {output_file} not found")
+                    self.assertNonRegression(output_file, expected_file)
 
 # "ZZZ" to run this test at last (because it will fill the CUDA with some memory)
 class TestZZZPythonImport(TestHelper):
