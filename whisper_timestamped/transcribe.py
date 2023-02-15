@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.8.0"
+__version__ = "1.8.1"
 
 # Whisper and Torch
 import whisper
@@ -20,6 +20,7 @@ from scipy.ndimage import median_filter # faster owing to https://github.com/ope
 import string
 import csv
 import sys
+import gzip, base64
 
 # Constant variables
 from whisper.utils import format_timestamp
@@ -47,7 +48,7 @@ def transcribe_timestamped(
     refine_whisper_precision=0.5,
     min_word_duration=0.04,
     plot_word_alignment=False,
-    word_alignement_most_top_layers=6,
+    word_alignement_most_top_layers=6, # TODO: None in order to switch to tuned alignment heads
 
     # Reproducibility
     seed=1234,
@@ -159,7 +160,7 @@ def transcribe_timestamped(
     assert refine_whisper_precision >= 0 and refine_whisper_precision / AUDIO_TIME_PER_TOKEN == round(refine_whisper_precision / AUDIO_TIME_PER_TOKEN), f"refine_whisper_precision must be a positive multiple of {AUDIO_TIME_PER_TOKEN}"
     refine_whisper_precision_nframes = round(refine_whisper_precision / AUDIO_TIME_PER_TOKEN)
     assert min_word_duration >= 0, f"min_word_duration must be a positive number"
-    assert word_alignement_most_top_layers > 0, f"word_alignement_most_top_layers must be a strictly positive number"
+    assert word_alignement_most_top_layers is None or word_alignement_most_top_layers > 0, f"word_alignement_most_top_layers must be a strictly positive number"
 
     if isinstance(temperature, (list, tuple)) and len(temperature) == 1:
         temperature = temperature[0]
@@ -188,6 +189,7 @@ def transcribe_timestamped(
             refine_whisper_precision_nframes=refine_whisper_precision_nframes,
             plot_word_alignment=plot_word_alignment,
             word_alignement_most_top_layers=word_alignement_most_top_layers,
+            alignment_heads=get_alignment_heads(model) if word_alignement_most_top_layers is None else None,
     )
     whisper_options = dict(
             language=language,
@@ -224,6 +226,7 @@ def transcribe_timestamped(
         if verbose and not naive_approach:
             print_timestamped(word)
         word.pop("tokens")
+        word.pop("tokens_indices")
         if "avg_logprob_reliable" in word:
             word.pop("avg_logprob_reliable")
         idx_segment = word.pop("idx_segment")
@@ -246,6 +249,7 @@ def _transcribe_timestamped_efficient(
     compute_word_confidence,
     include_punctuation_in_confidence,
     refine_whisper_precision_nframes,
+    alignment_heads,
     plot_word_alignment,
     word_alignement_most_top_layers,
     # Whisper specific options
@@ -269,6 +273,8 @@ def _transcribe_timestamped_efficient(
     max_sample_len = sample_len or model.dims.n_text_ctx // 2 
 
     debug = logger.getEffectiveLevel() >= logging.DEBUG
+
+    word_alignement_most_top_layers = float("inf") if word_alignement_most_top_layers is None else word_alignement_most_top_layers
 
     # The main outcome
     timestamped_word_segments = []  # list of timestamped word segments that have been collected so far
@@ -410,6 +416,7 @@ def _transcribe_timestamped_efficient(
                 attention_weights,
                 tokenizer,
                 use_space=should_use_space(language),
+                alignment_heads=alignment_heads,
                 remove_punctuation_from_words=remove_punctuation_from_words,
                 refine_whisper_precision_nframes=refine_whisper_precision_nframes,
                 unfinished_decoding=unfinished_decoding,
@@ -674,9 +681,7 @@ def _transcribe_timestamped_efficient(
                 if include_punctuation_in_confidence:
                     word_logprobs = logprobs[i_start:i_end]
                 else:
-                    tokens_str = [tokenizer.decode([t]) for t in tokens]
-                    while len(tokens_str) > 1 and tokens_str[-1][-1] in _punctuation: # Note: look at the last character of token, to take into account "...", "!!", etc.
-                        tokens_str = tokens_str[:-1]
+                    while len(tokens) > 1 and tokens[-1][-1] in _punctuation: # Note: look at the last character of token, to take into account "...", "!!", etc.
                         tokens = tokens[:-1]
                     word_logprobs = logprobs[i_start:i_start + len(tokens)]
                     logprobs_nopunc.append(word_logprobs)
@@ -700,6 +705,7 @@ def _transcribe_timestamped_naive(
     compute_word_confidence,
     include_punctuation_in_confidence,
     refine_whisper_precision_nframes,
+    alignment_heads,
     plot_word_alignment,
     word_alignement_most_top_layers,
     min_word_duration,
@@ -709,6 +715,8 @@ def _transcribe_timestamped_naive(
     whisper_options["verbose"] = None if whisper_options["verbose"] is True else whisper_options["verbose"]  # We will print intermediate results ourselves
     language = whisper_options["language"]
     refine_whisper_precision_sec = refine_whisper_precision_nframes * AUDIO_TIME_PER_TOKEN
+
+    word_alignement_most_top_layers = float("inf") if word_alignement_most_top_layers is None else word_alignement_most_top_layers
 
     if isinstance(audio, str):
         audio = whisper.load_audio(audio)
@@ -833,6 +841,7 @@ def _transcribe_timestamped_naive(
                 attention_weights,
                 tokenizer,
                 use_space=use_space,
+                alignment_heads=alignment_heads,
                 remove_punctuation_from_words=remove_punctuation_from_words,
                 refine_whisper_precision_nframes=refine_whisper_precision_nframes,
                 mfcc=mfcc,
@@ -849,13 +858,13 @@ def _transcribe_timestamped_naive(
                 
                 if compute_word_confidence:
                     tokens = w["tokens"]
+                    tokens_indices = w["tokens_indices"]
                     i_end = i_start + len(tokens)
                     if include_punctuation_in_confidence:
-                        tokens_str = [tokenizer.decode([t]) for t in tokens]
-                        while len(tokens_str) > 1 and tokens_str[-1][-1] in _punctuation: # Note: look at the last character of token, to take into account "...", "!!", etc.
-                            tokens_str = tokens_str[:-1]
+                        while len(tokens) > 1 and tokens[-1][-1] in _punctuation: # Note: look at the last character of token, to take into account "...", "!!", etc.
                             tokens = tokens[:-1]
-                    word_logprobs = [logprobs[:, step, tok] for (step, tok) in zip(range(i_start, i_start + len(tokens)), tokens)]
+                            tokens_indices = tokens_indices[:-1]
+                    word_logprobs = [logprobs[:, step, tok] for (step, tok) in zip(range(i_start, i_start + len(tokens_indices)), tokens_indices)]
                     i_start = i_end
                     word_logprobs = torch.cat(word_logprobs)
                     w.update({"confidence": round_confidence(word_logprobs.mean().exp().item())})
@@ -938,14 +947,15 @@ def perform_word_alignment(
     attention_weights,
     tokenizer,
     use_space=True,
+    mfcc=None,
     refine_whisper_precision_nframes=0,
+    remove_punctuation_from_words=False,
+    include_punctuation_in_timing=True, # TODO: False
+    unfinished_decoding=False,
+    alignment_heads=None,
     medfilt_width=9,
     qk_scale=1.0,
-    most_top_layers=None,  # 6
-    mfcc=None,
     plot=False,
-    remove_punctuation_from_words=False,
-    unfinished_decoding=False,
     debug=False,
 ):
     """
@@ -956,7 +966,16 @@ def perform_word_alignment(
     attention_weights: list of attention weights (torch tensors)
     tokenizer: tokenizer used to tokenize the text
     use_space: whether to use spaces to split the tokens into words (should be true for all languages except Japanese, Chinese, ...)
+    mfcc: MFCC features (used to identify padded region, and for plotting)
     refine_whisper_precision_nframes: precision time
+    remove_punctuation_from_words: whether to remove punctuation from words
+    include_punctuation_in_timing: whether to include punctuation in the timing of (previous) words
+    unfinished_decoding: whether the decoding is unfinished (e.g. because the model is stuck)
+    alignment_heads: list of attention heads to use for alignment
+    medfilt_width: width of the median filter used to smooth the attention weights
+    qk_scale: scale factor applied to the attention weights
+    plot: whether to plot the word alignment
+    debug: whether to print debug information
     """
 
     assert len(tokens) > 1, f"Got unexpected sequence of tokens of length {len(tokens)} {tokenizer.decode_with_timestamps(tokens)}"
@@ -981,13 +1000,6 @@ def perform_word_alignment(
         start_token = max(start_token - refine_whisper_precision_nframes, 0)
         end_token = min(end_token + refine_whisper_precision_nframes, N_FRAMES // 2)
 
-    # Get the limit of audio duration
-    max_duration = None
-    if mfcc is not None:
-        max_duration = find_start_padding(mfcc)
-        if max_duration is not None:
-            max_duration = max_duration // 2
-
     if end_token <= start_token:
         raise RuntimeError(f"Got segment with null or negative duration {tokenizer.decode_with_timestamps(tokens)}: {start_token} {end_token}")
 
@@ -995,16 +1007,17 @@ def perform_word_alignment(
     end_time = end_token * AUDIO_TIME_PER_TOKEN
 
     split_tokens = split_tokens_on_spaces if use_space else split_tokens_on_unicode
-    words, word_tokens = split_tokens(tokens, tokenizer, remove_punctuation_from_words=remove_punctuation_from_words)
+    words, word_tokens, word_tokens_indices = split_tokens(tokens, tokenizer, remove_punctuation_from_words=remove_punctuation_from_words)
 
     # If the last token is a punctuation that comes after a word
     # group this final punctuation with the final timestamp
     # This is to avoid assigning the final punctuation to a big silence or a noise/music background coming after
-    word_tokens_nofinalpunct = word_tokens
-    if not unfinished_decoding:
-        assert len(word_tokens) >= 3
-        if len(word_tokens[-2]) > 1 and tokenizer.decode([word_tokens[-2][-1]]) in _punctuation:
-            word_tokens_nofinalpunct = word_tokens[:-2] + [word_tokens[-2][:-1], [word_tokens[-2][-1]]+word_tokens[-1]]
+    num_punctuations_per_tokens = [
+        0 if len(w) == 1 or w[-1] not in _punctuation else 1
+        for w in word_tokens
+    ]
+    if include_punctuation_in_timing:
+        num_punctuations_per_tokens[:-2]=[0]*(len(num_punctuations_per_tokens)-2)
 
     for i, w in enumerate(attention_weights):
         assert w.shape[-2] == len(tokens), f"Attention weights have wrong shape: {w.shape[-2]} (expected {len(tokens)})."
@@ -1023,7 +1036,7 @@ def perform_word_alignment(
             refine_whisper_precision_nframes=refine_whisper_precision_nframes,
             medfilt_width=medfilt_width,
             qk_scale=qk_scale,
-            most_top_layers=most_top_layers,
+            alignment_heads=alignment_heads,
             mfcc=mfcc,
             plot=plot,
             remove_punctuation_from_words=remove_punctuation_from_words,
@@ -1034,30 +1047,52 @@ def perform_word_alignment(
     assert end_token <= weights.shape[-1]
     assert len(tokens) == num_tokens
 
-    weights = weights[:, :, :, start_token: end_token].cpu()
+    weights = weights[:, :, :, start_token: end_token].cpu()                        # layers * heads * tokens * frames
 
-    weights = median_filter(weights, (1, 1, 1, medfilt_width))
+    if False: # TODO?
 
-    weights = torch.tensor(weights * qk_scale).softmax(dim=-1)
-    # weights = weights.softmax(dim=-2)
-    # TODO: Do we really need this?
-    weights = weights / weights.norm(dim=-2, keepdim=True)
+        if alignment_heads is None:
+            weights = weights.reshape(-1, *weights.shape[-2:])                      # N * tokens * frames
+        else:
+            weights = torch.stack([weights[l][h] for l, h in alignment_heads.indices().T])
+        weights = (weights * qk_scale).softmax(dim=-1)
+        std, mean = torch.std_mean(weights, dim=-2, keepdim=True, unbiased=False)   # tokens * frames
+        weights = (weights - mean) / std
+        weights = median_filter(weights, medfilt_width)
+        weights = weights.mean(axis=0)                                              # tokens * frames
+        weights = -weights.astype(np.double)
+        worse_weight = weights.max()
 
-    if most_top_layers:
-        weights = weights[-most_top_layers:]  # at most 6 top layers
-    weights = weights.mean(axis=(0, 1))  # average over layers and heads
-    weights = -weights.double().numpy()
+    else: # Old version
+
+        if alignment_heads is None:
+            weights = weights.reshape(-1, *weights.shape[-2:])                      # N * tokens * frames
+        else:
+            weights = torch.stack([weights[l][h] for l, h in alignment_heads.indices().T])
+        weights = median_filter(weights, (1, 1, medfilt_width))
+        weights = torch.tensor(weights * qk_scale).softmax(dim=-1)
+        weights = weights / weights.norm(dim=-2, keepdim=True) # TODO: move after mean
+        weights = weights.mean(axis=(0))  # average over layers and heads           # tokens * frames
+        weights = -weights.double().numpy()
+        worse_weight = 0
+
+    # Get the limit of audio duration
+    max_duration = None
+    if mfcc is not None:
+        max_duration = find_start_padding(mfcc)
+        if max_duration is not None:
+            max_duration = max_duration // 2
 
     # Enforce the max duration
     if max_duration:
         if start_token >= max_duration:
             logger.warn(f"Got start time outside of audio boundary")
         else:
-            weights[:-1, max_duration:] = 0
+            weights[:-1, max_duration:] = worse_weight
 
     # Encourage to start early
     weights[0, 0] = weights.min()
-    weights[0, refine_whisper_precision_nframes*2:] = 0
+    weights[0, refine_whisper_precision_nframes*2:] = worse_weight
 
     # Similar as "symmetric1" but without the possibility to have the same timestamp for two tokens
     step_pattern = dtw.stepPattern.StepPattern(dtw.stepPattern._c(
@@ -1071,8 +1106,6 @@ def perform_word_alignment(
     if plot:
         import matplotlib.pyplot as plt
         import matplotlib.ticker as ticker
-
-        word_tokens_str = [[tokenizer.decode_with_timestamps([ti]) for ti in t] for t in word_tokens]
 
         if mfcc is None:
             plt.figure(figsize=(16, 9), frameon=False)
@@ -1105,7 +1138,7 @@ def perform_word_alignment(
             current_y += len(word_token)
             major_ticks.append(current_y - 0.5)
 
-        words_with_subwords = ["|".join(s) for (w, s) in zip(words, word_tokens_str)]
+        words_with_subwords = ["|".join(s).strip() for (w, s) in zip(words, word_tokens)]
 
         ax.yaxis.set_minor_locator(ticker.FixedLocator(minor_ticks))
         ax.yaxis.set_minor_formatter(
@@ -1140,10 +1173,10 @@ def perform_word_alignment(
                         constant_values=end_time - start_time)
 
     # display the word-level timestamps in a table
-    word_boundaries = np.cumsum([len(t) for t in word_tokens_nofinalpunct])
+    word_boundaries = np.cumsum([len(t) for t in word_tokens])
     word_boundaries = np.pad(word_boundaries, (1, 0))
     begin_times = jump_times[word_boundaries[:-1]]
-    end_times = jump_times[word_boundaries[1:]]
+    end_times = jump_times[word_boundaries[1:] - num_punctuations_per_tokens]
 
     # Ignore start / end tokens
     if not refine_whisper_precision_nframes:
@@ -1153,11 +1186,13 @@ def perform_word_alignment(
     if unfinished_decoding:
         words = words[1:]
         word_tokens = word_tokens[1:]
+        word_tokens_indices = word_tokens_indices[1:]
         begin_times = begin_times[1:]
         end_times = end_times[1:]
     else:
         words = words[1:-1]
         word_tokens = word_tokens[1:-1]
+        word_tokens_indices = word_tokens_indices[1:-1]
         begin_times = begin_times[1:-1]
         end_times = end_times[1:-1]
 
@@ -1166,7 +1201,7 @@ def perform_word_alignment(
 
         if mfcc is not None:
             for i, (begin, end) in enumerate(zip(begin_times, end_times)):
-                for x in [begin, end,] if i == 0 else [end,]:
+                for x in [begin, end,]:
                     plt.axvline(x * 2 / AUDIO_TIME_PER_TOKEN,
                                 color="red", linestyle="dotted")
 
@@ -1176,7 +1211,7 @@ def perform_word_alignment(
             ymax = ymin + len(ws)
             plt.text(begin / AUDIO_TIME_PER_TOKEN, num_tokens,
                      w, ha="left", va="top", color="red")
-            for x in [begin, end,] if i == 0 else [end,]:
+            for x in [begin, end,]:
                 plt.axvline(x / AUDIO_TIME_PER_TOKEN, color="red", linestyle="dotted",
                             ymin=1-ymin/num_tokens,
                             ymax=0,  # 1-ymax/num_tokens,
@@ -1191,8 +1226,9 @@ def perform_word_alignment(
             start=round_timestamp(begin + start_time),
             end=round_timestamp(end + start_time),
             tokens=tokens,
+            tokens_indices=tokens_indices,
         )
-        for word, begin, end, tokens in zip(words, begin_times, end_times, word_tokens)
+        for word, begin, end, tokens, tokens_indices in zip(words, begin_times, end_times, word_tokens, word_tokens_indices)
         if not word.startswith("<|")
     ]
 
@@ -1216,9 +1252,10 @@ def round_timestamp(x):
 
 _punctuation = "".join(c for c in string.punctuation if c not in ["-", "'"]) + "。，！？：”、…"
 
-def split_tokens_on_unicode(tokens: list, tokenizer, tokens_as_string=False, remove_punctuation_from_words=False, isolate_punctuations=False):
+def split_tokens_on_unicode(tokens: list, tokenizer, remove_punctuation_from_words=False, isolate_punctuations=False):
     words = []
     word_tokens = []
+    word_tokens_indices = []
     current_tokens = []
 
     for token in tokens:
@@ -1226,45 +1263,45 @@ def split_tokens_on_unicode(tokens: list, tokenizer, tokens_as_string=False, rem
         decoded = tokenizer.decode_with_timestamps(current_tokens)
         if "\ufffd" not in decoded:
             punctuation = not isolate_punctuations and (decoded.strip() and decoded.strip() in _punctuation)
-            previous_special = len(word_tokens) > 0 and ((word_tokens[-1][-1].startswith("<|")) if tokens_as_string else (word_tokens[-1][-1] >= tokenizer.eot))
+            previous_special = len(word_tokens_indices) > 0 and (word_tokens_indices[-1][-1] >= tokenizer.eot)
             if punctuation and not previous_special:
                 if len(words) == 0:
                     words = [""]
                     word_tokens = [[]]
                 if not remove_punctuation_from_words:
                     words[-1] += decoded
-                if tokens_as_string:
-                    word_tokens[-1].append(decoded.strip())
-                else:
-                    word_tokens[-1].extend(current_tokens)
+                word_tokens[-1].append(decoded)
+                word_tokens_indices[-1].extend(current_tokens)
             else:
                 words.append(decoded)
-                word_tokens.append(
-                    [decoded.strip()] if tokens_as_string else current_tokens)
+                word_tokens.append([decoded])
+                word_tokens_indices.append(current_tokens)
             current_tokens = []
 
-    return words, word_tokens
+    return words, word_tokens, word_tokens_indices
 
 
-def split_tokens_on_spaces(tokens: torch.Tensor, tokenizer, tokens_as_string=False, remove_punctuation_from_words=False):
-    subwords, subword_tokens_list = split_tokens_on_unicode(
-        tokens, tokenizer, tokens_as_string=tokens_as_string, remove_punctuation_from_words=remove_punctuation_from_words)
+def split_tokens_on_spaces(tokens: torch.Tensor, tokenizer, remove_punctuation_from_words=False):
+    subwords, subword_tokens_list, subword_tokens_indices_list = split_tokens_on_unicode(tokens, tokenizer, remove_punctuation_from_words=remove_punctuation_from_words)
     words = []
     word_tokens = []
+    word_tokens_indices = []
 
-    for i, (subword, subword_tokens) in enumerate(zip(subwords, subword_tokens_list)):
-        special = (subword_tokens[0].startswith("<|")) if tokens_as_string else (subword_tokens[0] >= tokenizer.eot)
-        previous_special = i > 0 and ((subword_tokens_list[i-1][0].startswith("<|")) if tokens_as_string else (subword_tokens_list[i-1][0] >= tokenizer.eot))
+    for i, (subword, subword_tokens, subword_tokens_indices) in enumerate(zip(subwords, subword_tokens_list, subword_tokens_indices_list)):
+        special = (subword_tokens_indices[0] >= tokenizer.eot)
+        previous_special = (i > 0) and (subword_tokens_indices_list[i-1][0] >= tokenizer.eot)
         with_space = subword.startswith(" ")
-        punctuation = subword.strip() in _punctuation
+        punctuation = (subword.strip() and subword.strip()) in _punctuation
         if special or (with_space and not punctuation) or previous_special:
             words.append(subword.strip())
             word_tokens.append(subword_tokens)
+            word_tokens_indices.append(subword_tokens_indices)
         else:
             words[-1] = words[-1] + subword.strip()
             word_tokens[-1].extend(subword_tokens)
+            word_tokens_indices[-1].extend(subword_tokens_indices)
 
-    return words, word_tokens
+    return words, word_tokens, word_tokens_indices
 
 def ensure_increasing_positions(segments, min_duration=0):
     """
@@ -1327,6 +1364,55 @@ def force_cudnn_initialization(device=None, s=32):
     if device is None:
         device = torch.device('cuda')
     torch.nn.functional.conv2d(torch.zeros(s, s, s, s, device=device), torch.zeros(s, s, s, s, device=device))
+
+# base85-encoded (n_layers, n_heads) boolean arrays indicating the cross-attention heads that are
+# highly correlated to the word-level timing, i.e. the alignment between audio and text tokens.
+_ALIGNMENT_HEADS = {
+    "tiny.en": b"ABzY8J1N>@0{>%R00Bk>$p{7v037`oCl~+#00",
+    "tiny": b"ABzY8bu8Lr0{>%RKn9Fp%m@SkK7Kt=7ytkO",
+    "base.en": b"ABzY8;40c<0{>%RzzG;p*o+Vo09|#PsxSZm00",
+    "base": b"ABzY8KQ!870{>%RzyTQH3`Q^yNP!>##QT-<FaQ7m",
+    "small.en": b"ABzY8>?_)10{>%RpeA61k&I|OI3I$65C{;;pbCHh0B{qLQ;+}v00",
+    "small": b"ABzY8DmU6=0{>%Rpa?J`kvJ6qF(V^F86#Xh7JUGMK}P<N0000",
+    "medium.en": b"ABzY8usPae0{>%R7<zz_OvQ{)4kMa0BMw6u5rT}kRKX;$NfYBv00*Hl@qhsU00",
+    "medium": b"ABzY8B0Jh+0{>%R7}kK1fFL7w6%<-Pf*t^=N)Qr&0RR9",
+    "large-v1": b"ABzY8r9j$a0{>%R7#4sLmoOs{s)o3~84-RPdcFk!JR<kSfC2yj",
+    "large-v2": b'ABzY8zd+h!0{>%R7=D0pU<_bnWW*tkYAhobTNnu$jnkEkXqp)j;w1Tzk)UH3X%SZd&fFZ2fC2yj',
+    # "large": b'ABzY8zd+h!0{>%R7=D0pU<_bnWW*tkYAhobTNnu$jnkEkXqp)j;w1Tzk)UH3X%SZd&fFZ2fC2yj',
+}
+
+_PARAMETERS_TO_MODEL_NAME = {
+    37184256 : "tiny.en",
+    37184640 : "tiny",
+    71825408 : "base.en",
+    71825920 : "base",
+    240582144 : "small.en",
+    240582912 : "small",
+    762320896 : "medium.en",
+    762321920 : "medium",
+    1541384960 : "large",
+}
+
+def get_alignment_heads(model):
+    model_name = _PARAMETERS_TO_MODEL_NAME[_get_number_of_parameters(model)]
+    if model_name == "large":
+        if next(model.parameters())[0,0,0] > 0:
+            model_name = "large-v1"
+        else:
+            model_name = "large-v2"
+    num_layers = model.dims.n_text_layer
+    num_heads = model.dims.n_text_head
+    return _get_alignment_heads(model_name, num_layers, num_heads)
+
+
+def _get_alignment_heads(model_name, num_layers, num_heads):
+    dump = _ALIGNMENT_HEADS[model_name]
+    array = np.frombuffer(gzip.decompress(base64.b85decode(dump)), dtype=bool).copy()
+    mask = torch.from_numpy(array).reshape(num_layers, num_heads)
+    return mask.to_sparse()
+
+def _get_number_of_parameters(model):
+    return sum(p.numel() for p in model.parameters())
 
 
 def cli():

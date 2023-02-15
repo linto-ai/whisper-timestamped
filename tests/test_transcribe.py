@@ -1,6 +1,6 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
-__license__ = "MIT"
+__license__ = "GPLv3"
 
 import unittest
 import sys
@@ -578,6 +578,22 @@ class TestZZZPythonImport(TestHelper):
         self.assertEqual(
             split_tokens_on_spaces(tokens, tokenizer),
             (['<|0.00|>', 'So,', 'uh,', 'I', 'guess,', 'uh,', 'wherever', 'you', 'come', 'up', 'with,', 'just', 'let', 'us', 'know.', '<|7.00|>'],
+                [['<|0.00|>'],
+                [' ', 'So', ','],
+                [' uh', ','],
+                [' I'],
+                [' guess', ','],
+                [' uh', ','],
+                [' wherever'],
+                [' you'],
+                [' come'],
+                [' up', ' '],
+                [' with', ',', ' '],
+                [' just'],
+                [' let'],
+                [' us'],
+                [' know', '.', ' '],
+                ['<|7.00|>']],
              [[50364],
                 [220, 6455, 11],
                 [2232, 11], [286], [2041, 11], [
@@ -598,6 +614,7 @@ class TestZZZPythonImport(TestHelper):
         self.assertEqual(
             split_tokens_on_spaces(tokens, tokenizer),
             (['<|0.00|>', '.', '<|29.00|>'],
+                [['<|0.00|>'], ['.'], ['<|29.00|>']],
                 [[50363], [764], [51813]]
             )
         )
