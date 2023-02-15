@@ -34,9 +34,8 @@ An alternative relevant approach to recover word-level timestamps consists in us
 as successfully implemented in [whisperX](https://github.com/m-bain/whisperX).
 But these approaches have several drawbacks, which does not have approaches based on cross-attention weights such as `whisper_timestamped`.
 These drawbacks are:
-* The need to perform twice the inference (once with Whisper, once with wav2vec), which has an impact on the Real Time Factor.
-* The need to handle (at least) one additional neural network, which consumes memory.
-* The need to find one wav2vec model per language to support.
+* The need to find one wav2vec model per language to support, which badly scales to the multi-lingual capabilities of Whisper.
+* The need to handle (at least) one additional neural network (wav2vec model), which consumes memory.
 * The need to normalize characters in whisper transcription to match the character set of wav2vec model.
 This involves awkward language-dependent conversions, like converting numbers to words ("2" -> "two"), symbols to words ("%" -> "percent", "€" -> "euro(s)")...
 * The lack of robustness around speech disfluencies (fillers, hesitations, repeated words...) that are usually removed by Whisper.
@@ -70,6 +69,11 @@ python3 setup.py install
 If you want to plot alignement between audio timestamps and words (as in [this section](#plotting-word-alignment)), you also need matplotlib
 ```bash
 pip3 install matplotlib
+```
+
+When using pip, the library can be updated to the latest version using
+```
+pip install --upgrade --no-deps --force-reinstall git+https://github.com/linto-ai/whisper-timestamped
 ```
 
 ## Usage
