@@ -5,7 +5,7 @@ import string
 
 _punctuation = "".join(c for c in string.punctuation if c not in ["-", "'"]) + "。，！？：”、…"
 
-def split_long_segments(segments, max_length):
+def split_long_segments(segments, max_length, use_space = True):
     new_segments = []
     for segment in segments:
         text = segment["text"]
@@ -13,8 +13,12 @@ def split_long_segments(segments, max_length):
             new_segments.append(segment)
         else:
             meta_words = segment["words"]
-            # Split text arond spaces and punctuations (keeping punctuations)
-            words = text.split()
+            # TODO: improve this. use_space is not really needed.
+            if use_space:
+                # Split text arond spaces and punctuations (keeping punctuations)
+                words = text.split()
+            else:
+                words = [w["text"] for w in meta_words]
             assert len(words) == len(meta_words)
             current_text = ""
             current_start = segment["start"]
@@ -23,7 +27,7 @@ def split_long_segments(segments, max_length):
             current_best_next_start = None
             for i, (word, meta) in enumerate(zip(words, meta_words)):
                 current_text_before = current_text
-                if current_text:
+                if current_text and use_space:
                     current_text += " "
                 current_text += word
 
@@ -112,7 +116,9 @@ def cli():
             transcript = json.load(f)
         segments = transcript["segments"]
         if args.max_length:
-            segments = split_long_segments(segments, args.max_length)
+            language = transcript["language"]
+            use_space = language not in ["zh", "ja", "th", "lo", "my"]
+            segments = split_long_segments(segments, args.max_length, use_space=use_space)
         for output in outputs:
             if output.endswith(".srt"):
                 with open(output, "w") as f:
