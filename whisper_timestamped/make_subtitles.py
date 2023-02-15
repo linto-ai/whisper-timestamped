@@ -3,7 +3,7 @@
 import json
 import string
 
-_punctuation = "".join(c for c in string.punctuation if c not in ["-", "'"]) + "…"
+_punctuation = "".join(c for c in string.punctuation if c not in ["-", "'"]) + "。，！？：”、…"
 
 def split_long_segments(segments, max_length):
     new_segments = []

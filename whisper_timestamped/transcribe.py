@@ -1214,7 +1214,7 @@ def round_confidence(x):
 def round_timestamp(x):
     return round(x, 2)
 
-_punctuation = "".join(c for c in string.punctuation if c not in ["-", "'"]) + "…"
+_punctuation = "".join(c for c in string.punctuation if c not in ["-", "'"]) + "。，！？：”、…"
 
 def split_tokens_on_unicode(tokens: list, tokenizer, tokens_as_string=False, remove_punctuation_from_words=False, isolate_punctuations=False):
     words = []
