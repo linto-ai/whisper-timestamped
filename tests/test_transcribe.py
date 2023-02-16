@@ -513,8 +513,8 @@ class TestMakeSubtitles(TestHelper):
 
         inputs = [
             self.get_data_path("smartphone.mp3.words.json"),
-            self.get_expected_path("punctuations_no/punctuations.mp3.words.json", check=True),
-            self.get_expected_path("punctuations_yes/punctuations.mp3.words.json", check=True),
+            self.get_data_path("no_punctuations.mp3.words.json", check=True),
+            self.get_data_path("yes_punctuations.mp3.words.json", check=True),
         ]
 
         for i, input in enumerate(inputs):
@@ -528,7 +528,7 @@ class TestMakeSubtitles(TestHelper):
                 for format in "vtt", "srt",:
                     output_file = os.path.join(output_dir, f"{filename}.{format}")
                     self.assertTrue(os.path.isfile(output_file), msg=f"File {output_file} not found")
-                    expected_file = f"split_subtitles/{filename}_{len}.{format}"
+                    expected_file = f"split_subtitles/{filename.split('_')[-1]}_{len}.{format}"
                     self.assertNonRegression(output_file, expected_file)
                     os.remove(output_file)
                     self.assertRun([main_script, 
