@@ -400,6 +400,17 @@ class TestTranscribeCornerCases(TestHelperCli):
                 files=["arabic.mp3"]
             )
 
+    def test_gloria(self):
+
+        for model in ["medium", "large-v2"]:
+            for dec in ["efficient", "accurate"]:
+                self._test_cli_(
+                    ["--model", model, "--language", "en", "--" + dec],
+                    "corner_cases",
+                    files=["gloria.mp3"],
+                    prefix=model + "." + dec,
+                )
+
 class TestTranscribeMonolingual(TestHelperCli):
 
     def test_monolingual_tiny(self):

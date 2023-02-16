@@ -1,0 +1,31 @@
+{
+  "text": "...",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.02,
+      "end": 14.68,
+      "text": "...",
+      "tokens": [
+        50364,
+        1097,
+        51388
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -1.3470224142074585,
+      "compression_ratio": 0.2727272727272727,
+      "no_speech_prob": 0.32281985878944397,
+      "confidence": 0.142,
+      "words": [
+        {
+          "text": "...",
+          "start": 0.02,
+          "end": 14.68,
+          "confidence": 0.142
+        }
+      ]
+    }
+  ],
+  "language": "fr"
+}
