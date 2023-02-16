@@ -4,8 +4,8 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.02,
-      "end": 2.36,
+      "start": 0.2,
+      "end": 1.36,
       "text": " Rires",
       "tokens": [
         50364,
@@ -21,8 +21,8 @@
       "words": [
         {
           "text": "Rires",
-          "start": 0.02,
-          "end": 2.36,
+          "start": 0.2,
+          "end": 1.36,
           "confidence": 0.266
         }
       ]

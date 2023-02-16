@@ -34,30 +34,30 @@
         {
           "text": "Dis-moi,",
           "start": 0.4,
-          "end": 1.36,
+          "end": 1.1,
           "confidence": 0.801
         },
         {
           "text": "est-ce",
-          "start": 1.36,
-          "end": 1.52,
+          "start": 1.3,
+          "end": 1.5,
           "confidence": 0.966
         },
         {
           "text": "que",
-          "start": 1.52,
-          "end": 1.64,
+          "start": 1.5,
+          "end": 1.66,
           "confidence": 0.977
         },
         {
           "text": "l'avion",
-          "start": 1.64,
-          "end": 2.02,
+          "start": 1.66,
+          "end": 2.04,
           "confidence": 0.994
         },
         {
           "text": "vole?",
-          "start": 2.02,
+          "start": 2.04,
           "end": 2.34,
           "confidence": 0.891
         }

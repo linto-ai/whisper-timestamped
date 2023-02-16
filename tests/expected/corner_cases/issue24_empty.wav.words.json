@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.02,
-      "end": 1.17,
+      "end": 1.04,
       "text": " Thank you.",
       "tokens": [
         6952,
@@ -21,13 +21,13 @@
         {
           "text": "Thank",
           "start": 0.02,
-          "end": 0.38,
+          "end": 0.46,
           "confidence": 0.129
         },
         {
           "text": "you",
-          "start": 0.38,
-          "end": 1.17,
+          "start": 0.46,
+          "end": 1.04,
           "confidence": 0.989
         }
       ]
@@ -35,7 +35,7 @@
     {
       "id": 1,
       "seek": 100,
-      "start": 1.17,
+      "start": 1.04,
       "end": 1.4,
       "text": ".",
       "tokens": [
@@ -51,7 +51,7 @@
       "words": [
         {
           "text": ".",
-          "start": 1.17,
+          "start": 1.04,
           "end": 1.4,
           "confidence": 0.122
         }

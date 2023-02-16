@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.46,
-      "end": 0.68,
+      "end": 0.84,
       "text": " Bonjour!",
       "tokens": [
         25431,
@@ -20,7 +20,7 @@
         {
           "text": "Bonjour!",
           "start": 0.46,
-          "end": 0.68,
+          "end": 0.84,
           "confidence": 0.69
         }
       ]
@@ -29,7 +29,7 @@
       "id": 1,
       "seek": 148,
       "start": 1.86,
-      "end": 2.8,
+      "end": 3.02,
       "text": " Est-ce que vous allez bien?",
       "tokens": [
         50364,
@@ -52,31 +52,31 @@
         {
           "text": "Est-ce",
           "start": 1.86,
-          "end": 2.14,
+          "end": 2.22,
           "confidence": 0.549
         },
         {
           "text": "que",
-          "start": 2.14,
-          "end": 2.18,
+          "start": 2.22,
+          "end": 2.26,
           "confidence": 0.849
         },
         {
           "text": "vous",
-          "start": 2.18,
-          "end": 2.34,
+          "start": 2.26,
+          "end": 2.38,
           "confidence": 0.993
         },
         {
           "text": "allez",
-          "start": 2.34,
-          "end": 2.48,
+          "start": 2.38,
+          "end": 2.58,
           "confidence": 0.299
         },
         {
           "text": "bien?",
-          "start": 2.48,
-          "end": 2.8,
+          "start": 2.58,
+          "end": 3.02,
           "confidence": 0.979
         }
       ]
@@ -85,7 +85,7 @@
       "id": 2,
       "seek": 3148,
       "start": 32.98,
-      "end": 33.16,
+      "end": 33.3,
       "text": " Bonjour!",
       "tokens": [
         25431,
@@ -100,7 +100,7 @@
         {
           "text": "Bonjour!",
           "start": 32.98,
-          "end": 33.16,
+          "end": 33.3,
           "confidence": 0.918
         }
       ]
@@ -109,7 +109,7 @@
       "id": 3,
       "seek": 3348,
       "start": 34.4,
-      "end": 34.61,
+      "end": 34.44,
       "text": " Bonjour!",
       "tokens": [
         25431,
@@ -124,7 +124,7 @@
         {
           "text": "Bonjour!",
           "start": 34.4,
-          "end": 34.61,
+          "end": 34.44,
           "confidence": 0.326
         }
       ]
@@ -132,8 +132,8 @@
     {
       "id": 4,
       "seek": 3448,
-      "start": 34.61,
-      "end": 35.34,
+      "start": 34.5,
+      "end": 35.56,
       "text": " Est-ce que vous allez bien?",
       "tokens": [
         50364,
@@ -155,32 +155,32 @@
       "words": [
         {
           "text": "Est-ce",
-          "start": 34.61,
-          "end": 34.66,
+          "start": 34.5,
+          "end": 34.7,
           "confidence": 0.741
         },
         {
           "text": "que",
-          "start": 34.66,
-          "end": 34.72,
+          "start": 34.7,
+          "end": 34.8,
           "confidence": 0.979
         },
         {
           "text": "vous",
-          "start": 34.72,
-          "end": 34.86,
+          "start": 34.8,
+          "end": 34.9,
           "confidence": 0.999
         },
         {
           "text": "allez",
-          "start": 34.86,
-          "end": 35.0,
+          "start": 34.9,
+          "end": 35.1,
           "confidence": 0.959
         },
         {
           "text": "bien?",
-          "start": 35.0,
-          "end": 35.34,
+          "start": 35.1,
+          "end": 35.56,
           "confidence": 1.0
         }
       ]

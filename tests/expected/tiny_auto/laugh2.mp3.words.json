@@ -4,8 +4,8 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.16,
-      "end": 0.52,
+      "start": 0.18,
+      "end": 0.58,
       "text": " Thank you.",
       "tokens": [
         50364,
@@ -22,14 +22,14 @@
       "words": [
         {
           "text": "Thank",
-          "start": 0.16,
-          "end": 0.36,
+          "start": 0.18,
+          "end": 0.46,
           "confidence": 0.187
         },
         {
           "text": "you.",
-          "start": 0.36,
-          "end": 0.52,
+          "start": 0.46,
+          "end": 0.58,
           "confidence": 0.978
         }
       ]

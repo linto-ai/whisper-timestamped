@@ -4,8 +4,8 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.02,
-      "end": 3.06,
+      "start": 0.06,
+      "end": 3.0,
       "text": " Thanks for watching!",
       "tokens": [
         50364,
@@ -23,20 +23,20 @@
       "words": [
         {
           "text": "Thanks",
-          "start": 0.02,
-          "end": 0.44,
+          "start": 0.06,
+          "end": 1.48,
           "confidence": 0.06
         },
         {
           "text": "for",
-          "start": 0.44,
-          "end": 1.02,
+          "start": 1.48,
+          "end": 2.96,
           "confidence": 0.916
         },
         {
           "text": "watching!",
-          "start": 1.02,
-          "end": 3.06,
+          "start": 2.96,
+          "end": 3.0,
           "confidence": 0.936
         }
       ]

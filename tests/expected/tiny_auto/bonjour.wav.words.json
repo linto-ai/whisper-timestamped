@@ -4,8 +4,8 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.16,
-      "end": 0.34,
+      "start": 0.14,
+      "end": 0.54,
       "text": " Bonjour!",
       "tokens": [
         50364,
@@ -21,8 +21,8 @@
       "words": [
         {
           "text": "Bonjour!",
-          "start": 0.16,
-          "end": 0.34,
+          "start": 0.14,
+          "end": 0.54,
           "confidence": 0.853
         }
       ]

@@ -4,8 +4,8 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.44,
-      "end": 2.74,
+      "start": 0.42,
+      "end": 2.84,
       "text": " Mohoo, let's go with it again",
       "tokens": [
         50363,
@@ -29,38 +29,38 @@
       "words": [
         {
           "text": "Mohoo,",
-          "start": 0.44,
-          "end": 1.86,
+          "start": 0.42,
+          "end": 1.4,
           "confidence": 0.245
         },
         {
           "text": "let's",
-          "start": 1.86,
-          "end": 2.04,
+          "start": 1.96,
+          "end": 2.22,
           "confidence": 0.91
         },
         {
           "text": "go",
-          "start": 2.04,
-          "end": 2.18,
+          "start": 2.22,
+          "end": 2.32,
           "confidence": 0.908
         },
         {
           "text": "with",
-          "start": 2.18,
-          "end": 2.38,
+          "start": 2.32,
+          "end": 2.46,
           "confidence": 0.286
         },
         {
           "text": "it",
-          "start": 2.38,
-          "end": 2.44,
+          "start": 2.46,
+          "end": 2.58,
           "confidence": 0.939
         },
         {
           "text": "again",
-          "start": 2.44,
-          "end": 2.74,
+          "start": 2.58,
+          "end": 2.84,
           "confidence": 0.997
         }
       ]
@@ -68,8 +68,8 @@
     {
       "id": 1,
       "seek": 3000,
-      "start": 29.58,
-      "end": 35.24,
+      "start": 30.5,
+      "end": 35.42,
       "text": " Mohoo, let's go with it again",
       "tokens": [
         50413,
@@ -93,38 +93,38 @@
       "words": [
         {
           "text": "Mohoo,",
-          "start": 29.58,
-          "end": 34.28,
+          "start": 30.5,
+          "end": 34.04,
           "confidence": 0.004
         },
         {
           "text": "let's",
-          "start": 34.28,
-          "end": 34.58,
+          "start": 34.5,
+          "end": 34.74,
           "confidence": 0.001
         },
         {
           "text": "go",
-          "start": 34.58,
-          "end": 34.76,
+          "start": 34.74,
+          "end": 34.88,
           "confidence": 0.0
         },
         {
           "text": "with",
-          "start": 34.76,
-          "end": 34.96,
+          "start": 34.88,
+          "end": 35.0,
           "confidence": 0.0
         },
         {
           "text": "it",
-          "start": 34.96,
-          "end": 35.0,
+          "start": 35.0,
+          "end": 35.12,
           "confidence": 0.001
         },
         {
           "text": "again",
-          "start": 35.0,
-          "end": 35.24,
+          "start": 35.12,
+          "end": 35.42,
           "confidence": 0.001
         }
       ]

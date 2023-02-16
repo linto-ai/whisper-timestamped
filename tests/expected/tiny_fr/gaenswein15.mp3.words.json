@@ -4,8 +4,8 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.1,
-      "end": 12.08,
+      "start": 0.94,
+      "end": 11.24,
       "text": " Leur de l'Ontario est de la",
       "tokens": [
         50364,
@@ -30,38 +30,38 @@
       "words": [
         {
           "text": "Leur",
-          "start": 0.1,
-          "end": 1.46,
+          "start": 0.94,
+          "end": 1.56,
           "confidence": 0.057
         },
         {
           "text": "de",
-          "start": 1.46,
-          "end": 1.5,
+          "start": 1.56,
+          "end": 1.6,
           "confidence": 0.123
         },
         {
           "text": "l'Ontario",
-          "start": 1.5,
-          "end": 8.58,
+          "start": 1.6,
+          "end": 9.46,
           "confidence": 0.289
         },
         {
           "text": "est",
-          "start": 8.58,
-          "end": 11.0,
+          "start": 9.46,
+          "end": 11.16,
           "confidence": 0.123
         },
         {
           "text": "de",
-          "start": 11.0,
-          "end": 11.04,
+          "start": 11.16,
+          "end": 11.2,
           "confidence": 0.067
         },
         {
           "text": "la",
-          "start": 11.04,
-          "end": 12.08,
+          "start": 11.2,
+          "end": 11.24,
           "confidence": 0.132
         }
       ]

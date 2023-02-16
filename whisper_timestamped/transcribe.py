@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.8.1"
+__version__ = "1.9.0"
 
 # Whisper and Torch
 import whisper
@@ -48,7 +48,7 @@ def transcribe_timestamped(
     refine_whisper_precision=0.5,
     min_word_duration=0.04,
     plot_word_alignment=False,
-    word_alignement_most_top_layers=6, # TODO: None in order to switch to tuned alignment heads
+    word_alignement_most_top_layers=None, # Was 6 before 1.9
 
     # Reproducibility
     seed=1234,
@@ -950,7 +950,7 @@ def perform_word_alignment(
     mfcc=None,
     refine_whisper_precision_nframes=0,
     remove_punctuation_from_words=False,
-    include_punctuation_in_timing=True, # TODO: False
+    include_punctuation_in_timing=False, # Was True before 1.9
     unfinished_decoding=False,
     alignment_heads=None,
     medfilt_width=9,
@@ -1049,32 +1049,16 @@ def perform_word_alignment(
 
     weights = weights[:, :, :, start_token: end_token].cpu()                        # layers * heads * tokens * frames
 
-    if False: # TODO?
-
-        if alignment_heads is None:
-            weights = weights.reshape(-1, *weights.shape[-2:])                      # N * tokens * frames
-        else:
-            weights = torch.stack([weights[l][h] for l, h in alignment_heads.indices().T])
-        weights = (weights * qk_scale).softmax(dim=-1)
-        std, mean = torch.std_mean(weights, dim=-2, keepdim=True, unbiased=False)   # tokens * frames
-        weights = (weights - mean) / std
-        weights = median_filter(weights, medfilt_width)
-        weights = weights.mean(axis=0)                                              # tokens * frames
-        weights = -weights.astype(np.double)
-        worse_weight = weights.max()
-
-    else: # Old version
-
-        if alignment_heads is None:
-            weights = weights.reshape(-1, *weights.shape[-2:])                      # N * tokens * frames
-        else:
-            weights = torch.stack([weights[l][h] for l, h in alignment_heads.indices().T])
-        weights = median_filter(weights, (1, 1, medfilt_width))
-        weights = torch.tensor(weights * qk_scale).softmax(dim=-1)
-        weights = weights / weights.norm(dim=-2, keepdim=True) # TODO: move after mean
-        weights = weights.mean(axis=(0))  # average over layers and heads           # tokens * frames
-        weights = -weights.double().numpy()
-        worse_weight = 0
+    if alignment_heads is None:
+        weights = weights.reshape(-1, *weights.shape[-2:])                      # N * tokens * frames
+    else:
+        weights = torch.stack([weights[l][h] for l, h in alignment_heads.indices().T])
+    weights = median_filter(weights, (1, 1, medfilt_width))
+    weights = torch.tensor(weights * qk_scale).softmax(dim=-1)
+    weights = weights.mean(axis=(0))  # average over layers and heads           # tokens * frames
+    weights = weights / weights.norm(dim=-2, keepdim=True)  # This was before the mean before 1.9
+    weights = -weights.double().numpy()
+    worse_weight = 0
 
     # Get the limit of audio duration
     max_duration = None

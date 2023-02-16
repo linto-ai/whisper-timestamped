@@ -4,8 +4,8 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 1.0,
-      "end": 7.0,
+      "start": 0.36,
+      "end": 7.48,
       "text": " حبّي أنصار الهدى",
       "tokens": [
         11331,
@@ -28,20 +28,20 @@
       "words": [
         {
           "text": "حبّي",
-          "start": 1.0,
-          "end": 4.66,
+          "start": 0.36,
+          "end": 4.28,
           "confidence": 0.436
         },
         {
           "text": "أنصار",
-          "start": 4.66,
-          "end": 5.84,
+          "start": 4.28,
+          "end": 5.72,
           "confidence": 0.795
         },
         {
           "text": "الهدى",
-          "start": 5.84,
-          "end": 7.0,
+          "start": 5.72,
+          "end": 7.48,
           "confidence": 0.837
         }
       ]
@@ -49,8 +49,8 @@
     {
       "id": 1,
       "seek": 0,
-      "start": 7.0,
-      "end": 15.48,
+      "start": 7.5,
+      "end": 15.22,
       "text": " حبّي ركب الفدا",
       "tokens": [
         11331,
@@ -71,20 +71,20 @@
       "words": [
         {
           "text": "حبّي",
-          "start": 7.0,
-          "end": 12.94,
+          "start": 7.5,
+          "end": 12.58,
           "confidence": 0.875
         },
         {
           "text": "ركب",
-          "start": 12.94,
-          "end": 13.94,
+          "start": 12.58,
+          "end": 13.76,
           "confidence": 0.853
         },
         {
           "text": "الفدا",
-          "start": 13.94,
-          "end": 15.48,
+          "start": 13.76,
+          "end": 15.22,
           "confidence": 0.711
         }
       ]
@@ -93,7 +93,7 @@
       "id": 2,
       "seek": 0,
       "start": 15.5,
-      "end": 23.48,
+      "end": 23.44,
       "text": " وطلّبي سأر الشاهد",
       "tokens": [
         4032,
@@ -117,19 +117,19 @@
         {
           "text": "وطلّبي",
           "start": 15.5,
-          "end": 20.92,
+          "end": 20.68,
           "confidence": 0.54
         },
         {
           "text": "سأر",
-          "start": 20.92,
-          "end": 21.86,
+          "start": 20.68,
+          "end": 21.78,
           "confidence": 0.94
         },
         {
           "text": "الشاهد",
-          "start": 21.86,
-          "end": 23.48,
+          "start": 21.78,
+          "end": 23.44,
           "confidence": 0.421
         }
       ]
@@ -137,8 +137,8 @@
     {
       "id": 3,
       "seek": 2300,
-      "start": 24.0,
-      "end": 29.16,
+      "start": 23.46,
+      "end": 28.92,
       "text": " وطلّبي سأر الشاهد",
       "tokens": [
         4032,
@@ -161,20 +161,20 @@
       "words": [
         {
           "text": "وطلّبي",
-          "start": 24.0,
-          "end": 26.06,
+          "start": 23.46,
+          "end": 25.98,
           "confidence": 0.811
         },
         {
           "text": "سأر",
-          "start": 26.06,
-          "end": 27.54,
+          "start": 25.98,
+          "end": 27.12,
           "confidence": 0.959
         },
         {
           "text": "الشاهد",
-          "start": 27.54,
-          "end": 29.16,
+          "start": 27.12,
+          "end": 28.92,
           "confidence": 0.938
         }
       ]
@@ -183,7 +183,7 @@
       "id": 4,
       "seek": 2300,
       "start": 30.5,
-      "end": 33.48,
+      "end": 33.34,
       "text": " لمتى سنضل رقودا",
       "tokens": [
         32767,
@@ -206,19 +206,19 @@
         {
           "text": "لمتى",
           "start": 30.5,
-          "end": 31.66,
+          "end": 31.5,
           "confidence": 0.66
         },
         {
           "text": "سنضل",
-          "start": 31.66,
-          "end": 32.42,
+          "start": 31.5,
+          "end": 32.34,
           "confidence": 0.75
         },
         {
           "text": "رقودا",
-          "start": 32.42,
-          "end": 33.48,
+          "start": 32.34,
+          "end": 33.34,
           "confidence": 0.665
         }
       ]
@@ -226,8 +226,8 @@
     {
       "id": 5,
       "seek": 2300,
-      "start": 33.5,
-      "end": 35.94,
+      "start": 33.34,
+      "end": 35.9,
       "text": " نغرق في النوم ونشخر",
       "tokens": [
         8717,
@@ -250,26 +250,26 @@
       "words": [
         {
           "text": "نغرق",
-          "start": 33.5,
-          "end": 34.32,
+          "start": 33.34,
+          "end": 34.22,
           "confidence": 0.904
         },
         {
           "text": "في",
-          "start": 34.32,
-          "end": 34.6,
+          "start": 34.22,
+          "end": 34.46,
           "confidence": 0.884
         },
         {
           "text": "النوم",
-          "start": 34.6,
-          "end": 35.14,
+          "start": 34.46,
+          "end": 35.06,
           "confidence": 0.976
         },
         {
           "text": "ونشخر",
-          "start": 35.14,
-          "end": 35.94,
+          "start": 35.06,
+          "end": 35.9,
           "confidence": 0.948
         }
       ]
@@ -302,18 +302,18 @@
         {
           "text": "وعن",
           "start": 36.26,
-          "end": 36.92,
+          "end": 36.78,
           "confidence": 0.911
         },
         {
           "text": "الآذان",
-          "start": 36.92,
-          "end": 37.48,
+          "start": 36.78,
+          "end": 37.44,
           "confidence": 0.759
         },
         {
           "text": "نسمّه",
-          "start": 37.48,
+          "start": 37.44,
           "end": 38.46,
           "confidence": 0.778
         }
@@ -322,8 +322,8 @@
     {
       "id": 7,
       "seek": 3800,
-      "start": 38.94,
-      "end": 41.32,
+      "start": 38.54,
+      "end": 41.34,
       "text": " ونغمّض كي لا نحسر",
       "tokens": [
         50364,
@@ -350,26 +350,26 @@
       "words": [
         {
           "text": "ونغمّض",
-          "start": 38.94,
-          "end": 39.92,
+          "start": 38.54,
+          "end": 39.88,
           "confidence": 0.919
         },
         {
           "text": "كي",
-          "start": 39.92,
-          "end": 40.4,
+          "start": 39.88,
+          "end": 40.28,
           "confidence": 0.766
         },
         {
           "text": "لا",
-          "start": 40.4,
-          "end": 40.68,
+          "start": 40.28,
+          "end": 40.56,
           "confidence": 0.826
         },
         {
           "text": "نحسر",
-          "start": 40.68,
-          "end": 41.32,
+          "start": 40.56,
+          "end": 41.34,
           "confidence": 0.674
         }
       ]

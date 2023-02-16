@@ -4,8 +4,8 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 1.0,
-      "end": 7.72,
+      "start": 0.96,
+      "end": 7.64,
       "text": " I am the one who is the one who is the one who is the one who is the one who is the one",
       "tokens": [
         314,
@@ -41,146 +41,146 @@
       "words": [
         {
           "text": "I",
-          "start": 1.0,
-          "end": 3.16,
+          "start": 0.96,
+          "end": 3.18,
           "confidence": 0.053
         },
         {
           "text": "am",
-          "start": 3.16,
+          "start": 3.18,
           "end": 4.04,
           "confidence": 0.152
         },
         {
           "text": "the",
           "start": 4.04,
-          "end": 4.08,
+          "end": 5.46,
           "confidence": 0.144
         },
         {
           "text": "one",
-          "start": 4.08,
-          "end": 6.1,
+          "start": 5.46,
+          "end": 6.12,
           "confidence": 0.086
         },
         {
           "text": "who",
-          "start": 6.1,
-          "end": 6.28,
+          "start": 6.12,
+          "end": 6.18,
           "confidence": 0.718
         },
         {
           "text": "is",
-          "start": 6.28,
-          "end": 6.32,
+          "start": 6.18,
+          "end": 6.22,
           "confidence": 0.119
         },
         {
           "text": "the",
-          "start": 6.32,
-          "end": 6.36,
+          "start": 6.22,
+          "end": 6.26,
           "confidence": 0.134
         },
         {
           "text": "one",
-          "start": 6.36,
-          "end": 6.4,
+          "start": 6.26,
+          "end": 6.3,
           "confidence": 0.203
         },
         {
           "text": "who",
-          "start": 6.4,
-          "end": 6.44,
+          "start": 6.3,
+          "end": 6.34,
           "confidence": 0.618
         },
         {
           "text": "is",
-          "start": 6.44,
-          "end": 6.96,
+          "start": 6.34,
+          "end": 6.38,
           "confidence": 0.319
         },
         {
           "text": "the",
-          "start": 6.96,
-          "end": 7.0,
+          "start": 6.38,
+          "end": 6.42,
           "confidence": 0.38
         },
         {
           "text": "one",
-          "start": 7.0,
-          "end": 7.24,
+          "start": 6.42,
+          "end": 6.98,
           "confidence": 0.443
         },
         {
           "text": "who",
-          "start": 7.24,
-          "end": 7.28,
+          "start": 6.98,
+          "end": 7.02,
           "confidence": 0.447
         },
         {
           "text": "is",
-          "start": 7.28,
-          "end": 7.32,
+          "start": 7.02,
+          "end": 7.18,
           "confidence": 0.518
         },
         {
           "text": "the",
-          "start": 7.32,
-          "end": 7.36,
+          "start": 7.18,
+          "end": 7.22,
           "confidence": 0.542
         },
         {
           "text": "one",
-          "start": 7.36,
-          "end": 7.4,
+          "start": 7.22,
+          "end": 7.32,
           "confidence": 0.724
         },
         {
           "text": "who",
-          "start": 7.4,
-          "end": 7.44,
+          "start": 7.32,
+          "end": 7.36,
           "confidence": 0.433
         },
         {
           "text": "is",
-          "start": 7.44,
-          "end": 7.48,
+          "start": 7.36,
+          "end": 7.4,
           "confidence": 0.677
         },
         {
           "text": "the",
-          "start": 7.48,
-          "end": 7.52,
+          "start": 7.4,
+          "end": 7.44,
           "confidence": 0.638
         },
         {
           "text": "one",
-          "start": 7.52,
-          "end": 7.56,
+          "start": 7.44,
+          "end": 7.48,
           "confidence": 0.817
         },
         {
           "text": "who",
-          "start": 7.56,
-          "end": 7.6,
+          "start": 7.48,
+          "end": 7.52,
           "confidence": 0.503
         },
         {
           "text": "is",
-          "start": 7.6,
-          "end": 7.64,
+          "start": 7.52,
+          "end": 7.56,
           "confidence": 0.74
         },
         {
           "text": "the",
-          "start": 7.64,
-          "end": 7.68,
+          "start": 7.56,
+          "end": 7.6,
           "confidence": 0.696
         },
         {
           "text": "one",
-          "start": 7.68,
-          "end": 7.72,
+          "start": 7.6,
+          "end": 7.64,
           "confidence": 0.697
         }
       ]
@@ -188,8 +188,8 @@
     {
       "id": 1,
       "seek": 700,
-      "start": 7.72,
-      "end": 37.02,
+      "start": 7.64,
+      "end": 39.34,
       "text": " I am the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the",
       "tokens": [
         50363,
@@ -425,85 +425,85 @@
       "words": [
         {
           "text": "I",
-          "start": 7.72,
-          "end": 9.42,
+          "start": 7.64,
+          "end": 8.84,
           "confidence": 0.22
         },
         {
           "text": "am",
-          "start": 9.42,
-          "end": 12.1,
+          "start": 8.84,
+          "end": 11.68,
           "confidence": 0.811
         },
         {
           "text": "the",
-          "start": 12.1,
-          "end": 12.48,
+          "start": 11.68,
+          "end": 12.5,
           "confidence": 0.872
         },
         {
           "text": "one",
-          "start": 12.48,
-          "end": 12.58,
+          "start": 12.5,
+          "end": 12.98,
           "confidence": 0.926
         },
         {
           "text": "who",
-          "start": 12.58,
-          "end": 13.42,
+          "start": 12.98,
+          "end": 13.48,
           "confidence": 0.966
         },
         {
           "text": "is",
-          "start": 13.42,
-          "end": 13.96,
+          "start": 13.48,
+          "end": 14.02,
           "confidence": 0.933
         },
         {
           "text": "the",
-          "start": 13.96,
-          "end": 14.56,
+          "start": 14.02,
+          "end": 14.52,
           "confidence": 0.968
         },
         {
           "text": "one",
-          "start": 14.56,
-          "end": 14.6,
+          "start": 14.52,
+          "end": 14.56,
           "confidence": 0.989
         },
         {
           "text": "who",
-          "start": 14.6,
-          "end": 14.64,
+          "start": 14.56,
+          "end": 14.6,
           "confidence": 0.95
         },
         {
           "text": "is",
-          "start": 14.64,
-          "end": 14.68,
+          "start": 14.6,
+          "end": 14.64,
           "confidence": 0.965
         },
         {
           "text": "the",
-          "start": 14.68,
-          "end": 15.04,
+          "start": 14.64,
+          "end": 15.24,
           "confidence": 0.977
         },
         {
           "text": "one",
-          "start": 15.04,
-          "end": 17.78,
+          "start": 15.24,
+          "end": 18.02,
           "confidence": 0.992
         },
         {
           "text": "who",
-          "start": 17.78,
-          "end": 17.82,
+          "start": 18.02,
+          "end": 18.16,
           "confidence": 0.841
         },
         {
           "text": "is",
-          "start": 17.82,
+          "start": 18.16,
           "end": 18.58,
           "confidence": 0.977
         },
@@ -522,1243 +522,1243 @@
         {
           "text": "who",
           "start": 18.66,
-          "end": 19.46,
+          "end": 19.4,
           "confidence": 0.689
         },
         {
           "text": "is",
-          "start": 19.46,
+          "start": 19.4,
           "end": 20.9,
           "confidence": 0.979
         },
         {
           "text": "the",
           "start": 20.9,
-          "end": 20.94,
+          "end": 21.32,
           "confidence": 0.978
         },
         {
           "text": "one",
-          "start": 20.94,
-          "end": 20.98,
+          "start": 21.32,
+          "end": 21.48,
           "confidence": 0.989
         },
         {
           "text": "who",
-          "start": 20.98,
-          "end": 21.02,
+          "start": 21.48,
+          "end": 21.52,
           "confidence": 0.652
         },
         {
           "text": "is",
-          "start": 21.02,
-          "end": 21.06,
+          "start": 21.52,
+          "end": 21.56,
           "confidence": 0.977
         },
         {
           "text": "the",
-          "start": 21.06,
-          "end": 21.52,
+          "start": 21.56,
+          "end": 21.6,
           "confidence": 0.973
         },
         {
           "text": "one",
-          "start": 21.52,
-          "end": 21.56,
+          "start": 21.6,
+          "end": 21.64,
           "confidence": 0.982
         },
         {
           "text": "who",
-          "start": 21.56,
-          "end": 21.6,
+          "start": 21.64,
+          "end": 21.68,
           "confidence": 0.605
         },
         {
           "text": "is",
-          "start": 21.6,
-          "end": 22.04,
+          "start": 21.68,
+          "end": 22.06,
           "confidence": 0.978
         },
         {
           "text": "the",
-          "start": 22.04,
-          "end": 22.5,
+          "start": 22.06,
+          "end": 22.26,
           "confidence": 0.965
         },
         {
           "text": "one",
-          "start": 22.5,
-          "end": 23.6,
+          "start": 22.26,
+          "end": 25.3,
           "confidence": 0.986
         },
         {
           "text": "who",
-          "start": 23.6,
-          "end": 24.76,
+          "start": 25.3,
+          "end": 25.34,
           "confidence": 0.62
         },
         {
           "text": "is",
-          "start": 24.76,
-          "end": 26.18,
+          "start": 25.34,
+          "end": 26.16,
           "confidence": 0.978
         },
         {
           "text": "the",
-          "start": 26.18,
-          "end": 26.8,
+          "start": 26.16,
+          "end": 26.2,
           "confidence": 0.962
         },
         {
           "text": "one",
-          "start": 26.8,
-          "end": 26.84,
+          "start": 26.2,
+          "end": 26.24,
           "confidence": 0.984
         },
         {
           "text": "who",
-          "start": 26.84,
-          "end": 26.88,
+          "start": 26.24,
+          "end": 26.28,
           "confidence": 0.679
         },
         {
           "text": "is",
-          "start": 26.88,
-          "end": 27.4,
+          "start": 26.28,
+          "end": 26.32,
           "confidence": 0.978
         },
         {
           "text": "the",
-          "start": 27.4,
-          "end": 28.14,
+          "start": 26.32,
+          "end": 26.64,
           "confidence": 0.958
         },
         {
           "text": "one",
-          "start": 28.14,
-          "end": 28.28,
+          "start": 26.64,
+          "end": 26.92,
           "confidence": 0.98
         },
         {
           "text": "who",
-          "start": 28.28,
-          "end": 28.32,
+          "start": 26.92,
+          "end": 26.96,
           "confidence": 0.67
         },
         {
           "text": "is",
-          "start": 28.32,
-          "end": 28.36,
+          "start": 26.96,
+          "end": 27.44,
           "confidence": 0.978
         },
         {
           "text": "the",
-          "start": 28.36,
-          "end": 28.4,
+          "start": 27.44,
+          "end": 28.14,
           "confidence": 0.955
         },
         {
           "text": "one",
-          "start": 28.4,
-          "end": 28.8,
+          "start": 28.14,
+          "end": 29.58,
           "confidence": 0.975
         },
         {
           "text": "who",
-          "start": 28.8,
-          "end": 29.14,
+          "start": 29.58,
+          "end": 29.8,
           "confidence": 0.683
         },
         {
           "text": "is",
-          "start": 29.14,
-          "end": 29.18,
+          "start": 29.8,
+          "end": 29.84,
           "confidence": 0.978
         },
         {
           "text": "the",
-          "start": 29.18,
-          "end": 29.22,
-          "confidence": 0.956
-        },
-        {
-          "text": "one",
-          "start": 29.22,
-          "end": 29.56,
-          "confidence": 0.972
-        },
-        {
-          "text": "who",
-          "start": 29.56,
-          "end": 29.74,
-          "confidence": 0.693
-        },
-        {
-          "text": "is",
-          "start": 29.74,
-          "end": 29.78,
-          "confidence": 0.978
-        },
-        {
-          "text": "the",
-          "start": 29.78,
-          "end": 29.82,
-          "confidence": 0.957
-        },
-        {
-          "text": "one",
-          "start": 29.82,
-          "end": 29.86,
-          "confidence": 0.971
-        },
-        {
-          "text": "who",
-          "start": 29.86,
-          "end": 29.9,
-          "confidence": 0.712
-        },
-        {
-          "text": "is",
-          "start": 29.9,
-          "end": 29.94,
-          "confidence": 0.98
-        },
-        {
-          "text": "the",
-          "start": 29.94,
-          "end": 29.98,
-          "confidence": 0.958
-        },
-        {
-          "text": "one",
-          "start": 29.98,
-          "end": 30.02,
-          "confidence": 0.97
-        },
-        {
-          "text": "who",
-          "start": 30.02,
-          "end": 30.06,
-          "confidence": 0.734
-        },
-        {
-          "text": "is",
-          "start": 30.06,
-          "end": 30.1,
-          "confidence": 0.982
-        },
-        {
-          "text": "the",
-          "start": 30.1,
-          "end": 30.14,
-          "confidence": 0.96
-        },
-        {
-          "text": "one",
-          "start": 30.14,
-          "end": 30.18,
-          "confidence": 0.971
-        },
-        {
-          "text": "who",
-          "start": 30.18,
-          "end": 30.22,
-          "confidence": 0.753
-        },
-        {
-          "text": "is",
-          "start": 30.22,
-          "end": 30.26,
-          "confidence": 0.984
-        },
-        {
-          "text": "the",
-          "start": 30.26,
+          "start": 29.84,
           "end": 30.3,
-          "confidence": 0.962
+          "confidence": 0.956
         },
         {
           "text": "one",
           "start": 30.3,
           "end": 30.34,
-          "confidence": 0.973
+          "confidence": 0.972
         },
         {
           "text": "who",
           "start": 30.34,
-          "end": 30.38,
-          "confidence": 0.76
+          "end": 31.08,
+          "confidence": 0.693
         },
         {
           "text": "is",
-          "start": 30.38,
-          "end": 30.42,
-          "confidence": 0.985
+          "start": 31.08,
+          "end": 31.26,
+          "confidence": 0.978
         },
         {
           "text": "the",
-          "start": 30.42,
-          "end": 30.46,
-          "confidence": 0.963
+          "start": 31.26,
+          "end": 31.3,
+          "confidence": 0.957
         },
         {
           "text": "one",
-          "start": 30.46,
-          "end": 30.5,
-          "confidence": 0.974
-        },
-        {
-          "text": "who",
-          "start": 30.5,
-          "end": 30.54,
-          "confidence": 0.764
-        },
-        {
-          "text": "is",
-          "start": 30.54,
-          "end": 30.58,
-          "confidence": 0.987
-        },
-        {
-          "text": "the",
-          "start": 30.58,
-          "end": 30.62,
-          "confidence": 0.966
-        },
-        {
-          "text": "one",
-          "start": 30.62,
-          "end": 30.66,
-          "confidence": 0.975
-        },
-        {
-          "text": "who",
-          "start": 30.66,
-          "end": 30.7,
-          "confidence": 0.776
-        },
-        {
-          "text": "is",
-          "start": 30.7,
-          "end": 30.74,
-          "confidence": 0.988
-        },
-        {
-          "text": "the",
-          "start": 30.74,
-          "end": 30.78,
-          "confidence": 0.969
-        },
-        {
-          "text": "one",
-          "start": 30.78,
-          "end": 30.82,
-          "confidence": 0.975
-        },
-        {
-          "text": "who",
-          "start": 30.82,
-          "end": 30.86,
-          "confidence": 0.802
-        },
-        {
-          "text": "is",
-          "start": 30.86,
-          "end": 30.9,
-          "confidence": 0.989
-        },
-        {
-          "text": "the",
-          "start": 30.9,
-          "end": 30.94,
+          "start": 31.3,
+          "end": 31.34,
           "confidence": 0.971
         },
         {
-          "text": "one",
-          "start": 30.94,
-          "end": 30.98,
-          "confidence": 0.976
-        },
-        {
           "text": "who",
-          "start": 30.98,
-          "end": 31.02,
-          "confidence": 0.818
-        },
-        {
-          "text": "is",
-          "start": 31.02,
-          "end": 31.06,
-          "confidence": 0.989
-        },
-        {
-          "text": "the",
-          "start": 31.06,
-          "end": 31.1,
-          "confidence": 0.972
-        },
-        {
-          "text": "one",
-          "start": 31.1,
-          "end": 31.14,
-          "confidence": 0.977
-        },
-        {
-          "text": "who",
-          "start": 31.14,
-          "end": 31.18,
-          "confidence": 0.836
-        },
-        {
-          "text": "is",
-          "start": 31.18,
-          "end": 31.22,
-          "confidence": 0.989
-        },
-        {
-          "text": "the",
-          "start": 31.22,
-          "end": 31.26,
-          "confidence": 0.973
-        },
-        {
-          "text": "one",
-          "start": 31.26,
-          "end": 31.3,
-          "confidence": 0.977
-        },
-        {
-          "text": "who",
-          "start": 31.3,
-          "end": 31.34,
-          "confidence": 0.866
-        },
-        {
-          "text": "is",
           "start": 31.34,
-          "end": 31.38,
-          "confidence": 0.989
-        },
-        {
-          "text": "the",
-          "start": 31.38,
-          "end": 31.42,
-          "confidence": 0.974
-        },
-        {
-          "text": "one",
-          "start": 31.42,
-          "end": 31.46,
-          "confidence": 0.977
-        },
-        {
-          "text": "who",
-          "start": 31.46,
           "end": 31.5,
-          "confidence": 0.879
+          "confidence": 0.712
         },
         {
           "text": "is",
           "start": 31.5,
           "end": 31.54,
-          "confidence": 0.989
+          "confidence": 0.98
         },
         {
           "text": "the",
           "start": 31.54,
           "end": 31.58,
-          "confidence": 0.974
+          "confidence": 0.958
         },
         {
           "text": "one",
           "start": 31.58,
-          "end": 31.62,
-          "confidence": 0.977
+          "end": 32.2,
+          "confidence": 0.97
         },
         {
           "text": "who",
-          "start": 31.62,
-          "end": 31.66,
-          "confidence": 0.897
+          "start": 32.2,
+          "end": 32.24,
+          "confidence": 0.734
         },
         {
           "text": "is",
-          "start": 31.66,
-          "end": 31.7,
-          "confidence": 0.99
-        },
-        {
-          "text": "the",
-          "start": 31.7,
-          "end": 31.74,
-          "confidence": 0.975
-        },
-        {
-          "text": "one",
-          "start": 31.74,
-          "end": 31.78,
-          "confidence": 0.977
-        },
-        {
-          "text": "who",
-          "start": 31.78,
-          "end": 31.82,
-          "confidence": 0.905
-        },
-        {
-          "text": "is",
-          "start": 31.82,
-          "end": 31.86,
-          "confidence": 0.989
-        },
-        {
-          "text": "the",
-          "start": 31.86,
-          "end": 31.9,
-          "confidence": 0.975
-        },
-        {
-          "text": "one",
-          "start": 31.9,
-          "end": 31.94,
-          "confidence": 0.977
-        },
-        {
-          "text": "who",
-          "start": 31.94,
-          "end": 31.98,
-          "confidence": 0.917
-        },
-        {
-          "text": "is",
-          "start": 31.98,
-          "end": 32.02,
-          "confidence": 0.99
-        },
-        {
-          "text": "the",
-          "start": 32.02,
-          "end": 32.06,
-          "confidence": 0.976
-        },
-        {
-          "text": "one",
-          "start": 32.06,
-          "end": 32.1,
-          "confidence": 0.978
-        },
-        {
-          "text": "who",
-          "start": 32.1,
-          "end": 32.14,
-          "confidence": 0.928
-        },
-        {
-          "text": "is",
-          "start": 32.14,
-          "end": 32.18,
-          "confidence": 0.99
-        },
-        {
-          "text": "the",
-          "start": 32.18,
-          "end": 32.22,
-          "confidence": 0.977
-        },
-        {
-          "text": "one",
-          "start": 32.22,
-          "end": 32.26,
-          "confidence": 0.978
-        },
-        {
-          "text": "who",
-          "start": 32.26,
-          "end": 32.3,
-          "confidence": 0.935
-        },
-        {
-          "text": "is",
-          "start": 32.3,
-          "end": 32.34,
-          "confidence": 0.989
-        },
-        {
-          "text": "the",
-          "start": 32.34,
-          "end": 32.38,
-          "confidence": 0.977
-        },
-        {
-          "text": "one",
-          "start": 32.38,
-          "end": 32.42,
-          "confidence": 0.977
-        },
-        {
-          "text": "who",
-          "start": 32.42,
-          "end": 32.46,
-          "confidence": 0.936
-        },
-        {
-          "text": "is",
-          "start": 32.46,
-          "end": 32.5,
-          "confidence": 0.989
-        },
-        {
-          "text": "the",
-          "start": 32.5,
-          "end": 32.54,
-          "confidence": 0.977
-        },
-        {
-          "text": "one",
-          "start": 32.54,
-          "end": 32.58,
-          "confidence": 0.978
-        },
-        {
-          "text": "who",
-          "start": 32.58,
-          "end": 32.62,
-          "confidence": 0.942
-        },
-        {
-          "text": "is",
-          "start": 32.62,
-          "end": 32.66,
-          "confidence": 0.99
-        },
-        {
-          "text": "the",
-          "start": 32.66,
-          "end": 32.7,
-          "confidence": 0.977
-        },
-        {
-          "text": "one",
-          "start": 32.7,
-          "end": 32.74,
-          "confidence": 0.978
-        },
-        {
-          "text": "who",
-          "start": 32.74,
-          "end": 32.78,
-          "confidence": 0.941
-        },
-        {
-          "text": "is",
-          "start": 32.78,
-          "end": 32.82,
-          "confidence": 0.989
-        },
-        {
-          "text": "the",
-          "start": 32.82,
-          "end": 32.86,
-          "confidence": 0.977
-        },
-        {
-          "text": "one",
-          "start": 32.86,
-          "end": 32.9,
-          "confidence": 0.978
-        },
-        {
-          "text": "who",
-          "start": 32.9,
-          "end": 32.94,
-          "confidence": 0.941
-        },
-        {
-          "text": "is",
-          "start": 32.94,
-          "end": 32.98,
-          "confidence": 0.989
-        },
-        {
-          "text": "the",
-          "start": 32.98,
-          "end": 33.02,
-          "confidence": 0.978
-        },
-        {
-          "text": "one",
-          "start": 33.02,
-          "end": 33.06,
-          "confidence": 0.978
-        },
-        {
-          "text": "who",
-          "start": 33.06,
-          "end": 33.1,
-          "confidence": 0.942
-        },
-        {
-          "text": "is",
-          "start": 33.1,
-          "end": 33.14,
-          "confidence": 0.989
-        },
-        {
-          "text": "the",
-          "start": 33.14,
-          "end": 33.18,
-          "confidence": 0.979
-        },
-        {
-          "text": "one",
-          "start": 33.18,
-          "end": 33.22,
-          "confidence": 0.978
-        },
-        {
-          "text": "who",
-          "start": 33.22,
-          "end": 33.26,
-          "confidence": 0.943
-        },
-        {
-          "text": "is",
-          "start": 33.26,
-          "end": 33.3,
-          "confidence": 0.99
-        },
-        {
-          "text": "the",
-          "start": 33.3,
-          "end": 33.34,
-          "confidence": 0.978
-        },
-        {
-          "text": "one",
-          "start": 33.34,
-          "end": 33.38,
-          "confidence": 0.978
-        },
-        {
-          "text": "who",
-          "start": 33.38,
-          "end": 33.42,
-          "confidence": 0.942
-        },
-        {
-          "text": "is",
-          "start": 33.42,
-          "end": 33.46,
-          "confidence": 0.989
-        },
-        {
-          "text": "the",
-          "start": 33.46,
-          "end": 33.5,
-          "confidence": 0.979
-        },
-        {
-          "text": "one",
-          "start": 33.5,
-          "end": 33.54,
-          "confidence": 0.978
-        },
-        {
-          "text": "who",
-          "start": 33.54,
-          "end": 33.58,
-          "confidence": 0.942
-        },
-        {
-          "text": "is",
-          "start": 33.58,
-          "end": 33.62,
-          "confidence": 0.99
-        },
-        {
-          "text": "the",
-          "start": 33.62,
-          "end": 33.66,
-          "confidence": 0.979
-        },
-        {
-          "text": "one",
-          "start": 33.66,
-          "end": 33.7,
-          "confidence": 0.978
-        },
-        {
-          "text": "who",
-          "start": 33.7,
-          "end": 33.74,
-          "confidence": 0.94
-        },
-        {
-          "text": "is",
-          "start": 33.74,
-          "end": 33.78,
-          "confidence": 0.989
-        },
-        {
-          "text": "the",
-          "start": 33.78,
-          "end": 33.82,
-          "confidence": 0.979
-        },
-        {
-          "text": "one",
-          "start": 33.82,
-          "end": 33.86,
-          "confidence": 0.977
-        },
-        {
-          "text": "who",
-          "start": 33.86,
-          "end": 33.9,
-          "confidence": 0.939
-        },
-        {
-          "text": "is",
-          "start": 33.9,
-          "end": 33.94,
-          "confidence": 0.989
-        },
-        {
-          "text": "the",
-          "start": 33.94,
-          "end": 33.98,
-          "confidence": 0.979
-        },
-        {
-          "text": "one",
-          "start": 33.98,
-          "end": 34.02,
-          "confidence": 0.978
-        },
-        {
-          "text": "who",
-          "start": 34.02,
-          "end": 34.06,
-          "confidence": 0.938
-        },
-        {
-          "text": "is",
-          "start": 34.06,
-          "end": 34.1,
-          "confidence": 0.989
-        },
-        {
-          "text": "the",
-          "start": 34.1,
-          "end": 34.14,
-          "confidence": 0.979
-        },
-        {
-          "text": "one",
-          "start": 34.14,
-          "end": 34.18,
-          "confidence": 0.978
-        },
-        {
-          "text": "who",
-          "start": 34.18,
-          "end": 34.22,
-          "confidence": 0.935
-        },
-        {
-          "text": "is",
-          "start": 34.22,
-          "end": 34.26,
-          "confidence": 0.989
-        },
-        {
-          "text": "the",
-          "start": 34.26,
-          "end": 34.3,
-          "confidence": 0.979
-        },
-        {
-          "text": "one",
-          "start": 34.3,
-          "end": 34.34,
-          "confidence": 0.977
-        },
-        {
-          "text": "who",
-          "start": 34.34,
-          "end": 34.38,
-          "confidence": 0.937
-        },
-        {
-          "text": "is",
-          "start": 34.38,
-          "end": 34.42,
-          "confidence": 0.989
-        },
-        {
-          "text": "the",
-          "start": 34.42,
-          "end": 34.46,
-          "confidence": 0.979
-        },
-        {
-          "text": "one",
-          "start": 34.46,
-          "end": 34.5,
-          "confidence": 0.976
-        },
-        {
-          "text": "who",
-          "start": 34.5,
-          "end": 34.54,
-          "confidence": 0.936
-        },
-        {
-          "text": "is",
-          "start": 34.54,
-          "end": 34.58,
-          "confidence": 0.989
-        },
-        {
-          "text": "the",
-          "start": 34.58,
-          "end": 34.62,
-          "confidence": 0.979
-        },
-        {
-          "text": "one",
-          "start": 34.62,
-          "end": 34.66,
-          "confidence": 0.977
-        },
-        {
-          "text": "who",
-          "start": 34.66,
-          "end": 34.7,
-          "confidence": 0.937
-        },
-        {
-          "text": "is",
-          "start": 34.7,
-          "end": 34.74,
-          "confidence": 0.989
-        },
-        {
-          "text": "the",
-          "start": 34.74,
-          "end": 34.78,
-          "confidence": 0.979
-        },
-        {
-          "text": "one",
-          "start": 34.78,
-          "end": 34.82,
-          "confidence": 0.976
-        },
-        {
-          "text": "who",
-          "start": 34.82,
-          "end": 34.86,
-          "confidence": 0.937
-        },
-        {
-          "text": "is",
-          "start": 34.86,
-          "end": 34.9,
-          "confidence": 0.989
-        },
-        {
-          "text": "the",
-          "start": 34.9,
-          "end": 34.94,
-          "confidence": 0.979
-        },
-        {
-          "text": "one",
-          "start": 34.94,
-          "end": 34.98,
-          "confidence": 0.976
-        },
-        {
-          "text": "who",
-          "start": 34.98,
-          "end": 35.02,
-          "confidence": 0.937
-        },
-        {
-          "text": "is",
-          "start": 35.02,
-          "end": 35.06,
-          "confidence": 0.988
-        },
-        {
-          "text": "the",
-          "start": 35.06,
-          "end": 35.1,
-          "confidence": 0.979
-        },
-        {
-          "text": "one",
-          "start": 35.1,
-          "end": 35.14,
-          "confidence": 0.976
-        },
-        {
-          "text": "who",
-          "start": 35.14,
-          "end": 35.18,
-          "confidence": 0.935
-        },
-        {
-          "text": "is",
-          "start": 35.18,
-          "end": 35.22,
-          "confidence": 0.987
-        },
-        {
-          "text": "the",
-          "start": 35.22,
-          "end": 35.26,
-          "confidence": 0.978
-        },
-        {
-          "text": "one",
-          "start": 35.26,
-          "end": 35.3,
-          "confidence": 0.976
-        },
-        {
-          "text": "who",
-          "start": 35.3,
-          "end": 35.34,
-          "confidence": 0.937
-        },
-        {
-          "text": "is",
-          "start": 35.34,
-          "end": 35.38,
-          "confidence": 0.987
-        },
-        {
-          "text": "the",
-          "start": 35.38,
-          "end": 35.42,
-          "confidence": 0.978
-        },
-        {
-          "text": "one",
-          "start": 35.42,
-          "end": 35.46,
-          "confidence": 0.976
-        },
-        {
-          "text": "who",
-          "start": 35.46,
-          "end": 35.5,
-          "confidence": 0.934
-        },
-        {
-          "text": "is",
-          "start": 35.5,
-          "end": 35.54,
-          "confidence": 0.986
-        },
-        {
-          "text": "the",
-          "start": 35.54,
-          "end": 35.58,
-          "confidence": 0.977
-        },
-        {
-          "text": "one",
-          "start": 35.58,
-          "end": 35.62,
-          "confidence": 0.975
-        },
-        {
-          "text": "who",
-          "start": 35.62,
-          "end": 35.66,
-          "confidence": 0.93
-        },
-        {
-          "text": "is",
-          "start": 35.66,
-          "end": 35.7,
-          "confidence": 0.985
-        },
-        {
-          "text": "the",
-          "start": 35.7,
-          "end": 35.74,
-          "confidence": 0.977
-        },
-        {
-          "text": "one",
-          "start": 35.74,
-          "end": 35.78,
-          "confidence": 0.974
-        },
-        {
-          "text": "who",
-          "start": 35.78,
-          "end": 35.82,
-          "confidence": 0.936
-        },
-        {
-          "text": "is",
-          "start": 35.82,
-          "end": 35.86,
-          "confidence": 0.985
-        },
-        {
-          "text": "the",
-          "start": 35.86,
-          "end": 35.9,
-          "confidence": 0.977
-        },
-        {
-          "text": "one",
-          "start": 35.9,
-          "end": 35.94,
-          "confidence": 0.976
-        },
-        {
-          "text": "who",
-          "start": 35.94,
-          "end": 35.98,
-          "confidence": 0.931
-        },
-        {
-          "text": "is",
-          "start": 35.98,
-          "end": 36.02,
-          "confidence": 0.984
-        },
-        {
-          "text": "the",
-          "start": 36.02,
-          "end": 36.06,
-          "confidence": 0.976
-        },
-        {
-          "text": "one",
-          "start": 36.06,
-          "end": 36.1,
-          "confidence": 0.976
-        },
-        {
-          "text": "who",
-          "start": 36.1,
-          "end": 36.14,
-          "confidence": 0.93
-        },
-        {
-          "text": "is",
-          "start": 36.14,
-          "end": 36.18,
-          "confidence": 0.984
-        },
-        {
-          "text": "the",
-          "start": 36.18,
-          "end": 36.22,
-          "confidence": 0.976
-        },
-        {
-          "text": "one",
-          "start": 36.22,
-          "end": 36.26,
-          "confidence": 0.976
-        },
-        {
-          "text": "who",
-          "start": 36.26,
-          "end": 36.3,
-          "confidence": 0.926
-        },
-        {
-          "text": "is",
-          "start": 36.3,
-          "end": 36.34,
+          "start": 32.24,
+          "end": 32.28,
           "confidence": 0.982
         },
         {
           "text": "the",
-          "start": 36.34,
-          "end": 36.38,
-          "confidence": 0.975
+          "start": 32.28,
+          "end": 32.32,
+          "confidence": 0.96
         },
         {
           "text": "one",
-          "start": 36.38,
-          "end": 36.42,
+          "start": 32.32,
+          "end": 32.36,
+          "confidence": 0.971
+        },
+        {
+          "text": "who",
+          "start": 32.36,
+          "end": 32.5,
+          "confidence": 0.753
+        },
+        {
+          "text": "is",
+          "start": 32.5,
+          "end": 32.74,
+          "confidence": 0.984
+        },
+        {
+          "text": "the",
+          "start": 32.74,
+          "end": 32.78,
+          "confidence": 0.962
+        },
+        {
+          "text": "one",
+          "start": 32.78,
+          "end": 32.82,
+          "confidence": 0.973
+        },
+        {
+          "text": "who",
+          "start": 32.82,
+          "end": 32.86,
+          "confidence": 0.76
+        },
+        {
+          "text": "is",
+          "start": 32.86,
+          "end": 32.9,
+          "confidence": 0.985
+        },
+        {
+          "text": "the",
+          "start": 32.9,
+          "end": 32.94,
+          "confidence": 0.963
+        },
+        {
+          "text": "one",
+          "start": 32.94,
+          "end": 32.98,
+          "confidence": 0.974
+        },
+        {
+          "text": "who",
+          "start": 32.98,
+          "end": 33.02,
+          "confidence": 0.764
+        },
+        {
+          "text": "is",
+          "start": 33.02,
+          "end": 33.06,
+          "confidence": 0.987
+        },
+        {
+          "text": "the",
+          "start": 33.06,
+          "end": 33.1,
+          "confidence": 0.966
+        },
+        {
+          "text": "one",
+          "start": 33.1,
+          "end": 33.14,
           "confidence": 0.975
         },
         {
           "text": "who",
+          "start": 33.14,
+          "end": 33.18,
+          "confidence": 0.776
+        },
+        {
+          "text": "is",
+          "start": 33.18,
+          "end": 33.22,
+          "confidence": 0.988
+        },
+        {
+          "text": "the",
+          "start": 33.22,
+          "end": 33.26,
+          "confidence": 0.969
+        },
+        {
+          "text": "one",
+          "start": 33.26,
+          "end": 33.3,
+          "confidence": 0.975
+        },
+        {
+          "text": "who",
+          "start": 33.3,
+          "end": 33.34,
+          "confidence": 0.802
+        },
+        {
+          "text": "is",
+          "start": 33.34,
+          "end": 33.38,
+          "confidence": 0.989
+        },
+        {
+          "text": "the",
+          "start": 33.38,
+          "end": 33.42,
+          "confidence": 0.971
+        },
+        {
+          "text": "one",
+          "start": 33.42,
+          "end": 33.46,
+          "confidence": 0.976
+        },
+        {
+          "text": "who",
+          "start": 33.46,
+          "end": 33.5,
+          "confidence": 0.818
+        },
+        {
+          "text": "is",
+          "start": 33.5,
+          "end": 33.54,
+          "confidence": 0.989
+        },
+        {
+          "text": "the",
+          "start": 33.54,
+          "end": 33.58,
+          "confidence": 0.972
+        },
+        {
+          "text": "one",
+          "start": 33.58,
+          "end": 33.62,
+          "confidence": 0.977
+        },
+        {
+          "text": "who",
+          "start": 33.62,
+          "end": 33.66,
+          "confidence": 0.836
+        },
+        {
+          "text": "is",
+          "start": 33.66,
+          "end": 33.7,
+          "confidence": 0.989
+        },
+        {
+          "text": "the",
+          "start": 33.7,
+          "end": 33.74,
+          "confidence": 0.973
+        },
+        {
+          "text": "one",
+          "start": 33.74,
+          "end": 33.78,
+          "confidence": 0.977
+        },
+        {
+          "text": "who",
+          "start": 33.78,
+          "end": 33.82,
+          "confidence": 0.866
+        },
+        {
+          "text": "is",
+          "start": 33.82,
+          "end": 33.86,
+          "confidence": 0.989
+        },
+        {
+          "text": "the",
+          "start": 33.86,
+          "end": 33.9,
+          "confidence": 0.974
+        },
+        {
+          "text": "one",
+          "start": 33.9,
+          "end": 33.94,
+          "confidence": 0.977
+        },
+        {
+          "text": "who",
+          "start": 33.94,
+          "end": 33.98,
+          "confidence": 0.879
+        },
+        {
+          "text": "is",
+          "start": 33.98,
+          "end": 34.02,
+          "confidence": 0.989
+        },
+        {
+          "text": "the",
+          "start": 34.02,
+          "end": 34.06,
+          "confidence": 0.974
+        },
+        {
+          "text": "one",
+          "start": 34.06,
+          "end": 34.1,
+          "confidence": 0.977
+        },
+        {
+          "text": "who",
+          "start": 34.1,
+          "end": 34.14,
+          "confidence": 0.897
+        },
+        {
+          "text": "is",
+          "start": 34.14,
+          "end": 34.18,
+          "confidence": 0.99
+        },
+        {
+          "text": "the",
+          "start": 34.18,
+          "end": 34.22,
+          "confidence": 0.975
+        },
+        {
+          "text": "one",
+          "start": 34.22,
+          "end": 34.26,
+          "confidence": 0.977
+        },
+        {
+          "text": "who",
+          "start": 34.26,
+          "end": 34.3,
+          "confidence": 0.905
+        },
+        {
+          "text": "is",
+          "start": 34.3,
+          "end": 34.34,
+          "confidence": 0.989
+        },
+        {
+          "text": "the",
+          "start": 34.34,
+          "end": 34.38,
+          "confidence": 0.975
+        },
+        {
+          "text": "one",
+          "start": 34.38,
+          "end": 34.42,
+          "confidence": 0.977
+        },
+        {
+          "text": "who",
+          "start": 34.42,
+          "end": 34.46,
+          "confidence": 0.917
+        },
+        {
+          "text": "is",
+          "start": 34.46,
+          "end": 34.5,
+          "confidence": 0.99
+        },
+        {
+          "text": "the",
+          "start": 34.5,
+          "end": 34.54,
+          "confidence": 0.976
+        },
+        {
+          "text": "one",
+          "start": 34.54,
+          "end": 34.58,
+          "confidence": 0.978
+        },
+        {
+          "text": "who",
+          "start": 34.58,
+          "end": 34.62,
+          "confidence": 0.928
+        },
+        {
+          "text": "is",
+          "start": 34.62,
+          "end": 34.66,
+          "confidence": 0.99
+        },
+        {
+          "text": "the",
+          "start": 34.66,
+          "end": 34.7,
+          "confidence": 0.977
+        },
+        {
+          "text": "one",
+          "start": 34.7,
+          "end": 34.74,
+          "confidence": 0.978
+        },
+        {
+          "text": "who",
+          "start": 34.74,
+          "end": 34.78,
+          "confidence": 0.935
+        },
+        {
+          "text": "is",
+          "start": 34.78,
+          "end": 34.82,
+          "confidence": 0.989
+        },
+        {
+          "text": "the",
+          "start": 34.82,
+          "end": 34.86,
+          "confidence": 0.977
+        },
+        {
+          "text": "one",
+          "start": 34.86,
+          "end": 34.9,
+          "confidence": 0.977
+        },
+        {
+          "text": "who",
+          "start": 34.9,
+          "end": 34.94,
+          "confidence": 0.936
+        },
+        {
+          "text": "is",
+          "start": 34.94,
+          "end": 34.98,
+          "confidence": 0.989
+        },
+        {
+          "text": "the",
+          "start": 34.98,
+          "end": 35.02,
+          "confidence": 0.977
+        },
+        {
+          "text": "one",
+          "start": 35.02,
+          "end": 35.06,
+          "confidence": 0.978
+        },
+        {
+          "text": "who",
+          "start": 35.06,
+          "end": 35.1,
+          "confidence": 0.942
+        },
+        {
+          "text": "is",
+          "start": 35.1,
+          "end": 35.14,
+          "confidence": 0.99
+        },
+        {
+          "text": "the",
+          "start": 35.14,
+          "end": 35.18,
+          "confidence": 0.977
+        },
+        {
+          "text": "one",
+          "start": 35.18,
+          "end": 35.22,
+          "confidence": 0.978
+        },
+        {
+          "text": "who",
+          "start": 35.22,
+          "end": 35.26,
+          "confidence": 0.941
+        },
+        {
+          "text": "is",
+          "start": 35.26,
+          "end": 35.3,
+          "confidence": 0.989
+        },
+        {
+          "text": "the",
+          "start": 35.3,
+          "end": 35.34,
+          "confidence": 0.977
+        },
+        {
+          "text": "one",
+          "start": 35.34,
+          "end": 35.38,
+          "confidence": 0.978
+        },
+        {
+          "text": "who",
+          "start": 35.38,
+          "end": 35.42,
+          "confidence": 0.941
+        },
+        {
+          "text": "is",
+          "start": 35.42,
+          "end": 35.46,
+          "confidence": 0.989
+        },
+        {
+          "text": "the",
+          "start": 35.46,
+          "end": 35.5,
+          "confidence": 0.978
+        },
+        {
+          "text": "one",
+          "start": 35.5,
+          "end": 35.54,
+          "confidence": 0.978
+        },
+        {
+          "text": "who",
+          "start": 35.54,
+          "end": 35.58,
+          "confidence": 0.942
+        },
+        {
+          "text": "is",
+          "start": 35.58,
+          "end": 35.62,
+          "confidence": 0.989
+        },
+        {
+          "text": "the",
+          "start": 35.62,
+          "end": 35.66,
+          "confidence": 0.979
+        },
+        {
+          "text": "one",
+          "start": 35.66,
+          "end": 35.7,
+          "confidence": 0.978
+        },
+        {
+          "text": "who",
+          "start": 35.7,
+          "end": 35.74,
+          "confidence": 0.943
+        },
+        {
+          "text": "is",
+          "start": 35.74,
+          "end": 35.78,
+          "confidence": 0.99
+        },
+        {
+          "text": "the",
+          "start": 35.78,
+          "end": 35.82,
+          "confidence": 0.978
+        },
+        {
+          "text": "one",
+          "start": 35.82,
+          "end": 35.86,
+          "confidence": 0.978
+        },
+        {
+          "text": "who",
+          "start": 35.86,
+          "end": 35.9,
+          "confidence": 0.942
+        },
+        {
+          "text": "is",
+          "start": 35.9,
+          "end": 35.94,
+          "confidence": 0.989
+        },
+        {
+          "text": "the",
+          "start": 35.94,
+          "end": 35.98,
+          "confidence": 0.979
+        },
+        {
+          "text": "one",
+          "start": 35.98,
+          "end": 36.02,
+          "confidence": 0.978
+        },
+        {
+          "text": "who",
+          "start": 36.02,
+          "end": 36.06,
+          "confidence": 0.942
+        },
+        {
+          "text": "is",
+          "start": 36.06,
+          "end": 36.1,
+          "confidence": 0.99
+        },
+        {
+          "text": "the",
+          "start": 36.1,
+          "end": 36.14,
+          "confidence": 0.979
+        },
+        {
+          "text": "one",
+          "start": 36.14,
+          "end": 36.18,
+          "confidence": 0.978
+        },
+        {
+          "text": "who",
+          "start": 36.18,
+          "end": 36.22,
+          "confidence": 0.94
+        },
+        {
+          "text": "is",
+          "start": 36.22,
+          "end": 36.26,
+          "confidence": 0.989
+        },
+        {
+          "text": "the",
+          "start": 36.26,
+          "end": 36.3,
+          "confidence": 0.979
+        },
+        {
+          "text": "one",
+          "start": 36.3,
+          "end": 36.34,
+          "confidence": 0.977
+        },
+        {
+          "text": "who",
+          "start": 36.34,
+          "end": 36.38,
+          "confidence": 0.939
+        },
+        {
+          "text": "is",
+          "start": 36.38,
+          "end": 36.42,
+          "confidence": 0.989
+        },
+        {
+          "text": "the",
           "start": 36.42,
           "end": 36.46,
+          "confidence": 0.979
+        },
+        {
+          "text": "one",
+          "start": 36.46,
+          "end": 36.5,
+          "confidence": 0.978
+        },
+        {
+          "text": "who",
+          "start": 36.5,
+          "end": 36.54,
+          "confidence": 0.938
+        },
+        {
+          "text": "is",
+          "start": 36.54,
+          "end": 36.58,
+          "confidence": 0.989
+        },
+        {
+          "text": "the",
+          "start": 36.58,
+          "end": 36.62,
+          "confidence": 0.979
+        },
+        {
+          "text": "one",
+          "start": 36.62,
+          "end": 36.66,
+          "confidence": 0.978
+        },
+        {
+          "text": "who",
+          "start": 36.66,
+          "end": 36.7,
+          "confidence": 0.935
+        },
+        {
+          "text": "is",
+          "start": 36.7,
+          "end": 36.74,
+          "confidence": 0.989
+        },
+        {
+          "text": "the",
+          "start": 36.74,
+          "end": 36.78,
+          "confidence": 0.979
+        },
+        {
+          "text": "one",
+          "start": 36.78,
+          "end": 36.82,
+          "confidence": 0.977
+        },
+        {
+          "text": "who",
+          "start": 36.82,
+          "end": 36.86,
+          "confidence": 0.937
+        },
+        {
+          "text": "is",
+          "start": 36.86,
+          "end": 36.9,
+          "confidence": 0.989
+        },
+        {
+          "text": "the",
+          "start": 36.9,
+          "end": 36.94,
+          "confidence": 0.979
+        },
+        {
+          "text": "one",
+          "start": 36.94,
+          "end": 36.98,
+          "confidence": 0.976
+        },
+        {
+          "text": "who",
+          "start": 36.98,
+          "end": 37.02,
+          "confidence": 0.936
+        },
+        {
+          "text": "is",
+          "start": 37.02,
+          "end": 37.06,
+          "confidence": 0.989
+        },
+        {
+          "text": "the",
+          "start": 37.06,
+          "end": 37.1,
+          "confidence": 0.979
+        },
+        {
+          "text": "one",
+          "start": 37.1,
+          "end": 37.14,
+          "confidence": 0.977
+        },
+        {
+          "text": "who",
+          "start": 37.14,
+          "end": 37.18,
+          "confidence": 0.937
+        },
+        {
+          "text": "is",
+          "start": 37.18,
+          "end": 37.22,
+          "confidence": 0.989
+        },
+        {
+          "text": "the",
+          "start": 37.22,
+          "end": 37.26,
+          "confidence": 0.979
+        },
+        {
+          "text": "one",
+          "start": 37.26,
+          "end": 37.3,
+          "confidence": 0.976
+        },
+        {
+          "text": "who",
+          "start": 37.3,
+          "end": 37.34,
+          "confidence": 0.937
+        },
+        {
+          "text": "is",
+          "start": 37.34,
+          "end": 37.38,
+          "confidence": 0.989
+        },
+        {
+          "text": "the",
+          "start": 37.38,
+          "end": 37.42,
+          "confidence": 0.979
+        },
+        {
+          "text": "one",
+          "start": 37.42,
+          "end": 37.46,
+          "confidence": 0.976
+        },
+        {
+          "text": "who",
+          "start": 37.46,
+          "end": 37.5,
+          "confidence": 0.937
+        },
+        {
+          "text": "is",
+          "start": 37.5,
+          "end": 37.54,
+          "confidence": 0.988
+        },
+        {
+          "text": "the",
+          "start": 37.54,
+          "end": 37.58,
+          "confidence": 0.979
+        },
+        {
+          "text": "one",
+          "start": 37.58,
+          "end": 37.62,
+          "confidence": 0.976
+        },
+        {
+          "text": "who",
+          "start": 37.62,
+          "end": 37.66,
+          "confidence": 0.935
+        },
+        {
+          "text": "is",
+          "start": 37.66,
+          "end": 37.7,
+          "confidence": 0.987
+        },
+        {
+          "text": "the",
+          "start": 37.7,
+          "end": 37.74,
+          "confidence": 0.978
+        },
+        {
+          "text": "one",
+          "start": 37.74,
+          "end": 37.78,
+          "confidence": 0.976
+        },
+        {
+          "text": "who",
+          "start": 37.78,
+          "end": 37.82,
+          "confidence": 0.937
+        },
+        {
+          "text": "is",
+          "start": 37.82,
+          "end": 37.86,
+          "confidence": 0.987
+        },
+        {
+          "text": "the",
+          "start": 37.86,
+          "end": 37.9,
+          "confidence": 0.978
+        },
+        {
+          "text": "one",
+          "start": 37.9,
+          "end": 37.94,
+          "confidence": 0.976
+        },
+        {
+          "text": "who",
+          "start": 37.94,
+          "end": 37.98,
+          "confidence": 0.934
+        },
+        {
+          "text": "is",
+          "start": 37.98,
+          "end": 38.02,
+          "confidence": 0.986
+        },
+        {
+          "text": "the",
+          "start": 38.02,
+          "end": 38.06,
+          "confidence": 0.977
+        },
+        {
+          "text": "one",
+          "start": 38.06,
+          "end": 38.1,
+          "confidence": 0.975
+        },
+        {
+          "text": "who",
+          "start": 38.1,
+          "end": 38.14,
+          "confidence": 0.93
+        },
+        {
+          "text": "is",
+          "start": 38.14,
+          "end": 38.18,
+          "confidence": 0.985
+        },
+        {
+          "text": "the",
+          "start": 38.18,
+          "end": 38.22,
+          "confidence": 0.977
+        },
+        {
+          "text": "one",
+          "start": 38.22,
+          "end": 38.26,
+          "confidence": 0.974
+        },
+        {
+          "text": "who",
+          "start": 38.26,
+          "end": 38.3,
+          "confidence": 0.936
+        },
+        {
+          "text": "is",
+          "start": 38.3,
+          "end": 38.34,
+          "confidence": 0.985
+        },
+        {
+          "text": "the",
+          "start": 38.34,
+          "end": 38.38,
+          "confidence": 0.977
+        },
+        {
+          "text": "one",
+          "start": 38.38,
+          "end": 38.42,
+          "confidence": 0.976
+        },
+        {
+          "text": "who",
+          "start": 38.42,
+          "end": 38.46,
+          "confidence": 0.931
+        },
+        {
+          "text": "is",
+          "start": 38.46,
+          "end": 38.5,
+          "confidence": 0.984
+        },
+        {
+          "text": "the",
+          "start": 38.5,
+          "end": 38.54,
+          "confidence": 0.976
+        },
+        {
+          "text": "one",
+          "start": 38.54,
+          "end": 38.58,
+          "confidence": 0.976
+        },
+        {
+          "text": "who",
+          "start": 38.58,
+          "end": 38.62,
+          "confidence": 0.93
+        },
+        {
+          "text": "is",
+          "start": 38.62,
+          "end": 38.66,
+          "confidence": 0.984
+        },
+        {
+          "text": "the",
+          "start": 38.66,
+          "end": 38.7,
+          "confidence": 0.976
+        },
+        {
+          "text": "one",
+          "start": 38.7,
+          "end": 38.74,
+          "confidence": 0.976
+        },
+        {
+          "text": "who",
+          "start": 38.74,
+          "end": 38.78,
+          "confidence": 0.926
+        },
+        {
+          "text": "is",
+          "start": 38.78,
+          "end": 38.82,
+          "confidence": 0.982
+        },
+        {
+          "text": "the",
+          "start": 38.82,
+          "end": 38.86,
+          "confidence": 0.975
+        },
+        {
+          "text": "one",
+          "start": 38.86,
+          "end": 38.9,
+          "confidence": 0.975
+        },
+        {
+          "text": "who",
+          "start": 38.9,
+          "end": 38.94,
           "confidence": 0.927
         },
         {
           "text": "is",
-          "start": 36.46,
-          "end": 36.5,
+          "start": 38.94,
+          "end": 38.98,
           "confidence": 0.981
         },
         {
           "text": "the",
-          "start": 36.5,
-          "end": 36.54,
+          "start": 38.98,
+          "end": 39.02,
           "confidence": 0.974
         },
         {
           "text": "one",
-          "start": 36.54,
-          "end": 36.58,
+          "start": 39.02,
+          "end": 39.06,
           "confidence": 0.975
         },
         {
           "text": "who",
-          "start": 36.58,
-          "end": 36.62,
+          "start": 39.06,
+          "end": 39.1,
           "confidence": 0.925
         },
         {
           "text": "is",
-          "start": 36.62,
-          "end": 36.66,
+          "start": 39.1,
+          "end": 39.14,
           "confidence": 0.981
         },
         {
           "text": "the",
-          "start": 36.66,
-          "end": 36.7,
+          "start": 39.14,
+          "end": 39.18,
           "confidence": 0.974
         },
         {
           "text": "one",
-          "start": 36.7,
-          "end": 36.74,
+          "start": 39.18,
+          "end": 39.22,
           "confidence": 0.975
         },
         {
           "text": "who",
-          "start": 36.74,
-          "end": 36.92,
+          "start": 39.22,
+          "end": 39.26,
           "confidence": 0.929
         },
         {
           "text": "is",
-          "start": 36.92,
-          "end": 36.98,
+          "start": 39.26,
+          "end": 39.3,
           "confidence": 0.981
         },
         {
           "text": "the",
-          "start": 36.98,
-          "end": 37.02,
+          "start": 39.3,
+          "end": 39.34,
           "confidence": 0.973
         }
       ]
@@ -1766,7 +1766,7 @@
     {
       "id": 2,
       "seek": 3700,
-      "start": 37.02,
+      "start": 39.34,
       "end": 67.0,
       "text": " one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is",
       "tokens": [
@@ -2003,1339 +2003,1339 @@
       "words": [
         {
           "text": "one",
-          "start": 37.02,
-          "end": 37.4,
+          "start": 39.34,
+          "end": 39.38,
           "confidence": 0.963
         },
         {
           "text": "who",
-          "start": 37.4,
-          "end": 39.86,
+          "start": 39.38,
+          "end": 39.42,
           "confidence": 0.961
         },
         {
           "text": "is",
-          "start": 39.86,
-          "end": 39.9,
+          "start": 39.42,
+          "end": 39.46,
           "confidence": 0.976
         },
         {
           "text": "the",
-          "start": 39.9,
-          "end": 39.94,
+          "start": 39.46,
+          "end": 39.5,
           "confidence": 0.975
         },
         {
           "text": "one",
-          "start": 39.94,
-          "end": 39.98,
+          "start": 39.5,
+          "end": 39.54,
           "confidence": 0.963
         },
         {
           "text": "who",
-          "start": 39.98,
-          "end": 40.02,
+          "start": 39.54,
+          "end": 39.58,
           "confidence": 0.982
         },
         {
           "text": "is",
-          "start": 40.02,
-          "end": 40.06,
+          "start": 39.58,
+          "end": 39.62,
           "confidence": 0.989
         },
         {
           "text": "the",
-          "start": 40.06,
-          "end": 40.1,
+          "start": 39.62,
+          "end": 39.66,
           "confidence": 0.977
         },
         {
           "text": "one",
-          "start": 40.1,
-          "end": 40.14,
+          "start": 39.66,
+          "end": 39.7,
           "confidence": 0.98
         },
         {
           "text": "who",
-          "start": 40.14,
-          "end": 40.18,
+          "start": 39.7,
+          "end": 39.84,
           "confidence": 0.989
         },
         {
           "text": "is",
-          "start": 40.18,
-          "end": 40.22,
+          "start": 39.84,
+          "end": 40.1,
           "confidence": 0.992
         },
         {
           "text": "the",
-          "start": 40.22,
-          "end": 40.26,
+          "start": 40.1,
+          "end": 40.2,
           "confidence": 0.97
         },
         {
           "text": "one",
-          "start": 40.26,
-          "end": 40.3,
+          "start": 40.2,
+          "end": 40.24,
           "confidence": 0.982
         },
         {
           "text": "who",
-          "start": 40.3,
-          "end": 40.34,
+          "start": 40.24,
+          "end": 40.3,
           "confidence": 0.989
         },
         {
           "text": "is",
-          "start": 40.34,
-          "end": 40.38,
+          "start": 40.3,
+          "end": 40.34,
           "confidence": 0.993
         },
         {
           "text": "the",
-          "start": 40.38,
-          "end": 40.42,
+          "start": 40.34,
+          "end": 40.38,
           "confidence": 0.971
         },
         {
           "text": "one",
-          "start": 40.42,
-          "end": 40.46,
+          "start": 40.38,
+          "end": 40.92,
           "confidence": 0.984
         },
         {
           "text": "who",
-          "start": 40.46,
-          "end": 40.5,
+          "start": 40.92,
+          "end": 41.02,
           "confidence": 0.99
         },
         {
           "text": "is",
-          "start": 40.5,
-          "end": 40.54,
+          "start": 41.02,
+          "end": 41.06,
           "confidence": 0.994
         },
         {
           "text": "the",
-          "start": 40.54,
-          "end": 40.58,
+          "start": 41.06,
+          "end": 41.1,
           "confidence": 0.969
         },
         {
           "text": "one",
-          "start": 40.58,
-          "end": 40.62,
+          "start": 41.1,
+          "end": 41.14,
           "confidence": 0.985
         },
         {
           "text": "who",
-          "start": 40.62,
-          "end": 40.66,
+          "start": 41.14,
+          "end": 41.18,
           "confidence": 0.989
         },
         {
           "text": "is",
-          "start": 40.66,
-          "end": 40.7,
+          "start": 41.18,
+          "end": 41.22,
           "confidence": 0.991
         },
         {
           "text": "the",
-          "start": 40.7,
-          "end": 40.74,
+          "start": 41.22,
+          "end": 41.26,
           "confidence": 0.63
         },
         {
           "text": "one",
-          "start": 40.74,
-          "end": 40.78,
+          "start": 41.26,
+          "end": 41.48,
           "confidence": 0.946
         },
         {
           "text": "who",
-          "start": 40.78,
-          "end": 40.82,
+          "start": 41.48,
+          "end": 41.52,
           "confidence": 0.984
         },
         {
           "text": "is",
-          "start": 40.82,
-          "end": 40.86,
+          "start": 41.52,
+          "end": 41.56,
           "confidence": 0.99
         },
         {
           "text": "the",
-          "start": 40.86,
-          "end": 40.9,
+          "start": 41.56,
+          "end": 41.6,
           "confidence": 0.909
         },
         {
           "text": "one",
-          "start": 40.9,
-          "end": 40.94,
+          "start": 41.6,
+          "end": 41.64,
           "confidence": 0.984
         },
         {
           "text": "who",
-          "start": 40.94,
-          "end": 40.98,
+          "start": 41.64,
+          "end": 41.68,
           "confidence": 0.986
         },
         {
           "text": "is",
-          "start": 40.98,
-          "end": 41.02,
+          "start": 41.68,
+          "end": 41.72,
           "confidence": 0.994
         },
         {
           "text": "the",
-          "start": 41.02,
-          "end": 41.06,
+          "start": 41.72,
+          "end": 41.76,
           "confidence": 0.933
         },
         {
           "text": "one",
-          "start": 41.06,
-          "end": 41.1,
+          "start": 41.76,
+          "end": 41.8,
           "confidence": 0.985
         },
         {
           "text": "who",
-          "start": 41.1,
-          "end": 41.14,
+          "start": 41.8,
+          "end": 41.84,
           "confidence": 0.988
         },
         {
           "text": "is",
-          "start": 41.14,
-          "end": 41.18,
+          "start": 41.84,
+          "end": 41.88,
           "confidence": 0.996
         },
         {
           "text": "the",
-          "start": 41.18,
-          "end": 41.22,
+          "start": 41.88,
+          "end": 41.92,
           "confidence": 0.948
         },
         {
           "text": "one",
-          "start": 41.22,
-          "end": 41.26,
+          "start": 41.92,
+          "end": 41.96,
           "confidence": 0.987
         },
         {
           "text": "who",
-          "start": 41.26,
-          "end": 41.3,
+          "start": 41.96,
+          "end": 42.0,
           "confidence": 0.989
         },
         {
           "text": "is",
-          "start": 41.3,
-          "end": 41.34,
+          "start": 42.0,
+          "end": 42.04,
           "confidence": 0.997
         },
         {
           "text": "the",
-          "start": 41.34,
-          "end": 41.38,
+          "start": 42.04,
+          "end": 42.08,
           "confidence": 0.96
         },
         {
           "text": "one",
-          "start": 41.38,
-          "end": 41.42,
+          "start": 42.08,
+          "end": 42.12,
           "confidence": 0.988
         },
         {
           "text": "who",
-          "start": 41.42,
-          "end": 41.46,
+          "start": 42.12,
+          "end": 42.16,
           "confidence": 0.99
         },
         {
           "text": "is",
-          "start": 41.46,
-          "end": 41.5,
+          "start": 42.16,
+          "end": 42.2,
           "confidence": 0.997
         },
         {
           "text": "the",
-          "start": 41.5,
-          "end": 41.54,
+          "start": 42.2,
+          "end": 42.24,
           "confidence": 0.969
         },
         {
           "text": "one",
-          "start": 41.54,
-          "end": 41.58,
+          "start": 42.24,
+          "end": 42.28,
           "confidence": 0.989
         },
         {
           "text": "who",
-          "start": 41.58,
-          "end": 41.62,
+          "start": 42.28,
+          "end": 42.32,
           "confidence": 0.99
         },
         {
           "text": "is",
-          "start": 41.62,
-          "end": 41.66,
+          "start": 42.32,
+          "end": 42.36,
           "confidence": 0.998
         },
         {
           "text": "the",
-          "start": 41.66,
-          "end": 41.7,
+          "start": 42.36,
+          "end": 42.4,
           "confidence": 0.976
         },
         {
           "text": "one",
-          "start": 41.7,
-          "end": 41.74,
+          "start": 42.4,
+          "end": 42.44,
           "confidence": 0.99
         },
         {
           "text": "who",
-          "start": 41.74,
-          "end": 41.78,
+          "start": 42.44,
+          "end": 42.48,
           "confidence": 0.99
         },
         {
           "text": "is",
-          "start": 41.78,
-          "end": 41.82,
+          "start": 42.48,
+          "end": 42.52,
           "confidence": 0.998
         },
         {
           "text": "the",
-          "start": 41.82,
-          "end": 41.86,
+          "start": 42.52,
+          "end": 42.56,
           "confidence": 0.981
         },
         {
           "text": "one",
-          "start": 41.86,
-          "end": 41.9,
+          "start": 42.56,
+          "end": 42.6,
           "confidence": 0.99
         },
         {
           "text": "who",
-          "start": 41.9,
-          "end": 41.94,
+          "start": 42.6,
+          "end": 42.64,
           "confidence": 0.99
         },
         {
           "text": "is",
-          "start": 41.94,
-          "end": 41.98,
+          "start": 42.64,
+          "end": 42.68,
           "confidence": 0.998
         },
         {
           "text": "the",
-          "start": 41.98,
-          "end": 42.02,
+          "start": 42.68,
+          "end": 42.72,
           "confidence": 0.984
         },
         {
           "text": "one",
-          "start": 42.02,
-          "end": 42.06,
+          "start": 42.72,
+          "end": 42.76,
           "confidence": 0.991
         },
         {
           "text": "who",
-          "start": 42.06,
-          "end": 42.1,
+          "start": 42.76,
+          "end": 42.8,
           "confidence": 0.99
         },
         {
           "text": "is",
-          "start": 42.1,
-          "end": 42.14,
+          "start": 42.8,
+          "end": 42.84,
           "confidence": 0.998
         },
         {
           "text": "the",
-          "start": 42.14,
-          "end": 42.18,
+          "start": 42.84,
+          "end": 42.88,
           "confidence": 0.987
         },
         {
           "text": "one",
-          "start": 42.18,
-          "end": 42.22,
+          "start": 42.88,
+          "end": 42.92,
           "confidence": 0.991
         },
         {
           "text": "who",
-          "start": 42.22,
-          "end": 42.26,
+          "start": 42.92,
+          "end": 42.96,
           "confidence": 0.99
         },
         {
           "text": "is",
-          "start": 42.26,
-          "end": 42.3,
+          "start": 42.96,
+          "end": 43.0,
           "confidence": 0.998
         },
         {
           "text": "the",
-          "start": 42.3,
-          "end": 42.34,
+          "start": 43.0,
+          "end": 43.04,
           "confidence": 0.988
         },
         {
           "text": "one",
-          "start": 42.34,
-          "end": 42.38,
+          "start": 43.04,
+          "end": 43.08,
           "confidence": 0.991
         },
         {
           "text": "who",
-          "start": 42.38,
-          "end": 42.42,
+          "start": 43.08,
+          "end": 43.12,
           "confidence": 0.989
         },
         {
           "text": "is",
-          "start": 42.42,
-          "end": 42.46,
+          "start": 43.12,
+          "end": 43.16,
           "confidence": 0.999
         },
         {
           "text": "the",
-          "start": 42.46,
-          "end": 42.5,
+          "start": 43.16,
+          "end": 43.2,
           "confidence": 0.989
         },
         {
           "text": "one",
-          "start": 42.5,
-          "end": 42.54,
+          "start": 43.2,
+          "end": 43.24,
           "confidence": 0.991
         },
         {
           "text": "who",
-          "start": 42.54,
-          "end": 42.58,
+          "start": 43.24,
+          "end": 43.28,
           "confidence": 0.989
         },
         {
           "text": "is",
-          "start": 42.58,
-          "end": 42.62,
+          "start": 43.28,
+          "end": 43.32,
           "confidence": 0.999
         },
         {
           "text": "the",
-          "start": 42.62,
-          "end": 42.66,
+          "start": 43.32,
+          "end": 43.36,
           "confidence": 0.989
         },
         {
           "text": "one",
-          "start": 42.66,
-          "end": 42.7,
+          "start": 43.36,
+          "end": 43.4,
           "confidence": 0.991
         },
         {
           "text": "who",
-          "start": 42.7,
-          "end": 42.74,
+          "start": 43.4,
+          "end": 43.44,
           "confidence": 0.989
         },
         {
           "text": "is",
-          "start": 42.74,
-          "end": 42.78,
+          "start": 43.44,
+          "end": 43.48,
           "confidence": 0.999
         },
         {
           "text": "the",
-          "start": 42.78,
-          "end": 42.82,
+          "start": 43.48,
+          "end": 43.52,
           "confidence": 0.99
         },
         {
           "text": "one",
-          "start": 42.82,
-          "end": 42.86,
+          "start": 43.52,
+          "end": 43.56,
           "confidence": 0.991
         },
         {
           "text": "who",
-          "start": 42.86,
-          "end": 42.9,
+          "start": 43.56,
+          "end": 43.6,
           "confidence": 0.988
         },
         {
           "text": "is",
-          "start": 42.9,
-          "end": 42.94,
+          "start": 43.6,
+          "end": 43.64,
           "confidence": 0.999
         },
         {
           "text": "the",
-          "start": 42.94,
-          "end": 42.98,
+          "start": 43.64,
+          "end": 43.68,
           "confidence": 0.991
         },
         {
           "text": "one",
-          "start": 42.98,
-          "end": 43.02,
+          "start": 43.68,
+          "end": 43.72,
           "confidence": 0.991
         },
         {
           "text": "who",
-          "start": 43.02,
-          "end": 43.06,
+          "start": 43.72,
+          "end": 43.76,
           "confidence": 0.988
         },
         {
           "text": "is",
-          "start": 43.06,
-          "end": 43.1,
+          "start": 43.76,
+          "end": 43.8,
           "confidence": 0.999
         },
         {
           "text": "the",
-          "start": 43.1,
-          "end": 43.14,
+          "start": 43.8,
+          "end": 43.84,
           "confidence": 0.991
         },
         {
           "text": "one",
-          "start": 43.14,
-          "end": 43.18,
+          "start": 43.84,
+          "end": 43.88,
           "confidence": 0.991
         },
         {
           "text": "who",
-          "start": 43.18,
-          "end": 43.22,
+          "start": 43.88,
+          "end": 43.92,
           "confidence": 0.988
         },
         {
           "text": "is",
-          "start": 43.22,
-          "end": 43.26,
+          "start": 43.92,
+          "end": 43.96,
           "confidence": 0.999
         },
         {
           "text": "the",
-          "start": 43.26,
-          "end": 43.3,
+          "start": 43.96,
+          "end": 44.0,
           "confidence": 0.991
         },
         {
           "text": "one",
-          "start": 43.3,
-          "end": 43.34,
+          "start": 44.0,
+          "end": 44.04,
           "confidence": 0.991
         },
         {
           "text": "who",
-          "start": 43.34,
-          "end": 43.38,
+          "start": 44.04,
+          "end": 44.08,
           "confidence": 0.987
         },
         {
           "text": "is",
-          "start": 43.38,
-          "end": 43.42,
+          "start": 44.08,
+          "end": 44.12,
           "confidence": 0.999
         },
         {
           "text": "the",
-          "start": 43.42,
-          "end": 43.46,
+          "start": 44.12,
+          "end": 44.16,
           "confidence": 0.991
         },
         {
           "text": "one",
-          "start": 43.46,
-          "end": 43.5,
+          "start": 44.16,
+          "end": 44.2,
           "confidence": 0.991
         },
         {
           "text": "who",
-          "start": 43.5,
-          "end": 43.54,
+          "start": 44.2,
+          "end": 44.24,
           "confidence": 0.987
         },
         {
           "text": "is",
-          "start": 43.54,
-          "end": 43.58,
+          "start": 44.24,
+          "end": 44.28,
           "confidence": 0.999
         },
         {
           "text": "the",
-          "start": 43.58,
-          "end": 43.62,
+          "start": 44.28,
+          "end": 44.32,
           "confidence": 0.991
         },
         {
           "text": "one",
-          "start": 43.62,
-          "end": 43.66,
+          "start": 44.32,
+          "end": 44.36,
           "confidence": 0.991
         },
         {
           "text": "who",
-          "start": 43.66,
-          "end": 43.7,
+          "start": 44.36,
+          "end": 44.4,
           "confidence": 0.986
         },
         {
           "text": "is",
-          "start": 43.7,
-          "end": 43.74,
+          "start": 44.4,
+          "end": 44.44,
           "confidence": 0.999
         },
         {
           "text": "the",
-          "start": 43.74,
-          "end": 43.78,
+          "start": 44.44,
+          "end": 44.48,
           "confidence": 0.991
         },
         {
           "text": "one",
-          "start": 43.78,
-          "end": 43.82,
+          "start": 44.48,
+          "end": 44.52,
           "confidence": 0.991
         },
         {
           "text": "who",
-          "start": 43.82,
-          "end": 43.86,
+          "start": 44.52,
+          "end": 44.56,
           "confidence": 0.987
         },
         {
           "text": "is",
-          "start": 43.86,
-          "end": 43.9,
+          "start": 44.56,
+          "end": 44.6,
           "confidence": 0.999
         },
         {
           "text": "the",
-          "start": 43.9,
-          "end": 43.94,
+          "start": 44.6,
+          "end": 44.64,
           "confidence": 0.991
         },
         {
           "text": "one",
-          "start": 43.94,
-          "end": 43.98,
+          "start": 44.64,
+          "end": 44.68,
           "confidence": 0.99
         },
         {
           "text": "who",
-          "start": 43.98,
-          "end": 44.02,
+          "start": 44.68,
+          "end": 44.72,
           "confidence": 0.986
         },
         {
           "text": "is",
-          "start": 44.02,
-          "end": 44.06,
+          "start": 44.72,
+          "end": 44.76,
           "confidence": 0.999
         },
         {
           "text": "the",
-          "start": 44.06,
-          "end": 44.1,
+          "start": 44.76,
+          "end": 44.8,
           "confidence": 0.991
         },
         {
           "text": "one",
-          "start": 44.1,
-          "end": 44.14,
+          "start": 44.8,
+          "end": 44.84,
           "confidence": 0.99
         },
         {
           "text": "who",
-          "start": 44.14,
-          "end": 44.18,
+          "start": 44.84,
+          "end": 44.88,
           "confidence": 0.986
         },
         {
           "text": "is",
-          "start": 44.18,
-          "end": 44.22,
+          "start": 44.88,
+          "end": 44.92,
           "confidence": 0.999
         },
         {
           "text": "the",
-          "start": 44.22,
-          "end": 44.26,
+          "start": 44.92,
+          "end": 44.96,
           "confidence": 0.991
         },
         {
           "text": "one",
-          "start": 44.26,
-          "end": 44.3,
+          "start": 44.96,
+          "end": 45.0,
           "confidence": 0.99
         },
         {
           "text": "who",
-          "start": 44.3,
-          "end": 44.34,
+          "start": 45.0,
+          "end": 45.04,
           "confidence": 0.986
         },
         {
           "text": "is",
-          "start": 44.34,
-          "end": 44.38,
+          "start": 45.04,
+          "end": 45.08,
           "confidence": 0.999
         },
         {
           "text": "the",
-          "start": 44.38,
-          "end": 44.42,
+          "start": 45.08,
+          "end": 45.12,
           "confidence": 0.991
         },
         {
           "text": "one",
-          "start": 44.42,
-          "end": 44.46,
+          "start": 45.12,
+          "end": 45.16,
           "confidence": 0.989
         },
         {
           "text": "who",
-          "start": 44.46,
-          "end": 44.5,
+          "start": 45.16,
+          "end": 45.2,
           "confidence": 0.984
         },
         {
           "text": "is",
-          "start": 44.5,
-          "end": 44.54,
+          "start": 45.2,
+          "end": 45.24,
           "confidence": 0.998
         },
         {
           "text": "the",
-          "start": 44.54,
-          "end": 44.58,
+          "start": 45.24,
+          "end": 45.28,
           "confidence": 0.991
         },
         {
           "text": "one",
-          "start": 44.58,
-          "end": 44.62,
+          "start": 45.28,
+          "end": 45.32,
           "confidence": 0.989
         },
         {
           "text": "who",
-          "start": 44.62,
-          "end": 44.66,
+          "start": 45.32,
+          "end": 45.36,
           "confidence": 0.984
         },
         {
           "text": "is",
-          "start": 44.66,
-          "end": 44.7,
+          "start": 45.36,
+          "end": 45.4,
           "confidence": 0.998
         },
         {
           "text": "the",
-          "start": 44.7,
-          "end": 44.74,
+          "start": 45.4,
+          "end": 45.44,
           "confidence": 0.991
         },
         {
           "text": "one",
-          "start": 44.74,
-          "end": 44.78,
+          "start": 45.44,
+          "end": 45.48,
           "confidence": 0.989
         },
         {
           "text": "who",
-          "start": 44.78,
-          "end": 44.82,
+          "start": 45.48,
+          "end": 45.52,
           "confidence": 0.983
         },
         {
           "text": "is",
-          "start": 44.82,
-          "end": 44.86,
+          "start": 45.52,
+          "end": 45.56,
           "confidence": 0.998
         },
         {
           "text": "the",
-          "start": 44.86,
-          "end": 44.9,
+          "start": 45.56,
+          "end": 45.6,
           "confidence": 0.991
         },
         {
           "text": "one",
-          "start": 44.9,
-          "end": 44.94,
+          "start": 45.6,
+          "end": 45.64,
           "confidence": 0.989
         },
         {
           "text": "who",
-          "start": 44.94,
-          "end": 44.98,
+          "start": 45.64,
+          "end": 45.68,
           "confidence": 0.982
         },
         {
           "text": "is",
-          "start": 44.98,
-          "end": 45.02,
+          "start": 45.68,
+          "end": 45.72,
           "confidence": 0.998
         },
         {
           "text": "the",
-          "start": 45.02,
-          "end": 45.06,
+          "start": 45.72,
+          "end": 45.76,
           "confidence": 0.991
         },
         {
           "text": "one",
-          "start": 45.06,
-          "end": 45.1,
+          "start": 45.76,
+          "end": 45.8,
           "confidence": 0.988
         },
         {
           "text": "who",
-          "start": 45.1,
-          "end": 45.14,
+          "start": 45.8,
+          "end": 45.84,
           "confidence": 0.982
         },
         {
           "text": "is",
-          "start": 45.14,
-          "end": 45.18,
+          "start": 45.84,
+          "end": 45.88,
           "confidence": 0.998
         },
         {
           "text": "the",
-          "start": 45.18,
-          "end": 45.22,
+          "start": 45.88,
+          "end": 45.92,
           "confidence": 0.99
         },
         {
           "text": "one",
-          "start": 45.22,
-          "end": 45.26,
+          "start": 45.92,
+          "end": 45.96,
           "confidence": 0.988
         },
         {
           "text": "who",
-          "start": 45.26,
-          "end": 45.3,
+          "start": 45.96,
+          "end": 46.0,
           "confidence": 0.981
         },
         {
           "text": "is",
-          "start": 45.3,
-          "end": 45.34,
+          "start": 46.0,
+          "end": 46.04,
           "confidence": 0.998
         },
         {
           "text": "the",
-          "start": 45.34,
-          "end": 45.38,
+          "start": 46.04,
+          "end": 46.08,
           "confidence": 0.99
         },
         {
           "text": "one",
-          "start": 45.38,
-          "end": 45.42,
+          "start": 46.08,
+          "end": 46.12,
           "confidence": 0.987
         },
         {
           "text": "who",
-          "start": 45.42,
-          "end": 45.46,
+          "start": 46.12,
+          "end": 46.16,
           "confidence": 0.979
         },
         {
           "text": "is",
-          "start": 45.46,
-          "end": 45.5,
+          "start": 46.16,
+          "end": 46.2,
           "confidence": 0.998
         },
         {
           "text": "the",
-          "start": 45.5,
-          "end": 45.54,
+          "start": 46.2,
+          "end": 46.24,
           "confidence": 0.99
         },
         {
           "text": "one",
-          "start": 45.54,
-          "end": 45.58,
+          "start": 46.24,
+          "end": 46.28,
           "confidence": 0.987
         },
         {
           "text": "who",
-          "start": 45.58,
-          "end": 45.62,
+          "start": 46.28,
+          "end": 46.32,
           "confidence": 0.978
         },
         {
           "text": "is",
-          "start": 45.62,
-          "end": 45.66,
+          "start": 46.32,
+          "end": 46.36,
           "confidence": 0.997
         },
         {
           "text": "the",
-          "start": 45.66,
-          "end": 45.7,
+          "start": 46.36,
+          "end": 46.4,
           "confidence": 0.99
         },
         {
           "text": "one",
-          "start": 45.7,
-          "end": 45.74,
+          "start": 46.4,
+          "end": 46.44,
           "confidence": 0.986
         },
         {
           "text": "who",
-          "start": 45.74,
-          "end": 45.78,
+          "start": 46.44,
+          "end": 46.48,
           "confidence": 0.977
         },
         {
           "text": "is",
-          "start": 45.78,
-          "end": 45.82,
+          "start": 46.48,
+          "end": 46.52,
           "confidence": 0.997
         },
         {
           "text": "the",
-          "start": 45.82,
-          "end": 45.86,
+          "start": 46.52,
+          "end": 46.56,
           "confidence": 0.989
         },
         {
           "text": "one",
-          "start": 45.86,
-          "end": 45.9,
+          "start": 46.56,
+          "end": 46.6,
           "confidence": 0.986
         },
         {
           "text": "who",
-          "start": 45.9,
-          "end": 45.94,
+          "start": 46.6,
+          "end": 46.64,
           "confidence": 0.977
         },
         {
           "text": "is",
-          "start": 45.94,
-          "end": 45.98,
+          "start": 46.64,
+          "end": 46.68,
           "confidence": 0.997
         },
         {
           "text": "the",
-          "start": 45.98,
-          "end": 46.02,
+          "start": 46.68,
+          "end": 46.72,
           "confidence": 0.989
         },
         {
           "text": "one",
-          "start": 46.02,
-          "end": 46.06,
+          "start": 46.72,
+          "end": 46.76,
           "confidence": 0.985
         },
         {
           "text": "who",
-          "start": 46.06,
-          "end": 46.1,
+          "start": 46.76,
+          "end": 46.8,
           "confidence": 0.973
         },
         {
           "text": "is",
-          "start": 46.1,
-          "end": 46.14,
+          "start": 46.8,
+          "end": 46.84,
           "confidence": 0.997
         },
         {
           "text": "the",
-          "start": 46.14,
-          "end": 46.18,
+          "start": 46.84,
+          "end": 46.88,
           "confidence": 0.989
         },
         {
           "text": "one",
-          "start": 46.18,
-          "end": 46.22,
+          "start": 46.88,
+          "end": 46.92,
           "confidence": 0.985
         },
         {
           "text": "who",
-          "start": 46.22,
-          "end": 46.26,
+          "start": 46.92,
+          "end": 46.96,
           "confidence": 0.972
         },
         {
           "text": "is",
-          "start": 46.26,
-          "end": 46.3,
+          "start": 46.96,
+          "end": 47.0,
           "confidence": 0.996
         },
         {
           "text": "the",
-          "start": 46.3,
-          "end": 46.34,
+          "start": 47.0,
+          "end": 47.04,
           "confidence": 0.988
         },
         {
           "text": "one",
-          "start": 46.34,
-          "end": 46.38,
+          "start": 47.04,
+          "end": 47.08,
           "confidence": 0.985
         },
         {
           "text": "who",
-          "start": 46.38,
-          "end": 46.42,
+          "start": 47.08,
+          "end": 47.12,
           "confidence": 0.972
         },
         {
           "text": "is",
-          "start": 46.42,
-          "end": 46.46,
+          "start": 47.12,
+          "end": 47.16,
           "confidence": 0.996
         },
         {
           "text": "the",
-          "start": 46.46,
-          "end": 46.5,
+          "start": 47.16,
+          "end": 47.2,
           "confidence": 0.988
         },
         {
           "text": "one",
-          "start": 46.5,
-          "end": 46.54,
+          "start": 47.2,
+          "end": 47.24,
           "confidence": 0.984
         },
         {
           "text": "who",
-          "start": 46.54,
-          "end": 46.58,
+          "start": 47.24,
+          "end": 47.28,
           "confidence": 0.97
         },
         {
           "text": "is",
-          "start": 46.58,
-          "end": 46.62,
+          "start": 47.28,
+          "end": 47.32,
           "confidence": 0.996
         },
         {
           "text": "the",
-          "start": 46.62,
-          "end": 46.66,
+          "start": 47.32,
+          "end": 47.36,
           "confidence": 0.987
         },
         {
           "text": "one",
-          "start": 46.66,
-          "end": 46.7,
+          "start": 47.36,
+          "end": 47.4,
           "confidence": 0.984
         },
         {
           "text": "who",
-          "start": 46.7,
-          "end": 46.74,
+          "start": 47.4,
+          "end": 47.44,
           "confidence": 0.969
         },
         {
           "text": "is",
-          "start": 46.74,
-          "end": 46.78,
+          "start": 47.44,
+          "end": 47.48,
           "confidence": 0.996
         },
         {
           "text": "the",
-          "start": 46.78,
-          "end": 46.82,
+          "start": 47.48,
+          "end": 47.52,
           "confidence": 0.987
         },
         {
           "text": "one",
-          "start": 46.82,
-          "end": 46.86,
+          "start": 47.52,
+          "end": 47.56,
           "confidence": 0.983
         },
         {
           "text": "who",
-          "start": 46.86,
-          "end": 46.9,
+          "start": 47.56,
+          "end": 47.6,
           "confidence": 0.967
         },
         {
           "text": "is",
-          "start": 46.9,
-          "end": 46.94,
+          "start": 47.6,
+          "end": 47.64,
           "confidence": 0.995
         },
         {
           "text": "the",
-          "start": 46.94,
-          "end": 46.98,
+          "start": 47.64,
+          "end": 47.68,
           "confidence": 0.986
         },
         {
           "text": "one",
-          "start": 46.98,
-          "end": 47.02,
+          "start": 47.68,
+          "end": 47.72,
           "confidence": 0.982
         },
         {
           "text": "who",
-          "start": 47.02,
-          "end": 47.06,
+          "start": 47.72,
+          "end": 47.76,
           "confidence": 0.966
         },
         {
           "text": "is",
-          "start": 47.06,
-          "end": 47.1,
+          "start": 47.76,
+          "end": 47.8,
           "confidence": 0.995
         },
         {
           "text": "the",
-          "start": 47.1,
-          "end": 47.14,
+          "start": 47.8,
+          "end": 47.84,
           "confidence": 0.986
         },
         {
           "text": "one",
-          "start": 47.14,
-          "end": 47.18,
+          "start": 47.84,
+          "end": 47.88,
           "confidence": 0.982
         },
         {
           "text": "who",
-          "start": 47.18,
-          "end": 47.22,
+          "start": 47.88,
+          "end": 47.92,
           "confidence": 0.963
         },
         {
           "text": "is",
-          "start": 47.22,
-          "end": 47.26,
+          "start": 47.92,
+          "end": 47.96,
           "confidence": 0.994
         },
         {
           "text": "the",
-          "start": 47.26,
-          "end": 47.3,
+          "start": 47.96,
+          "end": 48.0,
           "confidence": 0.985
         },
         {
           "text": "one",
-          "start": 47.3,
-          "end": 47.34,
+          "start": 48.0,
+          "end": 48.04,
           "confidence": 0.981
         },
         {
           "text": "who",
-          "start": 47.34,
-          "end": 47.38,
+          "start": 48.04,
+          "end": 48.08,
           "confidence": 0.96
         },
         {
           "text": "is",
-          "start": 47.38,
-          "end": 47.42,
+          "start": 48.08,
+          "end": 48.12,
           "confidence": 0.993
         },
         {
           "text": "the",
-          "start": 47.42,
-          "end": 47.46,
+          "start": 48.12,
+          "end": 48.16,
           "confidence": 0.984
         },
         {
           "text": "one",
-          "start": 47.46,
-          "end": 47.5,
+          "start": 48.16,
+          "end": 48.2,
           "confidence": 0.98
         },
         {
           "text": "who",
-          "start": 47.5,
-          "end": 47.54,
+          "start": 48.2,
+          "end": 48.24,
           "confidence": 0.958
         },
         {
           "text": "is",
-          "start": 47.54,
-          "end": 47.58,
+          "start": 48.24,
+          "end": 48.28,
           "confidence": 0.993
         },
         {
           "text": "the",
-          "start": 47.58,
-          "end": 47.62,
+          "start": 48.28,
+          "end": 48.32,
           "confidence": 0.983
         },
         {
           "text": "one",
-          "start": 47.62,
-          "end": 47.66,
+          "start": 48.32,
+          "end": 48.36,
           "confidence": 0.98
         },
         {
           "text": "who",
-          "start": 47.66,
-          "end": 47.7,
+          "start": 48.36,
+          "end": 48.4,
           "confidence": 0.957
         },
         {
           "text": "is",
-          "start": 47.7,
-          "end": 47.74,
+          "start": 48.4,
+          "end": 48.44,
           "confidence": 0.992
         },
         {
           "text": "the",
-          "start": 47.74,
-          "end": 47.78,
+          "start": 48.44,
+          "end": 48.48,
           "confidence": 0.983
         },
         {
           "text": "one",
-          "start": 47.78,
-          "end": 47.82,
+          "start": 48.48,
+          "end": 48.52,
           "confidence": 0.979
         },
         {
           "text": "who",
-          "start": 47.82,
-          "end": 47.86,
+          "start": 48.52,
+          "end": 48.56,
           "confidence": 0.953
         },
         {
           "text": "is",
-          "start": 47.86,
-          "end": 47.9,
+          "start": 48.56,
+          "end": 48.6,
           "confidence": 0.992
         },
         {
           "text": "the",
-          "start": 47.9,
-          "end": 47.94,
+          "start": 48.6,
+          "end": 48.64,
           "confidence": 0.982
         },
         {
           "text": "one",
-          "start": 47.94,
-          "end": 47.98,
+          "start": 48.64,
+          "end": 48.68,
           "confidence": 0.978
         },
         {
           "text": "who",
-          "start": 47.98,
-          "end": 48.02,
+          "start": 48.68,
+          "end": 48.72,
           "confidence": 0.953
         },
         {
           "text": "is",
-          "start": 48.02,
-          "end": 48.06,
+          "start": 48.72,
+          "end": 48.76,
           "confidence": 0.992
         },
         {
           "text": "the",
-          "start": 48.06,
-          "end": 48.1,
+          "start": 48.76,
+          "end": 48.8,
           "confidence": 0.981
         },
         {
           "text": "one",
-          "start": 48.1,
-          "end": 48.14,
+          "start": 48.8,
+          "end": 48.84,
           "confidence": 0.975
         },
         {
           "text": "who",
-          "start": 48.14,
-          "end": 48.18,
+          "start": 48.84,
+          "end": 48.88,
           "confidence": 0.948
         },
         {
           "text": "is",
-          "start": 48.18,
-          "end": 48.22,
+          "start": 48.88,
+          "end": 48.92,
           "confidence": 0.991
         },
         {
           "text": "the",
-          "start": 48.22,
-          "end": 48.26,
+          "start": 48.92,
+          "end": 48.96,
           "confidence": 0.98
         },
         {
           "text": "one",
-          "start": 48.26,
-          "end": 48.3,
+          "start": 48.96,
+          "end": 49.0,
           "confidence": 0.976
         },
         {
           "text": "who",
-          "start": 48.3,
-          "end": 48.34,
+          "start": 49.0,
+          "end": 49.04,
           "confidence": 0.95
         },
         {
           "text": "is",
-          "start": 48.34,
-          "end": 48.38,
+          "start": 49.04,
+          "end": 49.08,
           "confidence": 0.991
         },
         {
           "text": "the",
-          "start": 48.38,
-          "end": 48.42,
+          "start": 49.08,
+          "end": 49.12,
           "confidence": 0.98
         },
         {
           "text": "one",
-          "start": 48.42,
-          "end": 48.46,
+          "start": 49.12,
+          "end": 49.16,
           "confidence": 0.975
         },
         {
           "text": "who",
-          "start": 48.46,
-          "end": 48.5,
+          "start": 49.16,
+          "end": 49.2,
           "confidence": 0.942
         },
         {
           "text": "is",
-          "start": 48.5,
-          "end": 48.54,
+          "start": 49.2,
+          "end": 49.24,
           "confidence": 0.99
         },
         {
           "text": "the",
-          "start": 48.54,
-          "end": 48.58,
+          "start": 49.24,
+          "end": 49.28,
           "confidence": 0.979
         },
         {
           "text": "one",
-          "start": 48.58,
-          "end": 48.62,
+          "start": 49.28,
+          "end": 49.32,
           "confidence": 0.975
         },
         {
           "text": "who",
-          "start": 48.62,
-          "end": 48.66,
+          "start": 49.32,
+          "end": 49.36,
           "confidence": 0.946
         },
         {
           "text": "is",
-          "start": 48.66,
+          "start": 49.36,
           "end": 67.0,
           "confidence": 0.989
         }

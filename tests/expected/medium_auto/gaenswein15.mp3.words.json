@@ -46,84 +46,84 @@
         {
           "text": "Die",
           "start": 0.86,
-          "end": 1.1,
+          "end": 1.12,
           "confidence": 0.873
         },
         {
           "text": "Wiederzulassung",
-          "start": 1.1,
+          "start": 1.12,
           "end": 1.94,
           "confidence": 0.976
         },
         {
           "text": "des",
           "start": 1.94,
-          "end": 2.14,
+          "end": 2.18,
           "confidence": 0.985
         },
         {
           "text": "Messbuchs",
-          "start": 2.14,
+          "start": 2.18,
           "end": 2.74,
           "confidence": 0.939
         },
         {
           "text": "von",
           "start": 2.74,
-          "end": 2.94,
+          "end": 3.3,
           "confidence": 0.971
         },
         {
           "text": "1962",
-          "start": 2.94,
-          "end": 4.74,
+          "start": 3.3,
+          "end": 4.9,
           "confidence": 0.976
         },
         {
           "text": "als",
-          "start": 4.74,
-          "end": 5.2,
+          "start": 4.9,
+          "end": 5.28,
           "confidence": 0.926
         },
         {
           "text": "Missale",
-          "start": 5.2,
+          "start": 5.28,
           "end": 5.76,
           "confidence": 0.905
         },
         {
           "text": "für",
           "start": 5.76,
-          "end": 5.94,
+          "end": 5.96,
           "confidence": 0.949
         },
         {
           "text": "die",
-          "start": 5.94,
-          "end": 6.1,
+          "start": 5.96,
+          "end": 6.14,
           "confidence": 0.988
         },
         {
           "text": "außerordentliche",
-          "start": 6.1,
-          "end": 7.0,
+          "start": 6.14,
+          "end": 7.08,
           "confidence": 0.94
         },
         {
           "text": "Form",
-          "start": 7.0,
-          "end": 7.3,
+          "start": 7.08,
+          "end": 7.34,
           "confidence": 0.827
         },
         {
           "text": "des",
-          "start": 7.3,
-          "end": 7.58,
+          "start": 7.34,
+          "end": 7.66,
           "confidence": 0.794
         },
         {
           "text": "römischen",
-          "start": 7.58,
+          "start": 7.66,
           "end": 8.04,
           "confidence": 0.654
         },
@@ -138,8 +138,8 @@
     {
       "id": 1,
       "seek": 0,
-      "start": 9.46,
-      "end": 12.74,
+      "start": 9.44,
+      "end": 12.76,
       "text": " ist dann nicht so weitergegangen, wie sich Papst Benedikt das gewünscht hatte.",
       "tokens": [
         1418,
@@ -172,74 +172,74 @@
       "words": [
         {
           "text": "ist",
-          "start": 9.46,
-          "end": 9.6,
+          "start": 9.44,
+          "end": 9.66,
           "confidence": 0.964
         },
         {
           "text": "dann",
-          "start": 9.6,
-          "end": 9.82,
+          "start": 9.66,
+          "end": 9.84,
           "confidence": 0.693
         },
         {
           "text": "nicht",
-          "start": 9.82,
-          "end": 9.96,
+          "start": 9.84,
+          "end": 10.0,
           "confidence": 0.996
         },
         {
           "text": "so",
-          "start": 9.96,
-          "end": 10.16,
+          "start": 10.0,
+          "end": 10.18,
           "confidence": 0.991
         },
         {
           "text": "weitergegangen,",
-          "start": 10.16,
-          "end": 10.94,
+          "start": 10.18,
+          "end": 10.84,
           "confidence": 0.819
         },
         {
           "text": "wie",
-          "start": 10.94,
-          "end": 11.04,
+          "start": 10.92,
+          "end": 11.06,
           "confidence": 0.988
         },
         {
           "text": "sich",
-          "start": 11.04,
-          "end": 11.24,
+          "start": 11.06,
+          "end": 11.26,
           "confidence": 0.959
         },
         {
           "text": "Papst",
-          "start": 11.24,
-          "end": 11.54,
+          "start": 11.26,
+          "end": 11.56,
           "confidence": 0.891
         },
         {
           "text": "Benedikt",
-          "start": 11.54,
-          "end": 11.9,
+          "start": 11.56,
+          "end": 11.92,
           "confidence": 0.945
         },
         {
           "text": "das",
-          "start": 11.9,
-          "end": 12.1,
+          "start": 11.92,
+          "end": 12.08,
           "confidence": 0.52
         },
         {
           "text": "gewünscht",
-          "start": 12.1,
-          "end": 12.46,
+          "start": 12.08,
+          "end": 12.58,
           "confidence": 0.998
         },
         {
           "text": "hatte.",
-          "start": 12.46,
-          "end": 12.74,
+          "start": 12.58,
+          "end": 12.76,
           "confidence": 0.934
         }
       ]
@@ -248,7 +248,7 @@
       "id": 2,
       "seek": 1300,
       "start": 13.02,
-      "end": 15.22,
+      "end": 15.24,
       "text": " Das hat er als Emeritus...",
       "tokens": [
         50364,
@@ -270,31 +270,31 @@
         {
           "text": "Das",
           "start": 13.02,
-          "end": 14.14,
+          "end": 14.2,
           "confidence": 0.779
         },
         {
           "text": "hat",
-          "start": 14.14,
-          "end": 14.34,
+          "start": 14.2,
+          "end": 14.38,
           "confidence": 0.824
         },
         {
           "text": "er",
-          "start": 14.34,
-          "end": 14.54,
+          "start": 14.38,
+          "end": 14.56,
           "confidence": 0.991
         },
         {
           "text": "als",
-          "start": 14.54,
-          "end": 14.66,
+          "start": 14.56,
+          "end": 14.72,
           "confidence": 0.944
         },
         {
           "text": "Emeritus...",
-          "start": 14.66,
-          "end": 15.22,
+          "start": 14.72,
+          "end": 15.24,
           "confidence": 0.341
         }
       ]

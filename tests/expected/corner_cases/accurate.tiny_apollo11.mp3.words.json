@@ -4,8 +4,8 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.6,
-      "end": 5.28,
+      "start": 0.62,
+      "end": 5.37,
       "text": " I'm all around my business and we got a recommendation for you on your door to the VA",
       "tokens": [
         286,
@@ -36,110 +36,110 @@
       "words": [
         {
           "text": "I'm",
-          "start": 0.6,
-          "end": 0.74,
+          "start": 0.62,
+          "end": 0.84,
           "confidence": 0.168
         },
         {
           "text": "all",
-          "start": 0.74,
-          "end": 1.02,
+          "start": 0.84,
+          "end": 1.08,
           "confidence": 0.083
         },
         {
           "text": "around",
-          "start": 1.02,
-          "end": 1.24,
+          "start": 1.08,
+          "end": 1.28,
           "confidence": 0.104
         },
         {
           "text": "my",
-          "start": 1.24,
-          "end": 1.42,
+          "start": 1.28,
+          "end": 1.46,
           "confidence": 0.129
         },
         {
           "text": "business",
-          "start": 1.42,
-          "end": 1.62,
+          "start": 1.46,
+          "end": 1.74,
           "confidence": 0.341
         },
         {
           "text": "and",
-          "start": 1.62,
-          "end": 1.9,
+          "start": 1.74,
+          "end": 1.94,
           "confidence": 0.613
         },
         {
           "text": "we",
-          "start": 1.9,
+          "start": 1.94,
           "end": 1.98,
           "confidence": 0.938
         },
         {
           "text": "got",
           "start": 1.98,
-          "end": 2.12,
+          "end": 2.2,
           "confidence": 0.4
         },
         {
           "text": "a",
-          "start": 2.12,
-          "end": 2.28,
+          "start": 2.2,
+          "end": 2.42,
           "confidence": 0.642
         },
         {
           "text": "recommendation",
-          "start": 2.28,
-          "end": 2.88,
+          "start": 2.42,
+          "end": 3.06,
           "confidence": 0.598
         },
         {
           "text": "for",
-          "start": 2.88,
-          "end": 3.46,
+          "start": 3.06,
+          "end": 3.52,
           "confidence": 0.37
         },
         {
           "text": "you",
-          "start": 3.46,
-          "end": 3.62,
+          "start": 3.52,
+          "end": 3.68,
           "confidence": 0.974
         },
         {
           "text": "on",
-          "start": 3.62,
-          "end": 3.82,
+          "start": 3.68,
+          "end": 3.9,
           "confidence": 0.803
         },
         {
           "text": "your",
-          "start": 3.82,
-          "end": 4.36,
+          "start": 3.9,
+          "end": 4.24,
           "confidence": 0.559
         },
         {
           "text": "door",
-          "start": 4.36,
-          "end": 4.62,
+          "start": 4.24,
+          "end": 4.7,
           "confidence": 0.146
         },
         {
           "text": "to",
-          "start": 4.62,
-          "end": 4.84,
+          "start": 4.7,
+          "end": 4.9,
           "confidence": 0.182
         },
         {
           "text": "the",
-          "start": 4.84,
-          "end": 4.9,
+          "start": 4.9,
+          "end": 5.1,
           "confidence": 0.501
         },
         {
           "text": "VA",
-          "start": 4.9,
-          "end": 5.28,
+          "start": 5.1,
+          "end": 5.37,
           "confidence": 0.25
         }
       ]
@@ -147,8 +147,8 @@
     {
       "id": 1,
       "seek": 0,
-      "start": 5.28,
-      "end": 6.82,
+      "start": 5.37,
+      "end": 6.94,
       "text": " We have 18A's",
       "tokens": [
         492,
@@ -165,20 +165,20 @@
       "words": [
         {
           "text": "We",
-          "start": 5.28,
-          "end": 5.62,
+          "start": 5.37,
+          "end": 5.74,
           "confidence": 0.041
         },
         {
           "text": "have",
-          "start": 5.62,
-          "end": 5.74,
+          "start": 5.74,
+          "end": 5.78,
           "confidence": 0.65
         },
         {
           "text": "18A's",
-          "start": 5.74,
-          "end": 6.82,
+          "start": 5.78,
+          "end": 6.94,
           "confidence": 0.182
         }
       ]
@@ -186,8 +186,8 @@
     {
       "id": 2,
       "seek": 0,
-      "start": 10.92,
-      "end": 16.76,
+      "start": 10.94,
+      "end": 16.79,
       "text": " Okay, okay, I think I'll just get him or if they like just want to go on the",
       "tokens": [
         1033,
@@ -220,110 +220,110 @@
       "words": [
         {
           "text": "Okay,",
-          "start": 10.92,
-          "end": 12.76,
+          "start": 10.94,
+          "end": 12.38,
           "confidence": 0.662
         },
         {
           "text": "okay,",
-          "start": 12.76,
-          "end": 13.04,
+          "start": 12.88,
+          "end": 13.12,
           "confidence": 0.292
         },
         {
           "text": "I",
-          "start": 13.04,
-          "end": 13.22,
+          "start": 13.14,
+          "end": 13.3,
           "confidence": 0.208
         },
         {
           "text": "think",
-          "start": 13.22,
-          "end": 13.58,
+          "start": 13.3,
+          "end": 13.6,
           "confidence": 0.261
         },
         {
           "text": "I'll",
-          "start": 13.58,
-          "end": 13.82,
+          "start": 13.6,
+          "end": 13.92,
           "confidence": 0.199
         },
         {
           "text": "just",
-          "start": 13.82,
-          "end": 13.98,
+          "start": 13.92,
+          "end": 14.12,
           "confidence": 0.17
         },
         {
           "text": "get",
-          "start": 13.98,
-          "end": 14.2,
+          "start": 14.12,
+          "end": 14.28,
           "confidence": 0.248
         },
         {
           "text": "him",
-          "start": 14.2,
-          "end": 14.48,
+          "start": 14.28,
+          "end": 14.54,
           "confidence": 0.153
         },
         {
           "text": "or",
-          "start": 14.48,
-          "end": 14.6,
+          "start": 14.54,
+          "end": 14.76,
           "confidence": 0.199
         },
         {
           "text": "if",
-          "start": 14.6,
-          "end": 14.88,
+          "start": 14.76,
+          "end": 14.94,
           "confidence": 0.088
         },
         {
           "text": "they",
-          "start": 14.88,
-          "end": 15.4,
+          "start": 14.94,
+          "end": 15.46,
           "confidence": 0.608
         },
         {
           "text": "like",
-          "start": 15.4,
-          "end": 15.66,
+          "start": 15.46,
+          "end": 15.74,
           "confidence": 0.201
         },
         {
           "text": "just",
-          "start": 15.66,
-          "end": 15.94,
+          "start": 15.74,
+          "end": 15.98,
           "confidence": 0.46
         },
         {
           "text": "want",
-          "start": 15.94,
-          "end": 16.1,
+          "start": 15.98,
+          "end": 16.18,
           "confidence": 0.766
         },
         {
           "text": "to",
-          "start": 16.1,
-          "end": 16.26,
+          "start": 16.18,
+          "end": 16.38,
           "confidence": 0.91
         },
         {
           "text": "go",
-          "start": 16.26,
-          "end": 16.44,
+          "start": 16.38,
+          "end": 16.56,
           "confidence": 0.948
         },
         {
           "text": "on",
-          "start": 16.44,
-          "end": 16.64,
+          "start": 16.56,
+          "end": 16.7,
           "confidence": 0.563
         },
         {
           "text": "the",
-          "start": 16.64,
-          "end": 16.76,
+          "start": 16.7,
+          "end": 16.79,
           "confidence": 0.583
         }
       ]
@@ -331,8 +331,8 @@
     {
       "id": 3,
       "seek": 0,
-      "start": 16.76,
-      "end": 18.87,
+      "start": 16.79,
+      "end": 18.97,
       "text": " Yeah, now what you want is on having a B1",
       "tokens": [
         865,
@@ -356,62 +356,62 @@
       "words": [
         {
           "text": "Yeah,",
-          "start": 16.76,
-          "end": 17.08,
+          "start": 16.79,
+          "end": 17.12,
           "confidence": 0.281
         },
         {
           "text": "now",
-          "start": 17.08,
+          "start": 17.14,
           "end": 17.3,
           "confidence": 0.362
         },
         {
           "text": "what",
           "start": 17.3,
-          "end": 17.42,
+          "end": 17.48,
           "confidence": 0.744
         },
         {
           "text": "you",
-          "start": 17.42,
-          "end": 17.54,
+          "start": 17.48,
+          "end": 17.62,
           "confidence": 0.932
         },
         {
           "text": "want",
-          "start": 17.54,
-          "end": 17.78,
+          "start": 17.62,
+          "end": 17.84,
           "confidence": 0.742
         },
         {
           "text": "is",
-          "start": 17.78,
-          "end": 17.92,
+          "start": 17.84,
+          "end": 17.96,
           "confidence": 0.675
         },
         {
           "text": "on",
-          "start": 17.92,
-          "end": 18.04,
+          "start": 17.96,
+          "end": 18.16,
           "confidence": 0.328
         },
         {
           "text": "having",
-          "start": 18.04,
-          "end": 18.4,
+          "start": 18.16,
+          "end": 18.44,
           "confidence": 0.566
         },
         {
           "text": "a",
-          "start": 18.4,
-          "end": 18.46,
+          "start": 18.44,
+          "end": 18.78,
           "confidence": 0.287
         },
         {
           "text": "B1",
-          "start": 18.46,
-          "end": 18.87,
+          "start": 18.78,
+          "end": 18.97,
           "confidence": 0.371
         }
       ]
@@ -419,7 +419,7 @@
     {
       "id": 4,
       "seek": 0,
-      "start": 18.87,
+      "start": 18.97,
       "end": 21.88,
       "text": " And you just get the other one on my",
       "tokens": [
@@ -441,55 +441,55 @@
       "words": [
         {
           "text": "And",
-          "start": 18.87,
-          "end": 20.2,
+          "start": 18.97,
+          "end": 20.28,
           "confidence": 0.273
         },
         {
           "text": "you",
-          "start": 20.2,
-          "end": 20.36,
+          "start": 20.28,
+          "end": 20.4,
           "confidence": 0.847
         },
         {
           "text": "just",
-          "start": 20.36,
-          "end": 20.52,
+          "start": 20.4,
+          "end": 20.66,
           "confidence": 0.694
         },
         {
           "text": "get",
-          "start": 20.52,
-          "end": 20.72,
+          "start": 20.66,
+          "end": 20.8,
           "confidence": 0.133
         },
         {
           "text": "the",
-          "start": 20.72,
+          "start": 20.8,
           "end": 20.9,
           "confidence": 0.652
         },
         {
           "text": "other",
           "start": 20.9,
-          "end": 21.04,
+          "end": 21.08,
           "confidence": 0.938
         },
         {
           "text": "one",
-          "start": 21.04,
-          "end": 21.2,
+          "start": 21.08,
+          "end": 21.26,
           "confidence": 0.976
         },
         {
           "text": "on",
-          "start": 21.2,
-          "end": 21.42,
+          "start": 21.26,
+          "end": 21.68,
           "confidence": 0.875
         },
         {
           "text": "my",
-          "start": 21.42,
+          "start": 21.68,
           "end": 21.88,
           "confidence": 0.232
         }
@@ -498,8 +498,8 @@
     {
       "id": 5,
       "seek": 2196,
-      "start": 21.98,
-      "end": 28.28,
+      "start": 22.08,
+      "end": 25.1,
       "text": " I",
       "tokens": [
         50364,
@@ -514,8 +514,8 @@
       "words": [
         {
           "text": "I",
-          "start": 21.98,
-          "end": 28.28,
+          "start": 22.08,
+          "end": 25.1,
           "confidence": 0.064
         }
       ]
@@ -524,7 +524,7 @@
       "id": 6,
       "seek": 5196,
       "start": 51.98,
-      "end": 56.84,
+      "end": 56.92,
       "text": " Yeah, we're",
       "tokens": [
         865,
@@ -541,13 +541,13 @@
         {
           "text": "Yeah,",
           "start": 51.98,
-          "end": 56.7,
+          "end": 53.3,
           "confidence": 0.119
         },
         {
           "text": "we're",
-          "start": 56.7,
-          "end": 56.84,
+          "start": 53.68,
+          "end": 56.92,
           "confidence": 0.323
         }
       ]
@@ -556,7 +556,7 @@
       "id": 7,
       "seek": 5196,
       "start": 58.48,
-      "end": 63.98,
+      "end": 64.14,
       "text": " We want to hear that",
       "tokens": [
         492,
@@ -574,31 +574,31 @@
         {
           "text": "We",
           "start": 58.48,
-          "end": 63.2,
+          "end": 61.86,
           "confidence": 0.211
         },
         {
           "text": "want",
-          "start": 63.2,
-          "end": 63.54,
+          "start": 61.86,
+          "end": 63.6,
           "confidence": 0.258
         },
         {
           "text": "to",
-          "start": 63.54,
-          "end": 63.58,
+          "start": 63.6,
+          "end": 63.74,
           "confidence": 0.261
         },
         {
           "text": "hear",
-          "start": 63.58,
-          "end": 63.78,
+          "start": 63.74,
+          "end": 63.8,
           "confidence": 0.168
         },
         {
           "text": "that",
-          "start": 63.78,
-          "end": 63.98,
+          "start": 63.8,
+          "end": 64.14,
           "confidence": 0.81
         }
       ]
@@ -606,8 +606,8 @@
     {
       "id": 8,
       "seek": 5196,
-      "start": 63.98,
-      "end": 68.46,
+      "start": 64.14,
+      "end": 68.32,
       "text": " We want to hear that",
       "tokens": [
         492,
@@ -624,32 +624,32 @@
       "words": [
         {
           "text": "We",
-          "start": 63.98,
-          "end": 65.42,
+          "start": 64.14,
+          "end": 65.44,
           "confidence": 0.24
         },
         {
           "text": "want",
-          "start": 65.42,
-          "end": 67.36,
+          "start": 65.44,
+          "end": 67.46,
           "confidence": 0.168
         },
         {
           "text": "to",
-          "start": 67.36,
-          "end": 67.4,
+          "start": 67.46,
+          "end": 67.52,
           "confidence": 0.64
         },
         {
           "text": "hear",
-          "start": 67.4,
-          "end": 68.42,
+          "start": 67.52,
+          "end": 67.72,
           "confidence": 0.858
         },
         {
           "text": "that",
-          "start": 68.42,
-          "end": 68.46,
+          "start": 67.72,
+          "end": 68.32,
           "confidence": 0.837
         }
       ]
@@ -657,8 +657,8 @@
     {
       "id": 9,
       "seek": 5196,
-      "start": 68.46,
-      "end": 71.44,
+      "start": 68.34,
+      "end": 71.46,
       "text": " So I guess I'm working on my",
       "tokens": [
         407,
@@ -678,44 +678,44 @@
       "words": [
         {
           "text": "So",
-          "start": 68.46,
-          "end": 69.54,
+          "start": 68.34,
+          "end": 69.66,
           "confidence": 0.2
         },
         {
           "text": "I",
-          "start": 69.54,
-          "end": 70.0,
+          "start": 69.66,
+          "end": 70.54,
           "confidence": 0.635
         },
         {
           "text": "guess",
-          "start": 70.0,
-          "end": 70.7,
+          "start": 70.54,
+          "end": 70.78,
           "confidence": 0.233
         },
         {
           "text": "I'm",
-          "start": 70.7,
-          "end": 71.24,
+          "start": 70.78,
+          "end": 71.3,
           "confidence": 0.3
         },
         {
           "text": "working",
-          "start": 71.24,
-          "end": 71.28,
+          "start": 71.3,
+          "end": 71.34,
           "confidence": 0.249
         },
         {
           "text": "on",
-          "start": 71.28,
-          "end": 71.32,
+          "start": 71.34,
+          "end": 71.42,
           "confidence": 0.294
         },
         {
           "text": "my",
-          "start": 71.32,
-          "end": 71.44,
+          "start": 71.42,
+          "end": 71.46,
           "confidence": 0.171
         }
       ]
@@ -723,8 +723,8 @@
     {
       "id": 10,
       "seek": 7096,
-      "start": 71.44,
-      "end": 75.86,
+      "start": 71.46,
+      "end": 72.04,
       "text": " business",
       "tokens": [
         1606
@@ -737,8 +737,8 @@
       "words": [
         {
           "text": "business",
-          "start": 71.44,
-          "end": 75.86,
+          "start": 71.46,
+          "end": 72.04,
           "confidence": 0.078
         }
       ]
@@ -746,8 +746,8 @@
     {
       "id": 11,
       "seek": 8396,
-      "start": 83.98,
-      "end": 89.2,
+      "start": 84.96,
+      "end": 89.02,
       "text": " Yeah",
       "tokens": [
         50364,
@@ -762,8 +762,8 @@
       "words": [
         {
           "text": "Yeah",
-          "start": 83.98,
-          "end": 89.2,
+          "start": 84.96,
+          "end": 89.02,
           "confidence": 0.162
         }
       ]

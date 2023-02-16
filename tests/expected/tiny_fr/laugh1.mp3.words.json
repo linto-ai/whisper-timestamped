@@ -4,8 +4,8 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.06,
-      "end": 1.64,
+      "start": 0.18,
+      "end": 1.68,
       "text": " Je ne suis pas en train de faire ça.",
       "tokens": [
         50364,
@@ -29,56 +29,56 @@
       "words": [
         {
           "text": "Je",
-          "start": 0.06,
-          "end": 0.68,
+          "start": 0.18,
+          "end": 0.78,
           "confidence": 0.067
         },
         {
           "text": "ne",
-          "start": 0.68,
-          "end": 0.78,
+          "start": 0.78,
+          "end": 0.82,
           "confidence": 0.139
         },
         {
           "text": "suis",
-          "start": 0.78,
-          "end": 0.96,
+          "start": 0.82,
+          "end": 1.04,
           "confidence": 0.184
         },
         {
           "text": "pas",
-          "start": 0.96,
-          "end": 1.12,
+          "start": 1.04,
+          "end": 1.18,
           "confidence": 0.803
         },
         {
           "text": "en",
-          "start": 1.12,
-          "end": 1.28,
+          "start": 1.18,
+          "end": 1.38,
           "confidence": 0.106
         },
         {
           "text": "train",
-          "start": 1.28,
-          "end": 1.38,
+          "start": 1.38,
+          "end": 1.46,
           "confidence": 0.136
         },
         {
           "text": "de",
-          "start": 1.38,
-          "end": 1.56,
+          "start": 1.46,
+          "end": 1.6,
           "confidence": 0.632
         },
         {
           "text": "faire",
-          "start": 1.56,
-          "end": 1.6,
+          "start": 1.6,
+          "end": 1.64,
           "confidence": 0.105
         },
         {
           "text": "ça.",
-          "start": 1.6,
-          "end": 1.64,
+          "start": 1.64,
+          "end": 1.68,
           "confidence": 0.112
         }
       ]
