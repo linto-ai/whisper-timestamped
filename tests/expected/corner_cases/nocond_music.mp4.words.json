@@ -2452,7 +2452,7 @@
       "id": 34,
       "seek": 14012,
       "start": 165.16,
-      "end": 165.76,
+      "end": 165.74,
       "text": " Up who the baddest.",
       "tokens": [
         5858,
@@ -2489,7 +2489,7 @@
         {
           "text": "baddest.",
           "start": 165.52,
-          "end": 165.76,
+          "end": 165.74,
           "confidence": 0.816
         }
       ]
@@ -2497,7 +2497,7 @@
     {
       "id": 35,
       "seek": 16572,
-      "start": 165.76,
+      "start": 165.74,
       "end": 166.84,
       "text": " it don't matter cause we is your enemy.",
       "tokens": [
@@ -2522,7 +2522,7 @@
       "words": [
         {
           "text": "it",
-          "start": 165.76,
+          "start": 165.74,
           "end": 165.86,
           "confidence": 0.125
         },
