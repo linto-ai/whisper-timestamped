@@ -47,7 +47,7 @@ class TestHelper(unittest.TestCase):
     def get_expected_path(self, fn=None, check=False):
         return self._get_path("tests/expected", fn, check=check)
 
-    def get_data_files(self, files=None, excluded_by_default=["apollo11.mp3", "music.mp4", "arabic.mp3", "empty.wav"]):
+    def get_data_files(self, files=None, excluded_by_default=["apollo11.mp3", "music.mp4", "arabic.mp3", "japanese.mp3", "empty.wav"]):
         if files == None:
             files = os.listdir(self.get_data_path())
             files = [f for f in files if f not in excluded_by_default and not f.endswith("json")]
@@ -158,6 +158,9 @@ class TestHelper(unittest.TestCase):
                 content = json.load(f)
             with open(reference) as f:
                 reference_content = json.load(f)
+            if "language" in content and "language" in reference_content:
+                content["language"] = self.norm_language(content["language"])
+                reference_content["language"] = self.norm_language(reference_content["language"])
             self.assertClose(content, reference_content,
                              msg=f"File {file} does not match reference {reference}")
             return
@@ -194,6 +197,12 @@ class TestHelper(unittest.TestCase):
     def get_device_str(self):
         import torch
         return "cpu" if not torch.cuda.is_available() else "cuda"
+
+    def norm_language(self, language):
+        # Cheap custom stuff to avoid importing everything
+        return {
+            "japanese": "ja",
+        }.get(language.lower(), language)
 
 
 class TestHelperCli(TestHelper):
@@ -447,6 +456,39 @@ class TestTranscribeMonolingual(TestHelperCli):
             device_specific=True,
         )
 
+class TestTranscribeUnspacedLanguage(TestHelperCli):
+
+    def test_japanese(self):
+
+        self._test_cli_(
+            ["--model", "tiny", "--efficient"],
+            "tiny_auto",
+            files=["japanese.mp3"],
+            device_specific=True,
+        )
+
+        self._test_cli_(
+            ["--model", "tiny", "--language", "Japanese", "--efficient"],
+            "tiny_auto",
+            files=["japanese.mp3"],
+            device_specific=True,
+        )
+
+        self._test_cli_(
+            ["--model", "tiny", "--accurate"],
+            "tiny_auto",
+            files=["japanese.mp3"],
+            prefix="accurate",
+            device_specific=True,
+        )
+
+        self._test_cli_(
+            ["--model", "tiny", "--language", "Japanese", "--accurate"],
+            "tiny_auto",
+            files=["japanese.mp3"],
+            prefix="accurate",
+            device_specific=True,
+        )
 
 class TestTranscribeFormats(TestHelperCli):
 

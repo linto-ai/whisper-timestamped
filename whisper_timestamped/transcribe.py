@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.9.0"
+__version__ = "1.9.1"
 
 # Whisper and Torch
 import whisper
@@ -533,17 +533,15 @@ def _transcribe_timestamped_efficient(
 
         if is_sot(curr_tokens):
             chunk_prompt = curr_tokens.tolist()
-            if not has_started and language is None:
-                if len(curr_tokens) == 1: # English model
-                    language = "en"
-                else:
+            if language is None:
+                if len(curr_tokens) > 1:
                     language = tokenizer.decode(curr_tokens[1:2])[2:-2]
-                whisper_options["language"] = language
+                    whisper_options["language"] = language
 
-                if verbose and not whisper_options["verbose"] and len(curr_tokens) > 1:
-                    # Reproduce whisper verbose (2/2)
-                    print(f"Detected language: {whisper.tokenizer.LANGUAGES[language].title()}")
-                    sys.stdout.flush()
+                    if verbose and not whisper_options["verbose"] and len(curr_tokens) > 1:
+                        # Reproduce whisper verbose (2/2)
+                        print(f"Detected language: {whisper.tokenizer.LANGUAGES[language].title()}")
+                        sys.stdout.flush()
 
             logit_filters = get_logit_filters(model, whisper_options, prompt = chunk_prompt[1:-len(tokenizer.sot_sequence)])
         
@@ -900,6 +898,8 @@ def should_use_space(language):
     return norm_language(language) not in ["zh", "ja", "th", "lo", "my"]
 
 def norm_language(language):
+    if language is None:
+        return "en"
     return whisper.tokenizer.TO_LANGUAGE_CODE.get(language.lower(), language)
 
 def print_timestamped(w):
