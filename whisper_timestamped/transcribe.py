@@ -1141,7 +1141,7 @@ def perform_word_alignment(
             xticks *= 2
 
             plt.subplot(2, 1, 2, frameon=False)
-            plt.imshow(mfcc[0, :, start_token * 2: end_token * 2].cpu(), aspect="auto")
+            plt.imshow(mfcc[0, :, start_token * 2: end_token * 2].cpu(), aspect="auto", origin="lower")
             plt.yticks([])
             plt.ylabel("MFCC")
 
