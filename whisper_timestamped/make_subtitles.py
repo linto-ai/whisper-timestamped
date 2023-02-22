@@ -115,7 +115,7 @@ def cli():
         write_vtt = get_do_write("vtt")
 
     for fn, outputs in zip(input_files, output_files):
-        with open(fn, "r") as f:
+        with open(fn, "r", encoding="utf-8") as f:
             transcript = json.load(f)
         segments = transcript["segments"]
         if args.max_length:
@@ -124,10 +124,10 @@ def cli():
             segments = split_long_segments(segments, args.max_length, use_space=use_space)
         for output in outputs:
             if output.endswith(".srt"):
-                with open(output, "w") as f:
+                with open(output, "w", encoding="utf-8") as f:
                     write_srt(segments, file=f)
             elif output.endswith(".vtt"):
-                with open(output, "w") as f:
+                with open(output, "w", encoding="utf-8") as f:
                     write_vtt(segments, file=f)
             else:
                 raise RuntimeError(f"Unknown output format for {output}")
