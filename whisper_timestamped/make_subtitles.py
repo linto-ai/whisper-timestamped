@@ -13,13 +13,16 @@ def split_long_segments(segments, max_length, use_space = True):
             new_segments.append(segment)
         else:
             meta_words = segment["words"]
-            # TODO: improve this. use_space is not really needed.
+            # Note: we do this in case punctuation were removed from words
             if use_space:
-                # Split text arond spaces and punctuations (keeping punctuations)
+                # Split text around spaces and punctuations (keeping punctuations)
                 words = text.split()
             else:
                 words = [w["text"] for w in meta_words]
-            assert len(words) == len(meta_words)
+            if len(words) != len(meta_words):
+                new_words = [w["text"] for w in meta_words]
+                print(f"WARNING: {' '.join(words)} != {' '.join(new_words)}")
+                words = new_words
             current_text = ""
             current_start = segment["start"]
             current_best_idx = None
