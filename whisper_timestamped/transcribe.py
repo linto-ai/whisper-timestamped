@@ -3,7 +3,12 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.9.2"
+__version__ = "1.10.0"
+
+# Set some environment variables
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1' # Remove warning "This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)..."
+os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID' # GPU in the right order
 
 # Whisper and Torch
 import whisper
@@ -33,6 +38,7 @@ import logging
 logger = logging.getLogger("whisper_timestamped")
 
 USE_EFFICIENT_BY_DEFAULT = True
+TRUST_WHISPER_TIMESTAMP_BY_DEFAULT = True
 
 def transcribe_timestamped(
     # Main Whisper options
@@ -54,6 +60,7 @@ def transcribe_timestamped(
     seed=1234,
 
     naive_approach=False,
+    trust_whisper_timestamps=TRUST_WHISPER_TIMESTAMP_BY_DEFAULT,
 
     # Other Whisper options
     temperature=0.0 if USE_EFFICIENT_BY_DEFAULT else (0.0, 0.2, 0.4, 0.6, 0.8, 1.0),
@@ -215,7 +222,7 @@ def transcribe_timestamped(
     if naive_approach:
         (transcription, words) = _transcribe_timestamped_naive(model, audio, min_word_duration=min_word_duration, **alignment_options, **whisper_options, **other_options)
     else:
-        (transcription, words) = _transcribe_timestamped_efficient(model, audio, **alignment_options, **whisper_options, **other_options)
+        (transcription, words) = _transcribe_timestamped_efficient(model, audio, trust_whisper_timestamps=trust_whisper_timestamps, **alignment_options, **whisper_options, **other_options)
 
     # Refine word positions
 
@@ -252,6 +259,7 @@ def _transcribe_timestamped_efficient(
     alignment_heads,
     plot_word_alignment,
     word_alignement_most_top_layers,
+    trust_whisper_timestamps,
     # Whisper specific options
     **whisper_options,
 ):
@@ -299,7 +307,7 @@ def _transcribe_timestamped_efficient(
     def is_sot(curr_tokens):
         return curr_tokens is None or len(curr_tokens) > 1 or curr_tokens[0] == tokenizer.sot
 
-    def reset(add_segment, keep_last_token):
+    def reset(add_segment, keep_last_token=True):
         """ Reset the list of tokens for the current speech segment, and corresponding cross-attention weights """
         nonlocal segment_tokens, segment_attweights
         if add_segment:
@@ -310,13 +318,13 @@ def _transcribe_timestamped_efficient(
                 segment_tokens.append([])
                 segment_attweights = [[] for w in segment_attweights]
             segment_tokens[-2].pop(0)
-            if debug:
-                logger.debug(f"Added new segment: {tokenizer.decode_with_timestamps(segment_tokens[-2])}")
+            # if debug:
+            #     logger.debug(f"Added new segment: {tokenizer.decode_with_timestamps(segment_tokens[-2])}")
         elif len(segment_tokens[-1]) > 0:
             segment_tokens[-1] = []
             segment_attweights = [[] for w in segment_attweights]
-        if debug:
-            logger.debug(f"Reset last segment to: {tokenizer.decode_with_timestamps(segment_tokens[-1])}")
+            if debug:
+                logger.debug(f"Reset last segment")
 
     saw_consecutive_timestamps = False
     def must_flush_segment(curr_tokens):
@@ -334,110 +342,212 @@ def _transcribe_timestamped_efficient(
             return consecutive_timestamps
         else: # Several tokens as a prompt or must flush last segments
             must_flush = not saw_consecutive_timestamps and len(segment_tokens[-1]) > 1
-            logger.debug(f"New prompt: flushing = {must_flush}")
-            if not must_flush:
+            # logger.debug(f"New prompt: flushing = {must_flush}")
+            if not must_flush and trust_whisper_timestamps:
                 # Discard the end of the last transcription
-                reset(False, True)
+                reset(False)
             saw_consecutive_timestamps = False
             return must_flush
 
     index_begin_30sec_chunck = 0
     def get_index_begin_30sec_chunck(curr_tokens):
-        nonlocal index_begin_30sec_chunck
+        nonlocal index_begin_30sec_chunck, has_started
 
-        if is_sot(curr_tokens):
-            res = index_begin_30sec_chunck
-            index_begin_30sec_chunck = len(segment_tokens)-1
+        if is_sot(curr_tokens) and has_started:
+            if trust_whisper_timestamps:
+                res = index_begin_30sec_chunck
+                index_begin_30sec_chunck = len(segment_tokens)-1
+            else:
+                res = len(segment_tokens)-1
             return res
 
+    def align_last_segment(curr_tokens=None):
+        nonlocal segment_tokens, segment_attweights, timestamped_word_segments, has_started, no_speech_prob, chunk_tokens, chunk_tokens_nosot, chunk_logprobs, mfcc, new_mfcc, logit_filters, index_begin_30sec_chunck, last_token_fallback, num_inference_steps
+
+        if mfcc is None:
+            mfcc = new_mfcc
+
+        if debug and trust_whisper_timestamps:
+            logger.debug(f"Add segment {len(timestamped_word_segments)+1} at step {num_inference_steps}:\n\t{tokenizer.decode_with_timestamps(segment_tokens[-1])}")
+
+        tokens = segment_tokens[-1][1:]
+        # When the decoding hit the max limit (number of tokens) -- usually when the language model gets stuck --
+        # then we have to recover the last token from what is send to the decoder
+        unfinished_decoding = len(tokens) and tokens[-1] < tokenizer.timestamp_begin
+        last_token_reliable = True
+
+        if unfinished_decoding:
+            logger.debug(f"WARNING: decoding hit the max limit for segment {segment_tokens} (It usually happens when the language model gets stuck)")
+            # The last token chosen is in the prompt for the new chunk
+            if curr_tokens is not None and curr_tokens[0] == tokenizer.sot_prev:
+                index_sot =  (curr_tokens == tokenizer.sot).nonzero(as_tuple=True)
+                assert len(index_sot) == 1
+                index_sot = index_sot[0].item()
+                assert index_sot > 0 
+                last_token_fallback = curr_tokens[index_sot-1].item()
+                logger.debug(f"         Guessed last token from the prompt for the new chunk: {last_token_fallback}")
+            # Fallback for the last segment, or without prompt: Assume greedy decoding
+            else:
+                last_token_fallback = torch.argmax(chunk_logprobs[-1]).item()
+                last_token_reliable = (temperature == 0)
+                logger.debug(f"         Guess last token using probas (assuming greedy decoding): {last_token_fallback}")
+            if debug:
+                logger.debug(f"WARNING: also add last token: {tokenizer.decode_with_timestamps([last_token_fallback])}")
+
+            tokens.append(last_token_fallback)
+            segment_tokens[-1].append(last_token_fallback)
+            attention_weights = [torch.cat(w, dim=-2) for w in segment_attweights]
+            last_logprobs = chunk_logprobs[-1]
+        else:
+            attention_weights = [torch.cat(w[:-1], dim=-2) for w in segment_attweights]
+            last_logprobs = chunk_logprobs[-2]
+
+        # Check prediction of last token
+        end_token = tokens[-1]
+        if end_token >= tokenizer.timestamp_begin:
+            start_token = tokens[0]
+            assert start_token >= tokenizer.timestamp_begin
+            # If Whisper prediction of the end is obviously wrong, we predict it again (constrained)
+            if end_token <= start_token:
+                new_end_token = last_logprobs[start_token+1:].argmax() + start_token + 1
+                tokens[-1] = new_end_token.item()
+                if debug:
+                    logger.debug(f"Re-estimated end token {tokenizer.decode_with_timestamps([new_end_token])} (was {tokenizer.decode_with_timestamps([end_token])}) to be after start token {tokenizer.decode_with_timestamps([start_token])}")
+
+        ws = perform_word_alignment(
+            tokens,
+            attention_weights,
+            tokenizer,
+            use_space=should_use_space(language),
+            alignment_heads=alignment_heads,
+            remove_punctuation_from_words=remove_punctuation_from_words,
+            refine_whisper_precision_nframes=refine_whisper_precision_nframes,
+            unfinished_decoding=unfinished_decoding,
+            mfcc=mfcc,
+            plot=plot_word_alignment,
+            debug=debug,
+        )
+
+        add_segment = len(ws) > 0
+        if add_segment:
+            timestamped_word_segments.append(ws)
+        else:
+            logger.debug(f"Not added!")
+        reset(add_segment, not is_sot(curr_tokens))
+
+        return add_segment, unfinished_decoding, last_token_reliable
 
     def may_flush_segment(curr_tokens = None):
         """ Add a speech segment with the new tokens if necessary.
             May also remove the last collected segments if filtered out by Whisper (no_speech_prob <= no_speech_threshold)
         """
-        nonlocal segment_tokens, segment_attweights, timestamped_word_segments, has_started, no_speech_prob, chunk_tokens, chunk_tokens_nosot, chunk_logprobs, mfcc, new_mfcc, logit_filters, index_begin_30sec_chunck, last_token_fallback, num_inference_steps
+        nonlocal segment_tokens, segment_attweights, timestamped_word_segments, segment_logprobs, has_started, no_speech_prob, chunk_tokens, chunk_tokens_nosot, chunk_logprobs, mfcc, new_mfcc, logit_filters, index_begin_30sec_chunck, last_token_fallback, num_inference_steps
 
         # Check if a new segment should be added
         unfinished_decoding = False
-        if must_flush_segment(curr_tokens):
-
-            if mfcc is None:
-                mfcc = new_mfcc
-
-            if debug:
-                logger.debug(f"Adding segment {len(timestamped_word_segments)+1} at step {num_inference_steps}:\n\t{tokenizer.decode_with_timestamps(segment_tokens[-1])}")
-
-            tokens = segment_tokens[-1][1:]
-            # When the decoding hit the max limit (number of tokens) -- usually when the language model gets stuck --
-            # then we have to recover the last token from what is send to the decoder
-            unfinished_decoding = len(tokens) and tokens[-1] < tokenizer.timestamp_begin
-            last_token_reliable = True
-
-            if unfinished_decoding:
-                logger.debug(f"WARNING: decoding hit the max limit for segment {segment_tokens} (It usually happens when the language model gets stuck)")
-                # The last token chosen is in the prompt for the new chunk
-                if curr_tokens is not None and curr_tokens[0] == tokenizer.sot_prev:
-                    index_sot =  (curr_tokens == tokenizer.sot).nonzero(as_tuple=True)
-                    assert len(index_sot) == 1
-                    index_sot = index_sot[0].item()
-                    assert index_sot > 0 
-                    last_token_fallback = curr_tokens[index_sot-1].item()
-                    logger.debug(f"         Guessed last token from the prompt for the new chunk: {last_token_fallback}")
-                # Fallback for the last segment, or without prompt: Assume greedy decoding
-                else:
-                    last_token_fallback = torch.argmax(chunk_logprobs[-1]).item()
-                    last_token_reliable = (temperature == 0)
-                    logger.debug(f"         Guess last token using probas (assuming greedy decoding): {last_token_fallback}")
-                if debug:
-                    logger.debug(f"WARNING: also add last token: {tokenizer.decode_with_timestamps([last_token_fallback])}")
-
-                tokens.append(last_token_fallback)
-                segment_tokens[-1].append(last_token_fallback)
-                attention_weights = [torch.cat(w, dim=-2) for w in segment_attweights]
-                last_logprobs = chunk_logprobs[-1]
-            else:
-                attention_weights = [torch.cat(w[:-1], dim=-2) for w in segment_attweights]
-                last_logprobs = chunk_logprobs[-2]
-
-            # Check prediction of last token
-            end_token = tokens[-1]
-            if end_token >= tokenizer.timestamp_begin:
-                start_token = tokens[0]
-                assert start_token >= tokenizer.timestamp_begin
-                # If Whisper prediction of the end is obviously wrong, we predict it again (constrained)
-                if end_token <= start_token:
-                    new_end_token = last_logprobs[start_token+1:].argmax() + start_token + 1
-                    tokens[-1] = new_end_token.item()
-                    if debug:
-                        logger.debug(f"Re-estimated end token {tokenizer.decode_with_timestamps([new_end_token])} (was {tokenizer.decode_with_timestamps([end_token])}) to be after start token {tokenizer.decode_with_timestamps([start_token])}")
-
-            ws = perform_word_alignment(
-                tokens,
-                attention_weights,
-                tokenizer,
-                use_space=should_use_space(language),
-                alignment_heads=alignment_heads,
-                remove_punctuation_from_words=remove_punctuation_from_words,
-                refine_whisper_precision_nframes=refine_whisper_precision_nframes,
-                unfinished_decoding=unfinished_decoding,
-                mfcc=mfcc,
-                plot=plot_word_alignment,
-                debug=debug,
-            )
-
-            add_segment = len(ws) > 0
-            if add_segment:
-                timestamped_word_segments.append(ws)
-            else:
-                logger.debug(f"Not added!")
-            reset(add_segment, not is_sot(curr_tokens))
+        last_token_reliable = True
+        
+        if must_flush_segment(curr_tokens) and trust_whisper_timestamps:
+            _, unfinished_decoding, last_token_reliable = align_last_segment(curr_tokens)
 
         i_start = get_index_begin_30sec_chunck(curr_tokens)
 
         # All segments from previous 30sec chunck have been collected
-        if (i_start is not None and has_started):
+        if i_start is not None:
+
+            if not trust_whisper_timestamps:
+
+                tokens = torch.Tensor(segment_tokens[-1]).int()
+                idx_task = torch.where(tokens==tokenizer.sot_sequence[-1])[0][0].item() # index of <|transcribe|>
+
+                is_special = tokens.ge(tokenizer.eot)
+                # Remove prompt
+                is_special[:idx_task] = True
+                # Keep begin timestamp
+                is_special[idx_task:idx_task+2] = False
+
+                is_timestamp = tokens.ge(tokenizer.timestamp_begin)
+                consecutive = torch.where(is_timestamp[1:] & is_timestamp[:-1])[0]
+                if len(tokens) == max_sample_len and is_timestamp[-1] and not is_timestamp[-2]:
+                    consecutive = torch.cat([consecutive, torch.Tensor([len(tokens)-1]).int()])
+                last_is_timestamp = True
+                if len(consecutive):
+                    # Remove last tokens
+                    is_special[consecutive[-1]+1:] = True 
+                    # Keep end timestamp
+                    is_special[consecutive[-1]] = False
+                elif is_timestamp[-1]:
+                    # Keep end timestamp
+                    is_special[-1] = False
+                else:
+                    last_is_timestamp = False
+
+                # Do remove what has to be removed
+                is_next_achar = ~torch.cat([is_special[1:], torch.Tensor([False]).bool()])
+                for i, weights in enumerate(segment_attweights):
+                    assert len(weights) == len(tokens), f"{len(weights)} attention weights != {len(tokens)}"
+                    # We must remove attention weights used to predict timestamp tokens
+                    segment_attweights[i] = [w for s, w in zip(is_next_achar, weights) if s]
+                tokens_filtered = tokens[~is_special]                        
+                assert len(segment_attweights[0]) == len(tokens_filtered), f"{len(segment_attweights[0])} attention weights != {len(tokens_filtered)} "
+
+                # Replace first and last timestamp
+                orig_start, orig_end = tokens_filtered[1].item(), tokens_filtered[-1].item()
+                tokens_filtered[1] = tokenizer.timestamp_begin # <|0.00|>
+                if last_is_timestamp:
+                    tokens_filtered[-1] = tokenizer.timestamp_begin + N_FRAMES // 2 # <|30.00|>
+                segment_tokens[-1] = tokens_filtered.tolist()
+
+                # Do alignement
+                added, unfinished_decoding, last_token_reliable = align_last_segment()
+
+                # Re-split into segments (if necessary)
+                if added:
+                    if len(consecutive) > 1:
+                        segments_timestamped_concat = timestamped_word_segments[-1]
+                        new_segments_timestamped = []
+                        new_segment_tokens = []
+                        start = idx_task+1
+                        i_word = 0
+                        for i, end in enumerate(consecutive):
+                            new_segment_tokens.append(tokens[start:end+1].tolist())
+                            if debug:
+                                logger.debug(f"Add segment {len(timestamped_word_segments)+i}:\n\t{tokenizer.decode_with_timestamps(new_segment_tokens[-1])}")
+                            total_length = end - start - 1
+                            start = end+1
+                            length = 0
+                            new_segments_timestamped.append([])
+                            while length < total_length:
+                                word = segments_timestamped_concat[i_word]
+                                new_segments_timestamped[-1].append(word)
+                                length += len(word["tokens_indices"])
+                                i_word += 1
+
+                        assert i_word == len(segments_timestamped_concat)
+
+                        segment_tokens = segment_tokens[:-2] + new_segment_tokens + [segment_tokens[-1]]
+                        timestamped_word_segments = timestamped_word_segments[:-1] + new_segments_timestamped
+
+                    else:
+
+                        # Recover start and end token
+                        segment = segment_tokens[-2]
+                        tokenizer.decode_with_timestamps([orig_start,orig_end])
+                        segment[0] = orig_start
+                        if last_is_timestamp:
+                            segment[-1] = orig_end
+
+                        if debug:
+                            logger.debug(f"Add segment {len(timestamped_word_segments)}:\n\t{tokenizer.decode_with_timestamps(segment)}")
+                        
+                    if unfinished_decoding:
+                        timestamped_word_segments[-1][-1]["avg_logprob_reliable"] = last_token_reliable
+
+                reset(False)
 
             mfcc = new_mfcc
+
+            n_segments = len(segment_tokens)-1
 
             # Get word confidence and/or check if previous segments shoud have been skipped
             should_skip = False
@@ -470,16 +580,16 @@ def _transcribe_timestamped_efficient(
                     # don't skip if the logprob is high enough, whatever the no_speech_prob is
                     if logprob_threshold is not None and avg_logprob > logprob_threshold:
                         should_skip = False
-                
+
                 if should_skip:
-                    logger.debug(f"Skipping last {len(segment_tokens)-1-i_start} segments (no_speech_prob {no_speech_prob} > {no_speech_threshold} and avg_logprob {avg_logprob} < {logprob_threshold})")
-                    index_begin_30sec_chunck -= len(segment_tokens)-1-i_start
+                    logger.debug(f"Skipping last {n_segments-i_start} segments (no_speech_prob {no_speech_prob} > {no_speech_threshold} and avg_logprob {avg_logprob} < {logprob_threshold})")
+                    index_begin_30sec_chunck -= n_segments-i_start
                     segment_tokens = segment_tokens[:i_start] + [segment_tokens[-1]]
                     timestamped_word_segments = timestamped_word_segments[:i_start]
                 elif compute_word_confidence:
                     avg_logprob = avg_logprob.item()
                     i_token_end = -1
-                    for i in range(i_start, len(segment_tokens)-1):
+                    for i in range(i_start, n_segments):
                         tokens = segment_tokens[i]
                         i_token_start = i_token_end + 1
                         i_token_end = i_token_start + len(tokens)
@@ -490,11 +600,12 @@ def _transcribe_timestamped_efficient(
                         segment_logprobs.append(logprobs[i_token_start:i_token_end])
                         segment_avglogprobs.append(avg_logprob)
                 else:
-                    for i in range(i_start, len(segment_tokens)-1):
+                    for i in range(i_start, n_segments):
                         segment_logprobs.append(None)
                         segment_avglogprobs.append(None)
+               
             else:
-                for i in range(i_start, len(segment_tokens)-1):
+                for i in range(i_start, n_segments):
                     segment_logprobs.append(None)
                     segment_avglogprobs.append(None)
 
@@ -513,6 +624,8 @@ def _transcribe_timestamped_efficient(
         nonlocal segment_attweights
         # In old version of whisper, output is a single tensor
         assert isinstance(outs, tuple) and len(outs) == 2, "whisper seems to be outdated, please update it (pip install --upgrade --no-deps --force-reinstall git+https://github.com/openai/whisper.git)"
+        if not has_started:
+            return
         w = outs[-1]
         # Only the last attention weights is useful
         if w.shape[-2] > 1:
@@ -547,16 +660,17 @@ def _transcribe_timestamped_efficient(
         
         may_flush_segment(curr_tokens)
 
-        # Keep the last token only
-        segment_tokens[-1].append(curr_tokens[-1].item())
-
         # Get the index of the <|startoftranscript|> tokens (to get proba of silence later)
         if is_sot(curr_tokens):
-            has_started = True
+            has_started = len(curr_tokens) > 1 or not model.is_multilingual
             if no_speech_threshold is not None:
                 sot_index = curr_tokens.tolist().index(tokenizer.sot)
         else:
             sot_index = None
+
+        # Keep the last token only
+        if has_started:
+            segment_tokens[-1].append(curr_tokens[-1].item())
 
         # Accumulate tokens
         if has_started:
@@ -1471,8 +1585,8 @@ def cli():
 
     parser.add_argument('--debug', help="print some debug information for word alignement", default=False, action="store_true")
 
+    parser.add_argument('--recompute_all_timestamps', default=not TRUST_WHISPER_TIMESTAMP_BY_DEFAULT, help="do not trust Whisper timestamps (if possible)", type=str2bool)
     parser.add_argument('--naive', help="use naive approach, doing inference twice (once to get the transcription, once to get word timestamps and confidence scores).", default=False, action="store_true")
-
     class ActionSetAccurate(argparse.Action):
         def __init__(self, option_strings, dest, nargs=None, **kwargs):
             assert nargs is None
@@ -1542,6 +1656,7 @@ def cli():
     naive_approach=args.pop("naive")
     remove_punctuation_from_words=not args.pop("punctuations_with_words")
     compute_word_confidence = args.pop("compute_confidence")
+    trust_whisper_timestamps = not args.pop("recompute_all_timestamps")
 
     for audio_path in audio_files:
 
@@ -1552,6 +1667,7 @@ def cli():
             naive_approach=naive_approach,
             remove_punctuation_from_words=remove_punctuation_from_words,
             compute_word_confidence=compute_word_confidence,
+            trust_whisper_timestamps=trust_whisper_timestamps,
             **args
         )
 
