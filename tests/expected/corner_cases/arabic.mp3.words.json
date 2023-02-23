@@ -278,7 +278,7 @@
       "id": 6,
       "seek": 2300,
       "start": 36.26,
-      "end": 38.46,
+      "end": 38.48,
       "text": " وعن الآذان نسمّه",
       "tokens": [
         4032,
@@ -297,7 +297,7 @@
       "avg_logprob": -0.20691199800861415,
       "compression_ratio": 1.3675213675213675,
       "no_speech_prob": 0.00013251384370960295,
-      "confidence": 0.81,
+      "confidence": 0.783,
       "words": [
         {
           "text": "وعن",
@@ -308,14 +308,14 @@
         {
           "text": "الآذان",
           "start": 36.78,
-          "end": 37.44,
-          "confidence": 0.759
+          "end": 37.72,
+          "confidence": 0.811
         },
         {
           "text": "نسمّه",
-          "start": 37.44,
-          "end": 38.46,
-          "confidence": 0.778
+          "start": 37.72,
+          "end": 38.48,
+          "confidence": 0.676
         }
       ]
     },

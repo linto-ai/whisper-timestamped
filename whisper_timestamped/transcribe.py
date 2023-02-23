@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.9.1"
+__version__ = "1.9.2"
 
 # Whisper and Torch
 import whisper
@@ -1246,6 +1246,7 @@ def split_tokens_on_unicode(tokens: list, tokenizer, remove_punctuation_from_wor
         current_tokens.append(token)
         decoded = tokenizer.decode_with_timestamps(current_tokens)
         if "\ufffd" not in decoded:
+            empty_tokens = [""] * (len(current_tokens)-1)
             punctuation = not isolate_punctuations and (decoded.strip() and decoded.strip() in _punctuation)
             previous_special = len(word_tokens_indices) > 0 and (word_tokens_indices[-1][-1] >= tokenizer.eot)
             if punctuation and not previous_special:
@@ -1254,11 +1255,11 @@ def split_tokens_on_unicode(tokens: list, tokenizer, remove_punctuation_from_wor
                     word_tokens = [[]]
                 if not remove_punctuation_from_words:
                     words[-1] += decoded
-                word_tokens[-1].append(decoded)
+                word_tokens[-1].extend(empty_tokens + [decoded])
                 word_tokens_indices[-1].extend(current_tokens)
             else:
                 words.append(decoded)
-                word_tokens.append([decoded])
+                word_tokens.append(empty_tokens + [decoded])
                 word_tokens_indices.append(current_tokens)
             current_tokens = []
 

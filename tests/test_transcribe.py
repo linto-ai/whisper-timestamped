@@ -659,6 +659,16 @@ class TestZZZPythonImport(TestHelper):
               ])
         )
 
+        # Tokens that could be removed
+        tokens = [50364, 6024, 95, 8848, 7649, 8717, 38251, 11703, 3224, 51864]
+        self.assertEqual(
+            split_tokens_on_spaces(tokens, tokenizer),
+            (['<|0.00|>', 'الآذان', 'نسمّه', '<|30.00|>'],
+                [['<|0.00|>'], ['', ' الآ', 'ذ', 'ان'], [' ن', 'سم', 'ّ', 'ه'], ['<|30.00|>']],
+                [[50364], [6024, 95, 8848, 7649], [8717, 38251, 11703, 3224], [51864]]
+            )
+        )
+
         tokenizer = whisper.tokenizer.get_tokenizer(False, language="en")
 
         # Just a punctuation character
@@ -671,4 +681,3 @@ class TestZZZPythonImport(TestHelper):
                 [[50363], [764], [51813]]
             )
         )
-
