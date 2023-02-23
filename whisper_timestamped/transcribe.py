@@ -31,7 +31,8 @@ import gzip, base64
 from whisper.utils import format_timestamp
 from whisper.audio import N_FRAMES, HOP_LENGTH, SAMPLE_RATE  # 3000, 160, 16000
 AUDIO_SAMPLES_PER_TOKEN = HOP_LENGTH * 2                     # 320
-AUDIO_TIME_PER_TOKEN = AUDIO_SAMPLES_PER_TOKEN / SAMPLE_RATE # 0.02
+AUDIO_TIME_PER_TOKEN = AUDIO_SAMPLES_PER_TOKEN / SAMPLE_RATE # 0.02 (sec)
+SEGMENT_DURATION = N_FRAMES * HOP_LENGTH / SAMPLE_RATE       # 30.0 (sec)
 
 # Logs
 import logging
@@ -220,7 +221,7 @@ def transcribe_timestamped(
     )
 
     if naive_approach:
-        (transcription, words) = _transcribe_timestamped_naive(model, audio, min_word_duration=min_word_duration, **alignment_options, **whisper_options, **other_options)
+        (transcription, words) = _transcribe_timestamped_naive(model, audio, trust_whisper_timestamps=trust_whisper_timestamps, min_word_duration=min_word_duration, **alignment_options, **whisper_options, **other_options)
     else:
         (transcription, words) = _transcribe_timestamped_efficient(model, audio, trust_whisper_timestamps=trust_whisper_timestamps, **alignment_options, **whisper_options, **other_options)
 
@@ -363,9 +364,6 @@ def _transcribe_timestamped_efficient(
 
     def align_last_segment(curr_tokens=None):
         nonlocal segment_tokens, segment_attweights, timestamped_word_segments, has_started, no_speech_prob, chunk_tokens, chunk_tokens_nosot, chunk_logprobs, mfcc, new_mfcc, logit_filters, index_begin_30sec_chunck, last_token_fallback, num_inference_steps
-
-        if mfcc is None:
-            mfcc = new_mfcc
 
         if debug and trust_whisper_timestamps:
             logger.debug(f"Add segment {len(timestamped_word_segments)+1} at step {num_inference_steps}:\n\t{tokenizer.decode_with_timestamps(segment_tokens[-1])}")
@@ -633,8 +631,10 @@ def _transcribe_timestamped_efficient(
         segment_attweights[index].append(w)
 
     def hook_mfcc(layer, ins, outs):
-        nonlocal new_mfcc
+        nonlocal new_mfcc, mfcc
         new_mfcc = ins[0]
+        if mfcc is None:
+            mfcc = new_mfcc
 
     def hook_input_tokens(layer, ins, outs):
         nonlocal segment_tokens, sot_index, chunk_tokens, chunk_tokens_nosot, logit_filters, has_started, language, num_inference_steps
@@ -820,6 +820,7 @@ def _transcribe_timestamped_naive(
     alignment_heads,
     plot_word_alignment,
     word_alignement_most_top_layers,
+    trust_whisper_timestamps,
     min_word_duration,
     **whisper_options,
 ):
@@ -884,7 +885,7 @@ def _transcribe_timestamped_naive(
             end = segment["end"]
             if end < start:
                 # Whisper is wrong on the prediction of segment end
-                end = min(audio_duration, start + 30.0)
+                end = min(audio_duration, start + SEGMENT_DURATION)
 
             start_margin_min = start - refine_whisper_precision_sec
             start_margin_max = start + refine_whisper_precision_sec
@@ -917,16 +918,18 @@ def _transcribe_timestamped_naive(
                     logger.warn(f"Skipping this short segment occuring too close to the end of the audio")
                     continue
 
+            tokens = segment["tokens"]
+
             start_sample = min(round(start * SAMPLE_RATE), audio.shape[-1])
             end_sample = min(round(end * SAMPLE_RATE), audio.shape[-1])
 
+            # Extract features on the audio segment
             sub_audio = audio_minimum_padding(audio[start_sample:end_sample])
 
             mfcc = whisper.log_mel_spectrogram(sub_audio).to(model.device)
             mfcc = whisper.pad_or_trim(mfcc, N_FRAMES)
             mfcc = mfcc.unsqueeze(0)
 
-            tokens = segment["tokens"]
             assert len(tokens), "Got empty transcription!"
             if tokens[0] == tokenizer.timestamp_begin:
                 tokens = tokens[1:]
@@ -1298,7 +1301,8 @@ def perform_word_alignment(
         ymin = 1
 
         if mfcc is not None:
-            for i, (begin, end) in enumerate(zip(begin_times, end_times)):
+            for i, (w, begin, end) in enumerate(zip(words, begin_times, end_times)):
+                plt.text(begin * 2 / AUDIO_TIME_PER_TOKEN, mfcc.shape[-2]*1.05, w, ha="left", va="bottom", color="red")
                 for x in [begin, end,]:
                     plt.axvline(x * 2 / AUDIO_TIME_PER_TOKEN,
                                 color="red", linestyle="dotted")
@@ -1307,8 +1311,8 @@ def perform_word_alignment(
 
         for i, (w, ws, begin, end) in enumerate(zip(words, word_tokens, begin_times, end_times)):
             ymax = ymin + len(ws)
-            plt.text(begin / AUDIO_TIME_PER_TOKEN, num_tokens,
-                     w, ha="left", va="top", color="red")
+            if mfcc is None:
+                plt.text(begin / AUDIO_TIME_PER_TOKEN, num_tokens-0.5, w, ha="left", va="top", color="red")
             for x in [begin, end,]:
                 plt.axvline(x / AUDIO_TIME_PER_TOKEN, color="red", linestyle="dotted",
                             ymin=1-ymin/num_tokens,
