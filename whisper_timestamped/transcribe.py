@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.10.0"
+__version__ = "1.10.1"
 
 # Set some environment variables
 import os
@@ -261,6 +261,7 @@ def _transcribe_timestamped_efficient(
     plot_word_alignment,
     word_alignement_most_top_layers,
     trust_whisper_timestamps,
+    use_timestamps_for_alignment = True, # For trust_whisper_timestamps = False
     # Whisper specific options
     **whisper_options,
 ):
@@ -480,6 +481,10 @@ def _transcribe_timestamped_efficient(
                 else:
                     last_is_timestamp = False
 
+                if use_timestamps_for_alignment and len(consecutive):
+                    # Keep all timestamps
+                    is_special[idx_task+2:consecutive[-1]] = False
+
                 # Do remove what has to be removed
                 is_next_achar = ~torch.cat([is_special[1:], torch.Tensor([False]).bool()])
                 for i, weights in enumerate(segment_attweights):
@@ -517,7 +522,7 @@ def _transcribe_timestamped_efficient(
                             length = 0
                             new_segments_timestamped.append([])
                             while length < total_length:
-                                if i_word == len(segments_timestamped_concat):
+                                if not use_timestamps_for_alignment and i_word == len(segments_timestamped_concat):
                                     # This can happen in the case of "..."
                                     assert total_length == 1 and i == len(consecutive)-1, "Unexpected situation!"
                                     break
@@ -527,7 +532,9 @@ def _transcribe_timestamped_efficient(
                                 length += len(word["tokens_indices"])
                                 i_word += 1
                             # This can be non zero, when a punctuation (alone in a segment) is glued to the previous segment
-                            if length > total_length:
+                            if use_timestamps_for_alignment:
+                                assert length == total_length, f"length={length} != total_length={total_length}"
+                            elif length > total_length:
                                 delta = length - total_length
                                 word = new_segments_timestamped[-1][-1]
                                 word_tokindices = word["tokens_indices"]
