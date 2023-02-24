@@ -227,7 +227,7 @@ def transcribe_timestamped(
 
     # Refine word positions
 
-    ensure_increasing_positions(words, min_duration=min_word_duration)
+    ensure_increasing_positions(words, min_duration=min_word_duration if trust_whisper_timestamps else 0)
     
     whisper_segments = transcription["segments"]
     for word in words:
@@ -508,6 +508,7 @@ def _transcribe_timestamped_efficient(
                         start = idx_task+1
                         i_word = 0
                         for i, end in enumerate(consecutive):
+                            end = end.item()
                             new_segment_tokens.append(tokens[start:end+1].tolist())
                             if debug:
                                 logger.debug(f"Add segment {len(timestamped_word_segments)+i}:\n\t{tokenizer.decode_with_timestamps(new_segment_tokens[-1])}")
@@ -516,10 +517,32 @@ def _transcribe_timestamped_efficient(
                             length = 0
                             new_segments_timestamped.append([])
                             while length < total_length:
+                                if i_word == len(segments_timestamped_concat):
+                                    # This can happen in the case of "..."
+                                    assert total_length == 1 and i == len(consecutive)-1, "Unexpected situation!"
+                                    break
+                                assert i_word < len(segments_timestamped_concat), f"i_word={i_word} < len(segments_timestamped_concat)={len(segments_timestamped_concat)}"
                                 word = segments_timestamped_concat[i_word]
                                 new_segments_timestamped[-1].append(word)
                                 length += len(word["tokens_indices"])
                                 i_word += 1
+                            # This can be non zero, when a punctuation (alone in a segment) is glued to the previous segment
+                            if length > total_length:
+                                delta = length - total_length
+                                word = new_segments_timestamped[-1][-1]
+                                word_tokindices = word["tokens_indices"]
+                                word_tokens = word["tokens"]
+                                word["tokens_indices"] = word_tokindices[:-delta]
+                                word["tokens"] = word_tokens[:-delta]
+                                word["word"] = "".join(word_tokens[:-delta])
+                                i_word -= 1
+                                t = segments_timestamped_concat[i_word]["end"]
+                                segments_timestamped_concat[i_word] = dict(
+                                    text="".join(word_tokens[-delta:]),
+                                    start=t, end=t, # Word without timestamp
+                                    tokens=word_tokens[-delta:],
+                                    tokens_indices=word_tokindices[-delta:],
+                                )
 
                         assert i_word == len(segments_timestamped_concat)
 
@@ -876,49 +899,84 @@ def _transcribe_timestamped_naive(
             )
             j += 1
 
+
+        # When not relying on Whisper timestamps
+        current_tokens = []
+        token_to_idx_segment = []
+
         words = []
         previous_end = 0
         whisper_segments = transcription["segments"]
         for i_segment, segment in enumerate(whisper_segments):
 
-            start = segment["start"]
-            end = segment["end"]
-            if end < start:
-                # Whisper is wrong on the prediction of segment end
-                end = min(audio_duration, start + SEGMENT_DURATION)
+            start = end = tokens = None
+            if trust_whisper_timestamps:
 
-            start_margin_min = start - refine_whisper_precision_sec
-            start_margin_max = start + refine_whisper_precision_sec
-            if start >= audio_duration - min_word_duration or (previous_end >= start_margin_min and previous_end <= start_margin_max):
-                # Make start as accurate as possible (as the decoding will start with timestamp <|0|>)
-                start = previous_end
-            else:
-                # Fallback
-                start = start_margin_min
+                start = segment["start"]
+                end = segment["end"]
+                if end < start:
+                    # Whisper is wrong on the prediction of segment end
+                    end = min(audio_duration, start + SEGMENT_DURATION)
 
-            if start > audio_duration - min_word_duration:
-                # Skip last segment if too short
-                logger.warn(f"Skipping segment outside of audio duration {audio_duration} (original: {segment['start']}-{segment['end']}, new: {start}-XXX)")
-                continue
+                start_margin_min = start - refine_whisper_precision_sec
+                start_margin_max = start + refine_whisper_precision_sec
+                if start >= audio_duration - min_word_duration or (previous_end >= start_margin_min and previous_end <= start_margin_max):
+                    # Make start as accurate as possible (as the decoding will start with timestamp <|0|>)
+                    start = previous_end
+                else:
+                    # Fallback
+                    start = start_margin_min
 
-            end_margin_min = end - refine_whisper_precision_sec
-            end_margin_max = end + refine_whisper_precision_sec
-            if i_segment < len(whisper_segments) - 1:
-                # Try to enforce:
-                #   end + min_word_duration <= next start + refine_whisper_precision_sec
-                end_margin_max2 = whisper_segments[i_segment + 1]["start"] + refine_whisper_precision_sec - min_word_duration
-                if end_margin_max2 >= end_margin_min:
-                    end_margin_max = min(end_margin_max2, end_margin_max)
-            end = min(audio_duration, end_margin_max)
-
-            if end < start + min_word_duration:
-                logger.warn(f"Got super short segment (original from whisper: {segment['start']}-{segment['end']}, new: {start, end})")
-                end = min(audio_duration, start + min_word_duration)
-                if end <= start:
-                    logger.warn(f"Skipping this short segment occuring too close to the end of the audio")
+                if start > audio_duration - min_word_duration:
+                    # Skip last segment if too short
+                    logger.warn(f"Skipping segment outside of audio duration {audio_duration} (original: {segment['start']}-{segment['end']}, new: {start}-XXX)")
                     continue
 
-            tokens = segment["tokens"]
+                end_margin_min = end - refine_whisper_precision_sec
+                end_margin_max = end + refine_whisper_precision_sec
+                if i_segment < len(whisper_segments) - 1:
+                    # Try to enforce:
+                    #   end + min_word_duration <= next start + refine_whisper_precision_sec
+                    end_margin_max2 = whisper_segments[i_segment + 1]["start"] + refine_whisper_precision_sec - min_word_duration
+                    if end_margin_max2 >= end_margin_min:
+                        end_margin_max = min(end_margin_max2, end_margin_max)
+                end = min(audio_duration, end_margin_max)
+
+                if end < start + min_word_duration:
+                    logger.warn(f"Got super short segment (original from whisper: {segment['start']}-{segment['end']}, new: {start, end})")
+                    end = min(audio_duration, start + min_word_duration)
+                    if end <= start:
+                        logger.warn(f"Skipping this short segment occuring too close to the end of the audio")
+                        continue
+
+                tokens = segment["tokens"]
+
+            else:
+
+                seek = segment["seek"]
+                new_tokens = segment["tokens"]
+                # Add timestamps that will be needed after
+                if new_tokens[0] < tokenizer.timestamp_begin:
+                    relative_start = segment["start"] - (seek * HOP_LENGTH / SAMPLE_RATE)
+                    start_token = round(relative_start * SAMPLE_RATE / AUDIO_SAMPLES_PER_TOKEN) + tokenizer.timestamp_begin
+                    new_tokens = [start_token] + new_tokens
+                if new_tokens[-1] < tokenizer.timestamp_begin:
+                    relative_end = segment["end"] - (seek * HOP_LENGTH / SAMPLE_RATE)
+                    end_token = round(relative_end * SAMPLE_RATE / AUDIO_SAMPLES_PER_TOKEN) + tokenizer.timestamp_begin
+                    new_tokens = new_tokens + [end_token]
+
+                current_tokens.extend(new_tokens)
+                token_to_idx_segment.extend([i_segment] * len(new_tokens))
+
+                next_seek = whisper_segments[i_segment+1]["seek"] if i_segment < len(whisper_segments) - 1 else None
+                if seek != next_seek:
+                    start = float(seek * HOP_LENGTH / SAMPLE_RATE)
+                    assert start < audio_duration, f"Got start {start} which is outside of audio duration {audio_duration}"
+                    end = min(start + SEGMENT_DURATION, audio_duration)
+                    tokens = current_tokens
+
+            if start is None:
+                continue
 
             start_sample = min(round(start * SAMPLE_RATE), audio.shape[-1])
             end_sample = min(round(end * SAMPLE_RATE), audio.shape[-1])
@@ -931,7 +989,7 @@ def _transcribe_timestamped_naive(
             mfcc = mfcc.unsqueeze(0)
 
             assert len(tokens), "Got empty transcription!"
-            if tokens[0] == tokenizer.timestamp_begin:
+            if tokens[0] >= tokenizer.timestamp_begin:
                 tokens = tokens[1:]
             while tokens[-1] >= tokenizer.timestamp_begin:
                 tokens = tokens[:-1]
@@ -964,38 +1022,50 @@ def _transcribe_timestamped_naive(
             )
 
             segment_logprobs = []
-            for w in ws:
+            i_token = 1
+            for word in ws:
 
-                w["start"] = round(w["start"] + start, 2)
-                w["end"] = round(w["end"] + start, 2)
+                word["start"] = round(word["start"] + start, 2)
+                word["end"] = round(word["end"] + start, 2)
                 
-                w.update({"idx_segment": i_segment})
+                if trust_whisper_timestamps:
+                    word.update({"idx_segment": i_segment})
+                else:
+                    assert i_token < len(tokens)
+                    assert word["tokens_indices"][0] == tokens[i_token]
+                    word.update({"idx_segment": token_to_idx_segment[i_token]})
+                    i_token += len(word["tokens"])
+                    while i_token < len(tokens) and tokens[i_token] >= tokenizer.timestamp_begin:
+                        i_token += 1
                 
                 if compute_word_confidence:
-                    tokens = w["tokens"]
-                    tokens_indices = w["tokens_indices"]
-                    i_end = i_start + len(tokens)
+                    tok = word["tokens"]
+                    tok_indices = word["tokens_indices"]
+                    i_end = i_start + len(tok)
                     if include_punctuation_in_confidence:
-                        while len(tokens) > 1 and tokens[-1][-1] in _punctuation: # Note: look at the last character of token, to take into account "...", "!!", etc.
-                            tokens = tokens[:-1]
-                            tokens_indices = tokens_indices[:-1]
-                    word_logprobs = [logprobs[:, step, tok] for (step, tok) in zip(range(i_start, i_start + len(tokens_indices)), tokens_indices)]
+                        while len(tok) > 1 and tok[-1][-1] in _punctuation: # Note: look at the last character of token, to take into account "...", "!!", etc.
+                            tok = tok[:-1]
+                            tok_indices = tok_indices[:-1]
+                    word_logprobs = [logprobs[:, step, tok] for (step, tok) in zip(range(i_start, i_start + len(tok_indices)), tok_indices)]
                     i_start = i_end
                     word_logprobs = torch.cat(word_logprobs)
-                    w.update({"confidence": round_confidence(word_logprobs.mean().exp().item())})
+                    word.update({"confidence": round_confidence(word_logprobs.mean().exp().item())})
                     segment_logprobs.append(word_logprobs)
 
-                words.append(w)
+                words.append(word)
 
                 if verbose:
-                    print_timestamped(w)
+                    print_timestamped(word)
 
             if len(segment_logprobs):
                 segment.update({"confidence": round_confidence(torch.cat(segment_logprobs).mean().exp().item())})
 
             if len(ws):
                 previous_end = ws[-1]["end"]
-                
+
+            if not trust_whisper_timestamps:
+                current_tokens = []
+                token_to_idx_segment = []
 
     finally:
 
@@ -1432,8 +1502,8 @@ def ensure_increasing_positions(segments, min_duration=0):
     for seg in segments:
         seg["start"] = round_timestamp(seg["start"])
         seg["end"] = round_timestamp(seg["end"])
-        assert seg["start"] >= previous_end, f"Got segment {seg} coming before the previous finishes ({previous_end})"
-        assert seg["end"] > seg["start"], f"Got segment {seg} with end <= start"
+        assert seg["start"] >= previous_end, f"Got segment {seg} coming before the previous finishes ({previous_end} > {seg['start']})"
+        assert seg["end"] >= seg["start"], f"Got segment {seg} with end < start"
         previous_end = seg["end"]
 
     return segments
