@@ -678,7 +678,7 @@ def _transcribe_timestamped_efficient(
             chunk_prompt = curr_tokens.tolist()
             if language is None:
                 if len(curr_tokens) > 1:
-                    language = tokenizer.decode(curr_tokens[1:2])[2:-2]
+                    language = tokenizer.decode(curr_tokens[-2:-1])[2:-2]
                     whisper_options["language"] = language
 
                     if verbose and not whisper_options["verbose"] and len(curr_tokens) > 1:
