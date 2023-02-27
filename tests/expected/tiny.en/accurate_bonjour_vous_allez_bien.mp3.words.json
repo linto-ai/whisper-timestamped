@@ -69,7 +69,7 @@
       "id": 1,
       "seek": 3000,
       "start": 30.5,
-      "end": 35.42,
+      "end": 35.44,
       "text": " Mohoo, let's go with it again",
       "tokens": [
         50413,
@@ -89,43 +89,43 @@
       "avg_logprob": -0.37818329150860125,
       "compression_ratio": 0.7837837837837838,
       "no_speech_prob": 0.10409244894981384,
-      "confidence": 0.001,
+      "confidence": 0.542,
       "words": [
         {
           "text": "Mohoo,",
           "start": 30.5,
           "end": 34.04,
-          "confidence": 0.004
+          "confidence": 0.276
         },
         {
           "text": "let's",
-          "start": 34.5,
+          "start": 34.46,
           "end": 34.74,
-          "confidence": 0.001
+          "confidence": 0.886
         },
         {
           "text": "go",
           "start": 34.74,
           "end": 34.88,
-          "confidence": 0.0
+          "confidence": 0.944
         },
         {
           "text": "with",
           "start": 34.88,
-          "end": 35.0,
-          "confidence": 0.0
+          "end": 34.98,
+          "confidence": 0.661
         },
         {
           "text": "it",
-          "start": 35.0,
-          "end": 35.12,
-          "confidence": 0.001
+          "start": 34.98,
+          "end": 35.1,
+          "confidence": 0.764
         },
         {
           "text": "again",
-          "start": 35.12,
-          "end": 35.42,
-          "confidence": 0.001
+          "start": 35.1,
+          "end": 35.44,
+          "confidence": 0.996
         }
       ]
     }
