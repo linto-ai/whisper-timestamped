@@ -836,7 +836,7 @@ def _transcribe_timestamped_efficient(
                     word_logprobs = logprobs[i_start:i_start + len(tokens)]
                     logprobs_nopunc.append(word_logprobs)
 
-                timestamped_word["confidence"] = round_confidence(word_logprobs.mean().exp().item())
+                timestamped_word["confidence"] = round_confidence(word_logprobs.mean().exp().item() if len(word_logprobs) else 0.0)
 
             if i_end != len(logprobs):
                 logger.warn(f"Got inconsistent length for segment {i} ({len(logprobs)} != {i_end}). Some words have been ignored.")
@@ -1065,9 +1065,13 @@ def _transcribe_timestamped_naive(
                             tok_indices = tok_indices[:-1]
                     word_logprobs = [logprobs[:, step, tok] for (step, tok) in zip(range(i_start, i_start + len(tok_indices)), tok_indices)]
                     i_start = i_end
-                    word_logprobs = torch.cat(word_logprobs)
-                    word.update({"confidence": round_confidence(word_logprobs.mean().exp().item())})
-                    segment_logprobs.append(word_logprobs)
+                    if len(word_logprobs):
+                        word_logprobs = torch.cat(word_logprobs)
+                        segment_logprobs.append(word_logprobs)
+                        word_confidence = word_logprobs.mean().exp().item()
+                    else:
+                        word_confidence = 0
+                    word.update({"confidence": round_confidence(word_confidence)})
 
                 words.append(word)
 
@@ -1832,6 +1836,10 @@ def cli():
     args["remove_punctuation_from_words"] = not args.pop("punctuations_with_words")
     args["compute_word_confidence"] = args.pop("compute_confidence")
     args["trust_whisper_timestamps"] = not args.pop("recompute_all_timestamps")
+
+    # Quick early check
+    for audio_path in audio_files:
+        assert os.path.isfile(audio_path), f"File {audio_path} does not exist"
 
     for audio_path in audio_files:
 
