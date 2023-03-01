@@ -4,7 +4,7 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.18,
+      "start": 0.16,
       "end": 0.7,
       "text": " Merci beaucoup.",
       "tokens": [
@@ -22,13 +22,13 @@
       "words": [
         {
           "text": "Merci",
-          "start": 0.18,
-          "end": 0.5,
+          "start": 0.16,
+          "end": 0.48,
           "confidence": 0.071
         },
         {
           "text": "beaucoup.",
-          "start": 0.5,
+          "start": 0.48,
           "end": 0.7,
           "confidence": 0.217
         }

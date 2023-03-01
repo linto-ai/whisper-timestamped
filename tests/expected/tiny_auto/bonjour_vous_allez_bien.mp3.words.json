@@ -4,8 +4,8 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.46,
-      "end": 1.9,
+      "start": 0.44,
+      "end": 1.88,
       "text": " Боже улыл!",
       "tokens": [
         5697,
@@ -23,14 +23,14 @@
       "words": [
         {
           "text": "Боже",
-          "start": 0.46,
+          "start": 0.44,
           "end": 0.86,
           "confidence": 0.423
         },
         {
           "text": "улыл!",
           "start": 0.86,
-          "end": 1.9,
+          "end": 1.88,
           "confidence": 0.261
         }
       ]
@@ -38,7 +38,7 @@
     {
       "id": 1,
       "seek": 200,
-      "start": 2.02,
+      "start": 2.0,
       "end": 2.96,
       "text": " Таков уже на меня!",
       "tokens": [
@@ -59,25 +59,25 @@
       "words": [
         {
           "text": "Таков",
-          "start": 2.02,
-          "end": 2.34,
+          "start": 2.0,
+          "end": 2.32,
           "confidence": 0.124
         },
         {
           "text": "уже",
-          "start": 2.34,
+          "start": 2.32,
           "end": 2.46,
           "confidence": 0.235
         },
         {
           "text": "на",
           "start": 2.46,
-          "end": 2.58,
+          "end": 2.56,
           "confidence": 0.077
         },
         {
           "text": "меня!",
-          "start": 2.58,
+          "start": 2.56,
           "end": 2.96,
           "confidence": 0.144
         }
@@ -87,7 +87,7 @@
       "id": 2,
       "seek": 3200,
       "start": 32.98,
-      "end": 33.96,
+      "end": 33.98,
       "text": " Боже улыл!",
       "tokens": [
         5697,
@@ -106,13 +106,13 @@
         {
           "text": "Боже",
           "start": 32.98,
-          "end": 33.42,
+          "end": 33.4,
           "confidence": 0.6
         },
         {
           "text": "улыл!",
-          "start": 33.42,
-          "end": 33.96,
+          "start": 33.4,
+          "end": 33.98,
           "confidence": 0.823
         }
       ]
@@ -120,7 +120,7 @@
     {
       "id": 3,
       "seek": 3400,
-      "start": 34.42,
+      "start": 34.4,
       "end": 35.38,
       "text": " Эскому за меня!",
       "tokens": [
@@ -141,19 +141,19 @@
       "words": [
         {
           "text": "Эскому",
-          "start": 34.42,
-          "end": 34.86,
+          "start": 34.4,
+          "end": 34.84,
           "confidence": 0.276
         },
         {
           "text": "за",
-          "start": 34.86,
-          "end": 35.04,
+          "start": 34.84,
+          "end": 35.02,
           "confidence": 0.088
         },
         {
           "text": "меня!",
-          "start": 35.04,
+          "start": 35.02,
           "end": 35.38,
           "confidence": 0.123
         }

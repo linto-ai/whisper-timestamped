@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.42,
-      "end": 2.38,
+      "end": 2.36,
       "text": " Dima et ce que l'on vole.",
       "tokens": [
         50364,
@@ -36,31 +36,31 @@
         {
           "text": "et",
           "start": 0.84,
-          "end": 1.4,
+          "end": 1.38,
           "confidence": 0.329
         },
         {
           "text": "ce",
-          "start": 1.4,
-          "end": 1.58,
+          "start": 1.38,
+          "end": 1.56,
           "confidence": 0.529
         },
         {
           "text": "que",
-          "start": 1.58,
-          "end": 1.68,
+          "start": 1.56,
+          "end": 1.66,
           "confidence": 0.854
         },
         {
           "text": "l'on",
-          "start": 1.68,
+          "start": 1.66,
           "end": 2.02,
           "confidence": 0.568
         },
         {
           "text": "vole.",
           "start": 2.02,
-          "end": 2.38,
+          "end": 2.36,
           "confidence": 0.269
         }
       ]

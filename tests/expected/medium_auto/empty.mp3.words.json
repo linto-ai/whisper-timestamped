@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.06,
-      "end": 3.0,
+      "end": 2.96,
       "text": " Thanks for watching!",
       "tokens": [
         50364,
@@ -24,19 +24,19 @@
         {
           "text": "Thanks",
           "start": 0.06,
-          "end": 1.48,
+          "end": 1.46,
           "confidence": 0.06
         },
         {
           "text": "for",
-          "start": 1.48,
+          "start": 1.46,
           "end": 2.96,
           "confidence": 0.916
         },
         {
           "text": "watching!",
           "start": 2.96,
-          "end": 3.0,
+          "end": 2.96,
           "confidence": 0.936
         }
       ]

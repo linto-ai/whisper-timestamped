@@ -4,8 +4,8 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 1.0,
-      "end": 2.56,
+      "start": 0.98,
+      "end": 2.54,
       "text": " Hello, my dear.",
       "tokens": [
         2425,
@@ -22,20 +22,20 @@
       "words": [
         {
           "text": "Hello,",
-          "start": 1.0,
+          "start": 0.98,
           "end": 1.8,
           "confidence": 0.419
         },
         {
           "text": "my",
-          "start": 2.06,
-          "end": 2.22,
+          "start": 2.04,
+          "end": 2.2,
           "confidence": 0.108
         },
         {
           "text": "dear.",
-          "start": 2.22,
-          "end": 2.56,
+          "start": 2.2,
+          "end": 2.54,
           "confidence": 0.181
         }
       ]
@@ -43,7 +43,7 @@
     {
       "id": 1,
       "seek": 0,
-      "start": 2.62,
+      "start": 2.6,
       "end": 4.58,
       "text": " No, fine.",
       "tokens": [
@@ -60,13 +60,13 @@
       "words": [
         {
           "text": "No,",
-          "start": 2.62,
-          "end": 4.12,
+          "start": 2.6,
+          "end": 4.16,
           "confidence": 0.355
         },
         {
           "text": "fine.",
-          "start": 4.5,
+          "start": 4.48,
           "end": 4.58,
           "confidence": 0.281
         }
@@ -75,8 +75,8 @@
     {
       "id": 2,
       "seek": 0,
-      "start": 5.5,
-      "end": 6.48,
+      "start": 5.48,
+      "end": 6.46,
       "text": " How are you?",
       "tokens": [
         1012,
@@ -92,20 +92,20 @@
       "words": [
         {
           "text": "How",
-          "start": 5.5,
-          "end": 5.82,
+          "start": 5.48,
+          "end": 5.8,
           "confidence": 0.355
         },
         {
           "text": "are",
-          "start": 5.82,
-          "end": 6.16,
+          "start": 5.8,
+          "end": 6.14,
           "confidence": 0.365
         },
         {
           "text": "you?",
-          "start": 6.16,
-          "end": 6.48,
+          "start": 6.14,
+          "end": 6.46,
           "confidence": 0.957
         }
       ]
@@ -113,7 +113,7 @@
     {
       "id": 3,
       "seek": 0,
-      "start": 6.76,
+      "start": 6.74,
       "end": 7.8,
       "text": " I'm okay.",
       "tokens": [
@@ -130,7 +130,7 @@
       "words": [
         {
           "text": "I'm",
-          "start": 6.76,
+          "start": 6.74,
           "end": 7.1,
           "confidence": 0.811
         },
@@ -146,7 +146,7 @@
       "id": 4,
       "seek": 0,
       "start": 8.38,
-      "end": 9.1,
+      "end": 9.08,
       "text": " Why will we?",
       "tokens": [
         1545,
@@ -163,19 +163,19 @@
         {
           "text": "Why",
           "start": 8.38,
-          "end": 8.66,
+          "end": 8.64,
           "confidence": 0.396
         },
         {
           "text": "will",
-          "start": 8.66,
+          "start": 8.64,
           "end": 8.96,
           "confidence": 0.486
         },
         {
           "text": "we?",
           "start": 8.96,
-          "end": 9.1,
+          "end": 9.08,
           "confidence": 0.293
         }
       ]
@@ -205,12 +205,12 @@
         {
           "text": "I",
           "start": 9.42,
-          "end": 9.54,
+          "end": 9.52,
           "confidence": 0.263
         },
         {
           "text": "said",
-          "start": 9.54,
+          "start": 9.52,
           "end": 9.66,
           "confidence": 0.616
         },
@@ -235,12 +235,12 @@
         {
           "text": "with",
           "start": 10.14,
-          "end": 10.28,
+          "end": 10.26,
           "confidence": 0.985
         },
         {
           "text": "us,",
-          "start": 10.28,
+          "start": 10.26,
           "end": 10.39,
           "confidence": 0.805
         }
@@ -268,12 +268,12 @@
         {
           "text": "but",
           "start": 10.39,
-          "end": 10.78,
+          "end": 10.76,
           "confidence": 0.381
         },
         {
           "text": "she",
-          "start": 10.78,
+          "start": 10.76,
           "end": 10.94,
           "confidence": 0.945
         },
@@ -295,7 +295,7 @@
       "id": 7,
       "seek": 0,
       "start": 12.2,
-      "end": 13.34,
+      "end": 13.32,
       "text": " Oh, she can.",
       "tokens": [
         876,
@@ -325,7 +325,7 @@
         {
           "text": "can.",
           "start": 12.96,
-          "end": 13.34,
+          "end": 13.32,
           "confidence": 0.192
         }
       ]
@@ -333,7 +333,7 @@
     {
       "id": 8,
       "seek": 0,
-      "start": 13.48,
+      "start": 13.46,
       "end": 15.2,
       "text": " There's more to be for long.",
       "tokens": [
@@ -354,25 +354,25 @@
       "words": [
         {
           "text": "There's",
-          "start": 13.48,
-          "end": 14.46,
+          "start": 13.46,
+          "end": 14.44,
           "confidence": 0.476
         },
         {
           "text": "more",
-          "start": 14.46,
+          "start": 14.44,
           "end": 14.56,
           "confidence": 0.805
         },
         {
           "text": "to",
           "start": 14.56,
-          "end": 14.76,
+          "end": 14.74,
           "confidence": 0.421
         },
         {
           "text": "be",
-          "start": 14.76,
+          "start": 14.74,
           "end": 14.8,
           "confidence": 0.94
         },
@@ -418,12 +418,12 @@
         {
           "text": "What",
           "start": 15.38,
-          "end": 15.56,
+          "end": 15.54,
           "confidence": 0.419
         },
         {
           "text": "if",
-          "start": 15.56,
+          "start": 15.54,
           "end": 15.62,
           "confidence": 0.903
         },
@@ -436,12 +436,12 @@
         {
           "text": "can",
           "start": 15.7,
-          "end": 16.0,
+          "end": 15.98,
           "confidence": 0.956
         },
         {
           "text": "stay",
-          "start": 16.0,
+          "start": 15.98,
           "end": 16.14,
           "confidence": 0.944
         },
@@ -454,12 +454,12 @@
         {
           "text": "long",
           "start": 16.26,
-          "end": 16.38,
+          "end": 16.36,
           "confidence": 0.99
         },
         {
           "text": "as",
-          "start": 16.38,
+          "start": 16.36,
           "end": 16.52,
           "confidence": 0.97
         },
@@ -481,7 +481,7 @@
       "id": 10,
       "seek": 0,
       "start": 16.86,
-      "end": 19.14,
+      "end": 19.1,
       "text": " My whole friend will be missed, yeah?",
       "tokens": [
         1222,
@@ -503,18 +503,18 @@
         {
           "text": "My",
           "start": 16.86,
-          "end": 17.36,
+          "end": 17.34,
           "confidence": 0.115
         },
         {
           "text": "whole",
-          "start": 17.36,
-          "end": 17.64,
+          "start": 17.34,
+          "end": 17.62,
           "confidence": 0.156
         },
         {
           "text": "friend",
-          "start": 17.64,
+          "start": 17.62,
           "end": 17.9,
           "confidence": 0.238
         },
@@ -527,19 +527,19 @@
         {
           "text": "be",
           "start": 18.2,
-          "end": 18.4,
+          "end": 18.38,
           "confidence": 0.833
         },
         {
           "text": "missed,",
-          "start": 18.4,
+          "start": 18.38,
           "end": 18.8,
           "confidence": 0.306
         },
         {
           "text": "yeah?",
-          "start": 19.1,
-          "end": 19.14,
+          "start": 19.08,
+          "end": 19.1,
           "confidence": 0.517
         }
       ]
@@ -572,7 +572,7 @@
         },
         {
           "text": "okay.",
-          "start": 20.08,
+          "start": 20.06,
           "end": 20.5,
           "confidence": 0.08
         }

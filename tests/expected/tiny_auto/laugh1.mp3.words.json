@@ -4,8 +4,8 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.06,
-      "end": 2.38,
+      "start": 0.04,
+      "end": 2.3,
       "text": " You can't do it, you can't do it.",
       "tokens": [
         50364,
@@ -31,13 +31,13 @@
       "words": [
         {
           "text": "You",
-          "start": 0.06,
-          "end": 0.54,
+          "start": 0.04,
+          "end": 0.52,
           "confidence": 0.071
         },
         {
           "text": "can't",
-          "start": 0.54,
+          "start": 0.52,
           "end": 0.78,
           "confidence": 0.295
         },
@@ -50,31 +50,31 @@
         {
           "text": "it,",
           "start": 1.04,
-          "end": 1.22,
+          "end": 1.2,
           "confidence": 0.34
         },
         {
           "text": "you",
           "start": 1.26,
-          "end": 1.52,
+          "end": 1.5,
           "confidence": 0.191
         },
         {
           "text": "can't",
-          "start": 1.52,
-          "end": 1.82,
+          "start": 1.5,
+          "end": 1.8,
           "confidence": 0.87
         },
         {
           "text": "do",
-          "start": 1.82,
-          "end": 2.34,
+          "start": 1.8,
+          "end": 2.3,
           "confidence": 0.314
         },
         {
           "text": "it.",
-          "start": 2.34,
-          "end": 2.38,
+          "start": 2.3,
+          "end": 2.3,
           "confidence": 0.893
         }
       ]

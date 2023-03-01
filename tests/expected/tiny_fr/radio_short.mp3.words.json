@@ -4,8 +4,8 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.46,
-      "end": 1.48,
+      "start": 0.44,
+      "end": 1.46,
       "text": "...",
       "tokens": [
         50364,
@@ -20,8 +20,8 @@
       "words": [
         {
           "text": "...",
-          "start": 0.46,
-          "end": 1.48,
+          "start": 0.44,
+          "end": 1.46,
           "confidence": 0.223
         }
       ]
@@ -29,8 +29,8 @@
     {
       "id": 1,
       "seek": 6000,
-      "start": 60.02,
-      "end": 69.44,
+      "start": 60.0,
+      "end": 69.42,
       "text": "...",
       "tokens": [
         50364,
@@ -45,8 +45,8 @@
       "words": [
         {
           "text": "...",
-          "start": 60.02,
-          "end": 69.44,
+          "start": 60.0,
+          "end": 69.42,
           "confidence": 0.467
         }
       ]
@@ -54,7 +54,7 @@
     {
       "id": 2,
       "seek": 9000,
-      "start": 90.02,
+      "start": 90.0,
       "end": 90.52,
       "text": "...",
       "tokens": [
@@ -68,7 +68,7 @@
       "words": [
         {
           "text": "...",
-          "start": 90.02,
+          "start": 90.0,
           "end": 90.52,
           "confidence": 0.841
         }
@@ -77,7 +77,7 @@
     {
       "id": 3,
       "seek": 10500,
-      "start": 106.0,
+      "start": 105.98,
       "end": 117.7,
       "text": "...",
       "tokens": [
@@ -93,7 +93,7 @@
       "words": [
         {
           "text": "...",
-          "start": 106.0,
+          "start": 105.98,
           "end": 117.7,
           "confidence": 0.763
         }
