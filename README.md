@@ -140,10 +140,12 @@ whisper_timestamped audio1.flac audio2.mp3 audio3.wav --model tiny --output_dir 
 
 Note that you can use option `plot_word_alignment` of python function `whisper_timestamped.transcribe()`, or option `--plot` of `whisper_timestamped` CLI in order to see the word alignment for each segment.
 
-The upper plot represents the transformation of cross-attention weights that is used for DTW.
-The lower plot is a MFCC representation of the input signal (features used by Whisper).
-
 ![Example alignement](figs/example_alignement_plot.png)
+
+* The upper plot represents the transformation of cross-attention weights that is used for the alignement with Dynamic Time Warping.
+The abscissa represents the time and the ordinate represents the predicted tokens; with special timestamp tokens at first and at last, and then (sub)words and punctuations in the middle.
+* The lower plot is a MFCC representation of the input signal (features used by Whisper, based on Mel-frequency cepstrum).
+* The vertical dotted red lines show where the word boundaries are found (with punctuation marks "glued" with the previous word).
 
 ### Example output
 
