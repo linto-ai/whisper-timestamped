@@ -139,7 +139,8 @@ whisper_timestamped audio1.flac audio2.mp3 audio3.wav --model tiny --output_dir 
 ### Plot of word alignment
 
 Note that you can use option `plot_word_alignment` of python function `whisper_timestamped.transcribe()`, or option `--plot` of `whisper_timestamped` CLI in order to see the word alignment for each segment.
-The upper plot represents the transformation of cross-attention weights that is used for DTW;
+
+The upper plot represents the transformation of cross-attention weights that is used for DTW.
 The lower plot is a MFCC representation of the input signal (features used by Whisper).
 
 ![Example alignement](figs/example_alignement_plot.png)
