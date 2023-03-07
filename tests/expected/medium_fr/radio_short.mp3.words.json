@@ -1110,18 +1110,18 @@
         {
           "text": "y",
           "start": 77.18,
-          "end": 77.18,
+          "end": 77.2,
           "confidence": 0.994
         },
         {
           "text": "a",
-          "start": 77.18,
-          "end": 77.2,
+          "start": 77.2,
+          "end": 77.22,
           "confidence": 0.986
         },
         {
           "text": "une",
-          "start": 77.2,
+          "start": 77.22,
           "end": 77.28,
           "confidence": 0.996
         },
@@ -1472,7 +1472,7 @@
       "id": 9,
       "seek": 8300,
       "start": 89.02,
-      "end": 92.14,
+      "end": 92.28,
       "text": " Restez avec nous Marine Le Pen dans moins de 3 minutes, à tout de suite.",
       "tokens": [
         13094,
@@ -1587,7 +1587,7 @@
         {
           "text": "suite.",
           "start": 92.14,
-          "end": 92.14,
+          "end": 92.28,
           "confidence": 0.999
         }
       ]
@@ -1595,7 +1595,7 @@
     {
       "id": 10,
       "seek": 9200,
-      "start": 92.14,
+      "start": 92.28,
       "end": 107.14,
       "text": " Musique",
       "tokens": [
@@ -1610,7 +1610,7 @@
       "words": [
         {
           "text": "Musique",
-          "start": 92.14,
+          "start": 92.28,
           "end": 107.14,
           "confidence": 0.328
         }

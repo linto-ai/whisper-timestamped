@@ -1,12 +1,12 @@
 {
-  "text": " You can't do it, you can't do it.",
+  "text": " You can't do it, you can't do",
   "segments": [
     {
       "id": 0,
       "seek": 0,
       "start": 0.04,
       "end": 2.3,
-      "text": " You can't do it, you can't do it.",
+      "text": " You can't do it, you can't do",
       "tokens": [
         50364,
         509,
@@ -70,12 +70,6 @@
           "start": 1.8,
           "end": 2.3,
           "confidence": 0.314
-        },
-        {
-          "text": "it.",
-          "start": 2.3,
-          "end": 2.3,
-          "confidence": 0.893
         }
       ]
     }

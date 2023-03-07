@@ -1287,24 +1287,24 @@
         {
           "text": "thought",
           "start": 62.82,
-          "end": 62.82,
+          "end": 62.84,
           "confidence": 0.965
         },
         {
           "text": "we'd,",
-          "start": 62.82,
-          "end": 62.82,
+          "start": 62.84,
+          "end": 62.86,
           "confidence": 0.65
         },
         {
           "text": "you",
-          "start": 62.82,
-          "end": 62.82,
+          "start": 62.86,
+          "end": 62.88,
           "confidence": 0.42
         },
         {
           "text": "could",
-          "start": 62.82,
+          "start": 62.88,
           "end": 63.5,
           "confidence": 0.775
         },
@@ -1435,7 +1435,7 @@
       "id": 20,
       "seek": 5400,
       "start": 72.4,
-      "end": 72.4,
+      "end": 72.46,
       "text": " Okay, no problem.",
       "tokens": [
         1033,
@@ -1453,19 +1453,19 @@
         {
           "text": "Okay,",
           "start": 72.4,
-          "end": 72.4,
+          "end": 72.42,
           "confidence": 0.546
         },
         {
           "text": "no",
-          "start": 72.4,
-          "end": 72.4,
+          "start": 72.42,
+          "end": 72.44,
           "confidence": 0.913
         },
         {
           "text": "problem.",
-          "start": 72.4,
-          "end": 72.4,
+          "start": 72.44,
+          "end": 72.46,
           "confidence": 0.965
         }
       ]
@@ -1552,12 +1552,12 @@
         {
           "text": "No",
           "start": 76.24,
-          "end": 76.24,
+          "end": 76.26,
           "confidence": 0.463
         },
         {
           "text": "problem.",
-          "start": 76.24,
+          "start": 76.26,
           "end": 76.51,
           "confidence": 0.922
         }
@@ -1655,7 +1655,7 @@
       "id": 25,
       "seek": 7800,
       "start": 78.24,
-      "end": 78.24,
+      "end": 78.26,
       "text": " Bye.",
       "tokens": [
         50364,
@@ -1672,7 +1672,7 @@
         {
           "text": "Bye.",
           "start": 78.24,
-          "end": 78.24,
+          "end": 78.26,
           "confidence": 0.047
         }
       ]

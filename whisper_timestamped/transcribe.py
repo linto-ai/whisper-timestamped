@@ -56,7 +56,7 @@ def transcribe_timestamped(
     compute_word_confidence=True,
     include_punctuation_in_confidence=False,
     refine_whisper_precision=0.5,
-    min_word_duration=0.0, # Was 0.04 before 1.11
+    min_word_duration=0.02, # Was 0.04 before 1.11
     plot_word_alignment=False,
     word_alignement_most_top_layers=None, # Was 6 before 1.9
 
@@ -226,14 +226,22 @@ def transcribe_timestamped(
     )
 
     if naive_approach:
-        (transcription, words) = _transcribe_timestamped_naive(model, audio, trust_whisper_timestamps=trust_whisper_timestamps, min_word_duration=min_word_duration, **alignment_options, **whisper_options, **other_options)
+        (transcription, words) = _transcribe_timestamped_naive(model, audio,
+                                                               min_word_duration=0.0, # Was 0.04 before 1.11
+                                                               trust_whisper_timestamps=trust_whisper_timestamps,
+                                                               **alignment_options, **whisper_options, **other_options)
     else:
-        (transcription, words) = _transcribe_timestamped_efficient(model, audio, trust_whisper_timestamps=trust_whisper_timestamps, **alignment_options, **whisper_options, **other_options)
+        (transcription, words) = _transcribe_timestamped_efficient(model, audio,
+                                                                   trust_whisper_timestamps=trust_whisper_timestamps,
+                                                                   **alignment_options, **whisper_options, **other_options)
+
+    # Remove words with empty duration happening at the end of segments, to remove some hallucinations
+    transcription, words = remove_last_null_duration_words(transcription, words)
 
     # Refine word positions
-
     ensure_increasing_positions(words, min_duration=min_word_duration if trust_whisper_timestamps else 0)
     
+    # Combine words and segments
     whisper_segments = transcription["segments"]
     for word in words:
         if verbose and not naive_approach:
@@ -1579,6 +1587,63 @@ def split_tokens_on_spaces(tokens: torch.Tensor, tokenizer, remove_punctuation_f
             word_tokens_indices[-1].extend(subword_tokens_indices)
 
     return words, word_tokens, word_tokens_indices
+
+
+def remove_last_null_duration_words(transcription, words):
+    """
+    Remove words with null duration happening at the end of a chunk (probable Whisper hallucinations)
+    """
+    # First group segments by audio chunk
+    segments_groups = {}
+    seek = None
+    current_chunk = -1
+    for i, segment in enumerate(transcription["segments"]):
+        if segment["seek"] != seek:
+            current_chunk += 1
+            seek = segment["seek"]
+        segments_groups[i] = current_chunk
+
+    # Remove words with null duration happening at the end of a chunk
+    current_chunk = -1
+    is_last_empty = False
+    recompute_text = False
+    to_remove = []
+    for i, word in enumerate(words[::-1]): # Reverse order
+        i = len(words) - i - 1
+        empty = (word["start"] == word["end"])
+        idx_segment = word["idx_segment"]
+        group = segments_groups[idx_segment]
+        if current_chunk != group:
+            is_last_empty = empty
+            current_chunk = group
+        elif not empty:
+            is_last_empty = False
+        if is_last_empty:
+            # Remove word
+            to_remove.append(i)
+            # Shorten text of segment
+            full_word = "".join(word["tokens"])
+            segment = transcription["segments"][idx_segment]
+            text = segment["text"]
+            assert text.endswith(full_word)
+            text = text[:-len(full_word)]
+            if text:
+                segment["text"] = text
+            else:
+                # Remove segment with no more words
+                transcription["segments"].pop(idx_segment)
+                for j in range(i+1, len(words)):
+                    words[j]["idx_segment"] -= 1
+            recompute_text = True
+
+    for i in to_remove:
+        words.pop(i)
+
+    if recompute_text:
+        transcription["text"] = "".join([s["text"] for s in transcription["segments"]])
+
+    return transcription, words
+
 
 def ensure_increasing_positions(segments, min_duration=0):
     """

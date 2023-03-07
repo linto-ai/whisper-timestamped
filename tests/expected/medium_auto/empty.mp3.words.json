@@ -1,12 +1,12 @@
 {
-  "text": " Thanks for watching!",
+  "text": " Thanks for",
   "segments": [
     {
       "id": 0,
       "seek": 0,
       "start": 0.06,
       "end": 2.96,
-      "text": " Thanks for watching!",
+      "text": " Thanks for",
       "tokens": [
         50364,
         2561,
@@ -32,12 +32,6 @@
           "start": 1.46,
           "end": 2.96,
           "confidence": 0.916
-        },
-        {
-          "text": "watching!",
-          "start": 2.96,
-          "end": 2.96,
-          "confidence": 0.936
         }
       ]
     }

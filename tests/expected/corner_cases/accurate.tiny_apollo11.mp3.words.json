@@ -1,5 +1,5 @@
 {
-  "text": " I'm all around my business and we got a recommendation for you on your door to the VA We have 18A's Okay, okay, I think I'll just get him or if they like just want to go on the Yeah, now what you want is on having a B1 And you just get the other one on my I Yeah, we're We want to hear that We want to hear that So I guess I'm working on my business Yeah",
+  "text": " I'm all around my business and we got a recommendation for you on your door to the VA We have 18A's Okay, okay, I think I'll just get him or if they like just want to go on the Yeah, now what you want is on having a B1 And you just get the other one on my I Yeah, we're We want to hear that We want to hear that So I guess I'm working on business Yeah",
   "segments": [
     {
       "id": 0,
@@ -637,12 +637,12 @@
         {
           "text": "to",
           "start": 67.38,
-          "end": 67.38,
+          "end": 67.4,
           "confidence": 0.64
         },
         {
           "text": "hear",
-          "start": 67.38,
+          "start": 67.4,
           "end": 67.72,
           "confidence": 0.858
         },
@@ -659,7 +659,7 @@
       "seek": 5196,
       "start": 68.32,
       "end": 71.44,
-      "text": " So I guess I'm working on my",
+      "text": " So I guess I'm working on",
       "tokens": [
         407,
         286,
@@ -703,20 +703,14 @@
         {
           "text": "working",
           "start": 71.3,
-          "end": 71.3,
+          "end": 71.32,
           "confidence": 0.249
         },
         {
           "text": "on",
-          "start": 71.3,
+          "start": 71.32,
           "end": 71.44,
           "confidence": 0.294
-        },
-        {
-          "text": "my",
-          "start": 71.44,
-          "end": 71.44,
-          "confidence": 0.171
         }
       ]
     },

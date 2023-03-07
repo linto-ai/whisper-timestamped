@@ -150,12 +150,12 @@
         {
           "text": "I'm",
           "start": 7.5,
-          "end": 7.5,
+          "end": 7.52,
           "confidence": 0.756
         },
         {
           "text": "okay.",
-          "start": 7.5,
+          "start": 7.52,
           "end": 8.16,
           "confidence": 0.533
         },
@@ -209,12 +209,12 @@
         {
           "text": "I",
           "start": 9.5,
-          "end": 9.5,
+          "end": 9.52,
           "confidence": 0.896
         },
         {
           "text": "said",
-          "start": 9.5,
+          "start": 9.52,
           "end": 9.64,
           "confidence": 0.857
         },
@@ -498,12 +498,12 @@
         {
           "text": "I",
           "start": 18.0,
-          "end": 18.0,
+          "end": 18.02,
           "confidence": 0.53
         },
         {
           "text": "really",
-          "start": 18.0,
+          "start": 18.02,
           "end": 18.4,
           "confidence": 0.758
         },

@@ -948,12 +948,12 @@
         {
           "text": "ト",
           "start": 24.5,
-          "end": 24.5,
+          "end": 24.52,
           "confidence": 0.605
         },
         {
           "text": "ウ",
-          "start": 24.5,
+          "start": 24.52,
           "end": 24.6,
           "confidence": 0.188
         },
@@ -1109,12 +1109,12 @@
         {
           "text": "ス",
           "start": 29.2,
-          "end": 29.2,
+          "end": 29.22,
           "confidence": 0.996
         },
         {
           "text": "タ",
-          "start": 29.2,
+          "start": 29.22,
           "end": 29.34,
           "confidence": 0.994
         },

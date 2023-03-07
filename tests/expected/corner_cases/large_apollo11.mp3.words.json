@@ -907,7 +907,7 @@
       "id": 10,
       "seek": 4300,
       "start": 56.42,
-      "end": 57.84,
+      "end": 57.86,
       "text": " We won't hang me on the cover.",
       "tokens": [
         492,
@@ -965,7 +965,7 @@
         {
           "text": "cover.",
           "start": 57.84,
-          "end": 57.84,
+          "end": 57.86,
           "confidence": 0.442
         }
       ]

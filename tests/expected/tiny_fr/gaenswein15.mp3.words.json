@@ -1,12 +1,12 @@
 {
-  "text": " Leur de l'Ontario est de la",
+  "text": " Leur de l'Ontario est",
   "segments": [
     {
       "id": 0,
       "seek": 0,
       "start": 0.92,
       "end": 11.2,
-      "text": " Leur de l'Ontario est de la",
+      "text": " Leur de l'Ontario est",
       "tokens": [
         50364,
         1456,
@@ -37,12 +37,12 @@
         {
           "text": "de",
           "start": 1.56,
-          "end": 1.56,
+          "end": 1.58,
           "confidence": 0.123
         },
         {
           "text": "l'Ontario",
-          "start": 1.56,
+          "start": 1.58,
           "end": 9.46,
           "confidence": 0.289
         },
@@ -51,18 +51,6 @@
           "start": 9.46,
           "end": 11.2,
           "confidence": 0.123
-        },
-        {
-          "text": "de",
-          "start": 11.2,
-          "end": 11.2,
-          "confidence": 0.067
-        },
-        {
-          "text": "la",
-          "start": 11.2,
-          "end": 11.2,
-          "confidence": 0.132
         }
       ]
     }

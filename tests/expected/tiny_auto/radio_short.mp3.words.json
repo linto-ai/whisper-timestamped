@@ -1,5 +1,5 @@
 {
-  "text": " What are you telling me, guys? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, guys? What are you telling me, guys? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude?",
+  "text": " What are you telling me, guys? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, guys? What are you telling me, guys? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude?",
   "segments": [
     {
       "id": 0,
@@ -125,7 +125,7 @@
       "id": 2,
       "seek": 0,
       "start": 7.57,
-      "end": 9.28,
+      "end": 9.36,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -158,25 +158,25 @@
         {
           "text": "you",
           "start": 9.28,
-          "end": 9.28,
+          "end": 9.3,
           "confidence": 0.994
         },
         {
           "text": "telling",
-          "start": 9.28,
-          "end": 9.28,
+          "start": 9.3,
+          "end": 9.32,
           "confidence": 0.848
         },
         {
           "text": "me,",
-          "start": 9.28,
-          "end": 9.28,
+          "start": 9.32,
+          "end": 9.34,
           "confidence": 0.95
         },
         {
           "text": "dude?",
-          "start": 9.28,
-          "end": 9.28,
+          "start": 9.34,
+          "end": 9.36,
           "confidence": 0.856
         }
       ]
@@ -185,7 +185,7 @@
       "id": 3,
       "seek": 0,
       "start": 10.46,
-      "end": 12.48,
+      "end": 12.5,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -224,19 +224,19 @@
         {
           "text": "telling",
           "start": 11.66,
-          "end": 11.66,
+          "end": 11.68,
           "confidence": 0.811
         },
         {
           "text": "me,",
-          "start": 11.66,
+          "start": 11.68,
           "end": 12.48,
           "confidence": 0.956
         },
         {
           "text": "dude?",
           "start": 12.48,
-          "end": 12.48,
+          "end": 12.5,
           "confidence": 0.837
         }
       ]
@@ -244,8 +244,8 @@
     {
       "id": 4,
       "seek": 0,
-      "start": 12.48,
-      "end": 13.52,
+      "start": 12.5,
+      "end": 13.54,
       "text": " What are you telling me, guys?",
       "tokens": [
         708,
@@ -265,38 +265,38 @@
       "words": [
         {
           "text": "What",
-          "start": 12.48,
-          "end": 12.48,
+          "start": 12.5,
+          "end": 12.52,
           "confidence": 0.505
         },
         {
           "text": "are",
-          "start": 12.48,
-          "end": 12.5,
+          "start": 12.52,
+          "end": 12.54,
           "confidence": 0.844
         },
         {
           "text": "you",
-          "start": 12.5,
+          "start": 12.54,
           "end": 12.64,
           "confidence": 0.994
         },
         {
           "text": "telling",
           "start": 12.64,
-          "end": 12.64,
+          "end": 12.66,
           "confidence": 0.845
         },
         {
           "text": "me,",
-          "start": 12.64,
+          "start": 12.66,
           "end": 13.04,
           "confidence": 0.961
         },
         {
           "text": "guys?",
           "start": 13.52,
-          "end": 13.52,
+          "end": 13.54,
           "confidence": 0.564
         }
       ]
@@ -305,7 +305,7 @@
       "id": 5,
       "seek": 0,
       "start": 16.48,
-      "end": 17.7,
+      "end": 17.78,
       "text": " What are you telling me, guys?",
       "tokens": [
         708,
@@ -338,25 +338,25 @@
         {
           "text": "you",
           "start": 17.7,
-          "end": 17.7,
+          "end": 17.72,
           "confidence": 0.996
         },
         {
           "text": "telling",
-          "start": 17.7,
-          "end": 17.7,
+          "start": 17.72,
+          "end": 17.74,
           "confidence": 0.935
         },
         {
           "text": "me,",
-          "start": 17.7,
-          "end": 17.7,
+          "start": 17.74,
+          "end": 17.76,
           "confidence": 0.895
         },
         {
           "text": "guys?",
-          "start": 17.7,
-          "end": 17.7,
+          "start": 17.76,
+          "end": 17.78,
           "confidence": 0.969
         }
       ]
@@ -365,7 +365,7 @@
       "id": 6,
       "seek": 0,
       "start": 20.5,
-      "end": 22.94,
+      "end": 22.96,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -416,7 +416,7 @@
         {
           "text": "dude?",
           "start": 22.94,
-          "end": 22.94,
+          "end": 22.96,
           "confidence": 0.967
         }
       ]
@@ -424,8 +424,8 @@
     {
       "id": 7,
       "seek": 0,
-      "start": 22.94,
-      "end": 22.98,
+      "start": 22.96,
+      "end": 23.08,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -445,38 +445,38 @@
       "words": [
         {
           "text": "What",
-          "start": 22.94,
-          "end": 22.94,
+          "start": 22.96,
+          "end": 22.98,
           "confidence": 0.538
         },
         {
           "text": "are",
-          "start": 22.94,
-          "end": 22.94,
+          "start": 22.98,
+          "end": 23.0,
           "confidence": 0.89
         },
         {
           "text": "you",
-          "start": 22.94,
-          "end": 22.94,
+          "start": 23.0,
+          "end": 23.02,
           "confidence": 0.996
         },
         {
           "text": "telling",
-          "start": 22.94,
-          "end": 22.94,
+          "start": 23.02,
+          "end": 23.04,
           "confidence": 0.883
         },
         {
           "text": "me,",
-          "start": 22.94,
-          "end": 22.94,
+          "start": 23.04,
+          "end": 23.06,
           "confidence": 0.975
         },
         {
           "text": "dude?",
-          "start": 22.94,
-          "end": 22.98,
+          "start": 23.06,
+          "end": 23.08,
           "confidence": 0.955
         }
       ]
@@ -485,7 +485,7 @@
       "id": 8,
       "seek": 2600,
       "start": 26.56,
-      "end": 28.64,
+      "end": 28.66,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -524,19 +524,19 @@
         {
           "text": "telling",
           "start": 28.6,
-          "end": 28.6,
+          "end": 28.62,
           "confidence": 0.538
         },
         {
           "text": "me,",
-          "start": 28.6,
-          "end": 28.6,
+          "start": 28.62,
+          "end": 28.64,
           "confidence": 0.926
         },
         {
           "text": "dude?",
           "start": 28.64,
-          "end": 28.64,
+          "end": 28.66,
           "confidence": 0.683
         }
       ]
@@ -566,24 +566,24 @@
         {
           "text": "What",
           "start": 29.54,
-          "end": 29.54,
+          "end": 29.56,
           "confidence": 0.193
         },
         {
           "text": "are",
-          "start": 29.54,
+          "start": 29.56,
           "end": 31.14,
           "confidence": 0.532
         },
         {
           "text": "you",
           "start": 31.14,
-          "end": 31.14,
+          "end": 31.16,
           "confidence": 0.966
         },
         {
           "text": "telling",
-          "start": 31.14,
+          "start": 31.16,
           "end": 31.44,
           "confidence": 0.589
         },
@@ -632,12 +632,12 @@
         {
           "text": "are",
           "start": 32.28,
-          "end": 32.28,
+          "end": 32.3,
           "confidence": 0.593
         },
         {
           "text": "you",
-          "start": 32.28,
+          "start": 32.3,
           "end": 32.42,
           "confidence": 0.972
         },
@@ -650,12 +650,12 @@
         {
           "text": "me,",
           "start": 32.44,
-          "end": 32.44,
+          "end": 32.46,
           "confidence": 0.893
         },
         {
           "text": "dude?",
-          "start": 32.44,
+          "start": 32.46,
           "end": 32.68,
           "confidence": 0.849
         }
@@ -665,7 +665,7 @@
       "id": 11,
       "seek": 2600,
       "start": 33.5,
-      "end": 35.46,
+      "end": 35.48,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -704,19 +704,19 @@
         {
           "text": "telling",
           "start": 34.94,
-          "end": 34.94,
+          "end": 34.96,
           "confidence": 0.635
         },
         {
           "text": "me,",
-          "start": 34.94,
+          "start": 34.96,
           "end": 35.24,
           "confidence": 0.9
         },
         {
           "text": "dude?",
           "start": 35.46,
-          "end": 35.46,
+          "end": 35.48,
           "confidence": 0.88
         }
       ]
@@ -752,12 +752,12 @@
         {
           "text": "are",
           "start": 36.5,
-          "end": 36.5,
+          "end": 36.52,
           "confidence": 0.62
         },
         {
           "text": "you",
-          "start": 36.5,
+          "start": 36.52,
           "end": 37.3,
           "confidence": 0.973
         },
@@ -806,36 +806,36 @@
         {
           "text": "What",
           "start": 38.48,
-          "end": 38.48,
+          "end": 38.5,
           "confidence": 0.556
         },
         {
           "text": "are",
-          "start": 38.48,
-          "end": 38.48,
+          "start": 38.5,
+          "end": 38.52,
           "confidence": 0.674
         },
         {
           "text": "you",
-          "start": 38.48,
-          "end": 38.48,
+          "start": 38.52,
+          "end": 38.54,
           "confidence": 0.978
         },
         {
           "text": "telling",
-          "start": 38.48,
-          "end": 38.48,
+          "start": 38.54,
+          "end": 38.56,
           "confidence": 0.753
         },
         {
           "text": "me,",
-          "start": 38.48,
-          "end": 38.48,
+          "start": 38.56,
+          "end": 38.58,
           "confidence": 0.936
         },
         {
           "text": "dude?",
-          "start": 38.48,
+          "start": 38.58,
           "end": 38.68,
           "confidence": 0.922
         }
@@ -845,7 +845,7 @@
       "id": 14,
       "seek": 2600,
       "start": 39.5,
-      "end": 40.88,
+      "end": 40.9,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -872,31 +872,31 @@
         {
           "text": "are",
           "start": 40.2,
-          "end": 40.2,
+          "end": 40.22,
           "confidence": 0.737
         },
         {
           "text": "you",
-          "start": 40.2,
+          "start": 40.22,
           "end": 40.36,
           "confidence": 0.982
         },
         {
           "text": "telling",
           "start": 40.36,
-          "end": 40.36,
+          "end": 40.38,
           "confidence": 0.786
         },
         {
           "text": "me,",
-          "start": 40.36,
-          "end": 40.36,
+          "start": 40.38,
+          "end": 40.4,
           "confidence": 0.942
         },
         {
           "text": "dude?",
           "start": 40.88,
-          "end": 40.88,
+          "end": 40.9,
           "confidence": 0.936
         }
       ]
@@ -905,7 +905,7 @@
       "id": 15,
       "seek": 2600,
       "start": 41.5,
-      "end": 43.08,
+      "end": 43.1,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -932,12 +932,12 @@
         {
           "text": "are",
           "start": 41.72,
-          "end": 41.72,
+          "end": 41.74,
           "confidence": 0.752
         },
         {
           "text": "you",
-          "start": 41.72,
+          "start": 41.74,
           "end": 42.06,
           "confidence": 0.985
         },
@@ -956,7 +956,7 @@
         {
           "text": "dude?",
           "start": 43.08,
-          "end": 43.08,
+          "end": 43.1,
           "confidence": 0.939
         }
       ]
@@ -965,7 +965,7 @@
       "id": 16,
       "seek": 2600,
       "start": 44.48,
-      "end": 46.48,
+      "end": 46.5,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -998,12 +998,12 @@
         {
           "text": "you",
           "start": 45.64,
-          "end": 45.64,
+          "end": 45.66,
           "confidence": 0.985
         },
         {
           "text": "telling",
-          "start": 45.64,
+          "start": 45.66,
           "end": 46.0,
           "confidence": 0.791
         },
@@ -1016,7 +1016,7 @@
         {
           "text": "dude?",
           "start": 46.48,
-          "end": 46.48,
+          "end": 46.5,
           "confidence": 0.933
         }
       ]
@@ -1024,7 +1024,7 @@
     {
       "id": 17,
       "seek": 2600,
-      "start": 46.48,
+      "start": 46.5,
       "end": 47.48,
       "text": " What are you telling me, dude?",
       "tokens": [
@@ -1045,7 +1045,7 @@
       "words": [
         {
           "text": "What",
-          "start": 46.48,
+          "start": 46.5,
           "end": 46.7,
           "confidence": 0.482
         },
@@ -1058,12 +1058,12 @@
         {
           "text": "you",
           "start": 46.72,
-          "end": 46.72,
+          "end": 46.74,
           "confidence": 0.987
         },
         {
           "text": "telling",
-          "start": 46.72,
+          "start": 46.74,
           "end": 47.14,
           "confidence": 0.78
         },
@@ -1085,7 +1085,7 @@
       "id": 18,
       "seek": 2600,
       "start": 47.5,
-      "end": 48.42,
+      "end": 48.44,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1106,24 +1106,24 @@
         {
           "text": "What",
           "start": 47.5,
-          "end": 47.5,
+          "end": 47.52,
           "confidence": 0.478
         },
         {
           "text": "are",
-          "start": 47.5,
+          "start": 47.52,
           "end": 48.08,
           "confidence": 0.746
         },
         {
           "text": "you",
           "start": 48.08,
-          "end": 48.08,
+          "end": 48.1,
           "confidence": 0.987
         },
         {
           "text": "telling",
-          "start": 48.08,
+          "start": 48.1,
           "end": 48.36,
           "confidence": 0.788
         },
@@ -1136,7 +1136,7 @@
         {
           "text": "dude?",
           "start": 48.42,
-          "end": 48.42,
+          "end": 48.44,
           "confidence": 0.936
         }
       ]
@@ -1178,12 +1178,12 @@
         {
           "text": "you",
           "start": 50.38,
-          "end": 50.38,
+          "end": 50.4,
           "confidence": 0.989
         },
         {
           "text": "telling",
-          "start": 50.38,
+          "start": 50.4,
           "end": 50.82,
           "confidence": 0.796
         },
@@ -1244,13 +1244,13 @@
         {
           "text": "telling",
           "start": 53.04,
-          "end": 53.04,
+          "end": 53.06,
           "confidence": 0.812
         },
         {
           "text": "me,",
-          "start": 53.04,
-          "end": 53.04,
+          "start": 53.06,
+          "end": 53.08,
           "confidence": 0.943
         },
         {
@@ -1265,7 +1265,7 @@
       "id": 21,
       "seek": 5400,
       "start": 54.24,
-      "end": 55.02,
+      "end": 55.04,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1298,25 +1298,25 @@
         {
           "text": "you",
           "start": 54.46,
-          "end": 54.46,
+          "end": 54.48,
           "confidence": 0.875
         },
         {
           "text": "telling",
-          "start": 54.46,
-          "end": 54.46,
+          "start": 54.48,
+          "end": 54.5,
           "confidence": 0.747
         },
         {
           "text": "me,",
-          "start": 54.46,
+          "start": 54.5,
           "end": 54.98,
           "confidence": 0.71
         },
         {
           "text": "dude?",
           "start": 55.02,
-          "end": 55.02,
+          "end": 55.04,
           "confidence": 0.848
         }
       ]
@@ -1325,7 +1325,7 @@
       "id": 22,
       "seek": 5400,
       "start": 56.48,
-      "end": 57.32,
+      "end": 57.36,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1364,19 +1364,19 @@
         {
           "text": "telling",
           "start": 57.3,
-          "end": 57.3,
+          "end": 57.32,
           "confidence": 0.809
         },
         {
           "text": "me,",
-          "start": 57.3,
-          "end": 57.32,
+          "start": 57.32,
+          "end": 57.34,
           "confidence": 0.803
         },
         {
           "text": "dude?",
-          "start": 57.32,
-          "end": 57.32,
+          "start": 57.34,
+          "end": 57.36,
           "confidence": 0.896
         }
       ]
@@ -1385,7 +1385,7 @@
       "id": 23,
       "seek": 5400,
       "start": 57.5,
-      "end": 59.48,
+      "end": 59.5,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1412,31 +1412,31 @@
         {
           "text": "are",
           "start": 58.66,
-          "end": 58.66,
+          "end": 58.68,
           "confidence": 0.584
         },
         {
           "text": "you",
-          "start": 58.66,
-          "end": 58.66,
+          "start": 58.68,
+          "end": 58.7,
           "confidence": 0.954
         },
         {
           "text": "telling",
-          "start": 58.66,
-          "end": 58.68,
+          "start": 58.7,
+          "end": 58.72,
           "confidence": 0.818
         },
         {
           "text": "me,",
-          "start": 58.68,
+          "start": 58.72,
           "end": 59.04,
           "confidence": 0.837
         },
         {
           "text": "dude?",
           "start": 59.48,
-          "end": 59.48,
+          "end": 59.5,
           "confidence": 0.908
         }
       ]
@@ -1478,12 +1478,12 @@
         {
           "text": "you",
           "start": 60.2,
-          "end": 60.2,
+          "end": 60.22,
           "confidence": 0.967
         },
         {
           "text": "telling",
-          "start": 60.2,
+          "start": 60.22,
           "end": 60.3,
           "confidence": 0.826
         },
@@ -1505,7 +1505,7 @@
       "id": 25,
       "seek": 5400,
       "start": 61.5,
-      "end": 62.84,
+      "end": 62.86,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1532,18 +1532,18 @@
         {
           "text": "are",
           "start": 62.42,
-          "end": 62.42,
+          "end": 62.44,
           "confidence": 0.658
         },
         {
           "text": "you",
-          "start": 62.42,
-          "end": 62.42,
+          "start": 62.44,
+          "end": 62.46,
           "confidence": 0.968
         },
         {
           "text": "telling",
-          "start": 62.42,
+          "start": 62.46,
           "end": 62.8,
           "confidence": 0.835
         },
@@ -1556,7 +1556,7 @@
         {
           "text": "dude?",
           "start": 62.84,
-          "end": 62.84,
+          "end": 62.86,
           "confidence": 0.919
         }
       ]
@@ -1598,19 +1598,19 @@
         {
           "text": "you",
           "start": 64.36,
-          "end": 64.36,
+          "end": 64.38,
           "confidence": 0.971
         },
         {
           "text": "telling",
-          "start": 64.36,
+          "start": 64.38,
           "end": 64.6,
           "confidence": 0.865
         },
         {
           "text": "me,",
           "start": 64.6,
-          "end": 64.6,
+          "end": 64.62,
           "confidence": 0.902
         },
         {
@@ -1658,18 +1658,18 @@
         {
           "text": "you",
           "start": 66.5,
-          "end": 66.5,
+          "end": 66.52,
           "confidence": 0.975
         },
         {
           "text": "telling",
-          "start": 66.5,
-          "end": 66.5,
+          "start": 66.52,
+          "end": 66.54,
           "confidence": 0.867
         },
         {
           "text": "me,",
-          "start": 66.5,
+          "start": 66.54,
           "end": 66.88,
           "confidence": 0.918
         },
@@ -1712,24 +1712,24 @@
         {
           "text": "are",
           "start": 68.0,
-          "end": 68.0,
+          "end": 68.02,
           "confidence": 0.721
         },
         {
           "text": "you",
-          "start": 68.0,
-          "end": 68.0,
+          "start": 68.02,
+          "end": 68.04,
           "confidence": 0.979
         },
         {
           "text": "telling",
-          "start": 68.0,
-          "end": 68.04,
+          "start": 68.04,
+          "end": 68.06,
           "confidence": 0.88
         },
         {
           "text": "me,",
-          "start": 68.04,
+          "start": 68.06,
           "end": 68.86,
           "confidence": 0.924
         },
@@ -1784,12 +1784,12 @@
         {
           "text": "telling",
           "start": 71.12,
-          "end": 71.12,
+          "end": 71.14,
           "confidence": 0.878
         },
         {
           "text": "me,",
-          "start": 71.12,
+          "start": 71.14,
           "end": 71.26,
           "confidence": 0.928
         },
@@ -1805,7 +1805,7 @@
       "id": 30,
       "seek": 5400,
       "start": 72.16,
-      "end": 72.82,
+      "end": 72.84,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1832,31 +1832,31 @@
         {
           "text": "are",
           "start": 72.44,
-          "end": 72.44,
+          "end": 72.46,
           "confidence": 0.736
         },
         {
           "text": "you",
-          "start": 72.44,
-          "end": 72.44,
+          "start": 72.46,
+          "end": 72.48,
           "confidence": 0.982
         },
         {
           "text": "telling",
-          "start": 72.44,
+          "start": 72.48,
           "end": 72.8,
           "confidence": 0.88
         },
         {
           "text": "me,",
           "start": 72.8,
-          "end": 72.8,
+          "end": 72.82,
           "confidence": 0.942
         },
         {
           "text": "dude?",
           "start": 72.82,
-          "end": 72.82,
+          "end": 72.84,
           "confidence": 0.937
         }
       ]
@@ -1865,7 +1865,7 @@
       "id": 31,
       "seek": 5400,
       "start": 73.5,
-      "end": 74.58,
+      "end": 74.6,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1892,31 +1892,31 @@
         {
           "text": "are",
           "start": 74.32,
-          "end": 74.32,
+          "end": 74.34,
           "confidence": 0.755
         },
         {
           "text": "you",
-          "start": 74.32,
+          "start": 74.34,
           "end": 74.38,
           "confidence": 0.984
         },
         {
           "text": "telling",
           "start": 74.38,
-          "end": 74.38,
+          "end": 74.4,
           "confidence": 0.882
         },
         {
           "text": "me,",
-          "start": 74.38,
+          "start": 74.4,
           "end": 74.58,
           "confidence": 0.943
         },
         {
           "text": "dude?",
           "start": 74.58,
-          "end": 74.58,
+          "end": 74.6,
           "confidence": 0.937
         }
       ]
@@ -1925,7 +1925,7 @@
       "id": 32,
       "seek": 5400,
       "start": 75.5,
-      "end": 78.02,
+      "end": 78.04,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1958,12 +1958,12 @@
         {
           "text": "you",
           "start": 77.7,
-          "end": 77.7,
+          "end": 77.72,
           "confidence": 0.985
         },
         {
           "text": "telling",
-          "start": 77.7,
+          "start": 77.72,
           "end": 77.74,
           "confidence": 0.879
         },
@@ -1976,7 +1976,7 @@
         {
           "text": "dude?",
           "start": 78.02,
-          "end": 78.02,
+          "end": 78.04,
           "confidence": 0.936
         }
       ]
@@ -1984,7 +1984,7 @@
     {
       "id": 33,
       "seek": 5400,
-      "start": 78.02,
+      "start": 78.04,
       "end": 79.1,
       "text": " What are you telling me, dude?",
       "tokens": [
@@ -2005,19 +2005,19 @@
       "words": [
         {
           "text": "What",
-          "start": 78.02,
-          "end": 78.02,
+          "start": 78.04,
+          "end": 78.06,
           "confidence": 0.635
         },
         {
           "text": "are",
-          "start": 78.02,
-          "end": 78.02,
+          "start": 78.06,
+          "end": 78.08,
           "confidence": 0.747
         },
         {
           "text": "you",
-          "start": 78.02,
+          "start": 78.08,
           "end": 78.42,
           "confidence": 0.985
         },
@@ -2045,8 +2045,8 @@
       "id": 34,
       "seek": 5400,
       "start": 80.34,
-      "end": 81.24,
-      "text": " What are you telling me, dude?",
+      "end": 81.04,
+      "text": " What are you telling",
       "tokens": [
         708,
         366,
@@ -2078,26 +2078,14 @@
         {
           "text": "you",
           "start": 80.74,
-          "end": 80.74,
+          "end": 80.76,
           "confidence": 0.985
         },
         {
           "text": "telling",
-          "start": 80.74,
+          "start": 80.76,
           "end": 81.04,
           "confidence": 0.9
-        },
-        {
-          "text": "me,",
-          "start": 81.04,
-          "end": 81.04,
-          "confidence": 0.96
-        },
-        {
-          "text": "dude?",
-          "start": 81.24,
-          "end": 81.24,
-          "confidence": 0.942
         }
       ]
     },
@@ -2138,12 +2126,12 @@
         {
           "text": "you",
           "start": 82.4,
-          "end": 82.4,
+          "end": 82.42,
           "confidence": 0.933
         },
         {
           "text": "telling",
-          "start": 82.4,
+          "start": 82.42,
           "end": 82.56,
           "confidence": 0.754
         },
@@ -2165,7 +2153,7 @@
       "id": 36,
       "seek": 8200,
       "start": 84.28,
-      "end": 84.64,
+      "end": 84.72,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2198,25 +2186,25 @@
         {
           "text": "you",
           "start": 84.64,
-          "end": 84.64,
+          "end": 84.66,
           "confidence": 0.969
         },
         {
           "text": "telling",
-          "start": 84.64,
-          "end": 84.64,
+          "start": 84.66,
+          "end": 84.68,
           "confidence": 0.816
         },
         {
           "text": "me,",
-          "start": 84.64,
-          "end": 84.64,
+          "start": 84.68,
+          "end": 84.7,
           "confidence": 0.932
         },
         {
           "text": "dude?",
-          "start": 84.64,
-          "end": 84.64,
+          "start": 84.7,
+          "end": 84.72,
           "confidence": 0.952
         }
       ]
@@ -2264,18 +2252,18 @@
         {
           "text": "telling",
           "start": 86.52,
-          "end": 86.52,
+          "end": 86.54,
           "confidence": 0.826
         },
         {
           "text": "me,",
-          "start": 86.52,
-          "end": 86.52,
+          "start": 86.54,
+          "end": 86.56,
           "confidence": 0.942
         },
         {
           "text": "dude?",
-          "start": 86.52,
+          "start": 86.56,
           "end": 86.6,
           "confidence": 0.955
         }
@@ -2312,24 +2300,24 @@
         {
           "text": "are",
           "start": 88.4,
-          "end": 88.4,
+          "end": 88.42,
           "confidence": 0.718
         },
         {
           "text": "you",
-          "start": 88.4,
-          "end": 88.4,
+          "start": 88.42,
+          "end": 88.44,
           "confidence": 0.976
         },
         {
           "text": "telling",
-          "start": 88.4,
-          "end": 88.4,
+          "start": 88.44,
+          "end": 88.46,
           "confidence": 0.839
         },
         {
           "text": "me,",
-          "start": 88.4,
+          "start": 88.46,
           "end": 88.66,
           "confidence": 0.954
         },
@@ -2345,7 +2333,7 @@
       "id": 39,
       "seek": 8200,
       "start": 90.0,
-      "end": 90.88,
+      "end": 90.9,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2378,25 +2366,25 @@
         {
           "text": "you",
           "start": 90.7,
-          "end": 90.7,
+          "end": 90.72,
           "confidence": 0.976
         },
         {
           "text": "telling",
-          "start": 90.7,
-          "end": 90.7,
+          "start": 90.72,
+          "end": 90.74,
           "confidence": 0.847
         },
         {
           "text": "me,",
-          "start": 90.7,
-          "end": 90.7,
+          "start": 90.74,
+          "end": 90.76,
           "confidence": 0.944
         },
         {
           "text": "dude?",
           "start": 90.88,
-          "end": 90.88,
+          "end": 90.9,
           "confidence": 0.958
         }
       ]
@@ -2432,24 +2420,24 @@
         {
           "text": "are",
           "start": 91.74,
-          "end": 91.74,
+          "end": 91.76,
           "confidence": 0.718
         },
         {
           "text": "you",
-          "start": 91.74,
-          "end": 91.74,
+          "start": 91.76,
+          "end": 91.78,
           "confidence": 0.979
         },
         {
           "text": "telling",
-          "start": 91.74,
-          "end": 91.74,
+          "start": 91.78,
+          "end": 91.8,
           "confidence": 0.83
         },
         {
           "text": "me,",
-          "start": 91.74,
+          "start": 91.8,
           "end": 91.88,
           "confidence": 0.944
         },
@@ -2465,7 +2453,7 @@
       "id": 41,
       "seek": 8200,
       "start": 93.5,
-      "end": 94.68,
+      "end": 94.76,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2498,25 +2486,25 @@
         {
           "text": "you",
           "start": 94.68,
-          "end": 94.68,
+          "end": 94.7,
           "confidence": 0.98
         },
         {
           "text": "telling",
-          "start": 94.68,
-          "end": 94.68,
+          "start": 94.7,
+          "end": 94.72,
           "confidence": 0.849
         },
         {
           "text": "me,",
-          "start": 94.68,
-          "end": 94.68,
+          "start": 94.72,
+          "end": 94.74,
           "confidence": 0.949
         },
         {
           "text": "dude?",
-          "start": 94.68,
-          "end": 94.68,
+          "start": 94.74,
+          "end": 94.76,
           "confidence": 0.962
         }
       ]
@@ -2525,7 +2513,7 @@
       "id": 42,
       "seek": 8200,
       "start": 95.5,
-      "end": 97.24,
+      "end": 97.34,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2552,31 +2540,31 @@
         {
           "text": "are",
           "start": 97.24,
-          "end": 97.24,
+          "end": 97.26,
           "confidence": 0.763
         },
         {
           "text": "you",
-          "start": 97.24,
-          "end": 97.24,
+          "start": 97.26,
+          "end": 97.28,
           "confidence": 0.984
         },
         {
           "text": "telling",
-          "start": 97.24,
-          "end": 97.24,
+          "start": 97.28,
+          "end": 97.3,
           "confidence": 0.863
         },
         {
           "text": "me,",
-          "start": 97.24,
-          "end": 97.24,
+          "start": 97.3,
+          "end": 97.32,
           "confidence": 0.951
         },
         {
           "text": "dude?",
-          "start": 97.24,
-          "end": 97.24,
+          "start": 97.32,
+          "end": 97.34,
           "confidence": 0.962
         }
       ]
@@ -2585,7 +2573,7 @@
       "id": 43,
       "seek": 8200,
       "start": 97.5,
-      "end": 98.98,
+      "end": 99.06,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2618,25 +2606,25 @@
         {
           "text": "you",
           "start": 98.98,
-          "end": 98.98,
+          "end": 99.0,
           "confidence": 0.987
         },
         {
           "text": "telling",
-          "start": 98.98,
-          "end": 98.98,
+          "start": 99.0,
+          "end": 99.02,
           "confidence": 0.867
         },
         {
           "text": "me,",
-          "start": 98.98,
-          "end": 98.98,
+          "start": 99.02,
+          "end": 99.04,
           "confidence": 0.965
         },
         {
           "text": "dude?",
-          "start": 98.98,
-          "end": 98.98,
+          "start": 99.04,
+          "end": 99.06,
           "confidence": 0.965
         }
       ]
@@ -2645,7 +2633,7 @@
       "id": 44,
       "seek": 8200,
       "start": 99.5,
-      "end": 101.36,
+      "end": 101.38,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2672,12 +2660,12 @@
         {
           "text": "are",
           "start": 100.86,
-          "end": 100.86,
+          "end": 100.88,
           "confidence": 0.806
         },
         {
           "text": "you",
-          "start": 100.86,
+          "start": 100.88,
           "end": 100.92,
           "confidence": 0.989
         },
@@ -2696,7 +2684,7 @@
         {
           "text": "dude?",
           "start": 101.36,
-          "end": 101.36,
+          "end": 101.38,
           "confidence": 0.967
         }
       ]
@@ -2705,7 +2693,7 @@
       "id": 45,
       "seek": 8200,
       "start": 101.5,
-      "end": 103.0,
+      "end": 103.08,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2738,25 +2726,25 @@
         {
           "text": "you",
           "start": 103.0,
-          "end": 103.0,
+          "end": 103.02,
           "confidence": 0.988
         },
         {
           "text": "telling",
-          "start": 103.0,
-          "end": 103.0,
+          "start": 103.02,
+          "end": 103.04,
           "confidence": 0.868
         },
         {
           "text": "me,",
-          "start": 103.0,
-          "end": 103.0,
+          "start": 103.04,
+          "end": 103.06,
           "confidence": 0.971
         },
         {
           "text": "dude?",
-          "start": 103.0,
-          "end": 103.0,
+          "start": 103.06,
+          "end": 103.08,
           "confidence": 0.966
         }
       ]
@@ -2765,7 +2753,7 @@
       "id": 46,
       "seek": 8200,
       "start": 103.5,
-      "end": 104.88,
+      "end": 104.92,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2786,18 +2774,18 @@
         {
           "text": "What",
           "start": 103.5,
-          "end": 103.5,
+          "end": 103.52,
           "confidence": 0.737
         },
         {
           "text": "are",
-          "start": 103.5,
-          "end": 103.5,
+          "start": 103.52,
+          "end": 103.54,
           "confidence": 0.806
         },
         {
           "text": "you",
-          "start": 103.5,
+          "start": 103.54,
           "end": 104.84,
           "confidence": 0.99
         },
@@ -2810,13 +2798,13 @@
         {
           "text": "me,",
           "start": 104.88,
-          "end": 104.88,
+          "end": 104.9,
           "confidence": 0.974
         },
         {
           "text": "dude?",
-          "start": 104.88,
-          "end": 104.88,
+          "start": 104.9,
+          "end": 104.92,
           "confidence": 0.967
         }
       ]
@@ -2852,18 +2840,18 @@
         {
           "text": "are",
           "start": 107.16,
-          "end": 107.16,
+          "end": 107.18,
           "confidence": 0.786
         },
         {
           "text": "you",
-          "start": 107.16,
-          "end": 107.18,
+          "start": 107.18,
+          "end": 107.2,
           "confidence": 0.99
         },
         {
           "text": "telling",
-          "start": 107.18,
+          "start": 107.2,
           "end": 107.34,
           "confidence": 0.877
         },
@@ -2886,7 +2874,7 @@
       "seek": 8200,
       "start": 108.44,
       "end": 108.82,
-      "text": " What are you telling me, dude?",
+      "text": " What are you telling me,",
       "tokens": [
         708,
         366,
@@ -2918,24 +2906,18 @@
         {
           "text": "you",
           "start": 108.76,
-          "end": 108.76,
+          "end": 108.78,
           "confidence": 0.99
         },
         {
           "text": "telling",
-          "start": 108.76,
-          "end": 108.76,
+          "start": 108.78,
+          "end": 108.8,
           "confidence": 0.878
         },
         {
           "text": "me,",
-          "start": 108.76,
-          "end": 108.82,
-          "confidence": 0.97
-        },
-        {
-          "text": "dude?",
-          "start": 108.82,
+          "start": 108.8,
           "end": 108.82,
           "confidence": 0.97
         }
@@ -3032,18 +3014,18 @@
         {
           "text": "are",
           "start": 112.34,
-          "end": 112.34,
+          "end": 112.36,
           "confidence": 0.735
         },
         {
           "text": "you",
-          "start": 112.34,
-          "end": 112.36,
+          "start": 112.36,
+          "end": 112.38,
           "confidence": 0.978
         },
         {
           "text": "telling",
-          "start": 112.36,
+          "start": 112.38,
           "end": 112.48,
           "confidence": 0.821
         },
@@ -3092,24 +3074,24 @@
         {
           "text": "are",
           "start": 114.4,
-          "end": 114.4,
+          "end": 114.42,
           "confidence": 0.734
         },
         {
           "text": "you",
-          "start": 114.4,
+          "start": 114.42,
           "end": 114.54,
           "confidence": 0.978
         },
         {
           "text": "telling",
           "start": 114.54,
-          "end": 114.54,
+          "end": 114.56,
           "confidence": 0.831
         },
         {
           "text": "me,",
-          "start": 114.54,
+          "start": 114.56,
           "end": 114.84,
           "confidence": 0.934
         },
@@ -3152,18 +3134,18 @@
         {
           "text": "are",
           "start": 116.56,
-          "end": 116.56,
+          "end": 116.58,
           "confidence": 0.787
         },
         {
           "text": "you",
-          "start": 116.56,
-          "end": 116.56,
+          "start": 116.58,
+          "end": 116.6,
           "confidence": 0.984
         },
         {
           "text": "telling",
-          "start": 116.56,
+          "start": 116.6,
           "end": 116.66,
           "confidence": 0.853
         },
@@ -3185,7 +3167,7 @@
       "id": 53,
       "seek": 11000,
       "start": 118.2,
-      "end": 119.28,
+      "end": 119.3,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -3212,12 +3194,12 @@
         {
           "text": "are",
           "start": 118.5,
-          "end": 118.5,
+          "end": 118.52,
           "confidence": 0.79
         },
         {
           "text": "you",
-          "start": 118.5,
+          "start": 118.52,
           "end": 118.7,
           "confidence": 0.985
         },
@@ -3236,7 +3218,7 @@
         {
           "text": "dude?",
           "start": 119.28,
-          "end": 119.28,
+          "end": 119.3,
           "confidence": 0.968
         }
       ]
@@ -3305,7 +3287,7 @@
       "id": 55,
       "seek": 11000,
       "start": 121.5,
-      "end": 123.06,
+      "end": 123.08,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -3332,12 +3314,12 @@
         {
           "text": "are",
           "start": 122.32,
-          "end": 122.32,
+          "end": 122.34,
           "confidence": 0.788
         },
         {
           "text": "you",
-          "start": 122.32,
+          "start": 122.34,
           "end": 122.38,
           "confidence": 0.986
         },
@@ -3356,7 +3338,7 @@
         {
           "text": "dude?",
           "start": 123.06,
-          "end": 123.06,
+          "end": 123.08,
           "confidence": 0.968
         }
       ]
@@ -3365,7 +3347,7 @@
       "id": 56,
       "seek": 11000,
       "start": 123.5,
-      "end": 125.36,
+      "end": 125.38,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -3392,31 +3374,31 @@
         {
           "text": "are",
           "start": 125.04,
-          "end": 125.04,
+          "end": 125.06,
           "confidence": 0.822
         },
         {
           "text": "you",
-          "start": 125.04,
-          "end": 125.06,
+          "start": 125.06,
+          "end": 125.08,
           "confidence": 0.989
         },
         {
           "text": "telling",
-          "start": 125.06,
+          "start": 125.08,
           "end": 125.26,
           "confidence": 0.878
         },
         {
           "text": "me,",
           "start": 125.26,
-          "end": 125.26,
+          "end": 125.28,
           "confidence": 0.952
         },
         {
           "text": "dude?",
           "start": 125.36,
-          "end": 125.36,
+          "end": 125.38,
           "confidence": 0.968
         }
       ]
@@ -3425,7 +3407,7 @@
       "id": 57,
       "seek": 11000,
       "start": 125.5,
-      "end": 127.14,
+      "end": 127.16,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -3464,19 +3446,19 @@
         {
           "text": "telling",
           "start": 126.92,
-          "end": 126.92,
+          "end": 126.94,
           "confidence": 0.885
         },
         {
           "text": "me,",
-          "start": 126.92,
+          "start": 126.94,
           "end": 127.1,
           "confidence": 0.962
         },
         {
           "text": "dude?",
           "start": 127.14,
-          "end": 127.14,
+          "end": 127.16,
           "confidence": 0.97
         }
       ]
@@ -3485,7 +3467,7 @@
       "id": 58,
       "seek": 11000,
       "start": 127.5,
-      "end": 129.3,
+      "end": 129.32,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -3512,31 +3494,31 @@
         {
           "text": "are",
           "start": 128.98,
-          "end": 128.98,
+          "end": 129.0,
           "confidence": 0.859
         },
         {
           "text": "you",
-          "start": 128.98,
+          "start": 129.0,
           "end": 129.24,
           "confidence": 0.992
         },
         {
           "text": "telling",
           "start": 129.24,
-          "end": 129.24,
+          "end": 129.26,
           "confidence": 0.896
         },
         {
           "text": "me,",
-          "start": 129.24,
-          "end": 129.26,
+          "start": 129.26,
+          "end": 129.28,
           "confidence": 0.965
         },
         {
           "text": "dude?",
           "start": 129.3,
-          "end": 129.3,
+          "end": 129.32,
           "confidence": 0.971
         }
       ]
@@ -3545,7 +3527,7 @@
       "id": 59,
       "seek": 11000,
       "start": 129.62,
-      "end": 131.68,
+      "end": 131.7,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -3578,25 +3560,25 @@
         {
           "text": "you",
           "start": 131.48,
-          "end": 131.48,
+          "end": 131.5,
           "confidence": 0.992
         },
         {
           "text": "telling",
-          "start": 131.48,
-          "end": 131.5,
+          "start": 131.5,
+          "end": 131.52,
           "confidence": 0.889
         },
         {
           "text": "me,",
-          "start": 131.5,
-          "end": 131.5,
+          "start": 131.52,
+          "end": 131.54,
           "confidence": 0.964
         },
         {
           "text": "dude?",
           "start": 131.68,
-          "end": 131.68,
+          "end": 131.7,
           "confidence": 0.97
         }
       ]
@@ -3604,8 +3586,8 @@
     {
       "id": 60,
       "seek": 11000,
-      "start": 131.68,
-      "end": 133.02,
+      "start": 131.7,
+      "end": 133.08,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -3625,7 +3607,7 @@
       "words": [
         {
           "text": "What",
-          "start": 131.68,
+          "start": 131.7,
           "end": 132.8,
           "confidence": 0.745
         },
@@ -3638,25 +3620,25 @@
         {
           "text": "you",
           "start": 133.0,
-          "end": 133.0,
+          "end": 133.02,
           "confidence": 0.993
         },
         {
           "text": "telling",
-          "start": 133.0,
-          "end": 133.0,
+          "start": 133.02,
+          "end": 133.04,
           "confidence": 0.904
         },
         {
           "text": "me,",
-          "start": 133.0,
-          "end": 133.02,
+          "start": 133.04,
+          "end": 133.06,
           "confidence": 0.969
         },
         {
           "text": "dude?",
-          "start": 133.02,
-          "end": 133.02,
+          "start": 133.06,
+          "end": 133.08,
           "confidence": 0.972
         }
       ]
@@ -3665,7 +3647,7 @@
       "id": 61,
       "seek": 11000,
       "start": 133.5,
-      "end": 135.36,
+      "end": 135.42,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -3704,19 +3686,19 @@
         {
           "text": "telling",
           "start": 135.36,
-          "end": 135.36,
+          "end": 135.38,
           "confidence": 0.9
         },
         {
           "text": "me,",
-          "start": 135.36,
-          "end": 135.36,
+          "start": 135.38,
+          "end": 135.4,
           "confidence": 0.971
         },
         {
           "text": "dude?",
-          "start": 135.36,
-          "end": 135.36,
+          "start": 135.4,
+          "end": 135.42,
           "confidence": 0.974
         }
       ]
@@ -3746,36 +3728,36 @@
         {
           "text": "What",
           "start": 135.5,
-          "end": 135.5,
+          "end": 135.52,
           "confidence": 0.531
         },
         {
           "text": "are",
-          "start": 135.5,
-          "end": 135.5,
+          "start": 135.52,
+          "end": 135.54,
           "confidence": 0.856
         },
         {
           "text": "you",
-          "start": 135.5,
-          "end": 135.5,
+          "start": 135.54,
+          "end": 135.56,
           "confidence": 0.993
         },
         {
           "text": "telling",
-          "start": 135.5,
-          "end": 135.5,
+          "start": 135.56,
+          "end": 135.58,
           "confidence": 0.906
         },
         {
           "text": "me,",
-          "start": 135.5,
-          "end": 135.5,
+          "start": 135.58,
+          "end": 135.6,
           "confidence": 0.972
         },
         {
           "text": "dude?",
-          "start": 135.5,
+          "start": 135.6,
           "end": 136.58,
           "confidence": 0.974
         }

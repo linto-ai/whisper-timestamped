@@ -1906,12 +1906,12 @@
         {
           "text": "a",
           "start": 65.54,
-          "end": 65.54,
+          "end": 65.56,
           "confidence": 0.965
         },
         {
           "text": "pas",
-          "start": 65.54,
+          "start": 65.56,
           "end": 65.68,
           "confidence": 0.998
         },
@@ -2383,12 +2383,12 @@
         {
           "text": "peu",
           "start": 81.96,
-          "end": 81.96,
+          "end": 81.98,
           "confidence": 0.144
         },
         {
           "text": "avec",
-          "start": 81.96,
+          "start": 81.98,
           "end": 82.14,
           "confidence": 0.856
         },
@@ -4209,12 +4209,12 @@
         {
           "text": "ça",
           "start": 148.02,
-          "end": 148.02,
+          "end": 148.04,
           "confidence": 0.756
         },
         {
           "text": "m'a",
-          "start": 148.02,
+          "start": 148.04,
           "end": 148.26,
           "confidence": 0.558
         },
@@ -4329,12 +4329,12 @@
         {
           "text": "va",
           "start": 151.38,
-          "end": 151.38,
+          "end": 151.4,
           "confidence": 0.985
         },
         {
           "text": "là",
-          "start": 151.38,
+          "start": 151.4,
           "end": 151.46,
           "confidence": 0.726
         },
@@ -4550,12 +4550,12 @@
         {
           "text": "il",
           "start": 159.62,
-          "end": 159.62,
+          "end": 159.64,
           "confidence": 0.589
         },
         {
           "text": "faut",
-          "start": 159.62,
+          "start": 159.64,
           "end": 159.66,
           "confidence": 0.953
         },
@@ -4839,7 +4839,7 @@
         {
           "text": "fait,",
           "start": 169.64,
-          "end": 169.64,
+          "end": 169.66,
           "confidence": 0.978
         },
         {

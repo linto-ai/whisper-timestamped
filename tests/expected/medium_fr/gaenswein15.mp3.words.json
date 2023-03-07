@@ -1,5 +1,5 @@
 {
-  "text": " La réapparition du Messe-Bouche de 1962 en tant que missale pour la forme exceptionnelle du roi de la Réthos n'est pas encore la même chose que l'a voulu le Père de Benedict. La réapparition du Messe-Bouche de 1962 en tant que missale pour la forme exceptionnelle du roi de la Réthos n'est pas encore la même chose que l'a voulu le Père de Benedict.",
+  "text": " La réapparition du Messe-Bouche de 1962 en tant que missale pour la forme exceptionnelle du roi de la Réthos n'est pas encore la même chose que l'a voulu le Père de Benedict. La réapparition du Messe-Bouche de 1962 en tant que missale pour la forme exceptionnelle du roi de la Réthos",
   "segments": [
     {
       "id": 0,
@@ -119,12 +119,12 @@
         {
           "text": "que",
           "start": 5.32,
-          "end": 5.32,
+          "end": 5.34,
           "confidence": 0.829
         },
         {
           "text": "missale",
-          "start": 5.32,
+          "start": 5.34,
           "end": 5.76,
           "confidence": 0.301
         },
@@ -143,12 +143,12 @@
         {
           "text": "forme",
           "start": 6.1,
-          "end": 6.1,
+          "end": 6.12,
           "confidence": 0.977
         },
         {
           "text": "exceptionnelle",
-          "start": 6.1,
+          "start": 6.12,
           "end": 7.34,
           "confidence": 0.692
         },
@@ -209,18 +209,18 @@
         {
           "text": "même",
           "start": 10.74,
-          "end": 10.74,
+          "end": 10.76,
           "confidence": 0.041
         },
         {
           "text": "chose",
-          "start": 10.74,
-          "end": 10.74,
+          "start": 10.76,
+          "end": 10.78,
           "confidence": 0.117
         },
         {
           "text": "que",
-          "start": 10.74,
+          "start": 10.78,
           "end": 11.04,
           "confidence": 0.804
         },
@@ -233,12 +233,12 @@
         {
           "text": "voulu",
           "start": 11.14,
-          "end": 11.14,
+          "end": 11.16,
           "confidence": 0.719
         },
         {
           "text": "le",
-          "start": 11.14,
+          "start": 11.16,
           "end": 11.28,
           "confidence": 0.285
         },
@@ -251,12 +251,12 @@
         {
           "text": "de",
           "start": 11.48,
-          "end": 11.48,
+          "end": 11.5,
           "confidence": 0.299
         },
         {
           "text": "Benedict.",
-          "start": 11.48,
+          "start": 11.5,
           "end": 11.84,
           "confidence": 0.392
         }
@@ -266,8 +266,8 @@
       "id": 1,
       "seek": 1300,
       "start": 13.0,
-      "end": 15.2,
-      "text": " La réapparition du Messe-Bouche de 1962 en tant que missale pour la forme exceptionnelle du roi de la Réthos n'est pas encore la même chose que l'a voulu le Père de Benedict.",
+      "end": 15.34,
+      "text": " La réapparition du Messe-Bouche de 1962 en tant que missale pour la forme exceptionnelle du roi de la Réthos",
       "tokens": [
         50364,
         2369,
@@ -346,182 +346,104 @@
         {
           "text": "du",
           "start": 14.54,
-          "end": 14.54,
+          "end": 14.56,
           "confidence": 0.519
         },
         {
           "text": "Messe-Bouche",
-          "start": 14.54,
+          "start": 14.56,
           "end": 14.74,
           "confidence": 0.899
         },
         {
           "text": "de",
           "start": 14.74,
-          "end": 14.74,
+          "end": 14.76,
           "confidence": 0.943
         },
         {
           "text": "1962",
-          "start": 14.74,
-          "end": 14.74,
+          "start": 14.76,
+          "end": 14.78,
           "confidence": 0.191
         },
         {
           "text": "en",
-          "start": 14.74,
-          "end": 14.74,
+          "start": 14.78,
+          "end": 14.8,
           "confidence": 0.467
         },
         {
           "text": "tant",
-          "start": 14.74,
-          "end": 14.74,
+          "start": 14.8,
+          "end": 14.82,
           "confidence": 0.997
         },
         {
           "text": "que",
-          "start": 14.74,
-          "end": 14.74,
+          "start": 14.82,
+          "end": 14.84,
           "confidence": 0.99
         },
         {
           "text": "missale",
-          "start": 14.74,
+          "start": 14.84,
           "end": 15.16,
           "confidence": 0.587
         },
         {
           "text": "pour",
           "start": 15.16,
-          "end": 15.16,
+          "end": 15.18,
           "confidence": 0.942
         },
         {
           "text": "la",
-          "start": 15.16,
-          "end": 15.16,
+          "start": 15.18,
+          "end": 15.2,
           "confidence": 0.989
         },
         {
           "text": "forme",
-          "start": 15.16,
-          "end": 15.16,
+          "start": 15.2,
+          "end": 15.22,
           "confidence": 0.99
         },
         {
           "text": "exceptionnelle",
-          "start": 15.16,
-          "end": 15.16,
+          "start": 15.22,
+          "end": 15.24,
           "confidence": 0.97
         },
         {
           "text": "du",
-          "start": 15.16,
-          "end": 15.16,
+          "start": 15.24,
+          "end": 15.26,
           "confidence": 0.912
         },
         {
           "text": "roi",
-          "start": 15.16,
-          "end": 15.16,
+          "start": 15.26,
+          "end": 15.28,
           "confidence": 0.987
         },
         {
           "text": "de",
-          "start": 15.16,
-          "end": 15.16,
+          "start": 15.28,
+          "end": 15.3,
           "confidence": 0.986
         },
         {
           "text": "la",
-          "start": 15.16,
-          "end": 15.16,
+          "start": 15.3,
+          "end": 15.32,
           "confidence": 0.985
         },
         {
           "text": "Réthos",
-          "start": 15.16,
-          "end": 15.2,
+          "start": 15.32,
+          "end": 15.34,
           "confidence": 0.994
-        },
-        {
-          "text": "n'est",
-          "start": 15.2,
-          "end": 15.2,
-          "confidence": 0.948
-        },
-        {
-          "text": "pas",
-          "start": 15.2,
-          "end": 15.2,
-          "confidence": 0.991
-        },
-        {
-          "text": "encore",
-          "start": 15.2,
-          "end": 15.2,
-          "confidence": 0.966
-        },
-        {
-          "text": "la",
-          "start": 15.2,
-          "end": 15.2,
-          "confidence": 0.994
-        },
-        {
-          "text": "même",
-          "start": 15.2,
-          "end": 15.2,
-          "confidence": 0.999
-        },
-        {
-          "text": "chose",
-          "start": 15.2,
-          "end": 15.2,
-          "confidence": 0.994
-        },
-        {
-          "text": "que",
-          "start": 15.2,
-          "end": 15.2,
-          "confidence": 0.989
-        },
-        {
-          "text": "l'a",
-          "start": 15.2,
-          "end": 15.2,
-          "confidence": 0.998
-        },
-        {
-          "text": "voulu",
-          "start": 15.2,
-          "end": 15.2,
-          "confidence": 0.998
-        },
-        {
-          "text": "le",
-          "start": 15.2,
-          "end": 15.2,
-          "confidence": 0.94
-        },
-        {
-          "text": "Père",
-          "start": 15.2,
-          "end": 15.2,
-          "confidence": 0.994
-        },
-        {
-          "text": "de",
-          "start": 15.2,
-          "end": 15.2,
-          "confidence": 0.994
-        },
-        {
-          "text": "Benedict.",
-          "start": 15.2,
-          "end": 15.2,
-          "confidence": 0.995
         }
       ]
     }

@@ -209,12 +209,12 @@
         {
           "text": "I",
           "start": 9.5,
-          "end": 9.5,
+          "end": 9.52,
           "confidence": 0.283
         },
         {
           "text": "said",
-          "start": 9.5,
+          "start": 9.52,
           "end": 9.64,
           "confidence": 0.561
         },
@@ -409,12 +409,12 @@
         {
           "text": "Well,",
           "start": 15.5,
-          "end": 15.5,
+          "end": 15.52,
           "confidence": 0.073
         },
         {
           "text": "you",
-          "start": 15.5,
+          "start": 15.52,
           "end": 15.66,
           "confidence": 0.491
         },

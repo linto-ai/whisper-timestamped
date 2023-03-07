@@ -1,12 +1,12 @@
 {
-  "text": " Je ne suis pas en train de faire ça.",
+  "text": " Je ne suis pas en train de",
   "segments": [
     {
       "id": 0,
       "seek": 0,
       "start": 0.16,
       "end": 1.62,
-      "text": " Je ne suis pas en train de faire ça.",
+      "text": " Je ne suis pas en train de",
       "tokens": [
         50364,
         2588,
@@ -36,12 +36,12 @@
         {
           "text": "ne",
           "start": 0.78,
-          "end": 0.78,
+          "end": 0.8,
           "confidence": 0.139
         },
         {
           "text": "suis",
-          "start": 0.78,
+          "start": 0.8,
           "end": 1.04,
           "confidence": 0.184
         },
@@ -68,18 +68,6 @@
           "start": 1.46,
           "end": 1.62,
           "confidence": 0.632
-        },
-        {
-          "text": "faire",
-          "start": 1.62,
-          "end": 1.62,
-          "confidence": 0.105
-        },
-        {
-          "text": "ça.",
-          "start": 1.62,
-          "end": 1.62,
-          "confidence": 0.112
         }
       ]
     }

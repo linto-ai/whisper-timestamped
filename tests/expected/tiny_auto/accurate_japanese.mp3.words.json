@@ -748,12 +748,12 @@
         {
           "text": "セ",
           "start": 18.42,
-          "end": 18.42,
+          "end": 18.44,
           "confidence": 0.588
         },
         {
           "text": "ン",
-          "start": 18.42,
+          "start": 18.44,
           "end": 18.52,
           "confidence": 0.832
         },
@@ -1289,12 +1289,12 @@
         {
           "text": "コ",
           "start": 30.32,
-          "end": 30.32,
+          "end": 30.34,
           "confidence": 0.89
         },
         {
           "text": "ン",
-          "start": 30.32,
+          "start": 30.34,
           "end": 30.42,
           "confidence": 0.918
         },
@@ -1518,12 +1518,12 @@
         {
           "text": "は",
           "start": 37.8,
-          "end": 37.8,
+          "end": 37.82,
           "confidence": 0.932
         },
         {
           "text": "サ",
-          "start": 37.8,
+          "start": 37.82,
           "end": 38.22,
           "confidence": 0.315
         },
