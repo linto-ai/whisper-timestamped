@@ -1828,7 +1828,7 @@ def cli():
 
     parser.add_argument('--debug', help="print some debug information for word alignement", default=False, action="store_true")
 
-    parser.add_argument('--detect_disfluencies', default=False, help="Try to detect disfluencies, marking them as words <|*|>", type=str2bool)
+    parser.add_argument('--detect_disfluencies', default=False, help="Try to detect disfluencies, marking them as special words [*]", type=str2bool)
     parser.add_argument('--recompute_all_timestamps', default=not TRUST_WHISPER_TIMESTAMP_BY_DEFAULT, help="Do not rely at all on Whisper timestamps (Experimental option: did not bring any improvement, but could be useful in cases where Whipser segment timestamp are wrong by more than 0.5 seconds)", type=str2bool)
     parser.add_argument('--naive', help="use naive approach, doing inference twice (once to get the transcription, once to get word timestamps and confidence scores).", default=False, action="store_true")
     class ActionSetAccurate(argparse.Action):
