@@ -48,7 +48,7 @@ try:
     whisper_version = whisper.__version__
 except NameError:
     whisper_version = ""
-WHIPSER_GT_20230306 = whisper_version >= "20230306"
+WHIPSER_GE_20230306 = whisper_version >= "20230306"
 
 def transcribe_timestamped(
     # Main Whisper options
@@ -242,7 +242,7 @@ def transcribe_timestamped(
                                                                    **alignment_options, **whisper_options, **other_options)
 
     # Remove words with empty duration happening at the end of segments, to remove some hallucinations
-    transcription, words = remove_last_null_duration_words(transcription, words)
+    transcription, words = remove_last_null_duration_words(transcription, words, recompute_text=WHIPSER_GE_20230306)
 
     # Refine word positions
     ensure_increasing_positions(words, min_duration=min_word_duration if trust_whisper_timestamps else 0)
@@ -362,7 +362,7 @@ def _transcribe_timestamped_efficient(
             return consecutive_timestamps
         else: # Several tokens as a prompt or must flush last segments
             must_flush = len(segment_tokens[-1]) > 1 and not saw_consecutive_timestamps
-            if WHIPSER_GT_20230306: # If last token was a timestamp, the last segment is used
+            if WHIPSER_GE_20230306: # If last token was a timestamp, the last segment is used
                 must_flush = must_flush or (len(segment_tokens[-1]) > 2 and segment_tokens[-1][-1] >= tokenizer.timestamp_begin)
             # logger.debug(f"New prompt: flushing = {must_flush}")
             if not must_flush and trust_whisper_timestamps:
@@ -488,7 +488,7 @@ def _transcribe_timestamped_efficient(
 
                 is_timestamp = tokens.ge(tokenizer.timestamp_begin)
                 consecutive = torch.where(is_timestamp[1:] & is_timestamp[:-1])[0]
-                if (len(tokens) == max_sample_len or WHIPSER_GT_20230306) and is_timestamp[-1] and not is_timestamp[-2]:
+                if (len(tokens) == max_sample_len or WHIPSER_GE_20230306) and is_timestamp[-1] and not is_timestamp[-2]:
                     consecutive = torch.cat([consecutive, torch.Tensor([len(tokens)-1]).int()])
                 last_is_timestamp = True
                 if len(consecutive):
@@ -814,7 +814,7 @@ def _transcribe_timestamped_efficient(
         if timestamped_tokens != whisper_tokens:
             if len(timestamped_tokens) == len(whisper_tokens) + 1:
                 logger.warn(f"An additional token was added on segment {i}")
-            elif WHIPSER_GT_20230306 and len(whisper_tokens) == 0:
+            elif WHIPSER_GE_20230306 and len(whisper_tokens) == 0:
                 logger.warn(f"Whisper has empty segment {i}")
                 assert segment["end"] == segment["start"], f"Fatal Error: Got empty segment {i} with non-zero duration"
                 segment["tokens"] = timestamped_tokens
@@ -1600,7 +1600,7 @@ def split_tokens_on_spaces(tokens: torch.Tensor, tokenizer, remove_punctuation_f
     return words, word_tokens, word_tokens_indices
 
 
-def remove_last_null_duration_words(transcription, words):
+def remove_last_null_duration_words(transcription, words, recompute_text=False):
     """
     Remove words with null duration happening at the end of a chunk (probable Whisper hallucinations)
     """
@@ -1617,7 +1617,6 @@ def remove_last_null_duration_words(transcription, words):
     # Remove words with null duration happening at the end of a chunk
     current_chunk = -1
     is_last_empty = False
-    recompute_text = False
     to_remove = []
     for i, word in enumerate(words[::-1]): # Reverse order
         i = len(words) - i - 1
