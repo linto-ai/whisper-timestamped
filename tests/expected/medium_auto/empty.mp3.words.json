@@ -8,15 +8,13 @@
       "end": 2.96,
       "text": " Thanks for",
       "tokens": [
-        50364,
         2561,
         337,
         1976,
-        0,
-        50520
+        0
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.9005999565124512,
+      "avg_logprob": -0.9005842890058245,
       "compression_ratio": 0.7142857142857143,
       "no_speech_prob": 0.6659879088401794,
       "confidence": 0.372,

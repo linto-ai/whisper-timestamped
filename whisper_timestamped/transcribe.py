@@ -44,6 +44,12 @@ USE_EFFICIENT_BY_DEFAULT = True
 TRUST_WHISPER_TIMESTAMP_BY_DEFAULT = True
 DISFLUENCY_MARK = "[*]"
 
+try:
+    whisper_version = whisper.__version__
+except NameError:
+    whisper_version = ""
+WHIPSER_GT_20230306 = whisper_version >= "20230306"
+
 def transcribe_timestamped(
     # Main Whisper options
     model,
@@ -334,13 +340,11 @@ def _transcribe_timestamped_efficient(
                 segment_tokens.append([])
                 segment_attweights = [[] for w in segment_attweights]
             segment_tokens[-2].pop(0)
-            # if debug:
-            #     logger.debug(f"Added new segment: {tokenizer.decode_with_timestamps(segment_tokens[-2])}")
         elif len(segment_tokens[-1]) > 0:
+            if debug:
+                logger.debug(f"Reset last segment: {tokenizer.decode_with_timestamps(segment_tokens[-1])}")
             segment_tokens[-1] = []
             segment_attweights = [[] for w in segment_attweights]
-            if debug:
-                logger.debug(f"Reset last segment")
 
     saw_consecutive_timestamps = False
     def must_flush_segment(curr_tokens):
@@ -357,7 +361,9 @@ def _transcribe_timestamped_efficient(
                 consecutive_timestamps = True
             return consecutive_timestamps
         else: # Several tokens as a prompt or must flush last segments
-            must_flush = not saw_consecutive_timestamps and len(segment_tokens[-1]) > 1
+            must_flush = len(segment_tokens[-1]) > 1 and not saw_consecutive_timestamps
+            if WHIPSER_GT_20230306: # If last token was a timestamp, the last segment is used
+                must_flush = must_flush or (len(segment_tokens[-1]) > 2 and segment_tokens[-1][-1] >= tokenizer.timestamp_begin)
             # logger.debug(f"New prompt: flushing = {must_flush}")
             if not must_flush and trust_whisper_timestamps:
                 # Discard the end of the last transcription
@@ -482,7 +488,7 @@ def _transcribe_timestamped_efficient(
 
                 is_timestamp = tokens.ge(tokenizer.timestamp_begin)
                 consecutive = torch.where(is_timestamp[1:] & is_timestamp[:-1])[0]
-                if len(tokens) == max_sample_len and is_timestamp[-1] and not is_timestamp[-2]:
+                if (len(tokens) == max_sample_len or WHIPSER_GT_20230306) and is_timestamp[-1] and not is_timestamp[-2]:
                     consecutive = torch.cat([consecutive, torch.Tensor([len(tokens)-1]).int()])
                 last_is_timestamp = True
                 if len(consecutive):
@@ -808,6 +814,11 @@ def _transcribe_timestamped_efficient(
         if timestamped_tokens != whisper_tokens:
             if len(timestamped_tokens) == len(whisper_tokens) + 1:
                 logger.warn(f"An additional token was added on segment {i}")
+            elif WHIPSER_GT_20230306 and len(whisper_tokens) == 0:
+                logger.warn(f"Whisper has empty segment {i}")
+                assert segment["end"] == segment["start"], f"Fatal Error: Got empty segment {i} with non-zero duration"
+                segment["tokens"] = timestamped_tokens
+                segment["text"] = tokenizer.decode(timestamped_tokens)
             else:
                 assert len(timestamped_tokens) < len(whisper_tokens) and timestamped_tokens == whisper_tokens[:len(timestamped_tokens)], \
                     f"Fatal Error: Got inconsistent text for segment {i}:\n({len(timestamped_tokens)})\n{tokenizer.decode_with_timestamps(timestamped_tokens)}\n{timestamped_tokens}\n!=\n({len(whisper_tokens)})\n{tokenizer.decode_with_timestamps(whisper_tokens)}\n{whisper_tokens[:len(timestamped_tokens)]}"
@@ -1684,6 +1695,11 @@ def flatten(list_of_lists, key = None):
         for item in sublist.get(key, []) if key else sublist:
             yield item
 
+def remove_keys(list_of_dicts, key):
+    for d in list_of_dicts:
+        yield {k: d[k] for k in d.keys() - {key}}
+        
+
 def write_csv(transcript, file, sep = ",", text_first=True, format_timestamps=None, header=False):
     writer = csv.writer(file, delimiter=sep)
     if format_timestamps is None: format_timestamps = lambda x: x
@@ -1791,6 +1807,8 @@ def cli():
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
     parser.add_argument('-v', '--version', help="show version and exit", action='version', version=f'{__version__}')
+    parser.add_argument('--versions', help="show versions (of whisper-timestamped and whisper) and exit", action='version',
+                        version=f'{__version__} -- Whisper {whisper.__version__} in {os.path.dirname(whisper.__file__)}')
 
     parser.add_argument('audio', help="audio file(s) to transcribe", nargs='+')
     parser.add_argument('--model', help=f"name of the Whisper model to use.", choices=whisper.available_models(), default="small")
@@ -1931,14 +1949,14 @@ def cli():
             # save VTT
             if "vtt" in output_format:
                 with open(outname + ".vtt", "w", encoding="utf-8") as vtt:
-                    write_vtt(result["segments"], file=vtt)
+                    write_vtt(remove_keys(result["segments"], "words"), file=vtt)
                 with open(outname + ".words.vtt", "w", encoding="utf-8") as vtt:
                     write_vtt(flatten(result["segments"], "words"), file=vtt)
 
             # save SRT
             if "srt" in output_format:
                 with open(outname + ".srt", "w", encoding="utf-8") as srt:
-                    write_srt(result["segments"], file=srt)
+                    write_srt(remove_keys(result["segments"], "words"), file=srt)
                 with open(outname + ".words.srt", "w", encoding="utf-8") as srt:
                     write_srt(flatten(result["segments"], "words"), file=srt)
 

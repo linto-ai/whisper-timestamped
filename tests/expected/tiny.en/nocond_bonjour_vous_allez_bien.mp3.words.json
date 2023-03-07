@@ -1,5 +1,5 @@
 {
-  "text": " Mohoo! Let's go with it again! Mohoo! Mohoo! Mohoo! Let's go with it again!",
+  "text": " Mohoo! Let's go with it again! Mohoo! Let's go with it again!",
   "segments": [
     {
       "id": 0,
@@ -8,7 +8,6 @@
       "end": 2.8,
       "text": " Mohoo! Let's go with it again!",
       "tokens": [
-        50363,
         337,
         1219,
         2238,
@@ -19,8 +18,7 @@
         351,
         340,
         757,
-        0,
-        50513
+        0
       ],
       "temperature": 0.0,
       "avg_logprob": -0.801825932094029,
@@ -69,133 +67,63 @@
     {
       "id": 1,
       "seek": 3000,
-      "start": 30.0,
-      "end": 30.06,
-      "text": " Mohoo!",
+      "start": 31.4,
+      "end": 35.38,
+      "text": " Mohoo! Let's go with it again!",
       "tokens": [
         337,
         1219,
         2238,
-        0
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.8310946226119995,
-      "compression_ratio": 0.7894736842105263,
-      "no_speech_prob": 0.15336871147155762,
-      "confidence": 0.308,
-      "words": [
-        {
-          "text": "Mohoo!",
-          "start": 30.0,
-          "end": 30.06,
-          "confidence": 0.308
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "seek": 3100,
-      "start": 31.78,
-      "end": 32.2,
-      "text": " Mohoo!",
-      "tokens": [
-        337,
-        1219,
-        2238,
-        0
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.7657748460769653,
-      "compression_ratio": 0.7894736842105263,
-      "no_speech_prob": 0.16998855769634247,
-      "confidence": 0.33,
-      "words": [
-        {
-          "text": "Mohoo!",
-          "start": 31.78,
-          "end": 32.2,
-          "confidence": 0.33
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "seek": 3200,
-      "start": 32.96,
-      "end": 33.9,
-      "text": " Mohoo!",
-      "tokens": [
-        337,
-        1219,
-        2238,
-        0
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.549964189529419,
-      "compression_ratio": 0.7894736842105263,
-      "no_speech_prob": 0.12980936467647552,
-      "confidence": 0.338,
-      "words": [
-        {
-          "text": "Mohoo!",
-          "start": 32.96,
-          "end": 33.9,
-          "confidence": 0.338
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "seek": 3400,
-      "start": 34.36,
-      "end": 35.42,
-      "text": " Let's go with it again!",
-      "tokens": [
-        50363,
+        0,
         3914,
         338,
         467,
         351,
         340,
         757,
-        0,
-        50463
+        0
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3771826267242432,
-      "compression_ratio": 0.7419354838709677,
-      "no_speech_prob": 0.05328294634819031,
-      "confidence": 0.814,
+      "avg_logprob": -0.17847934791019984,
+      "compression_ratio": 0.7894736842105263,
+      "no_speech_prob": 0.1688624918460846,
+      "confidence": 0.955,
       "words": [
         {
+          "text": "Mohoo!",
+          "start": 31.4,
+          "end": 34.0,
+          "confidence": 0.967
+        },
+        {
           "text": "Let's",
-          "start": 34.36,
+          "start": 34.44,
           "end": 34.72,
-          "confidence": 0.862
+          "confidence": 0.869
         },
         {
           "text": "go",
           "start": 34.72,
-          "end": 34.86,
-          "confidence": 0.922
+          "end": 34.84,
+          "confidence": 0.993
         },
         {
           "text": "with",
-          "start": 34.86,
+          "start": 34.84,
           "end": 35.0,
-          "confidence": 0.628
+          "confidence": 0.988
         },
         {
           "text": "it",
           "start": 35.0,
-          "end": 35.12,
-          "confidence": 0.683
+          "end": 35.1,
+          "confidence": 0.988
         },
         {
           "text": "again!",
-          "start": 35.12,
-          "end": 35.42,
-          "confidence": 0.992
+          "start": 35.1,
+          "end": 35.38,
+          "confidence": 0.997
         }
       ]
     }

@@ -63,7 +63,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.0266838073730469,
+      "avg_logprob": -1.0266682808859307,
       "compression_ratio": 1.2275862068965517,
       "no_speech_prob": 0.5754758715629578,
       "confidence": 0.361,
@@ -180,7 +180,7 @@
           "text": "Réthos",
           "start": 8.1,
           "end": 9.02,
-          "confidence": 0.352
+          "confidence": 0.353
         },
         {
           "text": "n'est",
@@ -265,11 +265,10 @@
     {
       "id": 1,
       "seek": 1300,
-      "start": 13.0,
-      "end": 15.34,
+      "start": 13.98,
+      "end": 15.2,
       "text": " La réapparition du Messe-Bouche de 1962 en tant que missale pour la forme exceptionnelle du roi de la Réthos",
       "tokens": [
-        50364,
         2369,
         3960,
         1746,
@@ -322,128 +321,127 @@
         4212,
         368,
         47837,
-        13,
-        51614
+        13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.18637239933013916,
+      "avg_logprob": -0.11944083656583514,
       "compression_ratio": 1.2275862068965517,
-      "no_speech_prob": 0.004369608126580715,
-      "confidence": 0.865,
+      "no_speech_prob": 0.992529571056366,
+      "confidence": 0.938,
       "words": [
         {
           "text": "La",
-          "start": 13.0,
-          "end": 14.48,
-          "confidence": 0.2
+          "start": 13.98,
+          "end": 14.24,
+          "confidence": 0.417
         },
         {
           "text": "réapparition",
-          "start": 14.48,
-          "end": 14.54,
-          "confidence": 0.899
+          "start": 14.24,
+          "end": 14.46,
+          "confidence": 0.98
         },
         {
           "text": "du",
-          "start": 14.54,
-          "end": 14.56,
-          "confidence": 0.519
+          "start": 14.46,
+          "end": 14.54,
+          "confidence": 0.896
         },
         {
           "text": "Messe-Bouche",
-          "start": 14.56,
-          "end": 14.74,
-          "confidence": 0.899
+          "start": 14.54,
+          "end": 14.56,
+          "confidence": 0.979
         },
         {
           "text": "de",
-          "start": 14.74,
-          "end": 14.76,
-          "confidence": 0.943
+          "start": 14.56,
+          "end": 14.58,
+          "confidence": 0.978
         },
         {
           "text": "1962",
-          "start": 14.76,
-          "end": 14.78,
-          "confidence": 0.191
+          "start": 14.58,
+          "end": 14.6,
+          "confidence": 0.334
         },
         {
           "text": "en",
-          "start": 14.78,
-          "end": 14.8,
-          "confidence": 0.467
+          "start": 14.6,
+          "end": 14.62,
+          "confidence": 0.829
         },
         {
           "text": "tant",
-          "start": 14.8,
-          "end": 14.82,
-          "confidence": 0.997
+          "start": 14.62,
+          "end": 14.64,
+          "confidence": 0.999
         },
         {
           "text": "que",
-          "start": 14.82,
-          "end": 14.84,
-          "confidence": 0.99
+          "start": 14.64,
+          "end": 14.66,
+          "confidence": 0.995
         },
         {
           "text": "missale",
-          "start": 14.84,
-          "end": 15.16,
-          "confidence": 0.587
+          "start": 14.66,
+          "end": 14.68,
+          "confidence": 0.909
         },
         {
           "text": "pour",
-          "start": 15.16,
-          "end": 15.18,
-          "confidence": 0.942
+          "start": 14.68,
+          "end": 14.7,
+          "confidence": 0.969
         },
         {
           "text": "la",
-          "start": 15.18,
-          "end": 15.2,
-          "confidence": 0.989
+          "start": 14.7,
+          "end": 14.72,
+          "confidence": 0.991
         },
         {
           "text": "forme",
-          "start": 15.2,
-          "end": 15.22,
-          "confidence": 0.99
+          "start": 14.72,
+          "end": 14.74,
+          "confidence": 0.995
         },
         {
           "text": "exceptionnelle",
-          "start": 15.22,
-          "end": 15.24,
-          "confidence": 0.97
+          "start": 14.74,
+          "end": 14.76,
+          "confidence": 0.979
         },
         {
           "text": "du",
-          "start": 15.24,
-          "end": 15.26,
-          "confidence": 0.912
+          "start": 14.76,
+          "end": 14.78,
+          "confidence": 0.938
         },
         {
           "text": "roi",
-          "start": 15.26,
-          "end": 15.28,
+          "start": 14.78,
+          "end": 14.8,
           "confidence": 0.987
         },
         {
           "text": "de",
-          "start": 15.28,
-          "end": 15.3,
-          "confidence": 0.986
+          "start": 14.8,
+          "end": 14.82,
+          "confidence": 0.993
         },
         {
           "text": "la",
-          "start": 15.3,
-          "end": 15.32,
-          "confidence": 0.985
+          "start": 14.82,
+          "end": 14.84,
+          "confidence": 0.983
         },
         {
           "text": "Réthos",
-          "start": 15.32,
-          "end": 15.34,
-          "confidence": 0.994
+          "start": 14.84,
+          "end": 15.2,
+          "confidence": 0.996
         }
       ]
     }

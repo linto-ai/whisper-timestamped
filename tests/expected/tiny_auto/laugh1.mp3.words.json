@@ -8,7 +8,6 @@
       "end": 2.3,
       "text": " You can't do it, you can't do",
       "tokens": [
-        50364,
         509,
         393,
         380,
@@ -20,11 +19,10 @@
         380,
         360,
         309,
-        13,
-        50464
+        13
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.2200188954671225,
+      "avg_logprob": -1.2200144449869792,
       "compression_ratio": 1.1379310344827587,
       "no_speech_prob": 0.37774592638015747,
       "confidence": 0.311,

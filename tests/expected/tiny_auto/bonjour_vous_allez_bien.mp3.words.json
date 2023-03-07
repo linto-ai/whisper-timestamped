@@ -1,5 +1,5 @@
 {
-  "text": " Боже улыл! Таков уже на меня! Боже улыл! Эскому за меня!",
+  "text": " Боже улыл! Эскому зарегиан! Боже улыл! Эскому зарегиан! Боже улыл! Эскому зарегиан! Боже улыл! Эскому зарегиан!",
   "segments": [
     {
       "id": 0,
@@ -16,7 +16,7 @@
         0
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.9448580490915399,
+      "avg_logprob": -0.9447780408357319,
       "compression_ratio": 0.8166666666666667,
       "no_speech_prob": 0.042649365961551666,
       "confidence": 0.317,
@@ -36,58 +36,46 @@
       ]
     },
     {
-      "id": 1,
-      "seek": 200,
-      "start": 2.0,
-      "end": 2.96,
-      "text": " Таков уже на меня!",
+      "id": 0,
+      "seek": 0,
+      "start": 1.88,
+      "end": 3.14,
+      "text": " Эскому зарегиан!",
       "tokens": [
-        50364,
-        8770,
-        1055,
-        7520,
-        1470,
-        6885,
-        0,
-        50464
+        5381,
+        4218,
+        4161,
+        17821,
+        4953,
+        435,
+        1416,
+        0
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.272515508863661,
-      "compression_ratio": 0.7441860465116279,
-      "no_speech_prob": 0.12040600180625916,
-      "confidence": 0.132,
+      "avg_logprob": -0.9447780408357319,
+      "compression_ratio": 0.8166666666666667,
+      "no_speech_prob": 0.042649365961551666,
+      "confidence": 0.395,
       "words": [
         {
-          "text": "Таков",
-          "start": 2.0,
-          "end": 2.32,
-          "confidence": 0.124
+          "text": "Эскому",
+          "start": 1.88,
+          "end": 2.3,
+          "confidence": 0.286
         },
         {
-          "text": "уже",
-          "start": 2.32,
-          "end": 2.46,
-          "confidence": 0.235
-        },
-        {
-          "text": "на",
-          "start": 2.46,
-          "end": 2.56,
-          "confidence": 0.077
-        },
-        {
-          "text": "меня!",
-          "start": 2.56,
-          "end": 2.96,
-          "confidence": 0.144
+          "text": "зарегиан!",
+          "start": 2.3,
+          "end": 3.14,
+          "confidence": 0.504
         }
       ]
     },
     {
       "id": 2,
-      "seek": 3200,
-      "start": 32.98,
-      "end": 33.98,
+      "seek": 3000,
+      "start": 30.98,
+      "end": 34.2,
       "text": " Боже улыл!",
       "tokens": [
         5697,
@@ -98,64 +86,58 @@
         0
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.8131243761848,
-      "compression_ratio": 0.8363636363636363,
-      "no_speech_prob": 0.6122337579727173,
-      "confidence": 0.725,
+      "avg_logprob": -0.1387999936154014,
+      "compression_ratio": 0.8166666666666667,
+      "no_speech_prob": 0.3932648301124573,
+      "confidence": 0.895,
       "words": [
         {
           "text": "Боже",
-          "start": 32.98,
-          "end": 33.4,
-          "confidence": 0.6
+          "start": 30.98,
+          "end": 33.36,
+          "confidence": 0.813
         },
         {
           "text": "улыл!",
-          "start": 33.4,
-          "end": 33.98,
-          "confidence": 0.823
+          "start": 33.36,
+          "end": 34.2,
+          "confidence": 0.955
         }
       ]
     },
     {
-      "id": 3,
-      "seek": 3400,
-      "start": 34.4,
-      "end": 35.38,
-      "text": " Эскому за меня!",
+      "id": 2,
+      "seek": 3000,
+      "start": 34.44,
+      "end": 35.7,
+      "text": " Эскому зарегиан!",
       "tokens": [
-        50364,
         5381,
         4218,
         4161,
-        4396,
-        6885,
-        0,
-        50464
+        17821,
+        4953,
+        435,
+        1416,
+        0
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.0267661412556965,
-      "compression_ratio": 0.7105263157894737,
-      "no_speech_prob": 0.12534433603286743,
-      "confidence": 0.187,
+      "avg_logprob": -0.1387999936154014,
+      "compression_ratio": 0.8166666666666667,
+      "no_speech_prob": 0.3932648301124573,
+      "confidence": 0.981,
       "words": [
         {
           "text": "Эскому",
-          "start": 34.4,
+          "start": 34.44,
           "end": 34.84,
-          "confidence": 0.276
+          "confidence": 0.962
         },
         {
-          "text": "за",
+          "text": "зарегиан!",
           "start": 34.84,
-          "end": 35.02,
-          "confidence": 0.088
-        },
-        {
-          "text": "меня!",
-          "start": 35.02,
-          "end": 35.38,
-          "confidence": 0.123
+          "end": 35.7,
+          "confidence": 0.996
         }
       ]
     }

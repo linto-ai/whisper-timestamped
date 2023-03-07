@@ -8,7 +8,6 @@
       "end": 2.36,
       "text": " Dima et ce que l'on vole.",
       "tokens": [
-        50364,
         413,
         4775,
         1030,
@@ -18,11 +17,10 @@
         6,
         266,
         49877,
-        13,
-        50494
+        13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.9100737204918494,
+      "avg_logprob": -0.9100304383497971,
       "compression_ratio": 0.7575757575757576,
       "no_speech_prob": 0.0011753258295357227,
       "confidence": 0.438,
@@ -37,7 +35,7 @@
           "text": "et",
           "start": 0.84,
           "end": 1.38,
-          "confidence": 0.329
+          "confidence": 0.33
         },
         {
           "text": "ce",
@@ -61,7 +59,7 @@
           "text": "vole.",
           "start": 2.02,
           "end": 2.36,
-          "confidence": 0.269
+          "confidence": 0.27
         }
       ]
     }

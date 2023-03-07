@@ -8,7 +8,6 @@
       "end": 2.34,
       "text": " Dis-moi, est-ce que l'avion vole?",
       "tokens": [
-        50364,
         4208,
         12,
         29292,
@@ -22,11 +21,10 @@
         706,
         313,
         49877,
-        2506,
-        50494
+        2506
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3014036907869227,
+      "avg_logprob": -0.3014030456542969,
       "compression_ratio": 0.8048780487804879,
       "no_speech_prob": 0.05134102329611778,
       "confidence": 0.925,

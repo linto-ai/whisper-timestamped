@@ -1,5 +1,5 @@
 {
-  "text": " Wie wieder zu dazu ist Meshfuchs von 1962 als Meshale für die außerordentliche Form des grullischen Rätos ist dann nicht so weitergegangen wie sich Papsbelle dick das gewünscht hatte. Das hat er als Meshale im Rätos.",
+  "text": " Wie wieder zu dazu ist Meshfuchs von 1962 als Meshale für die außerordentliche Form des grullischen Rätos ist dann nicht so weitergegangen wie sich Papsbelle dick das gewünscht hatte. Das hat er als Mhrethos. Wie wieder zu dazu ist Meshfuchs von 1962 als Meshale für die außerordentliche Form des grullischen Rätos ist dann nicht so weitergegangen wie sich Papsbelle dick das gewünscht hatte. Das hat er als Mhrethos.",
   "segments": [
     {
       "id": 0,
@@ -60,7 +60,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.6555206885704628,
+      "avg_logprob": -0.6554825415978065,
       "compression_ratio": 1.2619047619047619,
       "no_speech_prob": 0.11066817492246628,
       "confidence": 0.541,
@@ -242,74 +242,58 @@
       ]
     },
     {
-      "id": 1,
-      "seek": 1300,
-      "start": 13.98,
-      "end": 15.2,
-      "text": " Das hat er als Meshale im Rätos.",
+      "id": 0,
+      "seek": 0,
+      "start": 13.48,
+      "end": 15.34,
+      "text": " Das hat er als Mhrethos.",
       "tokens": [
-        50364,
         2846,
         2385,
         1189,
         3907,
         376,
-        14935,
-        1220,
-        566,
-        497,
-        3628,
+        71,
+        265,
+        392,
         329,
-        13,
-        51314
+        13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.946759033203125,
-      "compression_ratio": 0.8048780487804879,
-      "no_speech_prob": 0.04456862807273865,
-      "confidence": 0.383,
+      "avg_logprob": -0.6554825415978065,
+      "compression_ratio": 1.2619047619047619,
+      "no_speech_prob": 0.11066817492246628,
+      "confidence": 0.441,
       "words": [
         {
           "text": "Das",
-          "start": 13.98,
+          "start": 13.48,
           "end": 14.2,
-          "confidence": 0.841
+          "confidence": 0.827
         },
         {
           "text": "hat",
           "start": 14.2,
-          "end": 14.38,
-          "confidence": 0.877
+          "end": 14.4,
+          "confidence": 0.959
         },
         {
           "text": "er",
-          "start": 14.38,
-          "end": 14.54,
-          "confidence": 0.606
+          "start": 14.4,
+          "end": 14.52,
+          "confidence": 0.727
         },
         {
           "text": "als",
-          "start": 14.54,
-          "end": 14.7,
-          "confidence": 0.627
+          "start": 14.52,
+          "end": 14.72,
+          "confidence": 0.801
         },
         {
-          "text": "Meshale",
-          "start": 14.7,
-          "end": 15.06,
-          "confidence": 0.209
-        },
-        {
-          "text": "im",
-          "start": 15.06,
-          "end": 15.08,
-          "confidence": 0.1
-        },
-        {
-          "text": "Rätos.",
-          "start": 15.08,
-          "end": 15.2,
-          "confidence": 0.467
+          "text": "Mhrethos.",
+          "start": 14.72,
+          "end": 15.34,
+          "confidence": 0.267
         }
       ]
     }

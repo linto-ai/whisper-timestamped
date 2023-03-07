@@ -8,13 +8,11 @@
       "end": 1.34,
       "text": " Rires",
       "tokens": [
-        50364,
         497,
-        3145,
-        50576
+        3145
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.0959866523742676,
+      "avg_logprob": -1.0959813117980957,
       "compression_ratio": 0.38461538461538464,
       "no_speech_prob": 0.5549651980400085,
       "confidence": 0.266,

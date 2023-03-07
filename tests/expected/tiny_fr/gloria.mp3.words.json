@@ -8,7 +8,6 @@
       "end": 29.98,
       "text": " Je suis très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très",
       "tokens": [
-        50364,
         2588,
         7624,
         5732,
@@ -234,7 +233,7 @@
         5732
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.29288587782118053,
+      "avg_logprob": -0.29286671956380206,
       "compression_ratio": 43.0,
       "no_speech_prob": 0.18142351508140564,
       "confidence": 0.745,
@@ -1347,7 +1346,7 @@
           "text": "très",
           "start": 22.68,
           "end": 22.7,
-          "confidence": 0.841
+          "confidence": 0.842
         },
         {
           "text": "très",
@@ -1497,7 +1496,7 @@
           "text": "très",
           "start": 23.18,
           "end": 23.2,
-          "confidence": 0.825
+          "confidence": 0.826
         },
         {
           "text": "très",
@@ -1515,7 +1514,7 @@
           "text": "très",
           "start": 23.24,
           "end": 23.26,
-          "confidence": 0.826
+          "confidence": 0.827
         },
         {
           "text": "très",
@@ -1539,7 +1538,7 @@
           "text": "très",
           "start": 23.32,
           "end": 23.34,
-          "confidence": 0.831
+          "confidence": 0.832
         },
         {
           "text": "très",
@@ -1575,7 +1574,7 @@
           "text": "très",
           "start": 23.44,
           "end": 29.98,
-          "confidence": 0.829
+          "confidence": 0.83
         }
       ]
     }

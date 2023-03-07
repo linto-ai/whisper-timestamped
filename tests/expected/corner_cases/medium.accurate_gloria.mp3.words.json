@@ -1,5 +1,5 @@
 {
-  "text": " Hello. How are you? How are you? Oh, I'm okay. I will be. I said she could stay with us tomorrow until she feels better. Of course she can. This won't be for long. Well, you can stay as long as you want, my love. I really miss you.",
+  "text": " Hello. How are you? How are you? Oh, I'm okay. I will be. I said she could stay with us tomorrow until she feels better. Of course she can. This won't be for long. Well, you can stay as long as you want, my love. I really miss you. Hello. How are you? How are you? Oh, I'm okay. I will be. I said she could stay with us tomorrow until she feels better. Of course she can. This won't be for long. Well, you can stay as long as you want, my love. I really miss you.",
   "segments": [
     {
       "id": 0,
@@ -12,7 +12,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.21271128934972428,
+      "avg_logprob": -0.2127104366526884,
       "compression_ratio": 1.4713375796178343,
       "no_speech_prob": 0.3228166699409485,
       "confidence": 0.189,
@@ -26,7 +26,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 0,
       "seek": 0,
       "start": 1.94,
       "end": 3.54,
@@ -38,7 +38,7 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.21271128934972428,
+      "avg_logprob": -0.2127104366526884,
       "compression_ratio": 1.4713375796178343,
       "no_speech_prob": 0.3228166699409485,
       "confidence": 0.157,
@@ -64,7 +64,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 0,
       "seek": 0,
       "start": 3.7,
       "end": 6.38,
@@ -76,7 +76,7 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.21271128934972428,
+      "avg_logprob": -0.2127104366526884,
       "compression_ratio": 1.4713375796178343,
       "no_speech_prob": 0.3228166699409485,
       "confidence": 0.353,
@@ -102,7 +102,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 0,
       "seek": 0,
       "start": 6.38,
       "end": 7.74,
@@ -116,7 +116,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.21271128934972428,
+      "avg_logprob": -0.2127104366526884,
       "compression_ratio": 1.4713375796178343,
       "no_speech_prob": 0.3228166699409485,
       "confidence": 0.63,
@@ -142,7 +142,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 0,
       "seek": 0,
       "start": 7.74,
       "end": 9.2,
@@ -154,7 +154,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.21271128934972428,
+      "avg_logprob": -0.2127104366526884,
       "compression_ratio": 1.4713375796178343,
       "no_speech_prob": 0.3228166699409485,
       "confidence": 0.543,
@@ -180,7 +180,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 0,
       "seek": 0,
       "start": 9.5,
       "end": 11.56,
@@ -201,7 +201,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.21271128934972428,
+      "avg_logprob": -0.2127104366526884,
       "compression_ratio": 1.4713375796178343,
       "no_speech_prob": 0.3228166699409485,
       "confidence": 0.494,
@@ -281,7 +281,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 0,
       "seek": 0,
       "start": 11.56,
       "end": 13.42,
@@ -294,7 +294,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.21271128934972428,
+      "avg_logprob": -0.2127104366526884,
       "compression_ratio": 1.4713375796178343,
       "no_speech_prob": 0.3228166699409485,
       "confidence": 0.31,
@@ -326,7 +326,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 0,
       "seek": 0,
       "start": 13.54,
       "end": 15.24,
@@ -341,7 +341,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.21271128934972428,
+      "avg_logprob": -0.2127104366526884,
       "compression_ratio": 1.4713375796178343,
       "no_speech_prob": 0.3228166699409485,
       "confidence": 0.444,
@@ -379,7 +379,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 0,
       "seek": 0,
       "start": 15.5,
       "end": 17.62,
@@ -401,7 +401,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.21271128934972428,
+      "avg_logprob": -0.2127104366526884,
       "compression_ratio": 1.4713375796178343,
       "no_speech_prob": 0.3228166699409485,
       "confidence": 0.587,
@@ -475,49 +475,47 @@
       ]
     },
     {
-      "id": 9,
-      "seek": 1800,
+      "id": 0,
+      "seek": 0,
       "start": 17.62,
       "end": 19.52,
       "text": " I really miss you.",
       "tokens": [
-        50364,
         286,
         534,
         1713,
         291,
-        13,
-        50964
+        13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.41139015555381775,
-      "compression_ratio": 0.6923076923076923,
-      "no_speech_prob": 0.004231161903589964,
-      "confidence": 0.508,
+      "avg_logprob": -0.2127104366526884,
+      "compression_ratio": 1.4713375796178343,
+      "no_speech_prob": 0.3228166699409485,
+      "confidence": 0.477,
       "words": [
         {
           "text": "I",
           "start": 17.62,
           "end": 17.94,
-          "confidence": 0.486
+          "confidence": 0.495
         },
         {
           "text": "really",
           "start": 17.94,
-          "end": 18.32,
+          "end": 18.3,
           "confidence": 0.89
         },
         {
           "text": "miss",
-          "start": 18.32,
+          "start": 18.3,
           "end": 18.78,
-          "confidence": 0.401
+          "confidence": 0.338
         },
         {
           "text": "you.",
           "start": 18.78,
           "end": 19.52,
-          "confidence": 0.441
+          "confidence": 0.408
         }
       ]
     }

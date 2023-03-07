@@ -1,5 +1,5 @@
 {
-  "text": " Le plus important au poker ce ne sont pas les cartes, c'est ce que vous en faites. Winamax, la référence du poker en ligne. Bonsoir à toutes et tous, vous êtes sur BFM TV, nous sommes en direct, c'est bien sûr BFM story avec tout ce qui fait l'actualité. Durant 60 minutes ce sont des gros plans, des analyses, des réactions que nous vous proposons. Comment Eric Verth peut-il encore soutenir la réforme des retraites alors qu'il est englué dans sa propre affaire, l'affaire Verth-Bettancourt? Question posée par les leaders de la CFDT et la CGT. Réponse de Nicolas Sarkozy, Eric Verth portera le débat sur les retraites, on en parle dans BFM story avec le numéro de la CFDT. Et puis il y a une bataille qui a démarré, celle entre Marine Le Pen et Bruno Gognich, la bataille de la succession de Jean-Marie Le Pen à la tête du Front National. La tournée de campagne de Marine Le Pen commence aujourd'hui dans le Var, Marine Le Pen sera en direct dans BFM story. Restez avec nous Marine Le Pen dans moins de 3 minutes, à tout de suite. Musique L'actualité c'est aussi aujourd'hui un dernier adieu, dernier adieu à Laurent Fignon, c'était au cimetière du Père Lachaise à Paris. L'ancien double vainqueur du Tour de France, vaincu par le cancer à 50 ans, a été incinéré en petit comité aujourd'hui.",
+  "text": " Le plus important au poker ce ne sont pas les cartes, c'est ce que vous en faites. Winamax, la référence du poker en ligne. Bonsoir à toutes et tous, vous êtes sur BFM TV, nous sommes en direct, c'est bien sûr BFM story avec tout ce qui fait l'actualité. Durant 60 minutes ce sont des gros plans, des analyses, des réactions que nous vous proposons. Comment Eric Verth peut-il encore soutenir la réforme des retraites alors qu'il est englué dans sa propre affaire, l'affaire Verth-Bettancourt? Question posée par les leaders de la CFDT et la CGT. Réponse de Nicolas Sarkozy, Eric Verth portera le débat sur les retraites, on en parle dans BFM story avec le numéro de la CFDT. Et puis il y a une bataille qui a démarré, celle entre Marine Le Pen et Bruno Gognich, la bataille de la succession de Jean-Marie Le Pen à la tête du Front National. La tournée de campagne de Marine Le Pen commence aujourd'hui dans le Var, Marine Le Pen sera en direct dans BFM story. Restez avec nous Marine Le Pen dans moins de 3 minutes, à tout de suite. La tournée de campagne de Marine Le Pen commence aujourd'hui dans le Var, Marine Le Pen sera en direct dans BFM La fin de l'actualité, c'est aussi aujourd'hui un dernier adieu, un dernier adieu à Laurent Fignon, c'était au cimetière du Père Lachaise à Paris. L'ancien double vainqueur du Tour de France, vaincu par le cancer à 50 ans, a été incinéré en petit comité aujourd'hui.",
   "segments": [
     {
       "id": 0,
@@ -32,7 +32,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.19324099460494853,
+      "avg_logprob": -0.1932395863755841,
       "compression_ratio": 1.5084745762711864,
       "no_speech_prob": 0.5535648465156555,
       "confidence": 0.92,
@@ -142,7 +142,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 0,
       "seek": 3000,
       "start": 36.26,
       "end": 38.74,
@@ -162,7 +162,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.19324099460494853,
+      "avg_logprob": -0.1932395863755841,
       "compression_ratio": 1.5084745762711864,
       "no_speech_prob": 0.5535648465156555,
       "confidence": 0.967,
@@ -212,7 +212,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 0,
       "seek": 3000,
       "start": 44.9,
       "end": 51.38,
@@ -261,7 +261,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.19324099460494853,
+      "avg_logprob": -0.1932395863755841,
       "compression_ratio": 1.5084745762711864,
       "no_speech_prob": 0.5535648465156555,
       "confidence": 0.907,
@@ -419,7 +419,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 0,
       "seek": 3000,
       "start": 51.48,
       "end": 56.22,
@@ -449,7 +449,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.19324099460494853,
+      "avg_logprob": -0.1932395863755841,
       "compression_ratio": 1.5084745762711864,
       "no_speech_prob": 0.5535648465156555,
       "confidence": 0.947,
@@ -555,7 +555,7 @@
     {
       "id": 4,
       "seek": 5600,
-      "start": 56.6,
+      "start": 56.66,
       "end": 63.98,
       "text": " Comment Eric Verth peut-il encore soutenir la réforme des retraites alors qu'il est englué dans sa propre affaire, l'affaire Verth-Bettancourt?",
       "tokens": [
@@ -604,22 +604,22 @@
         2506
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12727267357610886,
+      "avg_logprob": -0.13184434213945942,
       "compression_ratio": 1.5705329153605017,
-      "no_speech_prob": 6.302507244981825e-05,
-      "confidence": 0.858,
+      "no_speech_prob": 0.579562246799469,
+      "confidence": 0.859,
       "words": [
         {
           "text": "Comment",
-          "start": 56.6,
+          "start": 56.66,
           "end": 56.96,
-          "confidence": 0.966
+          "confidence": 0.925
         },
         {
           "text": "Eric",
           "start": 56.96,
           "end": 57.2,
-          "confidence": 0.888
+          "confidence": 0.883
         },
         {
           "text": "Verth",
@@ -630,14 +630,14 @@
         {
           "text": "peut-il",
           "start": 57.36,
-          "end": 57.8,
-          "confidence": 0.951
+          "end": 57.82,
+          "confidence": 0.947
         },
         {
           "text": "encore",
-          "start": 57.8,
+          "start": 57.82,
           "end": 58.22,
-          "confidence": 0.971
+          "confidence": 0.941
         },
         {
           "text": "soutenir",
@@ -648,12 +648,12 @@
         {
           "text": "la",
           "start": 58.62,
-          "end": 58.8,
-          "confidence": 0.98
+          "end": 58.76,
+          "confidence": 0.978
         },
         {
           "text": "réforme",
-          "start": 58.8,
+          "start": 58.76,
           "end": 59.2,
           "confidence": 0.996
         },
@@ -661,55 +661,55 @@
           "text": "des",
           "start": 59.2,
           "end": 59.42,
-          "confidence": 0.993
+          "confidence": 0.99
         },
         {
           "text": "retraites",
           "start": 59.42,
           "end": 59.76,
-          "confidence": 0.988
+          "confidence": 0.99
         },
         {
           "text": "alors",
           "start": 59.76,
           "end": 59.98,
-          "confidence": 0.506
+          "confidence": 0.477
         },
         {
           "text": "qu'il",
           "start": 59.98,
           "end": 60.74,
-          "confidence": 0.965
+          "confidence": 0.964
         },
         {
           "text": "est",
           "start": 60.74,
           "end": 60.9,
-          "confidence": 0.975
+          "confidence": 0.97
         },
         {
           "text": "englué",
           "start": 60.9,
           "end": 61.7,
-          "confidence": 0.945
+          "confidence": 0.949
         },
         {
           "text": "dans",
           "start": 61.7,
           "end": 61.96,
-          "confidence": 0.97
+          "confidence": 0.951
         },
         {
           "text": "sa",
           "start": 61.96,
           "end": 62.44,
-          "confidence": 0.871
+          "confidence": 0.869
         },
         {
           "text": "propre",
           "start": 62.44,
           "end": 62.68,
-          "confidence": 0.992
+          "confidence": 0.99
         },
         {
           "text": "affaire,",
@@ -721,18 +721,18 @@
           "text": "l'affaire",
           "start": 63.02,
           "end": 63.3,
-          "confidence": 0.903
+          "confidence": 0.91
         },
         {
           "text": "Verth-Bettancourt?",
           "start": 63.3,
           "end": 63.98,
-          "confidence": 0.712
+          "confidence": 0.733
         }
       ]
     },
     {
-      "id": 5,
+      "id": 4,
       "seek": 5600,
       "start": 63.98,
       "end": 67.18,
@@ -756,52 +756,52 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12727267357610886,
+      "avg_logprob": -0.13184434213945942,
       "compression_ratio": 1.5705329153605017,
-      "no_speech_prob": 6.302507244981825e-05,
-      "confidence": 0.896,
+      "no_speech_prob": 0.579562246799469,
+      "confidence": 0.9,
       "words": [
         {
           "text": "Question",
           "start": 63.98,
           "end": 64.34,
-          "confidence": 0.64
+          "confidence": 0.639
         },
         {
           "text": "posée",
           "start": 64.34,
           "end": 64.74,
-          "confidence": 0.977
+          "confidence": 0.975
         },
         {
           "text": "par",
           "start": 64.74,
           "end": 64.96,
-          "confidence": 0.989
+          "confidence": 0.988
         },
         {
           "text": "les",
           "start": 64.96,
           "end": 65.12,
-          "confidence": 0.965
+          "confidence": 0.966
         },
         {
           "text": "leaders",
           "start": 65.12,
           "end": 65.66,
-          "confidence": 0.977
+          "confidence": 0.976
         },
         {
           "text": "de",
           "start": 65.66,
           "end": 65.92,
-          "confidence": 0.988
+          "confidence": 0.986
         },
         {
           "text": "la",
           "start": 65.92,
           "end": 66.1,
-          "confidence": 0.967
+          "confidence": 0.965
         },
         {
           "text": "CFDT",
@@ -812,28 +812,28 @@
         {
           "text": "et",
           "start": 66.52,
-          "end": 66.6,
-          "confidence": 0.586
+          "end": 66.62,
+          "confidence": 0.622
         },
         {
           "text": "la",
-          "start": 66.6,
+          "start": 66.62,
           "end": 66.74,
-          "confidence": 0.627
+          "confidence": 0.637
         },
         {
           "text": "CGT.",
           "start": 66.74,
           "end": 67.18,
-          "confidence": 0.987
+          "confidence": 0.986
         }
       ]
     },
     {
-      "id": 6,
+      "id": 4,
       "seek": 5600,
       "start": 67.48,
-      "end": 76.38,
+      "end": 76.4,
       "text": " Réponse de Nicolas Sarkozy, Eric Verth portera le débat sur les retraites, on en parle dans BFM story avec le numéro de la CFDT.",
       "tokens": [
         41587,
@@ -877,58 +877,58 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12727267357610886,
+      "avg_logprob": -0.13184434213945942,
       "compression_ratio": 1.5705329153605017,
-      "no_speech_prob": 6.302507244981825e-05,
-      "confidence": 0.968,
+      "no_speech_prob": 0.579562246799469,
+      "confidence": 0.969,
       "words": [
         {
           "text": "Réponse",
           "start": 67.48,
-          "end": 67.96,
-          "confidence": 0.957
+          "end": 67.94,
+          "confidence": 0.941
         },
         {
           "text": "de",
-          "start": 67.96,
+          "start": 67.94,
           "end": 68.12,
-          "confidence": 0.966
+          "confidence": 0.967
         },
         {
           "text": "Nicolas",
           "start": 68.12,
           "end": 68.38,
-          "confidence": 0.934
+          "confidence": 0.928
         },
         {
           "text": "Sarkozy,",
           "start": 68.38,
           "end": 68.88,
-          "confidence": 0.988
+          "confidence": 0.986
         },
         {
           "text": "Eric",
           "start": 68.98,
           "end": 69.24,
-          "confidence": 0.962
+          "confidence": 0.964
         },
         {
           "text": "Verth",
           "start": 69.24,
           "end": 69.84,
-          "confidence": 0.988
+          "confidence": 0.989
         },
         {
           "text": "portera",
           "start": 69.84,
           "end": 70.44,
-          "confidence": 0.966
+          "confidence": 0.964
         },
         {
           "text": "le",
           "start": 70.44,
           "end": 71.06,
-          "confidence": 0.99
+          "confidence": 0.987
         },
         {
           "text": "débat",
@@ -940,7 +940,7 @@
           "text": "sur",
           "start": 71.46,
           "end": 71.7,
-          "confidence": 0.99
+          "confidence": 0.986
         },
         {
           "text": "les",
@@ -952,13 +952,13 @@
           "text": "retraites,",
           "start": 71.88,
           "end": 72.26,
-          "confidence": 0.996
+          "confidence": 0.997
         },
         {
           "text": "on",
           "start": 72.36,
           "end": 72.5,
-          "confidence": 0.844
+          "confidence": 0.885
         },
         {
           "text": "en",
@@ -970,43 +970,43 @@
           "text": "parle",
           "start": 72.68,
           "end": 73.08,
-          "confidence": 0.996
+          "confidence": 0.995
         },
         {
           "text": "dans",
           "start": 73.08,
-          "end": 73.58,
-          "confidence": 0.983
+          "end": 73.56,
+          "confidence": 0.98
         },
         {
           "text": "BFM",
-          "start": 73.58,
+          "start": 73.56,
           "end": 74.46,
-          "confidence": 0.992
+          "confidence": 0.991
         },
         {
           "text": "story",
           "start": 74.46,
           "end": 74.76,
-          "confidence": 0.755
+          "confidence": 0.796
         },
         {
           "text": "avec",
           "start": 74.76,
           "end": 75.12,
-          "confidence": 0.835
+          "confidence": 0.857
         },
         {
           "text": "le",
           "start": 75.12,
           "end": 75.32,
-          "confidence": 0.984
+          "confidence": 0.981
         },
         {
           "text": "numéro",
           "start": 75.32,
           "end": 75.54,
-          "confidence": 0.997
+          "confidence": 0.996
         },
         {
           "text": "de",
@@ -1018,18 +1018,18 @@
           "text": "la",
           "start": 75.76,
           "end": 75.9,
-          "confidence": 0.99
+          "confidence": 0.988
         },
         {
           "text": "CFDT.",
           "start": 75.9,
-          "end": 76.38,
+          "end": 76.4,
           "confidence": 0.998
         }
       ]
     },
     {
-      "id": 7,
+      "id": 4,
       "seek": 5600,
       "start": 76.48,
       "end": 83.04,
@@ -1084,46 +1084,46 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12727267357610886,
+      "avg_logprob": -0.13184434213945942,
       "compression_ratio": 1.5705329153605017,
-      "no_speech_prob": 6.302507244981825e-05,
+      "no_speech_prob": 0.579562246799469,
       "confidence": 0.872,
       "words": [
         {
           "text": "Et",
           "start": 76.48,
-          "end": 76.96,
-          "confidence": 0.911
+          "end": 76.94,
+          "confidence": 0.849
         },
         {
           "text": "puis",
-          "start": 76.96,
+          "start": 76.94,
           "end": 77.06,
-          "confidence": 0.958
+          "confidence": 0.95
         },
         {
           "text": "il",
           "start": 77.06,
           "end": 77.18,
-          "confidence": 0.793
+          "confidence": 0.799
         },
         {
           "text": "y",
           "start": 77.18,
           "end": 77.2,
-          "confidence": 0.994
+          "confidence": 0.995
         },
         {
           "text": "a",
           "start": 77.2,
           "end": 77.22,
-          "confidence": 0.986
+          "confidence": 0.987
         },
         {
           "text": "une",
           "start": 77.22,
           "end": 77.28,
-          "confidence": 0.996
+          "confidence": 0.995
         },
         {
           "text": "bataille",
@@ -1159,7 +1159,7 @@
           "text": "entre",
           "start": 78.4,
           "end": 78.64,
-          "confidence": 0.976
+          "confidence": 0.973
         },
         {
           "text": "Marine",
@@ -1177,7 +1177,7 @@
           "text": "Pen",
           "start": 79.12,
           "end": 79.18,
-          "confidence": 0.987
+          "confidence": 0.985
         },
         {
           "text": "et",
@@ -1189,19 +1189,19 @@
           "text": "Bruno",
           "start": 79.34,
           "end": 79.54,
-          "confidence": 0.986
+          "confidence": 0.985
         },
         {
           "text": "Gognich,",
           "start": 79.54,
           "end": 80.02,
-          "confidence": 0.241
+          "confidence": 0.244
         },
         {
           "text": "la",
           "start": 80.2,
           "end": 80.32,
-          "confidence": 0.676
+          "confidence": 0.7
         },
         {
           "text": "bataille",
@@ -1213,17 +1213,17 @@
           "text": "de",
           "start": 80.58,
           "end": 80.72,
-          "confidence": 0.975
+          "confidence": 0.974
         },
         {
           "text": "la",
           "start": 80.72,
-          "end": 80.86,
-          "confidence": 0.988
+          "end": 80.84,
+          "confidence": 0.987
         },
         {
           "text": "succession",
-          "start": 80.86,
+          "start": 80.84,
           "end": 81.22,
           "confidence": 0.983
         },
@@ -1231,19 +1231,19 @@
           "text": "de",
           "start": 81.22,
           "end": 81.44,
-          "confidence": 0.984
+          "confidence": 0.988
         },
         {
           "text": "Jean-Marie",
           "start": 81.44,
           "end": 81.72,
-          "confidence": 0.949
+          "confidence": 0.945
         },
         {
           "text": "Le",
           "start": 81.72,
           "end": 81.9,
-          "confidence": 0.996
+          "confidence": 0.995
         },
         {
           "text": "Pen",
@@ -1255,13 +1255,13 @@
           "text": "à",
           "start": 82.0,
           "end": 82.16,
-          "confidence": 0.976
+          "confidence": 0.978
         },
         {
           "text": "la",
           "start": 82.16,
           "end": 82.22,
-          "confidence": 0.995
+          "confidence": 0.996
         },
         {
           "text": "tête",
@@ -1279,13 +1279,13 @@
           "text": "Front",
           "start": 82.46,
           "end": 82.66,
-          "confidence": 0.777
+          "confidence": 0.786
         },
         {
           "text": "National.",
           "start": 82.66,
           "end": 83.04,
-          "confidence": 0.836
+          "confidence": 0.832
         }
       ]
     },
@@ -1329,16 +1329,16 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.10716157393022017,
+      "avg_logprob": -0.128003961389715,
       "compression_ratio": 1.3591549295774648,
-      "no_speech_prob": 0.00011234734847676009,
-      "confidence": 0.958,
+      "no_speech_prob": 0.642947256565094,
+      "confidence": 0.955,
       "words": [
         {
           "text": "La",
           "start": 83.34,
           "end": 83.68,
-          "confidence": 0.98
+          "confidence": 0.895
         },
         {
           "text": "tournée",
@@ -1349,20 +1349,20 @@
         {
           "text": "de",
           "start": 84.16,
-          "end": 84.46,
-          "confidence": 0.948
+          "end": 84.48,
+          "confidence": 0.938
         },
         {
           "text": "campagne",
-          "start": 84.46,
+          "start": 84.48,
           "end": 84.8,
-          "confidence": 0.984
+          "confidence": 0.981
         },
         {
           "text": "de",
           "start": 84.8,
           "end": 84.98,
-          "confidence": 0.977
+          "confidence": 0.979
         },
         {
           "text": "Marine",
@@ -1386,7 +1386,7 @@
           "text": "commence",
           "start": 85.44,
           "end": 85.8,
-          "confidence": 0.98
+          "confidence": 0.972
         },
         {
           "text": "aujourd'hui",
@@ -1398,31 +1398,31 @@
           "text": "dans",
           "start": 86.14,
           "end": 86.28,
-          "confidence": 0.984
+          "confidence": 0.979
         },
         {
           "text": "le",
           "start": 86.28,
           "end": 86.46,
-          "confidence": 0.912
+          "confidence": 0.901
         },
         {
           "text": "Var,",
           "start": 86.46,
-          "end": 86.64,
-          "confidence": 0.521
+          "end": 86.62,
+          "confidence": 0.549
         },
         {
           "text": "Marine",
           "start": 86.74,
           "end": 86.96,
-          "confidence": 0.993
+          "confidence": 0.991
         },
         {
           "text": "Le",
           "start": 86.96,
           "end": 87.12,
-          "confidence": 0.993
+          "confidence": 0.995
         },
         {
           "text": "Pen",
@@ -1434,29 +1434,29 @@
           "text": "sera",
           "start": 87.22,
           "end": 87.48,
-          "confidence": 0.991
+          "confidence": 0.99
         },
         {
           "text": "en",
           "start": 87.48,
-          "end": 87.76,
-          "confidence": 0.991
+          "end": 87.78,
+          "confidence": 0.988
         },
         {
           "text": "direct",
-          "start": 87.76,
+          "start": 87.78,
           "end": 88.04,
-          "confidence": 0.997
+          "confidence": 0.995
         },
         {
           "text": "dans",
           "start": 88.04,
-          "end": 88.34,
-          "confidence": 0.935
+          "end": 88.32,
+          "confidence": 0.925
         },
         {
           "text": "BFM",
-          "start": 88.34,
+          "start": 88.32,
           "end": 88.68,
           "confidence": 0.997
         },
@@ -1464,12 +1464,12 @@
           "text": "story.",
           "start": 88.68,
           "end": 88.88,
-          "confidence": 0.828
+          "confidence": 0.848
         }
       ]
     },
     {
-      "id": 9,
+      "id": 8,
       "seek": 8300,
       "start": 89.02,
       "end": 92.28,
@@ -1495,16 +1495,16 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.10716157393022017,
+      "avg_logprob": -0.128003961389715,
       "compression_ratio": 1.3591549295774648,
-      "no_speech_prob": 0.00011234734847676009,
-      "confidence": 0.938,
+      "no_speech_prob": 0.642947256565094,
+      "confidence": 0.921,
       "words": [
         {
           "text": "Restez",
           "start": 89.02,
           "end": 89.4,
-          "confidence": 0.967
+          "confidence": 0.96
         },
         {
           "text": "avec",
@@ -1516,13 +1516,13 @@
           "text": "nous",
           "start": 89.7,
           "end": 89.94,
-          "confidence": 0.968
+          "confidence": 0.953
         },
         {
           "text": "Marine",
           "start": 89.94,
           "end": 90.24,
-          "confidence": 0.907
+          "confidence": 0.887
         },
         {
           "text": "Le",
@@ -1540,13 +1540,13 @@
           "text": "dans",
           "start": 90.68,
           "end": 90.98,
-          "confidence": 0.835
+          "confidence": 0.777
         },
         {
           "text": "moins",
           "start": 90.98,
           "end": 91.2,
-          "confidence": 0.993
+          "confidence": 0.992
         },
         {
           "text": "de",
@@ -1558,25 +1558,25 @@
           "text": "3",
           "start": 91.34,
           "end": 91.52,
-          "confidence": 0.613
+          "confidence": 0.537
         },
         {
           "text": "minutes,",
           "start": 91.52,
           "end": 91.8,
-          "confidence": 0.986
+          "confidence": 0.967
         },
         {
           "text": "à",
           "start": 91.82,
           "end": 91.98,
-          "confidence": 0.963
+          "confidence": 0.961
         },
         {
           "text": "tout",
           "start": 91.98,
           "end": 92.1,
-          "confidence": 0.918
+          "confidence": 0.911
         },
         {
           "text": "de",
@@ -1596,38 +1596,191 @@
       "id": 10,
       "seek": 9200,
       "start": 92.28,
-      "end": 107.14,
-      "text": " Musique",
+      "end": 106.28,
+      "text": " La tournée de campagne de Marine Le Pen commence aujourd'hui dans le Var, Marine Le Pen sera en direct dans BFM",
       "tokens": [
-        3569,
-        1925
+        2369,
+        3512,
+        77,
+        3856,
+        368,
+        2255,
+        13887,
+        368,
+        20415,
+        1456,
+        10571,
+        18137,
+        14023,
+        6,
+        10556,
+        2680,
+        476,
+        14662,
+        11,
+        20415,
+        1456,
+        10571,
+        15021,
+        465,
+        2047,
+        2680,
+        363,
+        37,
+        44,
+        1657,
+        13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.15037982043098,
-      "compression_ratio": 1.4545454545454546,
-      "no_speech_prob": 8.217898721341044e-05,
-      "confidence": 0.328,
+      "avg_logprob": -0.18358267375401088,
+      "compression_ratio": 1.1553398058252426,
+      "no_speech_prob": 0.6051837205886841,
+      "confidence": 0.905,
       "words": [
         {
-          "text": "Musique",
+          "text": "La",
           "start": 92.28,
-          "end": 107.14,
-          "confidence": 0.328
+          "end": 93.92,
+          "confidence": 0.233
+        },
+        {
+          "text": "tournée",
+          "start": 93.92,
+          "end": 94.32,
+          "confidence": 0.778
+        },
+        {
+          "text": "de",
+          "start": 94.32,
+          "end": 94.34,
+          "confidence": 0.915
+        },
+        {
+          "text": "campagne",
+          "start": 94.34,
+          "end": 94.36,
+          "confidence": 0.962
+        },
+        {
+          "text": "de",
+          "start": 94.36,
+          "end": 94.38,
+          "confidence": 0.986
+        },
+        {
+          "text": "Marine",
+          "start": 94.38,
+          "end": 94.4,
+          "confidence": 0.992
+        },
+        {
+          "text": "Le",
+          "start": 94.4,
+          "end": 94.42,
+          "confidence": 0.999
+        },
+        {
+          "text": "Pen",
+          "start": 94.42,
+          "end": 94.44,
+          "confidence": 0.999
+        },
+        {
+          "text": "commence",
+          "start": 94.44,
+          "end": 94.46,
+          "confidence": 0.807
+        },
+        {
+          "text": "aujourd'hui",
+          "start": 94.46,
+          "end": 94.86,
+          "confidence": 0.995
+        },
+        {
+          "text": "dans",
+          "start": 94.86,
+          "end": 96.08,
+          "confidence": 0.982
+        },
+        {
+          "text": "le",
+          "start": 96.08,
+          "end": 96.1,
+          "confidence": 0.975
+        },
+        {
+          "text": "Var,",
+          "start": 96.1,
+          "end": 96.12,
+          "confidence": 0.944
+        },
+        {
+          "text": "Marine",
+          "start": 97.04,
+          "end": 97.06,
+          "confidence": 0.99
+        },
+        {
+          "text": "Le",
+          "start": 97.06,
+          "end": 97.08,
+          "confidence": 1.0
+        },
+        {
+          "text": "Pen",
+          "start": 97.08,
+          "end": 97.1,
+          "confidence": 0.999
+        },
+        {
+          "text": "sera",
+          "start": 97.1,
+          "end": 97.12,
+          "confidence": 0.977
+        },
+        {
+          "text": "en",
+          "start": 97.12,
+          "end": 97.14,
+          "confidence": 0.992
+        },
+        {
+          "text": "direct",
+          "start": 97.14,
+          "end": 97.16,
+          "confidence": 0.999
+        },
+        {
+          "text": "dans",
+          "start": 97.16,
+          "end": 97.18,
+          "confidence": 0.997
+        },
+        {
+          "text": "BFM",
+          "start": 97.18,
+          "end": 106.28,
+          "confidence": 0.972
         }
       ]
     },
     {
       "id": 11,
-      "seek": 9200,
-      "start": 107.14,
-      "end": 113.48,
-      "text": " L'actualité c'est aussi aujourd'hui un dernier adieu, dernier adieu à Laurent Fignon, c'était au cimetière du Père Lachaise à Paris.",
+      "seek": 10700,
+      "start": 107.0,
+      "end": 113.46,
+      "text": " La fin de l'actualité, c'est aussi aujourd'hui un dernier adieu, un dernier adieu à Laurent Fignon, c'était au cimetière du Père Lachaise à Paris.",
       "tokens": [
-        441,
+        2369,
+        962,
+        368,
+        287,
         6,
         578,
         901,
         5066,
+        11,
         269,
         6,
         377,
@@ -1640,6 +1793,7 @@
         614,
         19347,
         11,
+        517,
         29332,
         614,
         19347,
@@ -1666,141 +1820,164 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.15037982043098,
-      "compression_ratio": 1.4545454545454546,
-      "no_speech_prob": 8.217898721341044e-05,
-      "confidence": 0.898,
+      "avg_logprob": -0.20587144896041515,
+      "compression_ratio": 1.4631578947368422,
+      "no_speech_prob": 0.8022392392158508,
+      "confidence": 0.748,
       "words": [
         {
-          "text": "L'actualité",
+          "text": "La",
+          "start": 107.0,
+          "end": 107.02,
+          "confidence": 0.194
+        },
+        {
+          "text": "fin",
+          "start": 107.02,
+          "end": 107.14,
+          "confidence": 0.02
+        },
+        {
+          "text": "de",
           "start": 107.14,
-          "end": 107.46,
-          "confidence": 0.868
+          "end": 107.28,
+          "confidence": 0.597
+        },
+        {
+          "text": "l'actualité,",
+          "start": 107.28,
+          "end": 107.48,
+          "confidence": 0.562
         },
         {
           "text": "c'est",
-          "start": 107.46,
-          "end": 107.72,
-          "confidence": 0.841
+          "start": 107.62,
+          "end": 107.74,
+          "confidence": 0.98
         },
         {
           "text": "aussi",
-          "start": 107.72,
-          "end": 107.98,
-          "confidence": 0.803
+          "start": 107.74,
+          "end": 108.06,
+          "confidence": 0.767
         },
         {
           "text": "aujourd'hui",
-          "start": 107.98,
+          "start": 108.06,
           "end": 108.38,
-          "confidence": 0.928
+          "confidence": 0.86
         },
         {
           "text": "un",
           "start": 108.38,
-          "end": 108.54,
-          "confidence": 0.886
+          "end": 108.52,
+          "confidence": 0.955
         },
         {
           "text": "dernier",
-          "start": 108.54,
+          "start": 108.52,
           "end": 108.84,
-          "confidence": 0.991
+          "confidence": 0.994
         },
         {
           "text": "adieu,",
           "start": 108.84,
           "end": 109.1,
-          "confidence": 0.982
+          "confidence": 0.986
+        },
+        {
+          "text": "un",
+          "start": 109.16,
+          "end": 109.32,
+          "confidence": 0.535
         },
         {
           "text": "dernier",
-          "start": 109.16,
-          "end": 109.42,
-          "confidence": 0.502
+          "start": 109.32,
+          "end": 109.44,
+          "confidence": 0.996
         },
         {
           "text": "adieu",
-          "start": 109.42,
-          "end": 109.92,
-          "confidence": 0.997
+          "start": 109.44,
+          "end": 109.94,
+          "confidence": 0.998
         },
         {
           "text": "à",
-          "start": 109.92,
-          "end": 110.18,
-          "confidence": 0.978
+          "start": 109.94,
+          "end": 110.22,
+          "confidence": 0.955
         },
         {
           "text": "Laurent",
-          "start": 110.18,
-          "end": 110.44,
-          "confidence": 0.94
+          "start": 110.22,
+          "end": 110.46,
+          "confidence": 0.939
         },
         {
           "text": "Fignon,",
-          "start": 110.44,
-          "end": 110.88,
-          "confidence": 0.817
+          "start": 110.46,
+          "end": 110.86,
+          "confidence": 0.858
         },
         {
           "text": "c'était",
-          "start": 111.04,
-          "end": 111.28,
-          "confidence": 0.972
+          "start": 111.02,
+          "end": 111.26,
+          "confidence": 0.918
         },
         {
           "text": "au",
-          "start": 111.28,
+          "start": 111.26,
           "end": 111.44,
-          "confidence": 0.99
+          "confidence": 0.992
         },
         {
           "text": "cimetière",
           "start": 111.44,
           "end": 111.94,
-          "confidence": 0.984
+          "confidence": 0.978
         },
         {
           "text": "du",
           "start": 111.94,
           "end": 112.18,
-          "confidence": 0.963
+          "confidence": 0.943
         },
         {
           "text": "Père",
           "start": 112.18,
           "end": 112.36,
-          "confidence": 0.892
+          "confidence": 0.898
         },
         {
           "text": "Lachaise",
           "start": 112.36,
-          "end": 112.9,
-          "confidence": 0.865
+          "end": 112.88,
+          "confidence": 0.889
         },
         {
           "text": "à",
-          "start": 112.9,
-          "end": 113.18,
-          "confidence": 0.799
+          "start": 112.88,
+          "end": 113.12,
+          "confidence": 0.7
         },
         {
           "text": "Paris.",
-          "start": 113.18,
-          "end": 113.48,
+          "start": 113.12,
+          "end": 113.46,
           "confidence": 0.998
         }
       ]
     },
     {
-      "id": 12,
-      "seek": 11400,
-      "start": 114.0,
-      "end": 120.46,
+      "id": 11,
+      "seek": 10700,
+      "start": 113.88,
+      "end": 120.48,
       "text": " L'ancien double vainqueur du Tour de France, vaincu par le cancer à 50 ans, a été incinéré en petit comité aujourd'hui.",
       "tokens": [
-        50364,
         441,
         6,
         38840,
@@ -1835,140 +2012,139 @@
         14023,
         6,
         10556,
-        13,
-        50764
+        13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.10659925561202199,
-      "compression_ratio": 1.1160714285714286,
-      "no_speech_prob": 0.0002452500048093498,
-      "confidence": 0.933,
+      "avg_logprob": -0.20587144896041515,
+      "compression_ratio": 1.4631578947368422,
+      "no_speech_prob": 0.8022392392158508,
+      "confidence": 0.973,
       "words": [
         {
           "text": "L'ancien",
-          "start": 114.0,
+          "start": 113.88,
           "end": 114.38,
-          "confidence": 0.734
+          "confidence": 0.991
         },
         {
           "text": "double",
           "start": 114.38,
-          "end": 114.64,
-          "confidence": 0.991
+          "end": 114.62,
+          "confidence": 0.994
         },
         {
           "text": "vainqueur",
-          "start": 114.64,
+          "start": 114.62,
           "end": 115.06,
-          "confidence": 0.996
+          "confidence": 0.995
         },
         {
           "text": "du",
           "start": 115.06,
           "end": 115.22,
-          "confidence": 0.971
+          "confidence": 0.988
         },
         {
           "text": "Tour",
           "start": 115.22,
           "end": 115.4,
-          "confidence": 0.828
+          "confidence": 0.884
         },
         {
           "text": "de",
           "start": 115.4,
-          "end": 115.58,
-          "confidence": 0.992
+          "end": 115.62,
+          "confidence": 0.991
         },
         {
           "text": "France,",
-          "start": 115.58,
-          "end": 115.98,
+          "start": 115.62,
+          "end": 115.96,
           "confidence": 0.999
         },
         {
           "text": "vaincu",
-          "start": 116.24,
-          "end": 116.48,
-          "confidence": 0.989
+          "start": 116.22,
+          "end": 116.46,
+          "confidence": 0.981
         },
         {
           "text": "par",
-          "start": 116.48,
+          "start": 116.46,
           "end": 116.64,
           "confidence": 0.997
         },
         {
           "text": "le",
           "start": 116.64,
-          "end": 116.88,
-          "confidence": 0.994
+          "end": 116.8,
+          "confidence": 0.996
         },
         {
           "text": "cancer",
-          "start": 116.88,
+          "start": 116.8,
           "end": 117.08,
-          "confidence": 0.965
+          "confidence": 0.984
         },
         {
           "text": "à",
           "start": 117.08,
-          "end": 117.3,
-          "confidence": 0.964
+          "end": 117.28,
+          "confidence": 0.971
         },
         {
           "text": "50",
-          "start": 117.3,
+          "start": 117.28,
           "end": 117.54,
-          "confidence": 0.977
+          "confidence": 0.974
         },
         {
           "text": "ans,",
           "start": 117.54,
           "end": 117.92,
-          "confidence": 0.989
+          "confidence": 0.994
         },
         {
           "text": "a",
-          "start": 118.28,
+          "start": 118.3,
           "end": 118.38,
-          "confidence": 0.989
+          "confidence": 0.984
         },
         {
           "text": "été",
           "start": 118.38,
-          "end": 118.62,
-          "confidence": 0.996
+          "end": 118.6,
+          "confidence": 0.997
         },
         {
           "text": "incinéré",
-          "start": 118.62,
-          "end": 119.24,
-          "confidence": 0.965
+          "start": 118.6,
+          "end": 119.26,
+          "confidence": 0.971
         },
         {
           "text": "en",
-          "start": 119.24,
+          "start": 119.26,
           "end": 119.56,
-          "confidence": 0.913
+          "confidence": 0.965
         },
         {
           "text": "petit",
           "start": 119.56,
           "end": 119.82,
-          "confidence": 0.883
+          "confidence": 0.881
         },
         {
           "text": "comité",
           "start": 119.82,
           "end": 120.18,
-          "confidence": 0.978
+          "confidence": 0.972
         },
         {
           "text": "aujourd'hui.",
           "start": 120.18,
-          "end": 120.46,
-          "confidence": 0.928
+          "end": 120.48,
+          "confidence": 0.933
         }
       ]
     }
