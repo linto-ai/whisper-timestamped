@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.4,
-      "end": 3.68,
+      "end": 3.66,
       "text": " C'est évident ce que dit Nicolas, mais je ne me l'étais jamais formulé comme ça.",
       "tokens": [
         383,
@@ -41,12 +41,12 @@
         {
           "text": "C'est",
           "start": 0.4,
-          "end": 0.66,
+          "end": 0.64,
           "confidence": 0.961
         },
         {
           "text": "évident",
-          "start": 0.66,
+          "start": 0.64,
           "end": 0.9,
           "confidence": 0.984
         },
@@ -71,7 +71,7 @@
         {
           "text": "Nicolas,",
           "start": 1.2,
-          "end": 1.5,
+          "end": 1.48,
           "confidence": 0.91
         },
         {
@@ -83,24 +83,24 @@
         {
           "text": "je",
           "start": 2.04,
-          "end": 2.28,
+          "end": 2.26,
           "confidence": 0.981
         },
         {
           "text": "ne",
-          "start": 2.28,
+          "start": 2.26,
           "end": 2.34,
           "confidence": 0.837
         },
         {
           "text": "me",
           "start": 2.34,
-          "end": 2.38,
+          "end": 2.36,
           "confidence": 0.821
         },
         {
           "text": "l'étais",
-          "start": 2.38,
+          "start": 2.36,
           "end": 2.58,
           "confidence": 0.971
         },
@@ -113,19 +113,19 @@
         {
           "text": "formulé",
           "start": 2.88,
-          "end": 3.28,
+          "end": 3.26,
           "confidence": 0.908
         },
         {
           "text": "comme",
-          "start": 3.28,
+          "start": 3.26,
           "end": 3.44,
           "confidence": 0.993
         },
         {
           "text": "ça.",
           "start": 3.44,
-          "end": 3.68,
+          "end": 3.66,
           "confidence": 0.975
         }
       ]
@@ -133,7 +133,7 @@
     {
       "id": 1,
       "seek": 0,
-      "start": 4.18,
+      "start": 4.16,
       "end": 7.94,
       "text": " Ce qui fait la force du smartphone, c'est pas seulement l'accumulation des fonctions,",
       "tokens": [
@@ -168,44 +168,44 @@
       "words": [
         {
           "text": "Ce",
-          "start": 4.18,
+          "start": 4.16,
           "end": 4.28,
           "confidence": 0.952
         },
         {
           "text": "qui",
           "start": 4.28,
-          "end": 4.38,
+          "end": 4.36,
           "confidence": 0.958
         },
         {
           "text": "fait",
-          "start": 4.38,
+          "start": 4.36,
           "end": 4.5,
           "confidence": 0.567
         },
         {
           "text": "la",
           "start": 4.5,
-          "end": 4.78,
+          "end": 4.76,
           "confidence": 0.972
         },
         {
           "text": "force",
-          "start": 4.78,
-          "end": 5.04,
+          "start": 4.76,
+          "end": 5.02,
           "confidence": 0.999
         },
         {
           "text": "du",
-          "start": 5.04,
+          "start": 5.02,
           "end": 5.22,
           "confidence": 0.996
         },
         {
           "text": "smartphone,",
           "start": 5.22,
-          "end": 5.72,
+          "end": 5.7,
           "confidence": 0.912
         },
         {
@@ -217,18 +217,18 @@
         {
           "text": "pas",
           "start": 6.16,
-          "end": 6.28,
+          "end": 6.26,
           "confidence": 0.991
         },
         {
           "text": "seulement",
-          "start": 6.28,
-          "end": 6.58,
+          "start": 6.26,
+          "end": 6.54,
           "confidence": 0.999
         },
         {
           "text": "l'accumulation",
-          "start": 6.58,
+          "start": 6.54,
           "end": 7.4,
           "confidence": 0.958
         },
@@ -280,42 +280,42 @@
         {
           "text": "la",
           "start": 8.48,
-          "end": 8.76,
+          "end": 8.7,
           "confidence": 0.995
         },
         {
           "text": "manière",
-          "start": 8.76,
+          "start": 8.7,
           "end": 8.94,
           "confidence": 0.999
         },
         {
           "text": "dont",
           "start": 8.94,
-          "end": 9.1,
+          "end": 9.08,
           "confidence": 0.978
         },
         {
           "text": "elles",
-          "start": 9.1,
-          "end": 9.5,
+          "start": 9.08,
+          "end": 9.48,
           "confidence": 0.967
         },
         {
           "text": "interagissent",
-          "start": 9.5,
+          "start": 9.48,
           "end": 10.38,
           "confidence": 0.964
         },
         {
           "text": "entre",
           "start": 10.38,
-          "end": 10.72,
+          "end": 10.7,
           "confidence": 0.955
         },
         {
           "text": "elles.",
-          "start": 10.72,
+          "start": 10.7,
           "end": 10.88,
           "confidence": 0.989
         }
@@ -363,37 +363,37 @@
         {
           "text": "qui",
           "start": 11.16,
-          "end": 11.28,
+          "end": 11.26,
           "confidence": 0.769
         },
         {
           "text": "dit",
-          "start": 11.28,
-          "end": 11.4,
+          "start": 11.26,
+          "end": 11.38,
           "confidence": 0.983
         },
         {
           "text": "d'ailleurs",
-          "start": 11.4,
-          "end": 11.6,
+          "start": 11.38,
+          "end": 11.58,
           "confidence": 0.985
         },
         {
           "text": "sur",
-          "start": 11.6,
-          "end": 11.74,
+          "start": 11.58,
+          "end": 11.72,
           "confidence": 0.48
         },
         {
           "text": "la",
-          "start": 11.74,
-          "end": 11.84,
+          "start": 11.72,
+          "end": 11.82,
           "confidence": 0.984
         },
         {
           "text": "photo,",
-          "start": 11.84,
-          "end": 12.02,
+          "start": 11.82,
+          "end": 12.0,
           "confidence": 0.994
         },
         {
@@ -419,8 +419,8 @@
     {
       "id": 4,
       "seek": 0,
-      "start": 13.34,
-      "end": 16.06,
+      "start": 13.32,
+      "end": 16.04,
       "text": " Alors évidemment, il faudrait ajouter les interfaces.",
       "tokens": [
         9946,
@@ -443,44 +443,44 @@
       "words": [
         {
           "text": "Alors",
-          "start": 13.34,
-          "end": 13.6,
+          "start": 13.32,
+          "end": 13.58,
           "confidence": 0.584
         },
         {
           "text": "évidemment,",
-          "start": 13.6,
+          "start": 13.58,
           "end": 13.86,
           "confidence": 0.832
         },
         {
           "text": "il",
-          "start": 14.28,
-          "end": 14.44,
+          "start": 14.26,
+          "end": 14.42,
           "confidence": 0.953
         },
         {
           "text": "faudrait",
-          "start": 14.44,
-          "end": 14.78,
+          "start": 14.42,
+          "end": 14.76,
           "confidence": 0.996
         },
         {
           "text": "ajouter",
-          "start": 14.78,
-          "end": 15.22,
+          "start": 14.76,
+          "end": 15.2,
           "confidence": 0.992
         },
         {
           "text": "les",
-          "start": 15.22,
-          "end": 15.62,
+          "start": 15.2,
+          "end": 15.6,
           "confidence": 0.985
         },
         {
           "text": "interfaces.",
-          "start": 15.62,
-          "end": 16.06,
+          "start": 15.6,
+          "end": 16.04,
           "confidence": 0.984
         }
       ]
@@ -488,7 +488,7 @@
     {
       "id": 5,
       "seek": 0,
-      "start": 16.24,
+      "start": 16.22,
       "end": 19.36,
       "text": " L'écran tactile a été beaucoup très souvent mentionné.",
       "tokens": [
@@ -514,19 +514,19 @@
       "words": [
         {
           "text": "L'écran",
-          "start": 16.24,
+          "start": 16.22,
           "end": 16.78,
           "confidence": 0.996
         },
         {
           "text": "tactile",
           "start": 16.78,
-          "end": 17.12,
+          "end": 17.1,
           "confidence": 0.986
         },
         {
           "text": "a",
-          "start": 17.12,
+          "start": 17.1,
           "end": 17.3,
           "confidence": 0.98
         },
@@ -545,12 +545,12 @@
         {
           "text": "très",
           "start": 18.28,
-          "end": 18.64,
+          "end": 18.62,
           "confidence": 0.447
         },
         {
           "text": "souvent",
-          "start": 18.64,
+          "start": 18.62,
           "end": 18.9,
           "confidence": 0.996
         },
@@ -565,8 +565,8 @@
     {
       "id": 6,
       "seek": 0,
-      "start": 19.84,
-      "end": 25.46,
+      "start": 19.82,
+      "end": 25.44,
       "text": " Mais bon, il faut dire qu'il profite aussi de 20 ans pendant lesquels les ordinateurs nous ont appris à cliquer sur des icônes.",
       "tokens": [
         6313,
@@ -614,7 +614,7 @@
       "words": [
         {
           "text": "Mais",
-          "start": 19.84,
+          "start": 19.82,
           "end": 20.26,
           "confidence": 0.943
         },
@@ -675,12 +675,12 @@
         {
           "text": "ans",
           "start": 22.16,
-          "end": 22.32,
+          "end": 22.3,
           "confidence": 0.997
         },
         {
           "text": "pendant",
-          "start": 22.32,
+          "start": 22.3,
           "end": 22.54,
           "confidence": 0.723
         },
@@ -693,61 +693,61 @@
         {
           "text": "les",
           "start": 22.92,
-          "end": 23.16,
+          "end": 23.14,
           "confidence": 0.71
         },
         {
           "text": "ordinateurs",
-          "start": 23.16,
-          "end": 23.6,
+          "start": 23.14,
+          "end": 23.58,
           "confidence": 0.966
         },
         {
           "text": "nous",
-          "start": 23.6,
+          "start": 23.58,
           "end": 23.74,
           "confidence": 0.602
         },
         {
           "text": "ont",
           "start": 23.74,
-          "end": 23.9,
+          "end": 23.88,
           "confidence": 0.974
         },
         {
           "text": "appris",
-          "start": 23.9,
+          "start": 23.88,
           "end": 24.12,
           "confidence": 0.991
         },
         {
           "text": "à",
           "start": 24.12,
-          "end": 24.28,
+          "end": 24.26,
           "confidence": 0.828
         },
         {
           "text": "cliquer",
-          "start": 24.28,
+          "start": 24.26,
           "end": 24.54,
           "confidence": 0.989
         },
         {
           "text": "sur",
           "start": 24.54,
-          "end": 24.74,
+          "end": 24.72,
           "confidence": 0.984
         },
         {
           "text": "des",
-          "start": 24.74,
-          "end": 24.94,
+          "start": 24.72,
+          "end": 24.92,
           "confidence": 0.971
         },
         {
           "text": "icônes.",
-          "start": 24.94,
-          "end": 25.46,
+          "start": 24.92,
+          "end": 25.44,
           "confidence": 0.992
         }
       ]
@@ -803,12 +803,12 @@
         {
           "text": "le",
           "start": 26.3,
-          "end": 26.68,
+          "end": 26.66,
           "confidence": 0.632
         },
         {
           "text": "smartphone",
-          "start": 26.68,
+          "start": 26.66,
           "end": 27.08,
           "confidence": 0.996
         },
@@ -821,66 +821,66 @@
         {
           "text": "le",
           "start": 27.48,
-          "end": 27.68,
+          "end": 27.66,
           "confidence": 0.992
         },
         {
           "text": "toucher,",
-          "start": 27.68,
+          "start": 27.66,
           "end": 28.06,
           "confidence": 0.988
         },
         {
           "text": "ce",
-          "start": 28.16,
-          "end": 28.2,
+          "start": 28.12,
+          "end": 28.18,
           "confidence": 0.989
         },
         {
           "text": "qui",
-          "start": 28.2,
+          "start": 28.18,
           "end": 28.3,
           "confidence": 1.0
         },
         {
           "text": "rend",
           "start": 28.3,
-          "end": 28.56,
+          "end": 28.54,
           "confidence": 0.994
         },
         {
           "text": "le",
-          "start": 28.56,
-          "end": 28.82,
+          "start": 28.54,
+          "end": 28.8,
           "confidence": 0.993
         },
         {
           "text": "contact",
-          "start": 28.82,
-          "end": 29.18,
+          "start": 28.8,
+          "end": 29.16,
           "confidence": 0.999
         },
         {
           "text": "plus",
-          "start": 29.18,
-          "end": 29.6,
+          "start": 29.16,
+          "end": 29.68,
           "confidence": 0.985
         },
         {
           "text": "direct,",
-          "start": 29.6,
+          "start": 29.68,
           "end": 30.0,
           "confidence": 0.995
         },
         {
           "text": "plus",
-          "start": 30.1,
-          "end": 30.26,
+          "start": 30.08,
+          "end": 30.24,
           "confidence": 0.994
         },
         {
           "text": "sensible.",
-          "start": 30.26,
+          "start": 30.24,
           "end": 30.64,
           "confidence": 0.997
         }
@@ -890,7 +890,7 @@
       "id": 8,
       "seek": 2534,
       "start": 31.04,
-      "end": 37.84,
+      "end": 37.82,
       "text": " Et puis évidemment, il faudrait parler aussi des applications qui permettent de contourner le côté touffu de la navigation web pour aller directement au but.",
       "tokens": [
         3790,
@@ -935,24 +935,24 @@
         {
           "text": "Et",
           "start": 31.04,
-          "end": 31.24,
+          "end": 31.22,
           "confidence": 0.97
         },
         {
           "text": "puis",
-          "start": 31.24,
-          "end": 31.36,
+          "start": 31.22,
+          "end": 31.34,
           "confidence": 0.971
         },
         {
           "text": "évidemment,",
-          "start": 31.36,
-          "end": 31.64,
+          "start": 31.34,
+          "end": 31.62,
           "confidence": 0.875
         },
         {
           "text": "il",
-          "start": 31.66,
+          "start": 31.64,
           "end": 31.72,
           "confidence": 0.993
         },
@@ -989,12 +989,12 @@
         {
           "text": "qui",
           "start": 32.92,
-          "end": 33.22,
+          "end": 33.2,
           "confidence": 0.482
         },
         {
           "text": "permettent",
-          "start": 33.22,
+          "start": 33.2,
           "end": 33.76,
           "confidence": 0.992
         },
@@ -1007,24 +1007,24 @@
         {
           "text": "contourner",
           "start": 33.98,
-          "end": 34.44,
+          "end": 34.42,
           "confidence": 0.959
         },
         {
           "text": "le",
-          "start": 34.44,
+          "start": 34.42,
           "end": 34.54,
           "confidence": 0.777
         },
         {
           "text": "côté",
           "start": 34.54,
-          "end": 34.8,
+          "end": 34.78,
           "confidence": 0.984
         },
         {
           "text": "touffu",
-          "start": 34.8,
+          "start": 34.78,
           "end": 35.32,
           "confidence": 0.741
         },
@@ -1049,37 +1049,37 @@
         {
           "text": "web",
           "start": 36.32,
-          "end": 36.6,
+          "end": 36.58,
           "confidence": 0.854
         },
         {
           "text": "pour",
-          "start": 36.6,
-          "end": 36.78,
+          "start": 36.58,
+          "end": 36.76,
           "confidence": 0.583
         },
         {
           "text": "aller",
-          "start": 36.78,
-          "end": 37.18,
+          "start": 36.76,
+          "end": 37.16,
           "confidence": 0.987
         },
         {
           "text": "directement",
-          "start": 37.18,
-          "end": 37.56,
+          "start": 37.16,
+          "end": 37.54,
           "confidence": 0.997
         },
         {
           "text": "au",
-          "start": 37.56,
-          "end": 37.72,
+          "start": 37.54,
+          "end": 37.7,
           "confidence": 0.967
         },
         {
           "text": "but.",
-          "start": 37.72,
-          "end": 37.84,
+          "start": 37.7,
+          "end": 37.82,
           "confidence": 0.995
         }
       ]
@@ -1087,7 +1087,7 @@
     {
       "id": 9,
       "seek": 2534,
-      "start": 37.92,
+      "start": 37.9,
       "end": 46.6,
       "text": " Bref, tout ça, ce sont les conditions qui permettent de créer cet objet dont Nicolas dit qu'il est vraisemblablement inédit dans l'histoire de l'humanité.",
       "tokens": [
@@ -1142,13 +1142,13 @@
       "words": [
         {
           "text": "Bref,",
-          "start": 37.92,
+          "start": 37.9,
           "end": 38.24,
           "confidence": 0.987
         },
         {
           "text": "tout",
-          "start": 38.9,
+          "start": 38.88,
           "end": 39.02,
           "confidence": 0.711
         },
@@ -1160,7 +1160,7 @@
         },
         {
           "text": "ce",
-          "start": 39.42,
+          "start": 39.4,
           "end": 39.72,
           "confidence": 0.993
         },
@@ -1197,12 +1197,12 @@
         {
           "text": "de",
           "start": 41.44,
-          "end": 41.76,
+          "end": 41.74,
           "confidence": 0.998
         },
         {
           "text": "créer",
-          "start": 41.76,
+          "start": 41.74,
           "end": 42.1,
           "confidence": 0.998
         },
@@ -1215,36 +1215,36 @@
         {
           "text": "objet",
           "start": 42.38,
-          "end": 42.66,
+          "end": 42.64,
           "confidence": 0.994
         },
         {
           "text": "dont",
-          "start": 42.66,
-          "end": 42.86,
+          "start": 42.64,
+          "end": 42.84,
           "confidence": 0.78
         },
         {
           "text": "Nicolas",
-          "start": 42.86,
-          "end": 43.26,
+          "start": 42.84,
+          "end": 43.24,
           "confidence": 0.989
         },
         {
           "text": "dit",
-          "start": 43.26,
+          "start": 43.24,
           "end": 43.52,
           "confidence": 0.986
         },
         {
           "text": "qu'il",
           "start": 43.52,
-          "end": 43.76,
+          "end": 43.74,
           "confidence": 0.983
         },
         {
           "text": "est",
-          "start": 43.76,
+          "start": 43.74,
           "end": 43.94,
           "confidence": 0.991
         },
@@ -1257,30 +1257,30 @@
         {
           "text": "inédit",
           "start": 44.86,
-          "end": 45.46,
+          "end": 45.44,
           "confidence": 0.981
         },
         {
           "text": "dans",
-          "start": 45.46,
-          "end": 45.74,
+          "start": 45.44,
+          "end": 45.72,
           "confidence": 0.969
         },
         {
           "text": "l'histoire",
-          "start": 45.74,
-          "end": 46.06,
+          "start": 45.72,
+          "end": 46.02,
           "confidence": 0.957
         },
         {
           "text": "de",
-          "start": 46.06,
-          "end": 46.16,
+          "start": 46.02,
+          "end": 46.14,
           "confidence": 0.999
         },
         {
           "text": "l'humanité.",
-          "start": 46.16,
+          "start": 46.14,
           "end": 46.6,
           "confidence": 0.992
         }
@@ -1314,30 +1314,30 @@
         {
           "text": "Mais",
           "start": 47.02,
-          "end": 47.3,
+          "end": 47.28,
           "confidence": 0.845
         },
         {
           "text": "ça,",
-          "start": 47.3,
-          "end": 47.5,
+          "start": 47.28,
+          "end": 47.48,
           "confidence": 0.934
         },
         {
           "text": "ça",
-          "start": 47.62,
-          "end": 47.66,
+          "start": 47.48,
+          "end": 47.62,
           "confidence": 0.977
         },
         {
           "text": "soulève",
-          "start": 47.66,
-          "end": 47.88,
+          "start": 47.62,
+          "end": 47.86,
           "confidence": 0.993
         },
         {
           "text": "une",
-          "start": 47.88,
+          "start": 47.86,
           "end": 48.02,
           "confidence": 0.998
         },
@@ -1418,12 +1418,12 @@
         {
           "text": "fait",
           "start": 49.82,
-          "end": 50.02,
+          "end": 50.0,
           "confidence": 0.999
         },
         {
           "text": "que",
-          "start": 50.02,
+          "start": 50.0,
           "end": 50.14,
           "confidence": 0.991
         },
@@ -1436,12 +1436,12 @@
         {
           "text": "objet",
           "start": 50.32,
-          "end": 50.68,
+          "end": 50.66,
           "confidence": 0.997
         },
         {
           "text": "soit",
-          "start": 50.68,
+          "start": 50.66,
           "end": 51.12,
           "confidence": 0.995
         },
@@ -1460,24 +1460,24 @@
         {
           "text": "que",
           "start": 52.32,
-          "end": 52.44,
+          "end": 52.42,
           "confidence": 0.983
         },
         {
           "text": "notre",
-          "start": 52.44,
+          "start": 52.42,
           "end": 52.78,
           "confidence": 0.996
         },
         {
           "text": "rapport",
           "start": 52.78,
-          "end": 53.3,
+          "end": 53.28,
           "confidence": 0.997
         },
         {
           "text": "à",
-          "start": 53.3,
+          "start": 53.28,
           "end": 53.46,
           "confidence": 0.978
         },
@@ -1490,24 +1490,24 @@
         {
           "text": "est",
           "start": 53.7,
-          "end": 54.16,
+          "end": 54.14,
           "confidence": 0.915
         },
         {
           "text": "aussi",
-          "start": 54.16,
+          "start": 54.14,
           "end": 54.52,
           "confidence": 0.995
         },
         {
           "text": "un",
           "start": 54.52,
-          "end": 54.74,
+          "end": 54.72,
           "confidence": 0.995
         },
         {
           "text": "rapport",
-          "start": 54.74,
+          "start": 54.72,
           "end": 55.0,
           "confidence": 0.996
         },
@@ -1522,7 +1522,7 @@
     {
       "id": 12,
       "seek": 4884,
-      "start": 55.72,
+      "start": 55.7,
       "end": 63.14,
       "text": " Je veux dire, est-ce que le rapport qu'on a au smartphone est comparable à celui qu'on entretenait à d'autres objets techniques comme la voiture ou le téléphone?",
       "tokens": [
@@ -1575,13 +1575,13 @@
       "words": [
         {
           "text": "Je",
-          "start": 55.72,
-          "end": 55.92,
+          "start": 55.7,
+          "end": 55.9,
           "confidence": 0.879
         },
         {
           "text": "veux",
-          "start": 55.92,
+          "start": 55.9,
           "end": 56.0,
           "confidence": 0.988
         },
@@ -1594,12 +1594,12 @@
         {
           "text": "est-ce",
           "start": 56.14,
-          "end": 56.38,
+          "end": 56.36,
           "confidence": 0.99
         },
         {
           "text": "que",
-          "start": 56.38,
+          "start": 56.36,
           "end": 56.5,
           "confidence": 0.99
         },
@@ -1618,72 +1618,72 @@
         {
           "text": "qu'on",
           "start": 56.88,
-          "end": 57.1,
+          "end": 57.08,
           "confidence": 0.985
         },
         {
           "text": "a",
-          "start": 57.1,
+          "start": 57.08,
           "end": 57.16,
           "confidence": 0.989
         },
         {
           "text": "au",
           "start": 57.16,
-          "end": 57.3,
+          "end": 57.28,
           "confidence": 0.967
         },
         {
           "text": "smartphone",
-          "start": 57.3,
-          "end": 57.62,
+          "start": 57.28,
+          "end": 57.6,
           "confidence": 0.994
         },
         {
           "text": "est",
-          "start": 57.62,
-          "end": 57.88,
+          "start": 57.6,
+          "end": 57.86,
           "confidence": 0.949
         },
         {
           "text": "comparable",
-          "start": 57.88,
+          "start": 57.86,
           "end": 58.32,
           "confidence": 0.997
         },
         {
           "text": "à",
           "start": 58.32,
-          "end": 58.52,
+          "end": 58.5,
           "confidence": 0.95
         },
         {
           "text": "celui",
-          "start": 58.52,
+          "start": 58.5,
           "end": 58.68,
           "confidence": 0.998
         },
         {
           "text": "qu'on",
           "start": 58.68,
-          "end": 58.98,
+          "end": 58.96,
           "confidence": 0.989
         },
         {
           "text": "entretenait",
-          "start": 58.98,
+          "start": 58.96,
           "end": 59.36,
           "confidence": 0.929
         },
         {
           "text": "à",
           "start": 59.36,
-          "end": 59.5,
+          "end": 59.48,
           "confidence": 0.959
         },
         {
           "text": "d'autres",
-          "start": 59.5,
+          "start": 59.48,
           "end": 59.7,
           "confidence": 0.997
         },
@@ -1696,30 +1696,30 @@
         {
           "text": "techniques",
           "start": 59.98,
-          "end": 60.46,
+          "end": 60.44,
           "confidence": 0.983
         },
         {
           "text": "comme",
-          "start": 60.46,
-          "end": 60.96,
+          "start": 60.44,
+          "end": 60.94,
           "confidence": 0.586
         },
         {
           "text": "la",
-          "start": 60.96,
+          "start": 60.94,
           "end": 61.52,
           "confidence": 0.987
         },
         {
           "text": "voiture",
           "start": 61.52,
-          "end": 62.1,
+          "end": 62.08,
           "confidence": 1.0
         },
         {
           "text": "ou",
-          "start": 62.1,
+          "start": 62.08,
           "end": 62.52,
           "confidence": 0.946
         },
@@ -1740,7 +1740,7 @@
     {
       "id": 13,
       "seek": 4884,
-      "start": 63.8,
+      "start": 63.76,
       "end": 66.68,
       "text": " Il n'y a pas d'équivalent en fait.",
       "tokens": [
@@ -1767,25 +1767,25 @@
       "words": [
         {
           "text": "Il",
-          "start": 63.8,
-          "end": 64.06,
+          "start": 63.76,
+          "end": 64.1,
           "confidence": 0.778
         },
         {
           "text": "n'y",
-          "start": 64.06,
+          "start": 64.1,
           "end": 65.5,
           "confidence": 0.978
         },
         {
           "text": "a",
           "start": 65.5,
-          "end": 65.54,
+          "end": 65.52,
           "confidence": 0.992
         },
         {
           "text": "pas",
-          "start": 65.54,
+          "start": 65.52,
           "end": 65.66,
           "confidence": 0.999
         },
@@ -1798,12 +1798,12 @@
         {
           "text": "en",
           "start": 66.3,
-          "end": 66.46,
+          "end": 66.44,
           "confidence": 0.601
         },
         {
           "text": "fait.",
-          "start": 66.46,
+          "start": 66.44,
           "end": 66.68,
           "confidence": 0.996
         }
@@ -1812,7 +1812,7 @@
     {
       "id": 14,
       "seek": 4884,
-      "start": 66.88,
+      "start": 66.86,
       "end": 71.46,
       "text": " Et donc cette espèce de nouveauté dans la relation à l'objet, c'est fascinant et terrifiant.",
       "tokens": [
@@ -1854,13 +1854,13 @@
       "words": [
         {
           "text": "Et",
-          "start": 66.88,
-          "end": 67.04,
+          "start": 66.86,
+          "end": 67.02,
           "confidence": 0.599
         },
         {
           "text": "donc",
-          "start": 67.04,
+          "start": 67.02,
           "end": 67.12,
           "confidence": 0.902
         },
@@ -1885,60 +1885,60 @@
         {
           "text": "nouveauté",
           "start": 67.76,
-          "end": 68.5,
+          "end": 68.48,
           "confidence": 0.979
         },
         {
           "text": "dans",
-          "start": 68.5,
-          "end": 68.86,
+          "start": 68.48,
+          "end": 68.84,
           "confidence": 0.98
         },
         {
           "text": "la",
-          "start": 68.86,
+          "start": 68.84,
           "end": 68.94,
           "confidence": 0.995
         },
         {
           "text": "relation",
           "start": 68.94,
-          "end": 69.26,
+          "end": 69.24,
           "confidence": 0.998
         },
         {
           "text": "à",
-          "start": 69.26,
-          "end": 69.4,
+          "start": 69.24,
+          "end": 69.38,
           "confidence": 0.997
         },
         {
           "text": "l'objet,",
-          "start": 69.4,
+          "start": 69.38,
           "end": 70.02,
           "confidence": 0.997
         },
         {
           "text": "c'est",
-          "start": 70.3,
+          "start": 70.28,
           "end": 70.38,
           "confidence": 0.98
         },
         {
           "text": "fascinant",
           "start": 70.38,
-          "end": 70.7,
+          "end": 70.68,
           "confidence": 0.978
         },
         {
           "text": "et",
-          "start": 70.7,
-          "end": 70.78,
+          "start": 70.68,
+          "end": 70.76,
           "confidence": 0.965
         },
         {
           "text": "terrifiant.",
-          "start": 70.78,
+          "start": 70.76,
           "end": 71.46,
           "confidence": 0.977
         }
@@ -2007,12 +2007,12 @@
         {
           "text": "l'impression,",
           "start": 72.54,
-          "end": 72.9,
+          "end": 72.92,
           "confidence": 0.998
         },
         {
           "text": "comme",
-          "start": 73.66,
+          "start": 73.64,
           "end": 73.9,
           "confidence": 0.964
         },
@@ -2031,12 +2031,12 @@
         {
           "text": "les",
           "start": 74.22,
-          "end": 74.52,
+          "end": 74.5,
           "confidence": 0.994
         },
         {
           "text": "utilisateurs",
-          "start": 74.52,
+          "start": 74.5,
           "end": 74.84,
           "confidence": 0.997
         },
@@ -2060,31 +2060,31 @@
         },
         {
           "text": "d'être",
-          "start": 75.34,
-          "end": 75.5,
+          "start": 75.32,
+          "end": 75.48,
           "confidence": 0.768
         },
         {
           "text": "dépendants",
-          "start": 75.5,
+          "start": 75.48,
           "end": 75.98,
           "confidence": 0.79
         },
         {
           "text": "de",
           "start": 75.98,
-          "end": 76.1,
+          "end": 76.08,
           "confidence": 0.985
         },
         {
           "text": "cet",
-          "start": 76.1,
-          "end": 76.28,
+          "start": 76.08,
+          "end": 76.26,
           "confidence": 0.996
         },
         {
           "text": "objet,",
-          "start": 76.28,
+          "start": 76.26,
           "end": 76.5,
           "confidence": 0.996
         }
@@ -2093,7 +2093,7 @@
     {
       "id": 16,
       "seek": 7684,
-      "start": 76.86,
+      "start": 76.84,
       "end": 83.32,
       "text": " d'induire en fait une espèce de relation, de médiation avec le monde qui rend de l'ampleur et qui amène aussi à des formes de rejet.",
       "tokens": [
@@ -2145,7 +2145,7 @@
       "words": [
         {
           "text": "d'induire",
-          "start": 76.86,
+          "start": 76.84,
           "end": 77.1,
           "confidence": 0.84
         },
@@ -2164,30 +2164,30 @@
         {
           "text": "une",
           "start": 77.34,
-          "end": 77.52,
+          "end": 77.5,
           "confidence": 0.983
         },
         {
           "text": "espèce",
-          "start": 77.52,
+          "start": 77.5,
           "end": 77.88,
           "confidence": 0.996
         },
         {
           "text": "de",
           "start": 77.88,
-          "end": 78.28,
+          "end": 78.26,
           "confidence": 0.997
         },
         {
           "text": "relation,",
-          "start": 78.28,
+          "start": 78.26,
           "end": 78.54,
           "confidence": 0.601
         },
         {
           "text": "de",
-          "start": 78.62,
+          "start": 78.6,
           "end": 78.96,
           "confidence": 0.987
         },
@@ -2218,24 +2218,24 @@
         {
           "text": "qui",
           "start": 80.34,
-          "end": 81.26,
+          "end": 81.24,
           "confidence": 0.695
         },
         {
           "text": "rend",
-          "start": 81.26,
-          "end": 81.66,
+          "start": 81.24,
+          "end": 81.64,
           "confidence": 0.907
         },
         {
           "text": "de",
-          "start": 81.66,
-          "end": 81.76,
+          "start": 81.64,
+          "end": 81.74,
           "confidence": 0.714
         },
         {
           "text": "l'ampleur",
-          "start": 81.76,
+          "start": 81.74,
           "end": 82.02,
           "confidence": 0.987
         },
@@ -2284,12 +2284,12 @@
         {
           "text": "de",
           "start": 82.88,
-          "end": 83.04,
+          "end": 83.02,
           "confidence": 0.997
         },
         {
           "text": "rejet.",
-          "start": 83.04,
+          "start": 83.02,
           "end": 83.32,
           "confidence": 0.884
         }
@@ -2298,7 +2298,7 @@
     {
       "id": 17,
       "seek": 7684,
-      "start": 83.94,
+      "start": 83.92,
       "end": 87.7,
       "text": " Donc, à objet inédit, rapport inédit.",
       "tokens": [
@@ -2324,37 +2324,37 @@
       "words": [
         {
           "text": "Donc,",
-          "start": 83.94,
-          "end": 84.4,
+          "start": 83.92,
+          "end": 84.38,
           "confidence": 0.971
         },
         {
           "text": "à",
-          "start": 84.9,
+          "start": 84.88,
           "end": 85.0,
           "confidence": 0.881
         },
         {
           "text": "objet",
           "start": 85.0,
-          "end": 85.42,
+          "end": 85.4,
           "confidence": 0.827
         },
         {
           "text": "inédit,",
-          "start": 85.42,
-          "end": 86.24,
+          "start": 85.4,
+          "end": 86.22,
           "confidence": 0.993
         },
         {
           "text": "rapport",
           "start": 86.58,
-          "end": 87.0,
+          "end": 86.98,
           "confidence": 0.981
         },
         {
           "text": "inédit.",
-          "start": 87.0,
+          "start": 86.98,
           "end": 87.7,
           "confidence": 0.998
         }
@@ -2411,30 +2411,30 @@
         {
           "text": "ce",
           "start": 88.5,
-          "end": 88.94,
+          "end": 88.92,
           "confidence": 0.975
         },
         {
           "text": "rapport,",
-          "start": 88.94,
-          "end": 89.32,
+          "start": 88.92,
+          "end": 89.3,
           "confidence": 0.998
         },
         {
           "text": "si",
           "start": 89.38,
-          "end": 89.58,
+          "end": 89.56,
           "confidence": 0.999
         },
         {
           "text": "j'en",
-          "start": 89.58,
-          "end": 89.82,
+          "start": 89.56,
+          "end": 89.8,
           "confidence": 0.996
         },
         {
           "text": "crois",
-          "start": 89.82,
+          "start": 89.8,
           "end": 89.9,
           "confidence": 0.984
         },
@@ -2447,24 +2447,24 @@
         {
           "text": "serait",
           "start": 90.64,
-          "end": 90.96,
+          "end": 90.94,
           "confidence": 0.887
         },
         {
           "text": "caractérisé",
-          "start": 90.96,
+          "start": 90.94,
           "end": 91.8,
           "confidence": 0.993
         },
         {
           "text": "par",
           "start": 91.8,
-          "end": 92.2,
+          "end": 92.18,
           "confidence": 0.997
         },
         {
           "text": "un",
-          "start": 92.2,
+          "start": 92.18,
           "end": 92.52,
           "confidence": 0.997
         },
@@ -2495,12 +2495,12 @@
         {
           "text": "de",
           "start": 94.54,
-          "end": 94.74,
+          "end": 94.72,
           "confidence": 0.999
         },
         {
           "text": "rejet.",
-          "start": 94.74,
+          "start": 94.72,
           "end": 94.96,
           "confidence": 0.993
         }
@@ -2509,8 +2509,8 @@
     {
       "id": 19,
       "seek": 7684,
-      "start": 95.78,
-      "end": 102.85,
+      "start": 95.76,
+      "end": 102.84,
       "text": " Bon, en vrai, il faudrait remonter très très finement toute l'histoire des objets techniques et de leur insertion dans nos vies",
       "tokens": [
         7368,
@@ -2553,13 +2553,13 @@
       "words": [
         {
           "text": "Bon,",
-          "start": 95.78,
-          "end": 96.0,
+          "start": 95.76,
+          "end": 95.98,
           "confidence": 0.793
         },
         {
           "text": "en",
-          "start": 96.36,
+          "start": 96.34,
           "end": 96.6,
           "confidence": 0.998
         },
@@ -2571,19 +2571,19 @@
         },
         {
           "text": "il",
-          "start": 97.12,
+          "start": 97.1,
           "end": 97.22,
           "confidence": 0.998
         },
         {
           "text": "faudrait",
           "start": 97.22,
-          "end": 97.6,
+          "end": 97.58,
           "confidence": 0.997
         },
         {
           "text": "remonter",
-          "start": 97.6,
+          "start": 97.58,
           "end": 98.06,
           "confidence": 0.997
         },
@@ -2602,18 +2602,18 @@
         {
           "text": "finement",
           "start": 98.82,
-          "end": 99.36,
+          "end": 99.34,
           "confidence": 0.849
         },
         {
           "text": "toute",
-          "start": 99.36,
-          "end": 99.72,
+          "start": 99.34,
+          "end": 99.7,
           "confidence": 0.984
         },
         {
           "text": "l'histoire",
-          "start": 99.72,
+          "start": 99.7,
           "end": 100.08,
           "confidence": 0.997
         },
@@ -2632,18 +2632,18 @@
         {
           "text": "techniques",
           "start": 100.54,
-          "end": 100.96,
+          "end": 100.94,
           "confidence": 0.984
         },
         {
           "text": "et",
-          "start": 100.96,
-          "end": 101.58,
+          "start": 100.94,
+          "end": 101.56,
           "confidence": 0.531
         },
         {
           "text": "de",
-          "start": 101.58,
+          "start": 101.56,
           "end": 101.7,
           "confidence": 0.994
         },
@@ -2662,19 +2662,19 @@
         {
           "text": "dans",
           "start": 102.34,
-          "end": 102.52,
+          "end": 102.5,
           "confidence": 0.991
         },
         {
           "text": "nos",
-          "start": 102.52,
+          "start": 102.5,
           "end": 102.66,
           "confidence": 0.998
         },
         {
           "text": "vies",
           "start": 102.66,
-          "end": 102.85,
+          "end": 102.84,
           "confidence": 0.998
         }
       ]
@@ -2682,7 +2682,7 @@
     {
       "id": 20,
       "seek": 7684,
-      "start": 102.85,
+      "start": 102.84,
       "end": 105.74,
       "text": " pour déterminer si ce rapport est totalement inédit.",
       "tokens": [
@@ -2708,13 +2708,13 @@
       "words": [
         {
           "text": "pour",
-          "start": 102.85,
-          "end": 103.12,
+          "start": 102.84,
+          "end": 103.1,
           "confidence": 0.819
         },
         {
           "text": "déterminer",
-          "start": 103.12,
+          "start": 103.1,
           "end": 103.66,
           "confidence": 0.997
         },
@@ -2727,24 +2727,24 @@
         {
           "text": "ce",
           "start": 103.76,
-          "end": 103.96,
+          "end": 103.94,
           "confidence": 0.997
         },
         {
           "text": "rapport",
-          "start": 103.96,
-          "end": 104.28,
+          "start": 103.94,
+          "end": 104.26,
           "confidence": 0.997
         },
         {
           "text": "est",
-          "start": 104.28,
-          "end": 104.86,
+          "start": 104.26,
+          "end": 104.84,
           "confidence": 0.998
         },
         {
           "text": "totalement",
-          "start": 104.86,
+          "start": 104.84,
           "end": 105.3,
           "confidence": 0.999
         },
@@ -2760,7 +2760,7 @@
       "id": 21,
       "seek": 10584,
       "start": 106.08,
-      "end": 109.36,
+      "end": 109.34,
       "text": " Mais j'ai l'impression comme ça que Nicolas ne se trompe pas vraiment.",
       "tokens": [
         6313,
@@ -2792,12 +2792,12 @@
         {
           "text": "Mais",
           "start": 106.08,
-          "end": 106.42,
+          "end": 106.4,
           "confidence": 0.947
         },
         {
           "text": "j'ai",
-          "start": 106.42,
+          "start": 106.4,
           "end": 106.94,
           "confidence": 0.94
         },
@@ -2810,55 +2810,55 @@
         {
           "text": "comme",
           "start": 107.38,
-          "end": 107.6,
+          "end": 107.58,
           "confidence": 0.642
         },
         {
           "text": "ça",
-          "start": 107.6,
-          "end": 107.82,
+          "start": 107.58,
+          "end": 107.8,
           "confidence": 0.978
         },
         {
           "text": "que",
-          "start": 107.82,
+          "start": 107.8,
           "end": 108.16,
           "confidence": 0.976
         },
         {
           "text": "Nicolas",
           "start": 108.16,
-          "end": 108.48,
+          "end": 108.46,
           "confidence": 0.985
         },
         {
           "text": "ne",
-          "start": 108.48,
-          "end": 108.7,
+          "start": 108.46,
+          "end": 108.68,
           "confidence": 0.726
         },
         {
           "text": "se",
-          "start": 108.7,
-          "end": 108.74,
+          "start": 108.68,
+          "end": 108.72,
           "confidence": 0.991
         },
         {
           "text": "trompe",
-          "start": 108.74,
-          "end": 108.9,
+          "start": 108.72,
+          "end": 108.92,
           "confidence": 0.995
         },
         {
           "text": "pas",
-          "start": 108.9,
+          "start": 108.92,
           "end": 109.1,
           "confidence": 0.999
         },
         {
           "text": "vraiment.",
           "start": 109.1,
-          "end": 109.36,
+          "end": 109.34,
           "confidence": 0.991
         }
       ]
@@ -2866,7 +2866,7 @@
     {
       "id": 22,
       "seek": 10584,
-      "start": 109.94,
+      "start": 109.92,
       "end": 115.02,
       "text": " Pour autant que je sache, il y a eu plein de discussions autour de la voiture ou même du téléphone.",
       "tokens": [
@@ -2902,109 +2902,109 @@
       "words": [
         {
           "text": "Pour",
-          "start": 109.94,
+          "start": 109.92,
           "end": 110.1,
           "confidence": 0.997
         },
         {
           "text": "autant",
           "start": 110.1,
-          "end": 110.26,
+          "end": 110.24,
           "confidence": 1.0
         },
         {
           "text": "que",
-          "start": 110.26,
+          "start": 110.24,
           "end": 110.38,
           "confidence": 0.988
         },
         {
           "text": "je",
           "start": 110.38,
-          "end": 110.54,
+          "end": 110.52,
           "confidence": 0.998
         },
         {
           "text": "sache,",
-          "start": 110.54,
-          "end": 110.86,
+          "start": 110.52,
+          "end": 110.84,
           "confidence": 0.962
         },
         {
           "text": "il",
-          "start": 111.1,
-          "end": 111.18,
+          "start": 111.08,
+          "end": 111.16,
           "confidence": 0.997
         },
         {
           "text": "y",
-          "start": 111.18,
-          "end": 111.28,
+          "start": 111.16,
+          "end": 111.26,
           "confidence": 0.992
         },
         {
           "text": "a",
-          "start": 111.28,
-          "end": 111.34,
+          "start": 111.26,
+          "end": 111.32,
           "confidence": 0.993
         },
         {
           "text": "eu",
-          "start": 111.34,
+          "start": 111.32,
           "end": 111.6,
           "confidence": 0.998
         },
         {
           "text": "plein",
           "start": 111.6,
-          "end": 111.94,
+          "end": 111.92,
           "confidence": 0.974
         },
         {
           "text": "de",
-          "start": 111.94,
-          "end": 112.16,
+          "start": 111.92,
+          "end": 112.14,
           "confidence": 0.997
         },
         {
           "text": "discussions",
-          "start": 112.16,
-          "end": 112.68,
+          "start": 112.14,
+          "end": 112.66,
           "confidence": 0.799
         },
         {
           "text": "autour",
-          "start": 112.68,
+          "start": 112.66,
           "end": 113.04,
           "confidence": 0.995
         },
         {
           "text": "de",
           "start": 113.04,
-          "end": 113.44,
+          "end": 113.42,
           "confidence": 0.997
         },
         {
           "text": "la",
-          "start": 113.44,
+          "start": 113.42,
           "end": 113.54,
           "confidence": 0.998
         },
         {
           "text": "voiture",
           "start": 113.54,
-          "end": 113.9,
+          "end": 113.88,
           "confidence": 1.0
         },
         {
           "text": "ou",
-          "start": 113.9,
-          "end": 114.08,
+          "start": 113.88,
+          "end": 114.06,
           "confidence": 0.765
         },
         {
           "text": "même",
-          "start": 114.08,
+          "start": 114.06,
           "end": 114.34,
           "confidence": 0.996
         },
@@ -3025,8 +3025,8 @@
     {
       "id": 23,
       "seek": 10584,
-      "start": 115.34,
-      "end": 119.86,
+      "start": 115.32,
+      "end": 119.84,
       "text": " Mais la dépendance n'était pas du même ordre. Donc le rejet non plus n'était pas du même ordre.",
       "tokens": [
         6313,
@@ -3066,13 +3066,13 @@
       "words": [
         {
           "text": "Mais",
-          "start": 115.34,
-          "end": 115.8,
+          "start": 115.32,
+          "end": 115.78,
           "confidence": 0.994
         },
         {
           "text": "la",
-          "start": 115.8,
+          "start": 115.78,
           "end": 116.06,
           "confidence": 0.936
         },
@@ -3091,48 +3091,48 @@
         {
           "text": "pas",
           "start": 116.74,
-          "end": 117.02,
+          "end": 117.0,
           "confidence": 0.998
         },
         {
           "text": "du",
-          "start": 117.02,
+          "start": 117.0,
           "end": 117.2,
           "confidence": 0.995
         },
         {
           "text": "même",
           "start": 117.2,
-          "end": 117.46,
+          "end": 117.44,
           "confidence": 0.999
         },
         {
           "text": "ordre.",
-          "start": 117.46,
+          "start": 117.44,
           "end": 117.7,
           "confidence": 0.999
         },
         {
           "text": "Donc",
-          "start": 117.78,
+          "start": 117.76,
           "end": 118.04,
           "confidence": 0.806
         },
         {
           "text": "le",
           "start": 118.04,
-          "end": 118.42,
+          "end": 118.4,
           "confidence": 0.709
         },
         {
           "text": "rejet",
-          "start": 118.42,
-          "end": 118.66,
+          "start": 118.4,
+          "end": 118.64,
           "confidence": 0.999
         },
         {
           "text": "non",
-          "start": 118.66,
+          "start": 118.64,
           "end": 118.82,
           "confidence": 0.974
         },
@@ -3145,31 +3145,31 @@
         {
           "text": "n'était",
           "start": 118.96,
-          "end": 119.2,
+          "end": 119.18,
           "confidence": 0.987
         },
         {
           "text": "pas",
-          "start": 119.2,
-          "end": 119.32,
+          "start": 119.18,
+          "end": 119.3,
           "confidence": 0.998
         },
         {
           "text": "du",
-          "start": 119.32,
-          "end": 119.44,
+          "start": 119.3,
+          "end": 119.42,
           "confidence": 0.995
         },
         {
           "text": "même",
-          "start": 119.44,
+          "start": 119.42,
           "end": 119.58,
           "confidence": 0.999
         },
         {
           "text": "ordre.",
           "start": 119.58,
-          "end": 119.86,
+          "end": 119.84,
           "confidence": 0.999
         }
       ]
@@ -3177,8 +3177,8 @@
     {
       "id": 24,
       "seek": 10584,
-      "start": 120.04,
-      "end": 123.08,
+      "start": 120.02,
+      "end": 123.06,
       "text": " On peut adorer sa bagnole, en avoir besoin pour plein de choses.",
       "tokens": [
         1282,
@@ -3207,13 +3207,13 @@
       "words": [
         {
           "text": "On",
-          "start": 120.04,
-          "end": 120.2,
+          "start": 120.02,
+          "end": 120.18,
           "confidence": 0.996
         },
         {
           "text": "peut",
-          "start": 120.2,
+          "start": 120.18,
           "end": 120.38,
           "confidence": 0.997
         },
@@ -3226,24 +3226,24 @@
         {
           "text": "sa",
           "start": 120.68,
-          "end": 120.9,
+          "end": 120.88,
           "confidence": 0.985
         },
         {
           "text": "bagnole,",
-          "start": 120.9,
-          "end": 121.34,
+          "start": 120.88,
+          "end": 121.32,
           "confidence": 0.984
         },
         {
           "text": "en",
-          "start": 121.44,
-          "end": 121.6,
+          "start": 121.42,
+          "end": 121.58,
           "confidence": 0.989
         },
         {
           "text": "avoir",
-          "start": 121.6,
+          "start": 121.58,
           "end": 121.78,
           "confidence": 0.998
         },
@@ -3274,7 +3274,7 @@
         {
           "text": "choses.",
           "start": 122.84,
-          "end": 123.08,
+          "end": 123.06,
           "confidence": 0.989
         }
       ]
@@ -3282,8 +3282,8 @@
     {
       "id": 25,
       "seek": 10584,
-      "start": 123.34,
-      "end": 126.42,
+      "start": 123.32,
+      "end": 126.4,
       "text": " Et bien, le soir, quand on va se coucher, on la laisse.",
       "tokens": [
         3790,
@@ -3312,14 +3312,14 @@
       "words": [
         {
           "text": "Et",
-          "start": 123.34,
+          "start": 123.32,
           "end": 123.54,
           "confidence": 0.666
         },
         {
           "text": "bien,",
           "start": 123.54,
-          "end": 123.84,
+          "end": 123.82,
           "confidence": 0.47
         },
         {
@@ -3331,7 +3331,7 @@
         {
           "text": "soir,",
           "start": 124.1,
-          "end": 124.6,
+          "end": 124.58,
           "confidence": 0.999
         },
         {
@@ -3355,31 +3355,31 @@
         {
           "text": "se",
           "start": 125.16,
-          "end": 125.28,
+          "end": 125.26,
           "confidence": 0.988
         },
         {
           "text": "coucher,",
-          "start": 125.28,
-          "end": 125.72,
+          "start": 125.26,
+          "end": 125.7,
           "confidence": 0.987
         },
         {
           "text": "on",
-          "start": 125.94,
+          "start": 125.92,
           "end": 126.04,
           "confidence": 0.995
         },
         {
           "text": "la",
           "start": 126.04,
-          "end": 126.2,
+          "end": 126.18,
           "confidence": 0.801
         },
         {
           "text": "laisse.",
-          "start": 126.2,
-          "end": 126.42,
+          "start": 126.18,
+          "end": 126.4,
           "confidence": 0.999
         }
       ]
@@ -3388,7 +3388,7 @@
       "id": 26,
       "seek": 10584,
       "start": 126.98,
-      "end": 130.32,
+      "end": 130.3,
       "text": " On ne l'a pas dans la main quand on est au lit, on ne l'emmène pas au chiottes.",
       "tokens": [
         1282,
@@ -3435,12 +3435,12 @@
         {
           "text": "ne",
           "start": 127.34,
-          "end": 127.46,
+          "end": 127.5,
           "confidence": 0.802
         },
         {
           "text": "l'a",
-          "start": 127.46,
+          "start": 127.5,
           "end": 127.52,
           "confidence": 0.974
         },
@@ -3459,24 +3459,24 @@
         {
           "text": "la",
           "start": 127.86,
-          "end": 128.1,
+          "end": 128.08,
           "confidence": 0.994
         },
         {
           "text": "main",
-          "start": 128.1,
+          "start": 128.08,
           "end": 128.26,
           "confidence": 0.999
         },
         {
           "text": "quand",
           "start": 128.26,
-          "end": 128.5,
+          "end": 128.48,
           "confidence": 0.934
         },
         {
           "text": "on",
-          "start": 128.5,
+          "start": 128.48,
           "end": 128.62,
           "confidence": 0.997
         },
@@ -3500,7 +3500,7 @@
         },
         {
           "text": "on",
-          "start": 129.22,
+          "start": 129.2,
           "end": 129.28,
           "confidence": 0.427
         },
@@ -3513,25 +3513,25 @@
         {
           "text": "l'emmène",
           "start": 129.36,
-          "end": 129.58,
+          "end": 129.56,
           "confidence": 0.992
         },
         {
           "text": "pas",
-          "start": 129.58,
-          "end": 129.72,
+          "start": 129.56,
+          "end": 129.7,
           "confidence": 0.997
         },
         {
           "text": "au",
-          "start": 129.72,
-          "end": 129.9,
+          "start": 129.7,
+          "end": 129.88,
           "confidence": 0.668
         },
         {
           "text": "chiottes.",
-          "start": 129.9,
-          "end": 130.32,
+          "start": 129.88,
+          "end": 130.3,
           "confidence": 0.829
         }
       ]
@@ -3539,8 +3539,8 @@
     {
       "id": 27,
       "seek": 13084,
-      "start": 130.86,
-      "end": 136.92,
+      "start": 130.84,
+      "end": 136.9,
       "text": " On pouvait être énervé par son môme qui occupait la ligne de téléphone pendant une heure chaque soir pour discuter avec un copain.",
       "tokens": [
         1282,
@@ -3582,7 +3582,7 @@
       "words": [
         {
           "text": "On",
-          "start": 130.86,
+          "start": 130.84,
           "end": 131.04,
           "confidence": 0.983
         },
@@ -3595,12 +3595,12 @@
         {
           "text": "être",
           "start": 131.26,
-          "end": 131.6,
+          "end": 131.58,
           "confidence": 0.996
         },
         {
           "text": "énervé",
-          "start": 131.6,
+          "start": 131.58,
           "end": 132.22,
           "confidence": 0.906
         },
@@ -3613,30 +3613,30 @@
         {
           "text": "son",
           "start": 132.46,
-          "end": 132.74,
+          "end": 132.72,
           "confidence": 0.998
         },
         {
           "text": "môme",
-          "start": 132.74,
+          "start": 132.72,
           "end": 133.08,
           "confidence": 0.832
         },
         {
           "text": "qui",
           "start": 133.08,
-          "end": 133.38,
+          "end": 133.36,
           "confidence": 0.919
         },
         {
           "text": "occupait",
-          "start": 133.38,
-          "end": 133.76,
+          "start": 133.36,
+          "end": 133.74,
           "confidence": 0.991
         },
         {
           "text": "la",
-          "start": 133.76,
+          "start": 133.74,
           "end": 133.88,
           "confidence": 0.992
         },
@@ -3655,18 +3655,18 @@
         {
           "text": "téléphone",
           "start": 134.26,
-          "end": 134.62,
+          "end": 134.6,
           "confidence": 0.985
         },
         {
           "text": "pendant",
-          "start": 134.62,
-          "end": 134.94,
+          "start": 134.6,
+          "end": 134.92,
           "confidence": 0.98
         },
         {
           "text": "une",
-          "start": 134.94,
+          "start": 134.92,
           "end": 135.18,
           "confidence": 0.87
         },
@@ -3691,12 +3691,12 @@
         {
           "text": "pour",
           "start": 135.8,
-          "end": 136.02,
+          "end": 136.0,
           "confidence": 0.791
         },
         {
           "text": "discuter",
-          "start": 136.02,
+          "start": 136.0,
           "end": 136.3,
           "confidence": 0.997
         },
@@ -3709,13 +3709,13 @@
         {
           "text": "un",
           "start": 136.5,
-          "end": 136.66,
+          "end": 136.64,
           "confidence": 0.999
         },
         {
           "text": "copain.",
-          "start": 136.66,
-          "end": 136.92,
+          "start": 136.64,
+          "end": 136.9,
           "confidence": 0.998
         }
       ]
@@ -3724,7 +3724,7 @@
       "id": 28,
       "seek": 13084,
       "start": 137.28,
-      "end": 141.86,
+      "end": 141.84,
       "text": " Mais ça ne ressemblait pas à ce qu'on peut ressentir à voir ce même môme aujourd'hui,",
       "tokens": [
         6313,
@@ -3764,48 +3764,48 @@
         {
           "text": "Mais",
           "start": 137.28,
-          "end": 137.5,
+          "end": 137.48,
           "confidence": 0.993
         },
         {
           "text": "ça",
-          "start": 137.5,
-          "end": 137.7,
+          "start": 137.48,
+          "end": 137.68,
           "confidence": 0.938
         },
         {
           "text": "ne",
-          "start": 137.7,
+          "start": 137.68,
           "end": 137.92,
           "confidence": 0.998
         },
         {
           "text": "ressemblait",
           "start": 137.92,
-          "end": 138.42,
+          "end": 138.4,
           "confidence": 0.991
         },
         {
           "text": "pas",
-          "start": 138.42,
-          "end": 138.78,
+          "start": 138.4,
+          "end": 138.76,
           "confidence": 0.995
         },
         {
           "text": "à",
-          "start": 138.78,
+          "start": 138.76,
           "end": 138.92,
           "confidence": 0.988
         },
         {
           "text": "ce",
           "start": 138.92,
-          "end": 139.0,
+          "end": 138.98,
           "confidence": 0.998
         },
         {
           "text": "qu'on",
-          "start": 139.0,
+          "start": 138.98,
           "end": 139.14,
           "confidence": 0.986
         },
@@ -3818,12 +3818,12 @@
         {
           "text": "ressentir",
           "start": 139.48,
-          "end": 140.12,
+          "end": 140.1,
           "confidence": 0.997
         },
         {
           "text": "à",
-          "start": 140.12,
+          "start": 140.1,
           "end": 140.32,
           "confidence": 0.498
         },
@@ -3854,7 +3854,7 @@
         {
           "text": "aujourd'hui,",
           "start": 141.28,
-          "end": 141.86,
+          "end": 141.84,
           "confidence": 0.988
         }
       ]
@@ -3862,8 +3862,8 @@
     {
       "id": 29,
       "seek": 13084,
-      "start": 142.16,
-      "end": 146.3,
+      "start": 142.14,
+      "end": 146.32,
       "text": " continuellement avec son smartphone dans la main, comme si c'était une sorte de pacemaker externe,",
       "tokens": [
         2354,
@@ -3899,25 +3899,25 @@
       "words": [
         {
           "text": "continuellement",
-          "start": 142.16,
-          "end": 142.96,
+          "start": 142.14,
+          "end": 142.94,
           "confidence": 0.971
         },
         {
           "text": "avec",
-          "start": 142.96,
+          "start": 142.94,
           "end": 143.2,
           "confidence": 0.806
         },
         {
           "text": "son",
           "start": 143.2,
-          "end": 143.44,
+          "end": 143.42,
           "confidence": 0.995
         },
         {
           "text": "smartphone",
-          "start": 143.44,
+          "start": 143.42,
           "end": 143.76,
           "confidence": 0.978
         },
@@ -3930,13 +3930,13 @@
         {
           "text": "la",
           "start": 143.94,
-          "end": 144.04,
+          "end": 144.02,
           "confidence": 0.996
         },
         {
           "text": "main,",
-          "start": 144.04,
-          "end": 144.24,
+          "start": 144.02,
+          "end": 144.22,
           "confidence": 0.998
         },
         {
@@ -3948,12 +3948,12 @@
         {
           "text": "si",
           "start": 144.54,
-          "end": 144.66,
+          "end": 144.64,
           "confidence": 0.975
         },
         {
           "text": "c'était",
-          "start": 144.66,
+          "start": 144.64,
           "end": 144.86,
           "confidence": 0.991
         },
@@ -3966,25 +3966,25 @@
         {
           "text": "sorte",
           "start": 144.96,
-          "end": 145.16,
+          "end": 145.14,
           "confidence": 0.997
         },
         {
           "text": "de",
-          "start": 145.16,
+          "start": 145.14,
           "end": 145.34,
           "confidence": 0.982
         },
         {
           "text": "pacemaker",
           "start": 145.34,
-          "end": 145.82,
+          "end": 145.8,
           "confidence": 0.917
         },
         {
           "text": "externe,",
-          "start": 145.82,
-          "end": 146.3,
+          "start": 145.8,
+          "end": 146.32,
           "confidence": 0.992
         }
       ]
@@ -3992,8 +3992,8 @@
     {
       "id": 30,
       "seek": 13084,
-      "start": 146.34,
-      "end": 148.82,
+      "start": 146.32,
+      "end": 148.8,
       "text": " comme si le lâcher allait entraîner sa mort immédiate.",
       "tokens": [
         5173,
@@ -4022,7 +4022,7 @@
       "words": [
         {
           "text": "comme",
-          "start": 146.34,
+          "start": 146.32,
           "end": 146.6,
           "confidence": 0.996
         },
@@ -4041,12 +4041,12 @@
         {
           "text": "lâcher",
           "start": 147.02,
-          "end": 147.36,
+          "end": 147.34,
           "confidence": 0.969
         },
         {
           "text": "allait",
-          "start": 147.36,
+          "start": 147.34,
           "end": 147.58,
           "confidence": 0.993
         },
@@ -4059,19 +4059,19 @@
         {
           "text": "sa",
           "start": 147.88,
-          "end": 148.04,
+          "end": 148.02,
           "confidence": 0.999
         },
         {
           "text": "mort",
-          "start": 148.04,
+          "start": 148.02,
           "end": 148.28,
           "confidence": 0.998
         },
         {
           "text": "immédiate.",
           "start": 148.28,
-          "end": 148.82,
+          "end": 148.8,
           "confidence": 0.997
         }
       ]
@@ -4079,8 +4079,8 @@
     {
       "id": 31,
       "seek": 13084,
-      "start": 149.04,
-      "end": 151.98,
+      "start": 149.02,
+      "end": 151.96,
       "text": " Bon, je dis ça pour le môme, mais c'est évidemment valable pour nous aussi.",
       "tokens": [
         7368,
@@ -4114,7 +4114,7 @@
       "words": [
         {
           "text": "Bon,",
-          "start": 149.04,
+          "start": 149.02,
           "end": 149.24,
           "confidence": 0.917
         },
@@ -4139,48 +4139,48 @@
         {
           "text": "pour",
           "start": 149.64,
-          "end": 149.82,
+          "end": 149.8,
           "confidence": 0.997
         },
         {
           "text": "le",
-          "start": 149.82,
+          "start": 149.8,
           "end": 149.9,
           "confidence": 0.995
         },
         {
           "text": "môme,",
           "start": 149.9,
-          "end": 150.12,
+          "end": 150.1,
           "confidence": 0.998
         },
         {
           "text": "mais",
-          "start": 150.3,
+          "start": 150.28,
           "end": 150.46,
           "confidence": 0.793
         },
         {
           "text": "c'est",
           "start": 150.46,
-          "end": 150.86,
+          "end": 150.84,
           "confidence": 0.982
         },
         {
           "text": "évidemment",
-          "start": 150.86,
+          "start": 150.84,
           "end": 151.18,
           "confidence": 0.98
         },
         {
           "text": "valable",
           "start": 151.18,
-          "end": 151.5,
+          "end": 151.48,
           "confidence": 0.998
         },
         {
           "text": "pour",
-          "start": 151.5,
+          "start": 151.48,
           "end": 151.66,
           "confidence": 0.997
         },
@@ -4193,7 +4193,7 @@
         {
           "text": "aussi.",
           "start": 151.78,
-          "end": 151.98,
+          "end": 151.96,
           "confidence": 0.996
         }
       ]
@@ -4201,8 +4201,8 @@
     {
       "id": 32,
       "seek": 13084,
-      "start": 152.34,
-      "end": 158.28,
+      "start": 152.32,
+      "end": 158.26,
       "text": " Donc, rapport inédit. D'accord. Mais pourquoi a-t-on l'impression qu'on n'en sortira jamais?",
       "tokens": [
         7477,
@@ -4245,37 +4245,37 @@
       "words": [
         {
           "text": "Donc,",
-          "start": 152.34,
+          "start": 152.32,
           "end": 153.06,
           "confidence": 0.991
         },
         {
           "text": "rapport",
           "start": 153.24,
-          "end": 153.66,
+          "end": 153.64,
           "confidence": 0.977
         },
         {
           "text": "inédit.",
-          "start": 153.66,
+          "start": 153.64,
           "end": 154.1,
           "confidence": 0.997
         },
         {
           "text": "D'accord.",
-          "start": 154.28,
-          "end": 154.7,
+          "start": 154.26,
+          "end": 154.68,
           "confidence": 0.979
         },
         {
           "text": "Mais",
           "start": 155.54,
-          "end": 155.86,
+          "end": 155.84,
           "confidence": 0.56
         },
         {
           "text": "pourquoi",
-          "start": 155.86,
+          "start": 155.84,
           "end": 156.34,
           "confidence": 0.994
         },
@@ -4288,31 +4288,31 @@
         {
           "text": "l'impression",
           "start": 156.7,
-          "end": 157.08,
+          "end": 157.06,
           "confidence": 0.999
         },
         {
           "text": "qu'on",
-          "start": 157.08,
+          "start": 157.06,
           "end": 157.3,
           "confidence": 0.995
         },
         {
           "text": "n'en",
           "start": 157.3,
-          "end": 157.5,
+          "end": 157.48,
           "confidence": 0.878
         },
         {
           "text": "sortira",
-          "start": 157.5,
+          "start": 157.48,
           "end": 157.82,
           "confidence": 0.989
         },
         {
           "text": "jamais?",
           "start": 157.82,
-          "end": 158.28,
+          "end": 158.26,
           "confidence": 0.997
         }
       ]
@@ -4377,18 +4377,18 @@
         {
           "text": "Est-ce",
           "start": 159.1,
-          "end": 159.36,
+          "end": 159.34,
           "confidence": 0.981
         },
         {
           "text": "qu'il",
-          "start": 159.36,
-          "end": 159.48,
+          "start": 159.34,
+          "end": 159.46,
           "confidence": 0.997
         },
         {
           "text": "faut",
-          "start": 159.48,
+          "start": 159.46,
           "end": 159.64,
           "confidence": 0.999
         },
@@ -4413,36 +4413,36 @@
         {
           "text": "faute",
           "start": 160.48,
-          "end": 160.66,
+          "end": 160.64,
           "confidence": 0.986
         },
         {
           "text": "sur",
-          "start": 160.66,
-          "end": 161.08,
+          "start": 160.64,
+          "end": 161.06,
           "confidence": 0.995
         },
         {
           "text": "les",
-          "start": 161.08,
+          "start": 161.06,
           "end": 161.3,
           "confidence": 0.995
         },
         {
           "text": "gens",
           "start": 161.3,
-          "end": 161.48,
+          "end": 161.46,
           "confidence": 1.0
         },
         {
           "text": "qui",
-          "start": 161.48,
-          "end": 161.58,
+          "start": 161.46,
+          "end": 161.56,
           "confidence": 0.984
         },
         {
           "text": "ont",
-          "start": 161.58,
+          "start": 161.56,
           "end": 161.84,
           "confidence": 0.998
         },
@@ -4467,48 +4467,48 @@
         {
           "text": "merveilleux",
           "start": 162.8,
-          "end": 163.36,
+          "end": 163.34,
           "confidence": 0.994
         },
         {
           "text": "et",
-          "start": 163.36,
-          "end": 163.52,
+          "start": 163.34,
+          "end": 163.5,
           "confidence": 0.954
         },
         {
           "text": "diabolique,",
-          "start": 163.52,
-          "end": 163.86,
+          "start": 163.5,
+          "end": 163.84,
           "confidence": 0.992
         },
         {
           "text": "et",
-          "start": 163.88,
+          "start": 163.86,
           "end": 164.02,
           "confidence": 0.539
         },
         {
           "text": "diabolique",
           "start": 164.02,
-          "end": 164.44,
+          "end": 164.42,
           "confidence": 0.951
         },
         {
           "text": "parce",
-          "start": 164.44,
-          "end": 164.68,
+          "start": 164.42,
+          "end": 164.66,
           "confidence": 0.704
         },
         {
           "text": "que",
-          "start": 164.68,
-          "end": 164.86,
+          "start": 164.66,
+          "end": 164.84,
           "confidence": 0.99
         },
         {
           "text": "merveilleux?",
-          "start": 164.86,
+          "start": 164.84,
           "end": 165.3,
           "confidence": 0.997
         }
@@ -4517,8 +4517,8 @@
     {
       "id": 34,
       "seek": 15884,
-      "start": 166.34,
-      "end": 168.87,
+      "start": 166.32,
+      "end": 168.85,
       "text": " Les économistes parlent de dépendance du sentier.",
       "tokens": [
         6965,
@@ -4542,25 +4542,25 @@
       "words": [
         {
           "text": "Les",
-          "start": 166.34,
-          "end": 167.1,
+          "start": 166.32,
+          "end": 167.08,
           "confidence": 0.925
         },
         {
           "text": "économistes",
-          "start": 167.1,
-          "end": 167.48,
+          "start": 167.08,
+          "end": 167.46,
           "confidence": 0.998
         },
         {
           "text": "parlent",
-          "start": 167.48,
-          "end": 167.72,
+          "start": 167.46,
+          "end": 167.7,
           "confidence": 0.995
         },
         {
           "text": "de",
-          "start": 167.72,
+          "start": 167.7,
           "end": 167.88,
           "confidence": 0.995
         },
@@ -4579,7 +4579,7 @@
         {
           "text": "sentier.",
           "start": 168.52,
-          "end": 168.87,
+          "end": 168.85,
           "confidence": 0.978
         }
       ]
@@ -4587,7 +4587,7 @@
     {
       "id": 35,
       "seek": 16884,
-      "start": 168.87,
+      "start": 168.85,
       "end": 177.42,
       "text": " C'est l'idée qu'on est sur un sentier qui a été établi, soit volontairement en marchant dessus, soit en définissant des bornes, en définissant une signalétique.",
       "tokens": [
@@ -4647,7 +4647,7 @@
       "words": [
         {
           "text": "C'est",
-          "start": 168.87,
+          "start": 168.85,
           "end": 169.16,
           "confidence": 0.952
         },
@@ -4666,36 +4666,36 @@
         {
           "text": "est",
           "start": 169.74,
-          "end": 169.9,
+          "end": 169.88,
           "confidence": 0.631
         },
         {
           "text": "sur",
-          "start": 169.9,
+          "start": 169.88,
           "end": 170.08,
           "confidence": 0.993
         },
         {
           "text": "un",
           "start": 170.08,
-          "end": 170.52,
+          "end": 170.5,
           "confidence": 0.998
         },
         {
           "text": "sentier",
-          "start": 170.52,
-          "end": 170.84,
+          "start": 170.5,
+          "end": 170.82,
           "confidence": 0.99
         },
         {
           "text": "qui",
-          "start": 170.84,
-          "end": 170.94,
+          "start": 170.82,
+          "end": 170.92,
           "confidence": 0.962
         },
         {
           "text": "a",
-          "start": 170.94,
+          "start": 170.92,
           "end": 171.0,
           "confidence": 0.98
         },
@@ -4708,24 +4708,24 @@
         {
           "text": "établi,",
           "start": 171.14,
-          "end": 171.58,
+          "end": 171.56,
           "confidence": 0.995
         },
         {
           "text": "soit",
           "start": 171.9,
-          "end": 172.16,
+          "end": 172.14,
           "confidence": 0.988
         },
         {
           "text": "volontairement",
-          "start": 172.16,
-          "end": 172.72,
+          "start": 172.14,
+          "end": 172.7,
           "confidence": 0.965
         },
         {
           "text": "en",
-          "start": 172.72,
+          "start": 172.7,
           "end": 172.84,
           "confidence": 0.941
         },
@@ -4738,7 +4738,7 @@
         {
           "text": "dessus,",
           "start": 173.1,
-          "end": 173.54,
+          "end": 173.6,
           "confidence": 0.972
         },
         {
@@ -4750,48 +4750,48 @@
         {
           "text": "en",
           "start": 174.34,
-          "end": 175.2,
+          "end": 175.18,
           "confidence": 0.991
         },
         {
           "text": "définissant",
-          "start": 175.2,
+          "start": 175.18,
           "end": 175.54,
           "confidence": 0.983
         },
         {
           "text": "des",
           "start": 175.54,
-          "end": 175.76,
+          "end": 175.74,
           "confidence": 0.984
         },
         {
           "text": "bornes,",
-          "start": 175.76,
-          "end": 175.96,
+          "start": 175.74,
+          "end": 175.94,
           "confidence": 0.975
         },
         {
           "text": "en",
           "start": 176.08,
-          "end": 176.12,
+          "end": 176.1,
           "confidence": 0.683
         },
         {
           "text": "définissant",
-          "start": 176.12,
+          "start": 176.1,
           "end": 176.64,
           "confidence": 0.997
         },
         {
           "text": "une",
           "start": 176.64,
-          "end": 176.94,
+          "end": 176.92,
           "confidence": 0.944
         },
         {
           "text": "signalétique.",
-          "start": 176.94,
+          "start": 176.92,
           "end": 177.42,
           "confidence": 0.643
         }

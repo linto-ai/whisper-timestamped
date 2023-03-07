@@ -4,7 +4,7 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 1.0,
+      "start": 0.98,
       "end": 1.76,
       "text": " Hello.",
       "tokens": [
@@ -19,7 +19,7 @@
       "words": [
         {
           "text": "Hello.",
-          "start": 1.0,
+          "start": 0.98,
           "end": 1.76,
           "confidence": 0.318
         }
@@ -28,8 +28,8 @@
     {
       "id": 1,
       "seek": 0,
-      "start": 2.34,
-      "end": 3.52,
+      "start": 2.32,
+      "end": 3.51,
       "text": " How are you?",
       "tokens": [
         1012,
@@ -45,20 +45,20 @@
       "words": [
         {
           "text": "How",
-          "start": 2.34,
-          "end": 2.84,
+          "start": 2.32,
+          "end": 2.82,
           "confidence": 0.509
         },
         {
           "text": "are",
-          "start": 2.84,
-          "end": 3.26,
+          "start": 2.82,
+          "end": 3.24,
           "confidence": 0.991
         },
         {
           "text": "you?",
-          "start": 3.26,
-          "end": 3.52,
+          "start": 3.24,
+          "end": 3.51,
           "confidence": 0.894
         }
       ]
@@ -66,7 +66,7 @@
     {
       "id": 2,
       "seek": 0,
-      "start": 3.52,
+      "start": 3.51,
       "end": 4.28,
       "text": " Love.",
       "tokens": [
@@ -81,7 +81,7 @@
       "words": [
         {
           "text": "Love.",
-          "start": 3.52,
+          "start": 3.51,
           "end": 4.28,
           "confidence": 0.289
         }
@@ -90,8 +90,8 @@
     {
       "id": 3,
       "seek": 0,
-      "start": 5.52,
-      "end": 6.4,
+      "start": 5.5,
+      "end": 6.38,
       "text": " How are you?",
       "tokens": [
         1012,
@@ -107,20 +107,20 @@
       "words": [
         {
           "text": "How",
-          "start": 5.52,
-          "end": 5.7,
+          "start": 5.5,
+          "end": 5.68,
           "confidence": 0.86
         },
         {
           "text": "are",
-          "start": 5.7,
+          "start": 5.68,
           "end": 6.1,
           "confidence": 0.998
         },
         {
           "text": "you?",
           "start": 6.1,
-          "end": 6.4,
+          "end": 6.38,
           "confidence": 0.938
         }
       ]
@@ -128,7 +128,7 @@
     {
       "id": 4,
       "seek": 0,
-      "start": 7.52,
+      "start": 7.5,
       "end": 9.18,
       "text": " I'm okay. I will be.",
       "tokens": [
@@ -149,25 +149,25 @@
       "words": [
         {
           "text": "I'm",
-          "start": 7.52,
-          "end": 7.56,
+          "start": 7.5,
+          "end": 7.52,
           "confidence": 0.756
         },
         {
           "text": "okay.",
-          "start": 7.56,
+          "start": 7.52,
           "end": 8.16,
           "confidence": 0.533
         },
         {
           "text": "I",
-          "start": 8.46,
-          "end": 8.66,
+          "start": 8.44,
+          "end": 8.64,
           "confidence": 0.793
         },
         {
           "text": "will",
-          "start": 8.66,
+          "start": 8.64,
           "end": 8.94,
           "confidence": 0.956
         },
@@ -182,7 +182,7 @@
     {
       "id": 5,
       "seek": 0,
-      "start": 9.52,
+      "start": 9.5,
       "end": 11.52,
       "text": " I said she could stay with us tomorrow until she feels better.",
       "tokens": [
@@ -208,61 +208,61 @@
       "words": [
         {
           "text": "I",
-          "start": 9.52,
-          "end": 9.56,
+          "start": 9.5,
+          "end": 9.52,
           "confidence": 0.896
         },
         {
           "text": "said",
-          "start": 9.56,
-          "end": 9.66,
+          "start": 9.52,
+          "end": 9.64,
           "confidence": 0.857
         },
         {
           "text": "she",
-          "start": 9.66,
+          "start": 9.64,
           "end": 9.78,
           "confidence": 0.92
         },
         {
           "text": "could",
           "start": 9.78,
-          "end": 9.98,
+          "end": 9.96,
           "confidence": 0.91
         },
         {
           "text": "stay",
-          "start": 9.98,
+          "start": 9.96,
           "end": 10.16,
           "confidence": 0.995
         },
         {
           "text": "with",
           "start": 10.16,
-          "end": 10.3,
+          "end": 10.28,
           "confidence": 0.979
         },
         {
           "text": "us",
-          "start": 10.3,
+          "start": 10.28,
           "end": 10.46,
           "confidence": 0.994
         },
         {
           "text": "tomorrow",
           "start": 10.46,
-          "end": 10.68,
+          "end": 10.66,
           "confidence": 0.46
         },
         {
           "text": "until",
-          "start": 10.68,
-          "end": 10.86,
+          "start": 10.66,
+          "end": 10.84,
           "confidence": 0.252
         },
         {
           "text": "she",
-          "start": 10.86,
+          "start": 10.84,
           "end": 11.0,
           "confidence": 0.993
         },
@@ -284,7 +284,7 @@
       "id": 6,
       "seek": 0,
       "start": 12.04,
-      "end": 13.32,
+      "end": 13.34,
       "text": " Of course she can.",
       "tokens": [
         2720,
@@ -302,25 +302,25 @@
         {
           "text": "Of",
           "start": 12.04,
-          "end": 12.36,
+          "end": 12.34,
           "confidence": 0.836
         },
         {
           "text": "course",
-          "start": 12.36,
-          "end": 12.68,
+          "start": 12.34,
+          "end": 12.66,
           "confidence": 0.991
         },
         {
           "text": "she",
-          "start": 12.68,
-          "end": 12.9,
+          "start": 12.66,
+          "end": 12.88,
           "confidence": 0.964
         },
         {
           "text": "can.",
-          "start": 12.9,
-          "end": 13.32,
+          "start": 12.88,
+          "end": 13.34,
           "confidence": 0.994
         }
       ]
@@ -328,8 +328,8 @@
     {
       "id": 7,
       "seek": 0,
-      "start": 13.52,
-      "end": 15.24,
+      "start": 13.5,
+      "end": 15.22,
       "text": " This won't be for long.",
       "tokens": [
         639,
@@ -348,19 +348,19 @@
       "words": [
         {
           "text": "This",
-          "start": 13.52,
-          "end": 14.3,
+          "start": 13.5,
+          "end": 14.28,
           "confidence": 0.492
         },
         {
           "text": "won't",
-          "start": 14.3,
-          "end": 14.6,
+          "start": 14.28,
+          "end": 14.58,
           "confidence": 0.981
         },
         {
           "text": "be",
-          "start": 14.6,
+          "start": 14.58,
           "end": 14.8,
           "confidence": 0.997
         },
@@ -373,7 +373,7 @@
         {
           "text": "long.",
           "start": 14.96,
-          "end": 15.24,
+          "end": 15.22,
           "confidence": 0.996
         }
       ]
@@ -381,7 +381,7 @@
     {
       "id": 8,
       "seek": 0,
-      "start": 15.52,
+      "start": 15.5,
       "end": 17.62,
       "text": " Well, you can stay as long as you want, my love.",
       "tokens": [
@@ -408,49 +408,49 @@
       "words": [
         {
           "text": "Well,",
-          "start": 15.52,
-          "end": 15.58,
+          "start": 15.5,
+          "end": 15.56,
           "confidence": 0.697
         },
         {
           "text": "you",
           "start": 15.68,
-          "end": 15.72,
+          "end": 15.7,
           "confidence": 0.719
         },
         {
           "text": "can",
-          "start": 15.72,
-          "end": 15.94,
+          "start": 15.7,
+          "end": 15.92,
           "confidence": 0.987
         },
         {
           "text": "stay",
-          "start": 15.94,
+          "start": 15.92,
           "end": 16.14,
           "confidence": 0.99
         },
         {
           "text": "as",
           "start": 16.14,
-          "end": 16.3,
+          "end": 16.28,
           "confidence": 0.977
         },
         {
           "text": "long",
-          "start": 16.3,
+          "start": 16.28,
           "end": 16.4,
           "confidence": 0.995
         },
         {
           "text": "as",
           "start": 16.4,
-          "end": 16.52,
+          "end": 16.5,
           "confidence": 0.997
         },
         {
           "text": "you",
-          "start": 16.52,
+          "start": 16.5,
           "end": 16.62,
           "confidence": 0.996
         },
@@ -477,7 +477,7 @@
     {
       "id": 9,
       "seek": 1800,
-      "start": 18.02,
+      "start": 18.0,
       "end": 19.52,
       "text": " I really miss you.",
       "tokens": [
@@ -497,25 +497,25 @@
       "words": [
         {
           "text": "I",
-          "start": 18.02,
-          "end": 18.06,
+          "start": 18.0,
+          "end": 18.02,
           "confidence": 0.53
         },
         {
           "text": "really",
-          "start": 18.06,
-          "end": 18.42,
+          "start": 18.02,
+          "end": 18.4,
           "confidence": 0.758
         },
         {
           "text": "miss",
-          "start": 18.42,
-          "end": 18.8,
+          "start": 18.4,
+          "end": 18.78,
           "confidence": 0.726
         },
         {
           "text": "you.",
-          "start": 18.8,
+          "start": 18.78,
           "end": 19.52,
           "confidence": 0.688
         }

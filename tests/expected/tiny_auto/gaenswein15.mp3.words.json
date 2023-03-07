@@ -4,8 +4,8 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.94,
-      "end": 12.8,
+      "start": 0.92,
+      "end": 12.78,
       "text": " Wie wieder zu dazu ist Meshfuchs von 1962 als Meshale für die außerordentliche Form des grullischen Rätos ist dann nicht so weitergegangen wie sich Papsbelle dick das gewünscht hatte.",
       "tokens": [
         9233,
@@ -67,7 +67,7 @@
       "words": [
         {
           "text": "Wie",
-          "start": 0.94,
+          "start": 0.92,
           "end": 1.1,
           "confidence": 0.477
         },
@@ -86,18 +86,18 @@
         {
           "text": "dazu",
           "start": 1.6,
-          "end": 1.92,
+          "end": 1.9,
           "confidence": 0.132
         },
         {
           "text": "ist",
-          "start": 1.92,
-          "end": 2.16,
+          "start": 1.9,
+          "end": 2.14,
           "confidence": 0.588
         },
         {
           "text": "Meshfuchs",
-          "start": 2.16,
+          "start": 2.14,
           "end": 2.74,
           "confidence": 0.332
         },
@@ -122,12 +122,12 @@
         {
           "text": "Meshale",
           "start": 5.24,
-          "end": 5.8,
+          "end": 5.78,
           "confidence": 0.385
         },
         {
           "text": "für",
-          "start": 5.8,
+          "start": 5.78,
           "end": 5.94,
           "confidence": 0.932
         },
@@ -140,12 +140,12 @@
         {
           "text": "außerordentliche",
           "start": 6.08,
-          "end": 7.06,
+          "end": 7.04,
           "confidence": 0.899
         },
         {
           "text": "Form",
-          "start": 7.06,
+          "start": 7.04,
           "end": 7.4,
           "confidence": 0.657
         },
@@ -158,60 +158,60 @@
         {
           "text": "grullischen",
           "start": 7.62,
-          "end": 8.06,
+          "end": 8.04,
           "confidence": 0.383
         },
         {
           "text": "Rätos",
-          "start": 8.06,
+          "start": 8.04,
           "end": 9.18,
           "confidence": 0.367
         },
         {
           "text": "ist",
           "start": 9.18,
-          "end": 9.64,
+          "end": 9.62,
           "confidence": 0.555
         },
         {
           "text": "dann",
-          "start": 9.64,
+          "start": 9.62,
           "end": 9.78,
           "confidence": 0.501
         },
         {
           "text": "nicht",
           "start": 9.78,
-          "end": 9.96,
+          "end": 9.94,
           "confidence": 0.937
         },
         {
           "text": "so",
-          "start": 9.96,
+          "start": 9.94,
           "end": 10.12,
           "confidence": 0.953
         },
         {
           "text": "weitergegangen",
           "start": 10.12,
-          "end": 10.9,
+          "end": 10.88,
           "confidence": 0.739
         },
         {
           "text": "wie",
-          "start": 10.9,
-          "end": 11.06,
+          "start": 10.88,
+          "end": 11.04,
           "confidence": 0.703
         },
         {
           "text": "sich",
-          "start": 11.06,
-          "end": 11.26,
+          "start": 11.04,
+          "end": 11.24,
           "confidence": 0.939
         },
         {
           "text": "Papsbelle",
-          "start": 11.26,
+          "start": 11.24,
           "end": 11.7,
           "confidence": 0.355
         },
@@ -224,19 +224,19 @@
         {
           "text": "das",
           "start": 11.9,
-          "end": 12.1,
+          "end": 12.08,
           "confidence": 0.844
         },
         {
           "text": "gewünscht",
-          "start": 12.1,
+          "start": 12.08,
           "end": 12.58,
           "confidence": 0.818
         },
         {
           "text": "hatte.",
           "start": 12.58,
-          "end": 12.8,
+          "end": 12.78,
           "confidence": 0.923
         }
       ]
@@ -244,8 +244,8 @@
     {
       "id": 1,
       "seek": 1300,
-      "start": 14.0,
-      "end": 15.22,
+      "start": 13.98,
+      "end": 15.2,
       "text": " Das hat er als Meshale im Rätos.",
       "tokens": [
         50364,
@@ -271,44 +271,44 @@
       "words": [
         {
           "text": "Das",
-          "start": 14.0,
+          "start": 13.98,
           "end": 14.2,
           "confidence": 0.841
         },
         {
           "text": "hat",
           "start": 14.2,
-          "end": 14.4,
+          "end": 14.38,
           "confidence": 0.877
         },
         {
           "text": "er",
-          "start": 14.4,
-          "end": 14.56,
+          "start": 14.38,
+          "end": 14.54,
           "confidence": 0.606
         },
         {
           "text": "als",
-          "start": 14.56,
-          "end": 14.72,
+          "start": 14.54,
+          "end": 14.7,
           "confidence": 0.627
         },
         {
           "text": "Meshale",
-          "start": 14.72,
-          "end": 15.1,
+          "start": 14.7,
+          "end": 15.06,
           "confidence": 0.209
         },
         {
           "text": "im",
-          "start": 15.1,
-          "end": 15.14,
+          "start": 15.06,
+          "end": 15.08,
           "confidence": 0.1
         },
         {
           "text": "Rätos.",
-          "start": 15.14,
-          "end": 15.22,
+          "start": 15.08,
+          "end": 15.2,
           "confidence": 0.467
         }
       ]

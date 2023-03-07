@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.86,
-      "end": 8.58,
+      "end": 8.56,
       "text": " Die Wiederzulassung des Messbuchs von 1962 als Missale für die außerordentliche Form des römischen Rethus",
       "tokens": [
         3229,
@@ -52,12 +52,12 @@
         {
           "text": "Wiederzulassung",
           "start": 1.12,
-          "end": 1.94,
+          "end": 1.92,
           "confidence": 0.976
         },
         {
           "text": "des",
-          "start": 1.94,
+          "start": 1.92,
           "end": 2.18,
           "confidence": 0.985
         },
@@ -70,24 +70,24 @@
         {
           "text": "von",
           "start": 2.74,
-          "end": 3.3,
+          "end": 3.28,
           "confidence": 0.971
         },
         {
           "text": "1962",
-          "start": 3.3,
+          "start": 3.28,
           "end": 4.9,
           "confidence": 0.976
         },
         {
           "text": "als",
           "start": 4.9,
-          "end": 5.28,
+          "end": 5.26,
           "confidence": 0.926
         },
         {
           "text": "Missale",
-          "start": 5.28,
+          "start": 5.26,
           "end": 5.76,
           "confidence": 0.905
         },
@@ -100,37 +100,37 @@
         {
           "text": "die",
           "start": 5.96,
-          "end": 6.14,
+          "end": 6.12,
           "confidence": 0.988
         },
         {
           "text": "außerordentliche",
-          "start": 6.14,
-          "end": 7.08,
+          "start": 6.12,
+          "end": 7.06,
           "confidence": 0.94
         },
         {
           "text": "Form",
-          "start": 7.08,
-          "end": 7.34,
+          "start": 7.06,
+          "end": 7.32,
           "confidence": 0.827
         },
         {
           "text": "des",
-          "start": 7.34,
-          "end": 7.66,
+          "start": 7.32,
+          "end": 7.64,
           "confidence": 0.794
         },
         {
           "text": "römischen",
-          "start": 7.66,
+          "start": 7.64,
           "end": 8.04,
           "confidence": 0.654
         },
         {
           "text": "Rethus",
           "start": 8.04,
-          "end": 8.58,
+          "end": 8.56,
           "confidence": 0.599
         }
       ]
@@ -139,7 +139,7 @@
       "id": 1,
       "seek": 0,
       "start": 9.44,
-      "end": 12.76,
+      "end": 12.74,
       "text": " ist dann nicht so weitergegangen, wie sich Papst Benedikt das gewünscht hatte.",
       "tokens": [
         1418,
@@ -179,67 +179,67 @@
         {
           "text": "dann",
           "start": 9.66,
-          "end": 9.84,
+          "end": 9.82,
           "confidence": 0.693
         },
         {
           "text": "nicht",
-          "start": 9.84,
+          "start": 9.82,
           "end": 10.0,
           "confidence": 0.996
         },
         {
           "text": "so",
           "start": 10.0,
-          "end": 10.18,
+          "end": 10.16,
           "confidence": 0.991
         },
         {
           "text": "weitergegangen,",
-          "start": 10.18,
+          "start": 10.16,
           "end": 10.84,
           "confidence": 0.819
         },
         {
           "text": "wie",
-          "start": 10.92,
+          "start": 10.9,
           "end": 11.06,
           "confidence": 0.988
         },
         {
           "text": "sich",
           "start": 11.06,
-          "end": 11.26,
+          "end": 11.24,
           "confidence": 0.959
         },
         {
           "text": "Papst",
-          "start": 11.26,
+          "start": 11.24,
           "end": 11.56,
           "confidence": 0.891
         },
         {
           "text": "Benedikt",
           "start": 11.56,
-          "end": 11.92,
+          "end": 11.9,
           "confidence": 0.945
         },
         {
           "text": "das",
-          "start": 11.92,
+          "start": 11.9,
           "end": 12.08,
           "confidence": 0.52
         },
         {
           "text": "gewünscht",
           "start": 12.08,
-          "end": 12.58,
+          "end": 12.56,
           "confidence": 0.998
         },
         {
           "text": "hatte.",
-          "start": 12.58,
-          "end": 12.76,
+          "start": 12.56,
+          "end": 12.74,
           "confidence": 0.934
         }
       ]
@@ -247,8 +247,8 @@
     {
       "id": 2,
       "seek": 1300,
-      "start": 13.02,
-      "end": 15.24,
+      "start": 13.0,
+      "end": 15.2,
       "text": " Das hat er als Emeritus...",
       "tokens": [
         50364,
@@ -269,13 +269,13 @@
       "words": [
         {
           "text": "Das",
-          "start": 13.02,
-          "end": 14.2,
+          "start": 13.0,
+          "end": 14.18,
           "confidence": 0.779
         },
         {
           "text": "hat",
-          "start": 14.2,
+          "start": 14.18,
           "end": 14.38,
           "confidence": 0.824
         },
@@ -294,7 +294,7 @@
         {
           "text": "Emeritus...",
           "start": 14.72,
-          "end": 15.24,
+          "end": 15.2,
           "confidence": 0.341
         }
       ]

@@ -37,30 +37,30 @@
         {
           "text": "Let's",
           "start": 1.9,
-          "end": 2.2,
+          "end": 2.18,
           "confidence": 0.676
         },
         {
           "text": "go",
-          "start": 2.2,
+          "start": 2.18,
           "end": 2.32,
           "confidence": 0.914
         },
         {
           "text": "with",
           "start": 2.32,
-          "end": 2.48,
+          "end": 2.46,
           "confidence": 0.233
         },
         {
           "text": "it",
-          "start": 2.48,
-          "end": 2.58,
+          "start": 2.46,
+          "end": 2.56,
           "confidence": 0.934
         },
         {
           "text": "again!",
-          "start": 2.58,
+          "start": 2.56,
           "end": 2.8,
           "confidence": 0.996
         }
@@ -69,8 +69,8 @@
     {
       "id": 1,
       "seek": 3000,
-      "start": 30.02,
-      "end": 30.08,
+      "start": 30.0,
+      "end": 30.06,
       "text": " Mohoo!",
       "tokens": [
         337,
@@ -86,8 +86,8 @@
       "words": [
         {
           "text": "Mohoo!",
-          "start": 30.02,
-          "end": 30.08,
+          "start": 30.0,
+          "end": 30.06,
           "confidence": 0.308
         }
       ]
@@ -121,8 +121,8 @@
     {
       "id": 3,
       "seek": 3200,
-      "start": 32.98,
-      "end": 33.92,
+      "start": 32.96,
+      "end": 33.9,
       "text": " Mohoo!",
       "tokens": [
         337,
@@ -138,8 +138,8 @@
       "words": [
         {
           "text": "Mohoo!",
-          "start": 32.98,
-          "end": 33.92,
+          "start": 32.96,
+          "end": 33.9,
           "confidence": 0.338
         }
       ]

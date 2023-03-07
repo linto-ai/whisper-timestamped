@@ -4,8 +4,8 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.44,
-      "end": 3.06,
+      "start": 0.42,
+      "end": 3.04,
       "text": " Bonjour! Est-ce que vous allez bien?",
       "tokens": [
         50364,
@@ -29,25 +29,25 @@
       "words": [
         {
           "text": "Bonjour!",
-          "start": 0.44,
-          "end": 1.16,
+          "start": 0.42,
+          "end": 1.14,
           "confidence": 0.874
         },
         {
           "text": "Est-ce",
-          "start": 1.94,
-          "end": 2.18,
+          "start": 1.92,
+          "end": 2.16,
           "confidence": 0.885
         },
         {
           "text": "que",
-          "start": 2.18,
-          "end": 2.26,
+          "start": 2.16,
+          "end": 2.24,
           "confidence": 0.988
         },
         {
           "text": "vous",
-          "start": 2.26,
+          "start": 2.24,
           "end": 2.38,
           "confidence": 0.996
         },
@@ -60,7 +60,7 @@
         {
           "text": "bien?",
           "start": 2.58,
-          "end": 3.06,
+          "end": 3.04,
           "confidence": 0.999
         }
       ]
@@ -68,7 +68,7 @@
     {
       "id": 1,
       "seek": 3000,
-      "start": 31.5,
+      "start": 31.48,
       "end": 35.46,
       "text": " Bonjour! Est-ce que vous allez bien?",
       "tokens": [
@@ -93,13 +93,13 @@
       "words": [
         {
           "text": "Bonjour!",
-          "start": 31.5,
-          "end": 33.44,
+          "start": 31.48,
+          "end": 33.42,
           "confidence": 0.832
         },
         {
           "text": "Est-ce",
-          "start": 34.4,
+          "start": 34.42,
           "end": 34.7,
           "confidence": 0.944
         },
@@ -118,12 +118,12 @@
         {
           "text": "allez",
           "start": 34.9,
-          "end": 35.1,
+          "end": 35.08,
           "confidence": 0.997
         },
         {
           "text": "bien?",
-          "start": 35.1,
+          "start": 35.08,
           "end": 35.46,
           "confidence": 0.999
         }

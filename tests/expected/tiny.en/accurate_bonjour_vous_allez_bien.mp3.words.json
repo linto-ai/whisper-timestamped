@@ -30,36 +30,36 @@
         {
           "text": "Mohoo,",
           "start": 0.42,
-          "end": 1.4,
+          "end": 1.38,
           "confidence": 0.245
         },
         {
           "text": "let's",
-          "start": 1.96,
-          "end": 2.22,
+          "start": 1.92,
+          "end": 2.2,
           "confidence": 0.91
         },
         {
           "text": "go",
-          "start": 2.22,
-          "end": 2.32,
+          "start": 2.2,
+          "end": 2.3,
           "confidence": 0.908
         },
         {
           "text": "with",
-          "start": 2.32,
+          "start": 2.3,
           "end": 2.46,
           "confidence": 0.286
         },
         {
           "text": "it",
           "start": 2.46,
-          "end": 2.58,
+          "end": 2.56,
           "confidence": 0.939
         },
         {
           "text": "again",
-          "start": 2.58,
+          "start": 2.56,
           "end": 2.84,
           "confidence": 0.997
         }
@@ -68,8 +68,8 @@
     {
       "id": 1,
       "seek": 3000,
-      "start": 30.5,
-      "end": 35.44,
+      "start": 30.48,
+      "end": 35.42,
       "text": " Mohoo, let's go with it again",
       "tokens": [
         50413,
@@ -93,7 +93,7 @@
       "words": [
         {
           "text": "Mohoo,",
-          "start": 30.5,
+          "start": 30.48,
           "end": 34.04,
           "confidence": 0.276
         },
@@ -106,12 +106,12 @@
         {
           "text": "go",
           "start": 34.74,
-          "end": 34.88,
+          "end": 34.86,
           "confidence": 0.944
         },
         {
           "text": "with",
-          "start": 34.88,
+          "start": 34.86,
           "end": 34.98,
           "confidence": 0.661
         },
@@ -124,7 +124,7 @@
         {
           "text": "again",
           "start": 35.1,
-          "end": 35.44,
+          "end": 35.42,
           "confidence": 0.996
         }
       ]

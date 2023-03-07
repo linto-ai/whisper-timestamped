@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.10.1"
+__version__ = "1.11.0"
 
 # Set some environment variables
 import os
@@ -20,12 +20,14 @@ import numpy as np
 import dtw
 # from scipy.signal import medfilt as median_filter
 from scipy.ndimage import median_filter # faster owing to https://github.com/openai/whisper/commit/f0083e7eb20d032390e42f6f6039947fa8669c93
+from scipy.signal import find_peaks
 
 # Additional
 import string
 import csv
 import sys
 import gzip, base64
+import copy
 
 # Constant variables
 from whisper.utils import format_timestamp
@@ -40,6 +42,7 @@ logger = logging.getLogger("whisper_timestamped")
 
 USE_EFFICIENT_BY_DEFAULT = True
 TRUST_WHISPER_TIMESTAMP_BY_DEFAULT = True
+DISFLUENCY_MARK = "[*]"
 
 def transcribe_timestamped(
     # Main Whisper options
@@ -53,7 +56,7 @@ def transcribe_timestamped(
     compute_word_confidence=True,
     include_punctuation_in_confidence=False,
     refine_whisper_precision=0.5,
-    min_word_duration=0.04,
+    min_word_duration=0.02, # Was 0.04 before 1.11
     plot_word_alignment=False,
     word_alignement_most_top_layers=None, # Was 6 before 1.9
 
@@ -62,6 +65,7 @@ def transcribe_timestamped(
 
     naive_approach=False,
     trust_whisper_timestamps=TRUST_WHISPER_TIMESTAMP_BY_DEFAULT,
+    detect_disfluencies=False,
 
     # Other Whisper options
     temperature=0.0 if USE_EFFICIENT_BY_DEFAULT else (0.0, 0.2, 0.4, 0.6, 0.8, 1.0),
@@ -194,6 +198,7 @@ def transcribe_timestamped(
             remove_punctuation_from_words=remove_punctuation_from_words,
             compute_word_confidence=compute_word_confidence,
             include_punctuation_in_confidence=include_punctuation_in_confidence,
+            detect_disfluencies=detect_disfluencies,
             refine_whisper_precision_nframes=refine_whisper_precision_nframes,
             plot_word_alignment=plot_word_alignment,
             word_alignement_most_top_layers=word_alignement_most_top_layers,
@@ -221,14 +226,22 @@ def transcribe_timestamped(
     )
 
     if naive_approach:
-        (transcription, words) = _transcribe_timestamped_naive(model, audio, trust_whisper_timestamps=trust_whisper_timestamps, min_word_duration=min_word_duration, **alignment_options, **whisper_options, **other_options)
+        (transcription, words) = _transcribe_timestamped_naive(model, audio,
+                                                               min_word_duration=0.0, # Was 0.04 before 1.11
+                                                               trust_whisper_timestamps=trust_whisper_timestamps,
+                                                               **alignment_options, **whisper_options, **other_options)
     else:
-        (transcription, words) = _transcribe_timestamped_efficient(model, audio, trust_whisper_timestamps=trust_whisper_timestamps, **alignment_options, **whisper_options, **other_options)
+        (transcription, words) = _transcribe_timestamped_efficient(model, audio,
+                                                                   trust_whisper_timestamps=trust_whisper_timestamps,
+                                                                   **alignment_options, **whisper_options, **other_options)
+
+    # Remove words with empty duration happening at the end of segments, to remove some hallucinations
+    transcription, words = remove_last_null_duration_words(transcription, words)
 
     # Refine word positions
-
     ensure_increasing_positions(words, min_duration=min_word_duration if trust_whisper_timestamps else 0)
     
+    # Combine words and segments
     whisper_segments = transcription["segments"]
     for word in words:
         if verbose and not naive_approach:
@@ -260,8 +273,9 @@ def _transcribe_timestamped_efficient(
     alignment_heads,
     plot_word_alignment,
     word_alignement_most_top_layers,
+    detect_disfluencies,
     trust_whisper_timestamps,
-    use_timestamps_for_alignment = True, # For trust_whisper_timestamps = False
+    use_timestamps_for_alignment = True,
     # Whisper specific options
     **whisper_options,
 ):
@@ -421,6 +435,7 @@ def _transcribe_timestamped_efficient(
             alignment_heads=alignment_heads,
             remove_punctuation_from_words=remove_punctuation_from_words,
             refine_whisper_precision_nframes=refine_whisper_precision_nframes,
+            detect_disfluencies=detect_disfluencies,
             unfinished_decoding=unfinished_decoding,
             mfcc=mfcc,
             plot=plot_word_alignment,
@@ -829,7 +844,7 @@ def _transcribe_timestamped_efficient(
                     word_logprobs = logprobs[i_start:i_start + len(tokens)]
                     logprobs_nopunc.append(word_logprobs)
 
-                timestamped_word["confidence"] = round_confidence(word_logprobs.mean().exp().item())
+                timestamped_word["confidence"] = round_confidence(word_logprobs.mean().exp().item() if len(word_logprobs) else 0.0)
 
             if i_end != len(logprobs):
                 logger.warn(f"Got inconsistent length for segment {i} ({len(logprobs)} != {i_end}). Some words have been ignored.")
@@ -851,6 +866,7 @@ def _transcribe_timestamped_naive(
     alignment_heads,
     plot_word_alignment,
     word_alignement_most_top_layers,
+    detect_disfluencies,
     trust_whisper_timestamps,
     min_word_duration,
     **whisper_options,
@@ -1025,6 +1041,7 @@ def _transcribe_timestamped_naive(
                 alignment_heads=alignment_heads,
                 remove_punctuation_from_words=remove_punctuation_from_words,
                 refine_whisper_precision_nframes=refine_whisper_precision_nframes,
+                detect_disfluencies=detect_disfluencies,
                 mfcc=mfcc,
                 plot=plot_word_alignment,
             )
@@ -1056,9 +1073,13 @@ def _transcribe_timestamped_naive(
                             tok_indices = tok_indices[:-1]
                     word_logprobs = [logprobs[:, step, tok] for (step, tok) in zip(range(i_start, i_start + len(tok_indices)), tok_indices)]
                     i_start = i_end
-                    word_logprobs = torch.cat(word_logprobs)
-                    word.update({"confidence": round_confidence(word_logprobs.mean().exp().item())})
-                    segment_logprobs.append(word_logprobs)
+                    if len(word_logprobs):
+                        word_logprobs = torch.cat(word_logprobs)
+                        segment_logprobs.append(word_logprobs)
+                        word_confidence = word_logprobs.mean().exp().item()
+                    else:
+                        word_confidence = 0
+                    word.update({"confidence": round_confidence(word_confidence)})
 
                 words.append(word)
 
@@ -1150,6 +1171,8 @@ def perform_word_alignment(
     alignment_heads=None,
     medfilt_width=9,
     qk_scale=1.0,
+    detect_disfluencies=True,
+    subwords_can_be_empty=True, # Was False before 1.11
     plot=False,
     debug=False,
 ):
@@ -1235,6 +1258,8 @@ def perform_word_alignment(
             mfcc=mfcc,
             plot=plot,
             remove_punctuation_from_words=remove_punctuation_from_words,
+            detect_disfluencies=detect_disfluencies,
+            subwords_can_be_empty=subwords_can_be_empty,
             unfinished_decoding=True,
             debug=debug,
         )
@@ -1273,24 +1298,28 @@ def perform_word_alignment(
     weights[0, 0] = weights.min()
     weights[0, refine_whisper_precision_nframes*2:] = worse_weight
 
-    # Similar as "symmetric1" but without the possibility to have the same timestamp for two tokens
-    step_pattern = dtw.stepPattern.StepPattern(dtw.stepPattern._c(
-        1, 1, 1, -1,
-        1, 0, 0, 1,
-        2, 0, 1, -1,
-        2, 0, 0, 1,
-    ))
+    if subwords_can_be_empty:
+        step_pattern = dtw.stepPattern.symmetric1
+    else:
+        # Similar as "symmetric1" but without the possibility to have the same timestamp for two tokens
+        step_pattern = dtw.stepPattern.StepPattern(dtw.stepPattern._c(
+            1, 1, 1, -1,
+            1, 0, 0, 1,
+            2, 0, 1, -1,
+            2, 0, 0, 1,
+        ))
     alignment = dtw.dtw(weights, step_pattern=step_pattern)
 
     if plot:
         import matplotlib.pyplot as plt
         import matplotlib.ticker as ticker
 
-        if mfcc is None:
-            plt.figure(figsize=(16, 9), frameon=False)
-        else:
-            plt.subplots(2, 1, figsize=(16, 9), gridspec_kw={'height_ratios': [3, 1]})
-            plt.subplot(2, 1, 1, frameon=False)
+        plot_mfcc = 1 if mfcc is not None else 0
+        plot_disfluencies = 1 if detect_disfluencies else 0
+        nplots = (1 + plot_mfcc + plot_disfluencies)
+
+        plt.subplots(nplots, 1, figsize=(16, 9), gridspec_kw={'height_ratios': [3] + [1] * (nplots - 1)})
+        plt.subplot(nplots, 1, 1, frameon=False)
 
         plt.imshow(-weights, aspect="auto")
         plt.plot(alignment.index2s, alignment.index1s, color="red")
@@ -1329,13 +1358,13 @@ def perform_word_alignment(
 
         plt.ylabel("Words")
 
-        if mfcc is not None:
+        if plot_mfcc:
             plt.xticks(xticks)
             plt.setp(plt.gca().get_xticklabels(), visible=False)
 
             xticks *= 2
 
-            plt.subplot(2, 1, 2, frameon=False)
+            plt.subplot(nplots, 1, 2, frameon=False)
             plt.imshow(mfcc[0, :, start_token * 2: end_token * 2].cpu(), aspect="auto", origin="lower")
             plt.yticks([])
             plt.ylabel("MFCC")
@@ -1347,15 +1376,91 @@ def perform_word_alignment(
     jumps = np.pad(jumps, (1, 0), constant_values=1)
     jumps = jumps.astype(bool)
     jumps = alignment.index2s[jumps]
-    jump_times = jumps * AUDIO_TIME_PER_TOKEN
-    jump_times = np.pad(jump_times, (0, 1),
-                        constant_values=end_time - start_time)
+    jumps = np.pad(jumps, (0, 1), constant_values=alignment.index2s[-1])
+
+    jumps_start = jumps
+    disfluences = {}
+    if detect_disfluencies:
+        jumps_start = copy.copy(jumps)
+
+        for (i_token, (tok, begin, end)) in enumerate(zip(tokens, jumps[:-1], jumps[1:])):
+
+            # Find local maxima in the portion of attention weights
+            attention_weights = -weights[i_token, begin:end]
+            peaks, properties = find_peaks(attention_weights,
+                width=3,
+                prominence=0.02,
+            )
+            # If more than 
+            if len(peaks) > 1:
+                if "left_ips" in properties:
+                    left = [round(x) for x in properties["left_ips"]]
+                else:
+                    left = properties["left_bases"]
+
+                new_begin = left[-1] + begin
+
+                jumps_start[i_token] = new_begin
+
+                if new_begin != begin:
+                    is_punctuation = tokenizer.decode_with_timestamps([tok]) in _punctuation
+                    if not is_punctuation:
+                        disfluences[i_token] = (begin, jumps_start[i_token])
+                    else:
+                        disfluences[i_token+1] = (begin, end)
+
+            if plot:
+                plt.subplot(nplots, 1, 2 + plot_mfcc, frameon=False)
+                plt.plot(range(begin,end), attention_weights)
+                plt.xlim(0, end)
+                
+                for i, p in enumerate(peaks):
+                    color = 'red' if (len(peaks)>1 and i<len(peaks)-1) else 'green'
+                    plt.vlines(begin+p, 0, 1, color=color, linestyle="--")
+
+                if "left_bases" in properties:
+                    def barxxy(start, end, y, **kwargs):
+                        middle = (start + end) / 2
+                        plt.bar(middle, y, width=end-start, **kwargs)
+                    color = 'red' if len(peaks)>1 else 'green'
+                    barxxy(begin+properties["left_bases"], begin+properties["right_bases"], properties.get("prominences",[1]*len(properties["left_bases"])), alpha=0.5,
+                        # put a line with a custom color
+                        linewidth=1, edgecolor=color
+                    )
+                if "left_ips" in properties:
+                    for left in properties["left_ips"]:
+                        plt.vlines(begin+left, 0, 0.5, color='green', linestyle=':')
+                    for right in properties["right_ips"]:  
+                        plt.vlines(begin+right, 0, 0.5, color='red', linestyle=':')
+
 
     # display the word-level timestamps in a table
     word_boundaries = np.cumsum([len(t) for t in word_tokens])
     word_boundaries = np.pad(word_boundaries, (1, 0))
-    begin_times = jump_times[word_boundaries[:-1]]
-    end_times = jump_times[word_boundaries[1:] - num_punctuations_per_tokens]
+    begin_times = jumps_start[word_boundaries[:-1]]
+    end_times = jumps[word_boundaries[1:] - num_punctuations_per_tokens]
+
+    begin_times = begin_times * AUDIO_TIME_PER_TOKEN
+    end_times = end_times * AUDIO_TIME_PER_TOKEN
+
+    if detect_disfluencies:
+        to_be_added = []
+        i_start = 0
+        for i_word, toks in enumerate(word_tokens[:-1]):
+            i_end = i_start + len(toks)
+            if i_start in disfluences and i_word > 0:
+                begin, end = disfluences[i_start]
+                begin *= AUDIO_TIME_PER_TOKEN
+                end *= AUDIO_TIME_PER_TOKEN
+                to_be_added.append((i_word, begin, end))
+            i_start = i_end
+        # Add from the end to avoid messing up the indices
+        for (i_word, begin, end) in to_be_added[-1::-1]:
+            words.insert(i_word, DISFLUENCY_MARK)
+            word_tokens.insert(i_word, [])
+            word_tokens_indices.insert(i_word, [])
+            begin_times = np.insert(begin_times, i_word, begin)
+            end_times = np.insert(end_times, i_word, end)
 
     # Ignore start / end tokens
     if not refine_whisper_precision_nframes:
@@ -1378,15 +1483,7 @@ def perform_word_alignment(
     if plot:
         ymin = 1
 
-        if mfcc is not None:
-            for i, (w, begin, end) in enumerate(zip(words, begin_times, end_times)):
-                plt.text(begin * 2 / AUDIO_TIME_PER_TOKEN, mfcc.shape[-2]*1.05, w, ha="left", va="bottom", color="red")
-                for x in [begin, end,]:
-                    plt.axvline(x * 2 / AUDIO_TIME_PER_TOKEN,
-                                color="red", linestyle="dotted")
-
-            plt.subplot(2, 1, 1)
-
+        plt.subplot(nplots, 1, 1)
         for i, (w, ws, begin, end) in enumerate(zip(words, word_tokens, begin_times, end_times)):
             ymax = ymin + len(ws)
             if mfcc is None:
@@ -1397,6 +1494,13 @@ def perform_word_alignment(
                             ymax=0,  # 1-ymax/num_tokens,
                             )
             ymin = ymax
+
+        if plot_mfcc:
+            plt.subplot(nplots, 1, 2)
+            for i, (w, begin, end) in enumerate(zip(words, begin_times, end_times)):
+                plt.text(begin * 2 / AUDIO_TIME_PER_TOKEN, mfcc.shape[-2]*1.05, w, ha="left", va="bottom", color="red")
+                for x in [begin, end,]:
+                    plt.axvline(x * 2 / AUDIO_TIME_PER_TOKEN, color="red", linestyle="dotted")
 
         plt.show()
 
@@ -1483,6 +1587,63 @@ def split_tokens_on_spaces(tokens: torch.Tensor, tokenizer, remove_punctuation_f
             word_tokens_indices[-1].extend(subword_tokens_indices)
 
     return words, word_tokens, word_tokens_indices
+
+
+def remove_last_null_duration_words(transcription, words):
+    """
+    Remove words with null duration happening at the end of a chunk (probable Whisper hallucinations)
+    """
+    # First group segments by audio chunk
+    segments_groups = {}
+    seek = None
+    current_chunk = -1
+    for i, segment in enumerate(transcription["segments"]):
+        if segment["seek"] != seek:
+            current_chunk += 1
+            seek = segment["seek"]
+        segments_groups[i] = current_chunk
+
+    # Remove words with null duration happening at the end of a chunk
+    current_chunk = -1
+    is_last_empty = False
+    recompute_text = False
+    to_remove = []
+    for i, word in enumerate(words[::-1]): # Reverse order
+        i = len(words) - i - 1
+        empty = (word["start"] == word["end"])
+        idx_segment = word["idx_segment"]
+        group = segments_groups[idx_segment]
+        if current_chunk != group:
+            is_last_empty = empty
+            current_chunk = group
+        elif not empty:
+            is_last_empty = False
+        if is_last_empty:
+            # Remove word
+            to_remove.append(i)
+            # Shorten text of segment
+            full_word = "".join(word["tokens"])
+            segment = transcription["segments"][idx_segment]
+            text = segment["text"]
+            assert text.endswith(full_word)
+            text = text[:-len(full_word)]
+            if text:
+                segment["text"] = text
+            else:
+                # Remove segment with no more words
+                transcription["segments"].pop(idx_segment)
+                for j in range(i+1, len(words)):
+                    words[j]["idx_segment"] -= 1
+            recompute_text = True
+
+    for i in to_remove:
+        words.pop(i)
+
+    if recompute_text:
+        transcription["text"] = "".join([s["text"] for s in transcription["segments"]])
+
+    return transcription, words
+
 
 def ensure_increasing_positions(segments, min_duration=0):
     """
@@ -1667,6 +1828,7 @@ def cli():
 
     parser.add_argument('--debug', help="print some debug information for word alignement", default=False, action="store_true")
 
+    parser.add_argument('--detect_disfluencies', default=False, help="Try to detect disfluencies, marking them as special words [*]", type=str2bool)
     parser.add_argument('--recompute_all_timestamps', default=not TRUST_WHISPER_TIMESTAMP_BY_DEFAULT, help="Do not rely at all on Whisper timestamps (Experimental option: did not bring any improvement, but could be useful in cases where Whipser segment timestamp are wrong by more than 0.5 seconds)", type=str2bool)
     parser.add_argument('--naive', help="use naive approach, doing inference twice (once to get the transcription, once to get word timestamps and confidence scores).", default=False, action="store_true")
     class ActionSetAccurate(argparse.Action):
@@ -1735,10 +1897,14 @@ def cli():
     if output_dir and not os.path.isdir(output_dir):
         os.makedirs(output_dir)
 
-    naive_approach=args.pop("naive")
-    remove_punctuation_from_words=not args.pop("punctuations_with_words")
-    compute_word_confidence = args.pop("compute_confidence")
-    trust_whisper_timestamps = not args.pop("recompute_all_timestamps")
+    args["naive_approach"] = args.pop("naive")
+    args["remove_punctuation_from_words"] = not args.pop("punctuations_with_words")
+    args["compute_word_confidence"] = args.pop("compute_confidence")
+    args["trust_whisper_timestamps"] = not args.pop("recompute_all_timestamps")
+
+    # Quick early check
+    for audio_path in audio_files:
+        assert os.path.isfile(audio_path), f"File {audio_path} does not exist"
 
     for audio_path in audio_files:
 
@@ -1746,10 +1912,6 @@ def cli():
             model, audio_path,
             temperature=temperature,
             plot_word_alignment=plot_word_alignment,
-            naive_approach=naive_approach,
-            remove_punctuation_from_words=remove_punctuation_from_words,
-            compute_word_confidence=compute_word_confidence,
-            trust_whisper_timestamps=trust_whisper_timestamps,
             **args
         )
 
