@@ -919,7 +919,7 @@ def _transcribe_timestamped_naive(
 
     word_alignement_most_top_layers = float("inf") if word_alignement_most_top_layers is None else word_alignement_most_top_layers
 
-    audio = get_audio_tensor(audio, device)
+    audio = get_audio_tensor(audio, model.device)
     audio_duration = audio.shape[-1] / SAMPLE_RATE
 
     if verbose and language is None and not whisper_options["verbose"]:
