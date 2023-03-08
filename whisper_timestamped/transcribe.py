@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.11.0"
+__version__ = "1.11.1"
 
 # Set some environment variables
 import os
@@ -69,9 +69,10 @@ def transcribe_timestamped(
     # Reproducibility
     seed=1234,
 
-    naive_approach=False,
-    trust_whisper_timestamps=TRUST_WHISPER_TIMESTAMP_BY_DEFAULT,
+    vad=False,
     detect_disfluencies=False,
+    trust_whisper_timestamps=TRUST_WHISPER_TIMESTAMP_BY_DEFAULT,
+    naive_approach=False,
 
     # Other Whisper options
     temperature=0.0 if USE_EFFICIENT_BY_DEFAULT else (0.0, 0.2, 0.4, 0.6, 0.8, 1.0),
@@ -98,7 +99,7 @@ def transcribe_timestamped(
         The Whisper model instance.
 
     audio: Union[str, np.ndarray, torch.Tensor]
-        The path to the audio file to open, or the audio waveform.
+        The path to the audio file to open, or the audio waveform in 16kHz.
 
     language: str
         The language to use for the transcription. If None, the language is detected automatically.
@@ -110,13 +111,25 @@ def transcribe_timestamped(
         If False, words will be glued with the next punctuation mark (if any).
         If True, there will be no punctuation mark in the `words[:]["text"]` list.
         It only affects these strings; This has no influence on the computation of the word confidence, whatever the value of `include_punctuation_in_confidence` is.
+    
+    include_punctuation_in_confidence: bool
+        Whether to include proba of punctuation in the computation of the (previous) word confidence.
 
     compute_word_confidence: bool
         Whether to compute word confidence.
         If True, a finer confidence for each segment will be computed as well.
-    
-    include_punctuation_in_confidence: bool
-        Whether to include proba of punctuation in the computation of the (previous) word confidence.
+
+    vad: bool
+        Whether to perform voice activity detection (VAD) on the audio file, to remove silent parts before transcribing with Whisper model.
+        This should decrease hallucinations from the Whisper model.
+
+    detect_disfluencies: bool
+        Whether to detect disfluencies (i.e. hesitations, filler words, repetitions, corrections, etc.) that Whisper model might have omitted in the transcription.
+        This should make the word timestamp prediction more accurate.
+        And probable disfluencies will be marked as special words "[*]".
+
+    trust_whisper_timestamps: bool
+        Whether to rely on Whisper's timestamps to get approximative first estimate of segment positions (up to refine_whisper_precision).
 
     refine_whisper_precision: float
         How much can we refine Whisper segment positions, in seconds. Must be a multiple of 0.02.
@@ -231,6 +244,11 @@ def transcribe_timestamped(
         compression_ratio_threshold=compression_ratio_threshold,
     )
 
+    if vad:
+        audio = get_audio_tensor(audio)
+        audio, convert_timestamps = remove_non_speech(audio)
+        audio = audio.to(model.device)
+
     if naive_approach:
         (transcription, words) = _transcribe_timestamped_naive(model, audio,
                                                                min_word_duration=0.0, # Was 0.04 before 1.11
@@ -266,6 +284,18 @@ def transcribe_timestamped(
                 segment["start"] = word["start"]
         if refine_whisper_precision:
             segment["end"] = word["end"]
+
+    if vad:
+        # Recompute timestamps to match the original audio
+        for segment in whisper_segments:
+            for word in segment["words"]:
+                word["start"], word["end"] = convert_timestamps(word["start"], word["end"])
+            if refine_whisper_precision and len(segment["words"]):
+                segment["start"] = segment["words"][0]["start"]
+                segment["end"] = segment["words"][-1]["end"]
+            else:
+                segment["start"] = convert_timestamps(segment["start"], segment["end"])
+                segment["end"] = convert_timestamps(segment["end"])
 
     return transcription
 
@@ -889,14 +919,7 @@ def _transcribe_timestamped_naive(
 
     word_alignement_most_top_layers = float("inf") if word_alignement_most_top_layers is None else word_alignement_most_top_layers
 
-    if isinstance(audio, str):
-        audio = whisper.load_audio(audio)
-    if isinstance(audio, np.ndarray):
-        audio = torch.Tensor(audio)
-    else:
-        assert isinstance(audio, torch.Tensor), f"Got unexpected audio of type {type(audio)}"
-
-    audio = audio.to(model.device)
+    audio = get_audio_tensor(audio, device)
     audio_duration = audio.shape[-1] / SAMPLE_RATE
 
     if verbose and language is None and not whisper_options["verbose"]:
@@ -1114,6 +1137,15 @@ def _transcribe_timestamped_naive(
             hook.remove()
 
     return (transcription, words)
+
+def get_audio_tensor(audio, device="cpu"):
+    if isinstance(audio, str):
+        audio = whisper.load_audio(audio)
+    if isinstance(audio, np.ndarray):
+        audio = torch.Tensor(audio)
+    else:
+        assert isinstance(audio, torch.Tensor), f"Got unexpected audio of type {type(audio)}"
+    return audio.to(device)
 
 def audio_minimum_padding(audio):
     if audio.shape[-1] <= 200:
@@ -1599,6 +1631,118 @@ def split_tokens_on_spaces(tokens: torch.Tensor, tokenizer, remove_punctuation_f
 
     return words, word_tokens, word_tokens_indices
 
+silero_vad_model = None
+def get_vad_segments(audio,
+    output_sample=False,
+    min_speech_duration=0.1,
+    min_silence_duration=0.1,
+    ):
+    """
+    Get speech segments from audio using Silero VAD
+    parameters:
+        audio: torch.Tensor
+            audio data *in 16kHz*
+        output_sample: bool
+            if True, return start and end in samples instead of seconds
+        method: str
+            method to use for VAD (silero, pyannote)
+    """
+    global silero_vad_model, silero_get_speech_ts
+
+    if silero_vad_model is None:
+        silero_vad_model, utils = torch.hub.load(
+            repo_or_dir="snakers4/silero-vad", model="silero_vad", onnx=True
+        )
+        silero_get_speech_ts = utils[0]
+
+    segments = silero_get_speech_ts(audio, silero_vad_model,
+        min_speech_duration_ms = round(min_speech_duration * 1000),
+        min_silence_duration_ms = round(min_silence_duration * 1000),
+        return_seconds = False,
+    )
+
+    ratio = 1 if output_sample else 1 / SAMPLE_RATE
+
+    if ratio != 1:
+        for seg in segments:
+            seg["start"] *= ratio
+            seg["end"] *= ratio
+    if output_sample:
+        for seg in segments:
+            seg["start"] = round(seg["start"])
+            seg["end"] = round(seg["end"])
+    return segments
+
+def remove_non_speech(audio,
+    use_sample=False,
+    min_speech_duration=0.1,
+    min_silence_duration=1,
+    ):
+    """
+    Remove non-speech segments from audio (using Silero VAD),
+    glue the speech segments together and return the result along with
+    a function to convert timestamps from the new audio to the original audio
+    """
+
+    segments = get_vad_segments(
+        audio,
+        output_sample=True,
+        min_speech_duration=min_speech_duration,
+        min_silence_duration=min_silence_duration,
+    )
+
+    segments = [(seg["start"], seg["end"]) for seg in segments]
+    if len(segments) == 0:
+        segments = [(0, audio.shape[-1])]
+
+    audio_speech = torch.cat([audio[..., s:e] for s,e in segments], dim=-1)
+
+    if not use_sample:
+        segments = [(float(s)/SAMPLE_RATE, float(e)/SAMPLE_RATE) for s,e in segments]
+
+    return audio_speech, lambda t, t2 = None: do_convert_timestamps(segments, t, t2)
+
+def do_convert_timestamps(segments, t, t2 = None):
+    """
+    Convert timestamp from audio without non-speech segments to original audio (with non-speech segments)
+
+    parameters:
+        segments: list of tuple (start, end) corresponding to non-speech segments in original audio
+        t: timestamp to convert
+        t2: second timestamp to convert (optional), when the two timestamps should be in the same segment
+    """
+    assert len(segments)
+    ioffset = 0 # Input offset
+    ooffset = 0 # Output offset
+    ipreviousend = 0
+    result = []
+    for istart, iend in segments:
+        ostart = ooffset
+        oend = ostart + (iend - istart)
+        ooffset = oend
+        ioffset += istart - ipreviousend
+        ipreviousend = iend
+        t_in = t <= oend
+        t2_in = t_in if t2 is None else t2 <= oend
+        if t_in or t2_in:
+            result.append([
+                max(istart, min(iend, ioffset + t)),
+                max(istart, min(iend, ioffset + t2)) if t2 is not None else None
+            ])
+            if t_in and t2_in:
+                break
+    if not len(result):
+        result.append(
+            [ioffset + t, ioffset + t2 if t2 is not None else None]
+        )
+        
+    if len(result) > 1:
+        # Minimize difference between durations
+        result = sorted(result, key=lambda x: abs(abs(t2-t) - abs(x[1]-x[0])))
+    result = result[0]
+    if t2 is None:
+        result = result[0]
+    return result
 
 def remove_last_null_duration_words(transcription, words, recompute_text=False):
     """
@@ -1845,6 +1989,7 @@ def cli():
 
     parser.add_argument('--debug', help="print some debug information for word alignement", default=False, action="store_true")
 
+    parser.add_argument('--vad', default=False, help="Run Voice Activity Detection (VAD) to remove non-speech segment before applying Whisper model (removes hallucinations)", type=str2bool)
     parser.add_argument('--detect_disfluencies', default=False, help="Try to detect disfluencies, marking them as special words [*]", type=str2bool)
     parser.add_argument('--recompute_all_timestamps', default=not TRUST_WHISPER_TIMESTAMP_BY_DEFAULT, help="Do not rely at all on Whisper timestamps (Experimental option: did not bring any improvement, but could be useful in cases where Whipser segment timestamp are wrong by more than 0.5 seconds)", type=str2bool)
     parser.add_argument('--naive', help="use naive approach, doing inference twice (once to get the transcription, once to get word timestamps and confidence scores).", default=False, action="store_true")
