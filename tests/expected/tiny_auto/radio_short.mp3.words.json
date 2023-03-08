@@ -1,5 +1,5 @@
 {
-  "text": " What are you telling me, guys? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, guys? What are you telling me, guys? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude?",
+  "text": " What are you telling me, guys? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, guys? What are you telling me, guys? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me,",
   "segments": [
     {
       "id": 0,
@@ -18,7 +18,7 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.39921625649056786,
+      "avg_logprob": -0.39921490739031534,
       "compression_ratio": 4.660377358490566,
       "no_speech_prob": 0.5110077261924744,
       "confidence": 0.341,
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 0,
       "seek": 0,
       "start": 6.48,
       "end": 7.57,
@@ -78,7 +78,7 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.39921625649056786,
+      "avg_logprob": -0.39921490739031534,
       "compression_ratio": 4.660377358490566,
       "no_speech_prob": 0.5110077261924744,
       "confidence": 0.677,
@@ -122,7 +122,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 0,
       "seek": 0,
       "start": 7.57,
       "end": 9.36,
@@ -138,7 +138,7 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.39921625649056786,
+      "avg_logprob": -0.39921490739031534,
       "compression_ratio": 4.660377358490566,
       "no_speech_prob": 0.5110077261924744,
       "confidence": 0.826,
@@ -182,7 +182,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 0,
       "seek": 0,
       "start": 10.46,
       "end": 12.5,
@@ -198,7 +198,7 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.39921625649056786,
+      "avg_logprob": -0.39921490739031534,
       "compression_ratio": 4.660377358490566,
       "no_speech_prob": 0.5110077261924744,
       "confidence": 0.774,
@@ -242,7 +242,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 0,
       "seek": 0,
       "start": 12.5,
       "end": 13.54,
@@ -258,7 +258,7 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.39921625649056786,
+      "avg_logprob": -0.39921490739031534,
       "compression_ratio": 4.660377358490566,
       "no_speech_prob": 0.5110077261924744,
       "confidence": 0.761,
@@ -302,7 +302,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 0,
       "seek": 0,
       "start": 16.48,
       "end": 17.78,
@@ -318,7 +318,7 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.39921625649056786,
+      "avg_logprob": -0.39921490739031534,
       "compression_ratio": 4.660377358490566,
       "no_speech_prob": 0.5110077261924744,
       "confidence": 0.935,
@@ -362,7 +362,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 0,
       "seek": 0,
       "start": 20.5,
       "end": 22.96,
@@ -378,7 +378,7 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.39921625649056786,
+      "avg_logprob": -0.39921490739031534,
       "compression_ratio": 4.660377358490566,
       "no_speech_prob": 0.5110077261924744,
       "confidence": 0.954,
@@ -422,7 +422,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 0,
       "seek": 0,
       "start": 22.96,
       "end": 23.08,
@@ -438,7 +438,7 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.39921625649056786,
+      "avg_logprob": -0.39921490739031534,
       "compression_ratio": 4.660377358490566,
       "no_speech_prob": 0.5110077261924744,
       "confidence": 0.855,
@@ -485,7 +485,7 @@
       "id": 8,
       "seek": 2600,
       "start": 26.56,
-      "end": 28.66,
+      "end": 28.78,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -498,53 +498,53 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.26753812847715436,
+      "avg_logprob": -0.28045980858080316,
       "compression_ratio": 9.136363636363637,
-      "no_speech_prob": 0.004161430057138205,
-      "confidence": 0.523,
+      "no_speech_prob": 0.09104995429515839,
+      "confidence": 0.604,
       "words": [
         {
           "text": "What",
           "start": 26.56,
-          "end": 27.46,
-          "confidence": 0.145
+          "end": 27.6,
+          "confidence": 0.221
         },
         {
           "text": "are",
-          "start": 27.46,
-          "end": 27.5,
-          "confidence": 0.441
+          "start": 27.6,
+          "end": 28.12,
+          "confidence": 0.533
         },
         {
           "text": "you",
-          "start": 27.5,
-          "end": 28.6,
-          "confidence": 0.944
+          "start": 28.12,
+          "end": 28.72,
+          "confidence": 0.963
         },
         {
           "text": "telling",
-          "start": 28.6,
-          "end": 28.62,
-          "confidence": 0.538
+          "start": 28.72,
+          "end": 28.74,
+          "confidence": 0.64
         },
         {
           "text": "me,",
-          "start": 28.62,
-          "end": 28.64,
-          "confidence": 0.926
+          "start": 28.74,
+          "end": 28.76,
+          "confidence": 0.911
         },
         {
           "text": "dude?",
-          "start": 28.64,
-          "end": 28.66,
-          "confidence": 0.683
+          "start": 28.76,
+          "end": 28.78,
+          "confidence": 0.733
         }
       ]
     },
     {
-      "id": 9,
+      "id": 8,
       "seek": 2600,
-      "start": 29.54,
+      "start": 30.48,
       "end": 31.99,
       "text": " What are you telling me, dude?",
       "tokens": [
@@ -558,51 +558,51 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.26753812847715436,
+      "avg_logprob": -0.28045980858080316,
       "compression_ratio": 9.136363636363637,
-      "no_speech_prob": 0.004161430057138205,
-      "confidence": 0.586,
+      "no_speech_prob": 0.09104995429515839,
+      "confidence": 0.657,
       "words": [
         {
           "text": "What",
-          "start": 29.54,
-          "end": 29.56,
-          "confidence": 0.193
+          "start": 30.48,
+          "end": 31.16,
+          "confidence": 0.32
         },
         {
           "text": "are",
-          "start": 29.56,
-          "end": 31.14,
-          "confidence": 0.532
+          "start": 31.16,
+          "end": 31.18,
+          "confidence": 0.578
         },
         {
           "text": "you",
-          "start": 31.14,
-          "end": 31.16,
-          "confidence": 0.966
+          "start": 31.18,
+          "end": 31.2,
+          "confidence": 0.969
         },
         {
           "text": "telling",
-          "start": 31.16,
+          "start": 31.2,
           "end": 31.44,
-          "confidence": 0.589
+          "confidence": 0.647
         },
         {
           "text": "me,",
           "start": 31.44,
           "end": 31.56,
-          "confidence": 0.895
+          "confidence": 0.884
         },
         {
           "text": "dude?",
-          "start": 31.66,
+          "start": 31.68,
           "end": 31.99,
-          "confidence": 0.776
+          "confidence": 0.784
         }
       ]
     },
     {
-      "id": 10,
+      "id": 8,
       "seek": 2600,
       "start": 31.99,
       "end": 32.68,
@@ -618,54 +618,54 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.26753812847715436,
+      "avg_logprob": -0.28045980858080316,
       "compression_ratio": 9.136363636363637,
-      "no_speech_prob": 0.004161430057138205,
-      "confidence": 0.664,
+      "no_speech_prob": 0.09104995429515839,
+      "confidence": 0.672,
       "words": [
         {
           "text": "What",
           "start": 31.99,
           "end": 32.28,
-          "confidence": 0.322
+          "confidence": 0.346
         },
         {
           "text": "are",
           "start": 32.28,
           "end": 32.3,
-          "confidence": 0.593
+          "confidence": 0.611
         },
         {
           "text": "you",
           "start": 32.3,
           "end": 32.42,
-          "confidence": 0.972
+          "confidence": 0.973
         },
         {
           "text": "telling",
           "start": 32.42,
           "end": 32.44,
-          "confidence": 0.61
+          "confidence": 0.612
         },
         {
           "text": "me,",
           "start": 32.44,
           "end": 32.46,
-          "confidence": 0.893
+          "confidence": 0.873
         },
         {
           "text": "dude?",
           "start": 32.46,
           "end": 32.68,
-          "confidence": 0.849
+          "confidence": 0.84
         }
       ]
     },
     {
-      "id": 11,
+      "id": 8,
       "seek": 2600,
       "start": 33.5,
-      "end": 35.48,
+      "end": 35.58,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -678,51 +678,51 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.26753812847715436,
+      "avg_logprob": -0.28045980858080316,
       "compression_ratio": 9.136363636363637,
-      "no_speech_prob": 0.004161430057138205,
-      "confidence": 0.712,
+      "no_speech_prob": 0.09104995429515839,
+      "confidence": 0.727,
       "words": [
         {
           "text": "What",
           "start": 33.5,
-          "end": 33.68,
-          "confidence": 0.44
+          "end": 33.72,
+          "confidence": 0.494
         },
         {
           "text": "are",
-          "start": 33.68,
-          "end": 34.68,
-          "confidence": 0.604
+          "start": 33.72,
+          "end": 34.94,
+          "confidence": 0.616
         },
         {
           "text": "you",
-          "start": 34.68,
-          "end": 34.94,
-          "confidence": 0.972
+          "start": 34.94,
+          "end": 34.96,
+          "confidence": 0.974
         },
         {
           "text": "telling",
-          "start": 34.94,
-          "end": 34.96,
-          "confidence": 0.635
+          "start": 34.96,
+          "end": 34.98,
+          "confidence": 0.646
         },
         {
           "text": "me,",
-          "start": 34.96,
-          "end": 35.24,
-          "confidence": 0.9
+          "start": 34.98,
+          "end": 35.28,
+          "confidence": 0.89
         },
         {
           "text": "dude?",
-          "start": 35.46,
-          "end": 35.48,
-          "confidence": 0.88
+          "start": 35.56,
+          "end": 35.58,
+          "confidence": 0.869
         }
       ]
     },
     {
-      "id": 12,
+      "id": 8,
       "seek": 2600,
       "start": 36.24,
       "end": 38.48,
@@ -738,16 +738,16 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.26753812847715436,
+      "avg_logprob": -0.28045980858080316,
       "compression_ratio": 9.136363636363637,
-      "no_speech_prob": 0.004161430057138205,
-      "confidence": 0.746,
+      "no_speech_prob": 0.09104995429515839,
+      "confidence": 0.763,
       "words": [
         {
           "text": "What",
           "start": 36.24,
           "end": 36.5,
-          "confidence": 0.476
+          "confidence": 0.558
         },
         {
           "text": "are",
@@ -759,30 +759,30 @@
           "text": "you",
           "start": 36.52,
           "end": 37.3,
-          "confidence": 0.973
+          "confidence": 0.975
         },
         {
           "text": "telling",
           "start": 37.3,
           "end": 37.54,
-          "confidence": 0.718
+          "confidence": 0.721
         },
         {
           "text": "me,",
           "start": 37.54,
           "end": 37.76,
-          "confidence": 0.929
+          "confidence": 0.901
         },
         {
           "text": "dude?",
           "start": 38.02,
           "end": 38.48,
-          "confidence": 0.9
+          "confidence": 0.902
         }
       ]
     },
     {
-      "id": 13,
+      "id": 8,
       "seek": 2600,
       "start": 38.48,
       "end": 38.68,
@@ -798,54 +798,54 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.26753812847715436,
+      "avg_logprob": -0.28045980858080316,
       "compression_ratio": 9.136363636363637,
-      "no_speech_prob": 0.004161430057138205,
-      "confidence": 0.787,
+      "no_speech_prob": 0.09104995429515839,
+      "confidence": 0.789,
       "words": [
         {
           "text": "What",
           "start": 38.48,
           "end": 38.5,
-          "confidence": 0.556
+          "confidence": 0.585
         },
         {
           "text": "are",
           "start": 38.5,
           "end": 38.52,
-          "confidence": 0.674
+          "confidence": 0.669
         },
         {
           "text": "you",
           "start": 38.52,
           "end": 38.54,
-          "confidence": 0.978
+          "confidence": 0.979
         },
         {
           "text": "telling",
           "start": 38.54,
           "end": 38.56,
-          "confidence": 0.753
+          "confidence": 0.743
         },
         {
           "text": "me,",
           "start": 38.56,
           "end": 38.58,
-          "confidence": 0.936
+          "confidence": 0.929
         },
         {
           "text": "dude?",
           "start": 38.58,
           "end": 38.68,
-          "confidence": 0.922
+          "confidence": 0.916
         }
       ]
     },
     {
-      "id": 14,
+      "id": 8,
       "seek": 2600,
       "start": 39.5,
-      "end": 40.9,
+      "end": 43.36,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -858,54 +858,54 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.26753812847715436,
+      "avg_logprob": -0.28045980858080316,
       "compression_ratio": 9.136363636363637,
-      "no_speech_prob": 0.004161430057138205,
-      "confidence": 0.813,
+      "no_speech_prob": 0.09104995429515839,
+      "confidence": 0.811,
       "words": [
         {
           "text": "What",
           "start": 39.5,
-          "end": 40.2,
-          "confidence": 0.578
+          "end": 40.26,
+          "confidence": 0.59
         },
         {
           "text": "are",
-          "start": 40.2,
-          "end": 40.22,
-          "confidence": 0.737
+          "start": 40.26,
+          "end": 40.28,
+          "confidence": 0.722
         },
         {
           "text": "you",
-          "start": 40.22,
-          "end": 40.36,
-          "confidence": 0.982
+          "start": 40.28,
+          "end": 41.54,
+          "confidence": 0.983
         },
         {
           "text": "telling",
-          "start": 40.36,
-          "end": 40.38,
-          "confidence": 0.786
+          "start": 41.54,
+          "end": 41.56,
+          "confidence": 0.777
         },
         {
           "text": "me,",
-          "start": 40.38,
-          "end": 40.4,
-          "confidence": 0.942
+          "start": 41.56,
+          "end": 43.34,
+          "confidence": 0.944
         },
         {
           "text": "dude?",
-          "start": 40.88,
-          "end": 40.9,
-          "confidence": 0.936
+          "start": 43.34,
+          "end": 43.36,
+          "confidence": 0.925
         }
       ]
     },
     {
-      "id": 15,
+      "id": 8,
       "seek": 2600,
-      "start": 41.5,
-      "end": 43.1,
+      "start": 43.36,
+      "end": 44.92,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -918,54 +918,54 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.26753812847715436,
+      "avg_logprob": -0.28045980858080316,
       "compression_ratio": 9.136363636363637,
-      "no_speech_prob": 0.004161430057138205,
-      "confidence": 0.834,
+      "no_speech_prob": 0.09104995429515839,
+      "confidence": 0.797,
       "words": [
         {
           "text": "What",
-          "start": 41.5,
-          "end": 41.72,
-          "confidence": 0.643
+          "start": 43.36,
+          "end": 43.38,
+          "confidence": 0.567
         },
         {
           "text": "are",
-          "start": 41.72,
-          "end": 41.74,
-          "confidence": 0.752
+          "start": 43.38,
+          "end": 43.4,
+          "confidence": 0.708
         },
         {
           "text": "you",
-          "start": 41.74,
-          "end": 42.06,
-          "confidence": 0.985
+          "start": 43.4,
+          "end": 43.42,
+          "confidence": 0.981
         },
         {
           "text": "telling",
-          "start": 42.06,
-          "end": 42.54,
-          "confidence": 0.79
+          "start": 43.42,
+          "end": 43.78,
+          "confidence": 0.759
         },
         {
           "text": "me,",
-          "start": 42.54,
-          "end": 43.06,
-          "confidence": 0.953
+          "start": 43.78,
+          "end": 44.86,
+          "confidence": 0.932
         },
         {
           "text": "dude?",
-          "start": 43.08,
-          "end": 43.1,
-          "confidence": 0.939
+          "start": 44.9,
+          "end": 44.92,
+          "confidence": 0.924
         }
       ]
     },
     {
-      "id": 16,
+      "id": 8,
       "seek": 2600,
-      "start": 44.48,
-      "end": 46.5,
+      "start": 44.92,
+      "end": 46.99,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -978,54 +978,54 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.26753812847715436,
+      "avg_logprob": -0.28045980858080316,
       "compression_ratio": 9.136363636363637,
-      "no_speech_prob": 0.004161430057138205,
-      "confidence": 0.796,
+      "no_speech_prob": 0.09104995429515839,
+      "confidence": 0.743,
       "words": [
         {
           "text": "What",
-          "start": 44.48,
-          "end": 45.26,
-          "confidence": 0.501
+          "start": 44.92,
+          "end": 45.56,
+          "confidence": 0.386
         },
         {
           "text": "are",
-          "start": 45.26,
-          "end": 45.64,
-          "confidence": 0.733
+          "start": 45.56,
+          "end": 45.74,
+          "confidence": 0.701
         },
         {
           "text": "you",
-          "start": 45.64,
-          "end": 45.66,
-          "confidence": 0.985
+          "start": 45.74,
+          "end": 45.98,
+          "confidence": 0.98
         },
         {
           "text": "telling",
-          "start": 45.66,
-          "end": 46.0,
-          "confidence": 0.791
+          "start": 45.98,
+          "end": 46.14,
+          "confidence": 0.771
         },
         {
           "text": "me,",
-          "start": 46.0,
-          "end": 46.48,
-          "confidence": 0.952
+          "start": 46.14,
+          "end": 46.28,
+          "confidence": 0.898
         },
         {
           "text": "dude?",
-          "start": 46.48,
-          "end": 46.5,
-          "confidence": 0.933
+          "start": 46.6,
+          "end": 46.99,
+          "confidence": 0.914
         }
       ]
     },
     {
-      "id": 17,
+      "id": 8,
       "seek": 2600,
-      "start": 46.5,
-      "end": 47.48,
+      "start": 46.99,
+      "end": 47.78,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1038,54 +1038,54 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.26753812847715436,
+      "avg_logprob": -0.28045980858080316,
       "compression_ratio": 9.136363636363637,
-      "no_speech_prob": 0.004161430057138205,
-      "confidence": 0.79,
+      "no_speech_prob": 0.09104995429515839,
+      "confidence": 0.78,
       "words": [
         {
           "text": "What",
-          "start": 46.5,
-          "end": 46.7,
-          "confidence": 0.482
+          "start": 46.99,
+          "end": 47.01,
+          "confidence": 0.484
         },
         {
           "text": "are",
-          "start": 46.7,
-          "end": 46.72,
-          "confidence": 0.742
+          "start": 47.01,
+          "end": 47.03,
+          "confidence": 0.702
         },
         {
           "text": "you",
-          "start": 46.72,
-          "end": 46.74,
-          "confidence": 0.987
+          "start": 47.03,
+          "end": 47.05,
+          "confidence": 0.984
         },
         {
           "text": "telling",
-          "start": 46.74,
+          "start": 47.05,
           "end": 47.14,
-          "confidence": 0.78
+          "confidence": 0.783
         },
         {
           "text": "me,",
           "start": 47.14,
-          "end": 47.46,
-          "confidence": 0.948
+          "end": 47.74,
+          "confidence": 0.925
         },
         {
           "text": "dude?",
-          "start": 47.46,
-          "end": 47.48,
-          "confidence": 0.933
+          "start": 47.76,
+          "end": 47.78,
+          "confidence": 0.932
         }
       ]
     },
     {
-      "id": 18,
+      "id": 8,
       "seek": 2600,
-      "start": 47.5,
-      "end": 48.44,
+      "start": 48.5,
+      "end": 49.6,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1098,114 +1098,54 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.26753812847715436,
+      "avg_logprob": -0.28045980858080316,
       "compression_ratio": 9.136363636363637,
-      "no_speech_prob": 0.004161430057138205,
-      "confidence": 0.792,
+      "no_speech_prob": 0.09104995429515839,
+      "confidence": 0.811,
       "words": [
         {
           "text": "What",
-          "start": 47.5,
-          "end": 47.52,
-          "confidence": 0.478
+          "start": 48.5,
+          "end": 49.24,
+          "confidence": 0.546
         },
         {
           "text": "are",
-          "start": 47.52,
-          "end": 48.08,
-          "confidence": 0.746
+          "start": 49.24,
+          "end": 49.26,
+          "confidence": 0.733
         },
         {
           "text": "you",
-          "start": 48.08,
-          "end": 48.1,
-          "confidence": 0.987
+          "start": 49.26,
+          "end": 49.54,
+          "confidence": 0.986
         },
         {
           "text": "telling",
-          "start": 48.1,
-          "end": 48.36,
-          "confidence": 0.788
+          "start": 49.54,
+          "end": 49.56,
+          "confidence": 0.821
         },
         {
           "text": "me,",
-          "start": 48.36,
-          "end": 48.42,
-          "confidence": 0.951
+          "start": 49.56,
+          "end": 49.58,
+          "confidence": 0.932
         },
         {
           "text": "dude?",
-          "start": 48.42,
-          "end": 48.44,
-          "confidence": 0.936
-        }
-      ]
-    },
-    {
-      "id": 19,
-      "seek": 2600,
-      "start": 49.5,
-      "end": 51.36,
-      "text": " What are you telling me, dude?",
-      "tokens": [
-        708,
-        366,
-        291,
-        3585,
-        385,
-        11,
-        6449,
-        30
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.26753812847715436,
-      "compression_ratio": 9.136363636363637,
-      "no_speech_prob": 0.004161430057138205,
-      "confidence": 0.839,
-      "words": [
-        {
-          "text": "What",
-          "start": 49.5,
-          "end": 50.36,
-          "confidence": 0.653
-        },
-        {
-          "text": "are",
-          "start": 50.36,
-          "end": 50.38,
-          "confidence": 0.757
-        },
-        {
-          "text": "you",
-          "start": 50.38,
-          "end": 50.4,
-          "confidence": 0.989
-        },
-        {
-          "text": "telling",
-          "start": 50.4,
-          "end": 50.82,
-          "confidence": 0.796
-        },
-        {
-          "text": "me,",
-          "start": 50.82,
-          "end": 51.1,
-          "confidence": 0.951
-        },
-        {
-          "text": "dude?",
-          "start": 51.1,
-          "end": 51.36,
+          "start": 49.58,
+          "end": 49.6,
           "confidence": 0.943
         }
       ]
     },
     {
-      "id": 20,
+      "id": 8,
       "seek": 2600,
-      "start": 51.98,
-      "end": 54.24,
+      "start": 49.6,
+      "end": 50.88,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1218,54 +1158,294 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.26753812847715436,
+      "avg_logprob": -0.28045980858080316,
       "compression_ratio": 9.136363636363637,
-      "no_speech_prob": 0.004161430057138205,
-      "confidence": 0.781,
+      "no_speech_prob": 0.09104995429515839,
+      "confidence": 0.833,
+      "words": [
+        {
+          "text": "What",
+          "start": 49.6,
+          "end": 50.3,
+          "confidence": 0.63
+        },
+        {
+          "text": "are",
+          "start": 50.3,
+          "end": 50.32,
+          "confidence": 0.743
+        },
+        {
+          "text": "you",
+          "start": 50.32,
+          "end": 50.34,
+          "confidence": 0.986
+        },
+        {
+          "text": "telling",
+          "start": 50.34,
+          "end": 50.74,
+          "confidence": 0.817
+        },
+        {
+          "text": "me,",
+          "start": 50.74,
+          "end": 50.8,
+          "confidence": 0.933
+        },
+        {
+          "text": "dude?",
+          "start": 50.86,
+          "end": 50.88,
+          "confidence": 0.949
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "seek": 2600,
+      "start": 51.98,
+      "end": 53.48,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.28045980858080316,
+      "compression_ratio": 9.136363636363637,
+      "no_speech_prob": 0.09104995429515839,
+      "confidence": 0.779,
       "words": [
         {
           "text": "What",
           "start": 51.98,
           "end": 52.6,
-          "confidence": 0.43
+          "confidence": 0.413
         },
         {
           "text": "are",
           "start": 52.6,
           "end": 52.74,
-          "confidence": 0.74
+          "confidence": 0.737
         },
         {
           "text": "you",
           "start": 52.74,
           "end": 53.04,
-          "confidence": 0.988
+          "confidence": 0.986
         },
         {
           "text": "telling",
           "start": 53.04,
           "end": 53.06,
-          "confidence": 0.812
+          "confidence": 0.839
         },
         {
           "text": "me,",
           "start": 53.06,
           "end": 53.08,
-          "confidence": 0.943
+          "confidence": 0.935
         },
         {
           "text": "dude?",
-          "start": 54.02,
-          "end": 54.24,
+          "start": 53.46,
+          "end": 53.48,
+          "confidence": 0.952
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "seek": 5300,
+      "start": 53.48,
+      "end": 55.0,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1593339346984042,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.5410082936286926,
+      "confidence": 0.83,
+      "words": [
+        {
+          "text": "What",
+          "start": 53.48,
+          "end": 53.5,
+          "confidence": 0.804
+        },
+        {
+          "text": "are",
+          "start": 53.5,
+          "end": 53.52,
+          "confidence": 0.736
+        },
+        {
+          "text": "you",
+          "start": 53.52,
+          "end": 54.06,
+          "confidence": 0.895
+        },
+        {
+          "text": "telling",
+          "start": 54.06,
+          "end": 54.08,
+          "confidence": 0.767
+        },
+        {
+          "text": "me,",
+          "start": 54.08,
+          "end": 54.98,
+          "confidence": 0.865
+        },
+        {
+          "text": "dude?",
+          "start": 54.98,
+          "end": 55.0,
+          "confidence": 0.929
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "seek": 5300,
+      "start": 55.0,
+      "end": 55.98,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1593339346984042,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.5410082936286926,
+      "confidence": 0.806,
+      "words": [
+        {
+          "text": "What",
+          "start": 55.0,
+          "end": 55.42,
+          "confidence": 0.615
+        },
+        {
+          "text": "are",
+          "start": 55.42,
+          "end": 55.44,
+          "confidence": 0.674
+        },
+        {
+          "text": "you",
+          "start": 55.44,
+          "end": 55.52,
+          "confidence": 0.966
+        },
+        {
+          "text": "telling",
+          "start": 55.52,
+          "end": 55.94,
+          "confidence": 0.826
+        },
+        {
+          "text": "me,",
+          "start": 55.94,
+          "end": 55.96,
+          "confidence": 0.879
+        },
+        {
+          "text": "dude?",
+          "start": 55.96,
+          "end": 55.98,
+          "confidence": 0.943
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "seek": 5300,
+      "start": 55.98,
+      "end": 56.36,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1593339346984042,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.5410082936286926,
+      "confidence": 0.798,
+      "words": [
+        {
+          "text": "What",
+          "start": 55.98,
+          "end": 56.0,
+          "confidence": 0.551
+        },
+        {
+          "text": "are",
+          "start": 56.0,
+          "end": 56.02,
+          "confidence": 0.679
+        },
+        {
+          "text": "you",
+          "start": 56.02,
+          "end": 56.04,
+          "confidence": 0.97
+        },
+        {
+          "text": "telling",
+          "start": 56.04,
+          "end": 56.06,
+          "confidence": 0.84
+        },
+        {
+          "text": "me,",
+          "start": 56.06,
+          "end": 56.34,
+          "confidence": 0.898
+        },
+        {
+          "text": "dude?",
+          "start": 56.34,
+          "end": 56.36,
           "confidence": 0.945
         }
       ]
     },
     {
       "id": 21,
-      "seek": 5400,
-      "start": 54.24,
-      "end": 55.04,
+      "seek": 5300,
+      "start": 56.7,
+      "end": 58.99,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1278,174 +1458,54 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.17641344204754897,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.024680210277438164,
-      "confidence": 0.699,
+      "avg_logprob": -0.1593339346984042,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.5410082936286926,
+      "confidence": 0.793,
       "words": [
         {
           "text": "What",
-          "start": 54.24,
-          "end": 54.38,
-          "confidence": 0.506
-        },
-        {
-          "text": "are",
-          "start": 54.38,
-          "end": 54.46,
-          "confidence": 0.588
-        },
-        {
-          "text": "you",
-          "start": 54.46,
-          "end": 54.48,
-          "confidence": 0.875
-        },
-        {
-          "text": "telling",
-          "start": 54.48,
-          "end": 54.5,
-          "confidence": 0.747
-        },
-        {
-          "text": "me,",
-          "start": 54.5,
-          "end": 54.98,
-          "confidence": 0.71
-        },
-        {
-          "text": "dude?",
-          "start": 55.02,
-          "end": 55.04,
-          "confidence": 0.848
-        }
-      ]
-    },
-    {
-      "id": 22,
-      "seek": 5400,
-      "start": 56.48,
-      "end": 57.36,
-      "text": " What are you telling me, dude?",
-      "tokens": [
-        708,
-        366,
-        291,
-        3585,
-        385,
-        11,
-        6449,
-        30
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.17641344204754897,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.024680210277438164,
-      "confidence": 0.739,
-      "words": [
-        {
-          "text": "What",
-          "start": 56.48,
+          "start": 56.7,
           "end": 56.9,
-          "confidence": 0.512
+          "confidence": 0.513
         },
         {
           "text": "are",
           "start": 56.9,
-          "end": 56.92,
-          "confidence": 0.565
+          "end": 57.04,
+          "confidence": 0.682
         },
         {
           "text": "you",
-          "start": 56.92,
-          "end": 57.3,
-          "confidence": 0.964
-        },
-        {
-          "text": "telling",
-          "start": 57.3,
-          "end": 57.32,
-          "confidence": 0.809
-        },
-        {
-          "text": "me,",
-          "start": 57.32,
-          "end": 57.34,
-          "confidence": 0.803
-        },
-        {
-          "text": "dude?",
-          "start": 57.34,
+          "start": 57.04,
           "end": 57.36,
-          "confidence": 0.896
-        }
-      ]
-    },
-    {
-      "id": 23,
-      "seek": 5400,
-      "start": 57.5,
-      "end": 59.5,
-      "text": " What are you telling me, dude?",
-      "tokens": [
-        708,
-        366,
-        291,
-        3585,
-        385,
-        11,
-        6449,
-        30
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.17641344204754897,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.024680210277438164,
-      "confidence": 0.741,
-      "words": [
-        {
-          "text": "What",
-          "start": 57.5,
-          "end": 58.66,
-          "confidence": 0.479
-        },
-        {
-          "text": "are",
-          "start": 58.66,
-          "end": 58.68,
-          "confidence": 0.584
-        },
-        {
-          "text": "you",
-          "start": 58.68,
-          "end": 58.7,
-          "confidence": 0.954
+          "confidence": 0.969
         },
         {
           "text": "telling",
-          "start": 58.7,
-          "end": 58.72,
-          "confidence": 0.818
+          "start": 57.36,
+          "end": 57.38,
+          "confidence": 0.856
         },
         {
           "text": "me,",
-          "start": 58.72,
-          "end": 59.04,
-          "confidence": 0.837
+          "start": 57.38,
+          "end": 57.8,
+          "confidence": 0.905
         },
         {
           "text": "dude?",
-          "start": 59.48,
-          "end": 59.5,
-          "confidence": 0.908
+          "start": 58.74,
+          "end": 58.99,
+          "confidence": 0.945
         }
       ]
     },
     {
-      "id": 24,
-      "seek": 5400,
-      "start": 59.5,
-      "end": 60.64,
+      "id": 21,
+      "seek": 5300,
+      "start": 58.99,
+      "end": 60.5,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1458,233 +1518,413 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.17641344204754897,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.024680210277438164,
-      "confidence": 0.783,
+      "avg_logprob": -0.1593339346984042,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.5410082936286926,
+      "confidence": 0.817,
       "words": [
         {
           "text": "What",
-          "start": 59.5,
-          "end": 60.1,
-          "confidence": 0.58
+          "start": 58.99,
+          "end": 59.36,
+          "confidence": 0.578
         },
         {
           "text": "are",
-          "start": 60.1,
-          "end": 60.2,
-          "confidence": 0.641
+          "start": 59.36,
+          "end": 59.38,
+          "confidence": 0.715
         },
         {
           "text": "you",
-          "start": 60.2,
-          "end": 60.22,
-          "confidence": 0.967
-        },
-        {
-          "text": "telling",
-          "start": 60.22,
-          "end": 60.3,
-          "confidence": 0.826
-        },
-        {
-          "text": "me,",
-          "start": 60.3,
-          "end": 60.32,
-          "confidence": 0.853
-        },
-        {
-          "text": "dude?",
-          "start": 60.48,
-          "end": 60.64,
-          "confidence": 0.911
-        }
-      ]
-    },
-    {
-      "id": 25,
-      "seek": 5400,
-      "start": 61.5,
-      "end": 62.86,
-      "text": " What are you telling me, dude?",
-      "tokens": [
-        708,
-        366,
-        291,
-        3585,
-        385,
-        11,
-        6449,
-        30
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.17641344204754897,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.024680210277438164,
-      "confidence": 0.802,
-      "words": [
-        {
-          "text": "What",
-          "start": 61.5,
-          "end": 62.42,
-          "confidence": 0.611
-        },
-        {
-          "text": "are",
-          "start": 62.42,
-          "end": 62.44,
-          "confidence": 0.658
-        },
-        {
-          "text": "you",
-          "start": 62.44,
-          "end": 62.46,
-          "confidence": 0.968
-        },
-        {
-          "text": "telling",
-          "start": 62.46,
-          "end": 62.8,
-          "confidence": 0.835
-        },
-        {
-          "text": "me,",
-          "start": 62.8,
-          "end": 62.84,
-          "confidence": 0.892
-        },
-        {
-          "text": "dude?",
-          "start": 62.84,
-          "end": 62.86,
-          "confidence": 0.919
-        }
-      ]
-    },
-    {
-      "id": 26,
-      "seek": 5400,
-      "start": 63.5,
-      "end": 65.36,
-      "text": " What are you telling me, dude?",
-      "tokens": [
-        708,
-        366,
-        291,
-        3585,
-        385,
-        11,
-        6449,
-        30
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.17641344204754897,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.024680210277438164,
-      "confidence": 0.834,
-      "words": [
-        {
-          "text": "What",
-          "start": 63.5,
-          "end": 64.22,
-          "confidence": 0.73
-        },
-        {
-          "text": "are",
-          "start": 64.22,
-          "end": 64.36,
-          "confidence": 0.664
-        },
-        {
-          "text": "you",
-          "start": 64.36,
-          "end": 64.38,
-          "confidence": 0.971
-        },
-        {
-          "text": "telling",
-          "start": 64.38,
-          "end": 64.6,
-          "confidence": 0.865
-        },
-        {
-          "text": "me,",
-          "start": 64.6,
-          "end": 64.62,
-          "confidence": 0.902
-        },
-        {
-          "text": "dude?",
-          "start": 65.08,
-          "end": 65.36,
-          "confidence": 0.92
-        }
-      ]
-    },
-    {
-      "id": 27,
-      "seek": 5400,
-      "start": 65.5,
-      "end": 66.96,
-      "text": " What are you telling me, dude?",
-      "tokens": [
-        708,
-        366,
-        291,
-        3585,
-        385,
-        11,
-        6449,
-        30
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.17641344204754897,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.024680210277438164,
-      "confidence": 0.825,
-      "words": [
-        {
-          "text": "What",
-          "start": 65.5,
-          "end": 66.36,
-          "confidence": 0.635
-        },
-        {
-          "text": "are",
-          "start": 66.36,
-          "end": 66.5,
-          "confidence": 0.691
-        },
-        {
-          "text": "you",
-          "start": 66.5,
-          "end": 66.52,
+          "start": 59.38,
+          "end": 59.4,
           "confidence": 0.975
         },
         {
           "text": "telling",
-          "start": 66.52,
-          "end": 66.54,
-          "confidence": 0.867
+          "start": 59.4,
+          "end": 59.62,
+          "confidence": 0.861
         },
         {
           "text": "me,",
-          "start": 66.54,
-          "end": 66.88,
-          "confidence": 0.918
+          "start": 59.62,
+          "end": 60.32,
+          "confidence": 0.906
         },
         {
           "text": "dude?",
-          "start": 66.88,
-          "end": 66.96,
-          "confidence": 0.927
+          "start": 60.48,
+          "end": 60.5,
+          "confidence": 0.945
         }
       ]
     },
     {
-      "id": 28,
-      "seek": 5400,
-      "start": 67.5,
+      "id": 21,
+      "seek": 5300,
+      "start": 60.5,
+      "end": 61.64,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1593339346984042,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.5410082936286926,
+      "confidence": 0.834,
+      "words": [
+        {
+          "text": "What",
+          "start": 60.5,
+          "end": 60.52,
+          "confidence": 0.636
+        },
+        {
+          "text": "are",
+          "start": 60.52,
+          "end": 60.84,
+          "confidence": 0.718
+        },
+        {
+          "text": "you",
+          "start": 60.84,
+          "end": 61.18,
+          "confidence": 0.974
+        },
+        {
+          "text": "telling",
+          "start": 61.18,
+          "end": 61.2,
+          "confidence": 0.864
+        },
+        {
+          "text": "me,",
+          "start": 61.2,
+          "end": 61.4,
+          "confidence": 0.924
+        },
+        {
+          "text": "dude?",
+          "start": 61.54,
+          "end": 61.64,
+          "confidence": 0.946
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "seek": 5300,
+      "start": 62.5,
+      "end": 63.48,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1593339346984042,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.5410082936286926,
+      "confidence": 0.856,
+      "words": [
+        {
+          "text": "What",
+          "start": 62.5,
+          "end": 63.38,
+          "confidence": 0.71
+        },
+        {
+          "text": "are",
+          "start": 63.38,
+          "end": 63.4,
+          "confidence": 0.732
+        },
+        {
+          "text": "you",
+          "start": 63.4,
+          "end": 63.42,
+          "confidence": 0.976
+        },
+        {
+          "text": "telling",
+          "start": 63.42,
+          "end": 63.44,
+          "confidence": 0.886
+        },
+        {
+          "text": "me,",
+          "start": 63.44,
+          "end": 63.46,
+          "confidence": 0.927
+        },
+        {
+          "text": "dude?",
+          "start": 63.46,
+          "end": 63.48,
+          "confidence": 0.947
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "seek": 5300,
+      "start": 63.5,
+      "end": 64.62,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1593339346984042,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.5410082936286926,
+      "confidence": 0.869,
+      "words": [
+        {
+          "text": "What",
+          "start": 63.5,
+          "end": 64.24,
+          "confidence": 0.753
+        },
+        {
+          "text": "are",
+          "start": 64.24,
+          "end": 64.3,
+          "confidence": 0.745
+        },
+        {
+          "text": "you",
+          "start": 64.3,
+          "end": 64.36,
+          "confidence": 0.979
+        },
+        {
+          "text": "telling",
+          "start": 64.36,
+          "end": 64.58,
+          "confidence": 0.89
+        },
+        {
+          "text": "me,",
+          "start": 64.58,
+          "end": 64.6,
+          "confidence": 0.932
+        },
+        {
+          "text": "dude?",
+          "start": 64.6,
+          "end": 64.62,
+          "confidence": 0.945
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "seek": 5300,
+      "start": 64.62,
+      "end": 65.6,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1593339346984042,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.5410082936286926,
+      "confidence": 0.861,
+      "words": [
+        {
+          "text": "What",
+          "start": 64.62,
+          "end": 64.64,
+          "confidence": 0.692
+        },
+        {
+          "text": "are",
+          "start": 64.64,
+          "end": 65.3,
+          "confidence": 0.749
+        },
+        {
+          "text": "you",
+          "start": 65.3,
+          "end": 65.38,
+          "confidence": 0.978
+        },
+        {
+          "text": "telling",
+          "start": 65.38,
+          "end": 65.4,
+          "confidence": 0.889
+        },
+        {
+          "text": "me,",
+          "start": 65.4,
+          "end": 65.42,
+          "confidence": 0.953
+        },
+        {
+          "text": "dude?",
+          "start": 65.58,
+          "end": 65.6,
+          "confidence": 0.951
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "seek": 5300,
+      "start": 67.48,
+      "end": 68.32,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1593339346984042,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.5410082936286926,
+      "confidence": 0.847,
+      "words": [
+        {
+          "text": "What",
+          "start": 67.48,
+          "end": 67.78,
+          "confidence": 0.591
+        },
+        {
+          "text": "are",
+          "start": 67.78,
+          "end": 67.9,
+          "confidence": 0.777
+        },
+        {
+          "text": "you",
+          "start": 67.9,
+          "end": 67.92,
+          "confidence": 0.982
+        },
+        {
+          "text": "telling",
+          "start": 67.92,
+          "end": 68.06,
+          "confidence": 0.9
+        },
+        {
+          "text": "me,",
+          "start": 68.06,
+          "end": 68.2,
+          "confidence": 0.958
+        },
+        {
+          "text": "dude?",
+          "start": 68.3,
+          "end": 68.32,
+          "confidence": 0.952
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "seek": 5300,
+      "start": 68.32,
+      "end": 68.66,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1593339346984042,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.5410082936286926,
+      "confidence": 0.863,
+      "words": [
+        {
+          "text": "What",
+          "start": 68.32,
+          "end": 68.34,
+          "confidence": 0.651
+        },
+        {
+          "text": "are",
+          "start": 68.34,
+          "end": 68.36,
+          "confidence": 0.786
+        },
+        {
+          "text": "you",
+          "start": 68.36,
+          "end": 68.38,
+          "confidence": 0.983
+        },
+        {
+          "text": "telling",
+          "start": 68.38,
+          "end": 68.4,
+          "confidence": 0.899
+        },
+        {
+          "text": "me,",
+          "start": 68.4,
+          "end": 68.64,
+          "confidence": 0.956
+        },
+        {
+          "text": "dude?",
+          "start": 68.64,
+          "end": 68.66,
+          "confidence": 0.952
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "seek": 5300,
+      "start": 68.66,
       "end": 69.38,
       "text": " What are you telling me, dude?",
       "tokens": [
@@ -1698,54 +1938,54 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.17641344204754897,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.024680210277438164,
-      "confidence": 0.82,
+      "avg_logprob": -0.1593339346984042,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.5410082936286926,
+      "confidence": 0.87,
       "words": [
         {
           "text": "What",
-          "start": 67.5,
-          "end": 68.0,
-          "confidence": 0.571
+          "start": 68.66,
+          "end": 68.68,
+          "confidence": 0.674
         },
         {
           "text": "are",
-          "start": 68.0,
-          "end": 68.02,
-          "confidence": 0.721
+          "start": 68.68,
+          "end": 68.7,
+          "confidence": 0.791
         },
         {
           "text": "you",
-          "start": 68.02,
-          "end": 68.04,
-          "confidence": 0.979
+          "start": 68.7,
+          "end": 68.72,
+          "confidence": 0.984
         },
         {
           "text": "telling",
-          "start": 68.04,
-          "end": 68.06,
-          "confidence": 0.88
+          "start": 68.72,
+          "end": 68.74,
+          "confidence": 0.897
         },
         {
           "text": "me,",
-          "start": 68.06,
-          "end": 68.86,
-          "confidence": 0.924
+          "start": 68.74,
+          "end": 68.92,
+          "confidence": 0.965
         },
         {
           "text": "dude?",
-          "start": 69.04,
+          "start": 69.02,
           "end": 69.38,
-          "confidence": 0.931
+          "confidence": 0.954
         }
       ]
     },
     {
-      "id": 29,
-      "seek": 5400,
+      "id": 21,
+      "seek": 5300,
       "start": 69.86,
-      "end": 72.16,
+      "end": 70.44,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1758,54 +1998,114 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.17641344204754897,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.024680210277438164,
-      "confidence": 0.831,
+      "avg_logprob": -0.1593339346984042,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.5410082936286926,
+      "confidence": 0.851,
       "words": [
         {
           "text": "What",
           "start": 69.86,
-          "end": 70.14,
-          "confidence": 0.61
+          "end": 70.12,
+          "confidence": 0.592
         },
         {
           "text": "are",
-          "start": 70.14,
-          "end": 70.42,
-          "confidence": 0.726
+          "start": 70.12,
+          "end": 70.36,
+          "confidence": 0.784
         },
         {
           "text": "you",
-          "start": 70.42,
-          "end": 71.12,
-          "confidence": 0.98
+          "start": 70.36,
+          "end": 70.38,
+          "confidence": 0.984
         },
         {
           "text": "telling",
-          "start": 71.12,
-          "end": 71.14,
-          "confidence": 0.878
+          "start": 70.38,
+          "end": 70.4,
+          "confidence": 0.9
         },
         {
           "text": "me,",
-          "start": 71.14,
-          "end": 71.26,
-          "confidence": 0.928
+          "start": 70.4,
+          "end": 70.42,
+          "confidence": 0.966
+        },
+        {
+          "text": "dude?",
+          "start": 70.42,
+          "end": 70.44,
+          "confidence": 0.955
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "seek": 5300,
+      "start": 70.84,
+      "end": 71.94,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1593339346984042,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.5410082936286926,
+      "confidence": 0.846,
+      "words": [
+        {
+          "text": "What",
+          "start": 70.84,
+          "end": 71.2,
+          "confidence": 0.56
+        },
+        {
+          "text": "are",
+          "start": 71.2,
+          "end": 71.32,
+          "confidence": 0.797
+        },
+        {
+          "text": "you",
+          "start": 71.32,
+          "end": 71.5,
+          "confidence": 0.986
+        },
+        {
+          "text": "telling",
+          "start": 71.5,
+          "end": 71.68,
+          "confidence": 0.903
+        },
+        {
+          "text": "me,",
+          "start": 71.68,
+          "end": 71.92,
+          "confidence": 0.966
         },
         {
           "text": "dude?",
           "start": 71.92,
-          "end": 72.16,
-          "confidence": 0.932
+          "end": 71.94,
+          "confidence": 0.957
         }
       ]
     },
     {
-      "id": 30,
-      "seek": 5400,
-      "start": 72.16,
-      "end": 72.84,
+      "id": 21,
+      "seek": 5300,
+      "start": 71.94,
+      "end": 72.2,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1818,54 +2118,54 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.17641344204754897,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.024680210277438164,
-      "confidence": 0.813,
+      "avg_logprob": -0.1593339346984042,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.5410082936286926,
+      "confidence": 0.866,
       "words": [
         {
           "text": "What",
-          "start": 72.16,
-          "end": 72.44,
-          "confidence": 0.515
+          "start": 71.94,
+          "end": 71.96,
+          "confidence": 0.619
         },
         {
           "text": "are",
-          "start": 72.44,
-          "end": 72.46,
-          "confidence": 0.736
+          "start": 71.96,
+          "end": 71.98,
+          "confidence": 0.822
         },
         {
           "text": "you",
-          "start": 72.46,
-          "end": 72.48,
-          "confidence": 0.982
+          "start": 71.98,
+          "end": 72.0,
+          "confidence": 0.989
         },
         {
           "text": "telling",
-          "start": 72.48,
-          "end": 72.8,
-          "confidence": 0.88
+          "start": 72.0,
+          "end": 72.02,
+          "confidence": 0.907
         },
         {
           "text": "me,",
-          "start": 72.8,
-          "end": 72.82,
-          "confidence": 0.942
+          "start": 72.02,
+          "end": 72.04,
+          "confidence": 0.966
         },
         {
           "text": "dude?",
-          "start": 72.82,
-          "end": 72.84,
-          "confidence": 0.937
+          "start": 72.04,
+          "end": 72.2,
+          "confidence": 0.957
         }
       ]
     },
     {
-      "id": 31,
-      "seek": 5400,
-      "start": 73.5,
-      "end": 74.6,
+      "id": 21,
+      "seek": 5300,
+      "start": 73.48,
+      "end": 73.76,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1878,54 +2178,114 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.17641344204754897,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.024680210277438164,
-      "confidence": 0.85,
+      "avg_logprob": -0.1593339346984042,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.5410082936286926,
+      "confidence": 0.878,
       "words": [
         {
           "text": "What",
-          "start": 73.5,
-          "end": 74.32,
-          "confidence": 0.651
+          "start": 73.48,
+          "end": 73.66,
+          "confidence": 0.668
         },
         {
           "text": "are",
-          "start": 74.32,
-          "end": 74.34,
-          "confidence": 0.755
+          "start": 73.66,
+          "end": 73.68,
+          "confidence": 0.83
         },
         {
           "text": "you",
-          "start": 74.34,
+          "start": 73.68,
+          "end": 73.7,
+          "confidence": 0.989
+        },
+        {
+          "text": "telling",
+          "start": 73.7,
+          "end": 73.72,
+          "confidence": 0.903
+        },
+        {
+          "text": "me,",
+          "start": 73.72,
+          "end": 73.74,
+          "confidence": 0.967
+        },
+        {
+          "text": "dude?",
+          "start": 73.74,
+          "end": 73.76,
+          "confidence": 0.957
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "seek": 5300,
+      "start": 74.02,
+      "end": 74.66,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1593339346984042,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.5410082936286926,
+      "confidence": 0.888,
+      "words": [
+        {
+          "text": "What",
+          "start": 74.02,
+          "end": 74.26,
+          "confidence": 0.704
+        },
+        {
+          "text": "are",
+          "start": 74.26,
+          "end": 74.32,
+          "confidence": 0.833
+        },
+        {
+          "text": "you",
+          "start": 74.32,
           "end": 74.38,
-          "confidence": 0.984
+          "confidence": 0.99
         },
         {
           "text": "telling",
           "start": 74.38,
           "end": 74.4,
-          "confidence": 0.882
+          "confidence": 0.91
         },
         {
           "text": "me,",
           "start": 74.4,
           "end": 74.58,
-          "confidence": 0.943
+          "confidence": 0.973
         },
         {
           "text": "dude?",
-          "start": 74.58,
-          "end": 74.6,
-          "confidence": 0.937
+          "start": 74.64,
+          "end": 74.66,
+          "confidence": 0.956
         }
       ]
     },
     {
-      "id": 32,
-      "seek": 5400,
-      "start": 75.5,
-      "end": 78.04,
+      "id": 21,
+      "seek": 5300,
+      "start": 74.66,
+      "end": 75.58,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1938,54 +2298,174 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.17641344204754897,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.024680210277438164,
-      "confidence": 0.839,
+      "avg_logprob": -0.1593339346984042,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.5410082936286926,
+      "confidence": 0.874,
       "words": [
         {
           "text": "What",
-          "start": 75.5,
+          "start": 74.66,
+          "end": 75.42,
+          "confidence": 0.632
+        },
+        {
+          "text": "are",
+          "start": 75.42,
+          "end": 75.44,
+          "confidence": 0.831
+        },
+        {
+          "text": "you",
+          "start": 75.44,
+          "end": 75.46,
+          "confidence": 0.991
+        },
+        {
+          "text": "telling",
+          "start": 75.46,
+          "end": 75.48,
+          "confidence": 0.922
+        },
+        {
+          "text": "me,",
+          "start": 75.48,
+          "end": 75.5,
+          "confidence": 0.973
+        },
+        {
+          "text": "dude?",
+          "start": 75.56,
+          "end": 75.58,
+          "confidence": 0.957
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "seek": 5300,
+      "start": 75.58,
+      "end": 76.44,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1593339346984042,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.5410082936286926,
+      "confidence": 0.889,
+      "words": [
+        {
+          "text": "What",
+          "start": 75.58,
+          "end": 75.96,
+          "confidence": 0.687
+        },
+        {
+          "text": "are",
+          "start": 75.96,
+          "end": 75.98,
+          "confidence": 0.846
+        },
+        {
+          "text": "you",
+          "start": 75.98,
+          "end": 76.0,
+          "confidence": 0.992
+        },
+        {
+          "text": "telling",
+          "start": 76.0,
+          "end": 76.22,
+          "confidence": 0.917
+        },
+        {
+          "text": "me,",
+          "start": 76.22,
+          "end": 76.24,
+          "confidence": 0.973
+        },
+        {
+          "text": "dude?",
+          "start": 76.24,
+          "end": 76.44,
+          "confidence": 0.957
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "seek": 5300,
+      "start": 76.74,
+      "end": 77.96,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1593339346984042,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.5410082936286926,
+      "confidence": 0.892,
+      "words": [
+        {
+          "text": "What",
+          "start": 76.74,
           "end": 77.38,
-          "confidence": 0.608
+          "confidence": 0.699
         },
         {
           "text": "are",
           "start": 77.38,
           "end": 77.7,
-          "confidence": 0.758
+          "confidence": 0.851
         },
         {
           "text": "you",
           "start": 77.7,
           "end": 77.72,
-          "confidence": 0.985
+          "confidence": 0.991
         },
         {
           "text": "telling",
           "start": 77.72,
-          "end": 77.74,
-          "confidence": 0.879
+          "end": 77.92,
+          "confidence": 0.914
         },
         {
           "text": "me,",
-          "start": 77.74,
-          "end": 78.02,
-          "confidence": 0.938
+          "start": 77.92,
+          "end": 77.94,
+          "confidence": 0.976
         },
         {
           "text": "dude?",
-          "start": 78.02,
-          "end": 78.04,
-          "confidence": 0.936
+          "start": 77.94,
+          "end": 77.96,
+          "confidence": 0.957
         }
       ]
     },
     {
-      "id": 33,
-      "seek": 5400,
-      "start": 78.04,
-      "end": 79.1,
+      "id": 21,
+      "seek": 5300,
+      "start": 77.96,
+      "end": 78.08,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -1998,54 +2478,54 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.17641344204754897,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.024680210277438164,
-      "confidence": 0.849,
+      "avg_logprob": -0.1593339346984042,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.5410082936286926,
+      "confidence": 0.886,
       "words": [
         {
           "text": "What",
-          "start": 78.04,
-          "end": 78.06,
-          "confidence": 0.635
+          "start": 77.96,
+          "end": 77.98,
+          "confidence": 0.681
         },
         {
           "text": "are",
-          "start": 78.06,
-          "end": 78.08,
-          "confidence": 0.747
+          "start": 77.98,
+          "end": 78.0,
+          "confidence": 0.843
         },
         {
           "text": "you",
-          "start": 78.08,
-          "end": 78.42,
-          "confidence": 0.985
+          "start": 78.0,
+          "end": 78.02,
+          "confidence": 0.992
         },
         {
           "text": "telling",
-          "start": 78.42,
-          "end": 78.58,
-          "confidence": 0.895
+          "start": 78.02,
+          "end": 78.04,
+          "confidence": 0.912
         },
         {
           "text": "me,",
-          "start": 78.58,
-          "end": 78.96,
-          "confidence": 0.954
+          "start": 78.04,
+          "end": 78.06,
+          "confidence": 0.977
         },
         {
           "text": "dude?",
-          "start": 78.96,
-          "end": 79.1,
-          "confidence": 0.939
+          "start": 78.06,
+          "end": 78.08,
+          "confidence": 0.955
         }
       ]
     },
     {
-      "id": 34,
-      "seek": 5400,
-      "start": 80.34,
-      "end": 81.04,
+      "id": 21,
+      "seek": 5300,
+      "start": 79.32,
+      "end": 79.78,
       "text": " What are you telling",
       "tokens": [
         708,
@@ -2058,41 +2538,221 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.17641344204754897,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.024680210277438164,
-      "confidence": 0.813,
+      "avg_logprob": -0.1593339346984042,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.5410082936286926,
+      "confidence": 0.865,
       "words": [
         {
           "text": "What",
-          "start": 80.34,
-          "end": 80.42,
-          "confidence": 0.485
+          "start": 79.32,
+          "end": 79.5,
+          "confidence": 0.58
         },
         {
           "text": "are",
-          "start": 80.42,
-          "end": 80.74,
-          "confidence": 0.746
+          "start": 79.5,
+          "end": 79.52,
+          "confidence": 0.844
         },
         {
           "text": "you",
-          "start": 80.74,
-          "end": 80.76,
-          "confidence": 0.985
+          "start": 79.52,
+          "end": 79.54,
+          "confidence": 0.993
         },
         {
           "text": "telling",
-          "start": 80.76,
-          "end": 81.04,
-          "confidence": 0.9
+          "start": 79.54,
+          "end": 79.78,
+          "confidence": 0.928
         }
       ]
     },
     {
-      "id": 35,
-      "seek": 8200,
-      "start": 82.0,
+      "id": 43,
+      "seek": 8000,
+      "start": 80.0,
+      "end": 80.62,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12106657669683209,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.41516682505607605,
+      "confidence": 0.792,
+      "words": [
+        {
+          "text": "What",
+          "start": 80.0,
+          "end": 80.16,
+          "confidence": 0.707
+        },
+        {
+          "text": "are",
+          "start": 80.16,
+          "end": 80.54,
+          "confidence": 0.492
+        },
+        {
+          "text": "you",
+          "start": 80.54,
+          "end": 80.56,
+          "confidence": 0.946
+        },
+        {
+          "text": "telling",
+          "start": 80.56,
+          "end": 80.58,
+          "confidence": 0.84
+        },
+        {
+          "text": "me,",
+          "start": 80.58,
+          "end": 80.6,
+          "confidence": 0.933
+        },
+        {
+          "text": "dude?",
+          "start": 80.6,
+          "end": 80.62,
+          "confidence": 0.959
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "seek": 8000,
+      "start": 80.62,
+      "end": 81.66,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12106657669683209,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.41516682505607605,
+      "confidence": 0.851,
+      "words": [
+        {
+          "text": "What",
+          "start": 80.62,
+          "end": 81.04,
+          "confidence": 0.733
+        },
+        {
+          "text": "are",
+          "start": 81.04,
+          "end": 81.26,
+          "confidence": 0.693
+        },
+        {
+          "text": "you",
+          "start": 81.26,
+          "end": 81.38,
+          "confidence": 0.973
+        },
+        {
+          "text": "telling",
+          "start": 81.38,
+          "end": 81.46,
+          "confidence": 0.839
+        },
+        {
+          "text": "me,",
+          "start": 81.46,
+          "end": 81.48,
+          "confidence": 0.951
+        },
+        {
+          "text": "dude?",
+          "start": 81.64,
+          "end": 81.66,
+          "confidence": 0.963
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "seek": 8000,
+      "start": 81.66,
+      "end": 82.98,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12106657669683209,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.41516682505607605,
+      "confidence": 0.855,
+      "words": [
+        {
+          "text": "What",
+          "start": 81.66,
+          "end": 82.32,
+          "confidence": 0.718
+        },
+        {
+          "text": "are",
+          "start": 82.32,
+          "end": 82.38,
+          "confidence": 0.736
+        },
+        {
+          "text": "you",
+          "start": 82.38,
+          "end": 82.4,
+          "confidence": 0.979
+        },
+        {
+          "text": "telling",
+          "start": 82.4,
+          "end": 82.7,
+          "confidence": 0.843
+        },
+        {
+          "text": "me,",
+          "start": 82.7,
+          "end": 82.86,
+          "confidence": 0.936
+        },
+        {
+          "text": "dude?",
+          "start": 82.96,
+          "end": 82.98,
+          "confidence": 0.961
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "seek": 8000,
+      "start": 82.98,
       "end": 83.12,
       "text": " What are you telling me, dude?",
       "tokens": [
@@ -2106,52 +2766,52 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12450172531772667,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0009417816763743758,
-      "confidence": 0.772,
+      "avg_logprob": -0.12106657669683209,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.41516682505607605,
+      "confidence": 0.84,
       "words": [
         {
           "text": "What",
-          "start": 82.0,
-          "end": 82.16,
-          "confidence": 0.701
+          "start": 82.98,
+          "end": 83.0,
+          "confidence": 0.641
         },
         {
           "text": "are",
-          "start": 82.16,
-          "end": 82.4,
-          "confidence": 0.489
+          "start": 83.0,
+          "end": 83.02,
+          "confidence": 0.736
         },
         {
           "text": "you",
-          "start": 82.4,
-          "end": 82.42,
-          "confidence": 0.933
+          "start": 83.02,
+          "end": 83.04,
+          "confidence": 0.979
         },
         {
           "text": "telling",
-          "start": 82.42,
-          "end": 82.56,
-          "confidence": 0.754
+          "start": 83.04,
+          "end": 83.06,
+          "confidence": 0.843
         },
         {
           "text": "me,",
-          "start": 82.56,
-          "end": 82.88,
-          "confidence": 0.92
+          "start": 83.06,
+          "end": 83.1,
+          "confidence": 0.939
         },
         {
           "text": "dude?",
-          "start": 82.88,
+          "start": 83.1,
           "end": 83.12,
-          "confidence": 0.955
+          "confidence": 0.959
         }
       ]
     },
     {
-      "id": 36,
-      "seek": 8200,
+      "id": 43,
+      "seek": 8000,
       "start": 84.28,
       "end": 84.72,
       "text": " What are you telling me, dude?",
@@ -2166,52 +2826,112 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12450172531772667,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0009417816763743758,
-      "confidence": 0.786,
+      "avg_logprob": -0.12106657669683209,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.41516682505607605,
+      "confidence": 0.838,
       "words": [
         {
           "text": "What",
           "start": 84.28,
-          "end": 84.42,
-          "confidence": 0.529
+          "end": 84.52,
+          "confidence": 0.635
         },
         {
           "text": "are",
-          "start": 84.42,
+          "start": 84.52,
           "end": 84.64,
-          "confidence": 0.635
+          "confidence": 0.739
         },
         {
           "text": "you",
           "start": 84.64,
           "end": 84.66,
-          "confidence": 0.969
+          "confidence": 0.977
         },
         {
           "text": "telling",
           "start": 84.66,
           "end": 84.68,
-          "confidence": 0.816
+          "confidence": 0.842
         },
         {
           "text": "me,",
           "start": 84.68,
           "end": 84.7,
-          "confidence": 0.932
+          "confidence": 0.937
         },
         {
           "text": "dude?",
           "start": 84.7,
           "end": 84.72,
-          "confidence": 0.952
+          "confidence": 0.956
         }
       ]
     },
     {
-      "id": 37,
-      "seek": 8200,
+      "id": 43,
+      "seek": 8000,
+      "start": 84.72,
+      "end": 85.44,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12106657669683209,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.41516682505607605,
+      "confidence": 0.846,
+      "words": [
+        {
+          "text": "What",
+          "start": 84.72,
+          "end": 85.06,
+          "confidence": 0.647
+        },
+        {
+          "text": "are",
+          "start": 85.06,
+          "end": 85.08,
+          "confidence": 0.758
+        },
+        {
+          "text": "you",
+          "start": 85.08,
+          "end": 85.34,
+          "confidence": 0.98
+        },
+        {
+          "text": "telling",
+          "start": 85.34,
+          "end": 85.36,
+          "confidence": 0.847
+        },
+        {
+          "text": "me,",
+          "start": 85.36,
+          "end": 85.42,
+          "confidence": 0.945
+        },
+        {
+          "text": "dude?",
+          "start": 85.42,
+          "end": 85.44,
+          "confidence": 0.955
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "seek": 8000,
       "start": 85.5,
       "end": 86.6,
       "text": " What are you telling me, dude?",
@@ -2226,54 +2946,54 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12450172531772667,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0009417816763743758,
-      "confidence": 0.836,
+      "avg_logprob": -0.12106657669683209,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.41516682505607605,
+      "confidence": 0.845,
       "words": [
         {
           "text": "What",
           "start": 85.5,
-          "end": 85.86,
-          "confidence": 0.675
+          "end": 85.88,
+          "confidence": 0.608
         },
         {
           "text": "are",
-          "start": 85.86,
-          "end": 86.06,
-          "confidence": 0.703
+          "start": 85.88,
+          "end": 85.9,
+          "confidence": 0.781
         },
         {
           "text": "you",
-          "start": 86.06,
-          "end": 86.52,
-          "confidence": 0.97
+          "start": 85.9,
+          "end": 85.92,
+          "confidence": 0.983
         },
         {
           "text": "telling",
-          "start": 86.52,
-          "end": 86.54,
-          "confidence": 0.826
+          "start": 85.92,
+          "end": 86.4,
+          "confidence": 0.858
         },
         {
           "text": "me,",
+          "start": 86.4,
+          "end": 86.48,
+          "confidence": 0.95
+        },
+        {
+          "text": "dude?",
           "start": 86.54,
-          "end": 86.56,
-          "confidence": 0.942
-        },
-        {
-          "text": "dude?",
-          "start": 86.56,
           "end": 86.6,
-          "confidence": 0.955
+          "confidence": 0.956
         }
       ]
     },
     {
-      "id": 38,
-      "seek": 8200,
-      "start": 87.5,
-      "end": 88.8,
+      "id": 43,
+      "seek": 8000,
+      "start": 86.6,
+      "end": 87.94,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2286,54 +3006,54 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12450172531772667,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0009417816763743758,
-      "confidence": 0.849,
+      "avg_logprob": -0.12106657669683209,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.41516682505607605,
+      "confidence": 0.86,
       "words": [
         {
           "text": "What",
-          "start": 87.5,
-          "end": 88.4,
-          "confidence": 0.7
+          "start": 86.6,
+          "end": 87.2,
+          "confidence": 0.679
         },
         {
           "text": "are",
-          "start": 88.4,
-          "end": 88.42,
-          "confidence": 0.718
+          "start": 87.2,
+          "end": 87.22,
+          "confidence": 0.783
         },
         {
           "text": "you",
-          "start": 88.42,
-          "end": 88.44,
-          "confidence": 0.976
+          "start": 87.22,
+          "end": 87.24,
+          "confidence": 0.983
         },
         {
           "text": "telling",
-          "start": 88.44,
-          "end": 88.46,
-          "confidence": 0.839
+          "start": 87.24,
+          "end": 87.8,
+          "confidence": 0.852
         },
         {
           "text": "me,",
-          "start": 88.46,
-          "end": 88.66,
-          "confidence": 0.954
+          "start": 87.8,
+          "end": 87.82,
+          "confidence": 0.952
         },
         {
           "text": "dude?",
-          "start": 88.66,
-          "end": 88.8,
-          "confidence": 0.954
+          "start": 87.92,
+          "end": 87.94,
+          "confidence": 0.957
         }
       ]
     },
     {
-      "id": 39,
-      "seek": 8200,
-      "start": 90.0,
-      "end": 90.9,
+      "id": 43,
+      "seek": 8000,
+      "start": 87.94,
+      "end": 88.76,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2346,54 +3066,54 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12450172531772667,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0009417816763743758,
-      "confidence": 0.859,
+      "avg_logprob": -0.12106657669683209,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.41516682505607605,
+      "confidence": 0.867,
       "words": [
         {
           "text": "What",
-          "start": 90.0,
-          "end": 90.42,
-          "confidence": 0.748
+          "start": 87.94,
+          "end": 87.96,
+          "confidence": 0.704
         },
         {
           "text": "are",
-          "start": 90.42,
-          "end": 90.7,
-          "confidence": 0.72
+          "start": 87.96,
+          "end": 87.98,
+          "confidence": 0.785
         },
         {
           "text": "you",
-          "start": 90.7,
-          "end": 90.72,
-          "confidence": 0.976
+          "start": 87.98,
+          "end": 88.0,
+          "confidence": 0.982
         },
         {
           "text": "telling",
-          "start": 90.72,
-          "end": 90.74,
-          "confidence": 0.847
+          "start": 88.0,
+          "end": 88.02,
+          "confidence": 0.853
         },
         {
           "text": "me,",
-          "start": 90.74,
-          "end": 90.76,
-          "confidence": 0.944
+          "start": 88.02,
+          "end": 88.64,
+          "confidence": 0.957
         },
         {
           "text": "dude?",
-          "start": 90.88,
-          "end": 90.9,
+          "start": 88.64,
+          "end": 88.76,
           "confidence": 0.958
         }
       ]
     },
     {
-      "id": 40,
-      "seek": 8200,
-      "start": 91.5,
-      "end": 92.28,
+      "id": 43,
+      "seek": 8000,
+      "start": 89.04,
+      "end": 89.94,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2406,54 +3126,54 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12450172531772667,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0009417816763743758,
-      "confidence": 0.852,
+      "avg_logprob": -0.12106657669683209,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.41516682505607605,
+      "confidence": 0.867,
       "words": [
         {
           "text": "What",
-          "start": 91.5,
-          "end": 91.74,
-          "confidence": 0.724
+          "start": 89.04,
+          "end": 89.34,
+          "confidence": 0.714
         },
         {
           "text": "are",
-          "start": 91.74,
-          "end": 91.76,
-          "confidence": 0.718
+          "start": 89.34,
+          "end": 89.36,
+          "confidence": 0.772
         },
         {
           "text": "you",
-          "start": 91.76,
-          "end": 91.78,
-          "confidence": 0.979
+          "start": 89.36,
+          "end": 89.38,
+          "confidence": 0.981
         },
         {
           "text": "telling",
-          "start": 91.78,
-          "end": 91.8,
-          "confidence": 0.83
+          "start": 89.38,
+          "end": 89.46,
+          "confidence": 0.864
         },
         {
           "text": "me,",
-          "start": 91.8,
-          "end": 91.88,
-          "confidence": 0.944
+          "start": 89.46,
+          "end": 89.78,
+          "confidence": 0.952
         },
         {
           "text": "dude?",
-          "start": 91.88,
-          "end": 92.28,
+          "start": 89.92,
+          "end": 89.94,
           "confidence": 0.958
         }
       ]
     },
     {
-      "id": 41,
-      "seek": 8200,
-      "start": 93.5,
-      "end": 94.76,
+      "id": 43,
+      "seek": 8000,
+      "start": 89.94,
+      "end": 90.64,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2466,114 +3186,114 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12450172531772667,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0009417816763743758,
-      "confidence": 0.863,
+      "avg_logprob": -0.12106657669683209,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.41516682505607605,
+      "confidence": 0.881,
       "words": [
         {
           "text": "What",
-          "start": 93.5,
-          "end": 94.42,
-          "confidence": 0.744
+          "start": 89.94,
+          "end": 90.2,
+          "confidence": 0.747
         },
         {
           "text": "are",
-          "start": 94.42,
-          "end": 94.68,
-          "confidence": 0.73
+          "start": 90.2,
+          "end": 90.22,
+          "confidence": 0.804
         },
         {
           "text": "you",
-          "start": 94.68,
-          "end": 94.7,
-          "confidence": 0.98
-        },
-        {
-          "text": "telling",
-          "start": 94.7,
-          "end": 94.72,
-          "confidence": 0.849
-        },
-        {
-          "text": "me,",
-          "start": 94.72,
-          "end": 94.74,
-          "confidence": 0.949
-        },
-        {
-          "text": "dude?",
-          "start": 94.74,
-          "end": 94.76,
-          "confidence": 0.962
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "seek": 8200,
-      "start": 95.5,
-      "end": 97.34,
-      "text": " What are you telling me, dude?",
-      "tokens": [
-        708,
-        366,
-        291,
-        3585,
-        385,
-        11,
-        6449,
-        30
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.12450172531772667,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0009417816763743758,
-      "confidence": 0.868,
-      "words": [
-        {
-          "text": "What",
-          "start": 95.5,
-          "end": 97.24,
-          "confidence": 0.719
-        },
-        {
-          "text": "are",
-          "start": 97.24,
-          "end": 97.26,
-          "confidence": 0.763
-        },
-        {
-          "text": "you",
-          "start": 97.26,
-          "end": 97.28,
+          "start": 90.22,
+          "end": 90.44,
           "confidence": 0.984
         },
         {
           "text": "telling",
-          "start": 97.28,
-          "end": 97.3,
-          "confidence": 0.863
+          "start": 90.44,
+          "end": 90.46,
+          "confidence": 0.867
         },
         {
           "text": "me,",
-          "start": 97.3,
-          "end": 97.32,
-          "confidence": 0.951
+          "start": 90.46,
+          "end": 90.62,
+          "confidence": 0.953
         },
         {
           "text": "dude?",
-          "start": 97.32,
-          "end": 97.34,
+          "start": 90.62,
+          "end": 90.64,
+          "confidence": 0.959
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "seek": 8000,
+      "start": 90.64,
+      "end": 91.92,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12106657669683209,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.41516682505607605,
+      "confidence": 0.89,
+      "words": [
+        {
+          "text": "What",
+          "start": 90.64,
+          "end": 91.5,
+          "confidence": 0.764
+        },
+        {
+          "text": "are",
+          "start": 91.5,
+          "end": 91.52,
+          "confidence": 0.817
+        },
+        {
+          "text": "you",
+          "start": 91.52,
+          "end": 91.64,
+          "confidence": 0.988
+        },
+        {
+          "text": "telling",
+          "start": 91.64,
+          "end": 91.68,
+          "confidence": 0.872
+        },
+        {
+          "text": "me,",
+          "start": 91.68,
+          "end": 91.9,
+          "confidence": 0.961
+        },
+        {
+          "text": "dude?",
+          "start": 91.9,
+          "end": 91.92,
           "confidence": 0.962
         }
       ]
     },
     {
       "id": 43,
-      "seek": 8200,
-      "start": 97.5,
-      "end": 99.06,
+      "seek": 8000,
+      "start": 91.92,
+      "end": 92.22,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2586,174 +3306,174 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12450172531772667,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0009417816763743758,
-      "confidence": 0.885,
+      "avg_logprob": -0.12106657669683209,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.41516682505607605,
+      "confidence": 0.886,
       "words": [
         {
           "text": "What",
-          "start": 97.5,
-          "end": 98.64,
-          "confidence": 0.771
+          "start": 91.92,
+          "end": 91.94,
+          "confidence": 0.744
         },
         {
           "text": "are",
-          "start": 98.64,
-          "end": 98.98,
-          "confidence": 0.782
+          "start": 91.94,
+          "end": 91.96,
+          "confidence": 0.813
         },
         {
           "text": "you",
-          "start": 98.98,
-          "end": 99.0,
-          "confidence": 0.987
-        },
-        {
-          "text": "telling",
-          "start": 99.0,
-          "end": 99.02,
-          "confidence": 0.867
-        },
-        {
-          "text": "me,",
-          "start": 99.02,
-          "end": 99.04,
-          "confidence": 0.965
-        },
-        {
-          "text": "dude?",
-          "start": 99.04,
-          "end": 99.06,
-          "confidence": 0.965
-        }
-      ]
-    },
-    {
-      "id": 44,
-      "seek": 8200,
-      "start": 99.5,
-      "end": 101.38,
-      "text": " What are you telling me, dude?",
-      "tokens": [
-        708,
-        366,
-        291,
-        3585,
-        385,
-        11,
-        6449,
-        30
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.12450172531772667,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0009417816763743758,
-      "confidence": 0.887,
-      "words": [
-        {
-          "text": "What",
-          "start": 99.5,
-          "end": 100.86,
-          "confidence": 0.74
-        },
-        {
-          "text": "are",
-          "start": 100.86,
-          "end": 100.88,
-          "confidence": 0.806
-        },
-        {
-          "text": "you",
-          "start": 100.88,
-          "end": 100.92,
-          "confidence": 0.989
-        },
-        {
-          "text": "telling",
-          "start": 100.92,
-          "end": 101.1,
-          "confidence": 0.88
-        },
-        {
-          "text": "me,",
-          "start": 101.1,
-          "end": 101.14,
-          "confidence": 0.971
-        },
-        {
-          "text": "dude?",
-          "start": 101.36,
-          "end": 101.38,
-          "confidence": 0.967
-        }
-      ]
-    },
-    {
-      "id": 45,
-      "seek": 8200,
-      "start": 101.5,
-      "end": 103.08,
-      "text": " What are you telling me, dude?",
-      "tokens": [
-        708,
-        366,
-        291,
-        3585,
-        385,
-        11,
-        6449,
-        30
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.12450172531772667,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0009417816763743758,
-      "confidence": 0.881,
-      "words": [
-        {
-          "text": "What",
-          "start": 101.5,
-          "end": 102.72,
-          "confidence": 0.732
-        },
-        {
-          "text": "are",
-          "start": 102.72,
-          "end": 103.0,
-          "confidence": 0.795
-        },
-        {
-          "text": "you",
-          "start": 103.0,
-          "end": 103.02,
+          "start": 91.96,
+          "end": 91.98,
           "confidence": 0.988
         },
         {
           "text": "telling",
-          "start": 103.02,
-          "end": 103.04,
-          "confidence": 0.868
+          "start": 91.98,
+          "end": 92.0,
+          "confidence": 0.872
         },
         {
           "text": "me,",
-          "start": 103.04,
-          "end": 103.06,
-          "confidence": 0.971
+          "start": 92.0,
+          "end": 92.02,
+          "confidence": 0.964
         },
         {
           "text": "dude?",
-          "start": 103.06,
-          "end": 103.08,
+          "start": 92.02,
+          "end": 92.22,
+          "confidence": 0.964
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "seek": 8000,
+      "start": 92.5,
+      "end": 93.58,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12106657669683209,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.41516682505607605,
+      "confidence": 0.887,
+      "words": [
+        {
+          "text": "What",
+          "start": 92.5,
+          "end": 93.26,
+          "confidence": 0.74
+        },
+        {
+          "text": "are",
+          "start": 93.26,
+          "end": 93.28,
+          "confidence": 0.823
+        },
+        {
+          "text": "you",
+          "start": 93.28,
+          "end": 93.3,
+          "confidence": 0.988
+        },
+        {
+          "text": "telling",
+          "start": 93.3,
+          "end": 93.32,
+          "confidence": 0.873
+        },
+        {
+          "text": "me,",
+          "start": 93.32,
+          "end": 93.36,
+          "confidence": 0.963
+        },
+        {
+          "text": "dude?",
+          "start": 93.56,
+          "end": 93.58,
+          "confidence": 0.964
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "seek": 8000,
+      "start": 93.58,
+      "end": 94.55,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12106657669683209,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.41516682505607605,
+      "confidence": 0.897,
+      "words": [
+        {
+          "text": "What",
+          "start": 93.58,
+          "end": 94.3,
+          "confidence": 0.747
+        },
+        {
+          "text": "are",
+          "start": 94.3,
+          "end": 94.32,
+          "confidence": 0.852
+        },
+        {
+          "text": "you",
+          "start": 94.32,
+          "end": 94.34,
+          "confidence": 0.991
+        },
+        {
+          "text": "telling",
+          "start": 94.34,
+          "end": 94.36,
+          "confidence": 0.885
+        },
+        {
+          "text": "me,",
+          "start": 94.36,
+          "end": 94.38,
+          "confidence": 0.964
+        },
+        {
+          "text": "dude?",
+          "start": 94.42,
+          "end": 94.55,
           "confidence": 0.966
         }
       ]
     },
     {
-      "id": 46,
-      "seek": 8200,
-      "start": 103.5,
-      "end": 104.92,
+      "id": 43,
+      "seek": 8000,
+      "start": 94.55,
+      "end": 95.48,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2766,54 +3486,54 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12450172531772667,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0009417816763743758,
-      "confidence": 0.888,
+      "avg_logprob": -0.12106657669683209,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.41516682505607605,
+      "confidence": 0.896,
       "words": [
         {
           "text": "What",
-          "start": 103.5,
-          "end": 103.52,
-          "confidence": 0.737
+          "start": 94.55,
+          "end": 95.38,
+          "confidence": 0.734
         },
         {
           "text": "are",
-          "start": 103.52,
-          "end": 103.54,
-          "confidence": 0.806
+          "start": 95.38,
+          "end": 95.4,
+          "confidence": 0.857
         },
         {
           "text": "you",
-          "start": 103.54,
-          "end": 104.84,
-          "confidence": 0.99
+          "start": 95.4,
+          "end": 95.42,
+          "confidence": 0.991
         },
         {
           "text": "telling",
-          "start": 104.84,
-          "end": 104.88,
-          "confidence": 0.885
+          "start": 95.42,
+          "end": 95.44,
+          "confidence": 0.887
         },
         {
           "text": "me,",
-          "start": 104.88,
-          "end": 104.9,
-          "confidence": 0.974
+          "start": 95.44,
+          "end": 95.46,
+          "confidence": 0.964
         },
         {
           "text": "dude?",
-          "start": 104.9,
-          "end": 104.92,
+          "start": 95.46,
+          "end": 95.48,
           "confidence": 0.967
         }
       ]
     },
     {
-      "id": 47,
-      "seek": 8200,
-      "start": 106.48,
-      "end": 108.44,
+      "id": 43,
+      "seek": 8000,
+      "start": 95.5,
+      "end": 96.34,
       "text": " What are you telling me, dude?",
       "tokens": [
         708,
@@ -2826,54 +3546,1602 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12450172531772667,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0009417816763743758,
-      "confidence": 0.875,
+      "avg_logprob": -0.12106657669683209,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.41516682505607605,
+      "confidence": 0.902,
       "words": [
         {
           "text": "What",
-          "start": 106.48,
-          "end": 107.16,
-          "confidence": 0.698
+          "start": 95.5,
+          "end": 96.12,
+          "confidence": 0.759
         },
         {
           "text": "are",
-          "start": 107.16,
-          "end": 107.18,
-          "confidence": 0.786
+          "start": 96.12,
+          "end": 96.14,
+          "confidence": 0.857
         },
         {
           "text": "you",
-          "start": 107.18,
-          "end": 107.2,
-          "confidence": 0.99
+          "start": 96.14,
+          "end": 96.16,
+          "confidence": 0.992
         },
         {
           "text": "telling",
-          "start": 107.2,
-          "end": 107.34,
-          "confidence": 0.877
+          "start": 96.16,
+          "end": 96.3,
+          "confidence": 0.891
         },
         {
           "text": "me,",
-          "start": 107.34,
-          "end": 107.54,
+          "start": 96.3,
+          "end": 96.32,
           "confidence": 0.971
         },
         {
           "text": "dude?",
-          "start": 108.06,
-          "end": 108.44,
+          "start": 96.32,
+          "end": 96.34,
           "confidence": 0.968
         }
       ]
     },
     {
-      "id": 48,
-      "seek": 8200,
-      "start": 108.44,
-      "end": 108.82,
+      "id": 43,
+      "seek": 8000,
+      "start": 96.8,
+      "end": 97.6,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12106657669683209,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.41516682505607605,
+      "confidence": 0.905,
+      "words": [
+        {
+          "text": "What",
+          "start": 96.8,
+          "end": 97.36,
+          "confidence": 0.774
+        },
+        {
+          "text": "are",
+          "start": 97.36,
+          "end": 97.38,
+          "confidence": 0.848
+        },
+        {
+          "text": "you",
+          "start": 97.38,
+          "end": 97.42,
+          "confidence": 0.992
+        },
+        {
+          "text": "telling",
+          "start": 97.42,
+          "end": 97.44,
+          "confidence": 0.898
+        },
+        {
+          "text": "me,",
+          "start": 97.44,
+          "end": 97.48,
+          "confidence": 0.969
+        },
+        {
+          "text": "dude?",
+          "start": 97.58,
+          "end": 97.6,
+          "confidence": 0.968
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "seek": 8000,
+      "start": 97.6,
+      "end": 98.68,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12106657669683209,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.41516682505607605,
+      "confidence": 0.898,
+      "words": [
+        {
+          "text": "What",
+          "start": 97.6,
+          "end": 98.3,
+          "confidence": 0.732
+        },
+        {
+          "text": "are",
+          "start": 98.3,
+          "end": 98.34,
+          "confidence": 0.86
+        },
+        {
+          "text": "you",
+          "start": 98.34,
+          "end": 98.36,
+          "confidence": 0.992
+        },
+        {
+          "text": "telling",
+          "start": 98.36,
+          "end": 98.62,
+          "confidence": 0.896
+        },
+        {
+          "text": "me,",
+          "start": 98.62,
+          "end": 98.64,
+          "confidence": 0.972
+        },
+        {
+          "text": "dude?",
+          "start": 98.66,
+          "end": 98.68,
+          "confidence": 0.967
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "seek": 8000,
+      "start": 98.68,
+      "end": 99.8,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12106657669683209,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.41516682505607605,
+      "confidence": 0.898,
+      "words": [
+        {
+          "text": "What",
+          "start": 98.68,
+          "end": 99.7,
+          "confidence": 0.712
+        },
+        {
+          "text": "are",
+          "start": 99.7,
+          "end": 99.72,
+          "confidence": 0.876
+        },
+        {
+          "text": "you",
+          "start": 99.72,
+          "end": 99.74,
+          "confidence": 0.993
+        },
+        {
+          "text": "telling",
+          "start": 99.74,
+          "end": 99.76,
+          "confidence": 0.896
+        },
+        {
+          "text": "me,",
+          "start": 99.76,
+          "end": 99.78,
+          "confidence": 0.976
+        },
+        {
+          "text": "dude?",
+          "start": 99.78,
+          "end": 99.8,
+          "confidence": 0.968
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "seek": 8000,
+      "start": 99.8,
+      "end": 100.51,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12106657669683209,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.41516682505607605,
+      "confidence": 0.896,
+      "words": [
+        {
+          "text": "What",
+          "start": 99.8,
+          "end": 100.12,
+          "confidence": 0.72
+        },
+        {
+          "text": "are",
+          "start": 100.12,
+          "end": 100.14,
+          "confidence": 0.861
+        },
+        {
+          "text": "you",
+          "start": 100.14,
+          "end": 100.3,
+          "confidence": 0.993
+        },
+        {
+          "text": "telling",
+          "start": 100.3,
+          "end": 100.32,
+          "confidence": 0.889
+        },
+        {
+          "text": "me,",
+          "start": 100.32,
+          "end": 100.46,
+          "confidence": 0.975
+        },
+        {
+          "text": "dude?",
+          "start": 100.46,
+          "end": 100.51,
+          "confidence": 0.968
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "seek": 8000,
+      "start": 101.0,
+      "end": 101.54,
+      "text": " What are you telling",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12106657669683209,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.41516682505607605,
+      "words": [
+        {
+          "text": "What",
+          "start": 100.51,
+          "end": 101.48,
+          "confidence": 0.753
+        },
+        {
+          "text": "are",
+          "start": 101.48,
+          "end": 101.5,
+          "confidence": 0.868
+        },
+        {
+          "text": "you",
+          "start": 101.5,
+          "end": 101.52,
+          "confidence": 0.994
+        },
+        {
+          "text": "telling",
+          "start": 101.52,
+          "end": 101.54,
+          "confidence": 0.908
+        }
+      ],
+      "confidence": 0.906
+    },
+    {
+      "id": 65,
+      "seek": 10100,
+      "start": 101.56,
+      "end": 102.4,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13250577610169825,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.25366830825805664,
+      "confidence": 0.691,
+      "words": [
+        {
+          "text": "What",
+          "start": 101.56,
+          "end": 102.14,
+          "confidence": 0.261
+        },
+        {
+          "text": "are",
+          "start": 102.14,
+          "end": 102.2,
+          "confidence": 0.617
+        },
+        {
+          "text": "you",
+          "start": 102.2,
+          "end": 102.22,
+          "confidence": 0.972
+        },
+        {
+          "text": "telling",
+          "start": 102.22,
+          "end": 102.36,
+          "confidence": 0.749
+        },
+        {
+          "text": "me,",
+          "start": 102.36,
+          "end": 102.38,
+          "confidence": 0.966
+        },
+        {
+          "text": "dude?",
+          "start": 102.38,
+          "end": 102.4,
+          "confidence": 0.963
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "seek": 10100,
+      "start": 102.5,
+      "end": 103.46,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13250577610169825,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.25366830825805664,
+      "confidence": 0.873,
+      "words": [
+        {
+          "text": "What",
+          "start": 102.5,
+          "end": 103.22,
+          "confidence": 0.749
+        },
+        {
+          "text": "are",
+          "start": 103.22,
+          "end": 103.24,
+          "confidence": 0.765
+        },
+        {
+          "text": "you",
+          "start": 103.24,
+          "end": 103.26,
+          "confidence": 0.985
+        },
+        {
+          "text": "telling",
+          "start": 103.26,
+          "end": 103.38,
+          "confidence": 0.829
+        },
+        {
+          "text": "me,",
+          "start": 103.38,
+          "end": 103.4,
+          "confidence": 0.972
+        },
+        {
+          "text": "dude?",
+          "start": 103.42,
+          "end": 103.46,
+          "confidence": 0.97
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "seek": 10100,
+      "start": 103.5,
+      "end": 104.74,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13250577610169825,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.25366830825805664,
+      "confidence": 0.884,
+      "words": [
+        {
+          "text": "What",
+          "start": 103.5,
+          "end": 103.66,
+          "confidence": 0.761
+        },
+        {
+          "text": "are",
+          "start": 103.66,
+          "end": 103.68,
+          "confidence": 0.794
+        },
+        {
+          "text": "you",
+          "start": 103.68,
+          "end": 103.7,
+          "confidence": 0.987
+        },
+        {
+          "text": "telling",
+          "start": 103.7,
+          "end": 104.44,
+          "confidence": 0.846
+        },
+        {
+          "text": "me,",
+          "start": 104.44,
+          "end": 104.46,
+          "confidence": 0.971
+        },
+        {
+          "text": "dude?",
+          "start": 104.72,
+          "end": 104.74,
+          "confidence": 0.972
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "seek": 10100,
+      "start": 104.74,
+      "end": 105.36,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13250577610169825,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.25366830825805664,
+      "confidence": 0.888,
+      "words": [
+        {
+          "text": "What",
+          "start": 104.74,
+          "end": 104.76,
+          "confidence": 0.751
+        },
+        {
+          "text": "are",
+          "start": 104.76,
+          "end": 104.78,
+          "confidence": 0.807
+        },
+        {
+          "text": "you",
+          "start": 104.78,
+          "end": 104.8,
+          "confidence": 0.987
+        },
+        {
+          "text": "telling",
+          "start": 104.8,
+          "end": 104.82,
+          "confidence": 0.864
+        },
+        {
+          "text": "me,",
+          "start": 104.82,
+          "end": 104.84,
+          "confidence": 0.972
+        },
+        {
+          "text": "dude?",
+          "start": 104.84,
+          "end": 105.36,
+          "confidence": 0.973
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "seek": 10100,
+      "start": 105.5,
+      "end": 105.92,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13250577610169825,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.25366830825805664,
+      "confidence": 0.875,
+      "words": [
+        {
+          "text": "What",
+          "start": 105.5,
+          "end": 105.52,
+          "confidence": 0.689
+        },
+        {
+          "text": "are",
+          "start": 105.52,
+          "end": 105.54,
+          "confidence": 0.802
+        },
+        {
+          "text": "you",
+          "start": 105.54,
+          "end": 105.56,
+          "confidence": 0.988
+        },
+        {
+          "text": "telling",
+          "start": 105.56,
+          "end": 105.58,
+          "confidence": 0.87
+        },
+        {
+          "text": "me,",
+          "start": 105.58,
+          "end": 105.6,
+          "confidence": 0.972
+        },
+        {
+          "text": "dude?",
+          "start": 105.9,
+          "end": 105.92,
+          "confidence": 0.975
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "seek": 10100,
+      "start": 106.84,
+      "end": 108.08,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13250577610169825,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.25366830825805664,
+      "confidence": 0.868,
+      "words": [
+        {
+          "text": "What",
+          "start": 106.84,
+          "end": 107.16,
+          "confidence": 0.65
+        },
+        {
+          "text": "are",
+          "start": 107.16,
+          "end": 107.18,
+          "confidence": 0.802
+        },
+        {
+          "text": "you",
+          "start": 107.18,
+          "end": 107.2,
+          "confidence": 0.988
+        },
+        {
+          "text": "telling",
+          "start": 107.2,
+          "end": 107.34,
+          "confidence": 0.88
+        },
+        {
+          "text": "me,",
+          "start": 107.34,
+          "end": 107.66,
+          "confidence": 0.972
+        },
+        {
+          "text": "dude?",
+          "start": 108.06,
+          "end": 108.08,
+          "confidence": 0.975
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "seek": 10100,
+      "start": 108.08,
+      "end": 108.5,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13250577610169825,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.25366830825805664,
+      "confidence": 0.893,
+      "words": [
+        {
+          "text": "What",
+          "start": 108.08,
+          "end": 108.1,
+          "confidence": 0.732
+        },
+        {
+          "text": "are",
+          "start": 108.1,
+          "end": 108.12,
+          "confidence": 0.83
+        },
+        {
+          "text": "you",
+          "start": 108.12,
+          "end": 108.14,
+          "confidence": 0.99
+        },
+        {
+          "text": "telling",
+          "start": 108.14,
+          "end": 108.34,
+          "confidence": 0.889
+        },
+        {
+          "text": "me,",
+          "start": 108.34,
+          "end": 108.36,
+          "confidence": 0.971
+        },
+        {
+          "text": "dude?",
+          "start": 108.36,
+          "end": 108.5,
+          "confidence": 0.976
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "seek": 10100,
+      "start": 108.5,
+      "end": 109.56,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13250577610169825,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.25366830825805664,
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "What",
+          "start": 108.5,
+          "end": 109.28,
+          "confidence": 0.759
+        },
+        {
+          "text": "are",
+          "start": 109.28,
+          "end": 109.34,
+          "confidence": 0.838
+        },
+        {
+          "text": "you",
+          "start": 109.34,
+          "end": 109.36,
+          "confidence": 0.99
+        },
+        {
+          "text": "telling",
+          "start": 109.36,
+          "end": 109.38,
+          "confidence": 0.891
+        },
+        {
+          "text": "me,",
+          "start": 109.38,
+          "end": 109.44,
+          "confidence": 0.968
+        },
+        {
+          "text": "dude?",
+          "start": 109.54,
+          "end": 109.56,
+          "confidence": 0.976
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "seek": 10100,
+      "start": 109.94,
+      "end": 110.94,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13250577610169825,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.25366830825805664,
+      "confidence": 0.902,
+      "words": [
+        {
+          "text": "What",
+          "start": 109.94,
+          "end": 110.58,
+          "confidence": 0.757
+        },
+        {
+          "text": "are",
+          "start": 110.58,
+          "end": 110.76,
+          "confidence": 0.84
+        },
+        {
+          "text": "you",
+          "start": 110.76,
+          "end": 110.84,
+          "confidence": 0.99
+        },
+        {
+          "text": "telling",
+          "start": 110.84,
+          "end": 110.86,
+          "confidence": 0.9
+        },
+        {
+          "text": "me,",
+          "start": 110.86,
+          "end": 110.88,
+          "confidence": 0.973
+        },
+        {
+          "text": "dude?",
+          "start": 110.92,
+          "end": 110.94,
+          "confidence": 0.976
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "seek": 10100,
+      "start": 110.94,
+      "end": 111.8,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13250577610169825,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.25366830825805664,
+      "confidence": 0.913,
+      "words": [
+        {
+          "text": "What",
+          "start": 110.94,
+          "end": 111.22,
+          "confidence": 0.795
+        },
+        {
+          "text": "are",
+          "start": 111.22,
+          "end": 111.24,
+          "confidence": 0.855
+        },
+        {
+          "text": "you",
+          "start": 111.24,
+          "end": 111.34,
+          "confidence": 0.991
+        },
+        {
+          "text": "telling",
+          "start": 111.34,
+          "end": 111.46,
+          "confidence": 0.906
+        },
+        {
+          "text": "me,",
+          "start": 111.46,
+          "end": 111.68,
+          "confidence": 0.974
+        },
+        {
+          "text": "dude?",
+          "start": 111.78,
+          "end": 111.8,
+          "confidence": 0.976
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "seek": 10100,
+      "start": 111.8,
+      "end": 112.76,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13250577610169825,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.25366830825805664,
+      "confidence": 0.908,
+      "words": [
+        {
+          "text": "What",
+          "start": 111.8,
+          "end": 111.82,
+          "confidence": 0.767
+        },
+        {
+          "text": "are",
+          "start": 111.82,
+          "end": 111.84,
+          "confidence": 0.857
+        },
+        {
+          "text": "you",
+          "start": 111.84,
+          "end": 111.9,
+          "confidence": 0.991
+        },
+        {
+          "text": "telling",
+          "start": 111.9,
+          "end": 112.36,
+          "confidence": 0.905
+        },
+        {
+          "text": "me,",
+          "start": 112.36,
+          "end": 112.62,
+          "confidence": 0.973
+        },
+        {
+          "text": "dude?",
+          "start": 112.62,
+          "end": 112.76,
+          "confidence": 0.976
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "seek": 10100,
+      "start": 112.76,
+      "end": 113.3,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13250577610169825,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.25366830825805664,
+      "confidence": 0.91,
+      "words": [
+        {
+          "text": "What",
+          "start": 112.76,
+          "end": 112.78,
+          "confidence": 0.766
+        },
+        {
+          "text": "are",
+          "start": 112.78,
+          "end": 112.8,
+          "confidence": 0.859
+        },
+        {
+          "text": "you",
+          "start": 112.8,
+          "end": 112.82,
+          "confidence": 0.992
+        },
+        {
+          "text": "telling",
+          "start": 112.82,
+          "end": 112.84,
+          "confidence": 0.913
+        },
+        {
+          "text": "me,",
+          "start": 112.84,
+          "end": 112.86,
+          "confidence": 0.977
+        },
+        {
+          "text": "dude?",
+          "start": 112.86,
+          "end": 113.3,
+          "confidence": 0.977
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "seek": 10100,
+      "start": 113.9,
+      "end": 115.38,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13250577610169825,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.25366830825805664,
+      "confidence": 0.903,
+      "words": [
+        {
+          "text": "What",
+          "start": 113.9,
+          "end": 114.42,
+          "confidence": 0.727
+        },
+        {
+          "text": "are",
+          "start": 114.42,
+          "end": 114.44,
+          "confidence": 0.858
+        },
+        {
+          "text": "you",
+          "start": 114.44,
+          "end": 114.56,
+          "confidence": 0.992
+        },
+        {
+          "text": "telling",
+          "start": 114.56,
+          "end": 114.66,
+          "confidence": 0.917
+        },
+        {
+          "text": "me,",
+          "start": 114.66,
+          "end": 114.78,
+          "confidence": 0.977
+        },
+        {
+          "text": "dude?",
+          "start": 115.2,
+          "end": 115.38,
+          "confidence": 0.977
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "seek": 10100,
+      "start": 115.38,
+      "end": 115.78,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13250577610169825,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.25366830825805664,
+      "confidence": 0.903,
+      "words": [
+        {
+          "text": "What",
+          "start": 115.38,
+          "end": 115.4,
+          "confidence": 0.711
+        },
+        {
+          "text": "are",
+          "start": 115.4,
+          "end": 115.42,
+          "confidence": 0.876
+        },
+        {
+          "text": "you",
+          "start": 115.42,
+          "end": 115.44,
+          "confidence": 0.993
+        },
+        {
+          "text": "telling",
+          "start": 115.44,
+          "end": 115.5,
+          "confidence": 0.916
+        },
+        {
+          "text": "me,",
+          "start": 115.5,
+          "end": 115.66,
+          "confidence": 0.978
+        },
+        {
+          "text": "dude?",
+          "start": 115.66,
+          "end": 115.78,
+          "confidence": 0.977
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "seek": 10100,
+      "start": 116.44,
+      "end": 117.0,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13250577610169825,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.25366830825805664,
+      "confidence": 0.908,
+      "words": [
+        {
+          "text": "What",
+          "start": 116.44,
+          "end": 116.46,
+          "confidence": 0.725
+        },
+        {
+          "text": "are",
+          "start": 116.46,
+          "end": 116.48,
+          "confidence": 0.884
+        },
+        {
+          "text": "you",
+          "start": 116.48,
+          "end": 116.5,
+          "confidence": 0.994
+        },
+        {
+          "text": "telling",
+          "start": 116.5,
+          "end": 116.96,
+          "confidence": 0.92
+        },
+        {
+          "text": "me,",
+          "start": 116.96,
+          "end": 116.98,
+          "confidence": 0.977
+        },
+        {
+          "text": "dude?",
+          "start": 116.98,
+          "end": 117.0,
+          "confidence": 0.977
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "seek": 10100,
+      "start": 117.0,
+      "end": 117.7,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13250577610169825,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.25366830825805664,
+      "confidence": 0.904,
+      "words": [
+        {
+          "text": "What",
+          "start": 117.0,
+          "end": 117.02,
+          "confidence": 0.703
+        },
+        {
+          "text": "are",
+          "start": 117.02,
+          "end": 117.04,
+          "confidence": 0.895
+        },
+        {
+          "text": "you",
+          "start": 117.04,
+          "end": 117.06,
+          "confidence": 0.994
+        },
+        {
+          "text": "telling",
+          "start": 117.06,
+          "end": 117.08,
+          "confidence": 0.917
+        },
+        {
+          "text": "me,",
+          "start": 117.08,
+          "end": 117.1,
+          "confidence": 0.976
+        },
+        {
+          "text": "dude?",
+          "start": 117.28,
+          "end": 117.7,
+          "confidence": 0.977
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "seek": 10100,
+      "start": 118.2,
+      "end": 119.28,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13250577610169825,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.25366830825805664,
+      "confidence": 0.906,
+      "words": [
+        {
+          "text": "What",
+          "start": 118.2,
+          "end": 118.46,
+          "confidence": 0.725
+        },
+        {
+          "text": "are",
+          "start": 118.46,
+          "end": 118.48,
+          "confidence": 0.875
+        },
+        {
+          "text": "you",
+          "start": 118.48,
+          "end": 118.58,
+          "confidence": 0.994
+        },
+        {
+          "text": "telling",
+          "start": 118.58,
+          "end": 118.86,
+          "confidence": 0.918
+        },
+        {
+          "text": "me,",
+          "start": 118.86,
+          "end": 119.02,
+          "confidence": 0.98
+        },
+        {
+          "text": "dude?",
+          "start": 119.26,
+          "end": 119.28,
+          "confidence": 0.976
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "seek": 10100,
+      "start": 119.42,
+      "end": 120.38,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13250577610169825,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.25366830825805664,
+      "confidence": 0.888,
+      "words": [
+        {
+          "text": "What",
+          "start": 119.42,
+          "end": 119.64,
+          "confidence": 0.636
+        },
+        {
+          "text": "are",
+          "start": 119.64,
+          "end": 119.7,
+          "confidence": 0.879
+        },
+        {
+          "text": "you",
+          "start": 119.7,
+          "end": 119.74,
+          "confidence": 0.994
+        },
+        {
+          "text": "telling",
+          "start": 119.74,
+          "end": 119.76,
+          "confidence": 0.924
+        },
+        {
+          "text": "me,",
+          "start": 119.76,
+          "end": 120.16,
+          "confidence": 0.979
+        },
+        {
+          "text": "dude?",
+          "start": 120.28,
+          "end": 120.38,
+          "confidence": 0.976
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "seek": 10100,
+      "start": 120.38,
+      "end": 120.5,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13250577610169825,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.25366830825805664,
+      "confidence": 0.883,
+      "words": [
+        {
+          "text": "What",
+          "start": 120.38,
+          "end": 120.4,
+          "confidence": 0.613
+        },
+        {
+          "text": "are",
+          "start": 120.4,
+          "end": 120.42,
+          "confidence": 0.889
+        },
+        {
+          "text": "you",
+          "start": 120.42,
+          "end": 120.44,
+          "confidence": 0.994
+        },
+        {
+          "text": "telling",
+          "start": 120.44,
+          "end": 120.46,
+          "confidence": 0.913
+        },
+        {
+          "text": "me,",
+          "start": 120.46,
+          "end": 120.48,
+          "confidence": 0.981
+        },
+        {
+          "text": "dude?",
+          "start": 120.48,
+          "end": 120.5,
+          "confidence": 0.975
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "seek": 10100,
+      "start": 120.5,
+      "end": 122.02,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13250577610169825,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.25366830825805664,
+      "confidence": 0.881,
+      "words": [
+        {
+          "text": "What",
+          "start": 120.5,
+          "end": 120.58,
+          "confidence": 0.604
+        },
+        {
+          "text": "are",
+          "start": 120.58,
+          "end": 120.6,
+          "confidence": 0.893
+        },
+        {
+          "text": "you",
+          "start": 120.6,
+          "end": 120.62,
+          "confidence": 0.994
+        },
+        {
+          "text": "telling",
+          "start": 120.62,
+          "end": 120.64,
+          "confidence": 0.907
+        },
+        {
+          "text": "me,",
+          "start": 120.64,
+          "end": 122.0,
+          "confidence": 0.982
+        },
+        {
+          "text": "dude?",
+          "start": 122.0,
+          "end": 122.02,
+          "confidence": 0.976
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "seek": 10100,
+      "start": 122.0,
+      "end": 122.14,
+      "text": " What are you telling me, dude?",
+      "tokens": [
+        708,
+        366,
+        291,
+        3585,
+        385,
+        11,
+        6449,
+        30
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13250577610169825,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.25366830825805664,
+      "words": [
+        {
+          "text": "What",
+          "start": 122.02,
+          "end": 122.04,
+          "confidence": 0.603
+        },
+        {
+          "text": "are",
+          "start": 122.04,
+          "end": 122.06,
+          "confidence": 0.876
+        },
+        {
+          "text": "you",
+          "start": 122.06,
+          "end": 122.08,
+          "confidence": 0.994
+        },
+        {
+          "text": "telling",
+          "start": 122.08,
+          "end": 122.1,
+          "confidence": 0.909
+        },
+        {
+          "text": "me,",
+          "start": 122.1,
+          "end": 122.12,
+          "confidence": 0.982
+        },
+        {
+          "text": "dude?",
+          "start": 122.12,
+          "end": 122.14,
+          "confidence": 0.975
+        }
+      ],
+      "confidence": 0.878
+    },
+    {
+      "id": 65,
+      "seek": 10100,
+      "start": 122.14,
+      "end": 122.64,
       "text": " What are you telling me,",
       "tokens": [
         708,
@@ -2886,880 +5154,40 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12450172531772667,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0009417816763743758,
-      "confidence": 0.82,
+      "avg_logprob": -0.13250577610169825,
+      "compression_ratio": 14.91304347826087,
+      "no_speech_prob": 0.25366830825805664,
+      "confidence": 0.881,
       "words": [
         {
           "text": "What",
-          "start": 108.44,
-          "end": 108.62,
-          "confidence": 0.48
+          "start": 122.14,
+          "end": 122.3,
+          "confidence": 0.61
         },
         {
           "text": "are",
-          "start": 108.62,
-          "end": 108.76,
-          "confidence": 0.773
+          "start": 122.3,
+          "end": 122.48,
+          "confidence": 0.877
         },
         {
           "text": "you",
-          "start": 108.76,
-          "end": 108.78,
-          "confidence": 0.99
+          "start": 122.48,
+          "end": 122.6,
+          "confidence": 0.995
         },
         {
           "text": "telling",
-          "start": 108.78,
-          "end": 108.8,
-          "confidence": 0.878
+          "start": 122.6,
+          "end": 122.62,
+          "confidence": 0.922
         },
         {
           "text": "me,",
-          "start": 108.8,
-          "end": 108.82,
-          "confidence": 0.97
-        }
-      ]
-    },
-    {
-      "id": 49,
-      "seek": 11000,
-      "start": 110.0,
-      "end": 111.88,
-      "text": " What are you telling me, dude?",
-      "tokens": [
-        708,
-        366,
-        291,
-        3585,
-        385,
-        11,
-        6449,
-        30
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.1155458369725187,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0005115420208312571,
-      "confidence": 0.719,
-      "words": [
-        {
-          "text": "What",
-          "start": 110.0,
-          "end": 110.2,
-          "confidence": 0.421
-        },
-        {
-          "text": "are",
-          "start": 110.2,
-          "end": 110.28,
-          "confidence": 0.523
-        },
-        {
-          "text": "you",
-          "start": 110.28,
-          "end": 110.36,
-          "confidence": 0.912
-        },
-        {
-          "text": "telling",
-          "start": 110.36,
-          "end": 110.58,
-          "confidence": 0.789
-        },
-        {
-          "text": "me,",
-          "start": 110.58,
-          "end": 110.86,
-          "confidence": 0.903
-        },
-        {
-          "text": "dude?",
-          "start": 110.86,
-          "end": 111.88,
-          "confidence": 0.964
-        }
-      ]
-    },
-    {
-      "id": 50,
-      "seek": 11000,
-      "start": 112.12,
-      "end": 112.86,
-      "text": " What are you telling me, dude?",
-      "tokens": [
-        708,
-        366,
-        291,
-        3585,
-        385,
-        11,
-        6449,
-        30
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.1155458369725187,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0005115420208312571,
-      "confidence": 0.836,
-      "words": [
-        {
-          "text": "What",
-          "start": 112.12,
-          "end": 112.34,
-          "confidence": 0.644
-        },
-        {
-          "text": "are",
-          "start": 112.34,
-          "end": 112.36,
-          "confidence": 0.735
-        },
-        {
-          "text": "you",
-          "start": 112.36,
-          "end": 112.38,
+          "start": 122.62,
+          "end": 122.64,
           "confidence": 0.978
-        },
-        {
-          "text": "telling",
-          "start": 112.38,
-          "end": 112.48,
-          "confidence": 0.821
-        },
-        {
-          "text": "me,",
-          "start": 112.48,
-          "end": 112.62,
-          "confidence": 0.933
-        },
-        {
-          "text": "dude?",
-          "start": 112.62,
-          "end": 112.86,
-          "confidence": 0.962
-        }
-      ]
-    },
-    {
-      "id": 51,
-      "seek": 11000,
-      "start": 113.9,
-      "end": 114.96,
-      "text": " What are you telling me, dude?",
-      "tokens": [
-        708,
-        366,
-        291,
-        3585,
-        385,
-        11,
-        6449,
-        30
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.1155458369725187,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0005115420208312571,
-      "confidence": 0.832,
-      "words": [
-        {
-          "text": "What",
-          "start": 113.9,
-          "end": 114.4,
-          "confidence": 0.616
-        },
-        {
-          "text": "are",
-          "start": 114.4,
-          "end": 114.42,
-          "confidence": 0.734
-        },
-        {
-          "text": "you",
-          "start": 114.42,
-          "end": 114.54,
-          "confidence": 0.978
-        },
-        {
-          "text": "telling",
-          "start": 114.54,
-          "end": 114.56,
-          "confidence": 0.831
-        },
-        {
-          "text": "me,",
-          "start": 114.56,
-          "end": 114.84,
-          "confidence": 0.934
-        },
-        {
-          "text": "dude?",
-          "start": 114.84,
-          "end": 114.96,
-          "confidence": 0.967
-        }
-      ]
-    },
-    {
-      "id": 52,
-      "seek": 11000,
-      "start": 115.5,
-      "end": 117.52,
-      "text": " What are you telling me, dude?",
-      "tokens": [
-        708,
-        366,
-        291,
-        3585,
-        385,
-        11,
-        6449,
-        30
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.1155458369725187,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0005115420208312571,
-      "confidence": 0.86,
-      "words": [
-        {
-          "text": "What",
-          "start": 115.5,
-          "end": 116.56,
-          "confidence": 0.671
-        },
-        {
-          "text": "are",
-          "start": 116.56,
-          "end": 116.58,
-          "confidence": 0.787
-        },
-        {
-          "text": "you",
-          "start": 116.58,
-          "end": 116.6,
-          "confidence": 0.984
-        },
-        {
-          "text": "telling",
-          "start": 116.6,
-          "end": 116.66,
-          "confidence": 0.853
-        },
-        {
-          "text": "me,",
-          "start": 116.66,
-          "end": 117.04,
-          "confidence": 0.946
-        },
-        {
-          "text": "dude?",
-          "start": 117.34,
-          "end": 117.52,
-          "confidence": 0.966
-        }
-      ]
-    },
-    {
-      "id": 53,
-      "seek": 11000,
-      "start": 118.2,
-      "end": 119.3,
-      "text": " What are you telling me, dude?",
-      "tokens": [
-        708,
-        366,
-        291,
-        3585,
-        385,
-        11,
-        6449,
-        30
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.1155458369725187,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0005115420208312571,
-      "confidence": 0.88,
-      "words": [
-        {
-          "text": "What",
-          "start": 118.2,
-          "end": 118.5,
-          "confidence": 0.758
-        },
-        {
-          "text": "are",
-          "start": 118.5,
-          "end": 118.52,
-          "confidence": 0.79
-        },
-        {
-          "text": "you",
-          "start": 118.52,
-          "end": 118.7,
-          "confidence": 0.985
-        },
-        {
-          "text": "telling",
-          "start": 118.7,
-          "end": 119.04,
-          "confidence": 0.857
-        },
-        {
-          "text": "me,",
-          "start": 119.04,
-          "end": 119.18,
-          "confidence": 0.948
-        },
-        {
-          "text": "dude?",
-          "start": 119.28,
-          "end": 119.3,
-          "confidence": 0.968
-        }
-      ]
-    },
-    {
-      "id": 54,
-      "seek": 11000,
-      "start": 119.5,
-      "end": 120.44,
-      "text": " What are you telling me, dude?",
-      "tokens": [
-        708,
-        366,
-        291,
-        3585,
-        385,
-        11,
-        6449,
-        30
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.1155458369725187,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0005115420208312571,
-      "confidence": 0.884,
-      "words": [
-        {
-          "text": "What",
-          "start": 119.5,
-          "end": 119.64,
-          "confidence": 0.758
-        },
-        {
-          "text": "are",
-          "start": 119.64,
-          "end": 119.76,
-          "confidence": 0.808
-        },
-        {
-          "text": "you",
-          "start": 119.76,
-          "end": 119.78,
-          "confidence": 0.986
-        },
-        {
-          "text": "telling",
-          "start": 119.78,
-          "end": 120.12,
-          "confidence": 0.857
-        },
-        {
-          "text": "me,",
-          "start": 120.12,
-          "end": 120.22,
-          "confidence": 0.954
-        },
-        {
-          "text": "dude?",
-          "start": 120.28,
-          "end": 120.44,
-          "confidence": 0.966
-        }
-      ]
-    },
-    {
-      "id": 55,
-      "seek": 11000,
-      "start": 121.5,
-      "end": 123.08,
-      "text": " What are you telling me, dude?",
-      "tokens": [
-        708,
-        366,
-        291,
-        3585,
-        385,
-        11,
-        6449,
-        30
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.1155458369725187,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0005115420208312571,
-      "confidence": 0.874,
-      "words": [
-        {
-          "text": "What",
-          "start": 121.5,
-          "end": 122.32,
-          "confidence": 0.719
-        },
-        {
-          "text": "are",
-          "start": 122.32,
-          "end": 122.34,
-          "confidence": 0.788
-        },
-        {
-          "text": "you",
-          "start": 122.34,
-          "end": 122.38,
-          "confidence": 0.986
-        },
-        {
-          "text": "telling",
-          "start": 122.38,
-          "end": 122.98,
-          "confidence": 0.864
-        },
-        {
-          "text": "me,",
-          "start": 122.98,
-          "end": 123.0,
-          "confidence": 0.952
-        },
-        {
-          "text": "dude?",
-          "start": 123.06,
-          "end": 123.08,
-          "confidence": 0.968
-        }
-      ]
-    },
-    {
-      "id": 56,
-      "seek": 11000,
-      "start": 123.5,
-      "end": 125.38,
-      "text": " What are you telling me, dude?",
-      "tokens": [
-        708,
-        366,
-        291,
-        3585,
-        385,
-        11,
-        6449,
-        30
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.1155458369725187,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0005115420208312571,
-      "confidence": 0.882,
-      "words": [
-        {
-          "text": "What",
-          "start": 123.5,
-          "end": 125.04,
-          "confidence": 0.718
-        },
-        {
-          "text": "are",
-          "start": 125.04,
-          "end": 125.06,
-          "confidence": 0.822
-        },
-        {
-          "text": "you",
-          "start": 125.06,
-          "end": 125.08,
-          "confidence": 0.989
-        },
-        {
-          "text": "telling",
-          "start": 125.08,
-          "end": 125.26,
-          "confidence": 0.878
-        },
-        {
-          "text": "me,",
-          "start": 125.26,
-          "end": 125.28,
-          "confidence": 0.952
-        },
-        {
-          "text": "dude?",
-          "start": 125.36,
-          "end": 125.38,
-          "confidence": 0.968
-        }
-      ]
-    },
-    {
-      "id": 57,
-      "seek": 11000,
-      "start": 125.5,
-      "end": 127.16,
-      "text": " What are you telling me, dude?",
-      "tokens": [
-        708,
-        366,
-        291,
-        3585,
-        385,
-        11,
-        6449,
-        30
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.1155458369725187,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0005115420208312571,
-      "confidence": 0.894,
-      "words": [
-        {
-          "text": "What",
-          "start": 125.5,
-          "end": 126.7,
-          "confidence": 0.747
-        },
-        {
-          "text": "are",
-          "start": 126.7,
-          "end": 126.72,
-          "confidence": 0.837
-        },
-        {
-          "text": "you",
-          "start": 126.72,
-          "end": 126.92,
-          "confidence": 0.991
-        },
-        {
-          "text": "telling",
-          "start": 126.92,
-          "end": 126.94,
-          "confidence": 0.885
-        },
-        {
-          "text": "me,",
-          "start": 126.94,
-          "end": 127.1,
-          "confidence": 0.962
-        },
-        {
-          "text": "dude?",
-          "start": 127.14,
-          "end": 127.16,
-          "confidence": 0.97
-        }
-      ]
-    },
-    {
-      "id": 58,
-      "seek": 11000,
-      "start": 127.5,
-      "end": 129.32,
-      "text": " What are you telling me, dude?",
-      "tokens": [
-        708,
-        366,
-        291,
-        3585,
-        385,
-        11,
-        6449,
-        30
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.1155458369725187,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0005115420208312571,
-      "confidence": 0.896,
-      "words": [
-        {
-          "text": "What",
-          "start": 127.5,
-          "end": 128.98,
-          "confidence": 0.72
-        },
-        {
-          "text": "are",
-          "start": 128.98,
-          "end": 129.0,
-          "confidence": 0.859
-        },
-        {
-          "text": "you",
-          "start": 129.0,
-          "end": 129.24,
-          "confidence": 0.992
-        },
-        {
-          "text": "telling",
-          "start": 129.24,
-          "end": 129.26,
-          "confidence": 0.896
-        },
-        {
-          "text": "me,",
-          "start": 129.26,
-          "end": 129.28,
-          "confidence": 0.965
-        },
-        {
-          "text": "dude?",
-          "start": 129.3,
-          "end": 129.32,
-          "confidence": 0.971
-        }
-      ]
-    },
-    {
-      "id": 59,
-      "seek": 11000,
-      "start": 129.62,
-      "end": 131.7,
-      "text": " What are you telling me, dude?",
-      "tokens": [
-        708,
-        366,
-        291,
-        3585,
-        385,
-        11,
-        6449,
-        30
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.1155458369725187,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0005115420208312571,
-      "confidence": 0.889,
-      "words": [
-        {
-          "text": "What",
-          "start": 129.62,
-          "end": 131.02,
-          "confidence": 0.702
-        },
-        {
-          "text": "are",
-          "start": 131.02,
-          "end": 131.48,
-          "confidence": 0.854
-        },
-        {
-          "text": "you",
-          "start": 131.48,
-          "end": 131.5,
-          "confidence": 0.992
-        },
-        {
-          "text": "telling",
-          "start": 131.5,
-          "end": 131.52,
-          "confidence": 0.889
-        },
-        {
-          "text": "me,",
-          "start": 131.52,
-          "end": 131.54,
-          "confidence": 0.964
-        },
-        {
-          "text": "dude?",
-          "start": 131.68,
-          "end": 131.7,
-          "confidence": 0.97
-        }
-      ]
-    },
-    {
-      "id": 60,
-      "seek": 11000,
-      "start": 131.7,
-      "end": 133.08,
-      "text": " What are you telling me, dude?",
-      "tokens": [
-        708,
-        366,
-        291,
-        3585,
-        385,
-        11,
-        6449,
-        30
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.1155458369725187,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0005115420208312571,
-      "confidence": 0.903,
-      "words": [
-        {
-          "text": "What",
-          "start": 131.7,
-          "end": 132.8,
-          "confidence": 0.745
-        },
-        {
-          "text": "are",
-          "start": 132.8,
-          "end": 133.0,
-          "confidence": 0.861
-        },
-        {
-          "text": "you",
-          "start": 133.0,
-          "end": 133.02,
-          "confidence": 0.993
-        },
-        {
-          "text": "telling",
-          "start": 133.02,
-          "end": 133.04,
-          "confidence": 0.904
-        },
-        {
-          "text": "me,",
-          "start": 133.04,
-          "end": 133.06,
-          "confidence": 0.969
-        },
-        {
-          "text": "dude?",
-          "start": 133.06,
-          "end": 133.08,
-          "confidence": 0.972
-        }
-      ]
-    },
-    {
-      "id": 61,
-      "seek": 11000,
-      "start": 133.5,
-      "end": 135.42,
-      "text": " What are you telling me, dude?",
-      "tokens": [
-        708,
-        366,
-        291,
-        3585,
-        385,
-        11,
-        6449,
-        30
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.1155458369725187,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0005115420208312571,
-      "confidence": 0.892,
-      "words": [
-        {
-          "text": "What",
-          "start": 133.5,
-          "end": 135.24,
-          "confidence": 0.692
-        },
-        {
-          "text": "are",
-          "start": 135.24,
-          "end": 135.32,
-          "confidence": 0.86
-        },
-        {
-          "text": "you",
-          "start": 135.32,
-          "end": 135.36,
-          "confidence": 0.993
-        },
-        {
-          "text": "telling",
-          "start": 135.36,
-          "end": 135.38,
-          "confidence": 0.9
-        },
-        {
-          "text": "me,",
-          "start": 135.38,
-          "end": 135.4,
-          "confidence": 0.971
-        },
-        {
-          "text": "dude?",
-          "start": 135.4,
-          "end": 135.42,
-          "confidence": 0.974
-        }
-      ]
-    },
-    {
-      "id": 62,
-      "seek": 11000,
-      "start": 135.5,
-      "end": 136.58,
-      "text": " What are you telling me, dude?",
-      "tokens": [
-        708,
-        366,
-        291,
-        3585,
-        385,
-        11,
-        6449,
-        30
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.1155458369725187,
-      "compression_ratio": 9.840909090909092,
-      "no_speech_prob": 0.0005115420208312571,
-      "confidence": 0.854,
-      "words": [
-        {
-          "text": "What",
-          "start": 135.5,
-          "end": 135.52,
-          "confidence": 0.531
-        },
-        {
-          "text": "are",
-          "start": 135.52,
-          "end": 135.54,
-          "confidence": 0.856
-        },
-        {
-          "text": "you",
-          "start": 135.54,
-          "end": 135.56,
-          "confidence": 0.993
-        },
-        {
-          "text": "telling",
-          "start": 135.56,
-          "end": 135.58,
-          "confidence": 0.906
-        },
-        {
-          "text": "me,",
-          "start": 135.58,
-          "end": 135.6,
-          "confidence": 0.972
-        },
-        {
-          "text": "dude?",
-          "start": 135.6,
-          "end": 136.58,
-          "confidence": 0.974
         }
       ]
     }

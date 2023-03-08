@@ -20,7 +20,7 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3638502486208652,
+      "avg_logprob": -0.36384911232806266,
       "compression_ratio": 1.435483870967742,
       "no_speech_prob": 0.2710752487182617,
       "confidence": 0.415,
@@ -70,7 +70,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 0,
       "seek": 0,
       "start": 6.26,
       "end": 9.18,
@@ -88,7 +88,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3638502486208652,
+      "avg_logprob": -0.36384911232806266,
       "compression_ratio": 1.435483870967742,
       "no_speech_prob": 0.2710752487182617,
       "confidence": 0.697,
@@ -132,7 +132,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 0,
       "seek": 0,
       "start": 9.24,
       "end": 11.46,
@@ -154,7 +154,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3638502486208652,
+      "avg_logprob": -0.36384911232806266,
       "compression_ratio": 1.435483870967742,
       "no_speech_prob": 0.2710752487182617,
       "confidence": 0.484,
@@ -240,7 +240,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 0,
       "seek": 0,
       "start": 11.5,
       "end": 13.34,
@@ -253,7 +253,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3638502486208652,
+      "avg_logprob": -0.36384911232806266,
       "compression_ratio": 1.435483870967742,
       "no_speech_prob": 0.2710752487182617,
       "confidence": 0.338,
@@ -285,7 +285,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 0,
       "seek": 0,
       "start": 13.34,
       "end": 15.2,
@@ -302,7 +302,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3638502486208652,
+      "avg_logprob": -0.36384911232806266,
       "compression_ratio": 1.435483870967742,
       "no_speech_prob": 0.2710752487182617,
       "confidence": 0.649,
@@ -346,7 +346,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 0,
       "seek": 0,
       "start": 15.2,
       "end": 17.44,
@@ -369,7 +369,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3638502486208652,
+      "avg_logprob": -0.36384911232806266,
       "compression_ratio": 1.435483870967742,
       "no_speech_prob": 0.2710752487182617,
       "confidence": 0.69,
@@ -449,7 +449,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 0,
       "seek": 0,
       "start": 17.44,
       "end": 18.96,
@@ -463,7 +463,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3638502486208652,
+      "avg_logprob": -0.36384911232806266,
       "compression_ratio": 1.435483870967742,
       "no_speech_prob": 0.2710752487182617,
       "confidence": 0.529,
@@ -495,7 +495,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 0,
       "seek": 0,
       "start": 19.58,
       "end": 20.12,
@@ -506,7 +506,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3638502486208652,
+      "avg_logprob": -0.36384911232806266,
       "compression_ratio": 1.435483870967742,
       "no_speech_prob": 0.2710752487182617,
       "confidence": 0.02,
@@ -520,22 +520,20 @@
       ]
     },
     {
-      "id": 8,
-      "seek": 2000,
+      "id": 0,
+      "seek": 0,
       "start": 20.26,
       "end": 20.56,
       "text": " I agree.",
       "tokens": [
-        50364,
         286,
         3986,
-        13,
-        50864
+        13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.49995466073354083,
-      "compression_ratio": 0.5,
-      "no_speech_prob": 0.14921283721923828,
+      "avg_logprob": -0.36384911232806266,
+      "compression_ratio": 1.435483870967742,
+      "no_speech_prob": 0.2710752487182617,
       "confidence": 0.211,
       "words": [
         {

@@ -1,11 +1,11 @@
 {
-  "text": " Thank you..",
+  "text": " Thank you. Thank you.",
   "segments": [
     {
       "id": 0,
       "seek": 0,
       "start": 0.0,
-      "end": 1.07,
+      "end": 0.82,
       "text": " Thank you.",
       "tokens": [
         6952,
@@ -27,35 +27,41 @@
         {
           "text": "you",
           "start": 0.44,
-          "end": 1.07,
+          "end": 0.82,
           "confidence": 0.989
         }
       ]
     },
     {
-      "id": 1,
-      "seek": 100,
-      "start": 1.07,
-      "end": 1.38,
-      "text": ".",
+      "id": 0,
+      "seek": 0,
+      "start": 1.0,
+      "end": 0.9,
+      "text": " Thank you.",
       "tokens": [
-        50363,
-        764,
-        51813
+        6952,
+        345,
+        13
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.027197241783142,
-      "compression_ratio": 0.1111111111111111,
-      "no_speech_prob": 0.1898559182882309,
-      "confidence": 0.122,
+      "avg_logprob": -0.7195861989801581,
+      "compression_ratio": 1.0,
+      "no_speech_prob": 0.5518544912338257,
       "words": [
         {
-          "text": ".",
-          "start": 1.07,
-          "end": 1.38,
-          "confidence": 0.122
+          "text": "Thank",
+          "start": 0.82,
+          "end": 0.84,
+          "confidence": 0.306
+        },
+        {
+          "text": "you",
+          "start": 0.84,
+          "end": 0.9,
+          "confidence": 0.996
         }
-      ]
+      ],
+      "confidence": 0.552
     }
   ],
   "language": "en"

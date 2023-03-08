@@ -8,12 +8,10 @@
       "end": 15.06,
       "text": "...",
       "tokens": [
-        50364,
-        1097,
-        51388
+        1097
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.3470224142074585,
+      "avg_logprob": -1.3470145463943481,
       "compression_ratio": 0.2727272727272727,
       "no_speech_prob": 0.32281985878944397,
       "confidence": 0.142,

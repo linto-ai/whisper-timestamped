@@ -1,5 +1,5 @@
 {
-  "text": " Die Wiederzulassung des Messbuchs von 1962 als Missale für die außerordentliche Form des römischen Rethus ist dann nicht so weitergegangen, wie sich Papst Benedikt das gewünscht hatte. Das hat er als Emeritus...",
+  "text": " Die Wiederzulassung des Messbuchs von 1962 als Missale für die außerordentliche Form des römischen Rethus ist dann nicht so weitergegangen, wie sich Papst Benedikt das gewünscht hatte. Das hat er als Emeritor...",
   "segments": [
     {
       "id": 0,
@@ -38,7 +38,7 @@
         301
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2640811375209263,
+      "avg_logprob": -0.2640805925641741,
       "compression_ratio": 1.2285714285714286,
       "no_speech_prob": 0.5754758715629578,
       "confidence": 0.857,
@@ -136,7 +136,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 0,
       "seek": 0,
       "start": 9.44,
       "end": 12.74,
@@ -165,7 +165,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2640811375209263,
+      "avg_logprob": -0.2640805925641741,
       "compression_ratio": 1.2285714285714286,
       "no_speech_prob": 0.5754758715629578,
       "confidence": 0.893,
@@ -245,57 +245,55 @@
       ]
     },
     {
-      "id": 2,
-      "seek": 1300,
-      "start": 13.0,
-      "end": 15.2,
-      "text": " Das hat er als Emeritus...",
+      "id": 0,
+      "seek": 0,
+      "start": 13.48,
+      "end": 15.44,
+      "text": " Das hat er als Emeritor...",
       "tokens": [
-        50364,
         2846,
         2385,
         1189,
         3907,
         18477,
-        30973,
-        1097,
-        51764
+        3029,
+        485
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.8175838470458985,
-      "compression_ratio": 0.7647058823529411,
-      "no_speech_prob": 0.0009246054687537253,
-      "confidence": 0.641,
+      "avg_logprob": -0.2640805925641741,
+      "compression_ratio": 1.2285714285714286,
+      "no_speech_prob": 0.5754758715629578,
+      "confidence": 0.706,
       "words": [
         {
           "text": "Das",
-          "start": 13.0,
-          "end": 14.18,
-          "confidence": 0.779
+          "start": 13.48,
+          "end": 14.2,
+          "confidence": 0.878
         },
         {
           "text": "hat",
-          "start": 14.18,
-          "end": 14.38,
-          "confidence": 0.824
+          "start": 14.2,
+          "end": 14.36,
+          "confidence": 0.673
         },
         {
           "text": "er",
-          "start": 14.38,
-          "end": 14.56,
-          "confidence": 0.991
+          "start": 14.36,
+          "end": 14.5,
+          "confidence": 0.974
         },
         {
           "text": "als",
-          "start": 14.56,
+          "start": 14.5,
           "end": 14.72,
-          "confidence": 0.944
+          "confidence": 0.971
         },
         {
-          "text": "Emeritus...",
+          "text": "Emeritor...",
           "start": 14.72,
-          "end": 15.2,
-          "confidence": 0.341
+          "end": 15.44,
+          "confidence": 0.471
         }
       ]
     }

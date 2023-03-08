@@ -1,5 +1,5 @@
 {
-  "text": " Bonjour! Est-ce que vous allez bien? Bonjour! Est-ce que vous allez bien?",
+  "text": " Bonjour! Est-ce que vous allez bien? Bonjour! Esque vous allez bien!",
   "segments": [
     {
       "id": 0,
@@ -12,7 +12,7 @@
         2298
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.7726690928141277,
+      "avg_logprob": -0.7725919087727865,
       "compression_ratio": 0.8181818181818182,
       "no_speech_prob": 0.042649365961551666,
       "confidence": 0.69,
@@ -26,13 +26,12 @@
       ]
     },
     {
-      "id": 1,
-      "seek": 148,
-      "start": 1.84,
-      "end": 3.02,
+      "id": 0,
+      "seek": 0,
+      "start": 1.88,
+      "end": 3.0,
       "text": " Est-ce que vous allez bien?",
       "tokens": [
-        50364,
         4410,
         12,
         384,
@@ -40,30 +39,29 @@
         2630,
         18146,
         3610,
-        2506,
-        50464
+        2506
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.480386040427468,
-      "compression_ratio": 0.7714285714285715,
-      "no_speech_prob": 0.04199185222387314,
-      "confidence": 0.633,
+      "avg_logprob": -0.7725919087727865,
+      "compression_ratio": 0.8181818181818182,
+      "no_speech_prob": 0.042649365961551666,
+      "confidence": 0.68,
       "words": [
         {
           "text": "Est-ce",
-          "start": 1.84,
+          "start": 1.88,
           "end": 2.2,
-          "confidence": 0.549
+          "confidence": 0.666
         },
         {
           "text": "que",
           "start": 2.2,
-          "end": 2.26,
-          "confidence": 0.849
+          "end": 2.24,
+          "confidence": 0.873
         },
         {
           "text": "vous",
-          "start": 2.26,
+          "start": 2.24,
           "end": 2.36,
           "confidence": 0.993
         },
@@ -71,93 +69,83 @@
           "text": "allez",
           "start": 2.36,
           "end": 2.56,
-          "confidence": 0.299
+          "confidence": 0.269
         },
         {
           "text": "bien?",
           "start": 2.56,
-          "end": 3.02,
-          "confidence": 0.979
+          "end": 3.0,
+          "confidence": 0.973
         }
       ]
     },
     {
       "id": 2,
-      "seek": 3148,
-      "start": 32.96,
-      "end": 33.3,
+      "seek": 3000,
+      "start": 30.98,
+      "end": 31.0,
       "text": " Bonjour!",
       "tokens": [
         25431,
         2298
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3405381520589193,
-      "compression_ratio": 0.8181818181818182,
-      "no_speech_prob": 0.5542086958885193,
-      "confidence": 0.918,
+      "avg_logprob": -0.8873467078575721,
+      "compression_ratio": 0.7948717948717948,
+      "no_speech_prob": 0.43020471930503845,
+      "confidence": 0.924,
       "words": [
         {
           "text": "Bonjour!",
-          "start": 32.96,
-          "end": 33.3,
-          "confidence": 0.918
+          "start": 30.98,
+          "end": 31.0,
+          "confidence": 0.924
         }
       ]
     },
     {
-      "id": 4,
-      "seek": 3448,
-      "start": 34.48,
-      "end": 35.56,
-      "text": " Est-ce que vous allez bien?",
+      "id": 2,
+      "seek": 3000,
+      "start": 33.04,
+      "end": 35.48,
+      "text": " Esque vous allez bien!",
       "tokens": [
-        50364,
-        4410,
-        12,
-        384,
-        631,
+        2313,
+        1077,
         2630,
         18146,
         3610,
-        2506,
-        50464
+        2298
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.17275135083632034,
-      "compression_ratio": 0.7714285714285715,
-      "no_speech_prob": 0.5836873650550842,
-      "confidence": 0.871,
+      "avg_logprob": -0.8873467078575721,
+      "compression_ratio": 0.7948717948717948,
+      "no_speech_prob": 0.43020471930503845,
+      "confidence": 0.586,
       "words": [
         {
-          "text": "Est-ce",
-          "start": 34.48,
-          "end": 34.7,
-          "confidence": 0.741
-        },
-        {
-          "text": "que",
-          "start": 34.7,
-          "end": 34.8,
-          "confidence": 0.979
+          "text": "Esque",
+          "start": 33.04,
+          "end": 34.76,
+          "confidence": 0.275
         },
         {
           "text": "vous",
-          "start": 34.8,
+          "start": 34.76,
           "end": 34.9,
-          "confidence": 0.999
+          "confidence": 0.994
         },
         {
           "text": "allez",
           "start": 34.9,
-          "end": 35.1,
-          "confidence": 0.959
+          "end": 35.08,
+          "confidence": 0.92
         },
         {
-          "text": "bien?",
-          "start": 35.1,
-          "end": 35.56,
-          "confidence": 1.0
+          "text": "bien!",
+          "start": 35.08,
+          "end": 35.48,
+          "confidence": 0.999
         }
       ]
     }

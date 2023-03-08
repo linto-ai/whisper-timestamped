@@ -1,5 +1,5 @@
 {
-  "text": " I'm all around my business and we got a recommendation for you on your door to the VA We have 18A's Okay, okay, I think I'll just get him or if they like just want to go on the Yeah, now what you want is on having a B1 And you just get the other one on my I Yeah, we're We want to hear that We want to hear that So I guess I'm working on business Yeah",
+  "text": " I'm all around my business and we got a recommendation for you on your door to the VA We have 18A's Okay, okay, I think I'll just get him or if they like just want to go on the Yeah, now what you want is on having a B1 And you just get the other one on my Now when we're here, we're going to go on I got that I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to go on the I'm going to",
   "segments": [
     {
       "id": 0,
@@ -29,7 +29,7 @@
         18527
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.1823576222295347,
+      "avg_logprob": -1.1823511538298235,
       "compression_ratio": 1.52020202020202,
       "no_speech_prob": 0.3504664897918701,
       "confidence": 0.324,
@@ -145,7 +145,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 0,
       "seek": 0,
       "start": 5.36,
       "end": 6.94,
@@ -158,7 +158,7 @@
         311
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.1823576222295347,
+      "avg_logprob": -1.1823511538298235,
       "compression_ratio": 1.52020202020202,
       "no_speech_prob": 0.3504664897918701,
       "confidence": 0.175,
@@ -184,7 +184,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 0,
       "seek": 0,
       "start": 10.92,
       "end": 16.79,
@@ -213,7 +213,7 @@
         264
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.1823576222295347,
+      "avg_logprob": -1.1823511538298235,
       "compression_ratio": 1.52020202020202,
       "no_speech_prob": 0.3504664897918701,
       "confidence": 0.326,
@@ -329,7 +329,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 0,
       "seek": 0,
       "start": 16.79,
       "end": 19.0,
@@ -349,7 +349,7 @@
         16
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.1823576222295347,
+      "avg_logprob": -1.1823511538298235,
       "compression_ratio": 1.52020202020202,
       "no_speech_prob": 0.3504664897918701,
       "confidence": 0.472,
@@ -400,7 +400,7 @@
           "text": "having",
           "start": 18.16,
           "end": 18.44,
-          "confidence": 0.566
+          "confidence": 0.567
         },
         {
           "text": "a",
@@ -417,7 +417,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 0,
       "seek": 0,
       "start": 19.0,
       "end": 21.88,
@@ -434,7 +434,7 @@
         452
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.1823576222295347,
+      "avg_logprob": -1.1823511538298235,
       "compression_ratio": 1.52020202020202,
       "no_speech_prob": 0.3504664897918701,
       "confidence": 0.516,
@@ -496,269 +496,3172 @@
       ]
     },
     {
-      "id": 5,
-      "seek": 2196,
-      "start": 22.06,
-      "end": 25.1,
-      "text": " I",
+      "id": 0,
+      "seek": 0,
+      "start": 22.12,
+      "end": 25.34,
+      "text": " Now when we're here, we're going to go on",
       "tokens": [
-        50364,
-        286,
-        50864
+        823,
+        562,
+        321,
+        434,
+        510,
+        11,
+        321,
+        434,
+        516,
+        281,
+        352,
+        322,
+        264
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.8049055337905884,
-      "compression_ratio": 0.1111111111111111,
-      "no_speech_prob": 0.07337585091590881,
-      "confidence": 0.064,
+      "avg_logprob": -1.1823511538298235,
+      "compression_ratio": 1.52020202020202,
+      "no_speech_prob": 0.3504664897918701,
+      "confidence": 0.336,
       "words": [
         {
-          "text": "I",
-          "start": 22.06,
-          "end": 25.1,
-          "confidence": 0.064
+          "text": "Now",
+          "start": 22.12,
+          "end": 22.8,
+          "confidence": 0.168
+        },
+        {
+          "text": "when",
+          "start": 22.8,
+          "end": 23.04,
+          "confidence": 0.35
+        },
+        {
+          "text": "we're",
+          "start": 23.04,
+          "end": 23.24,
+          "confidence": 0.744
+        },
+        {
+          "text": "here,",
+          "start": 23.24,
+          "end": 23.44,
+          "confidence": 0.492
+        },
+        {
+          "text": "we're",
+          "start": 23.66,
+          "end": 23.88,
+          "confidence": 0.293
+        },
+        {
+          "text": "going",
+          "start": 23.88,
+          "end": 23.94,
+          "confidence": 0.293
+        },
+        {
+          "text": "to",
+          "start": 23.94,
+          "end": 24.38,
+          "confidence": 0.881
+        },
+        {
+          "text": "go",
+          "start": 24.38,
+          "end": 24.72,
+          "confidence": 0.119
+        },
+        {
+          "text": "on",
+          "start": 24.72,
+          "end": 25.34,
+          "confidence": 0.133
         }
       ]
     },
     {
       "id": 6,
-      "seek": 5196,
-      "start": 51.96,
-      "end": 56.92,
-      "text": " Yeah, we're",
+      "seek": 3000,
+      "start": 31.36,
+      "end": 32.42,
+      "text": " I got that",
       "tokens": [
-        865,
-        11,
-        321,
-        434
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -1.2670259475708008,
-      "compression_ratio": 1.1714285714285715,
-      "no_speech_prob": 0.16988693177700043,
-      "confidence": 0.231,
-      "words": [
-        {
-          "text": "Yeah,",
-          "start": 51.96,
-          "end": 53.3,
-          "confidence": 0.119
-        },
-        {
-          "text": "we're",
-          "start": 53.68,
-          "end": 56.92,
-          "confidence": 0.323
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "seek": 5196,
-      "start": 58.46,
-      "end": 64.13,
-      "text": " We want to hear that",
-      "tokens": [
-        492,
-        528,
-        281,
-        1568,
+        286,
+        658,
         300
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.2670259475708008,
-      "compression_ratio": 1.1714285714285715,
-      "no_speech_prob": 0.16988693177700043,
-      "confidence": 0.286,
+      "avg_logprob": -0.5992032080581507,
+      "compression_ratio": 6.0,
+      "no_speech_prob": 0.28837743401527405,
+      "confidence": 0.245,
       "words": [
-        {
-          "text": "We",
-          "start": 58.46,
-          "end": 61.84,
-          "confidence": 0.211
-        },
-        {
-          "text": "want",
-          "start": 61.84,
-          "end": 63.58,
-          "confidence": 0.258
-        },
-        {
-          "text": "to",
-          "start": 63.58,
-          "end": 63.72,
-          "confidence": 0.261
-        },
-        {
-          "text": "hear",
-          "start": 63.72,
-          "end": 63.8,
-          "confidence": 0.168
-        },
-        {
-          "text": "that",
-          "start": 63.8,
-          "end": 64.13,
-          "confidence": 0.81
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "seek": 5196,
-      "start": 64.13,
-      "end": 68.32,
-      "text": " We want to hear that",
-      "tokens": [
-        492,
-        528,
-        281,
-        1568,
-        300
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -1.2670259475708008,
-      "compression_ratio": 1.1714285714285715,
-      "no_speech_prob": 0.16988693177700043,
-      "confidence": 0.451,
-      "words": [
-        {
-          "text": "We",
-          "start": 64.13,
-          "end": 65.42,
-          "confidence": 0.24
-        },
-        {
-          "text": "want",
-          "start": 65.42,
-          "end": 67.38,
-          "confidence": 0.168
-        },
-        {
-          "text": "to",
-          "start": 67.38,
-          "end": 67.4,
-          "confidence": 0.64
-        },
-        {
-          "text": "hear",
-          "start": 67.4,
-          "end": 67.72,
-          "confidence": 0.858
-        },
-        {
-          "text": "that",
-          "start": 67.72,
-          "end": 68.32,
-          "confidence": 0.837
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "seek": 5196,
-      "start": 68.32,
-      "end": 71.44,
-      "text": " So I guess I'm working on",
-      "tokens": [
-        407,
-        286,
-        2041,
-        286,
-        478,
-        1364,
-        322,
-        452
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -1.2670259475708008,
-      "compression_ratio": 1.1714285714285715,
-      "no_speech_prob": 0.16988693177700043,
-      "confidence": 0.276,
-      "words": [
-        {
-          "text": "So",
-          "start": 68.32,
-          "end": 69.66,
-          "confidence": 0.2
-        },
         {
           "text": "I",
-          "start": 69.66,
-          "end": 70.52,
-          "confidence": 0.635
+          "start": 31.36,
+          "end": 31.66,
+          "confidence": 0.183
         },
         {
-          "text": "guess",
-          "start": 70.52,
-          "end": 70.78,
-          "confidence": 0.233
+          "text": "got",
+          "start": 31.66,
+          "end": 32.0,
+          "confidence": 0.574
         },
+        {
+          "text": "that",
+          "start": 32.0,
+          "end": 32.42,
+          "confidence": 0.139
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "seek": 3000,
+      "start": 38.0,
+      "end": 38.62,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5992032080581507,
+      "compression_ratio": 6.0,
+      "no_speech_prob": 0.28837743401527405,
+      "confidence": 0.258,
+      "words": [
         {
           "text": "I'm",
-          "start": 70.78,
-          "end": 71.3,
-          "confidence": 0.3
+          "start": 38.0,
+          "end": 38.1,
+          "confidence": 0.169
         },
         {
-          "text": "working",
-          "start": 71.3,
-          "end": 71.32,
-          "confidence": 0.249
+          "text": "going",
+          "start": 38.1,
+          "end": 38.18,
+          "confidence": 0.405
+        },
+        {
+          "text": "to",
+          "start": 38.18,
+          "end": 38.2,
+          "confidence": 0.799
+        },
+        {
+          "text": "go",
+          "start": 38.2,
+          "end": 38.22,
+          "confidence": 0.135
         },
         {
           "text": "on",
-          "start": 71.32,
-          "end": 71.44,
-          "confidence": 0.294
+          "start": 38.22,
+          "end": 38.36,
+          "confidence": 0.32
+        },
+        {
+          "text": "the",
+          "start": 38.36,
+          "end": 38.62,
+          "confidence": 0.193
         }
       ]
     },
     {
-      "id": 10,
-      "seek": 7096,
-      "start": 71.44,
-      "end": 72.04,
-      "text": " business",
+      "id": 6,
+      "seek": 3000,
+      "start": 39.92,
+      "end": 41.76,
+      "text": " I'm going to go on the",
       "tokens": [
-        1606
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.236487524850028,
-      "compression_ratio": 0.6190476190476191,
-      "no_speech_prob": 0.0952218696475029,
-      "confidence": 0.078,
+      "avg_logprob": -0.5992032080581507,
+      "compression_ratio": 6.0,
+      "no_speech_prob": 0.28837743401527405,
+      "confidence": 0.477,
       "words": [
         {
-          "text": "business",
-          "start": 71.44,
-          "end": 72.04,
-          "confidence": 0.078
+          "text": "I'm",
+          "start": 39.92,
+          "end": 40.52,
+          "confidence": 0.312
+        },
+        {
+          "text": "going",
+          "start": 40.52,
+          "end": 40.54,
+          "confidence": 0.604
+        },
+        {
+          "text": "to",
+          "start": 40.54,
+          "end": 40.92,
+          "confidence": 0.748
+        },
+        {
+          "text": "go",
+          "start": 40.92,
+          "end": 41.56,
+          "confidence": 0.262
+        },
+        {
+          "text": "on",
+          "start": 41.56,
+          "end": 41.74,
+          "confidence": 0.799
+        },
+        {
+          "text": "the",
+          "start": 41.74,
+          "end": 41.76,
+          "confidence": 0.608
         }
       ]
     },
     {
-      "id": 11,
-      "seek": 8396,
-      "start": 84.94,
-      "end": 89.0,
-      "text": " Yeah",
+      "id": 6,
+      "seek": 3000,
+      "start": 41.76,
+      "end": 44.52,
+      "text": " I'm going to go on the",
       "tokens": [
-        50364,
-        865,
-        50714
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.0967516899108887,
-      "compression_ratio": 0.3333333333333333,
-      "no_speech_prob": 0.43369942903518677,
-      "confidence": 0.162,
+      "avg_logprob": -0.5992032080581507,
+      "compression_ratio": 6.0,
+      "no_speech_prob": 0.28837743401527405,
+      "confidence": 0.668,
       "words": [
         {
-          "text": "Yeah",
-          "start": 84.94,
-          "end": 89.0,
-          "confidence": 0.162
+          "text": "I'm",
+          "start": 41.76,
+          "end": 43.62,
+          "confidence": 0.516
+        },
+        {
+          "text": "going",
+          "start": 43.62,
+          "end": 44.12,
+          "confidence": 0.756
+        },
+        {
+          "text": "to",
+          "start": 44.12,
+          "end": 44.4,
+          "confidence": 0.855
+        },
+        {
+          "text": "go",
+          "start": 44.4,
+          "end": 44.48,
+          "confidence": 0.611
+        },
+        {
+          "text": "on",
+          "start": 44.48,
+          "end": 44.5,
+          "confidence": 0.814
+        },
+        {
+          "text": "the",
+          "start": 44.5,
+          "end": 44.52,
+          "confidence": 0.692
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "seek": 3000,
+      "start": 44.52,
+      "end": 44.9,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5992032080581507,
+      "compression_ratio": 6.0,
+      "no_speech_prob": 0.28837743401527405,
+      "confidence": 0.734,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 44.52,
+          "end": 44.7,
+          "confidence": 0.701
+        },
+        {
+          "text": "going",
+          "start": 44.7,
+          "end": 44.72,
+          "confidence": 0.738
+        },
+        {
+          "text": "to",
+          "start": 44.72,
+          "end": 44.74,
+          "confidence": 0.898
+        },
+        {
+          "text": "go",
+          "start": 44.74,
+          "end": 44.86,
+          "confidence": 0.662
+        },
+        {
+          "text": "on",
+          "start": 44.86,
+          "end": 44.88,
+          "confidence": 0.763
+        },
+        {
+          "text": "the",
+          "start": 44.88,
+          "end": 44.9,
+          "confidence": 0.697
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "seek": 3000,
+      "start": 46.3,
+      "end": 47.28,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5992032080581507,
+      "compression_ratio": 6.0,
+      "no_speech_prob": 0.28837743401527405,
+      "confidence": 0.792,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 46.3,
+          "end": 46.52,
+          "confidence": 0.792
+        },
+        {
+          "text": "going",
+          "start": 46.52,
+          "end": 46.64,
+          "confidence": 0.79
+        },
+        {
+          "text": "to",
+          "start": 46.64,
+          "end": 46.92,
+          "confidence": 0.911
+        },
+        {
+          "text": "go",
+          "start": 46.92,
+          "end": 47.18,
+          "confidence": 0.757
+        },
+        {
+          "text": "on",
+          "start": 47.18,
+          "end": 47.26,
+          "confidence": 0.771
+        },
+        {
+          "text": "the",
+          "start": 47.26,
+          "end": 47.28,
+          "confidence": 0.741
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "seek": 3000,
+      "start": 48.5,
+      "end": 49.46,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5992032080581507,
+      "compression_ratio": 6.0,
+      "no_speech_prob": 0.28837743401527405,
+      "confidence": 0.811,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 48.5,
+          "end": 49.0,
+          "confidence": 0.793
+        },
+        {
+          "text": "going",
+          "start": 49.0,
+          "end": 49.22,
+          "confidence": 0.774
+        },
+        {
+          "text": "to",
+          "start": 49.22,
+          "end": 49.4,
+          "confidence": 0.925
+        },
+        {
+          "text": "go",
+          "start": 49.4,
+          "end": 49.42,
+          "confidence": 0.8
+        },
+        {
+          "text": "on",
+          "start": 49.42,
+          "end": 49.44,
+          "confidence": 0.807
+        },
+        {
+          "text": "the",
+          "start": 49.44,
+          "end": 49.46,
+          "confidence": 0.797
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "seek": 3000,
+      "start": 51.48,
+      "end": 52.28,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5992032080581507,
+      "compression_ratio": 6.0,
+      "no_speech_prob": 0.28837743401527405,
+      "confidence": 0.823,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 51.48,
+          "end": 51.58,
+          "confidence": 0.761
+        },
+        {
+          "text": "going",
+          "start": 51.58,
+          "end": 51.82,
+          "confidence": 0.839
+        },
+        {
+          "text": "to",
+          "start": 51.82,
+          "end": 51.94,
+          "confidence": 0.915
+        },
+        {
+          "text": "go",
+          "start": 51.94,
+          "end": 52.08,
+          "confidence": 0.835
+        },
+        {
+          "text": "on",
+          "start": 52.08,
+          "end": 52.14,
+          "confidence": 0.867
+        },
+        {
+          "text": "the",
+          "start": 52.14,
+          "end": 52.28,
+          "confidence": 0.792
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "seek": 3000,
+      "start": 53.14,
+      "end": 54.52,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5992032080581507,
+      "compression_ratio": 6.0,
+      "no_speech_prob": 0.28837743401527405,
+      "confidence": 0.809,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 53.14,
+          "end": 53.48,
+          "confidence": 0.767
+        },
+        {
+          "text": "going",
+          "start": 53.48,
+          "end": 53.72,
+          "confidence": 0.842
+        },
+        {
+          "text": "to",
+          "start": 53.72,
+          "end": 54.02,
+          "confidence": 0.912
+        },
+        {
+          "text": "go",
+          "start": 54.02,
+          "end": 54.14,
+          "confidence": 0.822
+        },
+        {
+          "text": "on",
+          "start": 54.14,
+          "end": 54.38,
+          "confidence": 0.77
+        },
+        {
+          "text": "the",
+          "start": 54.38,
+          "end": 54.52,
+          "confidence": 0.794
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "seek": 3000,
+      "start": 54.52,
+      "end": 57.52,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5992032080581507,
+      "compression_ratio": 6.0,
+      "no_speech_prob": 0.28837743401527405,
+      "confidence": 0.84,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 54.52,
+          "end": 56.1,
+          "confidence": 0.81
+        },
+        {
+          "text": "going",
+          "start": 56.1,
+          "end": 56.68,
+          "confidence": 0.89
+        },
+        {
+          "text": "to",
+          "start": 56.68,
+          "end": 57.44,
+          "confidence": 0.871
+        },
+        {
+          "text": "go",
+          "start": 57.44,
+          "end": 57.48,
+          "confidence": 0.828
+        },
+        {
+          "text": "on",
+          "start": 57.48,
+          "end": 57.5,
+          "confidence": 0.873
+        },
+        {
+          "text": "the",
+          "start": 57.5,
+          "end": 57.52,
+          "confidence": 0.805
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "seek": 3000,
+      "start": 57.52,
+      "end": 59.46,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5992032080581507,
+      "compression_ratio": 6.0,
+      "no_speech_prob": 0.28837743401527405,
+      "confidence": 0.805,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 57.52,
+          "end": 57.58,
+          "confidence": 0.68
+        },
+        {
+          "text": "going",
+          "start": 57.58,
+          "end": 57.6,
+          "confidence": 0.888
+        },
+        {
+          "text": "to",
+          "start": 57.6,
+          "end": 57.62,
+          "confidence": 0.854
+        },
+        {
+          "text": "go",
+          "start": 57.62,
+          "end": 57.78,
+          "confidence": 0.843
+        },
+        {
+          "text": "on",
+          "start": 57.78,
+          "end": 59.12,
+          "confidence": 0.906
+        },
+        {
+          "text": "the",
+          "start": 59.12,
+          "end": 59.46,
+          "confidence": 0.82
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 5900,
+      "start": 59.46,
+      "end": 61.5,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16692749160287626,
+      "compression_ratio": 15.324324324324325,
+      "no_speech_prob": 0.25189337134361267,
+      "confidence": 0.877,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 59.46,
+          "end": 60.22,
+          "confidence": 0.908
+        },
+        {
+          "text": "going",
+          "start": 60.22,
+          "end": 60.28,
+          "confidence": 0.959
+        },
+        {
+          "text": "to",
+          "start": 60.28,
+          "end": 60.74,
+          "confidence": 0.854
+        },
+        {
+          "text": "go",
+          "start": 60.74,
+          "end": 61.04,
+          "confidence": 0.906
+        },
+        {
+          "text": "on",
+          "start": 61.04,
+          "end": 61.48,
+          "confidence": 0.925
+        },
+        {
+          "text": "the",
+          "start": 61.48,
+          "end": 61.5,
+          "confidence": 0.703
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 5900,
+      "start": 61.5,
+      "end": 62.5,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16692749160287626,
+      "compression_ratio": 15.324324324324325,
+      "no_speech_prob": 0.25189337134361267,
+      "confidence": 0.887,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 61.5,
+          "end": 61.52,
+          "confidence": 0.881
+        },
+        {
+          "text": "going",
+          "start": 61.52,
+          "end": 61.54,
+          "confidence": 0.97
+        },
+        {
+          "text": "to",
+          "start": 61.54,
+          "end": 61.56,
+          "confidence": 0.896
+        },
+        {
+          "text": "go",
+          "start": 61.56,
+          "end": 61.72,
+          "confidence": 0.913
+        },
+        {
+          "text": "on",
+          "start": 61.72,
+          "end": 62.48,
+          "confidence": 0.902
+        },
+        {
+          "text": "the",
+          "start": 62.48,
+          "end": 62.5,
+          "confidence": 0.775
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 5900,
+      "start": 62.5,
+      "end": 62.92,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16692749160287626,
+      "compression_ratio": 15.324324324324325,
+      "no_speech_prob": 0.25189337134361267,
+      "confidence": 0.893,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 62.5,
+          "end": 62.52,
+          "confidence": 0.875
+        },
+        {
+          "text": "going",
+          "start": 62.52,
+          "end": 62.84,
+          "confidence": 0.96
+        },
+        {
+          "text": "to",
+          "start": 62.84,
+          "end": 62.86,
+          "confidence": 0.924
+        },
+        {
+          "text": "go",
+          "start": 62.86,
+          "end": 62.88,
+          "confidence": 0.916
+        },
+        {
+          "text": "on",
+          "start": 62.88,
+          "end": 62.9,
+          "confidence": 0.927
+        },
+        {
+          "text": "the",
+          "start": 62.9,
+          "end": 62.92,
+          "confidence": 0.784
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 5900,
+      "start": 62.92,
+      "end": 64.08,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16692749160287626,
+      "compression_ratio": 15.324324324324325,
+      "no_speech_prob": 0.25189337134361267,
+      "confidence": 0.918,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 62.92,
+          "end": 63.32,
+          "confidence": 0.901
+        },
+        {
+          "text": "going",
+          "start": 63.32,
+          "end": 63.42,
+          "confidence": 0.967
+        },
+        {
+          "text": "to",
+          "start": 63.42,
+          "end": 63.7,
+          "confidence": 0.96
+        },
+        {
+          "text": "go",
+          "start": 63.7,
+          "end": 63.82,
+          "confidence": 0.929
+        },
+        {
+          "text": "on",
+          "start": 63.82,
+          "end": 63.84,
+          "confidence": 0.956
+        },
+        {
+          "text": "the",
+          "start": 63.84,
+          "end": 64.08,
+          "confidence": 0.82
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 5900,
+      "start": 64.5,
+      "end": 66.91,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16692749160287626,
+      "compression_ratio": 15.324324324324325,
+      "no_speech_prob": 0.25189337134361267,
+      "confidence": 0.918,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 64.5,
+          "end": 65.5,
+          "confidence": 0.906
+        },
+        {
+          "text": "going",
+          "start": 65.5,
+          "end": 65.52,
+          "confidence": 0.972
+        },
+        {
+          "text": "to",
+          "start": 65.52,
+          "end": 65.6,
+          "confidence": 0.957
+        },
+        {
+          "text": "go",
+          "start": 65.6,
+          "end": 65.62,
+          "confidence": 0.922
+        },
+        {
+          "text": "on",
+          "start": 65.62,
+          "end": 66.88,
+          "confidence": 0.957
+        },
+        {
+          "text": "the",
+          "start": 66.88,
+          "end": 66.91,
+          "confidence": 0.816
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 5900,
+      "start": 66.91,
+      "end": 67.62,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16692749160287626,
+      "compression_ratio": 15.324324324324325,
+      "no_speech_prob": 0.25189337134361267,
+      "confidence": 0.911,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 66.91,
+          "end": 67.14,
+          "confidence": 0.909
+        },
+        {
+          "text": "going",
+          "start": 67.14,
+          "end": 67.16,
+          "confidence": 0.962
+        },
+        {
+          "text": "to",
+          "start": 67.16,
+          "end": 67.18,
+          "confidence": 0.957
+        },
+        {
+          "text": "go",
+          "start": 67.18,
+          "end": 67.5,
+          "confidence": 0.903
+        },
+        {
+          "text": "on",
+          "start": 67.5,
+          "end": 67.52,
+          "confidence": 0.948
+        },
+        {
+          "text": "the",
+          "start": 67.52,
+          "end": 67.62,
+          "confidence": 0.797
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 5900,
+      "start": 68.34,
+      "end": 69.2,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16692749160287626,
+      "compression_ratio": 15.324324324324325,
+      "no_speech_prob": 0.25189337134361267,
+      "confidence": 0.902,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 68.34,
+          "end": 68.46,
+          "confidence": 0.886
+        },
+        {
+          "text": "going",
+          "start": 68.46,
+          "end": 68.68,
+          "confidence": 0.957
+        },
+        {
+          "text": "to",
+          "start": 68.68,
+          "end": 68.72,
+          "confidence": 0.964
+        },
+        {
+          "text": "go",
+          "start": 68.72,
+          "end": 68.88,
+          "confidence": 0.884
+        },
+        {
+          "text": "on",
+          "start": 68.88,
+          "end": 69.18,
+          "confidence": 0.942
+        },
+        {
+          "text": "the",
+          "start": 69.18,
+          "end": 69.2,
+          "confidence": 0.806
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 5900,
+      "start": 69.2,
+      "end": 70.48,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16692749160287626,
+      "compression_ratio": 15.324324324324325,
+      "no_speech_prob": 0.25189337134361267,
+      "confidence": 0.903,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 69.2,
+          "end": 69.6,
+          "confidence": 0.9
+        },
+        {
+          "text": "going",
+          "start": 69.6,
+          "end": 69.62,
+          "confidence": 0.964
+        },
+        {
+          "text": "to",
+          "start": 69.62,
+          "end": 69.64,
+          "confidence": 0.956
+        },
+        {
+          "text": "go",
+          "start": 69.64,
+          "end": 69.7,
+          "confidence": 0.879
+        },
+        {
+          "text": "on",
+          "start": 69.7,
+          "end": 70.4,
+          "confidence": 0.946
+        },
+        {
+          "text": "the",
+          "start": 70.4,
+          "end": 70.48,
+          "confidence": 0.786
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 5900,
+      "start": 70.48,
+      "end": 71.48,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16692749160287626,
+      "compression_ratio": 15.324324324324325,
+      "no_speech_prob": 0.25189337134361267,
+      "confidence": 0.899,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 70.48,
+          "end": 70.7,
+          "confidence": 0.894
+        },
+        {
+          "text": "going",
+          "start": 70.7,
+          "end": 70.72,
+          "confidence": 0.96
+        },
+        {
+          "text": "to",
+          "start": 70.72,
+          "end": 70.84,
+          "confidence": 0.95
+        },
+        {
+          "text": "go",
+          "start": 70.84,
+          "end": 71.12,
+          "confidence": 0.866
+        },
+        {
+          "text": "on",
+          "start": 71.12,
+          "end": 71.2,
+          "confidence": 0.945
+        },
+        {
+          "text": "the",
+          "start": 71.2,
+          "end": 71.48,
+          "confidence": 0.793
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 5900,
+      "start": 71.48,
+      "end": 71.63,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16692749160287626,
+      "compression_ratio": 15.324324324324325,
+      "no_speech_prob": 0.25189337134361267,
+      "confidence": 0.903,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 71.48,
+          "end": 71.5,
+          "confidence": 0.893
+        },
+        {
+          "text": "going",
+          "start": 71.5,
+          "end": 71.52,
+          "confidence": 0.961
+        },
+        {
+          "text": "to",
+          "start": 71.52,
+          "end": 71.54,
+          "confidence": 0.957
+        },
+        {
+          "text": "go",
+          "start": 71.54,
+          "end": 71.56,
+          "confidence": 0.882
+        },
+        {
+          "text": "on",
+          "start": 71.56,
+          "end": 71.58,
+          "confidence": 0.951
+        },
+        {
+          "text": "the",
+          "start": 71.58,
+          "end": 71.63,
+          "confidence": 0.798
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 5900,
+      "start": 71.63,
+      "end": 72.8,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16692749160287626,
+      "compression_ratio": 15.324324324324325,
+      "no_speech_prob": 0.25189337134361267,
+      "confidence": 0.909,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 71.63,
+          "end": 71.65,
+          "confidence": 0.906
+        },
+        {
+          "text": "going",
+          "start": 71.65,
+          "end": 71.86,
+          "confidence": 0.962
+        },
+        {
+          "text": "to",
+          "start": 71.86,
+          "end": 71.96,
+          "confidence": 0.954
+        },
+        {
+          "text": "go",
+          "start": 71.96,
+          "end": 72.44,
+          "confidence": 0.884
+        },
+        {
+          "text": "on",
+          "start": 72.44,
+          "end": 72.78,
+          "confidence": 0.948
+        },
+        {
+          "text": "the",
+          "start": 72.78,
+          "end": 72.8,
+          "confidence": 0.815
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 5900,
+      "start": 72.8,
+      "end": 74.5,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16692749160287626,
+      "compression_ratio": 15.324324324324325,
+      "no_speech_prob": 0.25189337134361267,
+      "confidence": 0.896,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 72.8,
+          "end": 74.12,
+          "confidence": 0.876
+        },
+        {
+          "text": "going",
+          "start": 74.12,
+          "end": 74.14,
+          "confidence": 0.952
+        },
+        {
+          "text": "to",
+          "start": 74.14,
+          "end": 74.16,
+          "confidence": 0.954
+        },
+        {
+          "text": "go",
+          "start": 74.16,
+          "end": 74.18,
+          "confidence": 0.877
+        },
+        {
+          "text": "on",
+          "start": 74.18,
+          "end": 74.48,
+          "confidence": 0.945
+        },
+        {
+          "text": "the",
+          "start": 74.48,
+          "end": 74.5,
+          "confidence": 0.805
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 5900,
+      "start": 74.5,
+      "end": 75.48,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16692749160287626,
+      "compression_ratio": 15.324324324324325,
+      "no_speech_prob": 0.25189337134361267,
+      "confidence": 0.9,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 74.5,
+          "end": 74.84,
+          "confidence": 0.896
+        },
+        {
+          "text": "going",
+          "start": 74.84,
+          "end": 74.86,
+          "confidence": 0.951
+        },
+        {
+          "text": "to",
+          "start": 74.86,
+          "end": 74.88,
+          "confidence": 0.956
+        },
+        {
+          "text": "go",
+          "start": 74.88,
+          "end": 75.02,
+          "confidence": 0.881
+        },
+        {
+          "text": "on",
+          "start": 75.02,
+          "end": 75.22,
+          "confidence": 0.945
+        },
+        {
+          "text": "the",
+          "start": 75.22,
+          "end": 75.48,
+          "confidence": 0.786
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 5900,
+      "start": 75.48,
+      "end": 76.26,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16692749160287626,
+      "compression_ratio": 15.324324324324325,
+      "no_speech_prob": 0.25189337134361267,
+      "confidence": 0.909,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 75.48,
+          "end": 75.5,
+          "confidence": 0.911
+        },
+        {
+          "text": "going",
+          "start": 75.5,
+          "end": 75.54,
+          "confidence": 0.957
+        },
+        {
+          "text": "to",
+          "start": 75.54,
+          "end": 75.92,
+          "confidence": 0.96
+        },
+        {
+          "text": "go",
+          "start": 75.92,
+          "end": 76.14,
+          "confidence": 0.885
+        },
+        {
+          "text": "on",
+          "start": 76.14,
+          "end": 76.16,
+          "confidence": 0.947
+        },
+        {
+          "text": "the",
+          "start": 76.16,
+          "end": 76.26,
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 5900,
+      "start": 76.0,
+      "end": 77.22,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16692749160287626,
+      "compression_ratio": 15.324324324324325,
+      "no_speech_prob": 0.25189337134361267,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 76.26,
+          "end": 76.64,
+          "confidence": 0.929
+        },
+        {
+          "text": "going",
+          "start": 76.64,
+          "end": 76.78,
+          "confidence": 0.962
+        },
+        {
+          "text": "to",
+          "start": 76.78,
+          "end": 76.9,
+          "confidence": 0.96
+        },
+        {
+          "text": "go",
+          "start": 76.9,
+          "end": 77.18,
+          "confidence": 0.9
+        },
+        {
+          "text": "on",
+          "start": 77.18,
+          "end": 77.2,
+          "confidence": 0.949
+        },
+        {
+          "text": "the",
+          "start": 77.2,
+          "end": 77.22,
+          "confidence": 0.849
+        }
+      ],
+      "confidence": 0.924
+    },
+    {
+      "id": 17,
+      "seek": 5900,
+      "start": 77.22,
+      "end": 77.34,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16692749160287626,
+      "compression_ratio": 15.324324324324325,
+      "no_speech_prob": 0.25189337134361267,
+      "confidence": 0.927,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 77.22,
+          "end": 77.24,
+          "confidence": 0.932
+        },
+        {
+          "text": "going",
+          "start": 77.24,
+          "end": 77.26,
+          "confidence": 0.963
+        },
+        {
+          "text": "to",
+          "start": 77.26,
+          "end": 77.28,
+          "confidence": 0.965
+        },
+        {
+          "text": "go",
+          "start": 77.28,
+          "end": 77.3,
+          "confidence": 0.905
+        },
+        {
+          "text": "on",
+          "start": 77.3,
+          "end": 77.32,
+          "confidence": 0.95
+        },
+        {
+          "text": "the",
+          "start": 77.32,
+          "end": 77.34,
+          "confidence": 0.845
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 5900,
+      "start": 77.34,
+      "end": 77.54,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16692749160287626,
+      "compression_ratio": 15.324324324324325,
+      "no_speech_prob": 0.25189337134361267,
+      "confidence": 0.927,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 77.34,
+          "end": 77.36,
+          "confidence": 0.932
+        },
+        {
+          "text": "going",
+          "start": 77.36,
+          "end": 77.38,
+          "confidence": 0.964
+        },
+        {
+          "text": "to",
+          "start": 77.38,
+          "end": 77.4,
+          "confidence": 0.96
+        },
+        {
+          "text": "go",
+          "start": 77.4,
+          "end": 77.42,
+          "confidence": 0.908
+        },
+        {
+          "text": "on",
+          "start": 77.42,
+          "end": 77.46,
+          "confidence": 0.952
+        },
+        {
+          "text": "the",
+          "start": 77.46,
+          "end": 77.54,
+          "confidence": 0.843
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 5900,
+      "start": 78.0,
+      "end": 78.77,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16692749160287626,
+      "compression_ratio": 15.324324324324325,
+      "no_speech_prob": 0.25189337134361267,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 78.08,
+          "end": 78.28,
+          "confidence": 0.934
+        },
+        {
+          "text": "going",
+          "start": 78.28,
+          "end": 78.3,
+          "confidence": 0.963
+        },
+        {
+          "text": "to",
+          "start": 78.3,
+          "end": 78.32,
+          "confidence": 0.956
+        },
+        {
+          "text": "go",
+          "start": 78.32,
+          "end": 78.34,
+          "confidence": 0.904
+        },
+        {
+          "text": "on",
+          "start": 78.34,
+          "end": 78.72,
+          "confidence": 0.949
+        },
+        {
+          "text": "the",
+          "start": 78.72,
+          "end": 78.77,
+          "confidence": 0.825
+        }
+      ],
+      "confidence": 0.923
+    },
+    {
+      "id": 17,
+      "seek": 5900,
+      "start": 78.77,
+      "end": 79.54,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16692749160287626,
+      "compression_ratio": 15.324324324324325,
+      "no_speech_prob": 0.25189337134361267,
+      "confidence": 0.924,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 78.77,
+          "end": 78.79,
+          "confidence": 0.939
+        },
+        {
+          "text": "going",
+          "start": 78.79,
+          "end": 78.81,
+          "confidence": 0.965
+        },
+        {
+          "text": "to",
+          "start": 78.81,
+          "end": 79.48,
+          "confidence": 0.959
+        },
+        {
+          "text": "go",
+          "start": 79.48,
+          "end": 79.5,
+          "confidence": 0.908
+        },
+        {
+          "text": "on",
+          "start": 79.5,
+          "end": 79.52,
+          "confidence": 0.949
+        },
+        {
+          "text": "the",
+          "start": 79.52,
+          "end": 79.54,
+          "confidence": 0.818
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 5900,
+      "start": 79.54,
+      "end": 80.4,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16692749160287626,
+      "compression_ratio": 15.324324324324325,
+      "no_speech_prob": 0.25189337134361267,
+      "confidence": 0.924,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 79.54,
+          "end": 79.56,
+          "confidence": 0.931
+        },
+        {
+          "text": "going",
+          "start": 79.56,
+          "end": 79.58,
+          "confidence": 0.967
+        },
+        {
+          "text": "to",
+          "start": 79.58,
+          "end": 80.18,
+          "confidence": 0.95
+        },
+        {
+          "text": "go",
+          "start": 80.18,
+          "end": 80.2,
+          "confidence": 0.912
+        },
+        {
+          "text": "on",
+          "start": 80.2,
+          "end": 80.22,
+          "confidence": 0.953
+        },
+        {
+          "text": "the",
+          "start": 80.22,
+          "end": 80.4,
+          "confidence": 0.829
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 5900,
+      "start": 80.0,
+      "end": 82.48,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16692749160287626,
+      "compression_ratio": 15.324324324324325,
+      "no_speech_prob": 0.25189337134361267,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 80.4,
+          "end": 80.56,
+          "confidence": 0.941
+        },
+        {
+          "text": "going",
+          "start": 80.56,
+          "end": 80.72,
+          "confidence": 0.97
+        },
+        {
+          "text": "to",
+          "start": 80.72,
+          "end": 81.04,
+          "confidence": 0.959
+        },
+        {
+          "text": "go",
+          "start": 81.04,
+          "end": 81.06,
+          "confidence": 0.922
+        },
+        {
+          "text": "on",
+          "start": 81.06,
+          "end": 81.18,
+          "confidence": 0.963
+        },
+        {
+          "text": "the",
+          "start": 81.18,
+          "end": 82.48,
+          "confidence": 0.855
+        }
+      ],
+      "confidence": 0.935
+    },
+    {
+      "id": 17,
+      "seek": 5900,
+      "start": 82.48,
+      "end": 82.6,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16692749160287626,
+      "compression_ratio": 15.324324324324325,
+      "no_speech_prob": 0.25189337134361267,
+      "confidence": 0.938,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 82.48,
+          "end": 82.5,
+          "confidence": 0.945
+        },
+        {
+          "text": "going",
+          "start": 82.5,
+          "end": 82.52,
+          "confidence": 0.967
+        },
+        {
+          "text": "to",
+          "start": 82.52,
+          "end": 82.54,
+          "confidence": 0.972
+        },
+        {
+          "text": "go",
+          "start": 82.54,
+          "end": 82.56,
+          "confidence": 0.921
+        },
+        {
+          "text": "on",
+          "start": 82.56,
+          "end": 82.58,
+          "confidence": 0.962
+        },
+        {
+          "text": "the",
+          "start": 82.58,
+          "end": 82.6,
+          "confidence": 0.858
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 5900,
+      "start": 82.0,
+      "end": 84.48,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16692749160287626,
+      "compression_ratio": 15.324324324324325,
+      "no_speech_prob": 0.25189337134361267,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 82.6,
+          "end": 83.68,
+          "confidence": 0.949
+        },
+        {
+          "text": "going",
+          "start": 83.68,
+          "end": 83.7,
+          "confidence": 0.967
+        },
+        {
+          "text": "to",
+          "start": 83.7,
+          "end": 84.12,
+          "confidence": 0.961
+        },
+        {
+          "text": "go",
+          "start": 84.12,
+          "end": 84.14,
+          "confidence": 0.91
+        },
+        {
+          "text": "on",
+          "start": 84.14,
+          "end": 84.16,
+          "confidence": 0.966
+        },
+        {
+          "text": "the",
+          "start": 84.16,
+          "end": 84.48,
+          "confidence": 0.882
+        }
+      ],
+      "confidence": 0.94
+    },
+    {
+      "id": 17,
+      "seek": 5900,
+      "start": 84.48,
+      "end": 84.6,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.16692749160287626,
+      "compression_ratio": 15.324324324324325,
+      "no_speech_prob": 0.25189337134361267,
+      "confidence": 0.937,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 84.48,
+          "end": 84.5,
+          "confidence": 0.949
+        },
+        {
+          "text": "going",
+          "start": 84.5,
+          "end": 84.52,
+          "confidence": 0.964
+        },
+        {
+          "text": "to",
+          "start": 84.52,
+          "end": 84.54,
+          "confidence": 0.959
+        },
+        {
+          "text": "go",
+          "start": 84.54,
+          "end": 84.56,
+          "confidence": 0.899
+        },
+        {
+          "text": "on",
+          "start": 84.56,
+          "end": 84.58,
+          "confidence": 0.967
+        },
+        {
+          "text": "the",
+          "start": 84.58,
+          "end": 84.6,
+          "confidence": 0.874
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "seek": 8400,
+      "start": 84.98,
+      "end": 85.88,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.15053637434796588,
+      "compression_ratio": 11.8,
+      "no_speech_prob": 0.8226786255836487,
+      "confidence": 0.897,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 84.98,
+          "end": 85.5,
+          "confidence": 0.933
+        },
+        {
+          "text": "going",
+          "start": 85.5,
+          "end": 85.6,
+          "confidence": 0.928
+        },
+        {
+          "text": "to",
+          "start": 85.6,
+          "end": 85.62,
+          "confidence": 0.91
+        },
+        {
+          "text": "go",
+          "start": 85.62,
+          "end": 85.64,
+          "confidence": 0.884
+        },
+        {
+          "text": "on",
+          "start": 85.64,
+          "end": 85.66,
+          "confidence": 0.916
+        },
+        {
+          "text": "the",
+          "start": 85.66,
+          "end": 85.88,
+          "confidence": 0.783
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "seek": 8400,
+      "start": 86.48,
+      "end": 87.24,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.15053637434796588,
+      "compression_ratio": 11.8,
+      "no_speech_prob": 0.8226786255836487,
+      "confidence": 0.911,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 86.48,
+          "end": 86.86,
+          "confidence": 0.933
+        },
+        {
+          "text": "going",
+          "start": 86.86,
+          "end": 87.0,
+          "confidence": 0.951
+        },
+        {
+          "text": "to",
+          "start": 87.0,
+          "end": 87.18,
+          "confidence": 0.953
+        },
+        {
+          "text": "go",
+          "start": 87.18,
+          "end": 87.2,
+          "confidence": 0.907
+        },
+        {
+          "text": "on",
+          "start": 87.2,
+          "end": 87.22,
+          "confidence": 0.915
+        },
+        {
+          "text": "the",
+          "start": 87.22,
+          "end": 87.24,
+          "confidence": 0.798
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "seek": 8400,
+      "start": 87.5,
+      "end": 89.16,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.15053637434796588,
+      "compression_ratio": 11.8,
+      "no_speech_prob": 0.8226786255836487,
+      "confidence": 0.925,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 87.5,
+          "end": 87.74,
+          "confidence": 0.944
+        },
+        {
+          "text": "going",
+          "start": 87.74,
+          "end": 88.4,
+          "confidence": 0.955
+        },
+        {
+          "text": "to",
+          "start": 88.4,
+          "end": 88.8,
+          "confidence": 0.968
+        },
+        {
+          "text": "go",
+          "start": 88.8,
+          "end": 88.92,
+          "confidence": 0.92
+        },
+        {
+          "text": "on",
+          "start": 88.92,
+          "end": 88.98,
+          "confidence": 0.947
+        },
+        {
+          "text": "the",
+          "start": 88.98,
+          "end": 89.16,
+          "confidence": 0.806
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "seek": 8400,
+      "start": 89.5,
+      "end": 91.99,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.15053637434796588,
+      "compression_ratio": 11.8,
+      "no_speech_prob": 0.8226786255836487,
+      "confidence": 0.906,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 89.5,
+          "end": 91.06,
+          "confidence": 0.883
+        },
+        {
+          "text": "going",
+          "start": 91.06,
+          "end": 91.08,
+          "confidence": 0.953
+        },
+        {
+          "text": "to",
+          "start": 91.08,
+          "end": 91.26,
+          "confidence": 0.952
+        },
+        {
+          "text": "go",
+          "start": 91.26,
+          "end": 91.28,
+          "confidence": 0.893
+        },
+        {
+          "text": "on",
+          "start": 91.28,
+          "end": 91.3,
+          "confidence": 0.937
+        },
+        {
+          "text": "the",
+          "start": 91.3,
+          "end": 91.99,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "seek": 8400,
+      "start": 91.99,
+      "end": 93.82,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.15053637434796588,
+      "compression_ratio": 11.8,
+      "no_speech_prob": 0.8226786255836487,
+      "confidence": 0.925,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 91.99,
+          "end": 92.96,
+          "confidence": 0.936
+        },
+        {
+          "text": "going",
+          "start": 92.96,
+          "end": 93.18,
+          "confidence": 0.958
+        },
+        {
+          "text": "to",
+          "start": 93.18,
+          "end": 93.76,
+          "confidence": 0.952
+        },
+        {
+          "text": "go",
+          "start": 93.76,
+          "end": 93.78,
+          "confidence": 0.898
+        },
+        {
+          "text": "on",
+          "start": 93.78,
+          "end": 93.8,
+          "confidence": 0.936
+        },
+        {
+          "text": "the",
+          "start": 93.8,
+          "end": 93.82,
+          "confidence": 0.865
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "seek": 8400,
+      "start": 93.82,
+      "end": 96.04,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.15053637434796588,
+      "compression_ratio": 11.8,
+      "no_speech_prob": 0.8226786255836487,
+      "confidence": 0.926,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 93.82,
+          "end": 95.48,
+          "confidence": 0.936
+        },
+        {
+          "text": "going",
+          "start": 95.48,
+          "end": 95.5,
+          "confidence": 0.96
+        },
+        {
+          "text": "to",
+          "start": 95.5,
+          "end": 95.98,
+          "confidence": 0.946
+        },
+        {
+          "text": "go",
+          "start": 95.98,
+          "end": 96.0,
+          "confidence": 0.904
+        },
+        {
+          "text": "on",
+          "start": 96.0,
+          "end": 96.02,
+          "confidence": 0.948
+        },
+        {
+          "text": "the",
+          "start": 96.02,
+          "end": 96.04,
+          "confidence": 0.853
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "seek": 8400,
+      "start": 96.04,
+      "end": 97.3,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.15053637434796588,
+      "compression_ratio": 11.8,
+      "no_speech_prob": 0.8226786255836487,
+      "confidence": 0.921,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 96.04,
+          "end": 97.18,
+          "confidence": 0.945
+        },
+        {
+          "text": "going",
+          "start": 97.18,
+          "end": 97.2,
+          "confidence": 0.957
+        },
+        {
+          "text": "to",
+          "start": 97.2,
+          "end": 97.24,
+          "confidence": 0.937
+        },
+        {
+          "text": "go",
+          "start": 97.24,
+          "end": 97.26,
+          "confidence": 0.892
+        },
+        {
+          "text": "on",
+          "start": 97.26,
+          "end": 97.28,
+          "confidence": 0.947
+        },
+        {
+          "text": "the",
+          "start": 97.28,
+          "end": 97.3,
+          "confidence": 0.828
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "seek": 8400,
+      "start": 97.5,
+      "end": 99.54,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.15053637434796588,
+      "compression_ratio": 11.8,
+      "no_speech_prob": 0.8226786255836487,
+      "confidence": 0.922,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 97.5,
+          "end": 99.38,
+          "confidence": 0.947
+        },
+        {
+          "text": "going",
+          "start": 99.38,
+          "end": 99.4,
+          "confidence": 0.962
+        },
+        {
+          "text": "to",
+          "start": 99.4,
+          "end": 99.48,
+          "confidence": 0.94
+        },
+        {
+          "text": "go",
+          "start": 99.48,
+          "end": 99.5,
+          "confidence": 0.89
+        },
+        {
+          "text": "on",
+          "start": 99.5,
+          "end": 99.52,
+          "confidence": 0.946
+        },
+        {
+          "text": "the",
+          "start": 99.52,
+          "end": 99.54,
+          "confidence": 0.827
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "seek": 8400,
+      "start": 99.54,
+      "end": 101.2,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.15053637434796588,
+      "compression_ratio": 11.8,
+      "no_speech_prob": 0.8226786255836487,
+      "confidence": 0.923,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 99.54,
+          "end": 100.66,
+          "confidence": 0.943
+        },
+        {
+          "text": "going",
+          "start": 100.66,
+          "end": 100.8,
+          "confidence": 0.959
+        },
+        {
+          "text": "to",
+          "start": 100.8,
+          "end": 101.14,
+          "confidence": 0.938
+        },
+        {
+          "text": "go",
+          "start": 101.14,
+          "end": 101.16,
+          "confidence": 0.883
+        },
+        {
+          "text": "on",
+          "start": 101.16,
+          "end": 101.18,
+          "confidence": 0.941
+        },
+        {
+          "text": "the",
+          "start": 101.18,
+          "end": 101.2,
+          "confidence": 0.859
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "seek": 8400,
+      "start": 101.2,
+      "end": 102.04,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.15053637434796588,
+      "compression_ratio": 11.8,
+      "no_speech_prob": 0.8226786255836487,
+      "confidence": 0.925,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 101.2,
+          "end": 101.78,
+          "confidence": 0.949
+        },
+        {
+          "text": "going",
+          "start": 101.78,
+          "end": 101.86,
+          "confidence": 0.96
+        },
+        {
+          "text": "to",
+          "start": 101.86,
+          "end": 101.98,
+          "confidence": 0.938
+        },
+        {
+          "text": "go",
+          "start": 101.98,
+          "end": 102.0,
+          "confidence": 0.886
+        },
+        {
+          "text": "on",
+          "start": 102.0,
+          "end": 102.02,
+          "confidence": 0.941
+        },
+        {
+          "text": "the",
+          "start": 102.02,
+          "end": 102.04,
+          "confidence": 0.858
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "seek": 8400,
+      "start": 102.04,
+      "end": 103.12,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.15053637434796588,
+      "compression_ratio": 11.8,
+      "no_speech_prob": 0.8226786255836487,
+      "confidence": 0.924,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 102.04,
+          "end": 102.8,
+          "confidence": 0.949
+        },
+        {
+          "text": "going",
+          "start": 102.8,
+          "end": 103.04,
+          "confidence": 0.963
+        },
+        {
+          "text": "to",
+          "start": 103.04,
+          "end": 103.06,
+          "confidence": 0.917
+        },
+        {
+          "text": "go",
+          "start": 103.06,
+          "end": 103.08,
+          "confidence": 0.891
+        },
+        {
+          "text": "on",
+          "start": 103.08,
+          "end": 103.1,
+          "confidence": 0.945
+        },
+        {
+          "text": "the",
+          "start": 103.1,
+          "end": 103.12,
+          "confidence": 0.861
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "seek": 8400,
+      "start": 103.12,
+      "end": 103.98,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.15053637434796588,
+      "compression_ratio": 11.8,
+      "no_speech_prob": 0.8226786255836487,
+      "confidence": 0.928,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 103.12,
+          "end": 103.88,
+          "confidence": 0.952
+        },
+        {
+          "text": "going",
+          "start": 103.88,
+          "end": 103.9,
+          "confidence": 0.966
+        },
+        {
+          "text": "to",
+          "start": 103.9,
+          "end": 103.92,
+          "confidence": 0.906
+        },
+        {
+          "text": "go",
+          "start": 103.92,
+          "end": 103.94,
+          "confidence": 0.9
+        },
+        {
+          "text": "on",
+          "start": 103.94,
+          "end": 103.96,
+          "confidence": 0.95
+        },
+        {
+          "text": "the",
+          "start": 103.96,
+          "end": 103.98,
+          "confidence": 0.876
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "seek": 8400,
+      "start": 103.98,
+      "end": 104.78,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.15053637434796588,
+      "compression_ratio": 11.8,
+      "no_speech_prob": 0.8226786255836487,
+      "confidence": 0.931,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 103.98,
+          "end": 104.6,
+          "confidence": 0.953
+        },
+        {
+          "text": "going",
+          "start": 104.6,
+          "end": 104.62,
+          "confidence": 0.966
+        },
+        {
+          "text": "to",
+          "start": 104.62,
+          "end": 104.72,
+          "confidence": 0.916
+        },
+        {
+          "text": "go",
+          "start": 104.72,
+          "end": 104.74,
+          "confidence": 0.904
+        },
+        {
+          "text": "on",
+          "start": 104.74,
+          "end": 104.76,
+          "confidence": 0.953
+        },
+        {
+          "text": "the",
+          "start": 104.76,
+          "end": 104.78,
+          "confidence": 0.877
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "seek": 8400,
+      "start": 104.78,
+      "end": 105.76,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.15053637434796588,
+      "compression_ratio": 11.8,
+      "no_speech_prob": 0.8226786255836487,
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 104.78,
+          "end": 105.66,
+          "confidence": 0.954
+        },
+        {
+          "text": "going",
+          "start": 105.66,
+          "end": 105.68,
+          "confidence": 0.969
+        },
+        {
+          "text": "to",
+          "start": 105.68,
+          "end": 105.7,
+          "confidence": 0.903
+        },
+        {
+          "text": "go",
+          "start": 105.7,
+          "end": 105.72,
+          "confidence": 0.904
+        },
+        {
+          "text": "on",
+          "start": 105.72,
+          "end": 105.74,
+          "confidence": 0.954
+        },
+        {
+          "text": "the",
+          "start": 105.74,
+          "end": 105.76,
+          "confidence": 0.879
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "seek": 8400,
+      "start": 105.76,
+      "end": 107.26,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.15053637434796588,
+      "compression_ratio": 11.8,
+      "no_speech_prob": 0.8226786255836487,
+      "confidence": 0.932,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 105.76,
+          "end": 107.0,
+          "confidence": 0.952
+        },
+        {
+          "text": "going",
+          "start": 107.0,
+          "end": 107.02,
+          "confidence": 0.97
+        },
+        {
+          "text": "to",
+          "start": 107.02,
+          "end": 107.2,
+          "confidence": 0.891
+        },
+        {
+          "text": "go",
+          "start": 107.2,
+          "end": 107.22,
+          "confidence": 0.904
+        },
+        {
+          "text": "on",
+          "start": 107.22,
+          "end": 107.24,
+          "confidence": 0.954
+        },
+        {
+          "text": "the",
+          "start": 107.24,
+          "end": 107.26,
+          "confidence": 0.903
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "seek": 8400,
+      "start": 107.26,
+      "end": 108.99,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.15053637434796588,
+      "compression_ratio": 11.8,
+      "no_speech_prob": 0.8226786255836487,
+      "confidence": 0.939,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 107.26,
+          "end": 108.4,
+          "confidence": 0.955
+        },
+        {
+          "text": "going",
+          "start": 108.4,
+          "end": 108.42,
+          "confidence": 0.967
+        },
+        {
+          "text": "to",
+          "start": 108.42,
+          "end": 108.48,
+          "confidence": 0.923
+        },
+        {
+          "text": "go",
+          "start": 108.48,
+          "end": 108.5,
+          "confidence": 0.906
+        },
+        {
+          "text": "on",
+          "start": 108.5,
+          "end": 108.52,
+          "confidence": 0.956
+        },
+        {
+          "text": "the",
+          "start": 108.52,
+          "end": 108.99,
+          "confidence": 0.913
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "seek": 8400,
+      "start": 108.99,
+      "end": 110.24,
+      "text": " I'm going to go on the",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.15053637434796588,
+      "compression_ratio": 11.8,
+      "no_speech_prob": 0.8226786255836487,
+      "confidence": 0.938,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 108.99,
+          "end": 110.14,
+          "confidence": 0.951
+        },
+        {
+          "text": "going",
+          "start": 110.14,
+          "end": 110.16,
+          "confidence": 0.97
+        },
+        {
+          "text": "to",
+          "start": 110.16,
+          "end": 110.18,
+          "confidence": 0.911
+        },
+        {
+          "text": "go",
+          "start": 110.18,
+          "end": 110.2,
+          "confidence": 0.917
+        },
+        {
+          "text": "on",
+          "start": 110.2,
+          "end": 110.22,
+          "confidence": 0.967
+        },
+        {
+          "text": "the",
+          "start": 110.22,
+          "end": 110.24,
+          "confidence": 0.902
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "seek": 8400,
+      "start": 110.5,
+      "end": 112.56,
+      "text": " I'm going to",
+      "tokens": [
+        286,
+        478,
+        516,
+        281,
+        352,
+        322,
+        264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.15053637434796588,
+      "compression_ratio": 11.8,
+      "no_speech_prob": 0.8226786255836487,
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 110.5,
+          "end": 112.44,
+          "confidence": 0.896
+        },
+        {
+          "text": "going",
+          "start": 112.44,
+          "end": 112.46,
+          "confidence": 0.969
+        },
+        {
+          "text": "to",
+          "start": 112.46,
+          "end": 112.56,
+          "confidence": 0.931
         }
       ]
     }

@@ -1,5 +1,5 @@
 {
-  "text": " Ella, my glorious love. How are you? Oh, I'm okay. I will be. I said she could stay with us tomorrow just until she feels better. Of course she can. No, this won't be for long. Well, if you can stay as long as you want, my love. I really missed you. Pops. I agree.",
+  "text": " Ella, my glorious love. How are you? Oh, I'm okay. I will be. I said she could stay with us tomorrow just until she feels better. Of course she can. No, this won't be for long. Well, if you can stay as long as you want, my love. I really missed you. Pops. I couldn't have missed you.",
   "segments": [
     {
       "id": 0,
@@ -20,7 +20,7 @@
         30
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.38423160753752056,
+      "avg_logprob": -0.3842304832056949,
       "compression_ratio": 1.4894736842105263,
       "no_speech_prob": 0.271071195602417,
       "confidence": 0.563,
@@ -70,7 +70,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 0,
       "seek": 0,
       "start": 6.22,
       "end": 9.12,
@@ -88,7 +88,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.38423160753752056,
+      "avg_logprob": -0.3842304832056949,
       "compression_ratio": 1.4894736842105263,
       "no_speech_prob": 0.271071195602417,
       "confidence": 0.754,
@@ -132,7 +132,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 0,
       "seek": 0,
       "start": 9.34,
       "end": 11.46,
@@ -154,7 +154,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.38423160753752056,
+      "avg_logprob": -0.3842304832056949,
       "compression_ratio": 1.4894736842105263,
       "no_speech_prob": 0.271071195602417,
       "confidence": 0.676,
@@ -240,7 +240,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 0,
       "seek": 0,
       "start": 12.06,
       "end": 13.06,
@@ -253,7 +253,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.38423160753752056,
+      "avg_logprob": -0.3842304832056949,
       "compression_ratio": 1.4894736842105263,
       "no_speech_prob": 0.271071195602417,
       "confidence": 0.81,
@@ -285,7 +285,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 0,
       "seek": 0,
       "start": 13.48,
       "end": 15.2,
@@ -302,7 +302,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.38423160753752056,
+      "avg_logprob": -0.3842304832056949,
       "compression_ratio": 1.4894736842105263,
       "no_speech_prob": 0.271071195602417,
       "confidence": 0.833,
@@ -346,7 +346,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 0,
       "seek": 0,
       "start": 15.3,
       "end": 18.94,
@@ -374,7 +374,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.38423160753752056,
+      "avg_logprob": -0.3842304832056949,
       "compression_ratio": 1.4894736842105263,
       "no_speech_prob": 0.271071195602417,
       "confidence": 0.736,
@@ -478,7 +478,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 0,
       "seek": 0,
       "start": 19.48,
       "end": 20.16,
@@ -489,7 +489,7 @@
         13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.38423160753752056,
+      "avg_logprob": -0.3842304832056949,
       "compression_ratio": 1.4894736842105263,
       "no_speech_prob": 0.271071195602417,
       "confidence": 0.585,
@@ -503,35 +503,55 @@
       ]
     },
     {
-      "id": 7,
-      "seek": 2000,
-      "start": 20.24,
-      "end": 20.56,
-      "text": " I agree.",
+      "id": 0,
+      "seek": 0,
+      "start": 20.3,
+      "end": 21.02,
+      "text": " I couldn't have missed you.",
       "tokens": [
-        50364,
         286,
-        3986,
-        13,
-        50864
+        2809,
+        380,
+        362,
+        6721,
+        291,
+        13
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.5059325297673544,
-      "compression_ratio": 0.5,
-      "no_speech_prob": 0.11698608845472336,
-      "confidence": 0.568,
+      "avg_logprob": -0.3842304832056949,
+      "compression_ratio": 1.4894736842105263,
+      "no_speech_prob": 0.271071195602417,
+      "confidence": 0.416,
       "words": [
         {
           "text": "I",
-          "start": 20.24,
-          "end": 20.44,
-          "confidence": 0.592
+          "start": 20.3,
+          "end": 20.5,
+          "confidence": 0.715
         },
         {
-          "text": "agree.",
-          "start": 20.44,
-          "end": 20.56,
-          "confidence": 0.544
+          "text": "couldn't",
+          "start": 20.5,
+          "end": 20.74,
+          "confidence": 0.477
+        },
+        {
+          "text": "have",
+          "start": 20.74,
+          "end": 20.78,
+          "confidence": 0.114
+        },
+        {
+          "text": "missed",
+          "start": 20.78,
+          "end": 21.0,
+          "confidence": 0.341
+        },
+        {
+          "text": "you.",
+          "start": 21.0,
+          "end": 21.02,
+          "confidence": 0.816
         }
       ]
     }

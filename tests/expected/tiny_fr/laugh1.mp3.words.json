@@ -8,7 +8,6 @@
       "end": 1.62,
       "text": " Je ne suis pas en train de",
       "tokens": [
-        50364,
         2588,
         408,
         7624,
@@ -18,11 +17,10 @@
         368,
         4865,
         2788,
-        13,
-        50464
+        13
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.5315840794489934,
+      "avg_logprob": -1.531572048480694,
       "compression_ratio": 0.8222222222222222,
       "no_speech_prob": 0.37774592638015747,
       "confidence": 0.174,

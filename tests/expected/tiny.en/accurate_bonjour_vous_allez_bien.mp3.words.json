@@ -8,7 +8,6 @@
       "end": 2.84,
       "text": " Mohoo, let's go with it again",
       "tokens": [
-        50363,
         337,
         1219,
         2238,
@@ -18,11 +17,10 @@
         467,
         351,
         340,
-        757,
-        50501
+        757
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.7688669791588416,
+      "avg_logprob": -0.7688669057992789,
       "compression_ratio": 0.7837837837837838,
       "no_speech_prob": 0.11803241819143295,
       "confidence": 0.485,
@@ -72,7 +70,6 @@
       "end": 35.42,
       "text": " Mohoo, let's go with it again",
       "tokens": [
-        50413,
         337,
         1219,
         2238,
@@ -82,8 +79,7 @@
         467,
         351,
         340,
-        757,
-        50663
+        757
       ],
       "temperature": 0.0,
       "avg_logprob": -0.37818329150860125,

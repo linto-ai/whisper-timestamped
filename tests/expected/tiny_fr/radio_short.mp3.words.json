@@ -8,12 +8,10 @@
       "end": 1.46,
       "text": "...",
       "tokens": [
-        50364,
-        1097,
-        50614
+        1097
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.4191982746124268,
+      "avg_logprob": -1.4191969633102417,
       "compression_ratio": 0.2727272727272727,
       "no_speech_prob": 0.5110077261924744,
       "confidence": 0.223,
@@ -33,12 +31,10 @@
       "end": 69.42,
       "text": "...",
       "tokens": [
-        50364,
-        1097,
-        51714
+        1097
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.9681128859519958,
+      "avg_logprob": -0.9681128263473511,
       "compression_ratio": 0.2727272727272727,
       "no_speech_prob": 0.8783581256866455,
       "confidence": 0.467,
@@ -78,24 +74,22 @@
       "id": 3,
       "seek": 10500,
       "start": 105.98,
-      "end": 117.7,
+      "end": 119.08,
       "text": "...",
       "tokens": [
-        50364,
-        1097,
-        51714
+        1097
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.7174453139305115,
+      "avg_logprob": -0.7670651078224182,
       "compression_ratio": 0.2727272727272727,
-      "no_speech_prob": 0.25282058119773865,
-      "confidence": 0.763,
+      "no_speech_prob": 0.5367627143859863,
+      "confidence": 0.852,
       "words": [
         {
           "text": "...",
           "start": 105.98,
-          "end": 117.7,
-          "confidence": 0.763
+          "end": 119.08,
+          "confidence": 0.852
         }
       ]
     }
