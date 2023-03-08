@@ -1895,6 +1895,8 @@ _PARAMETERS_TO_MODEL_NAME = {
 }
 
 def get_alignment_heads(model):
+    if hasattr(model, "alignment_heads"): # Since version 20230306
+        return model.alignment_heads
     model_name = _PARAMETERS_TO_MODEL_NAME[_get_number_of_parameters(model)]
     if model_name == "large":
         if next(model.parameters())[0,0,0] > 0:
@@ -1904,7 +1906,6 @@ def get_alignment_heads(model):
     num_layers = model.dims.n_text_layer
     num_heads = model.dims.n_text_head
     return _get_alignment_heads(model_name, num_layers, num_heads)
-
 
 def _get_alignment_heads(model_name, num_layers, num_heads):
     dump = _ALIGNMENT_HEADS[model_name]
