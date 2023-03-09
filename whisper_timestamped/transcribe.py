@@ -247,7 +247,7 @@ def transcribe_timestamped(
 
     if vad:
         audio = get_audio_tensor(audio)
-        audio, convert_timestamps = remove_non_speech(audio)
+        audio, convert_timestamps = remove_non_speech(audio, plot=plot_word_alignment)
         audio = audio.to(model.device)
 
     if naive_approach:
@@ -1715,6 +1715,7 @@ def remove_non_speech(audio,
     use_sample=False,
     min_speech_duration=0.1,
     min_silence_duration=1,
+    plot=False,
     ):
     """
     Remove non-speech segments from audio (using Silero VAD),
@@ -1734,6 +1735,14 @@ def remove_non_speech(audio,
         segments = [(0, audio.shape[-1])]
 
     audio_speech = torch.cat([audio[..., s:e] for s,e in segments], dim=-1)
+
+    if plot:
+        import matplotlib.pyplot as plt
+        plt.figure()
+        plt.plot(audio)
+        for s,e in segments:
+            plt.axvspan(s, e, color='red', alpha=0.1)
+        plt.show()
 
     if not use_sample:
         segments = [(float(s)/SAMPLE_RATE, float(e)/SAMPLE_RATE) for s,e in segments]
