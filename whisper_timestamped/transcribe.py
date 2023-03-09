@@ -351,6 +351,7 @@ def _transcribe_timestamped_efficient(
     chunk_logprobs = []             # log probabilities for the current 30 sec chunk
     chunk_tokens = []               # tokens for the current 30 sec chunk (list of Torch tensors)
     chunk_tokens_nosot = []         # tokens for the current 30 sec chunk, without the SOT tokens (list of indices)
+    last_chunk_token = None         # last token of the current chunk, that may be needed for corner cases
     last_token_fallback = None      # last token to use as a fallback if the model gets stuck
     has_started = False             # whether we have started decoding
     mfcc = None                     # MFCC features for the current 30 sec chunk
@@ -393,9 +394,11 @@ def _transcribe_timestamped_efficient(
             return consecutive_timestamps
         else: # Several tokens as a prompt or must flush last segments
             must_flush = len(segment_tokens[-1]) > 1 and not saw_consecutive_timestamps
-            if WHIPSER_GE_20230306: # If last token was a timestamp, the last segment is used
-                must_flush = must_flush or (len(segment_tokens[-1]) > 2 and segment_tokens[-1][-1] >= tokenizer.timestamp_begin)
-            # logger.debug(f"New prompt: flushing = {must_flush}")
+            if not must_flush and WHIPSER_GE_20230306: # If the last token is a timestamp, the last segment is used
+                if last_chunk_token is None:
+                    must_flush = (len(segment_tokens[-1]) > 2 and segment_tokens[-1][-1] >= tokenizer.timestamp_begin)
+                else:
+                    must_flush = (last_chunk_token >= tokenizer.timestamp_begin)
             if not must_flush and trust_whisper_timestamps:
                 # Discard the end of the last transcription
                 reset(False)
@@ -438,7 +441,7 @@ def _transcribe_timestamped_efficient(
                 logger.debug(f"         Guessed last token from the prompt for the new chunk: {last_token_fallback}")
             # Fallback for the last segment, or without prompt: Assume greedy decoding
             else:
-                last_token_fallback = torch.argmax(chunk_logprobs[-1]).item()
+                last_token_fallback = torch.argmax(chunk_logprobs[-1]).item() if last_chunk_token is None else last_chunk_token
                 last_token_reliable = (temperature == 0)
                 logger.debug(f"         Guess last token using probas (assuming greedy decoding): {last_token_fallback}")
             if debug:
@@ -675,7 +678,7 @@ def _transcribe_timestamped_efficient(
                         i_token_end = i_token_start + len(tokens)
                         assert chunck_indices[i_token_start:i_token_end] == tokens, f"Inconsistent token list {tokenizer.decode_with_timestamps(chunck_indices[i_token_start:i_token_end])} != {tokenizer.decode_with_timestamps(tokens)}"
                         i_token_start += 1 # skip sos (start time)
-                        if not unfinished_decoding:
+                        if not unfinished_decoding or i != n_segments-1:
                             i_token_end -= 1 # skip eos (end time)
                         segment_logprobs.append(logprobs[i_token_start:i_token_end])
                         segment_avglogprobs.append(avg_logprob)
@@ -767,7 +770,7 @@ def _transcribe_timestamped_efficient(
 
     embedding_weights = None 
     def hook_output_logits(layer, ins, outs):
-        nonlocal no_speech_prob, chunk_logprobs, segment_tokens, chunk_tokens, embedding_weights, has_started
+        nonlocal no_speech_prob, chunk_logprobs, segment_tokens, chunk_tokens, chunk_tokens_nosot, last_chunk_token, embedding_weights, has_started
         
         if embedding_weights is None:
             embedding_weights = torch.transpose(model.decoder.token_embedding.weight, 0, 1).to(outs[0].dtype)
@@ -786,6 +789,11 @@ def _transcribe_timestamped_efficient(
                 logit_filter.apply(logits, tokens)
             logits = F.log_softmax(logits.squeeze(0), dim=-1)
             chunk_logprobs.append(logits)
+
+            if WHIPSER_GE_20230306 and len(chunk_tokens_nosot) == max_sample_len - 1:
+                last_chunk_token = torch.argmax(logits).item()
+            else:
+                last_chunk_token = None
 
     try:
 
@@ -888,7 +896,7 @@ def _transcribe_timestamped_efficient(
 
                 timestamped_word["confidence"] = round_confidence(word_logprobs.mean().exp().item() if len(word_logprobs) else 0.0)
 
-            if i_end != len(logprobs):
+            if i_end not in [len(logprobs), len(logprobs)-1]:
                 logger.warn(f"Got inconsistent length for segment {i} ({len(logprobs)} != {i_end}). Some words have been ignored.")
             if not include_punctuation_in_confidence:   
                 logprobs_nopunc = torch.cat(logprobs_nopunc)
