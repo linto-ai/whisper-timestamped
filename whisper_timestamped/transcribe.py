@@ -261,7 +261,7 @@ def transcribe_timestamped(
                                                                    **alignment_options, **whisper_options, **other_options)
 
     # Remove words with empty duration happening at the end of segments, to remove some hallucinations
-    transcription, words = remove_last_null_duration_words(transcription, words, recompute_text=WHIPSER_GE_20230306 and not WHIPSER_GE_20230308)
+    transcription, words = remove_last_null_duration_words(transcription, words, recompute_text=True)
 
     # Refine word positions
     ensure_increasing_positions(words, min_duration=min_word_duration if trust_whisper_timestamps else 0)
@@ -861,6 +861,8 @@ def _transcribe_timestamped_efficient(
             else:
                 assert len(timestamped_tokens) < len(whisper_tokens) and timestamped_tokens == whisper_tokens[:len(timestamped_tokens)], \
                     f"Fatal Error: Got inconsistent text for segment {i}:\n({len(timestamped_tokens)})\n{tokenizer.decode_with_timestamps(timestamped_tokens)}\n{timestamped_tokens}\n!=\n({len(whisper_tokens)})\n{tokenizer.decode_with_timestamps(whisper_tokens)}\n{whisper_tokens[:len(timestamped_tokens)]}"
+                segment["tokens"] = token if WHIPSER_GE_20230306 else timestamped_tokens # tokens include special timestamp tokens since 20230306
+                segment["text"] = tokenizer.decode(segment["tokens"])
                 logger.warn(f"Text had to be shortned on segment {i}:\n{tokenizer.decode(timestamped_tokens)}\n!=\n{tokenizer.decode(whisper_tokens)}")
             timestamped_words[-1]["avg_logprob_reliable"] = False
 
@@ -1042,7 +1044,7 @@ def _transcribe_timestamped_naive(
                     end = min(start + SEGMENT_DURATION, audio_duration)
                     tokens = current_tokens
 
-            if start is None:
+            if tokens is None:
                 continue
 
             start_sample = min(round(start * SAMPLE_RATE), audio.shape[-1])
@@ -1056,11 +1058,16 @@ def _transcribe_timestamped_naive(
             mfcc = mfcc.unsqueeze(0)
 
             assert len(tokens), "Got empty transcription!"
+            segment_tokens_check = []
             if tokens[0] >= tokenizer.timestamp_begin:
+                segment_tokens_check.append(tokens[0])
+            while tokens[0] >= tokenizer.timestamp_begin:
                 tokens = tokens[1:]
-            while tokens[-1] >= tokenizer.timestamp_begin:
-                tokens = tokens[:-1]
                 assert len(tokens), "Got transcription with only timestamps!"
+            last_token_check = None
+            while tokens[-1] >= tokenizer.timestamp_begin:
+                last_token_check = tokens[-1]
+                tokens = tokens[:-1]
 
             tokens = [
                     *tokenizer.sot_sequence,
@@ -1091,6 +1098,7 @@ def _transcribe_timestamped_naive(
 
             segment_logprobs = []
             i_token = 1
+            
             for word in ws:
 
                 word["start"] = round(word["start"] + start, 2)
@@ -1106,9 +1114,11 @@ def _transcribe_timestamped_naive(
                     while i_token < len(tokens) and tokens[i_token] >= tokenizer.timestamp_begin:
                         i_token += 1
                 
+                tok_indices = word["tokens_indices"]
+                segment_tokens_check.extend(tok_indices)
+
                 if compute_word_confidence:
                     tok = word["tokens"]
-                    tok_indices = word["tokens_indices"]
                     i_end = i_start + len(tok)
                     if include_punctuation_in_confidence:
                         while len(tok) > 1 and tok[-1][-1] in _punctuation: # Note: look at the last character of token, to take into account "...", "!!", etc.
@@ -1128,6 +1138,15 @@ def _transcribe_timestamped_naive(
 
                 if verbose:
                     print_timestamped(word)
+
+            if last_token_check is not None:
+                segment_tokens_check.append(last_token_check)
+            if trust_whisper_timestamps:
+                if segment_tokens_check != segment["tokens"]:
+                    assert len(segment_tokens_check) < len(segment["tokens"]) and segment_tokens_check[:-1] == segment["tokens"][:len(segment_tokens_check)-1]
+                    segment["tokens"] = segment_tokens_check
+                    segment["text"] = tokenizer.decode(segment["tokens"])
+            # else: TODO
 
             if len(segment_logprobs):
                 segment.update({"confidence": round_confidence(torch.cat(segment_logprobs).mean().exp().item())})
@@ -1319,7 +1338,7 @@ def perform_word_alignment(
     assert end_token <= weights.shape[-1]
     assert len(tokens) == num_tokens
 
-    weights = weights[:, :, :, start_token: end_token].cpu()                        # layers * heads * tokens * frames
+    weights = weights[..., start_token: end_token].cpu()                        # layers * heads * tokens * frames
 
     if alignment_heads is None:
         weights = weights.reshape(-1, *weights.shape[-2:])                      # N * tokens * frames
