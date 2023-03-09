@@ -8,6 +8,7 @@
       "end": 2.8,
       "text": " Mohoo! Let's go with it again!",
       "tokens": [
+        50363,
         337,
         1219,
         2238,
@@ -18,7 +19,8 @@
         351,
         340,
         757,
-        0
+        0,
+        50513
       ],
       "temperature": 0.0,
       "avg_logprob": -0.801825932094029,
@@ -67,10 +69,11 @@
     {
       "id": 1,
       "seek": 3000,
-      "start": 31.4,
-      "end": 35.38,
+      "start": 30.98,
+      "end": 35.44,
       "text": " Mohoo! Let's go with it again!",
       "tokens": [
+        50363,
         337,
         1219,
         2238,
@@ -81,49 +84,50 @@
         351,
         340,
         757,
-        0
+        0,
+        50663
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.17847934791019984,
+      "avg_logprob": -0.19411465099879674,
       "compression_ratio": 0.7894736842105263,
-      "no_speech_prob": 0.1688624918460846,
-      "confidence": 0.955,
+      "no_speech_prob": 0.45430558919906616,
+      "confidence": 0.952,
       "words": [
         {
           "text": "Mohoo!",
-          "start": 31.4,
-          "end": 34.0,
-          "confidence": 0.967
+          "start": 30.98,
+          "end": 34.02,
+          "confidence": 0.896
         },
         {
           "text": "Let's",
           "start": 34.44,
           "end": 34.72,
-          "confidence": 0.869
+          "confidence": 0.961
         },
         {
           "text": "go",
           "start": 34.72,
           "end": 34.84,
-          "confidence": 0.993
+          "confidence": 0.99
         },
         {
           "text": "with",
           "start": 34.84,
           "end": 35.0,
-          "confidence": 0.988
+          "confidence": 0.985
         },
         {
           "text": "it",
           "start": 35.0,
           "end": 35.1,
-          "confidence": 0.988
+          "confidence": 0.991
         },
         {
           "text": "again!",
           "start": 35.1,
-          "end": 35.38,
-          "confidence": 0.997
+          "end": 35.44,
+          "confidence": 0.998
         }
       ]
     }

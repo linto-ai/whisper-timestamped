@@ -8,6 +8,7 @@
       "end": 2.34,
       "text": " Dis-moi, est-ce que l'avion vole?",
       "tokens": [
+        50364,
         4208,
         12,
         29292,
@@ -21,43 +22,44 @@
         706,
         313,
         49877,
-        2506
+        2506,
+        50496
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3014030456542969,
+      "avg_logprob": -0.26328243928797107,
       "compression_ratio": 0.8048780487804879,
-      "no_speech_prob": 0.05134102329611778,
-      "confidence": 0.925,
+      "no_speech_prob": 0.03882359713315964,
+      "confidence": 0.928,
       "words": [
         {
           "text": "Dis-moi",
           "start": 0.38,
-          "end": 1.08,
-          "confidence": 0.801
+          "end": 1.1,
+          "confidence": 0.809
         },
         {
           "text": "est-ce",
           "start": 1.28,
           "end": 1.5,
-          "confidence": 0.966
+          "confidence": 0.968
         },
         {
           "text": "que",
           "start": 1.5,
           "end": 1.66,
-          "confidence": 0.977
+          "confidence": 0.978
         },
         {
           "text": "l'avion",
           "start": 1.66,
           "end": 2.04,
-          "confidence": 0.994
+          "confidence": 0.993
         },
         {
           "text": "vole",
           "start": 2.04,
           "end": 2.34,
-          "confidence": 0.891
+          "confidence": 0.898
         }
       ]
     }

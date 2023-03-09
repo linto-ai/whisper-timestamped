@@ -1,13 +1,14 @@
 {
-  "text": " You can't do it, you can't do",
+  "text": " You can't do it, you can't.",
   "segments": [
     {
       "id": 0,
       "seek": 0,
-      "start": 0.04,
-      "end": 2.3,
-      "text": " You can't do it, you can't do",
+      "start": 0.0,
+      "end": 1.7,
+      "text": " You can't do it, you can't.",
       "tokens": [
+        50364,
         509,
         393,
         380,
@@ -17,57 +18,50 @@
         291,
         393,
         380,
-        360,
-        309,
-        13
+        13,
+        50464
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.2200144449869792,
-      "compression_ratio": 1.1379310344827587,
-      "no_speech_prob": 0.37774592638015747,
-      "confidence": 0.311,
+      "avg_logprob": -1.2999596228966346,
+      "compression_ratio": 0.9310344827586207,
+      "no_speech_prob": 0.41614440083503723,
+      "confidence": 0.277,
       "words": [
         {
           "text": "You",
-          "start": 0.04,
-          "end": 0.52,
-          "confidence": 0.071
+          "start": 0.0,
+          "end": 0.56,
+          "confidence": 0.081
         },
         {
           "text": "can't",
-          "start": 0.52,
-          "end": 0.78,
-          "confidence": 0.295
+          "start": 0.56,
+          "end": 0.82,
+          "confidence": 0.302
         },
         {
           "text": "do",
-          "start": 0.78,
+          "start": 0.82,
           "end": 1.04,
-          "confidence": 0.102
+          "confidence": 0.118
         },
         {
           "text": "it,",
           "start": 1.04,
           "end": 1.2,
-          "confidence": 0.34
+          "confidence": 0.376
         },
         {
           "text": "you",
           "start": 1.26,
           "end": 1.5,
-          "confidence": 0.191
+          "confidence": 0.141
         },
         {
-          "text": "can't",
+          "text": "can't.",
           "start": 1.5,
-          "end": 1.8,
-          "confidence": 0.87
-        },
-        {
-          "text": "do",
-          "start": 1.8,
-          "end": 2.3,
-          "confidence": 0.314
+          "end": 1.7,
+          "confidence": 0.867
         }
       ]
     }

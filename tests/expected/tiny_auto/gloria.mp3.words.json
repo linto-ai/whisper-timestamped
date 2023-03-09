@@ -1,192 +1,195 @@
 {
-  "text": " Hello, my dear. No, fine. How are you? I'm okay. Why will we? I said she could stay with us, but she feels better. Oh, she can. There's more to be for long. What if you can stay as long as you want? My whole friend will be missed, yeah? Bye.",
+  "text": " Hello. You're my girlfriend. How are you? I'm okay. Why will be? I said she could stay with us, but she feels better. Oh, she can. There's more to be for long. What if you can stay as long as you want? My girlfriend. Really, mixture.",
   "segments": [
     {
       "id": 0,
       "seek": 0,
       "start": 0.98,
-      "end": 2.54,
-      "text": " Hello, my dear.",
+      "end": 1.78,
+      "text": " Hello.",
       "tokens": [
+        50364,
         2425,
-        11,
-        452,
-        6875,
-        13
+        13,
+        50464
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.57229386999252,
-      "compression_ratio": 1.409356725146199,
-      "no_speech_prob": 0.18142351508140564,
-      "confidence": 0.202,
+      "avg_logprob": -0.5517271691626244,
+      "compression_ratio": 1.4319526627218935,
+      "no_speech_prob": 0.1108030155301094,
+      "confidence": 0.406,
       "words": [
         {
-          "text": "Hello,",
+          "text": "Hello.",
           "start": 0.98,
-          "end": 1.8,
-          "confidence": 0.419
+          "end": 1.78,
+          "confidence": 0.406
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 1.96,
+      "end": 4.26,
+      "text": " You're my girlfriend.",
+      "tokens": [
+        50464,
+        509,
+        434,
+        452,
+        10369,
+        13,
+        50614
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5517271691626244,
+      "compression_ratio": 1.4319526627218935,
+      "no_speech_prob": 0.1108030155301094,
+      "confidence": 0.175,
+      "words": [
+        {
+          "text": "You're",
+          "start": 1.96,
+          "end": 3.12,
+          "confidence": 0.192
         },
         {
           "text": "my",
-          "start": 2.04,
-          "end": 2.2,
-          "confidence": 0.108
+          "start": 3.12,
+          "end": 3.2,
+          "confidence": 0.207
         },
         {
-          "text": "dear.",
-          "start": 2.2,
-          "end": 2.54,
-          "confidence": 0.181
+          "text": "girlfriend.",
+          "start": 3.2,
+          "end": 4.26,
+          "confidence": 0.123
         }
       ]
     },
     {
-      "id": 0,
-      "seek": 0,
-      "start": 2.6,
-      "end": 4.58,
-      "text": " No, fine.",
-      "tokens": [
-        883,
-        11,
-        2489,
-        13
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.57229386999252,
-      "compression_ratio": 1.409356725146199,
-      "no_speech_prob": 0.18142351508140564,
-      "confidence": 0.316,
-      "words": [
-        {
-          "text": "No,",
-          "start": 2.6,
-          "end": 4.16,
-          "confidence": 0.355
-        },
-        {
-          "text": "fine.",
-          "start": 4.48,
-          "end": 4.58,
-          "confidence": 0.281
-        }
-      ]
-    },
-    {
-      "id": 0,
+      "id": 2,
       "seek": 0,
       "start": 5.48,
-      "end": 6.46,
+      "end": 6.54,
       "text": " How are you?",
       "tokens": [
+        50614,
         1012,
         366,
         291,
-        30
+        30,
+        50714
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.57229386999252,
-      "compression_ratio": 1.409356725146199,
-      "no_speech_prob": 0.18142351508140564,
-      "confidence": 0.499,
+      "avg_logprob": -0.5517271691626244,
+      "compression_ratio": 1.4319526627218935,
+      "no_speech_prob": 0.1108030155301094,
+      "confidence": 0.627,
       "words": [
         {
           "text": "How",
           "start": 5.48,
           "end": 5.8,
-          "confidence": 0.355
+          "confidence": 0.489
         },
         {
           "text": "are",
           "start": 5.8,
-          "end": 6.14,
-          "confidence": 0.366
+          "end": 6.16,
+          "confidence": 0.525
         },
         {
           "text": "you?",
-          "start": 6.14,
-          "end": 6.46,
-          "confidence": 0.957
+          "start": 6.16,
+          "end": 6.54,
+          "confidence": 0.959
         }
       ]
     },
     {
-      "id": 0,
+      "id": 3,
       "seek": 0,
-      "start": 6.74,
+      "start": 6.76,
       "end": 7.8,
       "text": " I'm okay.",
       "tokens": [
+        50714,
         286,
         478,
         1392,
-        13
+        13,
+        50764
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.57229386999252,
-      "compression_ratio": 1.409356725146199,
-      "no_speech_prob": 0.18142351508140564,
-      "confidence": 0.802,
+      "avg_logprob": -0.5517271691626244,
+      "compression_ratio": 1.4319526627218935,
+      "no_speech_prob": 0.1108030155301094,
+      "confidence": 0.836,
       "words": [
         {
           "text": "I'm",
-          "start": 6.74,
+          "start": 6.76,
           "end": 7.1,
-          "confidence": 0.811
+          "confidence": 0.838
         },
         {
           "text": "okay.",
           "start": 7.1,
           "end": 7.8,
-          "confidence": 0.786
+          "confidence": 0.831
         }
       ]
     },
     {
-      "id": 0,
+      "id": 4,
       "seek": 0,
       "start": 8.38,
-      "end": 9.08,
-      "text": " Why will we?",
+      "end": 9.14,
+      "text": " Why will be?",
       "tokens": [
+        50764,
         1545,
         486,
-        321,
-        30
+        312,
+        30,
+        50814
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.57229386999252,
-      "compression_ratio": 1.409356725146199,
-      "no_speech_prob": 0.18142351508140564,
-      "confidence": 0.384,
+      "avg_logprob": -0.5517271691626244,
+      "compression_ratio": 1.4319526627218935,
+      "no_speech_prob": 0.1108030155301094,
+      "confidence": 0.383,
       "words": [
         {
           "text": "Why",
           "start": 8.38,
-          "end": 8.64,
-          "confidence": 0.396
+          "end": 8.66,
+          "confidence": 0.344
         },
         {
           "text": "will",
-          "start": 8.64,
+          "start": 8.66,
           "end": 8.96,
-          "confidence": 0.486
+          "confidence": 0.521
         },
         {
-          "text": "we?",
+          "text": "be?",
           "start": 8.96,
-          "end": 9.08,
-          "confidence": 0.293
+          "end": 9.14,
+          "confidence": 0.313
         }
       ]
     },
     {
-      "id": 0,
+      "id": 5,
       "seek": 0,
-      "start": 9.42,
-      "end": 10.39,
-      "text": " I said she could stay with us,",
+      "start": 9.4,
+      "end": 11.52,
+      "text": " I said she could stay with us, but she feels better.",
       "tokens": [
+        50814,
         286,
         848,
         750,
@@ -194,37 +197,43 @@
         1754,
         365,
         505,
-        11
+        11,
+        457,
+        750,
+        3417,
+        1101,
+        13,
+        50964
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.57229386999252,
-      "compression_ratio": 1.409356725146199,
-      "no_speech_prob": 0.18142351508140564,
-      "confidence": 0.719,
+      "avg_logprob": -0.5517271691626244,
+      "compression_ratio": 1.4319526627218935,
+      "no_speech_prob": 0.1108030155301094,
+      "confidence": 0.692,
       "words": [
         {
           "text": "I",
-          "start": 9.42,
-          "end": 9.52,
-          "confidence": 0.263
+          "start": 9.4,
+          "end": 9.54,
+          "confidence": 0.285
         },
         {
           "text": "said",
-          "start": 9.52,
+          "start": 9.54,
           "end": 9.66,
-          "confidence": 0.616
+          "confidence": 0.619
         },
         {
           "text": "she",
           "start": 9.66,
           "end": 9.82,
-          "confidence": 0.851
+          "confidence": 0.849
         },
         {
           "text": "could",
           "start": 9.82,
           "end": 9.98,
-          "confidence": 0.919
+          "confidence": 0.911
         },
         {
           "text": "stay",
@@ -236,107 +245,89 @@
           "text": "with",
           "start": 10.14,
           "end": 10.26,
-          "confidence": 0.985
+          "confidence": 0.986
         },
         {
           "text": "us,",
           "start": 10.26,
-          "end": 10.39,
-          "confidence": 0.805
-        }
-      ]
-    },
-    {
-      "id": 0,
-      "seek": 0,
-      "start": 10.39,
-      "end": 11.52,
-      "text": " but she feels better.",
-      "tokens": [
-        457,
-        750,
-        3417,
-        1101,
-        13
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.57229386999252,
-      "compression_ratio": 1.409356725146199,
-      "no_speech_prob": 0.18142351508140564,
-      "confidence": 0.719,
-      "words": [
+          "end": 10.44,
+          "confidence": 0.781
+        },
         {
           "text": "but",
-          "start": 10.39,
-          "end": 10.76,
-          "confidence": 0.381
+          "start": 10.64,
+          "end": 10.72,
+          "confidence": 0.227
         },
         {
           "text": "she",
-          "start": 10.76,
+          "start": 10.72,
           "end": 10.94,
-          "confidence": 0.945
+          "confidence": 0.972
         },
         {
           "text": "feels",
           "start": 10.94,
-          "end": 11.22,
-          "confidence": 0.754
+          "end": 11.24,
+          "confidence": 0.762
         },
         {
           "text": "better.",
-          "start": 11.22,
+          "start": 11.24,
           "end": 11.52,
           "confidence": 0.987
         }
       ]
     },
     {
-      "id": 0,
+      "id": 6,
       "seek": 0,
-      "start": 12.2,
-      "end": 13.32,
+      "start": 12.18,
+      "end": 13.44,
       "text": " Oh, she can.",
       "tokens": [
+        50964,
         876,
         11,
         750,
         393,
-        13
+        13,
+        51064
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.57229386999252,
-      "compression_ratio": 1.409356725146199,
-      "no_speech_prob": 0.18142351508140564,
-      "confidence": 0.307,
+      "avg_logprob": -0.5517271691626244,
+      "compression_ratio": 1.4319526627218935,
+      "no_speech_prob": 0.1108030155301094,
+      "confidence": 0.286,
       "words": [
         {
           "text": "Oh,",
-          "start": 12.2,
-          "end": 12.58,
-          "confidence": 0.227
+          "start": 12.18,
+          "end": 12.6,
+          "confidence": 0.179
         },
         {
           "text": "she",
-          "start": 12.72,
+          "start": 12.8,
           "end": 12.96,
-          "confidence": 0.667
+          "confidence": 0.687
         },
         {
           "text": "can.",
           "start": 12.96,
-          "end": 13.32,
-          "confidence": 0.192
+          "end": 13.44,
+          "confidence": 0.19
         }
       ]
     },
     {
-      "id": 0,
+      "id": 7,
       "seek": 0,
-      "start": 13.46,
+      "start": 13.5,
       "end": 15.2,
       "text": " There's more to be for long.",
       "tokens": [
+        51064,
         821,
         311,
         544,
@@ -344,59 +335,61 @@
         312,
         337,
         938,
-        13
+        13,
+        51114
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.57229386999252,
-      "compression_ratio": 1.409356725146199,
-      "no_speech_prob": 0.18142351508140564,
-      "confidence": 0.665,
+      "avg_logprob": -0.5517271691626244,
+      "compression_ratio": 1.4319526627218935,
+      "no_speech_prob": 0.1108030155301094,
+      "confidence": 0.682,
       "words": [
         {
           "text": "There's",
-          "start": 13.46,
+          "start": 13.5,
           "end": 14.44,
-          "confidence": 0.476
+          "confidence": 0.517
         },
         {
           "text": "more",
           "start": 14.44,
           "end": 14.56,
-          "confidence": 0.805
+          "confidence": 0.814
         },
         {
           "text": "to",
           "start": 14.56,
           "end": 14.74,
-          "confidence": 0.421
+          "confidence": 0.415
         },
         {
           "text": "be",
           "start": 14.74,
           "end": 14.8,
-          "confidence": 0.94
+          "confidence": 0.95
         },
         {
           "text": "for",
           "start": 14.8,
           "end": 15.0,
-          "confidence": 0.985
+          "confidence": 0.987
         },
         {
           "text": "long.",
           "start": 15.0,
           "end": 15.2,
-          "confidence": 0.809
+          "confidence": 0.814
         }
       ]
     },
     {
-      "id": 0,
+      "id": 8,
       "seek": 0,
       "start": 15.38,
       "end": 16.86,
       "text": " What if you can stay as long as you want?",
       "tokens": [
+        51114,
         708,
         498,
         291,
@@ -407,164 +400,141 @@
         382,
         291,
         528,
-        30
+        30,
+        51214
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.57229386999252,
-      "compression_ratio": 1.409356725146199,
-      "no_speech_prob": 0.18142351508140564,
-      "confidence": 0.787,
+      "avg_logprob": -0.5517271691626244,
+      "compression_ratio": 1.4319526627218935,
+      "no_speech_prob": 0.1108030155301094,
+      "confidence": 0.771,
       "words": [
         {
           "text": "What",
           "start": 15.38,
           "end": 15.54,
-          "confidence": 0.419
+          "confidence": 0.385
         },
         {
           "text": "if",
           "start": 15.54,
           "end": 15.62,
-          "confidence": 0.903
+          "confidence": 0.919
         },
         {
           "text": "you",
           "start": 15.62,
           "end": 15.7,
-          "confidence": 0.96
+          "confidence": 0.97
         },
         {
           "text": "can",
           "start": 15.7,
           "end": 15.98,
-          "confidence": 0.956
+          "confidence": 0.948
         },
         {
           "text": "stay",
           "start": 15.98,
-          "end": 16.14,
-          "confidence": 0.944
+          "end": 16.12,
+          "confidence": 0.959
         },
         {
           "text": "as",
-          "start": 16.14,
-          "end": 16.26,
-          "confidence": 0.389
+          "start": 16.12,
+          "end": 16.24,
+          "confidence": 0.307
         },
         {
           "text": "long",
-          "start": 16.26,
+          "start": 16.24,
           "end": 16.36,
-          "confidence": 0.99
+          "confidence": 0.993
         },
         {
           "text": "as",
           "start": 16.36,
-          "end": 16.52,
-          "confidence": 0.97
+          "end": 16.54,
+          "confidence": 0.992
         },
         {
           "text": "you",
-          "start": 16.52,
+          "start": 16.54,
           "end": 16.62,
-          "confidence": 0.946
+          "confidence": 0.959
         },
         {
           "text": "want?",
           "start": 16.62,
           "end": 16.86,
-          "confidence": 0.789
+          "confidence": 0.82
         }
       ]
     },
     {
-      "id": 0,
+      "id": 9,
       "seek": 0,
       "start": 16.86,
-      "end": 19.1,
-      "text": " My whole friend will be missed, yeah?",
+      "end": 17.74,
+      "text": " My girlfriend.",
       "tokens": [
+        51214,
         1222,
-        1379,
-        1277,
-        486,
-        312,
-        6721,
-        11,
-        1338,
-        30
+        10369,
+        13,
+        51264
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.57229386999252,
-      "compression_ratio": 1.409356725146199,
-      "no_speech_prob": 0.18142351508140564,
-      "confidence": 0.287,
+      "avg_logprob": -0.5517271691626244,
+      "compression_ratio": 1.4319526627218935,
+      "no_speech_prob": 0.1108030155301094,
+      "confidence": 0.142,
       "words": [
         {
           "text": "My",
           "start": 16.86,
           "end": 17.34,
-          "confidence": 0.115
+          "confidence": 0.126
         },
         {
-          "text": "whole",
+          "text": "girlfriend.",
           "start": 17.34,
-          "end": 17.62,
-          "confidence": 0.156
-        },
-        {
-          "text": "friend",
-          "start": 17.62,
-          "end": 17.9,
-          "confidence": 0.238
-        },
-        {
-          "text": "will",
-          "start": 17.9,
-          "end": 18.2,
-          "confidence": 0.288
-        },
-        {
-          "text": "be",
-          "start": 18.2,
-          "end": 18.38,
-          "confidence": 0.833
-        },
-        {
-          "text": "missed,",
-          "start": 18.38,
-          "end": 18.8,
-          "confidence": 0.306
-        },
-        {
-          "text": "yeah?",
-          "start": 19.08,
-          "end": 19.1,
-          "confidence": 0.517
+          "end": 17.74,
+          "confidence": 0.161
         }
       ]
     },
     {
-      "id": 0,
+      "id": 10,
       "seek": 0,
-      "start": 19.48,
-      "end": 20.06,
-      "text": " Bye.",
+      "start": 17.98,
+      "end": 18.9,
+      "text": " Really, mixture.",
       "tokens": [
-        4621,
-        13
+        51264,
+        4083,
+        11,
+        9925,
+        13,
+        51314
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.57229386999252,
-      "compression_ratio": 1.409356725146199,
-      "no_speech_prob": 0.18142351508140564,
-      "confidence": 0.191,
+      "avg_logprob": -0.5517271691626244,
+      "compression_ratio": 1.4319526627218935,
+      "no_speech_prob": 0.1108030155301094,
+      "confidence": 0.438,
       "words": [
         {
-          "text": "Bye.",
-          "start": 19.48,
-          "end": 20.06,
-          "confidence": 0.191
+          "text": "Really,",
+          "start": 17.98,
+          "end": 18.34,
+          "confidence": 0.705
+        },
+        {
+          "text": "mixture.",
+          "start": 18.7,
+          "end": 18.9,
+          "confidence": 0.273
         }
       ]
     }

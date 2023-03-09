@@ -1,5 +1,5 @@
 {
-  "text": "3212122222222211111111111111111111111111111111111111111111111111111111",
+  "text": "3212122222222211111111111111111111111111111111111111111111111",
   "segments": [
     {
       "id": 0,
@@ -8,7 +8,9 @@
       "end": 0.7,
       "text": "3",
       "tokens": [
-        18
+        50364,
+        18,
+        50464
       ],
       "temperature": 0.0,
       "avg_logprob": -0.28562339869412506,
@@ -25,13 +27,15 @@
       ]
     },
     {
-      "id": 0,
+      "id": 1,
       "seek": 0,
       "start": 1.96,
       "end": 3.02,
       "text": "2",
       "tokens": [
-        17
+        50464,
+        17,
+        50564
       ],
       "temperature": 0.0,
       "avg_logprob": -0.28562339869412506,
@@ -48,13 +52,15 @@
       ]
     },
     {
-      "id": 0,
+      "id": 2,
       "seek": 0,
       "start": 3.72,
       "end": 4.92,
       "text": "1",
       "tokens": [
-        16
+        50564,
+        16,
+        50664
       ],
       "temperature": 0.0,
       "avg_logprob": -0.28562339869412506,
@@ -71,13 +77,15 @@
       ]
     },
     {
-      "id": 0,
+      "id": 3,
       "seek": 0,
       "start": 5.5,
       "end": 7.08,
       "text": "2",
       "tokens": [
-        17
+        50664,
+        17,
+        50764
       ],
       "temperature": 0.0,
       "avg_logprob": -0.28562339869412506,
@@ -94,13 +102,15 @@
       ]
     },
     {
-      "id": 0,
+      "id": 4,
       "seek": 0,
       "start": 8.46,
       "end": 9.34,
       "text": "1",
       "tokens": [
-        16
+        50764,
+        16,
+        50864
       ],
       "temperature": 0.0,
       "avg_logprob": -0.28562339869412506,
@@ -117,13 +127,15 @@
       ]
     },
     {
-      "id": 0,
+      "id": 5,
       "seek": 0,
       "start": 9.78,
       "end": 11.34,
       "text": "2",
       "tokens": [
-        17
+        50864,
+        17,
+        50964
       ],
       "temperature": 0.0,
       "avg_logprob": -0.28562339869412506,
@@ -140,13 +152,15 @@
       ]
     },
     {
-      "id": 0,
+      "id": 6,
       "seek": 0,
       "start": 11.8,
       "end": 13.4,
       "text": "2",
       "tokens": [
-        17
+        50964,
+        17,
+        51064
       ],
       "temperature": 0.0,
       "avg_logprob": -0.28562339869412506,
@@ -163,13 +177,15 @@
       ]
     },
     {
-      "id": 0,
+      "id": 7,
       "seek": 0,
       "start": 13.68,
       "end": 15.54,
       "text": "2",
       "tokens": [
-        17
+        51064,
+        17,
+        51164
       ],
       "temperature": 0.0,
       "avg_logprob": -0.28562339869412506,
@@ -186,13 +202,15 @@
       ]
     },
     {
-      "id": 0,
+      "id": 8,
       "seek": 0,
       "start": 15.54,
       "end": 17.2,
       "text": "2",
       "tokens": [
-        17
+        51164,
+        17,
+        51264
       ],
       "temperature": 0.0,
       "avg_logprob": -0.28562339869412506,
@@ -209,13 +227,15 @@
       ]
     },
     {
-      "id": 0,
+      "id": 9,
       "seek": 0,
       "start": 17.5,
       "end": 19.24,
       "text": "2",
       "tokens": [
-        17
+        51264,
+        17,
+        51364
       ],
       "temperature": 0.0,
       "avg_logprob": -0.28562339869412506,
@@ -232,13 +252,15 @@
       ]
     },
     {
-      "id": 0,
+      "id": 10,
       "seek": 0,
       "start": 19.64,
       "end": 20.8,
       "text": "2",
       "tokens": [
-        17
+        51364,
+        17,
+        51464
       ],
       "temperature": 0.0,
       "avg_logprob": -0.28562339869412506,
@@ -255,13 +277,15 @@
       ]
     },
     {
-      "id": 0,
+      "id": 11,
       "seek": 0,
       "start": 22.06,
       "end": 22.9,
       "text": "2",
       "tokens": [
-        17
+        51464,
+        17,
+        51564
       ],
       "temperature": 0.0,
       "avg_logprob": -0.28562339869412506,
@@ -278,13 +302,15 @@
       ]
     },
     {
-      "id": 0,
+      "id": 12,
       "seek": 0,
       "start": 23.56,
       "end": 25.08,
       "text": "2",
       "tokens": [
-        17
+        51564,
+        17,
+        51664
       ],
       "temperature": 0.0,
       "avg_logprob": -0.28562339869412506,
@@ -301,13 +327,15 @@
       ]
     },
     {
-      "id": 0,
+      "id": 13,
       "seek": 0,
       "start": 26.48,
       "end": 27.08,
       "text": "2",
       "tokens": [
-        17
+        51664,
+        17,
+        51764
       ],
       "temperature": 0.0,
       "avg_logprob": -0.28562339869412506,
@@ -327,321 +355,349 @@
       "id": 14,
       "seek": 2800,
       "start": 28.12,
-      "end": 29.12,
+      "end": 29.62,
       "text": "1",
       "tokens": [
-        16
+        50364,
+        16,
+        50464
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.13071749427101828,
+      "avg_logprob": -0.11717794158241966,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1457100212574005,
-      "confidence": 0.312,
+      "no_speech_prob": 0.18292438983917236,
+      "confidence": 0.316,
       "words": [
         {
           "text": "1",
           "start": 28.12,
-          "end": 29.12,
-          "confidence": 0.312
+          "end": 29.62,
+          "confidence": 0.316
         }
       ]
     },
     {
-      "id": 14,
+      "id": 15,
       "seek": 2800,
       "start": 29.84,
-      "end": 31.2,
+      "end": 31.14,
       "text": "1",
       "tokens": [
-        16
+        50464,
+        16,
+        50564
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.13071749427101828,
+      "avg_logprob": -0.11717794158241966,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1457100212574005,
-      "confidence": 0.691,
+      "no_speech_prob": 0.18292438983917236,
+      "confidence": 0.545,
       "words": [
         {
           "text": "1",
           "start": 29.84,
-          "end": 31.2,
-          "confidence": 0.691
+          "end": 31.14,
+          "confidence": 0.545
         }
       ]
     },
     {
-      "id": 14,
+      "id": 16,
       "seek": 2800,
-      "start": 31.5,
+      "start": 32.06,
       "end": 33.18,
       "text": "1",
       "tokens": [
-        16
+        50564,
+        16,
+        50664
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.13071749427101828,
+      "avg_logprob": -0.11717794158241966,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1457100212574005,
-      "confidence": 0.936,
+      "no_speech_prob": 0.18292438983917236,
+      "confidence": 0.913,
       "words": [
         {
           "text": "1",
-          "start": 31.5,
+          "start": 32.06,
           "end": 33.18,
-          "confidence": 0.936
+          "confidence": 0.913
         }
       ]
     },
     {
-      "id": 14,
+      "id": 17,
       "seek": 2800,
       "start": 33.5,
-      "end": 35.04,
+      "end": 35.1,
       "text": "1",
       "tokens": [
-        16
+        50664,
+        16,
+        50764
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.13071749427101828,
+      "avg_logprob": -0.11717794158241966,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1457100212574005,
-      "confidence": 0.911,
+      "no_speech_prob": 0.18292438983917236,
+      "confidence": 0.887,
       "words": [
         {
           "text": "1",
           "start": 33.5,
-          "end": 35.04,
-          "confidence": 0.911
+          "end": 35.1,
+          "confidence": 0.887
         }
       ]
     },
     {
-      "id": 14,
+      "id": 18,
       "seek": 2800,
-      "start": 36.14,
+      "start": 36.18,
       "end": 36.64,
       "text": "1",
       "tokens": [
-        16
+        50764,
+        16,
+        50864
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.13071749427101828,
+      "avg_logprob": -0.11717794158241966,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1457100212574005,
-      "confidence": 0.96,
+      "no_speech_prob": 0.18292438983917236,
+      "confidence": 0.957,
       "words": [
         {
           "text": "1",
-          "start": 36.14,
+          "start": 36.18,
           "end": 36.64,
-          "confidence": 0.96
+          "confidence": 0.957
         }
       ]
     },
     {
-      "id": 14,
+      "id": 19,
       "seek": 2800,
       "start": 37.5,
       "end": 38.46,
       "text": "1",
       "tokens": [
-        16
+        50864,
+        16,
+        50964
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.13071749427101828,
+      "avg_logprob": -0.11717794158241966,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1457100212574005,
-      "confidence": 0.957,
+      "no_speech_prob": 0.18292438983917236,
+      "confidence": 0.958,
       "words": [
         {
           "text": "1",
           "start": 37.5,
           "end": 38.46,
-          "confidence": 0.957
+          "confidence": 0.958
         }
       ]
     },
     {
-      "id": 14,
+      "id": 20,
       "seek": 2800,
       "start": 39.5,
-      "end": 41.02,
+      "end": 41.14,
       "text": "1",
       "tokens": [
-        16
+        50964,
+        16,
+        51064
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.13071749427101828,
+      "avg_logprob": -0.11717794158241966,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1457100212574005,
-      "confidence": 0.963,
+      "no_speech_prob": 0.18292438983917236,
+      "confidence": 0.966,
       "words": [
         {
           "text": "1",
           "start": 39.5,
-          "end": 41.02,
-          "confidence": 0.963
+          "end": 41.14,
+          "confidence": 0.966
         }
       ]
     },
     {
-      "id": 14,
+      "id": 21,
       "seek": 2800,
       "start": 41.5,
       "end": 43.38,
       "text": "1",
       "tokens": [
-        16
+        51064,
+        16,
+        51164
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.13071749427101828,
+      "avg_logprob": -0.11717794158241966,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1457100212574005,
-      "confidence": 0.969,
+      "no_speech_prob": 0.18292438983917236,
+      "confidence": 0.973,
       "words": [
         {
           "text": "1",
           "start": 41.5,
           "end": 43.38,
-          "confidence": 0.969
+          "confidence": 0.973
         }
       ]
     },
     {
-      "id": 14,
+      "id": 22,
       "seek": 2800,
       "start": 43.88,
-      "end": 44.48,
+      "end": 44.68,
       "text": "1",
       "tokens": [
-        16
+        51164,
+        16,
+        51264
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.13071749427101828,
+      "avg_logprob": -0.11717794158241966,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1457100212574005,
-      "confidence": 0.935,
+      "no_speech_prob": 0.18292438983917236,
+      "confidence": 0.946,
       "words": [
         {
           "text": "1",
           "start": 43.88,
-          "end": 44.48,
-          "confidence": 0.935
+          "end": 44.68,
+          "confidence": 0.946
         }
       ]
     },
     {
-      "id": 14,
+      "id": 23,
       "seek": 2800,
       "start": 45.5,
       "end": 47.16,
       "text": "1",
       "tokens": [
-        16
+        51264,
+        16,
+        51364
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.13071749427101828,
+      "avg_logprob": -0.11717794158241966,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1457100212574005,
-      "confidence": 0.952,
+      "no_speech_prob": 0.18292438983917236,
+      "confidence": 0.96,
       "words": [
         {
           "text": "1",
           "start": 45.5,
           "end": 47.16,
-          "confidence": 0.952
+          "confidence": 0.96
         }
       ]
     },
     {
-      "id": 14,
+      "id": 24,
       "seek": 2800,
       "start": 47.94,
-      "end": 49.36,
+      "end": 48.8,
       "text": "1",
       "tokens": [
-        16
+        51364,
+        16,
+        51464
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.13071749427101828,
+      "avg_logprob": -0.11717794158241966,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1457100212574005,
-      "confidence": 0.959,
-      "words": [
-        {
-          "text": "1",
-          "start": 47.94,
-          "end": 49.36,
-          "confidence": 0.959
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "seek": 2800,
-      "start": 50.22,
-      "end": 50.96,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.13071749427101828,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1457100212574005,
+      "no_speech_prob": 0.18292438983917236,
       "confidence": 0.965,
       "words": [
         {
           "text": "1",
-          "start": 50.22,
-          "end": 50.96,
+          "start": 47.94,
+          "end": 48.8,
           "confidence": 0.965
         }
       ]
     },
     {
-      "id": 14,
+      "id": 25,
       "seek": 2800,
-      "start": 52.2,
-      "end": 52.82,
+      "start": 50.22,
+      "end": 50.96,
       "text": "1",
       "tokens": [
-        16
+        51464,
+        16,
+        51564
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.13071749427101828,
+      "avg_logprob": -0.11717794158241966,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1457100212574005,
-      "confidence": 0.957,
+      "no_speech_prob": 0.18292438983917236,
+      "confidence": 0.967,
       "words": [
         {
           "text": "1",
-          "start": 52.2,
-          "end": 52.82,
-          "confidence": 0.957
+          "start": 50.22,
+          "end": 50.96,
+          "confidence": 0.967
         }
       ]
     },
     {
-      "id": 14,
+      "id": 26,
       "seek": 2800,
-      "start": 53.5,
-      "end": 54.8,
+      "start": 52.22,
+      "end": 52.84,
       "text": "1",
       "tokens": [
-        16
+        51564,
+        16,
+        51664
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.13071749427101828,
+      "avg_logprob": -0.11717794158241966,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1457100212574005,
-      "confidence": 0.931,
+      "no_speech_prob": 0.18292438983917236,
+      "confidence": 0.963,
+      "words": [
+        {
+          "text": "1",
+          "start": 52.22,
+          "end": 52.84,
+          "confidence": 0.963
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "seek": 2800,
+      "start": 53.5,
+      "end": 54.78,
+      "text": "1",
+      "tokens": [
+        51664,
+        16,
+        51764
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.11717794158241966,
+      "compression_ratio": 1.2727272727272727,
+      "no_speech_prob": 0.18292438983917236,
+      "confidence": 0.945,
       "words": [
         {
           "text": "1",
           "start": 53.5,
-          "end": 54.8,
-          "confidence": 0.931
+          "end": 54.78,
+          "confidence": 0.945
         }
       ]
     },
@@ -649,965 +705,824 @@
       "id": 28,
       "seek": 5600,
       "start": 56.56,
-      "end": 57.54,
+      "end": 57.24,
       "text": "1",
       "tokens": [
-        16
+        50364,
+        16,
+        50464
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.1155602064999667,
+      "avg_logprob": -0.12248417464169589,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1612822413444519,
-      "confidence": 0.717,
+      "no_speech_prob": 0.1875864416360855,
+      "confidence": 0.425,
       "words": [
         {
           "text": "1",
           "start": 56.56,
-          "end": 57.54,
-          "confidence": 0.717
+          "end": 57.24,
+          "confidence": 0.425
         }
       ]
     },
     {
-      "id": 28,
+      "id": 29,
       "seek": 5600,
       "start": 57.64,
-      "end": 58.82,
+      "end": 58.86,
       "text": "1",
       "tokens": [
-        16
+        50464,
+        16,
+        50564
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.1155602064999667,
+      "avg_logprob": -0.12248417464169589,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1612822413444519,
-      "confidence": 0.923,
+      "no_speech_prob": 0.1875864416360855,
+      "confidence": 0.789,
       "words": [
         {
           "text": "1",
           "start": 57.64,
-          "end": 58.82,
-          "confidence": 0.923
+          "end": 58.86,
+          "confidence": 0.789
         }
       ]
     },
     {
-      "id": 28,
+      "id": 30,
       "seek": 5600,
-      "start": 60.0,
+      "start": 60.08,
       "end": 60.92,
       "text": "1",
       "tokens": [
-        16
+        50564,
+        16,
+        50664
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.1155602064999667,
+      "avg_logprob": -0.12248417464169589,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1612822413444519,
-      "confidence": 0.968,
+      "no_speech_prob": 0.1875864416360855,
+      "confidence": 0.953,
       "words": [
         {
           "text": "1",
-          "start": 60.0,
+          "start": 60.08,
           "end": 60.92,
-          "confidence": 0.968
+          "confidence": 0.953
         }
       ]
     },
     {
-      "id": 28,
+      "id": 31,
       "seek": 5600,
       "start": 61.5,
-      "end": 62.84,
+      "end": 62.62,
       "text": "1",
       "tokens": [
-        16
+        50664,
+        16,
+        50764
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.1155602064999667,
+      "avg_logprob": -0.12248417464169589,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1612822413444519,
-      "confidence": 0.966,
+      "no_speech_prob": 0.1875864416360855,
+      "confidence": 0.949,
       "words": [
         {
           "text": "1",
           "start": 61.5,
-          "end": 62.84,
-          "confidence": 0.966
+          "end": 62.62,
+          "confidence": 0.949
         }
       ]
     },
     {
-      "id": 28,
+      "id": 32,
       "seek": 5600,
-      "start": 64.38,
-      "end": 65.12,
+      "start": 64.36,
+      "end": 65.06,
       "text": "1",
       "tokens": [
-        16
+        50764,
+        16,
+        50864
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.1155602064999667,
+      "avg_logprob": -0.12248417464169589,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1612822413444519,
-      "confidence": 0.969,
+      "no_speech_prob": 0.1875864416360855,
+      "confidence": 0.954,
       "words": [
         {
           "text": "1",
-          "start": 64.38,
-          "end": 65.12,
-          "confidence": 0.969
+          "start": 64.36,
+          "end": 65.06,
+          "confidence": 0.954
         }
       ]
     },
     {
-      "id": 28,
+      "id": 33,
       "seek": 5600,
       "start": 65.5,
       "end": 66.92,
       "text": "1",
       "tokens": [
-        16
+        50864,
+        16,
+        50964
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.1155602064999667,
+      "avg_logprob": -0.12248417464169589,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1612822413444519,
-      "confidence": 0.966,
+      "no_speech_prob": 0.1875864416360855,
+      "confidence": 0.952,
       "words": [
         {
           "text": "1",
           "start": 65.5,
           "end": 66.92,
-          "confidence": 0.966
+          "confidence": 0.952
         }
       ]
     },
     {
-      "id": 28,
+      "id": 34,
       "seek": 5600,
       "start": 67.96,
-      "end": 69.1,
+      "end": 69.06,
       "text": "1",
       "tokens": [
-        16
+        50964,
+        16,
+        51064
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.1155602064999667,
+      "avg_logprob": -0.12248417464169589,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1612822413444519,
-      "confidence": 0.973,
-      "words": [
-        {
-          "text": "1",
-          "start": 67.96,
-          "end": 69.1,
-          "confidence": 0.973
-        }
-      ]
-    },
-    {
-      "id": 28,
-      "seek": 5600,
-      "start": 70.4,
-      "end": 71.69,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.1155602064999667,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1612822413444519,
-      "confidence": 0.968,
-      "words": [
-        {
-          "text": "1",
-          "start": 70.4,
-          "end": 71.69,
-          "confidence": 0.968
-        }
-      ]
-    },
-    {
-      "id": 28,
-      "seek": 5600,
-      "start": 71.69,
-      "end": 73.56,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.1155602064999667,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1612822413444519,
-      "confidence": 0.968,
-      "words": [
-        {
-          "text": "1",
-          "start": 71.69,
-          "end": 73.56,
-          "confidence": 0.968
-        }
-      ]
-    },
-    {
-      "id": 28,
-      "seek": 5600,
-      "start": 73.56,
-      "end": 74.36,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.1155602064999667,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1612822413444519,
-      "confidence": 0.959,
-      "words": [
-        {
-          "text": "1",
-          "start": 73.56,
-          "end": 74.36,
-          "confidence": 0.959
-        }
-      ]
-    },
-    {
-      "id": 28,
-      "seek": 5600,
-      "start": 75.5,
-      "end": 76.42,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.1155602064999667,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1612822413444519,
-      "confidence": 0.952,
-      "words": [
-        {
-          "text": "1",
-          "start": 75.5,
-          "end": 76.42,
-          "confidence": 0.952
-        }
-      ]
-    },
-    {
-      "id": 28,
-      "seek": 5600,
-      "start": 78.14,
-      "end": 78.84,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.1155602064999667,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1612822413444519,
-      "confidence": 0.952,
-      "words": [
-        {
-          "text": "1",
-          "start": 78.14,
-          "end": 78.84,
-          "confidence": 0.952
-        }
-      ]
-    },
-    {
-      "id": 28,
-      "seek": 5600,
-      "start": 80.08,
-      "end": 80.86,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.1155602064999667,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1612822413444519,
-      "confidence": 0.939,
-      "words": [
-        {
-          "text": "1",
-          "start": 80.08,
-          "end": 80.86,
-          "confidence": 0.939
-        }
-      ]
-    },
-    {
-      "id": 28,
-      "seek": 5600,
-      "start": 81.5,
-      "end": 82.84,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.1155602064999667,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.1612822413444519,
-      "confidence": 0.86,
-      "words": [
-        {
-          "text": "1",
-          "start": 81.5,
-          "end": 82.84,
-          "confidence": 0.86
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "seek": 8400,
-      "start": 84.3,
-      "end": 85.38,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.08781613544984297,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.42221787571907043,
-      "confidence": 0.899,
-      "words": [
-        {
-          "text": "1",
-          "start": 84.3,
-          "end": 85.38,
-          "confidence": 0.899
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "seek": 8400,
-      "start": 85.5,
-      "end": 86.88,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.08781613544984297,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.42221787571907043,
-      "confidence": 0.96,
-      "words": [
-        {
-          "text": "1",
-          "start": 85.5,
-          "end": 86.88,
-          "confidence": 0.96
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "seek": 8400,
-      "start": 87.76,
-      "end": 88.7,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.08781613544984297,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.42221787571907043,
-      "confidence": 0.975,
-      "words": [
-        {
-          "text": "1",
-          "start": 87.76,
-          "end": 88.7,
-          "confidence": 0.975
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "seek": 8400,
-      "start": 89.5,
-      "end": 90.52,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.08781613544984297,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.42221787571907043,
-      "confidence": 0.971,
-      "words": [
-        {
-          "text": "1",
-          "start": 89.5,
-          "end": 90.52,
-          "confidence": 0.971
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "seek": 8400,
-      "start": 91.5,
-      "end": 93.04,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.08781613544984297,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.42221787571907043,
-      "confidence": 0.966,
-      "words": [
-        {
-          "text": "1",
-          "start": 91.5,
-          "end": 93.04,
-          "confidence": 0.966
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "seek": 8400,
-      "start": 93.62,
-      "end": 95.14,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.08781613544984297,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.42221787571907043,
-      "confidence": 0.971,
-      "words": [
-        {
-          "text": "1",
-          "start": 93.62,
-          "end": 95.14,
-          "confidence": 0.971
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "seek": 8400,
-      "start": 95.86,
-      "end": 97.44,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.08781613544984297,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.42221787571907043,
-      "confidence": 0.983,
-      "words": [
-        {
-          "text": "1",
-          "start": 95.86,
-          "end": 97.44,
-          "confidence": 0.983
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "seek": 8400,
-      "start": 97.58,
-      "end": 99.0,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.08781613544984297,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.42221787571907043,
-      "confidence": 0.985,
-      "words": [
-        {
-          "text": "1",
-          "start": 97.58,
-          "end": 99.0,
-          "confidence": 0.985
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "seek": 8400,
-      "start": 99.5,
-      "end": 101.1,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.08781613544984297,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.42221787571907043,
-      "confidence": 0.988,
-      "words": [
-        {
-          "text": "1",
-          "start": 99.5,
-          "end": 101.1,
-          "confidence": 0.988
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "seek": 8400,
-      "start": 101.5,
-      "end": 103.48,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.08781613544984297,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.42221787571907043,
-      "confidence": 0.989,
-      "words": [
-        {
-          "text": "1",
-          "start": 101.5,
-          "end": 103.48,
-          "confidence": 0.989
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "seek": 8400,
-      "start": 103.5,
-      "end": 105.44,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.08781613544984297,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.42221787571907043,
-      "confidence": 0.989,
-      "words": [
-        {
-          "text": "1",
-          "start": 103.5,
-          "end": 105.44,
-          "confidence": 0.989
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "seek": 8400,
-      "start": 105.56,
-      "end": 106.72,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.08781613544984297,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.42221787571907043,
-      "confidence": 0.967,
-      "words": [
-        {
-          "text": "1",
-          "start": 105.56,
-          "end": 106.72,
-          "confidence": 0.967
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "seek": 8400,
-      "start": 108.28,
-      "end": 108.96,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.08781613544984297,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.42221787571907043,
-      "confidence": 0.957,
-      "words": [
-        {
-          "text": "1",
-          "start": 108.28,
-          "end": 108.96,
-          "confidence": 0.957
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "seek": 8400,
-      "start": 109.5,
-      "end": 110.4,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.08781613544984297,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.42221787571907043,
-      "confidence": 0.881,
-      "words": [
-        {
-          "text": "1",
-          "start": 109.5,
-          "end": 110.4,
-          "confidence": 0.881
-        }
-      ]
-    },
-    {
-      "id": 56,
-      "seek": 11200,
-      "start": 112.1,
-      "end": 113.3,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.08377319032495673,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.588297963142395,
-      "confidence": 0.939,
-      "words": [
-        {
-          "text": "1",
-          "start": 112.1,
-          "end": 113.3,
-          "confidence": 0.939
-        }
-      ]
-    },
-    {
-      "id": 56,
-      "seek": 11200,
-      "start": 114.12,
-      "end": 114.9,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.08377319032495673,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.588297963142395,
+      "no_speech_prob": 0.1875864416360855,
       "confidence": 0.965,
       "words": [
         {
           "text": "1",
-          "start": 114.12,
-          "end": 114.9,
+          "start": 67.96,
+          "end": 69.06,
           "confidence": 0.965
         }
       ]
     },
     {
-      "id": 56,
-      "seek": 11200,
-      "start": 116.12,
-      "end": 116.9,
+      "id": 35,
+      "seek": 5600,
+      "start": 70.38,
+      "end": 71.69,
       "text": "1",
       "tokens": [
-        16
+        51064,
+        16,
+        51164
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.08377319032495673,
+      "avg_logprob": -0.12248417464169589,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.588297963142395,
-      "confidence": 0.986,
+      "no_speech_prob": 0.1875864416360855,
+      "confidence": 0.956,
       "words": [
         {
           "text": "1",
-          "start": 116.12,
-          "end": 116.9,
-          "confidence": 0.986
+          "start": 70.38,
+          "end": 71.69,
+          "confidence": 0.956
         }
       ]
     },
     {
-      "id": 56,
-      "seek": 11200,
-      "start": 117.5,
-      "end": 118.7,
+      "id": 36,
+      "seek": 5600,
+      "start": 71.69,
+      "end": 73.56,
       "text": "1",
       "tokens": [
-        16
+        51164,
+        16,
+        51264
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.08377319032495673,
+      "avg_logprob": -0.12248417464169589,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.588297963142395,
-      "confidence": 0.979,
+      "no_speech_prob": 0.1875864416360855,
+      "confidence": 0.957,
       "words": [
         {
           "text": "1",
-          "start": 117.5,
-          "end": 118.7,
-          "confidence": 0.979
+          "start": 71.69,
+          "end": 73.56,
+          "confidence": 0.957
         }
       ]
     },
     {
-      "id": 56,
-      "seek": 11200,
-      "start": 119.5,
-      "end": 121.06,
+      "id": 37,
+      "seek": 5600,
+      "start": 73.56,
+      "end": 75.34,
       "text": "1",
       "tokens": [
-        16
+        51264,
+        16,
+        51364
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.08377319032495673,
+      "avg_logprob": -0.12248417464169589,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.588297963142395,
-      "confidence": 0.975,
+      "no_speech_prob": 0.1875864416360855,
+      "confidence": 0.955,
       "words": [
         {
           "text": "1",
-          "start": 119.5,
-          "end": 121.06,
-          "confidence": 0.975
+          "start": 73.56,
+          "end": 75.34,
+          "confidence": 0.955
         }
       ]
     },
     {
-      "id": 56,
-      "seek": 11200,
-      "start": 121.88,
-      "end": 123.26,
+      "id": 38,
+      "seek": 5600,
+      "start": 75.5,
+      "end": 76.42,
       "text": "1",
       "tokens": [
-        16
+        51364,
+        16,
+        51464
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.08377319032495673,
+      "avg_logprob": -0.12248417464169589,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.588297963142395,
+      "no_speech_prob": 0.1875864416360855,
+      "confidence": 0.939,
+      "words": [
+        {
+          "text": "1",
+          "start": 75.5,
+          "end": 76.42,
+          "confidence": 0.939
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "seek": 5600,
+      "start": 78.14,
+      "end": 78.78,
+      "text": "1",
+      "tokens": [
+        51464,
+        16,
+        51564
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12248417464169589,
+      "compression_ratio": 1.2727272727272727,
+      "no_speech_prob": 0.1875864416360855,
+      "confidence": 0.936,
+      "words": [
+        {
+          "text": "1",
+          "start": 78.14,
+          "end": 78.78,
+          "confidence": 0.936
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "seek": 5600,
+      "start": 80.08,
+      "end": 80.86,
+      "text": "1",
+      "tokens": [
+        51564,
+        16,
+        51664
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12248417464169589,
+      "compression_ratio": 1.2727272727272727,
+      "no_speech_prob": 0.1875864416360855,
+      "confidence": 0.922,
+      "words": [
+        {
+          "text": "1",
+          "start": 80.08,
+          "end": 80.86,
+          "confidence": 0.922
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "seek": 5600,
+      "start": 81.5,
+      "end": 82.84,
+      "text": "1",
+      "tokens": [
+        51664,
+        16,
+        51764
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.12248417464169589,
+      "compression_ratio": 1.2727272727272727,
+      "no_speech_prob": 0.1875864416360855,
+      "confidence": 0.896,
+      "words": [
+        {
+          "text": "1",
+          "start": 81.5,
+          "end": 82.84,
+          "confidence": 0.896
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "seek": 8400,
+      "start": 84.82,
+      "end": 85.6,
+      "text": "1",
+      "tokens": [
+        50364,
+        16,
+        50464
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.10892029242082076,
+      "compression_ratio": 1.2727272727272727,
+      "no_speech_prob": 0.1820167452096939,
+      "confidence": 0.793,
+      "words": [
+        {
+          "text": "1",
+          "start": 84.82,
+          "end": 85.6,
+          "confidence": 0.793
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "seek": 8400,
+      "start": 85.6,
+      "end": 86.8,
+      "text": "1",
+      "tokens": [
+        50464,
+        16,
+        50564
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.10892029242082076,
+      "compression_ratio": 1.2727272727272727,
+      "no_speech_prob": 0.1820167452096939,
+      "confidence": 0.88,
+      "words": [
+        {
+          "text": "1",
+          "start": 85.6,
+          "end": 86.8,
+          "confidence": 0.88
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "seek": 8400,
+      "start": 87.76,
+      "end": 88.72,
+      "text": "1",
+      "tokens": [
+        50564,
+        16,
+        50664
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.10892029242082076,
+      "compression_ratio": 1.2727272727272727,
+      "no_speech_prob": 0.1820167452096939,
+      "confidence": 0.954,
+      "words": [
+        {
+          "text": "1",
+          "start": 87.76,
+          "end": 88.72,
+          "confidence": 0.954
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "seek": 8400,
+      "start": 89.5,
+      "end": 90.52,
+      "text": "1",
+      "tokens": [
+        50664,
+        16,
+        50764
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.10892029242082076,
+      "compression_ratio": 1.2727272727272727,
+      "no_speech_prob": 0.1820167452096939,
+      "confidence": 0.951,
+      "words": [
+        {
+          "text": "1",
+          "start": 89.5,
+          "end": 90.52,
+          "confidence": 0.951
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "seek": 8400,
+      "start": 91.5,
+      "end": 93.02,
+      "text": "1",
+      "tokens": [
+        50764,
+        16,
+        50864
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.10892029242082076,
+      "compression_ratio": 1.2727272727272727,
+      "no_speech_prob": 0.1820167452096939,
+      "confidence": 0.91,
+      "words": [
+        {
+          "text": "1",
+          "start": 91.5,
+          "end": 93.02,
+          "confidence": 0.91
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "seek": 8400,
+      "start": 93.68,
+      "end": 95.36,
+      "text": "1",
+      "tokens": [
+        50864,
+        16,
+        50964
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.10892029242082076,
+      "compression_ratio": 1.2727272727272727,
+      "no_speech_prob": 0.1820167452096939,
+      "confidence": 0.944,
+      "words": [
+        {
+          "text": "1",
+          "start": 93.68,
+          "end": 95.36,
+          "confidence": 0.944
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "seek": 8400,
+      "start": 95.86,
+      "end": 97.84,
+      "text": "1",
+      "tokens": [
+        50964,
+        16,
+        51064
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.10892029242082076,
+      "compression_ratio": 1.2727272727272727,
+      "no_speech_prob": 0.1820167452096939,
+      "confidence": 0.967,
+      "words": [
+        {
+          "text": "1",
+          "start": 95.86,
+          "end": 97.84,
+          "confidence": 0.967
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "seek": 8400,
+      "start": 97.84,
+      "end": 98.98,
+      "text": "1",
+      "tokens": [
+        51064,
+        16,
+        51164
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.10892029242082076,
+      "compression_ratio": 1.2727272727272727,
+      "no_speech_prob": 0.1820167452096939,
       "confidence": 0.976,
       "words": [
         {
           "text": "1",
-          "start": 121.88,
-          "end": 123.26,
+          "start": 97.84,
+          "end": 98.98,
           "confidence": 0.976
         }
       ]
     },
     {
-      "id": 56,
-      "seek": 11200,
-      "start": 123.92,
-      "end": 125.48,
+      "id": 50,
+      "seek": 8400,
+      "start": 99.5,
+      "end": 101.1,
       "text": "1",
       "tokens": [
-        16
+        51164,
+        16,
+        51264
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.08377319032495673,
+      "avg_logprob": -0.10892029242082076,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.588297963142395,
-      "confidence": 0.983,
-      "words": [
-        {
-          "text": "1",
-          "start": 123.92,
-          "end": 125.48,
-          "confidence": 0.983
-        }
-      ]
-    },
-    {
-      "id": 56,
-      "seek": 11200,
-      "start": 125.66,
-      "end": 127.2,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.08377319032495673,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.588297963142395,
-      "confidence": 0.983,
-      "words": [
-        {
-          "text": "1",
-          "start": 125.66,
-          "end": 127.2,
-          "confidence": 0.983
-        }
-      ]
-    },
-    {
-      "id": 56,
-      "seek": 11200,
-      "start": 127.5,
-      "end": 128.92,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.08377319032495673,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.588297963142395,
+      "no_speech_prob": 0.1820167452096939,
       "confidence": 0.981,
       "words": [
         {
           "text": "1",
-          "start": 127.5,
-          "end": 128.92,
+          "start": 99.5,
+          "end": 101.1,
           "confidence": 0.981
         }
       ]
     },
     {
-      "id": 56,
-      "seek": 11200,
-      "start": 129.5,
-      "end": 131.06,
+      "id": 51,
+      "seek": 8400,
+      "start": 101.5,
+      "end": 103.48,
       "text": "1",
       "tokens": [
-        16
+        51264,
+        16,
+        51364
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.08377319032495673,
+      "avg_logprob": -0.10892029242082076,
       "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.588297963142395,
-      "confidence": 0.983,
+      "no_speech_prob": 0.1820167452096939,
+      "confidence": 0.985,
       "words": [
         {
           "text": "1",
-          "start": 129.5,
-          "end": 131.06,
-          "confidence": 0.983
+          "start": 101.5,
+          "end": 103.48,
+          "confidence": 0.985
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "seek": 8400,
+      "start": 103.5,
+      "end": 105.44,
+      "text": "1",
+      "tokens": [
+        51364,
+        16,
+        51464
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.10892029242082076,
+      "compression_ratio": 1.2727272727272727,
+      "no_speech_prob": 0.1820167452096939,
+      "confidence": 0.987,
+      "words": [
+        {
+          "text": "1",
+          "start": 103.5,
+          "end": 105.44,
+          "confidence": 0.987
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "seek": 8400,
+      "start": 105.58,
+      "end": 107.08,
+      "text": "1",
+      "tokens": [
+        51464,
+        16,
+        51564
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.10892029242082076,
+      "compression_ratio": 1.2727272727272727,
+      "no_speech_prob": 0.1820167452096939,
+      "confidence": 0.956,
+      "words": [
+        {
+          "text": "1",
+          "start": 105.58,
+          "end": 107.08,
+          "confidence": 0.956
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "seek": 8400,
+      "start": 108.32,
+      "end": 108.98,
+      "text": "1",
+      "tokens": [
+        51564,
+        16,
+        51664
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.10892029242082076,
+      "compression_ratio": 1.2727272727272727,
+      "no_speech_prob": 0.1820167452096939,
+      "confidence": 0.946,
+      "words": [
+        {
+          "text": "1",
+          "start": 108.32,
+          "end": 108.98,
+          "confidence": 0.946
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "seek": 8400,
+      "start": 109.5,
+      "end": 110.4,
+      "text": "1",
+      "tokens": [
+        51664,
+        16,
+        51764
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.10892029242082076,
+      "compression_ratio": 1.2727272727272727,
+      "no_speech_prob": 0.1820167452096939,
+      "confidence": 0.888,
+      "words": [
+        {
+          "text": "1",
+          "start": 109.5,
+          "end": 110.4,
+          "confidence": 0.888
         }
       ]
     },
     {
       "id": 56,
       "seek": 11200,
-      "start": 131.5,
-      "end": 133.3,
+      "start": 112.66,
+      "end": 113.32,
       "text": "1",
       "tokens": [
-        16
+        50364,
+        16,
+        50464
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.08377319032495673,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.588297963142395,
+      "avg_logprob": -0.13131670653820038,
+      "compression_ratio": 0.45454545454545453,
+      "no_speech_prob": 0.27970418334007263,
+      "confidence": 0.917,
+      "words": [
+        {
+          "text": "1",
+          "start": 112.66,
+          "end": 113.32,
+          "confidence": 0.917
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "seek": 11200,
+      "start": 113.98,
+      "end": 114.82,
+      "text": "1",
+      "tokens": [
+        50464,
+        16,
+        50564
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13131670653820038,
+      "compression_ratio": 0.45454545454545453,
+      "no_speech_prob": 0.27970418334007263,
+      "confidence": 0.888,
+      "words": [
+        {
+          "text": "1",
+          "start": 113.98,
+          "end": 114.82,
+          "confidence": 0.888
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "seek": 11200,
+      "start": 116.1,
+      "end": 117.3,
+      "text": "1",
+      "tokens": [
+        50564,
+        16,
+        50664
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13131670653820038,
+      "compression_ratio": 0.45454545454545453,
+      "no_speech_prob": 0.27970418334007263,
+      "confidence": 0.979,
+      "words": [
+        {
+          "text": "1",
+          "start": 116.1,
+          "end": 117.3,
+          "confidence": 0.979
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "seek": 11200,
+      "start": 117.5,
+      "end": 118.68,
+      "text": "1",
+      "tokens": [
+        50664,
+        16,
+        50764
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13131670653820038,
+      "compression_ratio": 0.45454545454545453,
+      "no_speech_prob": 0.27970418334007263,
       "confidence": 0.981,
       "words": [
         {
           "text": "1",
-          "start": 131.5,
-          "end": 133.3,
+          "start": 117.5,
+          "end": 118.68,
           "confidence": 0.981
         }
       ]
     },
     {
-      "id": 56,
+      "id": 60,
       "seek": 11200,
-      "start": 133.62,
-      "end": 135.18,
+      "start": 119.5,
+      "end": 120.86,
       "text": "1",
       "tokens": [
-        16
+        50764,
+        16,
+        50864
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.08377319032495673,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.588297963142395,
-      "confidence": 0.98,
+      "avg_logprob": -0.13131670653820038,
+      "compression_ratio": 0.45454545454545453,
+      "no_speech_prob": 0.27970418334007263,
+      "confidence": 0.973,
       "words": [
         {
           "text": "1",
-          "start": 133.62,
-          "end": 135.18,
-          "confidence": 0.98
-        }
-      ]
-    },
-    {
-      "id": 56,
-      "seek": 11200,
-      "start": 135.5,
-      "end": 137.24,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.08377319032495673,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.588297963142395,
-      "confidence": 0.977,
-      "words": [
-        {
-          "text": "1",
-          "start": 135.5,
-          "end": 137.24,
-          "confidence": 0.977
-        }
-      ]
-    },
-    {
-      "id": 56,
-      "seek": 11200,
-      "start": 137.6,
-      "end": 139.24,
-      "text": "1",
-      "tokens": [
-        16
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.08377319032495673,
-      "compression_ratio": 1.2727272727272727,
-      "no_speech_prob": 0.588297963142395,
-      "confidence": 0.883,
-      "words": [
-        {
-          "text": "1",
-          "start": 137.6,
-          "end": 139.24,
-          "confidence": 0.883
+          "start": 119.5,
+          "end": 120.86,
+          "confidence": 0.973
         }
       ]
     }

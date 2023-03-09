@@ -1,71 +1,60 @@
 {
-  "text": " Je ne suis pas en train de",
+  "text": " Je vais vous donner un",
   "segments": [
     {
       "id": 0,
       "seek": 0,
-      "start": 0.16,
-      "end": 1.62,
-      "text": " Je ne suis pas en train de",
+      "start": 0.18,
+      "end": 1.66,
+      "text": " Je vais vous donner un",
       "tokens": [
+        50364,
         2588,
-        408,
-        7624,
-        1736,
-        465,
-        3847,
+        9369,
+        2630,
+        20882,
+        517,
+        5604,
         368,
-        4865,
-        2788,
-        13
+        8827,
+        13,
+        50464
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.531572048480694,
-      "compression_ratio": 0.8222222222222222,
-      "no_speech_prob": 0.37774592638015747,
-      "confidence": 0.174,
+      "avg_logprob": -1.8625601132710774,
+      "compression_ratio": 0.8181818181818182,
+      "no_speech_prob": 0.41614440083503723,
+      "confidence": 0.103,
       "words": [
         {
           "text": "Je",
-          "start": 0.16,
-          "end": 0.78,
+          "start": 0.18,
+          "end": 0.82,
           "confidence": 0.067
         },
         {
-          "text": "ne",
-          "start": 0.78,
-          "end": 0.8,
-          "confidence": 0.139
-        },
-        {
-          "text": "suis",
-          "start": 0.8,
+          "text": "vais",
+          "start": 0.82,
           "end": 1.04,
-          "confidence": 0.184
+          "confidence": 0.128
         },
         {
-          "text": "pas",
+          "text": "vous",
           "start": 1.04,
-          "end": 1.16,
-          "confidence": 0.803
+          "end": 1.06,
+          "confidence": 0.074
         },
         {
-          "text": "en",
-          "start": 1.16,
-          "end": 1.38,
-          "confidence": 0.106
+          "text": "donner",
+          "start": 1.06,
+          "end": 1.26,
+          "confidence": 0.048
         },
         {
-          "text": "train",
-          "start": 1.38,
-          "end": 1.46,
-          "confidence": 0.136
-        },
-        {
-          "text": "de",
-          "start": 1.46,
-          "end": 1.62,
-          "confidence": 0.632
+          "text": "un",
+          "start": 1.26,
+          "end": 1.66,
+          "confidence": 0.143
         }
       ]
     }

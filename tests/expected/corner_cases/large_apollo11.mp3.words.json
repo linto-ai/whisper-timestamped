@@ -1,5 +1,5 @@
 {
-  "text": " Apollo 11, Houston. We got a recommendation for you on your Doiges EA, LM-EGEA. Over. Go ahead. Okay. We'd like to see if they'd like to go on the helmet we were going to have in B-1. And you could put the other one on Mike's helmet, which he'll see in his sleeping train. Over. I got it. I got it. Let's put it on the helmet in B-1. The other one might go in her sleep restraint. We've got them in their helmet bags. And I guess, excuse me, the helmet bags. The leases, the leases bags. Roger. Roger. I'm taking Nick to the auto. Yeah. I'm taking Nick to the auto to see if it's sealed up. We want to hang B-1. We want to hang B-1. With a cover. I tried it already. Okay. Fine. We weren't sure of that. This is a suggestion. We thought you could check it out. How much you've already done that. So I guess, whatever you come up with, just let us know. Okay. No problem. Okay. No problem. We'll let you know by the end of the night. Hello. Hello. Hello.",
+  "text": " Apollo 11, Houston. We got a recommendation for you on your Doiges EA, LM-EGEA. Over. Go ahead. Okay. We'd like to see if they'd like to go on the helmet we were going to have in B-1. And you could put the other one on Mike's helmet, which he'll see in his sleeping train. Over. I got it. I got it. Let's put it on the helmet in B-1. The other one might go in her sleep restraint. We've got them in their helmet bags. And I guess, excuse me, the helmet bags. The leases, the leases bags. Roger. Roger. I'm taking Nick to the auto. Yeah. I'm taking Nick to the auto to see if it's sealed up. We want to hang B-1. We want to hang B-1. With a cover. I tried it already. Okay. Fine. We weren't sure of that. This is a suggestion. We thought you could check it out. How much you've already done that. So I guess, whatever you come up with, just let us know. Okay. No problem. Okay. No problem. We'll let you know by the end of the night. Okay.",
   "segments": [
     {
       "id": 0,
@@ -8,6 +8,7 @@
       "end": 6.92,
       "text": " Apollo 11, Houston. We got a recommendation for you on your Doiges EA, LM-EGEA. Over.",
       "tokens": [
+        50364,
         25187,
         2975,
         11,
@@ -37,7 +38,8 @@
         32,
         13,
         4886,
-        13
+        13,
+        50714
       ],
       "temperature": 0.4,
       "avg_logprob": -0.6325046705163043,
@@ -138,15 +140,17 @@
       ]
     },
     {
-      "id": 0,
+      "id": 1,
       "seek": 0,
       "start": 10.48,
       "end": 11.14,
       "text": " Go ahead.",
       "tokens": [
+        50864,
         1037,
         2286,
-        13
+        13,
+        50914
       ],
       "temperature": 0.4,
       "avg_logprob": -0.6325046705163043,
@@ -169,12 +173,13 @@
       ]
     },
     {
-      "id": 0,
+      "id": 2,
       "seek": 0,
       "start": 11.48,
       "end": 19.14,
       "text": " Okay. We'd like to see if they'd like to go on the helmet we were going to have in B-1.",
       "tokens": [
+        50914,
         1033,
         13,
         492,
@@ -200,7 +205,8 @@
         363,
         12,
         16,
-        13
+        13,
+        51314
       ],
       "temperature": 0.4,
       "avg_logprob": -0.6325046705163043,
@@ -331,12 +337,13 @@
       ]
     },
     {
-      "id": 0,
+      "id": 3,
       "seek": 0,
       "start": 19.38,
       "end": 25.12,
       "text": " And you could put the other one on Mike's helmet, which he'll see in his sleeping train. Over.",
       "tokens": [
+        51314,
         400,
         291,
         727,
@@ -360,7 +367,8 @@
         491,
         13,
         4886,
-        13
+        13,
+        51614
       ],
       "temperature": 0.4,
       "avg_logprob": -0.6325046705163043,
@@ -485,10 +493,12 @@
       "end": 32.04,
       "text": " I got it.",
       "tokens": [
+        50414,
         286,
         658,
         309,
-        13
+        13,
+        50464
       ],
       "temperature": 0.4,
       "avg_logprob": -0.6483869719923588,
@@ -517,16 +527,18 @@
       ]
     },
     {
-      "id": 4,
+      "id": 5,
       "seek": 3000,
       "start": 32.48,
       "end": 33.27,
       "text": " I got it.",
       "tokens": [
+        50464,
         286,
         658,
         309,
-        13
+        13,
+        50514
       ],
       "temperature": 0.4,
       "avg_logprob": -0.6483869719923588,
@@ -555,12 +567,13 @@
       ]
     },
     {
-      "id": 4,
+      "id": 6,
       "seek": 3000,
       "start": 33.27,
       "end": 35.06,
       "text": " Let's put it on the helmet in B-1.",
       "tokens": [
+        50514,
         961,
         311,
         829,
@@ -572,7 +585,8 @@
         363,
         12,
         16,
-        13
+        13,
+        50614
       ],
       "temperature": 0.4,
       "avg_logprob": -0.6483869719923588,
@@ -631,12 +645,13 @@
       ]
     },
     {
-      "id": 4,
+      "id": 7,
       "seek": 3000,
       "start": 35.06,
       "end": 39.28,
       "text": " The other one might go in her sleep restraint.",
       "tokens": [
+        50614,
         440,
         661,
         472,
@@ -648,7 +663,8 @@
         1472,
         81,
         5114,
-        13
+        13,
+        50814
       ],
       "temperature": 0.4,
       "avg_logprob": -0.6483869719923588,
@@ -713,12 +729,13 @@
       ]
     },
     {
-      "id": 4,
+      "id": 8,
       "seek": 3000,
       "start": 39.94,
       "end": 42.04,
       "text": " We've got them in their helmet bags.",
       "tokens": [
+        50864,
         492,
         600,
         658,
@@ -727,7 +744,8 @@
         641,
         15922,
         10405,
-        13
+        13,
+        50964
       ],
       "temperature": 0.4,
       "avg_logprob": -0.6483869719923588,
@@ -780,12 +798,13 @@
       ]
     },
     {
-      "id": 4,
+      "id": 9,
       "seek": 3000,
       "start": 42.16,
       "end": 47.34,
       "text": " And I guess, excuse me, the helmet bags.",
       "tokens": [
+        50964,
         400,
         286,
         2041,
@@ -796,7 +815,8 @@
         264,
         15922,
         10405,
-        13
+        13,
+        51214
       ],
       "temperature": 0.4,
       "avg_logprob": -0.6483869719923588,
@@ -855,12 +875,13 @@
       ]
     },
     {
-      "id": 4,
+      "id": 10,
       "seek": 3000,
       "start": 48.22,
       "end": 49.48,
       "text": " The leases, the leases bags.",
       "tokens": [
+        51264,
         440,
         476,
         1957,
@@ -869,7 +890,8 @@
         476,
         1957,
         10405,
-        13
+        13,
+        51314
       ],
       "temperature": 0.4,
       "avg_logprob": -0.6483869719923588,
@@ -910,14 +932,16 @@
       ]
     },
     {
-      "id": 4,
+      "id": 11,
       "seek": 3000,
       "start": 50.14,
       "end": 50.5,
       "text": " Roger.",
       "tokens": [
+        51364,
         17666,
-        13
+        13,
+        51414
       ],
       "temperature": 0.4,
       "avg_logprob": -0.6483869719923588,
@@ -934,12 +958,13 @@
       ]
     },
     {
-      "id": 4,
+      "id": 12,
       "seek": 3000,
       "start": 51.4,
       "end": 52.94,
       "text": " Roger. I'm taking Nick to the auto.",
       "tokens": [
+        51414,
         17666,
         13,
         286,
@@ -950,7 +975,8 @@
         264,
         257,
         8262,
-        13
+        13,
+        51514
       ],
       "temperature": 0.4,
       "avg_logprob": -0.6483869719923588,
@@ -1003,12 +1029,13 @@
       ]
     },
     {
-      "id": 4,
+      "id": 13,
       "seek": 3000,
       "start": 53.1,
       "end": 55.34,
       "text": " Yeah. I'm taking Nick to the auto to see if it's sealed up.",
       "tokens": [
+        51514,
         865,
         13,
         286,
@@ -1026,7 +1053,8 @@
         311,
         21514,
         493,
-        13
+        13,
+        51614
       ],
       "temperature": 0.4,
       "avg_logprob": -0.6483869719923588,
@@ -1121,6 +1149,7 @@
       "end": 57.74,
       "text": " We want to hang B-1.",
       "tokens": [
+        50414,
         492,
         528,
         281,
@@ -1128,7 +1157,8 @@
         363,
         12,
         16,
-        13
+        13,
+        50514
       ],
       "temperature": 0.4,
       "avg_logprob": -0.38282853523186877,
@@ -1169,12 +1199,13 @@
       ]
     },
     {
-      "id": 14,
+      "id": 15,
       "seek": 5500,
       "start": 57.82,
       "end": 58.85,
       "text": " We want to hang B-1.",
       "tokens": [
+        50514,
         492,
         528,
         281,
@@ -1182,7 +1213,8 @@
         363,
         12,
         16,
-        13
+        13,
+        50564
       ],
       "temperature": 0.4,
       "avg_logprob": -0.38282853523186877,
@@ -1223,12 +1255,13 @@
       ]
     },
     {
-      "id": 14,
+      "id": 16,
       "seek": 5500,
       "start": 58.85,
       "end": 61.84,
       "text": " With a cover. I tried it already.",
       "tokens": [
+        50564,
         2022,
         257,
         2060,
@@ -1237,7 +1270,8 @@
         3031,
         309,
         1217,
-        13
+        13,
+        50714
       ],
       "temperature": 0.4,
       "avg_logprob": -0.38282853523186877,
@@ -1290,12 +1324,13 @@
       ]
     },
     {
-      "id": 14,
+      "id": 17,
       "seek": 5500,
       "start": 62.46,
       "end": 64.1,
       "text": " Okay. Fine. We weren't sure of that.",
       "tokens": [
+        50714,
         1033,
         13,
         12024,
@@ -1306,7 +1341,8 @@
         988,
         295,
         300,
-        13
+        13,
+        50814
       ],
       "temperature": 0.4,
       "avg_logprob": -0.38282853523186877,
@@ -1359,12 +1395,13 @@
       ]
     },
     {
-      "id": 14,
+      "id": 18,
       "seek": 5500,
       "start": 64.32,
       "end": 67.8,
       "text": " This is a suggestion. We thought you could check it out.",
       "tokens": [
+        50814,
         639,
         307,
         257,
@@ -1377,7 +1414,8 @@
         1520,
         309,
         484,
-        13
+        13,
+        51014
       ],
       "temperature": 0.4,
       "avg_logprob": -0.38282853523186877,
@@ -1454,12 +1492,13 @@
       ]
     },
     {
-      "id": 14,
+      "id": 19,
       "seek": 5500,
       "start": 68.18,
       "end": 69.3,
       "text": " How much you've already done that.",
       "tokens": [
+        51014,
         1012,
         709,
         291,
@@ -1467,7 +1506,8 @@
         1217,
         1096,
         300,
-        13
+        13,
+        51064
       ],
       "temperature": 0.4,
       "avg_logprob": -0.38282853523186877,
@@ -1514,12 +1554,13 @@
       ]
     },
     {
-      "id": 14,
+      "id": 20,
       "seek": 5500,
       "start": 69.36,
       "end": 72.38,
       "text": " So I guess, whatever you come up with, just let us know.",
       "tokens": [
+        51064,
         407,
         286,
         2041,
@@ -1534,7 +1575,8 @@
         718,
         505,
         458,
-        13
+        13,
+        51214
       ],
       "temperature": 0.4,
       "avg_logprob": -0.38282853523186877,
@@ -1617,17 +1659,19 @@
       ]
     },
     {
-      "id": 14,
+      "id": 21,
       "seek": 5500,
       "start": 74.18,
       "end": 75.2,
       "text": " Okay. No problem.",
       "tokens": [
+        51314,
         1033,
         13,
         883,
         1154,
-        13
+        13,
+        51364
       ],
       "temperature": 0.4,
       "avg_logprob": -0.38282853523186877,
@@ -1656,12 +1700,13 @@
       ]
     },
     {
-      "id": 14,
+      "id": 22,
       "seek": 5500,
       "start": 75.48,
       "end": 78.28,
       "text": " Okay. No problem. We'll let you know by the end of the night.",
       "tokens": [
+        51364,
         1033,
         13,
         883,
@@ -1678,7 +1723,8 @@
         295,
         264,
         1818,
-        13
+        13,
+        51514
       ],
       "temperature": 0.4,
       "avg_logprob": -0.38282853523186877,
@@ -1769,40 +1815,26 @@
     {
       "id": 23,
       "seek": 8500,
-      "start": 85.2,
-      "end": 87.64,
-      "text": " Hello. Hello. Hello.",
+      "start": 85.16,
+      "end": 85.58,
+      "text": " Okay.",
       "tokens": [
-        2425,
+        50364,
+        1033,
         13,
-        2425,
-        13,
-        2425,
-        13
+        50564
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.5005535549587674,
-      "compression_ratio": 1.1764705882352942,
-      "no_speech_prob": 0.7139272093772888,
-      "confidence": 0.358,
+      "avg_logprob": -0.5946155548095703,
+      "compression_ratio": 0.38461538461538464,
+      "no_speech_prob": 0.8954996466636658,
+      "confidence": 0.233,
       "words": [
         {
-          "text": "Hello.",
-          "start": 85.2,
-          "end": 85.44,
-          "confidence": 0.164
-        },
-        {
-          "text": "Hello.",
-          "start": 85.86,
-          "end": 86.76,
-          "confidence": 0.496
-        },
-        {
-          "text": "Hello.",
-          "start": 87.08,
-          "end": 87.64,
-          "confidence": 0.564
+          "text": "Okay.",
+          "start": 85.16,
+          "end": 85.58,
+          "confidence": 0.233
         }
       ]
     }

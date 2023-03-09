@@ -1,65 +1,68 @@
 {
-  "text": " Dima et ce que l'on vole.",
+  "text": " Dima, est ce que l'on vole?",
   "segments": [
     {
       "id": 0,
       "seek": 0,
       "start": 0.42,
-      "end": 2.36,
-      "text": " Dima et ce que l'on vole.",
+      "end": 2.3,
+      "text": " Dima, est ce que l'on vole?",
       "tokens": [
+        50364,
         413,
         4775,
-        1030,
+        11,
+        871,
         1769,
         631,
         287,
         6,
         266,
         49877,
-        13
+        2506,
+        50494
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.9100304383497971,
-      "compression_ratio": 0.7575757575757576,
-      "no_speech_prob": 0.0011753258295357227,
-      "confidence": 0.438,
+      "avg_logprob": -0.8433258192879813,
+      "compression_ratio": 0.7714285714285715,
+      "no_speech_prob": 0.0010773715330287814,
+      "confidence": 0.456,
       "words": [
         {
-          "text": "Dima",
+          "text": "Dima,",
           "start": 0.42,
           "end": 0.84,
-          "confidence": 0.285
+          "confidence": 0.246
         },
         {
-          "text": "et",
-          "start": 0.84,
-          "end": 1.38,
-          "confidence": 0.33
+          "text": "est",
+          "start": 1.2,
+          "end": 1.4,
+          "confidence": 0.93
         },
         {
           "text": "ce",
-          "start": 1.38,
+          "start": 1.4,
           "end": 1.56,
-          "confidence": 0.529
+          "confidence": 0.589
         },
         {
           "text": "que",
           "start": 1.56,
-          "end": 1.66,
-          "confidence": 0.854
+          "end": 1.68,
+          "confidence": 0.916
         },
         {
           "text": "l'on",
-          "start": 1.66,
+          "start": 1.68,
           "end": 2.02,
-          "confidence": 0.568
+          "confidence": 0.482
         },
         {
-          "text": "vole.",
+          "text": "vole?",
           "start": 2.02,
-          "end": 2.36,
-          "confidence": 0.27
+          "end": 2.3,
+          "confidence": 0.249
         }
       ]
     }

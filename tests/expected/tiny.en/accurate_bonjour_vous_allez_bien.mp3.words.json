@@ -8,6 +8,7 @@
       "end": 2.84,
       "text": " Mohoo, let's go with it again",
       "tokens": [
+        50363,
         337,
         1219,
         2238,
@@ -17,7 +18,8 @@
         467,
         351,
         340,
-        757
+        757,
+        50501
       ],
       "temperature": 0.0,
       "avg_logprob": -0.7688669057992789,
@@ -70,6 +72,7 @@
       "end": 35.42,
       "text": " Mohoo, let's go with it again",
       "tokens": [
+        50363,
         337,
         1219,
         2238,
@@ -79,49 +82,50 @@
         467,
         351,
         340,
-        757
+        757,
+        50627
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.37818329150860125,
+      "avg_logprob": -0.41309855534480167,
       "compression_ratio": 0.7837837837837838,
-      "no_speech_prob": 0.10409244894981384,
-      "confidence": 0.542,
+      "no_speech_prob": 0.34659242630004883,
+      "confidence": 0.544,
       "words": [
         {
           "text": "Mohoo,",
           "start": 30.48,
-          "end": 34.04,
-          "confidence": 0.276
+          "end": 34.02,
+          "confidence": 0.277
         },
         {
           "text": "let's",
           "start": 34.46,
           "end": 34.74,
-          "confidence": 0.886
+          "confidence": 0.89
         },
         {
           "text": "go",
           "start": 34.74,
           "end": 34.86,
-          "confidence": 0.944
+          "confidence": 0.935
         },
         {
           "text": "with",
           "start": 34.86,
           "end": 34.98,
-          "confidence": 0.661
+          "confidence": 0.658
         },
         {
           "text": "it",
           "start": 34.98,
           "end": 35.1,
-          "confidence": 0.764
+          "confidence": 0.79
         },
         {
           "text": "again",
           "start": 35.1,
           "end": 35.42,
-          "confidence": 0.996
+          "confidence": 0.997
         }
       ]
     }

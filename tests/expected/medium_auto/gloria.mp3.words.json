@@ -1,137 +1,146 @@
 {
-  "text": " Hello. How are you? Love. How are you? I'm okay. I will be. I said she could stay with us tomorrow until she feels better. Of course she can. This won't be for long. Well, you can stay as long as you want, my love. I really miss you.",
+  "text": " Hello. How are you? Love. How are you? I'm okay. I will be. I said she could stay with us tomorrow, she feels better. Of course she can. This won't be for long. Well, you can stay as long as you want, my love. I really miss you.",
   "segments": [
     {
       "id": 0,
       "seek": 0,
       "start": 0.98,
-      "end": 1.76,
+      "end": 1.74,
       "text": " Hello.",
       "tokens": [
+        50364,
         2425,
-        13
+        13,
+        50464
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.22299427705652575,
-      "compression_ratio": 1.4746835443037976,
-      "no_speech_prob": 0.32281985878944397,
-      "confidence": 0.318,
+      "avg_logprob": -0.239252830954159,
+      "compression_ratio": 1.4615384615384615,
+      "no_speech_prob": 0.05016394704580307,
+      "confidence": 0.285,
       "words": [
         {
           "text": "Hello.",
           "start": 0.98,
-          "end": 1.76,
-          "confidence": 0.318
+          "end": 1.74,
+          "confidence": 0.285
         }
       ]
     },
     {
-      "id": 0,
+      "id": 1,
       "seek": 0,
       "start": 2.32,
-      "end": 3.51,
+      "end": 3.5,
       "text": " How are you?",
       "tokens": [
+        50464,
         1012,
         366,
         291,
-        30
+        30,
+        50564
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.22299427705652575,
-      "compression_ratio": 1.4746835443037976,
-      "no_speech_prob": 0.32281985878944397,
-      "confidence": 0.767,
+      "avg_logprob": -0.239252830954159,
+      "compression_ratio": 1.4615384615384615,
+      "no_speech_prob": 0.05016394704580307,
+      "confidence": 0.786,
       "words": [
         {
           "text": "How",
           "start": 2.32,
           "end": 2.82,
-          "confidence": 0.509
+          "confidence": 0.551
         },
         {
           "text": "are",
           "start": 2.82,
           "end": 3.24,
-          "confidence": 0.991
+          "confidence": 0.989
         },
         {
           "text": "you?",
           "start": 3.24,
-          "end": 3.51,
-          "confidence": 0.894
+          "end": 3.5,
+          "confidence": 0.893
         }
       ]
     },
     {
-      "id": 0,
+      "id": 2,
       "seek": 0,
-      "start": 3.51,
-      "end": 4.28,
+      "start": 3.5,
+      "end": 4.26,
       "text": " Love.",
       "tokens": [
+        50564,
         5956,
-        13
+        13,
+        50664
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.22299427705652575,
-      "compression_ratio": 1.4746835443037976,
-      "no_speech_prob": 0.32281985878944397,
-      "confidence": 0.289,
+      "avg_logprob": -0.239252830954159,
+      "compression_ratio": 1.4615384615384615,
+      "no_speech_prob": 0.05016394704580307,
+      "confidence": 0.244,
       "words": [
         {
           "text": "Love.",
-          "start": 3.51,
-          "end": 4.28,
-          "confidence": 0.289
+          "start": 3.5,
+          "end": 4.26,
+          "confidence": 0.244
         }
       ]
     },
     {
-      "id": 0,
+      "id": 3,
       "seek": 0,
       "start": 5.5,
       "end": 6.38,
       "text": " How are you?",
       "tokens": [
+        50664,
         1012,
         366,
         291,
-        30
+        30,
+        50764
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.22299427705652575,
-      "compression_ratio": 1.4746835443037976,
-      "no_speech_prob": 0.32281985878944397,
-      "confidence": 0.93,
+      "avg_logprob": -0.239252830954159,
+      "compression_ratio": 1.4615384615384615,
+      "no_speech_prob": 0.05016394704580307,
+      "confidence": 0.926,
       "words": [
         {
           "text": "How",
           "start": 5.5,
           "end": 5.68,
-          "confidence": 0.86
+          "confidence": 0.851
         },
         {
           "text": "are",
           "start": 5.68,
-          "end": 6.1,
+          "end": 6.08,
           "confidence": 0.998
         },
         {
           "text": "you?",
-          "start": 6.1,
+          "start": 6.08,
           "end": 6.38,
-          "confidence": 0.938
+          "confidence": 0.935
         }
       ]
     },
     {
-      "id": 0,
+      "id": 4,
       "seek": 0,
       "start": 7.5,
       "end": 9.18,
       "text": " I'm okay. I will be.",
       "tokens": [
+        50764,
         286,
         478,
         1392,
@@ -139,37 +148,38 @@
         286,
         486,
         312,
-        13
+        13,
+        50864
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.22299427705652575,
-      "compression_ratio": 1.4746835443037976,
-      "no_speech_prob": 0.32281985878944397,
-      "confidence": 0.783,
+      "avg_logprob": -0.239252830954159,
+      "compression_ratio": 1.4615384615384615,
+      "no_speech_prob": 0.05016394704580307,
+      "confidence": 0.769,
       "words": [
         {
           "text": "I'm",
           "start": 7.5,
           "end": 7.52,
-          "confidence": 0.756
+          "confidence": 0.767
         },
         {
           "text": "okay.",
           "start": 7.52,
-          "end": 8.16,
-          "confidence": 0.533
+          "end": 8.22,
+          "confidence": 0.488
         },
         {
           "text": "I",
-          "start": 8.44,
+          "start": 8.42,
           "end": 8.64,
-          "confidence": 0.793
+          "confidence": 0.765
         },
         {
           "text": "will",
           "start": 8.64,
           "end": 8.94,
-          "confidence": 0.956
+          "confidence": 0.949
         },
         {
           "text": "be.",
@@ -180,12 +190,13 @@
       ]
     },
     {
-      "id": 0,
+      "id": 5,
       "seek": 0,
       "start": 9.5,
       "end": 11.52,
-      "text": " I said she could stay with us tomorrow until she feels better.",
+      "text": " I said she could stay with us tomorrow, she feels better.",
       "tokens": [
+        50864,
         286,
         848,
         750,
@@ -194,175 +205,174 @@
         365,
         505,
         4153,
-        1826,
+        11,
         750,
         3417,
         1101,
-        13
+        13,
+        50964
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.22299427705652575,
-      "compression_ratio": 1.4746835443037976,
-      "no_speech_prob": 0.32281985878944397,
-      "confidence": 0.801,
+      "avg_logprob": -0.239252830954159,
+      "compression_ratio": 1.4615384615384615,
+      "no_speech_prob": 0.05016394704580307,
+      "confidence": 0.786,
       "words": [
         {
           "text": "I",
           "start": 9.5,
           "end": 9.52,
-          "confidence": 0.896
+          "confidence": 0.883
         },
         {
           "text": "said",
           "start": 9.52,
           "end": 9.64,
-          "confidence": 0.857
+          "confidence": 0.856
         },
         {
           "text": "she",
           "start": 9.64,
           "end": 9.78,
-          "confidence": 0.92
+          "confidence": 0.928
         },
         {
           "text": "could",
           "start": 9.78,
           "end": 9.96,
-          "confidence": 0.91
+          "confidence": 0.909
         },
         {
           "text": "stay",
           "start": 9.96,
           "end": 10.16,
-          "confidence": 0.995
+          "confidence": 0.994
         },
         {
           "text": "with",
           "start": 10.16,
           "end": 10.28,
-          "confidence": 0.979
+          "confidence": 0.977
         },
         {
           "text": "us",
           "start": 10.28,
           "end": 10.46,
-          "confidence": 0.994
-        },
-        {
-          "text": "tomorrow",
-          "start": 10.46,
-          "end": 10.66,
-          "confidence": 0.46
-        },
-        {
-          "text": "until",
-          "start": 10.66,
-          "end": 10.84,
-          "confidence": 0.252
-        },
-        {
-          "text": "she",
-          "start": 10.84,
-          "end": 11.0,
           "confidence": 0.993
         },
         {
+          "text": "tomorrow,",
+          "start": 10.46,
+          "end": 10.66,
+          "confidence": 0.514
+        },
+        {
+          "text": "she",
+          "start": 10.72,
+          "end": 10.86,
+          "confidence": 0.279
+        },
+        {
           "text": "feels",
-          "start": 11.0,
-          "end": 11.22,
-          "confidence": 0.98
+          "start": 10.86,
+          "end": 11.16,
+          "confidence": 0.809
         },
         {
           "text": "better.",
-          "start": 11.22,
+          "start": 11.16,
           "end": 11.52,
-          "confidence": 0.994
+          "confidence": 0.992
         }
       ]
     },
     {
-      "id": 0,
+      "id": 6,
       "seek": 0,
-      "start": 12.04,
-      "end": 13.34,
+      "start": 12.06,
+      "end": 13.36,
       "text": " Of course she can.",
       "tokens": [
+        50964,
         2720,
         1164,
         750,
         393,
-        13
+        13,
+        51064
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.22299427705652575,
-      "compression_ratio": 1.4746835443037976,
-      "no_speech_prob": 0.32281985878944397,
-      "confidence": 0.944,
+      "avg_logprob": -0.239252830954159,
+      "compression_ratio": 1.4615384615384615,
+      "no_speech_prob": 0.05016394704580307,
+      "confidence": 0.928,
       "words": [
         {
           "text": "Of",
-          "start": 12.04,
+          "start": 12.06,
           "end": 12.34,
-          "confidence": 0.836
+          "confidence": 0.788
         },
         {
           "text": "course",
           "start": 12.34,
-          "end": 12.66,
-          "confidence": 0.991
+          "end": 12.56,
+          "confidence": 0.989
         },
         {
           "text": "she",
-          "start": 12.66,
+          "start": 12.56,
           "end": 12.88,
-          "confidence": 0.964
+          "confidence": 0.958
         },
         {
           "text": "can.",
           "start": 12.88,
-          "end": 13.34,
-          "confidence": 0.994
+          "end": 13.36,
+          "confidence": 0.993
         }
       ]
     },
     {
-      "id": 0,
+      "id": 7,
       "seek": 0,
       "start": 13.5,
-      "end": 15.22,
+      "end": 15.26,
       "text": " This won't be for long.",
       "tokens": [
+        51064,
         639,
         1582,
         380,
         312,
         337,
         938,
-        13
+        13,
+        51164
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.22299427705652575,
-      "compression_ratio": 1.4746835443037976,
-      "no_speech_prob": 0.32281985878944397,
-      "confidence": 0.88,
+      "avg_logprob": -0.239252830954159,
+      "compression_ratio": 1.4615384615384615,
+      "no_speech_prob": 0.05016394704580307,
+      "confidence": 0.892,
       "words": [
         {
           "text": "This",
           "start": 13.5,
           "end": 14.28,
-          "confidence": 0.492
+          "confidence": 0.543
         },
         {
           "text": "won't",
           "start": 14.28,
-          "end": 14.58,
-          "confidence": 0.981
+          "end": 14.6,
+          "confidence": 0.975
         },
         {
           "text": "be",
-          "start": 14.58,
+          "start": 14.6,
           "end": 14.8,
-          "confidence": 0.997
+          "confidence": 0.996
         },
         {
           "text": "for",
@@ -373,18 +383,19 @@
         {
           "text": "long.",
           "start": 14.96,
-          "end": 15.22,
+          "end": 15.26,
           "confidence": 0.996
         }
       ]
     },
     {
-      "id": 0,
+      "id": 8,
       "seek": 0,
       "start": 15.5,
       "end": 17.62,
       "text": " Well, you can stay as long as you want, my love.",
       "tokens": [
+        51164,
         1042,
         11,
         291,
@@ -398,61 +409,62 @@
         11,
         452,
         959,
-        13
+        13,
+        51264
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.22299427705652575,
-      "compression_ratio": 1.4746835443037976,
-      "no_speech_prob": 0.32281985878944397,
-      "confidence": 0.928,
+      "avg_logprob": -0.239252830954159,
+      "compression_ratio": 1.4615384615384615,
+      "no_speech_prob": 0.05016394704580307,
+      "confidence": 0.927,
       "words": [
         {
           "text": "Well,",
           "start": 15.5,
           "end": 15.56,
-          "confidence": 0.697
+          "confidence": 0.675
         },
         {
           "text": "you",
           "start": 15.68,
           "end": 15.7,
-          "confidence": 0.719
+          "confidence": 0.744
         },
         {
           "text": "can",
           "start": 15.7,
-          "end": 15.92,
-          "confidence": 0.987
+          "end": 15.94,
+          "confidence": 0.982
         },
         {
           "text": "stay",
-          "start": 15.92,
+          "start": 15.94,
           "end": 16.14,
-          "confidence": 0.99
+          "confidence": 0.985
         },
         {
           "text": "as",
           "start": 16.14,
           "end": 16.28,
-          "confidence": 0.977
+          "confidence": 0.972
         },
         {
           "text": "long",
           "start": 16.28,
           "end": 16.4,
-          "confidence": 0.995
+          "confidence": 0.994
         },
         {
           "text": "as",
           "start": 16.4,
-          "end": 16.5,
-          "confidence": 0.997
+          "end": 16.48,
+          "confidence": 0.996
         },
         {
           "text": "you",
-          "start": 16.5,
+          "start": 16.48,
           "end": 16.62,
-          "confidence": 0.996
+          "confidence": 0.995
         },
         {
           "text": "want,",
@@ -464,58 +476,60 @@
           "text": "my",
           "start": 16.88,
           "end": 17.22,
-          "confidence": 0.944
+          "confidence": 0.949
         },
         {
           "text": "love.",
           "start": 17.22,
           "end": 17.62,
-          "confidence": 0.994
+          "confidence": 0.993
         }
       ]
     },
     {
-      "id": 0,
+      "id": 9,
       "seek": 0,
       "start": 17.76,
-      "end": 19.24,
+      "end": 19.26,
       "text": " I really miss you.",
       "tokens": [
+        51264,
         286,
         534,
         1713,
         291,
-        13
+        13,
+        51364
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.22299427705652575,
-      "compression_ratio": 1.4746835443037976,
-      "no_speech_prob": 0.32281985878944397,
-      "confidence": 0.806,
+      "avg_logprob": -0.239252830954159,
+      "compression_ratio": 1.4615384615384615,
+      "no_speech_prob": 0.05016394704580307,
+      "confidence": 0.792,
       "words": [
         {
           "text": "I",
           "start": 17.76,
           "end": 17.98,
-          "confidence": 0.634
+          "confidence": 0.587
         },
         {
           "text": "really",
           "start": 17.98,
           "end": 18.36,
-          "confidence": 0.926
+          "confidence": 0.944
         },
         {
           "text": "miss",
           "start": 18.36,
           "end": 18.78,
-          "confidence": 0.899
+          "confidence": 0.905
         },
         {
           "text": "you.",
           "start": 18.78,
-          "end": 19.24,
-          "confidence": 0.798
+          "end": 19.26,
+          "confidence": 0.787
         }
       ]
     }
