@@ -1646,9 +1646,12 @@ def split_tokens_on_spaces(tokens: torch.Tensor, tokenizer, remove_punctuation_f
     for i, (subword, subword_tokens, subword_tokens_indices) in enumerate(zip(subwords, subword_tokens_list, subword_tokens_indices_list)):
         special = (subword_tokens_indices[0] >= tokenizer.eot)
         previous_special = (i > 0) and (subword_tokens_indices_list[i-1][0] >= tokenizer.eot)
-        with_space = subword.startswith(" ")
-        punctuation = (subword.strip() and subword.strip()) in _punctuation
-        if special or (with_space and not punctuation) or previous_special:
+        next_special = (i < len(subword_tokens_indices_list)-1) and (subword_tokens_indices_list[i+1][0] >= tokenizer.eot)
+        previous_space = (i > 0) and (not subwords[i-1].strip())
+        is_space = not subword.strip()
+        with_space = subword.startswith(" ") and not is_space
+        punctuation = not is_space and subword.strip() in _punctuation
+        if special or (not previous_space and (previous_special or (with_space and not punctuation) or (is_space and not next_special))):
             words.append(subword.strip())
             word_tokens.append(subword_tokens)
             word_tokens_indices.append(subword_tokens_indices)
