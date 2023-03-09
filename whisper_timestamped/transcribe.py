@@ -713,7 +713,7 @@ def _transcribe_timestamped_efficient(
         # Only the last attention weights is useful
         if w.shape[-2] > 1:
             w = w[:, :, -1:, :]
-        segment_attweights[index].append(w)
+        segment_attweights[index].append(w.cpu())
 
     def hook_mfcc(layer, ins, outs):
         nonlocal new_mfcc, mfcc
