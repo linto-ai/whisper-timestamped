@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.12.0"
+__version__ = "1.12.1"
 
 # Set some environment variables
 import os
@@ -1686,6 +1686,9 @@ def get_vad_segments(audio,
         silero_vad_model, utils = torch.hub.load(repo_or_dir="snakers4/silero-vad", model="silero_vad", onnx=True)
         silero_get_speech_ts = utils[0]
 
+    # Cheap normalization of the volume
+    audio = audio / max(0.1, audio.abs().max())
+
     segments = silero_get_speech_ts(audio, silero_vad_model,
         min_speech_duration_ms = round(min_speech_duration * 1000),
         min_silence_duration_ms = round(min_silence_duration * 1000),
@@ -1730,7 +1733,7 @@ def remove_non_speech(audio,
 
     if not use_sample:
         segments = [(float(s)/SAMPLE_RATE, float(e)/SAMPLE_RATE) for s,e in segments]
-
+ 
     return audio_speech, lambda t, t2 = None: do_convert_timestamps(segments, t, t2)
 
 def do_convert_timestamps(segments, t, t2 = None):
