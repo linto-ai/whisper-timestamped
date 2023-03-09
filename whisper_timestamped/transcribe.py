@@ -1678,6 +1678,8 @@ def get_vad_segments(audio,
     global silero_vad_model, silero_get_speech_ts
 
     if silero_vad_model is None:
+        import onnxruntime
+        onnxruntime.set_default_logger_severity(3) # Remove warning "Removing initializer 'XXX'. It is not used by any node and should be removed from the model."
         silero_vad_model, utils = torch.hub.load(repo_or_dir="snakers4/silero-vad", model="silero_vad", onnx=True)
         silero_get_speech_ts = utils[0]
 
