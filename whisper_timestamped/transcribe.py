@@ -424,6 +424,7 @@ def _transcribe_timestamped_efficient(
             logger.debug(f"Add segment {len(timestamped_word_segments)+1} at step {num_inference_steps}:\n\t{tokenizer.decode_with_timestamps(segment_tokens[-1])}")
 
         tokens = segment_tokens[-1][1:]
+
         # When the decoding hit the max limit (number of tokens) -- usually when the language model gets stuck --
         # then we have to recover the last token from what is send to the decoder
         unfinished_decoding = len(tokens) and tokens[-1] < tokenizer.timestamp_begin
@@ -467,20 +468,24 @@ def _transcribe_timestamped_efficient(
                 if debug:
                     logger.debug(f"Re-estimated end token {tokenizer.decode_with_timestamps([new_end_token])} (was {tokenizer.decode_with_timestamps([end_token])}) to be after start token {tokenizer.decode_with_timestamps([start_token])}")
 
-        ws = perform_word_alignment(
-            tokens,
-            attention_weights,
-            tokenizer,
-            use_space=should_use_space(language),
-            alignment_heads=alignment_heads,
-            remove_punctuation_from_words=remove_punctuation_from_words,
-            refine_whisper_precision_nframes=refine_whisper_precision_nframes,
-            detect_disfluencies=detect_disfluencies,
-            unfinished_decoding=unfinished_decoding,
-            mfcc=mfcc,
-            plot=plot_word_alignment,
-            debug=debug,
-        )
+        if len(tokens) <= 1:
+            # Corner case: nothing in between timestamps
+            ws = []
+        else:
+            ws = perform_word_alignment(
+                tokens,
+                attention_weights,
+                tokenizer,
+                use_space=should_use_space(language),
+                alignment_heads=alignment_heads,
+                remove_punctuation_from_words=remove_punctuation_from_words,
+                refine_whisper_precision_nframes=refine_whisper_precision_nframes,
+                detect_disfluencies=detect_disfluencies,
+                unfinished_decoding=unfinished_decoding,
+                mfcc=mfcc,
+                plot=plot_word_alignment,
+                debug=debug,
+            )
 
         add_segment = len(ws) > 0
         if add_segment:
