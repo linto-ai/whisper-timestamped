@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.11.1"
+__version__ = "1.12.0"
 
 # Set some environment variables
 import os
@@ -49,6 +49,7 @@ try:
 except NameError:
     whisper_version = ""
 WHIPSER_GE_20230306 = whisper_version >= "20230306"
+WHIPSER_GE_20230308 = whisper_version >= "20230308"
 
 def transcribe_timestamped(
     # Main Whisper options
@@ -260,7 +261,7 @@ def transcribe_timestamped(
                                                                    **alignment_options, **whisper_options, **other_options)
 
     # Remove words with empty duration happening at the end of segments, to remove some hallucinations
-    transcription, words = remove_last_null_duration_words(transcription, words, recompute_text=WHIPSER_GE_20230306)
+    transcription, words = remove_last_null_duration_words(transcription, words, recompute_text=WHIPSER_GE_20230306 and not WHIPSER_GE_20230308)
 
     # Refine word positions
     ensure_increasing_positions(words, min_duration=min_word_duration if trust_whisper_timestamps else 0)
