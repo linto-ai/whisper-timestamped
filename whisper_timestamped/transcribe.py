@@ -1049,7 +1049,7 @@ def _transcribe_timestamped_naive(
                     end = min(start + SEGMENT_DURATION, audio_duration)
                     tokens = current_tokens
 
-            if tokens is None:
+            if tokens is None or not len(tokens):
                 continue
 
             start_sample = min(round(start * SAMPLE_RATE), audio.shape[-1])
@@ -1062,7 +1062,6 @@ def _transcribe_timestamped_naive(
             mfcc = whisper.pad_or_trim(mfcc, N_FRAMES)
             mfcc = mfcc.unsqueeze(0)
 
-            assert len(tokens), "Got empty transcription!"
             segment_tokens_check = []
             if tokens[0] >= tokenizer.timestamp_begin:
                 segment_tokens_check.append(tokens[0])
