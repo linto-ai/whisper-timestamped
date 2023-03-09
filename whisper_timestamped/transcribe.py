@@ -1659,9 +1659,7 @@ def get_vad_segments(audio,
     global silero_vad_model, silero_get_speech_ts
 
     if silero_vad_model is None:
-        silero_vad_model, utils = torch.hub.load(
-            repo_or_dir="snakers4/silero-vad", model="silero_vad", onnx=True
-        )
+        silero_vad_model, utils = torch.hub.load(repo_or_dir="snakers4/silero-vad", model="silero_vad", onnx=True)
         silero_get_speech_ts = utils[0]
 
     segments = silero_get_speech_ts(audio, silero_vad_model,
@@ -1750,7 +1748,9 @@ def do_convert_timestamps(segments, t, t2 = None):
         result = sorted(result, key=lambda x: abs(abs(t2-t) - abs(x[1]-x[0])))
     result = result[0]
     if t2 is None:
-        result = result[0]
+        result = round(result[0], 2)
+    else:
+        result = [round(x, 2) for x in result]
     return result
 
 def remove_last_null_duration_words(transcription, words, recompute_text=False):
