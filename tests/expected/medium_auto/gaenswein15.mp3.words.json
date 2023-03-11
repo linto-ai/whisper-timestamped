@@ -1,13 +1,14 @@
 {
-  "text": " Die Wiederzulassung des Messbuchs von 1962 als Missale für die außerordentliche Form des römischen Rethus ist dann nicht so weitergegangen, wie sich Papst Benedikt das gewünscht hatte. Das hat er als Emeritor...",
+  "text": " Die Wiederzulassung des Messbuchs von 1962 als Missale für die außerordentliche Form des römischen Rethus ist dann nicht so weitergegangen, wie sich Papst Benediktas gewünscht hatte. Das hat er als Emeritor so gemacht.",
   "segments": [
     {
       "id": 0,
       "seek": 0,
-      "start": 0.86,
+      "start": 0.84,
       "end": 8.56,
       "text": " Die Wiederzulassung des Messbuchs von 1962 als Missale für die außerordentliche Form des römischen Rethus",
       "tokens": [
+        50364,
         3229,
         45742,
         89,
@@ -35,19 +36,20 @@
         6282,
         497,
         3293,
-        301
+        301,
+        50814
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2640805925641741,
-      "compression_ratio": 1.2285714285714286,
-      "no_speech_prob": 0.5754758715629578,
-      "confidence": 0.857,
+      "avg_logprob": -0.2817046825702374,
+      "compression_ratio": 1.247191011235955,
+      "no_speech_prob": 0.2541781961917877,
+      "confidence": 0.869,
       "words": [
         {
           "text": "Die",
-          "start": 0.86,
+          "start": 0.84,
           "end": 1.12,
-          "confidence": 0.873
+          "confidence": 0.872
         },
         {
           "text": "Wiederzulassung",
@@ -58,14 +60,14 @@
         {
           "text": "des",
           "start": 1.92,
-          "end": 2.18,
-          "confidence": 0.985
+          "end": 2.16,
+          "confidence": 0.986
         },
         {
           "text": "Messbuchs",
-          "start": 2.18,
+          "start": 2.16,
           "end": 2.74,
-          "confidence": 0.939
+          "confidence": 0.947
         },
         {
           "text": "von",
@@ -77,13 +79,13 @@
           "text": "1962",
           "start": 3.28,
           "end": 4.9,
-          "confidence": 0.976
+          "confidence": 0.981
         },
         {
           "text": "als",
           "start": 4.9,
           "end": 5.26,
-          "confidence": 0.926
+          "confidence": 0.925
         },
         {
           "text": "Missale",
@@ -95,53 +97,54 @@
           "text": "für",
           "start": 5.76,
           "end": 5.96,
-          "confidence": 0.949
+          "confidence": 0.955
         },
         {
           "text": "die",
           "start": 5.96,
           "end": 6.12,
-          "confidence": 0.988
+          "confidence": 0.99
         },
         {
           "text": "außerordentliche",
           "start": 6.12,
           "end": 7.06,
-          "confidence": 0.94
+          "confidence": 0.943
         },
         {
           "text": "Form",
           "start": 7.06,
           "end": 7.32,
-          "confidence": 0.827
+          "confidence": 0.834
         },
         {
           "text": "des",
           "start": 7.32,
           "end": 7.64,
-          "confidence": 0.794
+          "confidence": 0.863
         },
         {
           "text": "römischen",
           "start": 7.64,
           "end": 8.04,
-          "confidence": 0.654
+          "confidence": 0.676
         },
         {
           "text": "Rethus",
           "start": 8.04,
           "end": 8.56,
-          "confidence": 0.599
+          "confidence": 0.629
         }
       ]
     },
     {
-      "id": 0,
+      "id": 1,
       "seek": 0,
       "start": 9.44,
       "end": 12.74,
-      "text": " ist dann nicht so weitergegangen, wie sich Papst Benedikt das gewünscht hatte.",
+      "text": " ist dann nicht so weitergegangen, wie sich Papst Benediktas gewünscht hatte.",
       "tokens": [
+        50814,
         1418,
         3594,
         1979,
@@ -156,31 +159,32 @@
         372,
         39753,
         9874,
-        1482,
+        296,
         6906,
         3412,
         82,
         4701,
         13299,
-        13
+        13,
+        51014
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2640805925641741,
-      "compression_ratio": 1.2285714285714286,
-      "no_speech_prob": 0.5754758715629578,
-      "confidence": 0.893,
+      "avg_logprob": -0.2817046825702374,
+      "compression_ratio": 1.247191011235955,
+      "no_speech_prob": 0.2541781961917877,
+      "confidence": 0.889,
       "words": [
         {
           "text": "ist",
           "start": 9.44,
           "end": 9.66,
-          "confidence": 0.964
+          "confidence": 0.975
         },
         {
           "text": "dann",
           "start": 9.66,
           "end": 9.82,
-          "confidence": 0.693
+          "confidence": 0.688
         },
         {
           "text": "nicht",
@@ -192,13 +196,13 @@
           "text": "so",
           "start": 10.0,
           "end": 10.16,
-          "confidence": 0.991
+          "confidence": 0.992
         },
         {
           "text": "weitergegangen,",
           "start": 10.16,
           "end": 10.84,
-          "confidence": 0.819
+          "confidence": 0.811
         },
         {
           "text": "wie",
@@ -209,91 +213,101 @@
         {
           "text": "sich",
           "start": 11.06,
-          "end": 11.24,
-          "confidence": 0.959
+          "end": 11.26,
+          "confidence": 0.964
         },
         {
           "text": "Papst",
-          "start": 11.24,
+          "start": 11.26,
           "end": 11.56,
-          "confidence": 0.891
+          "confidence": 0.884
         },
         {
-          "text": "Benedikt",
+          "text": "Benediktas",
           "start": 11.56,
-          "end": 11.9,
-          "confidence": 0.945
-        },
-        {
-          "text": "das",
-          "start": 11.9,
           "end": 12.08,
-          "confidence": 0.52
+          "confidence": 0.764
         },
         {
           "text": "gewünscht",
           "start": 12.08,
           "end": 12.56,
-          "confidence": 0.998
+          "confidence": 0.992
         },
         {
           "text": "hatte.",
           "start": 12.56,
           "end": 12.74,
-          "confidence": 0.934
+          "confidence": 0.952
         }
       ]
     },
     {
-      "id": 0,
+      "id": 2,
       "seek": 0,
       "start": 13.48,
-      "end": 15.44,
-      "text": " Das hat er als Emeritor...",
+      "end": 15.48,
+      "text": " Das hat er als Emeritor so gemacht.",
       "tokens": [
+        51014,
         2846,
         2385,
         1189,
         3907,
         18477,
         3029,
-        485
+        370,
+        12293,
+        13,
+        51114
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2640805925641741,
-      "compression_ratio": 1.2285714285714286,
-      "no_speech_prob": 0.5754758715629578,
-      "confidence": 0.706,
+      "avg_logprob": -0.2817046825702374,
+      "compression_ratio": 1.247191011235955,
+      "no_speech_prob": 0.2541781961917877,
+      "confidence": 0.442,
       "words": [
         {
           "text": "Das",
           "start": 13.48,
           "end": 14.2,
-          "confidence": 0.878
+          "confidence": 0.968
         },
         {
           "text": "hat",
           "start": 14.2,
           "end": 14.36,
-          "confidence": 0.673
+          "confidence": 0.845
         },
         {
           "text": "er",
           "start": 14.36,
           "end": 14.5,
-          "confidence": 0.974
+          "confidence": 0.99
         },
         {
           "text": "als",
           "start": 14.5,
-          "end": 14.72,
-          "confidence": 0.971
+          "end": 14.7,
+          "confidence": 0.977
         },
         {
-          "text": "Emeritor...",
-          "start": 14.72,
-          "end": 15.44,
-          "confidence": 0.471
+          "text": "Emeritor",
+          "start": 14.7,
+          "end": 15.24,
+          "confidence": 0.429
+        },
+        {
+          "text": "so",
+          "start": 15.24,
+          "end": 15.42,
+          "confidence": 0.111
+        },
+        {
+          "text": "gemacht.",
+          "start": 15.42,
+          "end": 15.48,
+          "confidence": 0.09
         }
       ]
     }

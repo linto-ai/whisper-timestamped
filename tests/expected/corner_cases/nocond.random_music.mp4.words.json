@@ -1,5 +1,5 @@
 {
-  "text": " Oh, the misery Everybody wants to be my enemy Spare the sympathy Everybody wants to be my enemy Look out for yourself My enemy Look out for yourself But I'm ready Your words up on the wall As you're praying for my phone And the laughter in the halls And the names that I've been called I stack it in my mind And I'm waiting for the time When I show you what it's like To be worse but in the mind Tell you you're the greatest But once you turn, they hate us Oh, the misery Everybody wants to be my enemy Spare the sympathy Everybody wants to be my enemy Look out for yourself My enemy Look out for yourself Look, okay, I'm Hoping that somebody pray for me I'm praying that somebody hold for me I'm staying where nobody's supposed to be I proposed it, being a wreck of emotions Ready to go, whenever you let me know The road is long, so put the pedal into the flow The enemy on my trail, my energy unavailable I'ma tell him I said the way go Way, when I'm plottin' my drive to the top I been out of shape, thinking out the box I'm an astronaut Blasted off the planet, rocked the cars Catastrophe, and it matters more because I had it Now had I thought about wreaking havoc on an opposition Kinda shocking, ain't one aesthetic With precision, I'm automatic Quarterback, I ain't talkin' second Pack it, pack it up, I don't panic Better, better, up who the baddest It don't matter, cause we it's your Everybody wants to be my enemy Spare the sympathy Everybody wants to be my enemy Oh, the misery Everybody wants to be my enemy Spare the sympathy Everybody wants to be my enemy Get away, I swear, I'll never be a saint No way, my enemy Get away, I swear, I'll never be a saint Get away, I swear, I'll never",
+  "text": " Oh, the misery Everybody wants to be my enemy Spare the sympathy Everybody wants to be my enemy Look out for yourself My enemy Look out for yourself But I'm ready Your words up on the wall As you're praying for my phone And the laughter in the halls And the names that I've been called I stack it in my mind And I'm waiting for the time When I show you what it's like To be worse but in the mind Tell you you're the greatest But once you turn, they hate us Oh, the misery Everybody wants to be my enemy Spare the sympathy Everybody wants to be my enemy Look out for yourself My enemy Look out for yourself Look, okay, I'm Hoping that somebody pray for me I'm praying that somebody hold for me I'm staying where nobody's supposed to be I proposed it, being a wreck of emotions Ready to go, whenever you let me know The road is long, so put the pedal into the flow The enemy on my trail, my energy unavailable I'ma tell him I said the way go Way, when I'm plottin' my drive to the top I been out of shape, thinking out the box I'm an astronaut Blasted off the planet, rocked the cars Catastrophe, and it matters more because I had it Now had I thought about wreaking havoc on an opposition Kinda shocking, ain't one aesthetic With precision, I'm automatic Quarterback, I ain't talkin' second Pack it, pack it up, I don't panic Better, better, up who the baddest It don't matter, cause we it's your Everybody wants to be my enemy Spare the sympathy Everybody wants to be my enemy Oh, the misery Everybody wants to be my enemy Spare the sympathy Everybody wants to be my enemy Out of here, I swear I'll never be a saint No way, my enemy Out of here, I swear I'll never be a saint Look out for yourself",
   "segments": [
     {
       "id": 0,
@@ -8,6 +8,7 @@
       "end": 69.94,
       "text": " Oh, the misery Everybody wants to be my enemy",
       "tokens": [
+        50364,
         876,
         11,
         264,
@@ -17,7 +18,8 @@
         281,
         312,
         452,
-        5945
+        5945,
+        50868
       ],
       "temperature": 0.4,
       "avg_logprob": -0.4567501761696555,
@@ -82,12 +84,13 @@
       ]
     },
     {
-      "id": 0,
+      "id": 1,
       "seek": 6000,
       "start": 70.56,
       "end": 76.42,
       "text": " Spare the sympathy Everybody wants to be my enemy",
       "tokens": [
+        50868,
         1738,
         543,
         264,
@@ -97,7 +100,8 @@
         281,
         312,
         452,
-        5945
+        5945,
+        51184
       ],
       "temperature": 0.4,
       "avg_logprob": -0.4567501761696555,
@@ -162,18 +166,20 @@
       ]
     },
     {
-      "id": 0,
+      "id": 2,
       "seek": 6000,
       "start": 76.88,
       "end": 82.68,
       "text": " Look out for yourself My enemy",
       "tokens": [
+        51184,
         2053,
         484,
         337,
         1803,
         1222,
-        5945
+        5945,
+        51496
       ],
       "temperature": 0.4,
       "avg_logprob": -0.4567501761696555,
@@ -220,12 +226,13 @@
       ]
     },
     {
-      "id": 0,
+      "id": 3,
       "seek": 6000,
       "start": 83.04,
       "end": 88.48,
       "text": " Look out for yourself But I'm ready",
       "tokens": [
+        51496,
         2053,
         484,
         337,
@@ -233,7 +240,8 @@
         583,
         286,
         478,
-        1919
+        1919,
+        51796
       ],
       "temperature": 0.4,
       "avg_logprob": -0.4567501761696555,
@@ -292,6 +300,7 @@
       "end": 91.7,
       "text": " Your words up on the wall As you're praying for my phone",
       "tokens": [
+        50364,
         2260,
         2283,
         493,
@@ -304,7 +313,8 @@
         15611,
         337,
         452,
-        2593
+        2593,
+        50516
       ],
       "temperature": 0.4,
       "avg_logprob": -0.2702092300226659,
@@ -387,12 +397,13 @@
       ]
     },
     {
-      "id": 4,
+      "id": 5,
       "seek": 8864,
       "start": 91.78,
       "end": 94.74,
       "text": " And the laughter in the halls And the names that I've been called",
       "tokens": [
+        50516,
         400,
         264,
         13092,
@@ -406,7 +417,8 @@
         286,
         600,
         668,
-        1219
+        1219,
+        50672
       ],
       "temperature": 0.4,
       "avg_logprob": -0.2702092300226659,
@@ -495,12 +507,13 @@
       ]
     },
     {
-      "id": 4,
+      "id": 6,
       "seek": 8864,
       "start": 94.98,
       "end": 97.82,
       "text": " I stack it in my mind And I'm waiting for the time",
       "tokens": [
+        50672,
         286,
         8630,
         309,
@@ -513,7 +526,8 @@
         3806,
         337,
         264,
-        565
+        565,
+        50820
       ],
       "temperature": 0.4,
       "avg_logprob": -0.2702092300226659,
@@ -596,12 +610,13 @@
       ]
     },
     {
-      "id": 4,
+      "id": 7,
       "seek": 8864,
       "start": 97.98,
       "end": 101.24,
       "text": " When I show you what it's like To be worse but in the mind",
       "tokens": [
+        50820,
         1133,
         286,
         855,
@@ -616,7 +631,8 @@
         457,
         294,
         264,
-        1575
+        1575,
+        50992
       ],
       "temperature": 0.4,
       "avg_logprob": -0.2702092300226659,
@@ -711,12 +727,13 @@
       ]
     },
     {
-      "id": 4,
+      "id": 8,
       "seek": 8864,
       "start": 101.32,
       "end": 113.02,
       "text": " Tell you you're the greatest But once you turn, they hate us",
       "tokens": [
+        50992,
         5115,
         291,
         291,
@@ -730,7 +747,8 @@
         11,
         436,
         4700,
-        505
+        505,
+        51592
       ],
       "temperature": 0.4,
       "avg_logprob": -0.2702092300226659,
@@ -819,6 +837,7 @@
       "end": 119.08,
       "text": " Oh, the misery Everybody wants to be my enemy",
       "tokens": [
+        50408,
         876,
         11,
         264,
@@ -828,7 +847,8 @@
         281,
         312,
         452,
-        5945
+        5945,
+        50680
       ],
       "temperature": 0.4,
       "avg_logprob": -0.3664691770398939,
@@ -893,12 +913,13 @@
       ]
     },
     {
-      "id": 9,
+      "id": 10,
       "seek": 11320,
       "start": 120.0,
       "end": 126.28,
       "text": " Spare the sympathy Everybody wants to be my enemy",
       "tokens": [
+        50680,
         1738,
         543,
         264,
@@ -908,7 +929,8 @@
         281,
         312,
         452,
-        5945
+        5945,
+        51028
       ],
       "temperature": 0.4,
       "avg_logprob": -0.3664691770398939,
@@ -973,18 +995,20 @@
       ]
     },
     {
-      "id": 9,
+      "id": 11,
       "seek": 11320,
       "start": 126.32,
       "end": 132.48,
       "text": " Look out for yourself My enemy",
       "tokens": [
+        51028,
         2053,
         484,
         337,
         1803,
         1222,
-        5945
+        5945,
+        51328
       ],
       "temperature": 0.4,
       "avg_logprob": -0.3664691770398939,
@@ -1031,16 +1055,18 @@
       ]
     },
     {
-      "id": 9,
+      "id": 12,
       "seek": 11320,
       "start": 132.9,
       "end": 137.14,
       "text": " Look out for yourself",
       "tokens": [
+        51328,
         2053,
         484,
         337,
-        1803
+        1803,
+        51560
       ],
       "temperature": 0.4,
       "avg_logprob": -0.3664691770398939,
@@ -1075,12 +1101,13 @@
       ]
     },
     {
-      "id": 9,
+      "id": 13,
       "seek": 11320,
       "start": 137.58,
       "end": 140.18,
       "text": " Look, okay, I'm Hoping that somebody pray for me",
       "tokens": [
+        51560,
         2053,
         11,
         1392,
@@ -1093,7 +1120,8 @@
         2618,
         3690,
         337,
-        385
+        385,
+        51704
       ],
       "temperature": 0.4,
       "avg_logprob": -0.3664691770398939,
@@ -1158,12 +1186,13 @@
       ]
     },
     {
-      "id": 9,
+      "id": 14,
       "seek": 11320,
       "start": 140.36,
       "end": 143.18,
       "text": " I'm praying that somebody hold for me I'm staying where nobody's supposed to be",
       "tokens": [
+        51704,
         286,
         478,
         15611,
@@ -1180,7 +1209,8 @@
         311,
         3442,
         281,
-        312
+        312,
+        51856
       ],
       "temperature": 0.4,
       "avg_logprob": -0.3664691770398939,
@@ -1281,6 +1311,7 @@
       "end": 146.3,
       "text": " I proposed it, being a wreck of emotions Ready to go, whenever you let me know",
       "tokens": [
+        50364,
         286,
         10348,
         309,
@@ -1298,7 +1329,8 @@
         291,
         718,
         385,
-        458
+        458,
+        50520
       ],
       "temperature": 0.4,
       "avg_logprob": -0.3305136264898838,
@@ -1405,12 +1437,13 @@
       ]
     },
     {
-      "id": 15,
+      "id": 16,
       "seek": 14304,
       "start": 146.34,
       "end": 149.8,
       "text": " The road is long, so put the pedal into the flow The enemy on my trail, my energy unavailable",
       "tokens": [
+        50520,
         440,
         3060,
         307,
@@ -1432,7 +1465,8 @@
         452,
         2281,
         36541,
-        32699
+        32699,
+        50700
       ],
       "temperature": 0.4,
       "avg_logprob": -0.3305136264898838,
@@ -1557,12 +1591,13 @@
       ]
     },
     {
-      "id": 15,
+      "id": 17,
       "seek": 14304,
       "start": 150.0,
       "end": 152.53,
       "text": " I'ma tell him I said the way go Way, when I'm plottin' my drive to the top",
       "tokens": [
+        50700,
         286,
         478,
         64,
@@ -1586,7 +1621,8 @@
         3332,
         281,
         264,
-        1192
+        1192,
+        50832
       ],
       "temperature": 0.4,
       "avg_logprob": -0.3305136264898838,
@@ -1699,12 +1735,13 @@
       ]
     },
     {
-      "id": 15,
+      "id": 18,
       "seek": 14304,
       "start": 152.53,
       "end": 154.42,
       "text": " I been out of shape, thinking out the box I'm an astronaut",
       "tokens": [
+        50832,
         286,
         668,
         484,
@@ -1718,7 +1755,8 @@
         286,
         478,
         364,
-        18516
+        18516,
+        50928
       ],
       "temperature": 0.4,
       "avg_logprob": -0.3305136264898838,
@@ -1801,12 +1839,13 @@
       ]
     },
     {
-      "id": 15,
+      "id": 19,
       "seek": 14304,
       "start": 154.46,
       "end": 157.79,
       "text": " Blasted off the planet, rocked the cars Catastrophe, and it matters more because I had it",
       "tokens": [
+        50928,
         2177,
         34440,
         766,
@@ -1828,7 +1867,8 @@
         570,
         286,
         632,
-        309
+        309,
+        51092
       ],
       "temperature": 0.4,
       "avg_logprob": -0.3305136264898838,
@@ -1935,12 +1975,13 @@
       ]
     },
     {
-      "id": 15,
+      "id": 20,
       "seek": 14304,
       "start": 157.79,
       "end": 159.84,
       "text": " Now had I thought about wreaking havoc on an opposition",
       "tokens": [
+        51092,
         823,
         632,
         286,
@@ -1951,7 +1992,8 @@
         47367,
         322,
         364,
-        13504
+        13504,
+        51200
       ],
       "temperature": 0.4,
       "avg_logprob": -0.3305136264898838,
@@ -2022,12 +2064,13 @@
       ]
     },
     {
-      "id": 15,
+      "id": 21,
       "seek": 14304,
       "start": 159.84,
       "end": 162.18,
       "text": " Kinda shocking, ain't one aesthetic With precision, I'm automatic",
       "tokens": [
+        51200,
         35553,
         18776,
         11,
@@ -2040,7 +2083,8 @@
         11,
         286,
         478,
-        12509
+        12509,
+        51316
       ],
       "temperature": 0.4,
       "avg_logprob": -0.3305136264898838,
@@ -2105,12 +2149,13 @@
       ]
     },
     {
-      "id": 15,
+      "id": 22,
       "seek": 14304,
       "start": 162.2,
       "end": 164.55,
       "text": " Quarterback, I ain't talkin' second Pack it, pack it up, I don't panic",
       "tokens": [
+        51316,
         43794,
         3207,
         11,
@@ -2130,7 +2175,8 @@
         286,
         500,
         380,
-        14783
+        14783,
+        51432
       ],
       "temperature": 0.4,
       "avg_logprob": -0.3305136264898838,
@@ -2219,12 +2265,13 @@
       ]
     },
     {
-      "id": 15,
+      "id": 23,
       "seek": 14304,
       "start": 164.55,
       "end": 166.78,
       "text": " Better, better, up who the baddest It don't matter, cause we it's your",
       "tokens": [
+        51432,
         15753,
         11,
         1101,
@@ -2243,7 +2290,8 @@
         321,
         309,
         311,
-        428
+        428,
+        51544
       ],
       "temperature": 0.4,
       "avg_logprob": -0.3305136264898838,
@@ -2332,12 +2380,13 @@
       ]
     },
     {
-      "id": 15,
+      "id": 24,
       "seek": 14304,
       "start": 166.78,
       "end": 172.2,
       "text": " Everybody wants to be my enemy Spare the sympathy",
       "tokens": [
+        51544,
         7646,
         2738,
         281,
@@ -2347,7 +2396,8 @@
         1738,
         543,
         264,
-        33240
+        33240,
+        51812
       ],
       "temperature": 0.4,
       "avg_logprob": -0.3305136264898838,
@@ -2418,6 +2468,7 @@
       "end": 178.28,
       "text": " Everybody wants to be my enemy Oh, the misery",
       "tokens": [
+        50404,
         7646,
         2738,
         281,
@@ -2427,7 +2478,8 @@
         876,
         11,
         264,
-        32309
+        32309,
+        50664
       ],
       "temperature": 0.4,
       "avg_logprob": -0.36990176930147056,
@@ -2492,12 +2544,13 @@
       ]
     },
     {
-      "id": 25,
+      "id": 26,
       "seek": 17200,
       "start": 179.32,
       "end": 184.46,
       "text": " Everybody wants to be my enemy Spare the sympathy",
       "tokens": [
+        50720,
         7646,
         2738,
         281,
@@ -2507,7 +2560,8 @@
         1738,
         543,
         264,
-        33240
+        33240,
+        50984
       ],
       "temperature": 0.4,
       "avg_logprob": -0.36990176930147056,
@@ -2572,18 +2626,20 @@
       ]
     },
     {
-      "id": 25,
+      "id": 27,
       "seek": 17200,
       "start": 185.6,
       "end": 188.6,
       "text": " Everybody wants to be my enemy",
       "tokens": [
+        51032,
         7646,
         2738,
         281,
         312,
         452,
-        5945
+        5945,
+        51188
       ],
       "temperature": 0.4,
       "avg_logprob": -0.36990176930147056,
@@ -2632,203 +2688,221 @@
     {
       "id": 28,
       "seek": 18848,
-      "start": 188.66,
-      "end": 192.06,
-      "text": " Get away, I swear, I'll never be a saint",
+      "start": 188.7,
+      "end": 192.08,
+      "text": " Out of here, I swear I'll never be a saint",
       "tokens": [
-        3240,
-        1314,
+        50364,
+        5925,
+        295,
+        510,
         11,
         286,
         11902,
-        11,
         286,
         603,
         1128,
         312,
         257,
-        28374
+        28374,
+        50544
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.45101749420166015,
-      "compression_ratio": 2.106060606060606,
-      "no_speech_prob": 0.40283745527267456,
-      "confidence": 0.623,
+      "avg_logprob": -0.4822702861967541,
+      "compression_ratio": 1.4761904761904763,
+      "no_speech_prob": 0.41271308064460754,
+      "confidence": 0.576,
       "words": [
         {
-          "text": "Get",
-          "start": 188.66,
-          "end": 189.22,
-          "confidence": 0.057
+          "text": "Out",
+          "start": 188.7,
+          "end": 189.24,
+          "confidence": 0.117
         },
         {
-          "text": "away,",
-          "start": 189.22,
-          "end": 189.72,
-          "confidence": 0.903
+          "text": "of",
+          "start": 189.24,
+          "end": 189.6,
+          "confidence": 0.6
+        },
+        {
+          "text": "here,",
+          "start": 189.6,
+          "end": 189.78,
+          "confidence": 0.224
         },
         {
           "text": "I",
-          "start": 190.06,
+          "start": 190.04,
           "end": 190.16,
-          "confidence": 0.972
+          "confidence": 0.976
         },
         {
-          "text": "swear,",
+          "text": "swear",
           "start": 190.16,
           "end": 190.56,
-          "confidence": 0.996
+          "confidence": 0.997
         },
         {
           "text": "I'll",
-          "start": 190.86,
+          "start": 190.56,
           "end": 191.04,
-          "confidence": 0.865
+          "confidence": 0.744
         },
         {
           "text": "never",
           "start": 191.04,
-          "end": 191.32,
-          "confidence": 0.997
+          "end": 191.3,
+          "confidence": 0.995
         },
         {
           "text": "be",
-          "start": 191.32,
+          "start": 191.3,
           "end": 191.7,
-          "confidence": 0.996
+          "confidence": 0.994
         },
         {
           "text": "a",
           "start": 191.7,
           "end": 191.9,
-          "confidence": 0.301
+          "confidence": 0.385
         },
         {
           "text": "saint",
           "start": 191.9,
-          "end": 192.06,
-          "confidence": 0.786
+          "end": 192.08,
+          "confidence": 0.715
         }
       ]
     },
     {
-      "id": 28,
+      "id": 29,
       "seek": 18848,
       "start": 192.12,
-      "end": 194.76,
+      "end": 194.74,
       "text": " No way, my enemy",
       "tokens": [
+        50544,
         883,
         636,
         11,
         452,
-        5945
+        5945,
+        50680
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.45101749420166015,
-      "compression_ratio": 2.106060606060606,
-      "no_speech_prob": 0.40283745527267456,
-      "confidence": 0.699,
+      "avg_logprob": -0.4822702861967541,
+      "compression_ratio": 1.4761904761904763,
+      "no_speech_prob": 0.41271308064460754,
+      "confidence": 0.671,
       "words": [
         {
           "text": "No",
           "start": 192.12,
           "end": 192.68,
-          "confidence": 0.313
+          "confidence": 0.301
         },
         {
           "text": "way,",
           "start": 192.68,
           "end": 193.1,
-          "confidence": 0.83
+          "confidence": 0.725
         },
         {
           "text": "my",
-          "start": 193.88,
+          "start": 193.86,
           "end": 194.16,
-          "confidence": 0.943
+          "confidence": 0.951
         },
         {
           "text": "enemy",
           "start": 194.16,
-          "end": 194.76,
-          "confidence": 0.977
+          "end": 194.74,
+          "confidence": 0.975
         }
       ]
     },
     {
-      "id": 28,
+      "id": 30,
       "seek": 18848,
       "start": 194.84,
       "end": 198.36,
-      "text": " Get away, I swear, I'll never be a saint",
+      "text": " Out of here, I swear I'll never be a saint",
       "tokens": [
-        3240,
-        1314,
+        50680,
+        5925,
+        295,
+        510,
         11,
         286,
         11902,
-        11,
         286,
         603,
         1128,
         312,
         257,
-        28374
+        28374,
+        50860
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.45101749420166015,
-      "compression_ratio": 2.106060606060606,
-      "no_speech_prob": 0.40283745527267456,
+      "avg_logprob": -0.4822702861967541,
+      "compression_ratio": 1.4761904761904763,
+      "no_speech_prob": 0.41271308064460754,
       "confidence": 0.997,
       "words": [
         {
-          "text": "Get",
+          "text": "Out",
           "start": 194.84,
-          "end": 195.52,
-          "confidence": 0.988
+          "end": 195.46,
+          "confidence": 0.996
         },
         {
-          "text": "away,",
-          "start": 195.52,
-          "end": 196.0,
-          "confidence": 0.999
+          "text": "of",
+          "start": 195.46,
+          "end": 195.84,
+          "confidence": 0.996
+        },
+        {
+          "text": "here,",
+          "start": 195.84,
+          "end": 196.06,
+          "confidence": 0.995
         },
         {
           "text": "I",
-          "start": 196.36,
+          "start": 196.32,
           "end": 196.56,
           "confidence": 0.998
         },
         {
-          "text": "swear,",
+          "text": "swear",
           "start": 196.56,
           "end": 196.78,
           "confidence": 0.997
         },
         {
           "text": "I'll",
-          "start": 196.98,
-          "end": 197.32,
-          "confidence": 0.997
+          "start": 196.78,
+          "end": 197.34,
+          "confidence": 0.993
         },
         {
           "text": "never",
-          "start": 197.32,
-          "end": 197.56,
+          "start": 197.34,
+          "end": 197.54,
           "confidence": 0.999
         },
         {
           "text": "be",
-          "start": 197.56,
-          "end": 197.88,
+          "start": 197.54,
+          "end": 197.86,
           "confidence": 0.999
         },
         {
           "text": "a",
-          "start": 197.88,
+          "start": 197.86,
           "end": 198.1,
-          "confidence": 0.997
+          "confidence": 0.998
         },
         {
           "text": "saint",
@@ -2839,66 +2913,48 @@
       ]
     },
     {
-      "id": 28,
+      "id": 31,
       "seek": 18848,
       "start": 198.48,
-      "end": 200.88,
-      "text": " Get away, I swear, I'll never",
+      "end": 199.46,
+      "text": " Look out for yourself",
       "tokens": [
-        3240,
-        1314,
-        11,
-        286,
-        11902,
-        11,
-        286,
-        603,
-        1128,
-        312,
-        257,
-        28374
+        50860,
+        2053,
+        484,
+        337,
+        1803,
+        50952
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.45101749420166015,
-      "compression_ratio": 2.106060606060606,
-      "no_speech_prob": 0.40283745527267456,
-      "confidence": 0.619,
+      "avg_logprob": -0.4822702861967541,
+      "compression_ratio": 1.4761904761904763,
+      "no_speech_prob": 0.41271308064460754,
+      "confidence": 0.764,
       "words": [
         {
-          "text": "Get",
+          "text": "Look",
           "start": 198.48,
-          "end": 198.8,
-          "confidence": 0.067
+          "end": 198.76,
+          "confidence": 0.372
         },
         {
-          "text": "away,",
-          "start": 198.8,
-          "end": 199.2,
-          "confidence": 0.254
+          "text": "out",
+          "start": 198.76,
+          "end": 198.92,
+          "confidence": 0.959
         },
         {
-          "text": "I",
-          "start": 199.36,
-          "end": 199.7,
-          "confidence": 0.516
+          "text": "for",
+          "start": 198.92,
+          "end": 199.08,
+          "confidence": 0.974
         },
         {
-          "text": "swear,",
-          "start": 199.7,
-          "end": 199.92,
-          "confidence": 0.98
-        },
-        {
-          "text": "I'll",
-          "start": 200.28,
-          "end": 200.7,
-          "confidence": 0.986
-        },
-        {
-          "text": "never",
-          "start": 200.7,
-          "end": 200.88,
-          "confidence": 0.998
+          "text": "yourself",
+          "start": 199.08,
+          "end": 199.46,
+          "confidence": 0.979
         }
       ]
     }

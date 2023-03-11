@@ -1,5 +1,5 @@
 {
-  "text": "いきます ニュースタブでのサイトメイション機が 実際と違う検に関するご質問いただいております同じ度メインでデレクトリーごとに 別再度として管理上をしているサイトバリマスのサプテレクトリーごとにわけたサイトは それぞれ パブリシャーセンターに登録していくぐるニュース上ではサイトとして認識され パブリコンアイコンはサイトボトフのものが 正しく表示されますしかしGoogle検査結果のニュースタブでは パブリコンサイトメイショー機ともに 正しくない意味上ージにいいなりますこちらいたりしてものではありません パブリコンはサプテレクトリーごとに設定した",
+  "text": "いきます ニュースタブでのサイトメイション機が 実際と違う検に関するご質問いただいております同じ度メインでデレクトリーごとに 別再度として管理上をしているサイトバリマスのサプテレクトリーごとにわけたサイトは それぞれ パブリシャーセンターに登録していくぐるニュース上ではサイトとして認識され パブリコンアイコンはサイトボトフのものが 正しく表示されますしかし ルグル検査結果のニュースタブでは パブリコンサイトメイショー機ともに 正しくない医療時にいいなりますこちらいたいです ものではありません パブリコンはサブテレクトリーごとに設定した",
   "segments": [
     {
       "id": 0,
@@ -8,6 +8,7 @@
       "end": 6.62,
       "text": "いきます ニュースタブでのサイトメイション機が 実際と違う検に関するご質問いただいております",
       "tokens": [
+        50364,
         47348,
         15096,
         233,
@@ -44,7 +45,8 @@
         32418,
         18549,
         6117,
-        19420
+        19420,
+        50712
       ],
       "temperature": 0.0,
       "avg_logprob": -0.4397816196564705,
@@ -259,12 +261,13 @@
       ]
     },
     {
-      "id": 0,
+      "id": 1,
       "seek": 0,
       "start": 6.94,
       "end": 13.58,
       "text": "同じ度メインでデレクトリーごとに 別再度として管理上をしているサイトバリマスの",
       "tokens": [
+        50712,
         13089,
         9257,
         13127,
@@ -300,7 +303,8 @@
         12376,
         13258,
         9550,
-        2972
+        2972,
+        51044
       ],
       "temperature": 0.0,
       "avg_logprob": -0.4397816196564705,
@@ -527,12 +531,13 @@
       ]
     },
     {
-      "id": 0,
+      "id": 2,
       "seek": 0,
       "start": 13.68,
       "end": 20.74,
       "text": "サプテレクトリーごとにわけたサイトは それぞれ パブリシャーセンターに登録していくぐるニュース上では",
       "tokens": [
+        51044,
         23607,
         20953,
         22985,
@@ -575,7 +580,8 @@
         3384,
         9550,
         5708,
-        16719
+        16719,
+        51408
       ],
       "temperature": 0.0,
       "avg_logprob": -0.4397816196564705,
@@ -844,6 +850,7 @@
       "end": 27.0,
       "text": "サイトとして認識され パブリコンアイコンはサイトボトフのものが 正しく表示されます",
       "tokens": [
+        50364,
         23607,
         8040,
         7588,
@@ -879,13 +886,14 @@
         40053,
         6722,
         4132,
-        5368
+        5368,
+        50684
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3744473817969571,
-      "compression_ratio": 1.6198347107438016,
-      "no_speech_prob": 0.27477630972862244,
-      "confidence": 0.387,
+      "avg_logprob": -0.35125738675477075,
+      "compression_ratio": 1.6926406926406927,
+      "no_speech_prob": 0.06554542481899261,
+      "confidence": 0.389,
       "words": [
         {
           "text": "サ",
@@ -897,37 +905,37 @@
           "text": "イ",
           "start": 21.26,
           "end": 21.34,
-          "confidence": 0.945
+          "confidence": 0.939
         },
         {
           "text": "ト",
           "start": 21.34,
           "end": 21.44,
-          "confidence": 0.333
+          "confidence": 0.379
         },
         {
           "text": "と",
           "start": 21.44,
           "end": 21.58,
-          "confidence": 0.847
+          "confidence": 0.831
         },
         {
           "text": "して",
           "start": 21.58,
           "end": 21.8,
-          "confidence": 0.983
+          "confidence": 0.981
         },
         {
           "text": "認",
           "start": 21.8,
           "end": 22.08,
-          "confidence": 0.138
+          "confidence": 0.179
         },
         {
           "text": "識",
           "start": 22.08,
           "end": 22.2,
-          "confidence": 0.983
+          "confidence": 0.986
         },
         {
           "text": "さ",
@@ -939,37 +947,37 @@
           "text": "れ",
           "start": 22.34,
           "end": 22.64,
-          "confidence": 0.947
+          "confidence": 0.948
         },
         {
           "text": " パ",
           "start": 22.64,
           "end": 22.86,
-          "confidence": 0.16
+          "confidence": 0.141
         },
         {
           "text": "ブ",
           "start": 22.86,
           "end": 23.0,
-          "confidence": 0.055
+          "confidence": 0.051
         },
         {
           "text": "リ",
           "start": 23.0,
-          "end": 23.16,
+          "end": 23.18,
           "confidence": 0.007
         },
         {
           "text": "コ",
-          "start": 23.16,
+          "start": 23.18,
           "end": 23.22,
-          "confidence": 0.794
+          "confidence": 0.817
         },
         {
           "text": "ン",
           "start": 23.22,
           "end": 23.3,
-          "confidence": 0.903
+          "confidence": 0.887
         },
         {
           "text": "ア",
@@ -981,31 +989,31 @@
           "text": "イ",
           "start": 23.46,
           "end": 23.52,
-          "confidence": 0.959
+          "confidence": 0.957
         },
         {
           "text": "コ",
           "start": 23.52,
           "end": 23.64,
-          "confidence": 0.274
+          "confidence": 0.308
         },
         {
           "text": "ン",
           "start": 23.64,
           "end": 23.86,
-          "confidence": 0.887
+          "confidence": 0.893
         },
         {
           "text": "は",
           "start": 23.86,
           "end": 23.88,
-          "confidence": 0.839
+          "confidence": 0.834
         },
         {
           "text": "サ",
           "start": 23.88,
           "end": 24.04,
-          "confidence": 0.648
+          "confidence": 0.642
         },
         {
           "text": "イ",
@@ -1023,61 +1031,61 @@
           "text": "ボ",
           "start": 24.24,
           "end": 24.38,
-          "confidence": 0.631
+          "confidence": 0.588
         },
         {
           "text": "ト",
           "start": 24.38,
-          "end": 24.5,
-          "confidence": 0.854
+          "end": 24.52,
+          "confidence": 0.861
         },
         {
           "text": "フ",
-          "start": 24.5,
+          "start": 24.52,
           "end": 24.66,
-          "confidence": 0.035
+          "confidence": 0.037
         },
         {
           "text": "の",
           "start": 24.66,
-          "end": 24.7,
-          "confidence": 0.602
+          "end": 24.72,
+          "confidence": 0.66
         },
         {
           "text": "もの",
-          "start": 24.7,
+          "start": 24.72,
           "end": 24.9,
-          "confidence": 0.496
+          "confidence": 0.501
         },
         {
           "text": "が",
           "start": 24.9,
           "end": 25.08,
-          "confidence": 0.337
+          "confidence": 0.338
         },
         {
           "text": " ",
           "start": 25.08,
           "end": 25.32,
-          "confidence": 0.273
+          "confidence": 0.283
         },
         {
           "text": "正",
           "start": 25.32,
           "end": 25.4,
-          "confidence": 0.657
+          "confidence": 0.631
         },
         {
           "text": "しく",
           "start": 25.4,
-          "end": 25.64,
-          "confidence": 0.982
+          "end": 25.66,
+          "confidence": 0.979
         },
         {
           "text": "表示",
-          "start": 25.64,
+          "start": 25.66,
           "end": 26.0,
-          "confidence": 0.655
+          "confidence": 0.665
         },
         {
           "text": "さ",
@@ -1095,21 +1103,24 @@
           "text": "ます",
           "start": 26.6,
           "end": 27.0,
-          "confidence": 0.899
+          "confidence": 0.888
         }
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "seek": 2088,
       "start": 27.28,
-      "end": 33.82,
-      "text": "しかしGoogle検査結果のニュースタブでは パブリコンサイトメイショー機ともに 正しくない意味上ージにいいなります",
+      "end": 33.8,
+      "text": "しかし ルグル検査結果のニュースタブでは パブリコンサイトメイショー機ともに 正しくない医療時にいいなります",
       "tokens": [
+        50684,
         32156,
         2849,
-        12104,
-        3127,
+        220,
+        9405,
+        23839,
+        9405,
         38739,
         250,
         17238,
@@ -1144,20 +1155,22 @@
         15789,
         26568,
         9311,
-        9042,
-        17268,
-        5708,
-        44143,
+        9937,
+        119,
+        6651,
+        224,
+        6611,
         4108,
         13806,
         3203,
-        19420
+        19420,
+        51024
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3744473817969571,
-      "compression_ratio": 1.6198347107438016,
-      "no_speech_prob": 0.27477630972862244,
-      "confidence": 0.433,
+      "avg_logprob": -0.35125738675477075,
+      "compression_ratio": 1.6926406926406927,
+      "no_speech_prob": 0.06554542481899261,
+      "confidence": 0.502,
       "words": [
         {
           "text": "しか",
@@ -1172,46 +1185,58 @@
           "confidence": 0.989
         },
         {
-          "text": "Go",
+          "text": " ",
           "start": 27.72,
-          "end": 27.88,
-          "confidence": 0.036
+          "end": 27.86,
+          "confidence": 0.065
         },
         {
-          "text": "ogle",
-          "start": 27.88,
-          "end": 28.04,
-          "confidence": 0.994
+          "text": "ル",
+          "start": 27.86,
+          "end": 27.9,
+          "confidence": 0.236
+        },
+        {
+          "text": "グ",
+          "start": 27.9,
+          "end": 28.0,
+          "confidence": 0.538
+        },
+        {
+          "text": "ル",
+          "start": 28.0,
+          "end": 28.14,
+          "confidence": 0.989
         },
         {
           "text": "検",
-          "start": 28.04,
+          "start": 28.14,
           "end": 28.32,
-          "confidence": 0.262
+          "confidence": 0.565
         },
         {
           "text": "査",
           "start": 28.32,
           "end": 28.46,
-          "confidence": 0.681
+          "confidence": 0.728
         },
         {
           "text": "結果",
           "start": 28.46,
           "end": 28.72,
-          "confidence": 0.979
+          "confidence": 0.976
         },
         {
           "text": "の",
           "start": 28.72,
           "end": 28.92,
-          "confidence": 0.977
+          "confidence": 0.96
         },
         {
           "text": "ニ",
           "start": 28.92,
           "end": 29.06,
-          "confidence": 0.781
+          "confidence": 0.777
         },
         {
           "text": "ュ",
@@ -1223,139 +1248,139 @@
           "text": "ー",
           "start": 29.14,
           "end": 29.2,
-          "confidence": 0.984
+          "confidence": 0.98
         },
         {
           "text": "ス",
           "start": 29.2,
-          "end": 29.24,
-          "confidence": 0.969
+          "end": 29.26,
+          "confidence": 0.971
         },
         {
           "text": "タ",
-          "start": 29.24,
+          "start": 29.26,
           "end": 29.34,
-          "confidence": 0.833
+          "confidence": 0.806
         },
         {
           "text": "ブ",
           "start": 29.34,
           "end": 29.44,
-          "confidence": 0.69
+          "confidence": 0.685
         },
         {
           "text": "では",
           "start": 29.44,
-          "end": 29.66,
-          "confidence": 0.961
+          "end": 29.68,
+          "confidence": 0.942
         },
         {
           "text": " パ",
-          "start": 29.66,
+          "start": 29.68,
           "end": 30.02,
-          "confidence": 0.081
+          "confidence": 0.123
         },
         {
           "text": "ブ",
           "start": 30.02,
           "end": 30.14,
-          "confidence": 0.038
+          "confidence": 0.041
         },
         {
           "text": "リ",
           "start": 30.14,
-          "end": 30.34,
-          "confidence": 0.009
+          "end": 30.32,
+          "confidence": 0.021
         },
         {
           "text": "コ",
-          "start": 30.34,
-          "end": 30.36,
-          "confidence": 0.889
+          "start": 30.32,
+          "end": 30.34,
+          "confidence": 0.89
         },
         {
           "text": "ン",
-          "start": 30.36,
+          "start": 30.34,
           "end": 30.42,
-          "confidence": 0.942
+          "confidence": 0.918
         },
         {
           "text": "サ",
           "start": 30.42,
           "end": 30.54,
-          "confidence": 0.443
+          "confidence": 0.426
         },
         {
           "text": "イ",
           "start": 30.54,
           "end": 30.62,
-          "confidence": 0.976
+          "confidence": 0.979
         },
         {
           "text": "ト",
           "start": 30.62,
           "end": 30.72,
-          "confidence": 0.97
+          "confidence": 0.956
         },
         {
           "text": "メ",
           "start": 30.72,
           "end": 30.86,
-          "confidence": 0.297
+          "confidence": 0.251
         },
         {
           "text": "イ",
           "start": 30.86,
           "end": 30.92,
-          "confidence": 0.629
+          "confidence": 0.622
         },
         {
           "text": "ショ",
           "start": 30.92,
           "end": 31.02,
-          "confidence": 0.426
+          "confidence": 0.416
         },
         {
           "text": "ー",
           "start": 31.02,
           "end": 31.08,
-          "confidence": 0.624
+          "confidence": 0.618
         },
         {
           "text": "機",
           "start": 31.08,
           "end": 31.24,
-          "confidence": 0.147
+          "confidence": 0.126
         },
         {
           "text": "と",
           "start": 31.24,
           "end": 31.42,
-          "confidence": 0.385
+          "confidence": 0.357
         },
         {
           "text": "も",
           "start": 31.42,
-          "end": 31.56,
-          "confidence": 0.863
+          "end": 31.54,
+          "confidence": 0.81
         },
         {
           "text": "に",
-          "start": 31.56,
+          "start": 31.54,
           "end": 31.66,
-          "confidence": 0.935
+          "confidence": 0.919
         },
         {
           "text": " ",
           "start": 31.66,
           "end": 31.8,
-          "confidence": 0.196
+          "confidence": 0.402
         },
         {
           "text": "正",
           "start": 31.8,
           "end": 31.96,
-          "confidence": 0.443
+          "confidence": 0.437
         },
         {
           "text": "しく",
@@ -1367,70 +1392,65 @@
           "text": "ない",
           "start": 32.18,
           "end": 32.4,
-          "confidence": 0.982
+          "confidence": 0.981
         },
         {
-          "text": "意",
+          "text": "医",
           "start": 32.4,
           "end": 32.6,
-          "confidence": 0.2
+          "confidence": 0.234
         },
         {
-          "text": "味",
+          "text": "療",
           "start": 32.6,
-          "end": 32.66,
-          "confidence": 0.267
+          "end": 32.76,
+          "confidence": 0.686
         },
         {
-          "text": "上",
-          "start": 32.66,
-          "end": 32.82,
-          "confidence": 0.327
-        },
-        {
-          "text": "ージ",
-          "start": 32.82,
+          "text": "時",
+          "start": 32.76,
           "end": 32.96,
-          "confidence": 0.102
+          "confidence": 0.452
         },
         {
           "text": "に",
           "start": 32.96,
           "end": 33.12,
-          "confidence": 0.472
+          "confidence": 0.925
         },
         {
           "text": "いい",
           "start": 33.12,
           "end": 33.36,
-          "confidence": 0.512
+          "confidence": 0.577
         },
         {
           "text": "な",
           "start": 33.36,
           "end": 33.48,
-          "confidence": 0.811
+          "confidence": 0.807
         },
         {
           "text": "ります",
           "start": 33.48,
-          "end": 33.82,
-          "confidence": 0.926
+          "end": 33.8,
+          "confidence": 0.941
         }
       ]
     },
     {
-      "id": 3,
+      "id": 5,
       "seek": 2088,
-      "start": 34.06,
-      "end": 40.38,
-      "text": "こちらいたりしてものではありません パブリコンはサプテレクトリーごとに設定した",
+      "start": 34.04,
+      "end": 40.36,
+      "text": "こちらいたいです ものではありません パブリコンはサブテレクトリーごとに設定した",
       "tokens": [
+        51024,
         34395,
         17679,
-        5095,
-        8822,
-        4801,
+        1764,
+        4767,
+        32505,
         2972,
         16719,
         14498,
@@ -1443,7 +1463,7 @@
         4824,
         3065,
         23607,
-        20953,
+        28889,
         22985,
         16680,
         10825,
@@ -1455,175 +1475,176 @@
         4108,
         39035,
         12088,
-        8533
+        8533,
+        51388
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3744473817969571,
-      "compression_ratio": 1.6198347107438016,
-      "no_speech_prob": 0.27477630972862244,
-      "confidence": 0.37,
+      "avg_logprob": -0.35125738675477075,
+      "compression_ratio": 1.6926406926406927,
+      "no_speech_prob": 0.06554542481899261,
+      "confidence": 0.364,
       "words": [
         {
           "text": "こちら",
-          "start": 34.06,
+          "start": 34.04,
           "end": 34.54,
-          "confidence": 0.398
+          "confidence": 0.408
         },
         {
           "text": "いた",
           "start": 34.54,
           "end": 34.82,
-          "confidence": 0.252
+          "confidence": 0.254
         },
         {
-          "text": "り",
+          "text": "い",
           "start": 34.82,
           "end": 34.98,
-          "confidence": 0.224
+          "confidence": 0.11
         },
         {
-          "text": "して",
+          "text": "です",
           "start": 34.98,
-          "end": 35.06,
-          "confidence": 0.449
+          "end": 35.04,
+          "confidence": 0.021
         },
         {
-          "text": "も",
-          "start": 35.06,
+          "text": " も",
+          "start": 35.04,
           "end": 35.18,
-          "confidence": 0.623
+          "confidence": 0.009
         },
         {
           "text": "の",
           "start": 35.18,
-          "end": 35.34,
-          "confidence": 0.095
+          "end": 35.28,
+          "confidence": 0.812
         },
         {
           "text": "では",
-          "start": 35.34,
+          "start": 35.28,
           "end": 35.5,
-          "confidence": 0.931
+          "confidence": 0.995
         },
         {
           "text": "あり",
           "start": 35.5,
           "end": 35.72,
-          "confidence": 0.986
+          "confidence": 0.981
         },
         {
           "text": "ません",
           "start": 35.72,
-          "end": 36.16,
+          "end": 36.18,
           "confidence": 0.999
         },
         {
           "text": " パ",
-          "start": 36.16,
+          "start": 36.18,
           "end": 36.9,
-          "confidence": 0.202
+          "confidence": 0.273
         },
         {
           "text": "ブ",
           "start": 36.9,
           "end": 37.02,
-          "confidence": 0.01
+          "confidence": 0.011
         },
         {
           "text": "リ",
           "start": 37.02,
-          "end": 37.16,
-          "confidence": 0.198
+          "end": 37.1,
+          "confidence": 0.237
         },
         {
           "text": "コ",
-          "start": 37.16,
+          "start": 37.1,
           "end": 37.18,
-          "confidence": 0.95
+          "confidence": 0.951
         },
         {
           "text": "ン",
           "start": 37.18,
-          "end": 37.8,
-          "confidence": 0.849
+          "end": 37.84,
+          "confidence": 0.832
         },
         {
           "text": "は",
-          "start": 37.8,
-          "end": 37.82,
-          "confidence": 0.961
+          "start": 37.84,
+          "end": 37.86,
+          "confidence": 0.95
         },
         {
           "text": "サ",
-          "start": 37.82,
+          "start": 37.86,
           "end": 38.22,
-          "confidence": 0.333
+          "confidence": 0.307
         },
         {
-          "text": "プ",
+          "text": "ブ",
           "start": 38.22,
           "end": 38.32,
-          "confidence": 0.003
+          "confidence": 0.98
         },
         {
           "text": "テ",
           "start": 38.32,
           "end": 38.42,
-          "confidence": 0.475
+          "confidence": 0.318
         },
         {
           "text": "レ",
           "start": 38.42,
           "end": 38.56,
-          "confidence": 0.684
+          "confidence": 0.394
         },
         {
           "text": "ク",
           "start": 38.56,
           "end": 38.66,
-          "confidence": 0.748
+          "confidence": 0.751
         },
         {
           "text": "ト",
           "start": 38.66,
           "end": 38.78,
-          "confidence": 0.784
+          "confidence": 0.731
         },
         {
           "text": "リ",
           "start": 38.78,
           "end": 38.92,
-          "confidence": 0.987
+          "confidence": 0.988
         },
         {
           "text": "ー",
           "start": 38.92,
           "end": 38.96,
-          "confidence": 0.513
+          "confidence": 0.528
         },
         {
           "text": "ご",
           "start": 38.96,
           "end": 39.08,
-          "confidence": 0.052
+          "confidence": 0.051
         },
         {
           "text": "と",
           "start": 39.08,
           "end": 39.24,
-          "confidence": 0.974
+          "confidence": 0.973
         },
         {
           "text": "に",
           "start": 39.24,
           "end": 39.52,
-          "confidence": 0.983
+          "confidence": 0.978
         },
         {
           "text": "設",
           "start": 39.52,
           "end": 39.84,
-          "confidence": 0.673
+          "confidence": 0.621
         },
         {
           "text": "定",
@@ -1634,8 +1655,8 @@
         {
           "text": "した",
           "start": 40.04,
-          "end": 40.38,
-          "confidence": 0.915
+          "end": 40.36,
+          "confidence": 0.894
         }
       ]
     }

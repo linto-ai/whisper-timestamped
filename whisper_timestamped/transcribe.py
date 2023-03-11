@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.11.0"
+__version__ = "1.12.1"
 
 # Set some environment variables
 import os
@@ -49,6 +49,7 @@ try:
 except NameError:
     whisper_version = ""
 WHIPSER_GE_20230306 = whisper_version >= "20230306"
+WHIPSER_GE_20230308 = whisper_version >= "20230308"
 
 def transcribe_timestamped(
     # Main Whisper options
@@ -69,9 +70,10 @@ def transcribe_timestamped(
     # Reproducibility
     seed=1234,
 
-    naive_approach=False,
-    trust_whisper_timestamps=TRUST_WHISPER_TIMESTAMP_BY_DEFAULT,
+    vad=False,
     detect_disfluencies=False,
+    trust_whisper_timestamps=TRUST_WHISPER_TIMESTAMP_BY_DEFAULT,
+    naive_approach=False,
 
     # Other Whisper options
     temperature=0.0 if USE_EFFICIENT_BY_DEFAULT else (0.0, 0.2, 0.4, 0.6, 0.8, 1.0),
@@ -98,7 +100,7 @@ def transcribe_timestamped(
         The Whisper model instance.
 
     audio: Union[str, np.ndarray, torch.Tensor]
-        The path to the audio file to open, or the audio waveform.
+        The path to the audio file to open, or the audio waveform in 16kHz.
 
     language: str
         The language to use for the transcription. If None, the language is detected automatically.
@@ -110,13 +112,25 @@ def transcribe_timestamped(
         If False, words will be glued with the next punctuation mark (if any).
         If True, there will be no punctuation mark in the `words[:]["text"]` list.
         It only affects these strings; This has no influence on the computation of the word confidence, whatever the value of `include_punctuation_in_confidence` is.
+    
+    include_punctuation_in_confidence: bool
+        Whether to include proba of punctuation in the computation of the (previous) word confidence.
 
     compute_word_confidence: bool
         Whether to compute word confidence.
         If True, a finer confidence for each segment will be computed as well.
-    
-    include_punctuation_in_confidence: bool
-        Whether to include proba of punctuation in the computation of the (previous) word confidence.
+
+    vad: bool
+        Whether to perform voice activity detection (VAD) on the audio file, to remove silent parts before transcribing with Whisper model.
+        This should decrease hallucinations from the Whisper model.
+
+    detect_disfluencies: bool
+        Whether to detect disfluencies (i.e. hesitations, filler words, repetitions, corrections, etc.) that Whisper model might have omitted in the transcription.
+        This should make the word timestamp prediction more accurate.
+        And probable disfluencies will be marked as special words "[*]".
+
+    trust_whisper_timestamps: bool
+        Whether to rely on Whisper's timestamps to get approximative first estimate of segment positions (up to refine_whisper_precision).
 
     refine_whisper_precision: float
         How much can we refine Whisper segment positions, in seconds. Must be a multiple of 0.02.
@@ -231,6 +245,11 @@ def transcribe_timestamped(
         compression_ratio_threshold=compression_ratio_threshold,
     )
 
+    if vad:
+        audio = get_audio_tensor(audio)
+        audio, convert_timestamps = remove_non_speech(audio)
+        audio = audio.to(model.device)
+
     if naive_approach:
         (transcription, words) = _transcribe_timestamped_naive(model, audio,
                                                                min_word_duration=0.0, # Was 0.04 before 1.11
@@ -242,7 +261,7 @@ def transcribe_timestamped(
                                                                    **alignment_options, **whisper_options, **other_options)
 
     # Remove words with empty duration happening at the end of segments, to remove some hallucinations
-    transcription, words = remove_last_null_duration_words(transcription, words, recompute_text=WHIPSER_GE_20230306)
+    transcription, words = remove_last_null_duration_words(transcription, words, recompute_text=True)
 
     # Refine word positions
     ensure_increasing_positions(words, min_duration=min_word_duration if trust_whisper_timestamps else 0)
@@ -266,6 +285,18 @@ def transcribe_timestamped(
                 segment["start"] = word["start"]
         if refine_whisper_precision:
             segment["end"] = word["end"]
+
+    if vad:
+        # Recompute timestamps to match the original audio
+        for segment in whisper_segments:
+            for word in segment["words"]:
+                word["start"], word["end"] = convert_timestamps(word["start"], word["end"])
+            if refine_whisper_precision and len(segment["words"]):
+                segment["start"] = segment["words"][0]["start"]
+                segment["end"] = segment["words"][-1]["end"]
+            else:
+                segment["start"] = convert_timestamps(segment["start"], segment["end"])
+                segment["end"] = convert_timestamps(segment["end"])
 
     return transcription
 
@@ -320,6 +351,7 @@ def _transcribe_timestamped_efficient(
     chunk_logprobs = []             # log probabilities for the current 30 sec chunk
     chunk_tokens = []               # tokens for the current 30 sec chunk (list of Torch tensors)
     chunk_tokens_nosot = []         # tokens for the current 30 sec chunk, without the SOT tokens (list of indices)
+    last_chunk_token = None         # last token of the current chunk, that may be needed for corner cases
     last_token_fallback = None      # last token to use as a fallback if the model gets stuck
     has_started = False             # whether we have started decoding
     mfcc = None                     # MFCC features for the current 30 sec chunk
@@ -362,9 +394,11 @@ def _transcribe_timestamped_efficient(
             return consecutive_timestamps
         else: # Several tokens as a prompt or must flush last segments
             must_flush = len(segment_tokens[-1]) > 1 and not saw_consecutive_timestamps
-            if WHIPSER_GE_20230306: # If last token was a timestamp, the last segment is used
-                must_flush = must_flush or (len(segment_tokens[-1]) > 2 and segment_tokens[-1][-1] >= tokenizer.timestamp_begin)
-            # logger.debug(f"New prompt: flushing = {must_flush}")
+            if not must_flush and WHIPSER_GE_20230306: # If the last token is a timestamp, the last segment is used
+                if last_chunk_token is None:
+                    must_flush = (len(segment_tokens[-1]) > 2 and segment_tokens[-1][-1] >= tokenizer.timestamp_begin)
+                else:
+                    must_flush = (last_chunk_token >= tokenizer.timestamp_begin)
             if not must_flush and trust_whisper_timestamps:
                 # Discard the end of the last transcription
                 reset(False)
@@ -390,6 +424,7 @@ def _transcribe_timestamped_efficient(
             logger.debug(f"Add segment {len(timestamped_word_segments)+1} at step {num_inference_steps}:\n\t{tokenizer.decode_with_timestamps(segment_tokens[-1])}")
 
         tokens = segment_tokens[-1][1:]
+
         # When the decoding hit the max limit (number of tokens) -- usually when the language model gets stuck --
         # then we have to recover the last token from what is send to the decoder
         unfinished_decoding = len(tokens) and tokens[-1] < tokenizer.timestamp_begin
@@ -407,7 +442,7 @@ def _transcribe_timestamped_efficient(
                 logger.debug(f"         Guessed last token from the prompt for the new chunk: {last_token_fallback}")
             # Fallback for the last segment, or without prompt: Assume greedy decoding
             else:
-                last_token_fallback = torch.argmax(chunk_logprobs[-1]).item()
+                last_token_fallback = torch.argmax(chunk_logprobs[-1]).item() if last_chunk_token is None else last_chunk_token
                 last_token_reliable = (temperature == 0)
                 logger.debug(f"         Guess last token using probas (assuming greedy decoding): {last_token_fallback}")
             if debug:
@@ -433,20 +468,24 @@ def _transcribe_timestamped_efficient(
                 if debug:
                     logger.debug(f"Re-estimated end token {tokenizer.decode_with_timestamps([new_end_token])} (was {tokenizer.decode_with_timestamps([end_token])}) to be after start token {tokenizer.decode_with_timestamps([start_token])}")
 
-        ws = perform_word_alignment(
-            tokens,
-            attention_weights,
-            tokenizer,
-            use_space=should_use_space(language),
-            alignment_heads=alignment_heads,
-            remove_punctuation_from_words=remove_punctuation_from_words,
-            refine_whisper_precision_nframes=refine_whisper_precision_nframes,
-            detect_disfluencies=detect_disfluencies,
-            unfinished_decoding=unfinished_decoding,
-            mfcc=mfcc,
-            plot=plot_word_alignment,
-            debug=debug,
-        )
+        if len(tokens) <= 1:
+            # Corner case: nothing in between timestamps
+            ws = []
+        else:
+            ws = perform_word_alignment(
+                tokens,
+                attention_weights,
+                tokenizer,
+                use_space=should_use_space(language),
+                alignment_heads=alignment_heads,
+                remove_punctuation_from_words=remove_punctuation_from_words,
+                refine_whisper_precision_nframes=refine_whisper_precision_nframes,
+                detect_disfluencies=detect_disfluencies,
+                unfinished_decoding=unfinished_decoding,
+                mfcc=mfcc,
+                plot=plot_word_alignment,
+                debug=debug,
+            )
 
         add_segment = len(ws) > 0
         if add_segment:
@@ -644,7 +683,7 @@ def _transcribe_timestamped_efficient(
                         i_token_end = i_token_start + len(tokens)
                         assert chunck_indices[i_token_start:i_token_end] == tokens, f"Inconsistent token list {tokenizer.decode_with_timestamps(chunck_indices[i_token_start:i_token_end])} != {tokenizer.decode_with_timestamps(tokens)}"
                         i_token_start += 1 # skip sos (start time)
-                        if not unfinished_decoding:
+                        if not unfinished_decoding or i != n_segments-1:
                             i_token_end -= 1 # skip eos (end time)
                         segment_logprobs.append(logprobs[i_token_start:i_token_end])
                         segment_avglogprobs.append(avg_logprob)
@@ -679,7 +718,7 @@ def _transcribe_timestamped_efficient(
         # Only the last attention weights is useful
         if w.shape[-2] > 1:
             w = w[:, :, -1:, :]
-        segment_attweights[index].append(w)
+        segment_attweights[index].append(w.cpu())
 
     def hook_mfcc(layer, ins, outs):
         nonlocal new_mfcc, mfcc
@@ -736,7 +775,7 @@ def _transcribe_timestamped_efficient(
 
     embedding_weights = None 
     def hook_output_logits(layer, ins, outs):
-        nonlocal no_speech_prob, chunk_logprobs, segment_tokens, chunk_tokens, embedding_weights, has_started
+        nonlocal no_speech_prob, chunk_logprobs, segment_tokens, chunk_tokens, chunk_tokens_nosot, last_chunk_token, embedding_weights, has_started
         
         if embedding_weights is None:
             embedding_weights = torch.transpose(model.decoder.token_embedding.weight, 0, 1).to(outs[0].dtype)
@@ -755,6 +794,11 @@ def _transcribe_timestamped_efficient(
                 logit_filter.apply(logits, tokens)
             logits = F.log_softmax(logits.squeeze(0), dim=-1)
             chunk_logprobs.append(logits)
+
+            if WHIPSER_GE_20230306 and len(chunk_tokens_nosot) == max_sample_len - 1:
+                last_chunk_token = torch.argmax(logits).item()
+            else:
+                last_chunk_token = None
 
     try:
 
@@ -822,6 +866,8 @@ def _transcribe_timestamped_efficient(
             else:
                 assert len(timestamped_tokens) < len(whisper_tokens) and timestamped_tokens == whisper_tokens[:len(timestamped_tokens)], \
                     f"Fatal Error: Got inconsistent text for segment {i}:\n({len(timestamped_tokens)})\n{tokenizer.decode_with_timestamps(timestamped_tokens)}\n{timestamped_tokens}\n!=\n({len(whisper_tokens)})\n{tokenizer.decode_with_timestamps(whisper_tokens)}\n{whisper_tokens[:len(timestamped_tokens)]}"
+                segment["tokens"] = token if WHIPSER_GE_20230306 else timestamped_tokens # tokens include special timestamp tokens since 20230306
+                segment["text"] = tokenizer.decode(segment["tokens"])
                 logger.warn(f"Text had to be shortned on segment {i}:\n{tokenizer.decode(timestamped_tokens)}\n!=\n{tokenizer.decode(whisper_tokens)}")
             timestamped_words[-1]["avg_logprob_reliable"] = False
 
@@ -857,7 +903,7 @@ def _transcribe_timestamped_efficient(
 
                 timestamped_word["confidence"] = round_confidence(word_logprobs.mean().exp().item() if len(word_logprobs) else 0.0)
 
-            if i_end != len(logprobs):
+            if i_end not in [len(logprobs), len(logprobs)-1]:
                 logger.warn(f"Got inconsistent length for segment {i} ({len(logprobs)} != {i_end}). Some words have been ignored.")
             if not include_punctuation_in_confidence:   
                 logprobs_nopunc = torch.cat(logprobs_nopunc)
@@ -889,14 +935,7 @@ def _transcribe_timestamped_naive(
 
     word_alignement_most_top_layers = float("inf") if word_alignement_most_top_layers is None else word_alignement_most_top_layers
 
-    if isinstance(audio, str):
-        audio = whisper.load_audio(audio)
-    if isinstance(audio, np.ndarray):
-        audio = torch.Tensor(audio)
-    else:
-        assert isinstance(audio, torch.Tensor), f"Got unexpected audio of type {type(audio)}"
-
-    audio = audio.to(model.device)
+    audio = get_audio_tensor(audio, model.device)
     audio_duration = audio.shape[-1] / SAMPLE_RATE
 
     if verbose and language is None and not whisper_options["verbose"]:
@@ -1010,7 +1049,7 @@ def _transcribe_timestamped_naive(
                     end = min(start + SEGMENT_DURATION, audio_duration)
                     tokens = current_tokens
 
-            if start is None:
+            if tokens is None or not len(tokens):
                 continue
 
             start_sample = min(round(start * SAMPLE_RATE), audio.shape[-1])
@@ -1023,12 +1062,16 @@ def _transcribe_timestamped_naive(
             mfcc = whisper.pad_or_trim(mfcc, N_FRAMES)
             mfcc = mfcc.unsqueeze(0)
 
-            assert len(tokens), "Got empty transcription!"
+            segment_tokens_check = []
             if tokens[0] >= tokenizer.timestamp_begin:
+                segment_tokens_check.append(tokens[0])
+            while tokens[0] >= tokenizer.timestamp_begin:
                 tokens = tokens[1:]
-            while tokens[-1] >= tokenizer.timestamp_begin:
-                tokens = tokens[:-1]
                 assert len(tokens), "Got transcription with only timestamps!"
+            last_token_check = None
+            while tokens[-1] >= tokenizer.timestamp_begin:
+                last_token_check = tokens[-1]
+                tokens = tokens[:-1]
 
             tokens = [
                     *tokenizer.sot_sequence,
@@ -1059,6 +1102,7 @@ def _transcribe_timestamped_naive(
 
             segment_logprobs = []
             i_token = 1
+            
             for word in ws:
 
                 word["start"] = round(word["start"] + start, 2)
@@ -1074,9 +1118,11 @@ def _transcribe_timestamped_naive(
                     while i_token < len(tokens) and tokens[i_token] >= tokenizer.timestamp_begin:
                         i_token += 1
                 
+                tok_indices = word["tokens_indices"]
+                segment_tokens_check.extend(tok_indices)
+
                 if compute_word_confidence:
                     tok = word["tokens"]
-                    tok_indices = word["tokens_indices"]
                     i_end = i_start + len(tok)
                     if include_punctuation_in_confidence:
                         while len(tok) > 1 and tok[-1][-1] in _punctuation: # Note: look at the last character of token, to take into account "...", "!!", etc.
@@ -1097,6 +1143,15 @@ def _transcribe_timestamped_naive(
                 if verbose:
                     print_timestamped(word)
 
+            if last_token_check is not None:
+                segment_tokens_check.append(last_token_check)
+            if trust_whisper_timestamps:
+                if segment_tokens_check != segment["tokens"]:
+                    assert len(segment_tokens_check) < len(segment["tokens"]) and segment_tokens_check[:-1] == segment["tokens"][:len(segment_tokens_check)-1]
+                    segment["tokens"] = segment_tokens_check
+                    segment["text"] = tokenizer.decode(segment["tokens"])
+            # else: TODO
+
             if len(segment_logprobs):
                 segment.update({"confidence": round_confidence(torch.cat(segment_logprobs).mean().exp().item())})
 
@@ -1114,6 +1169,15 @@ def _transcribe_timestamped_naive(
             hook.remove()
 
     return (transcription, words)
+
+def get_audio_tensor(audio, device="cpu"):
+    if isinstance(audio, str):
+        audio = whisper.load_audio(audio)
+    if isinstance(audio, np.ndarray):
+        audio = torch.Tensor(audio)
+    else:
+        assert isinstance(audio, torch.Tensor), f"Got unexpected audio of type {type(audio)}"
+    return audio.to(device)
 
 def audio_minimum_padding(audio):
     if audio.shape[-1] <= 200:
@@ -1278,7 +1342,7 @@ def perform_word_alignment(
     assert end_token <= weights.shape[-1]
     assert len(tokens) == num_tokens
 
-    weights = weights[:, :, :, start_token: end_token].cpu()                        # layers * heads * tokens * frames
+    weights = weights[..., start_token: end_token].cpu()                        # layers * heads * tokens * frames
 
     if alignment_heads is None:
         weights = weights.reshape(-1, *weights.shape[-2:])                      # N * tokens * frames
@@ -1586,9 +1650,12 @@ def split_tokens_on_spaces(tokens: torch.Tensor, tokenizer, remove_punctuation_f
     for i, (subword, subword_tokens, subword_tokens_indices) in enumerate(zip(subwords, subword_tokens_list, subword_tokens_indices_list)):
         special = (subword_tokens_indices[0] >= tokenizer.eot)
         previous_special = (i > 0) and (subword_tokens_indices_list[i-1][0] >= tokenizer.eot)
-        with_space = subword.startswith(" ")
-        punctuation = (subword.strip() and subword.strip()) in _punctuation
-        if special or (with_space and not punctuation) or previous_special:
+        next_special = (i < len(subword_tokens_indices_list)-1) and (subword_tokens_indices_list[i+1][0] >= tokenizer.eot)
+        previous_space = (i > 0) and (not subwords[i-1].strip())
+        is_space = not subword.strip()
+        with_space = subword.startswith(" ") and not is_space
+        punctuation = not is_space and subword.strip() in _punctuation
+        if special or (not previous_space and (previous_special or (with_space and not punctuation) or (is_space and not next_special))):
             words.append(subword.strip())
             word_tokens.append(subword_tokens)
             word_tokens_indices.append(subword_tokens_indices)
@@ -1599,6 +1666,123 @@ def split_tokens_on_spaces(tokens: torch.Tensor, tokenizer, remove_punctuation_f
 
     return words, word_tokens, word_tokens_indices
 
+silero_vad_model = None
+def get_vad_segments(audio,
+    output_sample=False,
+    min_speech_duration=0.1,
+    min_silence_duration=0.1,
+    ):
+    """
+    Get speech segments from audio using Silero VAD
+    parameters:
+        audio: torch.Tensor
+            audio data *in 16kHz*
+        output_sample: bool
+            if True, return start and end in samples instead of seconds
+        method: str
+            method to use for VAD (silero, pyannote)
+    """
+    global silero_vad_model, silero_get_speech_ts
+
+    if silero_vad_model is None:
+        import onnxruntime
+        onnxruntime.set_default_logger_severity(3) # Remove warning "Removing initializer 'XXX'. It is not used by any node and should be removed from the model."
+        silero_vad_model, utils = torch.hub.load(repo_or_dir="snakers4/silero-vad", model="silero_vad", onnx=True)
+        silero_get_speech_ts = utils[0]
+
+    # Cheap normalization of the volume
+    audio = audio / max(0.1, audio.abs().max())
+
+    segments = silero_get_speech_ts(audio, silero_vad_model,
+        min_speech_duration_ms = round(min_speech_duration * 1000),
+        min_silence_duration_ms = round(min_silence_duration * 1000),
+        return_seconds = False,
+    )
+
+    ratio = 1 if output_sample else 1 / SAMPLE_RATE
+
+    if ratio != 1:
+        for seg in segments:
+            seg["start"] *= ratio
+            seg["end"] *= ratio
+    if output_sample:
+        for seg in segments:
+            seg["start"] = round(seg["start"])
+            seg["end"] = round(seg["end"])
+    return segments
+
+def remove_non_speech(audio,
+    use_sample=False,
+    min_speech_duration=0.1,
+    min_silence_duration=1,
+    ):
+    """
+    Remove non-speech segments from audio (using Silero VAD),
+    glue the speech segments together and return the result along with
+    a function to convert timestamps from the new audio to the original audio
+    """
+
+    segments = get_vad_segments(
+        audio,
+        output_sample=True,
+        min_speech_duration=min_speech_duration,
+        min_silence_duration=min_silence_duration,
+    )
+
+    segments = [(seg["start"], seg["end"]) for seg in segments]
+    if len(segments) == 0:
+        segments = [(0, audio.shape[-1])]
+
+    audio_speech = torch.cat([audio[..., s:e] for s,e in segments], dim=-1)
+
+    if not use_sample:
+        segments = [(float(s)/SAMPLE_RATE, float(e)/SAMPLE_RATE) for s,e in segments]
+ 
+    return audio_speech, lambda t, t2 = None: do_convert_timestamps(segments, t, t2)
+
+def do_convert_timestamps(segments, t, t2 = None):
+    """
+    Convert timestamp from audio without non-speech segments to original audio (with non-speech segments)
+
+    parameters:
+        segments: list of tuple (start, end) corresponding to non-speech segments in original audio
+        t: timestamp to convert
+        t2: second timestamp to convert (optional), when the two timestamps should be in the same segment
+    """
+    assert len(segments)
+    ioffset = 0 # Input offset
+    ooffset = 0 # Output offset
+    ipreviousend = 0
+    result = []
+    for istart, iend in segments:
+        ostart = ooffset
+        oend = ostart + (iend - istart)
+        ooffset = oend
+        ioffset += istart - ipreviousend
+        ipreviousend = iend
+        t_in = t <= oend
+        t2_in = t_in if t2 is None else t2 <= oend
+        if t_in or t2_in:
+            result.append([
+                max(istart, min(iend, ioffset + t)),
+                max(istart, min(iend, ioffset + t2)) if t2 is not None else None
+            ])
+            if t_in and t2_in:
+                break
+    if not len(result):
+        result.append(
+            [ioffset + t, ioffset + t2 if t2 is not None else None]
+        )
+        
+    if len(result) > 1:
+        # Minimize difference between durations
+        result = sorted(result, key=lambda x: abs(abs(t2-t) - abs(x[1]-x[0])))
+    result = result[0]
+    if t2 is None:
+        result = round(result[0], 2)
+    else:
+        result = [round(x, 2) for x in result]
+    return result
 
 def remove_last_null_duration_words(transcription, words, recompute_text=False):
     """
@@ -1751,6 +1935,8 @@ _PARAMETERS_TO_MODEL_NAME = {
 }
 
 def get_alignment_heads(model):
+    if hasattr(model, "alignment_heads"): # Since version 20230306
+        return model.alignment_heads
     model_name = _PARAMETERS_TO_MODEL_NAME[_get_number_of_parameters(model)]
     if model_name == "large":
         if next(model.parameters())[0,0,0] > 0:
@@ -1760,7 +1946,6 @@ def get_alignment_heads(model):
     num_layers = model.dims.n_text_layer
     num_heads = model.dims.n_text_head
     return _get_alignment_heads(model_name, num_layers, num_heads)
-
 
 def _get_alignment_heads(model_name, num_layers, num_heads):
     dump = _ALIGNMENT_HEADS[model_name]
@@ -1815,16 +2000,15 @@ def cli():
     parser.add_argument("--device", default="cuda:0" if torch.cuda.is_available() else "cpu", help="device to use for PyTorch inference")
     parser.add_argument("--output_dir", "-o", default=None, help="directory to save the outputs", type=str)
     parser.add_argument("--output_format", "-f", type=str, default="all", help="format of the output file; if not specified, all available formats will be produced", choices=["txt", "vtt", "srt", "tsv", "csv", "json", "all"])
-    parser.add_argument("--verbose", type=str2bool, default=False, help="whether to print out the progress and debug messages of Whisper")
 
     parser.add_argument("--task", default="transcribe", help="whether to perform X->X speech recognition ('transcribe') or X->English translation ('translate')", choices=["transcribe", "translate"], type=str)
     parser.add_argument('--language', help=f"language spoken in the audio, specify None to perform language detection.", choices=sorted(whisper.tokenizer.LANGUAGES.keys()) + sorted([k.title() for k in whisper.tokenizer.TO_LANGUAGE_CODE.keys()]), default=None)
     # f"{', '.join(sorted(k+'('+v+')' for k,v in whisper.tokenizer.LANGUAGES.items()))}
 
-    parser.add_argument('--plot', help="plot word alignments", default=False, action="store_true")
-
-    parser.add_argument("--punctuations_with_words", default=True, help="whether to include punctuations within the words", type=str2bool)
-    parser.add_argument("--compute_confidence", default=True, help="whether to compute confidence scores for words", type=str2bool)
+    parser.add_argument('--vad', default=False, help="whether to run Voice Activity Detection (VAD) to remove non-speech segment before applying Whisper model (removes hallucinations)", type=str2bool)
+    parser.add_argument('--detect_disfluencies', default=False, help="whether to try to detect disfluencies, marking them as special words [*]", type=str2bool)
+    parser.add_argument('--recompute_all_timestamps', default=not TRUST_WHISPER_TIMESTAMP_BY_DEFAULT, help="Do not rely at all on Whisper timestamps (Experimental option: did not bring any improvement, but could be useful in cases where Whipser segment timestamp are wrong by more than 0.5 seconds)", type=str2bool)
+    parser.add_argument("--punctuations_with_words", default=True, help="whether to include punctuations in the words", type=str2bool)
         
     parser.add_argument("--temperature", default=0.0, help="temperature to use for sampling", type=float)
     parser.add_argument("--best_of", type=optional_int, default=None if USE_EFFICIENT_BY_DEFAULT else 5, help="number of candidates when sampling with non-zero temperature")
@@ -1843,11 +2027,11 @@ def cli():
     parser.add_argument("--no_speech_threshold", default=0.6, help="if the probability of the <|nospeech|> token is higher than this value AND the decoding has failed due to `logprob_threshold`, consider the segment as silence", type=optional_float)
     parser.add_argument("--threads", default=0, help="number of threads used by torch for CPU inference; supercedes MKL_NUM_THREADS/OMP_NUM_THREADS", type=optional_int)
 
-    parser.add_argument('--debug', help="print some debug information for word alignement", default=False, action="store_true")
+    parser.add_argument("--compute_confidence", default=True, help="whether to compute confidence scores for words", type=str2bool)
+    parser.add_argument("--verbose", type=str2bool, default=False, help="whether to print out the progress and debug messages of Whisper")
+    parser.add_argument('--plot', help="plot word alignments", default=False, action="store_true")
+    parser.add_argument('--debug', help="print some debug information about word alignement", default=False, action="store_true")
 
-    parser.add_argument('--detect_disfluencies', default=False, help="Try to detect disfluencies, marking them as special words [*]", type=str2bool)
-    parser.add_argument('--recompute_all_timestamps', default=not TRUST_WHISPER_TIMESTAMP_BY_DEFAULT, help="Do not rely at all on Whisper timestamps (Experimental option: did not bring any improvement, but could be useful in cases where Whipser segment timestamp are wrong by more than 0.5 seconds)", type=str2bool)
-    parser.add_argument('--naive', help="use naive approach, doing inference twice (once to get the transcription, once to get word timestamps and confidence scores).", default=False, action="store_true")
     class ActionSetAccurate(argparse.Action):
         def __init__(self, option_strings, dest, nargs=None, **kwargs):
             assert nargs is None
@@ -1868,8 +2052,9 @@ def cli():
             setattr(namespace, "temperature_increment_on_fallback", None)
     parser.add_argument('--efficient', help="Shortcut to disable beam size and options that requires to sample several times, for an efficient decoding", action=ActionSetEfficient)
 
-    args = parser.parse_args().__dict__
+    parser.add_argument('--naive', help="use naive approach, doing inference twice (once to get the transcription, once to get word timestamps and confidence scores).", default=False, action="store_true")
 
+    args = parser.parse_args().__dict__
     args.pop("accurate")
     args.pop("efficient")
 

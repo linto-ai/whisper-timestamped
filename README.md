@@ -28,6 +28,9 @@ There are some additions to this notebook:
 * **If possible (without beam search...)**, there no additional inference steps are required to predict word timestamps (word alignment is done on the fly, after each speech segment is decoded).
 * There is a special care about memory usage: `whisper-timestamped` is able to process long files, with little additional memory with respect to the regular use of Whisper model.
 
+`whisper-timestamped` is an extension of [`openai-whisper`](https://pypi.org/project/whisper-openai/) python package
+and is meant to compatible with any version of `openai-whisper`.
+
 ### Notes on other approaches
 
 An alternative relevant approach to recover word-level timestamps consists in using wav2vec models that predict characters,
@@ -74,6 +77,11 @@ pip3 install matplotlib
 When using pip, the library can be updated to the latest version using
 ```
 pip install --upgrade --no-deps --force-reinstall git+https://github.com/linto-ai/whisper-timestamped
+```
+
+A specific version of `openai-whisper` can be used by running, for example:
+```bash
+pip3 install openai-whisper==20230124
 ```
 
 ## Usage

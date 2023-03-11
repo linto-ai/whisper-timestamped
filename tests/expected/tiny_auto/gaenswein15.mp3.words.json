@@ -1,13 +1,14 @@
 {
-  "text": " Wie wieder zu dazu ist Meshfuchs von 1962 als Meshale für die außerordentliche Form des grullischen Rätos ist dann nicht so weitergegangen wie sich Papsbelle dick das gewünscht hatte. Das hat er als Mhrethos.",
+  "text": " Wie wieder zu dazu ist Meshfuchs von 1962 als Meshale für die außerordentliche Form des grullischen Rätus ist dann nicht so weitergegangen wie sich Papstbälle dick das gewünscht hatte. Das hat er als Meshale im Rätus",
   "segments": [
     {
       "id": 0,
       "seek": 0,
       "start": 0.92,
-      "end": 12.78,
-      "text": " Wie wieder zu dazu ist Meshfuchs von 1962 als Meshale für die außerordentliche Form des grullischen Rätos ist dann nicht so weitergegangen wie sich Papsbelle dick das gewünscht hatte.",
+      "end": 8.04,
+      "text": " Wie wieder zu dazu ist Meshfuchs von 1962 als Meshale für die außerordentliche Form des grullischen",
       "tokens": [
+        50364,
         9233,
         6216,
         2164,
@@ -34,66 +35,43 @@
         677,
         858,
         6282,
-        497,
-        3628,
-        329,
-        1418,
-        3594,
-        1979,
-        370,
-        8988,
-        432,
-        47152,
-        3355,
-        3041,
-        430,
-        2382,
-        65,
-        4434,
-        18659,
-        1482,
-        6906,
-        3412,
-        82,
-        4701,
-        13299,
-        13
+        50764
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.6554825415978065,
-      "compression_ratio": 1.2619047619047619,
-      "no_speech_prob": 0.11066817492246628,
-      "confidence": 0.541,
+      "avg_logprob": -0.6852629044476677,
+      "compression_ratio": 1.3293413173652695,
+      "no_speech_prob": 0.045539237558841705,
+      "confidence": 0.504,
       "words": [
         {
           "text": "Wie",
           "start": 0.92,
           "end": 1.1,
-          "confidence": 0.477
+          "confidence": 0.461
         },
         {
           "text": "wieder",
           "start": 1.1,
           "end": 1.4,
-          "confidence": 0.901
+          "confidence": 0.89
         },
         {
           "text": "zu",
           "start": 1.4,
           "end": 1.6,
-          "confidence": 0.249
+          "confidence": 0.282
         },
         {
           "text": "dazu",
           "start": 1.6,
-          "end": 1.9,
-          "confidence": 0.132
+          "end": 1.92,
+          "confidence": 0.176
         },
         {
           "text": "ist",
-          "start": 1.9,
+          "start": 1.92,
           "end": 2.14,
-          "confidence": 0.588
+          "confidence": 0.645
         },
         {
           "text": "Meshfuchs",
@@ -105,195 +83,252 @@
           "text": "von",
           "start": 2.74,
           "end": 3.22,
-          "confidence": 0.627
+          "confidence": 0.624
         },
         {
           "text": "1962",
           "start": 3.22,
           "end": 4.84,
-          "confidence": 0.208
+          "confidence": 0.184
         },
         {
           "text": "als",
           "start": 4.84,
           "end": 5.24,
-          "confidence": 0.885
+          "confidence": 0.882
         },
         {
           "text": "Meshale",
           "start": 5.24,
           "end": 5.78,
-          "confidence": 0.385
+          "confidence": 0.388
         },
         {
           "text": "für",
           "start": 5.78,
-          "end": 5.94,
-          "confidence": 0.932
+          "end": 5.92,
+          "confidence": 0.934
         },
         {
           "text": "die",
-          "start": 5.94,
+          "start": 5.92,
           "end": 6.08,
-          "confidence": 0.972
+          "confidence": 0.973
         },
         {
           "text": "außerordentliche",
           "start": 6.08,
           "end": 7.04,
-          "confidence": 0.899
+          "confidence": 0.898
         },
         {
           "text": "Form",
           "start": 7.04,
           "end": 7.4,
-          "confidence": 0.657
+          "confidence": 0.64
         },
         {
           "text": "des",
           "start": 7.4,
           "end": 7.62,
-          "confidence": 0.971
+          "confidence": 0.974
         },
         {
           "text": "grullischen",
           "start": 7.62,
           "end": 8.04,
+          "confidence": 0.372
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 8.04,
+      "end": 12.78,
+      "text": " Rätus ist dann nicht so weitergegangen wie sich Papstbälle dick das gewünscht hatte.",
+      "tokens": [
+        50764,
+        497,
+        3628,
+        301,
+        1418,
+        3594,
+        1979,
+        370,
+        8988,
+        432,
+        47152,
+        3355,
+        3041,
+        15919,
+        372,
+        65,
+        31447,
+        18659,
+        1482,
+        6906,
+        3412,
+        82,
+        4701,
+        13299,
+        13,
+        51014
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.6852629044476677,
+      "compression_ratio": 1.3293413173652695,
+      "no_speech_prob": 0.045539237558841705,
+      "confidence": 0.629,
+      "words": [
+        {
+          "text": "Rätus",
+          "start": 8.04,
+          "end": 9.16,
           "confidence": 0.383
         },
         {
-          "text": "Rätos",
-          "start": 8.04,
-          "end": 9.18,
-          "confidence": 0.367
-        },
-        {
           "text": "ist",
-          "start": 9.18,
+          "start": 9.16,
           "end": 9.62,
-          "confidence": 0.555
+          "confidence": 0.894
         },
         {
           "text": "dann",
           "start": 9.62,
           "end": 9.78,
-          "confidence": 0.501
+          "confidence": 0.588
         },
         {
           "text": "nicht",
           "start": 9.78,
-          "end": 9.94,
-          "confidence": 0.937
+          "end": 9.96,
+          "confidence": 0.979
         },
         {
           "text": "so",
-          "start": 9.94,
+          "start": 9.96,
           "end": 10.12,
-          "confidence": 0.953
+          "confidence": 0.991
         },
         {
           "text": "weitergegangen",
           "start": 10.12,
           "end": 10.88,
-          "confidence": 0.739
+          "confidence": 0.701
         },
         {
           "text": "wie",
           "start": 10.88,
           "end": 11.04,
-          "confidence": 0.703
+          "confidence": 0.764
         },
         {
           "text": "sich",
           "start": 11.04,
           "end": 11.24,
-          "confidence": 0.939
+          "confidence": 0.968
         },
         {
-          "text": "Papsbelle",
+          "text": "Papstbälle",
           "start": 11.24,
-          "end": 11.7,
-          "confidence": 0.355
+          "end": 11.72,
+          "confidence": 0.454
         },
         {
           "text": "dick",
-          "start": 11.7,
+          "start": 11.72,
           "end": 11.9,
-          "confidence": 0.317
+          "confidence": 0.249
         },
         {
           "text": "das",
           "start": 11.9,
           "end": 12.08,
-          "confidence": 0.844
+          "confidence": 0.833
         },
         {
           "text": "gewünscht",
           "start": 12.08,
           "end": 12.58,
-          "confidence": 0.818
+          "confidence": 0.8
         },
         {
           "text": "hatte.",
           "start": 12.58,
           "end": 12.78,
-          "confidence": 0.923
+          "confidence": 0.906
         }
       ]
     },
     {
-      "id": 0,
+      "id": 2,
       "seek": 0,
       "start": 13.48,
-      "end": 15.34,
-      "text": " Das hat er als Mhrethos.",
+      "end": 15.28,
+      "text": " Das hat er als Meshale im Rätus",
       "tokens": [
+        51014,
         2846,
         2385,
         1189,
         3907,
         376,
-        71,
-        265,
-        392,
-        329,
-        13
+        14935,
+        1220,
+        566,
+        497,
+        3628,
+        301,
+        51164
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.6554825415978065,
-      "compression_ratio": 1.2619047619047619,
-      "no_speech_prob": 0.11066817492246628,
-      "confidence": 0.441,
+      "avg_logprob": -0.6852629044476677,
+      "compression_ratio": 1.3293413173652695,
+      "no_speech_prob": 0.045539237558841705,
+      "confidence": 0.411,
       "words": [
         {
           "text": "Das",
           "start": 13.48,
           "end": 14.2,
-          "confidence": 0.827
+          "confidence": 0.938
         },
         {
           "text": "hat",
           "start": 14.2,
           "end": 14.4,
-          "confidence": 0.959
+          "confidence": 0.954
         },
         {
           "text": "er",
           "start": 14.4,
-          "end": 14.52,
-          "confidence": 0.727
+          "end": 14.56,
+          "confidence": 0.737
         },
         {
           "text": "als",
-          "start": 14.52,
-          "end": 14.72,
-          "confidence": 0.801
+          "start": 14.56,
+          "end": 14.7,
+          "confidence": 0.832
         },
         {
-          "text": "Mhrethos.",
-          "start": 14.72,
-          "end": 15.34,
-          "confidence": 0.267
+          "text": "Meshale",
+          "start": 14.7,
+          "end": 15.1,
+          "confidence": 0.191
+        },
+        {
+          "text": "im",
+          "start": 15.1,
+          "end": 15.12,
+          "confidence": 0.049
+        },
+        {
+          "text": "Rätus",
+          "start": 15.12,
+          "end": 15.28,
+          "confidence": 0.667
         }
       ]
     }

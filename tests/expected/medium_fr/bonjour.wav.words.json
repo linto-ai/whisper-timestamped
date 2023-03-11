@@ -8,20 +8,22 @@
       "end": 0.62,
       "text": " Bonjour!",
       "tokens": [
+        50364,
         25431,
-        2298
+        2298,
+        50402
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.6296422004699707,
+      "avg_logprob": -0.7049755573272705,
       "compression_ratio": 0.5,
-      "no_speech_prob": 0.10433219373226166,
-      "confidence": 0.961,
+      "no_speech_prob": 0.08610370755195618,
+      "confidence": 0.964,
       "words": [
         {
           "text": "Bonjour!",
           "start": 0.14,
           "end": 0.62,
-          "confidence": 0.961
+          "confidence": 0.964
         }
       ]
     }

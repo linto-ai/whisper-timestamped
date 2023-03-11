@@ -8,6 +8,7 @@
       "end": 3.04,
       "text": " Bonjour! Est-ce que vous allez bien?",
       "tokens": [
+        50364,
         25431,
         2298,
         4410,
@@ -17,7 +18,8 @@
         2630,
         18146,
         3610,
-        2506
+        2506,
+        50564
       ],
       "temperature": 0.0,
       "avg_logprob": -0.3616662392249474,
@@ -66,10 +68,11 @@
     {
       "id": 1,
       "seek": 3000,
-      "start": 31.48,
-      "end": 35.46,
+      "start": 30.98,
+      "end": 35.58,
       "text": " Bonjour! Est-ce que vous allez bien?",
       "tokens": [
+        50364,
         25431,
         2298,
         4410,
@@ -79,48 +82,49 @@
         2630,
         18146,
         3610,
-        2506
+        2506,
+        50664
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2335526209611159,
+      "avg_logprob": -0.3065794431246244,
       "compression_ratio": 0.8181818181818182,
-      "no_speech_prob": 0.3333144187927246,
-      "confidence": 0.956,
+      "no_speech_prob": 0.40451279282569885,
+      "confidence": 0.933,
       "words": [
         {
           "text": "Bonjour!",
-          "start": 31.48,
+          "start": 30.98,
           "end": 33.42,
-          "confidence": 0.832
+          "confidence": 0.741
         },
         {
           "text": "Est-ce",
-          "start": 34.42,
+          "start": 34.44,
           "end": 34.7,
-          "confidence": 0.944
+          "confidence": 0.92
         },
         {
           "text": "que",
           "start": 34.7,
           "end": 34.76,
-          "confidence": 0.997
+          "confidence": 0.996
         },
         {
           "text": "vous",
           "start": 34.76,
           "end": 34.9,
-          "confidence": 0.999
+          "confidence": 0.998
         },
         {
           "text": "allez",
           "start": 34.9,
-          "end": 35.08,
+          "end": 35.1,
           "confidence": 0.997
         },
         {
           "text": "bien?",
-          "start": 35.08,
-          "end": 35.46,
+          "start": 35.1,
+          "end": 35.58,
           "confidence": 0.999
         }
       ]

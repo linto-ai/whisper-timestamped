@@ -8,13 +8,15 @@
       "end": 1.82,
       "text": " Hello.",
       "tokens": [
+        50364,
         2425,
-        13
+        13,
+        50464
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2127104366526884,
+      "avg_logprob": -0.21426633947035845,
       "compression_ratio": 1.4713375796178343,
-      "no_speech_prob": 0.3228166699409485,
+      "no_speech_prob": 0.05016333609819412,
       "confidence": 0.189,
       "words": [
         {
@@ -26,21 +28,23 @@
       ]
     },
     {
-      "id": 0,
+      "id": 1,
       "seek": 0,
       "start": 1.94,
       "end": 3.54,
       "text": " How are you?",
       "tokens": [
+        50464,
         1012,
         366,
         291,
-        30
+        30,
+        50564
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2127104366526884,
+      "avg_logprob": -0.21426633947035845,
       "compression_ratio": 1.4713375796178343,
-      "no_speech_prob": 0.3228166699409485,
+      "no_speech_prob": 0.05016333609819412,
       "confidence": 0.157,
       "words": [
         {
@@ -64,21 +68,23 @@
       ]
     },
     {
-      "id": 0,
+      "id": 2,
       "seek": 0,
       "start": 3.7,
       "end": 6.38,
       "text": " How are you?",
       "tokens": [
+        50564,
         1012,
         366,
         291,
-        30
+        30,
+        50664
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2127104366526884,
+      "avg_logprob": -0.21426633947035845,
       "compression_ratio": 1.4713375796178343,
-      "no_speech_prob": 0.3228166699409485,
+      "no_speech_prob": 0.05016333609819412,
       "confidence": 0.353,
       "words": [
         {
@@ -102,23 +108,25 @@
       ]
     },
     {
-      "id": 0,
+      "id": 3,
       "seek": 0,
       "start": 6.38,
       "end": 7.74,
       "text": " Oh, I'm okay.",
       "tokens": [
+        50664,
         876,
         11,
         286,
         478,
         1392,
-        13
+        13,
+        50764
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2127104366526884,
+      "avg_logprob": -0.21426633947035845,
       "compression_ratio": 1.4713375796178343,
-      "no_speech_prob": 0.3228166699409485,
+      "no_speech_prob": 0.05016333609819412,
       "confidence": 0.63,
       "words": [
         {
@@ -142,21 +150,23 @@
       ]
     },
     {
-      "id": 0,
+      "id": 4,
       "seek": 0,
       "start": 7.74,
       "end": 9.2,
       "text": " I will be.",
       "tokens": [
+        50764,
         286,
         486,
         312,
-        13
+        13,
+        50864
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2127104366526884,
+      "avg_logprob": -0.21426633947035845,
       "compression_ratio": 1.4713375796178343,
-      "no_speech_prob": 0.3228166699409485,
+      "no_speech_prob": 0.05016333609819412,
       "confidence": 0.543,
       "words": [
         {
@@ -180,12 +190,13 @@
       ]
     },
     {
-      "id": 0,
+      "id": 5,
       "seek": 0,
       "start": 9.5,
       "end": 11.56,
       "text": " I said she could stay with us tomorrow until she feels better.",
       "tokens": [
+        50864,
         286,
         848,
         750,
@@ -198,12 +209,13 @@
         750,
         3417,
         1101,
-        13
+        13,
+        50964
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2127104366526884,
+      "avg_logprob": -0.21426633947035845,
       "compression_ratio": 1.4713375796178343,
-      "no_speech_prob": 0.3228166699409485,
+      "no_speech_prob": 0.05016333609819412,
       "confidence": 0.494,
       "words": [
         {
@@ -281,22 +293,24 @@
       ]
     },
     {
-      "id": 0,
+      "id": 6,
       "seek": 0,
       "start": 11.56,
       "end": 13.42,
       "text": " Of course she can.",
       "tokens": [
+        50964,
         2720,
         1164,
         750,
         393,
-        13
+        13,
+        51064
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2127104366526884,
+      "avg_logprob": -0.21426633947035845,
       "compression_ratio": 1.4713375796178343,
-      "no_speech_prob": 0.3228166699409485,
+      "no_speech_prob": 0.05016333609819412,
       "confidence": 0.31,
       "words": [
         {
@@ -326,24 +340,26 @@
       ]
     },
     {
-      "id": 0,
+      "id": 7,
       "seek": 0,
       "start": 13.54,
       "end": 15.24,
       "text": " This won't be for long.",
       "tokens": [
+        51064,
         639,
         1582,
         380,
         312,
         337,
         938,
-        13
+        13,
+        51164
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2127104366526884,
+      "avg_logprob": -0.21426633947035845,
       "compression_ratio": 1.4713375796178343,
-      "no_speech_prob": 0.3228166699409485,
+      "no_speech_prob": 0.05016333609819412,
       "confidence": 0.444,
       "words": [
         {
@@ -379,12 +395,13 @@
       ]
     },
     {
-      "id": 0,
+      "id": 8,
       "seek": 0,
       "start": 15.5,
       "end": 17.62,
       "text": " Well, you can stay as long as you want, my love.",
       "tokens": [
+        51164,
         1042,
         11,
         291,
@@ -398,12 +415,13 @@
         11,
         452,
         959,
-        13
+        13,
+        51264
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2127104366526884,
+      "avg_logprob": -0.21426633947035845,
       "compression_ratio": 1.4713375796178343,
-      "no_speech_prob": 0.3228166699409485,
+      "no_speech_prob": 0.05016333609819412,
       "confidence": 0.587,
       "words": [
         {
@@ -475,22 +493,24 @@
       ]
     },
     {
-      "id": 0,
+      "id": 9,
       "seek": 0,
       "start": 17.62,
       "end": 19.52,
       "text": " I really miss you.",
       "tokens": [
+        51264,
         286,
         534,
         1713,
         291,
-        13
+        13,
+        51364
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2127104366526884,
+      "avg_logprob": -0.21426633947035845,
       "compression_ratio": 1.4713375796178343,
-      "no_speech_prob": 0.3228166699409485,
+      "no_speech_prob": 0.05016333609819412,
       "confidence": 0.477,
       "words": [
         {

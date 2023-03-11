@@ -4,24 +4,26 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.2,
-      "end": 1.34,
+      "start": 0.0,
+      "end": 1.7,
       "text": " Rires",
       "tokens": [
+        50364,
         497,
-        3145
+        3145,
+        50576
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.0959813117980957,
+      "avg_logprob": -1.0570931434631348,
       "compression_ratio": 0.38461538461538464,
-      "no_speech_prob": 0.5549651980400085,
-      "confidence": 0.266,
+      "no_speech_prob": 0.5899588465690613,
+      "confidence": 0.254,
       "words": [
         {
           "text": "Rires",
-          "start": 0.2,
-          "end": 1.34,
-          "confidence": 0.266
+          "start": 0.0,
+          "end": 1.7,
+          "confidence": 0.254
         }
       ]
     }

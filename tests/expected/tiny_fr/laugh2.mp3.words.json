@@ -1,34 +1,28 @@
 {
-  "text": " Merci beaucoup.",
+  "text": "...",
   "segments": [
     {
       "id": 0,
       "seek": 0,
-      "start": 0.16,
-      "end": 0.7,
-      "text": " Merci beaucoup.",
+      "start": 0.18,
+      "end": 0.66,
+      "text": "...",
       "tokens": [
-        19856,
-        8796,
-        13
+        50364,
+        1097,
+        50414
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.297432581583659,
-      "compression_ratio": 0.6521739130434783,
-      "no_speech_prob": 0.43118345737457275,
-      "confidence": 0.125,
+      "avg_logprob": -1.2480181455612183,
+      "compression_ratio": 0.2727272727272727,
+      "no_speech_prob": 0.5706130266189575,
+      "confidence": 0.089,
       "words": [
         {
-          "text": "Merci",
-          "start": 0.16,
-          "end": 0.48,
-          "confidence": 0.071
-        },
-        {
-          "text": "beaucoup.",
-          "start": 0.48,
-          "end": 0.7,
-          "confidence": 0.217
+          "text": "...",
+          "start": 0.18,
+          "end": 0.66,
+          "confidence": 0.089
         }
       ]
     }

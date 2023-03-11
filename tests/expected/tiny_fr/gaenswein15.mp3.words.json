@@ -1,13 +1,14 @@
 {
-  "text": " Leur de l'Ontario est",
+  "text": " Leur de l'Ontario",
   "segments": [
     {
       "id": 0,
       "seek": 0,
       "start": 0.92,
-      "end": 11.2,
-      "text": " Leur de l'Ontario est",
+      "end": 24.62,
+      "text": " Leur de l'Ontario",
       "tokens": [
+        50364,
         1456,
         374,
         368,
@@ -18,37 +19,32 @@
         4912,
         871,
         368,
-        635
+        635,
+        51571
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.8203980582101005,
+      "avg_logprob": -1.7969955716814314,
       "compression_ratio": 0.84375,
-      "no_speech_prob": 0.11066817492246628,
-      "confidence": 0.15,
+      "no_speech_prob": 0.045539237558841705,
+      "confidence": 0.152,
       "words": [
         {
           "text": "Leur",
           "start": 0.92,
-          "end": 1.56,
-          "confidence": 0.057
+          "end": 1.58,
+          "confidence": 0.055
         },
         {
           "text": "de",
-          "start": 1.56,
-          "end": 1.58,
-          "confidence": 0.123
+          "start": 1.58,
+          "end": 1.6,
+          "confidence": 0.11
         },
         {
           "text": "l'Ontario",
-          "start": 1.58,
-          "end": 9.46,
-          "confidence": 0.289
-        },
-        {
-          "text": "est",
-          "start": 9.46,
-          "end": 11.2,
-          "confidence": 0.123
+          "start": 1.6,
+          "end": 24.62,
+          "confidence": 0.31
         }
       ]
     }
