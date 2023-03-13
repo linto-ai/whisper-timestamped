@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.12.2"
+__version__ = "1.12.3"
 
 # Set some environment variables
 import os
@@ -795,7 +795,7 @@ def _transcribe_timestamped_efficient(
             logits = F.log_softmax(logits.squeeze(0), dim=-1)
             chunk_logprobs.append(logits)
 
-            if WHIPSER_GE_20230306 and len(chunk_tokens_nosot) == max_sample_len - 1:
+            if WHIPSER_GE_20230306 and len(chunk_tokens_nosot) >= max_sample_len - 2:
                 last_chunk_token = torch.argmax(logits).item()
             else:
                 last_chunk_token = None
