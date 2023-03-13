@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.12.1"
+__version__ = "1.12.2"
 
 # Set some environment variables
 import os
@@ -1687,7 +1687,12 @@ def get_vad_segments(audio,
     if silero_vad_model is None:
         import onnxruntime
         onnxruntime.set_default_logger_severity(3) # Remove warning "Removing initializer 'XXX'. It is not used by any node and should be removed from the model."
-        silero_vad_model, utils = torch.hub.load(repo_or_dir="snakers4/silero-vad", model="silero_vad", onnx=True)
+        repo_or_dir = os.path.expanduser("~/.cache/torch/hub/snakers4_silero-vad_master")
+        source = "local"
+        if not os.path.exists(repo_or_dir):
+            repo_or_dir = "snakers4/silero-vad"
+            source = "github"
+        silero_vad_model, utils = torch.hub.load(repo_or_dir=repo_or_dir, model="silero_vad", onnx=True, source=source)
         silero_get_speech_ts = utils[0]
 
     # Cheap normalization of the volume
