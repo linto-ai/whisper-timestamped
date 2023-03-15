@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.12.1"
+__version__ = "1.12.3"
 
 # Set some environment variables
 import os
@@ -247,7 +247,7 @@ def transcribe_timestamped(
 
     if vad:
         audio = get_audio_tensor(audio)
-        audio, convert_timestamps = remove_non_speech(audio)
+        audio, convert_timestamps = remove_non_speech(audio, plot=plot_word_alignment)
         audio = audio.to(model.device)
 
     if naive_approach:
@@ -795,7 +795,7 @@ def _transcribe_timestamped_efficient(
             logits = F.log_softmax(logits.squeeze(0), dim=-1)
             chunk_logprobs.append(logits)
 
-            if WHIPSER_GE_20230306 and len(chunk_tokens_nosot) == max_sample_len - 1:
+            if WHIPSER_GE_20230306 and len(chunk_tokens_nosot) >= max_sample_len - 2:
                 last_chunk_token = torch.argmax(logits).item()
             else:
                 last_chunk_token = None
@@ -1687,7 +1687,12 @@ def get_vad_segments(audio,
     if silero_vad_model is None:
         import onnxruntime
         onnxruntime.set_default_logger_severity(3) # Remove warning "Removing initializer 'XXX'. It is not used by any node and should be removed from the model."
-        silero_vad_model, utils = torch.hub.load(repo_or_dir="snakers4/silero-vad", model="silero_vad", onnx=True)
+        repo_or_dir = os.path.expanduser("~/.cache/torch/hub/snakers4_silero-vad_master")
+        source = "local"
+        if not os.path.exists(repo_or_dir):
+            repo_or_dir = "snakers4/silero-vad"
+            source = "github"
+        silero_vad_model, utils = torch.hub.load(repo_or_dir=repo_or_dir, model="silero_vad", onnx=True, source=source)
         silero_get_speech_ts = utils[0]
 
     # Cheap normalization of the volume
@@ -1715,6 +1720,7 @@ def remove_non_speech(audio,
     use_sample=False,
     min_speech_duration=0.1,
     min_silence_duration=1,
+    plot=False,
     ):
     """
     Remove non-speech segments from audio (using Silero VAD),
@@ -1734,6 +1740,14 @@ def remove_non_speech(audio,
         segments = [(0, audio.shape[-1])]
 
     audio_speech = torch.cat([audio[..., s:e] for s,e in segments], dim=-1)
+
+    if plot:
+        import matplotlib.pyplot as plt
+        plt.figure()
+        plt.plot(audio)
+        for s,e in segments:
+            plt.axvspan(s, e, color='red', alpha=0.1)
+        plt.show()
 
     if not use_sample:
         segments = [(float(s)/SAMPLE_RATE, float(e)/SAMPLE_RATE) for s,e in segments]
