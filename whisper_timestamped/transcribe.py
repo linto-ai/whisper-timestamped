@@ -1833,7 +1833,7 @@ def remove_last_null_duration_words(transcription, words, recompute_text=False):
             full_word = "".join(word["tokens"])
             segment = transcription["segments"][idx_segment]
             text = segment["text"]
-            assert text.endswith(full_word)
+            assert text.endswith(full_word), f"\"{text}\" not ending with \"{full_word}\""
             text = text[:-len(full_word)]
             if text:
                 segment["text"] = text
