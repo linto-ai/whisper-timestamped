@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.12.5"
+__version__ = "1.12.6"
 
 # Set some environment variables
 import os
@@ -508,7 +508,7 @@ def _transcribe_timestamped_efficient(
         """ Add a speech segment with the new tokens if necessary.
             May also remove the last collected segments if filtered out by Whisper (no_speech_prob <= no_speech_threshold)
         """
-        nonlocal segment_tokens, segment_attweights, timestamped_word_segments, segment_logprobs, has_started, no_speech_prob, chunk_tokens, chunk_tokens_nosot, chunk_logprobs, mfcc, new_mfcc, logit_filters, index_begin_30sec_chunck, last_token_fallback, num_inference_steps
+        nonlocal segment_tokens, segment_attweights, timestamped_word_segments, segment_logprobs, has_started, no_speech_prob, chunk_tokens, chunk_tokens_nosot, chunk_logprobs, mfcc, new_mfcc, logit_filters, index_begin_30sec_chunck, last_token_fallback, num_inference_steps, last_chunk_token
 
         # Check if a new segment should be added
         unfinished_decoding = False
@@ -535,7 +535,10 @@ def _transcribe_timestamped_efficient(
 
                 is_timestamp = tokens.ge(tokenizer.timestamp_begin)
                 consecutive = torch.where(is_timestamp[1:] & is_timestamp[:-1])[0]
-                if (WHIPSER_GE_20230306 or has_reached_decoding_limit()) and is_timestamp[-1] and not is_timestamp[-2]:
+                if (WHIPSER_GE_20230306 or has_reached_decoding_limit()) and (
+                    (is_timestamp[-1] and not is_timestamp[-2]) if last_chunk_token is None else
+                    last_chunk_token >= tokenizer.timestamp_begin and not is_timestamp[-2]
+                ):
                     consecutive = torch.cat([consecutive, torch.Tensor([len(tokens)-1]).int()])
                 last_is_timestamp = True
                 if len(consecutive):
@@ -1843,9 +1846,13 @@ def remove_last_null_duration_words(transcription, words, recompute_text=False):
             logger.debug(f"Removing word {i+1}/{len(words)} \"{full_word}\" with empty duration at the end of segment {idx_segment+1}/{len(transcription['segments'])}")
             segment = transcription["segments"][idx_segment]
             text = segment["text"]
-            while not text.endswith(full_word): # see issue #62
-                full_word = full_word[:-1]
-            assert len(full_word), f"\"{text}\" not ending with \"{''.join(word['tokens'])}\""
+            if not text.endswith(full_word): # see issue #62
+                if text.endswith(full_word[:-1]):
+                    full_word = full_word[:-1]
+                elif text[:-1].endswith(full_word):
+                    text = text[:-1]
+                else:
+                    raise RuntimeError(f"\"{text}\" not ending with \"{full_word}\"")
             text = text[:-len(full_word)]
             if i > 0 and words[i-1]["idx_segment"] == idx_segment:
                 segment["text"] = text
