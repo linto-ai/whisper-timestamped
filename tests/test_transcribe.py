@@ -619,6 +619,9 @@ class TestZZZPythonImport(TestHelper):
 
     def test_split_tokens(self):
 
+        import whisper
+        whisperversion = whisper.__version__
+
         import whisper_timestamped as whisper
         from whisper_timestamped.transcribe import split_tokens_on_spaces
 
@@ -775,10 +778,11 @@ class TestZZZPythonImport(TestHelper):
         # Just a punctuation character
         tokens = [50363, 764, 51813]
 
+        _dot = "." if whisperversion < "20230314" else " ."
         self.assertEqual(
             split_tokens_on_spaces(tokens, tokenizer),
-            (['<|0.00|>', '.', '<|29.00|>'],
-                [['<|0.00|>'], ['.'], ['<|29.00|>']],
+            (['<|0.00|>', ".", '<|29.00|>'],
+                [['<|0.00|>'], [_dot], ['<|29.00|>']],
                 [[50363], [764], [51813]]
             )
         )

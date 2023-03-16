@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.12.4"
+__version__ = "1.12.5"
 
 # Set some environment variables
 import os
@@ -276,6 +276,7 @@ def transcribe_timestamped(
         if "avg_logprob_reliable" in word:
             word.pop("avg_logprob_reliable")
         idx_segment = word.pop("idx_segment")
+        assert idx_segment < len(whisper_segments), f"Fatal error: Got unexpected segment index {idx_segment} >= {len(whisper_segments)}"
         segment = whisper_segments[idx_segment]
         if "words" in segment:
             segment["words"].append(word)
@@ -332,6 +333,7 @@ def _transcribe_timestamped_efficient(
     tokenizer = whisper.tokenizer.get_tokenizer(model.is_multilingual, task=whisper_options["task"], language=language)
 
     max_sample_len = sample_len or model.dims.n_text_ctx // 2 
+    n_ctx = model.dims.n_text_ctx
 
     debug = logger.getEffectiveLevel() >= logging.DEBUG
 
@@ -360,6 +362,11 @@ def _transcribe_timestamped_efficient(
 
     def is_sot(curr_tokens):
         return curr_tokens is None or len(curr_tokens) > 1 or curr_tokens[0] == tokenizer.sot
+    
+    def has_reached_decoding_limit():
+        n = len(chunk_tokens_nosot) + 1
+        m = n + (len(chunk_tokens[0]) if len(chunk_tokens) > 0 else 0)
+        return n >= max_sample_len or m > n_ctx
 
     def reset(add_segment, keep_last_token=True):
         """ Reset the list of tokens for the current speech segment, and corresponding cross-attention weights """
@@ -381,8 +388,8 @@ def _transcribe_timestamped_efficient(
     saw_consecutive_timestamps = False
     def must_flush_segment(curr_tokens):
         """ Return whether or not the previously collected tokens must be used to add a new speech segment """
-
         nonlocal segment_tokens, saw_consecutive_timestamps, chunk_tokens_nosot
+
         if not is_sot(curr_tokens):
             is_timestamp = curr_tokens[0] >= tokenizer.timestamp_begin
             is_previous_timestamp = segment_tokens[-1][-1] >= tokenizer.timestamp_begin if len(segment_tokens[-1]) > 0 else False
@@ -393,6 +400,7 @@ def _transcribe_timestamped_efficient(
                 consecutive_timestamps = True
             return consecutive_timestamps
         else: # Several tokens as a prompt or must flush last segments
+
             must_flush = len(segment_tokens[-1]) > 1 and not saw_consecutive_timestamps
             if not must_flush and WHIPSER_GE_20230306: # If the last token is a timestamp, the last segment is used
                 if last_chunk_token is None:
@@ -527,7 +535,7 @@ def _transcribe_timestamped_efficient(
 
                 is_timestamp = tokens.ge(tokenizer.timestamp_begin)
                 consecutive = torch.where(is_timestamp[1:] & is_timestamp[:-1])[0]
-                if (len(tokens) == max_sample_len or WHIPSER_GE_20230306) and is_timestamp[-1] and not is_timestamp[-2]:
+                if (WHIPSER_GE_20230306 or has_reached_decoding_limit()) and is_timestamp[-1] and not is_timestamp[-2]:
                     consecutive = torch.cat([consecutive, torch.Tensor([len(tokens)-1]).int()])
                 last_is_timestamp = True
                 if len(consecutive):
@@ -652,7 +660,7 @@ def _transcribe_timestamped_efficient(
                         last_tokens = [last_token_fallback]
                         timestamped_word_segments[-1][-1]["avg_logprob_reliable"] = last_token_reliable
                         n += 1
-                    elif len(chunk_tokens_nosot) >= max_sample_len - 3:
+                    elif has_reached_decoding_limit():
                         # there were segments in the 30sec chunck, and then the LM got stuck
                         last_tokens = [torch.argmax(chunk_logprobs[-1]).item()]
                         timestamped_word_segments[-1][-1]["avg_logprob_reliable"] = (temperature == 0)
@@ -795,11 +803,11 @@ def _transcribe_timestamped_efficient(
             logits = F.log_softmax(logits.squeeze(0), dim=-1)
             chunk_logprobs.append(logits)
 
-            if WHIPSER_GE_20230306 and len(chunk_tokens_nosot) >= max_sample_len - 2:
+            if WHIPSER_GE_20230306 and has_reached_decoding_limit():
                 last_chunk_token = torch.argmax(logits).item()
             else:
                 last_chunk_token = None
-
+                
     try:
 
         # Add hooks to the model, to get tokens and attention weights on the fly
@@ -1084,7 +1092,8 @@ def _transcribe_timestamped_naive(
                 logprobs = model(mfcc, torch.Tensor(tokens).int().to(model.device).unsqueeze(0))
                 logprobs = F.log_softmax(logprobs, dim=-1)
 
-            tokens = tokens[i_start:] + [tokenizer.timestamp_begin + round((end_sample - start_sample) // AUDIO_SAMPLES_PER_TOKEN)]
+            end_token = tokenizer.timestamp_begin + round(min(N_FRAMES * HOP_LENGTH, end_sample - start_sample) // AUDIO_SAMPLES_PER_TOKEN)
+            tokens = tokens[i_start:] + [end_token]
             attention_weights = [w[:, :, i_start-1:, :] for w in attention_weights]
 
             ws = perform_word_alignment(
@@ -1112,7 +1121,7 @@ def _transcribe_timestamped_naive(
                     word.update({"idx_segment": i_segment})
                 else:
                     assert i_token < len(tokens)
-                    assert word["tokens_indices"][0] == tokens[i_token]
+                    assert not len(word["tokens_indices"]) or word["tokens_indices"][0] == tokens[i_token]
                     word.update({"idx_segment": token_to_idx_segment[i_token]})
                     i_token += len(word["tokens"])
                     while i_token < len(tokens) and tokens[i_token] >= tokenizer.timestamp_begin:
@@ -1831,15 +1840,17 @@ def remove_last_null_duration_words(transcription, words, recompute_text=False):
             to_remove.append(i)
             # Shorten text of segment
             full_word = "".join(word["tokens"])
+            logger.debug(f"Removing word {i+1}/{len(words)} \"{full_word}\" with empty duration at the end of segment {idx_segment+1}/{len(transcription['segments'])}")
             segment = transcription["segments"][idx_segment]
             text = segment["text"]
             while not text.endswith(full_word): # see issue #62
                 full_word = full_word[:-1]
             assert len(full_word), f"\"{text}\" not ending with \"{''.join(word['tokens'])}\""
             text = text[:-len(full_word)]
-            if text:
+            if i > 0 and words[i-1]["idx_segment"] == idx_segment:
                 segment["text"] = text
             else:
+                logger.debug(f"Removing empty segment {idx_segment}")
                 # Remove segment with no more words
                 transcription["segments"].pop(idx_segment)
                 for j in range(i+1, len(words)):
@@ -1847,7 +1858,7 @@ def remove_last_null_duration_words(transcription, words, recompute_text=False):
             recompute_text = True
 
     for i in to_remove:
-        words.pop(i)
+        words.pop(i) # Warning: inplace modification
 
     if recompute_text:
         transcription["text"] = "".join([s["text"] for s in transcription["segments"]])
@@ -2008,7 +2019,7 @@ def cli():
     )
     parser.add_argument('-v', '--version', help="show version and exit", action='version', version=f'{__version__}')
     parser.add_argument('--versions', help="show versions (of whisper-timestamped and whisper) and exit", action='version',
-                        version=f'{__version__} -- Whisper {whisper.__version__} in {os.path.dirname(whisper.__file__)}')
+                        version=f'{__version__} -- Whisper {whisper.__version__} in {os.path.realpath(os.path.dirname(whisper.__file__))}')
 
     parser.add_argument('audio', help="audio file(s) to transcribe", nargs='+')
     parser.add_argument('--model', help=f"name of the Whisper model to use.", choices=whisper.available_models(), default="small")
