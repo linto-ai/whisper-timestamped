@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.12.3"
+__version__ = "1.12.4"
 
 # Set some environment variables
 import os
@@ -1833,7 +1833,9 @@ def remove_last_null_duration_words(transcription, words, recompute_text=False):
             full_word = "".join(word["tokens"])
             segment = transcription["segments"][idx_segment]
             text = segment["text"]
-            assert text.endswith(full_word), f"\"{text}\" not ending with \"{full_word}\""
+            while not text.endswith(full_word): # see issue #62
+                full_word = full_word[:-1]
+            assert len(full_word), f"\"{text}\" not ending with \"{''.join(word['tokens'])}\""
             text = text[:-len(full_word)]
             if text:
                 segment["text"] = text
