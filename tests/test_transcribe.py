@@ -10,12 +10,14 @@ import shutil
 import tempfile
 import json
 import torch
+import jsonschema
 
 FAIL_IF_REFERENCE_NOT_FOUND = True
 GENERATE_NEW_ONLY = False
 GENERATE_ALL = False
 GENERATE_DEVICE_DEPENDENT = False
 SKIP_LONG_TEST_IF_CPU = True
+CMD_OPTIONS = []
 
 
 class TestHelper(unittest.TestCase):
@@ -42,10 +44,16 @@ class TestHelper(unittest.TestCase):
     def get_output_path(self, fn=None):
         if fn == None:
             return tempfile.gettempdir()
-        return os.path.join(tempfile.gettempdir(), fn)
+        return os.path.join(tempfile.gettempdir(), fn + self._extra_cmd_options())
 
     def get_expected_path(self, fn=None, check=False):
-        return self._get_path("tests/expected", fn, check=check)
+        return self._get_path("tests/expected" + self._extra_cmd_options(), fn, check=check)
+    
+    def _extra_cmd_options(self):
+        s = "".join([f.replace("-","").strip() for f in CMD_OPTIONS])
+        if s:
+            return "." + s
+        return ""
 
     def get_data_files(self, files=None, excluded_by_default=["apollo11.mp3", "music.mp4", "arabic.mp3", "japanese.mp3", "empty.wav"]):
         if files == None:
@@ -207,6 +215,8 @@ class TestHelper(unittest.TestCase):
 
 class TestHelperCli(TestHelper):
 
+    json_schema = None
+
     def _test_cli_(self, opts, name, files=None, extensions=["words.json"], prefix=None, one_per_call=True, device_specific=None):
         """
         Test command line
@@ -217,6 +227,8 @@ class TestHelperCli(TestHelper):
         prefix: prefix to add to the reference files
         one_per_call: if True, each file is processed separately, otherwise all files are processed by a single process
         """
+
+        opts = opts + CMD_OPTIONS
 
         output_dir = self.get_output_path(name)
 
@@ -258,6 +270,10 @@ class TestHelperCli(TestHelper):
                 print(stdout)
                 print(stderr)
 
+            output_json = self.get_generated_files(input_filename, output_dir, extensions=["words.json"]).__next__()
+            if os.path.isfile(output_json):
+                self.check_json(output_json)
+
             if extensions is None:
                 output_filename = list(self.get_generated_files(input_filename, output_dir, extensions=["stdout"]))[0]
                 self.assertNonRegression(stdout, ref_name(output_filename), string_is_file=False)
@@ -265,7 +281,20 @@ class TestHelperCli(TestHelper):
                 for output_filename in self.get_generated_files(input_filename, output_dir, extensions=extensions):
                     self.assertNonRegression(output_filename, ref_name(output_filename))
 
+
         shutil.rmtree(output_dir, ignore_errors=True)
+
+    def check_json(self, json_file):
+        with open(json_file) as f:
+            content = json.load(f)
+
+        if self.json_schema is None:
+            schema_file = os.path.join(os.path.dirname(__file__), "json_schema.json")
+            self.assertTrue(os.path.isfile(schema_file), msg=f"Schema file {schema_file} not found")
+            self.json_schema = json.load(open(schema_file))
+
+        jsonschema.validate(instance=content, schema=self.json_schema)
+
 
 
 class TestTranscribeTiny(TestHelperCli):

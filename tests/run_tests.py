@@ -26,4 +26,20 @@ if __name__ == '__main__':
         test_transcribe.FAIL_IF_REFERENCE_NOT_FOUND = False
         sys.argv.remove("--generate_all")
 
+    # Pass options to whisper_timestamped CLI
+    args = sys.argv[1:]
+    for i, arg in enumerate(args):
+        if arg not in [
+            "-h", "--help",
+            "-v", "--verbose",
+            "--locals",
+            "-q", "--quiet",
+            "-f", "--failfast",
+            "-c", "--catch",
+            "-b", "--buffer",
+            "-k",
+        ] and (i==0 or args[i-1] not in ["-k"]) and (arg.startswith("-") or (i>0 and args[i-1].startswith("-"))):
+            test_transcribe.CMD_OPTIONS.append(arg)
+            sys.argv.remove(arg)
+
     unittest.main()

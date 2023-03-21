@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.12.6"
+__version__ = "1.12.7"
 
 # Set some environment variables
 import os
@@ -290,14 +290,13 @@ def transcribe_timestamped(
     if vad:
         # Recompute timestamps to match the original audio
         for segment in whisper_segments:
-            for word in segment["words"]:
+            for word in segment.get("words", []):
                 word["start"], word["end"] = convert_timestamps(word["start"], word["end"])
-            if refine_whisper_precision and len(segment["words"]):
+            if refine_whisper_precision and len(segment.get("words", [])):
                 segment["start"] = segment["words"][0]["start"]
                 segment["end"] = segment["words"][-1]["end"]
             else:
-                segment["start"] = convert_timestamps(segment["start"], segment["end"])
-                segment["end"] = convert_timestamps(segment["end"])
+                segment["start"], segment["end"] = convert_timestamps(segment["start"], segment["end"])
 
     return transcription
 
@@ -1040,6 +1039,8 @@ def _transcribe_timestamped_naive(
 
                 seek = segment["seek"]
                 new_tokens = segment["tokens"]
+                if not len(new_tokens):
+                    continue
                 # Add timestamps that will be needed after
                 if new_tokens[0] < tokenizer.timestamp_begin:
                     relative_start = segment["start"] - (seek * HOP_LENGTH / SAMPLE_RATE)
