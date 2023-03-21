@@ -2034,7 +2034,16 @@ def cli():
     parser.add_argument("--model_dir", default=None, help="the path to save model files; uses ~/.cache/whisper by default", type=str)
     parser.add_argument("--device", default="cuda:0" if torch.cuda.is_available() else "cpu", help="device to use for PyTorch inference")
     parser.add_argument("--output_dir", "-o", default=None, help="directory to save the outputs", type=str)
-    parser.add_argument("--output_format", "-f", type=str, default="all", help="format of the output file; if not specified, all available formats will be produced", choices=["txt", "vtt", "srt", "tsv", "csv", "json", "all"])
+    valid_formats = ["txt", "vtt", "srt", "tsv", "csv", "json"]
+    def str2output_formats(string):
+        if string == "all":
+            return valid_formats
+        formats = string.split(",")
+        for format in formats:
+            if format not in valid_formats:
+                raise ValueError(f"Expected one of {valid_formats}, got {format}")
+        return formats
+    parser.add_argument("--output_format", "-f", default="all", help=f"Format(s) of the output file(s). Possible formats are: {', '.join(valid_formats)}. Several formats can be specified by using commas (ex: \"json,vtt,srt\"). By default (\"all\"), all available formats will be produced", type=str2output_formats)
 
     parser.add_argument("--task", default="transcribe", help="whether to perform X->X speech recognition ('transcribe') or X->English translation ('translate')", choices=["transcribe", "translate"], type=str)
     parser.add_argument('--language', help=f"language spoken in the audio, specify None to perform language detection.", choices=sorted(whisper.tokenizer.LANGUAGES.keys()) + sorted([k.title() for k in whisper.tokenizer.TO_LANGUAGE_CODE.keys()]), default=None)
@@ -2114,10 +2123,6 @@ def cli():
         force_cudnn_initialization(device)
 
     output_format = args.pop("output_format")
-    if output_format == "all":
-        output_format = ["txt", "srt", "vtt", "tsv", "json", "csv"]
-    else:
-        output_format = output_format.split(",")
 
     model = whisper.load_model(model, device=device, download_root=model_dir)
 
