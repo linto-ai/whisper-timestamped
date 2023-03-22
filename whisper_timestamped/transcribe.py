@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.12.7"
+__version__ = "1.12.8"
 
 # Set some environment variables
 import os
@@ -992,6 +992,9 @@ def _transcribe_timestamped_naive(
         whisper_segments = transcription["segments"]
         for i_segment, segment in enumerate(whisper_segments):
 
+            # Note: this could also be a fix to issue #61 where a "<|te|>" token was predicted
+            # segment["tokens"] = [t for t in segment["tokens"] if t < tokenizer.eot or t >= tokenizer.timestamp_begin]
+
             start = end = tokens = None
             if trust_whisper_timestamps:
 
@@ -1159,7 +1162,8 @@ def _transcribe_timestamped_naive(
                 segment_tokens_check.append(last_token_check)
             if trust_whisper_timestamps:
                 if segment_tokens_check != segment["tokens"]:
-                    assert len(segment_tokens_check) < len(segment["tokens"]) and segment_tokens_check[:-1] == segment["tokens"][:len(segment_tokens_check)-1]
+                    assert len(segment_tokens_check) < len(segment["tokens"]) and segment_tokens_check[:-1] == segment["tokens"][:len(segment_tokens_check)-1], \
+                        f"Got inconsistent tokens: {tokenizer.decode(segment_tokens_check)} != {tokenizer.decode(segment['tokens'])}"
                     segment["tokens"] = segment_tokens_check
                     segment["text"] = tokenizer.decode(segment["tokens"])
             # else: TODO
@@ -1631,11 +1635,11 @@ def split_tokens_on_unicode(tokens: list, tokenizer, remove_punctuation_from_wor
 
     for token in tokens:
         current_tokens.append(token)
-        decoded = tokenizer.decode_with_timestamps(current_tokens)
+        decoded = tokenizer.decode_with_timestamps([t for t in current_tokens if t < tokenizer.eot or t >= tokenizer.timestamp_begin])
         if "\ufffd" not in decoded:
             empty_tokens = [""] * (len(current_tokens)-1)
             punctuation = not isolate_punctuations and (decoded.strip() and decoded.strip() in _punctuation)
-            previous_special = len(word_tokens_indices) > 0 and (word_tokens_indices[-1][-1] >= tokenizer.eot)
+            previous_special = len(word_tokens_indices) > 0 and (word_tokens_indices[-1][-1] >= tokenizer.timestamp_begin)
             if punctuation and not previous_special:
                 if len(words) == 0:
                     words = [""]
@@ -1660,9 +1664,9 @@ def split_tokens_on_spaces(tokens: torch.Tensor, tokenizer, remove_punctuation_f
     word_tokens_indices = []
 
     for i, (subword, subword_tokens, subword_tokens_indices) in enumerate(zip(subwords, subword_tokens_list, subword_tokens_indices_list)):
-        special = (subword_tokens_indices[0] >= tokenizer.eot)
-        previous_special = (i > 0) and (subword_tokens_indices_list[i-1][0] >= tokenizer.eot)
-        next_special = (i < len(subword_tokens_indices_list)-1) and (subword_tokens_indices_list[i+1][0] >= tokenizer.eot)
+        special = (subword_tokens_indices[0] >= tokenizer.timestamp_begin)
+        previous_special = (i > 0) and (subword_tokens_indices_list[i-1][0] >= tokenizer.timestamp_begin)
+        next_special = (i < len(subword_tokens_indices_list)-1) and (subword_tokens_indices_list[i+1][0] >= tokenizer.timestamp_begin)
         previous_space = (i > 0) and (not subwords[i-1].strip())
         is_space = not subword.strip()
         with_space = subword.startswith(" ") and not is_space

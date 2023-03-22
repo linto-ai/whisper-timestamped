@@ -802,6 +802,18 @@ class TestZZZPythonImport(TestHelper):
             )
         )
 
+        # issue #61
+        # Special tokens that are not timestamps
+        tokens = [50414, 805, 12, 17, 50299, 11, 568, 12, 18, 12, 21, 11, 502, 12, 17, 12, 51464]
+        # 50299 is "<|te|>" and appears as ""
+        te = ""
+        self.assertEqual(
+            split_tokens_on_spaces(tokens, tokenizer),
+            (['<|1.00|>', f'3-2{te},', '2-3-6,', '1-2-', '<|22.00|>'],
+             [['<|1.00|>'], [' 3', '-', '2', f'{te}', ','], [' 2', '-', '3', '-','6', ','], [' 1', '-', '2', '-'], ['<|22.00|>']],
+             [[50414], [805, 12, 17, 50299, 11], [568, 12, 18, 12, 21, 11], [502, 12, 17, 12], [51464]])
+        )
+
         tokenizer = whisper.tokenizer.get_tokenizer(False, language="en")
 
         # Just a punctuation character
