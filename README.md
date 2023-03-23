@@ -13,6 +13,7 @@ Multilingual Automatic Speech Recognition with word-level timestamps and confide
    * [Command line](#command-line)
    * [Plotting word alignment](#plotting-word-alignment)
    * [Example output](#example-output)
+   * [Options that may improve results](#options-that-may-improve-results)
 * [Acknowlegment](#acknowlegment)
 * [Citations](#citations)
 
@@ -90,7 +91,7 @@ docker build -t whisper_timestamped:latest .
 ### Light installation for CPU
 
 If you don't have GPU (or don't want to use it), then you don't need to install CUDA dependencies.
-You should then just install a light version of torch *before* installing whisper-timestamped, for instance as follows:
+You should then just install a light version of torch **before** installing whisper-timestamped, for instance as follows:
 ```bash
 pip3 install \
      torch==1.13.1+cpu \
@@ -268,6 +269,54 @@ whisper_timestamped AUDIO_FILE.wav --model tiny --language fr
   "language": "fr"
 }
 ```
+
+### Options that may improve results
+
+Here are some options not abled by default that might improve results.
+
+#### Accurate Whisper transcription
+
+As mentioned before, some decoding options are disabled by default for offering a better efficiency.
+But the quality of the transcription can be impacted.
+To run with the options that have the best chance to provide a good transcription, use the following options.
+* In python:
+```python
+results = whisper_timestamped.transcribe(model, audio, beam_size=5, best_of=5, temperature=(0.0, 0.2, 0.4, 0.6, 0.8, 1.0), ...)
+```
+* In the command line:
+```bash
+whisper_timestamped --accurate ...
+```
+
+#### Running Voice Activity Detection (VAD) before sending to Whisper
+
+Whisper models can "hallucinate" text when a segment without speech is given.
+This can be avoided by running VAD and gluing speech segments together before transcribing with the Whisper model.
+This is possible in `whisper-timestamped`.
+* In python:
+```python
+results = whisper_timestamped.transcribe(model, audio, vad=True, ...)
+```
+* In the command line:
+```bash
+whisper_timestamped --vad True ...
+```
+
+#### Detecting disfluencies
+
+Whisper models tend to remove speech disfluencies (filler words, hesitations, repetitions, ...).
+Without precautions, the disfluencies that are not transcribed will have an influence on the timestamp of the word that follows: the timestamp of the beginning of the word will actually be the timestamp of the beginning of the disfluencies.
+`whisper-timestamped` can implement some heuristics to avoid that.
+* In python:
+```python
+results = whisper_timestamped.transcribe(model, audio, detect_disfluencies=True, ...)
+```
+* In the command line:
+```bash
+whisper_timestamped --detect_disfluencies True ...
+```
+**Important:** Note that when using this options, possible disfluencies will appear in the transcription as a special "`[*]`" word.
+
 
 ## Acknowlegment
 * [whisper](https://github.com/openai/whisper): Whisper speech recognition (License MIT).
