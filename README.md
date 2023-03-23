@@ -3,7 +3,11 @@
 Multilingual Automatic Speech Recognition with word-level timestamps and confidence.
 
 * [Description](#description)
+   * [Notes on other approaches](#notes-on-other-approaches)
 * [Installation](#installation)
+   * [First installation](#first-installation)
+   * [Light installation for CPU](#light-installation-for-cpu)
+   * [Upgrade to the latest version](#upgrade-to-the-latest-version)
 * [Usage](#usage)
    * [Python](#python)
    * [Command line](#command-line)
@@ -54,6 +58,8 @@ Also the timestamp precision of Whisper models tend to be rounded to 1 second (a
 
 ## Installation
 
+### First installation
+
 Requirements:
 * `python3` (version higher or equal to 3.7, at least 3.9 is recommended)
 * `ffmpeg` (see instructions for installation on the [whisper repository](https://github.com/openai/whisper)
@@ -74,9 +80,36 @@ If you want to plot alignement between audio timestamps and words (as in [this s
 pip3 install matplotlib
 ```
 
+A docker image of about 9GB can be built using:
+```bash
+git clone https://github.com/linto-ai/whisper-timestamped
+cd whisper-timestamped/
+docker build -t whisper_timestamped:latest .
+```
+
+### Light installation for CPU
+
+If you don't have GPU (or don't want to use it), then you don't need to install CUDA dependencies.
+You should then just install a light version of torch *before* installing whisper-timestamped, for instance as follows:
+```bash
+pip3 install \
+     torch==1.13.1+cpu \
+     torchaudio==0.13.1+cpu \
+     -f https://download.pytorch.org/whl/torch_stable.html
+```
+
+A specific docker image of about 3.5GB can also be built using:
+```bash
+git clone https://github.com/linto-ai/whisper-timestamped
+cd whisper-timestamped/
+docker build -t whisper_timestamped_cpu:latest -f Dockerfile.cpu .
+```
+
+### Upgrade to the latest version
+
 When using pip, the library can be updated to the latest version using
 ```
-pip install --upgrade --no-deps --force-reinstall git+https://github.com/linto-ai/whisper-timestamped
+pip3 install --upgrade --no-deps --force-reinstall git+https://github.com/linto-ai/whisper-timestamped
 ```
 
 A specific version of `openai-whisper` can be used by running, for example:
