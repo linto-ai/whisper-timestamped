@@ -912,7 +912,7 @@ def _transcribe_timestamped_efficient(
                 if include_punctuation_in_confidence:
                     word_logprobs = logprobs[i_start:i_end]
                 else:
-                    while len(tokens) > 1 and tokens[-1][-1] in _punctuation: # Note: look at the last character of token, to take into account "...", "!!", etc.
+                    while len(tokens) > 1 and len(tokens[-1]) and tokens[-1][-1] in _punctuation: # Note: look at the last character of token, to take into account "...", "!!", etc.
                         tokens = tokens[:-1]
                     word_logprobs = logprobs[i_start:i_start + len(tokens)]
                     logprobs_nopunc.append(word_logprobs)
@@ -1147,7 +1147,7 @@ def _transcribe_timestamped_naive(
                     tok = word["tokens"]
                     i_end = i_start + len(tok)
                     if include_punctuation_in_confidence:
-                        while len(tok) > 1 and tok[-1][-1] in _punctuation: # Note: look at the last character of token, to take into account "...", "!!", etc.
+                        while len(tok) > 1 and len(tok[-1]) and tok[-1][-1] in _punctuation: # Note: look at the last character of token, to take into account "...", "!!", etc.
                             tok = tok[:-1]
                             tok_indices = tok_indices[:-1]
                     word_logprobs = [logprobs[:, step, tok] for (step, tok) in zip(range(i_start, i_start + len(tok_indices)), tok_indices)]
@@ -2029,9 +2029,12 @@ def load_model(
         model_path = cached_file(name, "pytorch_model.bin", cache_dir=download_root, use_auth_token=None, revision=None)
     except Exception as e:
         try:
-            model_path = cached_file(name, "whisper.ckpt", cache_dir=download_root, use_auth_token=None, revision=None)
+            if isinstance(e, OSError):
+                model_path = cached_file(name, "whisper.ckpt", cache_dir=download_root, use_auth_token=None, revision=None)
+            else:
+                raise e
         except:
-            raise RuntimeError(f"Original error: {e}\nCould not find model {name} from HuggingFace.")
+            raise RuntimeError(f"Original error: {e}\nCould not find model {name} from HuggingFace nor local folders.")
     # Load HF Model
     hf_state_dict = torch.load(model_path,
                                map_location=device)
