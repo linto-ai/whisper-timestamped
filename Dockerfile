@@ -10,7 +10,6 @@ RUN python3 -m pip install --upgrade pip
 WORKDIR /usr/src/app
 
 # Note: First installing the python requirements permits to save time when re-building after a source change.
-#       Also, when not installing the python requirements before the "setup install", there are these issues:
 COPY requirements.txt /usr/src/app/requirements.txt
 RUN cd /usr/src/app/ && pip3 install -r requirements.txt
 
