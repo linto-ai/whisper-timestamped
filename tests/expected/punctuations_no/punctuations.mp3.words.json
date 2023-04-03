@@ -1,12 +1,12 @@
 {
-  "text": " Dis-moi, est-ce que l'avion vole?",
+  "text": " Dis-moi, est-ce que l'avion vole ?",
   "segments": [
     {
       "id": 0,
       "seek": 0,
       "start": 0.38,
-      "end": 2.34,
-      "text": " Dis-moi, est-ce que l'avion vole?",
+      "end": 2.76,
+      "text": " Dis-moi, est-ce que l'avion vole ?",
       "tokens": [
         50364,
         4208,
@@ -27,7 +27,7 @@
       ],
       "temperature": 0.0,
       "avg_logprob": -0.26328243928797107,
-      "compression_ratio": 0.8048780487804879,
+      "compression_ratio": 0.8095238095238095,
       "no_speech_prob": 0.03882359713315964,
       "confidence": 0.928,
       "words": [
@@ -58,7 +58,7 @@
         {
           "text": "vole",
           "start": 2.04,
-          "end": 2.34,
+          "end": 2.76,
           "confidence": 0.898
         }
       ]

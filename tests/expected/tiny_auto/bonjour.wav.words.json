@@ -1,12 +1,12 @@
 {
-  "text": " Bonjour!",
+  "text": " Bonjour !",
   "segments": [
     {
       "id": 0,
       "seek": 0,
       "start": 0.14,
-      "end": 0.54,
-      "text": " Bonjour!",
+      "end": 0.96,
+      "text": " Bonjour !",
       "tokens": [
         50364,
         25431,
@@ -14,15 +14,15 @@
         50414
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.6997020244598389,
-      "compression_ratio": 0.5,
-      "no_speech_prob": 0.019059613347053528,
+      "avg_logprob": -0.6979154109954834,
+      "compression_ratio": 0.5294117647058824,
+      "no_speech_prob": 0.019094161689281464,
       "confidence": 0.829,
       "words": [
         {
-          "text": "Bonjour!",
+          "text": "Bonjour !",
           "start": 0.14,
-          "end": 0.54,
+          "end": 0.96,
           "confidence": 0.829
         }
       ]

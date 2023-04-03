@@ -38,40 +38,40 @@
         50764
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.6852629044476677,
+      "avg_logprob": -0.6859013052547679,
       "compression_ratio": 1.3293413173652695,
-      "no_speech_prob": 0.045539237558841705,
-      "confidence": 0.504,
+      "no_speech_prob": 0.04553895816206932,
+      "confidence": 0.503,
       "words": [
         {
           "text": "Wie",
           "start": 0.92,
           "end": 1.1,
-          "confidence": 0.461
+          "confidence": 0.459
         },
         {
           "text": "wieder",
           "start": 1.1,
           "end": 1.4,
-          "confidence": 0.89
+          "confidence": 0.891
         },
         {
           "text": "zu",
           "start": 1.4,
           "end": 1.6,
-          "confidence": 0.282
+          "confidence": 0.283
         },
         {
           "text": "dazu",
           "start": 1.6,
           "end": 1.92,
-          "confidence": 0.176
+          "confidence": 0.173
         },
         {
           "text": "ist",
           "start": 1.92,
           "end": 2.14,
-          "confidence": 0.645
+          "confidence": 0.649
         },
         {
           "text": "Meshfuchs",
@@ -83,31 +83,31 @@
           "text": "von",
           "start": 2.74,
           "end": 3.22,
-          "confidence": 0.624
+          "confidence": 0.626
         },
         {
           "text": "1962",
           "start": 3.22,
           "end": 4.84,
-          "confidence": 0.184
+          "confidence": 0.182
         },
         {
           "text": "als",
           "start": 4.84,
           "end": 5.24,
-          "confidence": 0.882
+          "confidence": 0.883
         },
         {
           "text": "Meshale",
           "start": 5.24,
           "end": 5.78,
-          "confidence": 0.388
+          "confidence": 0.389
         },
         {
           "text": "für",
           "start": 5.78,
           "end": 5.92,
-          "confidence": 0.934
+          "confidence": 0.935
         },
         {
           "text": "die",
@@ -137,7 +137,7 @@
           "text": "grullischen",
           "start": 7.62,
           "end": 8.04,
-          "confidence": 0.372
+          "confidence": 0.371
         }
       ]
     },
@@ -176,28 +176,28 @@
         51014
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.6852629044476677,
+      "avg_logprob": -0.6859013052547679,
       "compression_ratio": 1.3293413173652695,
-      "no_speech_prob": 0.045539237558841705,
-      "confidence": 0.629,
+      "no_speech_prob": 0.04553895816206932,
+      "confidence": 0.63,
       "words": [
         {
           "text": "Rätus",
           "start": 8.04,
           "end": 9.16,
-          "confidence": 0.383
+          "confidence": 0.381
         },
         {
           "text": "ist",
           "start": 9.16,
           "end": 9.62,
-          "confidence": 0.894
+          "confidence": 0.897
         },
         {
           "text": "dann",
           "start": 9.62,
           "end": 9.78,
-          "confidence": 0.588
+          "confidence": 0.586
         },
         {
           "text": "nicht",
@@ -215,13 +215,13 @@
           "text": "weitergegangen",
           "start": 10.12,
           "end": 10.88,
-          "confidence": 0.701
+          "confidence": 0.703
         },
         {
           "text": "wie",
           "start": 10.88,
           "end": 11.04,
-          "confidence": 0.764
+          "confidence": 0.77
         },
         {
           "text": "sich",
@@ -233,7 +233,7 @@
           "text": "Papstbälle",
           "start": 11.24,
           "end": 11.72,
-          "confidence": 0.454
+          "confidence": 0.453
         },
         {
           "text": "dick",
@@ -251,7 +251,7 @@
           "text": "gewünscht",
           "start": 12.08,
           "end": 12.58,
-          "confidence": 0.8
+          "confidence": 0.801
         },
         {
           "text": "hatte.",
@@ -283,10 +283,10 @@
         51164
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.6852629044476677,
+      "avg_logprob": -0.6859013052547679,
       "compression_ratio": 1.3293413173652695,
-      "no_speech_prob": 0.045539237558841705,
-      "confidence": 0.411,
+      "no_speech_prob": 0.04553895816206932,
+      "confidence": 0.409,
       "words": [
         {
           "text": "Das",
@@ -298,37 +298,37 @@
           "text": "hat",
           "start": 14.2,
           "end": 14.4,
-          "confidence": 0.954
+          "confidence": 0.955
         },
         {
           "text": "er",
           "start": 14.4,
           "end": 14.56,
-          "confidence": 0.737
+          "confidence": 0.736
         },
         {
           "text": "als",
           "start": 14.56,
           "end": 14.7,
-          "confidence": 0.832
+          "confidence": 0.83
         },
         {
           "text": "Meshale",
           "start": 14.7,
           "end": 15.1,
-          "confidence": 0.191
+          "confidence": 0.188
         },
         {
           "text": "im",
           "start": 15.1,
           "end": 15.12,
-          "confidence": 0.049
+          "confidence": 0.05
         },
         {
           "text": "Rätus",
           "start": 15.12,
           "end": 15.28,
-          "confidence": 0.667
+          "confidence": 0.665
         }
       ]
     }

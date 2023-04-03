@@ -1,12 +1,12 @@
 {
-  "text": " Bonjour! Est-ce que vous allez bien? Bonjour! Esque vous allez bien!",
+  "text": " Bonjour ! Est-ce que vous allez bien ? Bonjour ! Esque vous allez bien !",
   "segments": [
     {
       "id": 0,
       "seek": 0,
       "start": 0.44,
-      "end": 0.82,
-      "text": " Bonjour!",
+      "end": 1.44,
+      "text": " Bonjour !",
       "tokens": [
         50364,
         25431,
@@ -14,16 +14,16 @@
         50438
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.7725919087727865,
-      "compression_ratio": 0.8181818181818182,
-      "no_speech_prob": 0.042649365961551666,
-      "confidence": 0.69,
+      "avg_logprob": -0.7721707026163737,
+      "compression_ratio": 0.8260869565217391,
+      "no_speech_prob": 0.04302893579006195,
+      "confidence": 0.688,
       "words": [
         {
-          "text": "Bonjour!",
+          "text": "Bonjour !",
           "start": 0.44,
-          "end": 0.82,
-          "confidence": 0.69
+          "end": 1.44,
+          "confidence": 0.688
         }
       ]
     },
@@ -31,8 +31,8 @@
       "id": 1,
       "seek": 0,
       "start": 1.88,
-      "end": 3.0,
-      "text": " Est-ce que vous allez bien?",
+      "end": 3.12,
+      "text": " Est-ce que vous allez bien ?",
       "tokens": [
         50438,
         4410,
@@ -46,16 +46,16 @@
         50538
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.7725919087727865,
-      "compression_ratio": 0.8181818181818182,
-      "no_speech_prob": 0.042649365961551666,
+      "avg_logprob": -0.7721707026163737,
+      "compression_ratio": 0.8260869565217391,
+      "no_speech_prob": 0.04302893579006195,
       "confidence": 0.68,
       "words": [
         {
           "text": "Est-ce",
           "start": 1.88,
           "end": 2.2,
-          "confidence": 0.666
+          "confidence": 0.667
         },
         {
           "text": "que",
@@ -73,12 +73,12 @@
           "text": "allez",
           "start": 2.36,
           "end": 2.56,
-          "confidence": 0.269
+          "confidence": 0.268
         },
         {
-          "text": "bien?",
+          "text": "bien ?",
           "start": 2.56,
-          "end": 3.0,
+          "end": 3.12,
           "confidence": 0.973
         }
       ]
@@ -88,7 +88,7 @@
       "seek": 3000,
       "start": 30.94,
       "end": 30.96,
-      "text": " Bonjour!",
+      "text": " Bonjour !",
       "tokens": [
         50364,
         25431,
@@ -96,13 +96,13 @@
         50514
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.9274039635291467,
-      "compression_ratio": 0.7948717948717948,
-      "no_speech_prob": 0.35791996121406555,
+      "avg_logprob": -0.9279094842764047,
+      "compression_ratio": 0.8048780487804879,
+      "no_speech_prob": 0.3543654680252075,
       "confidence": 0.533,
       "words": [
         {
-          "text": "Bonjour!",
+          "text": "Bonjour !",
           "start": 30.94,
           "end": 30.96,
           "confidence": 0.533
@@ -112,9 +112,9 @@
     {
       "id": 3,
       "seek": 3000,
-      "start": 33.04,
+      "start": 33.02,
       "end": 35.48,
-      "text": " Esque vous allez bien!",
+      "text": " Esque vous allez bien !",
       "tokens": [
         50514,
         2313,
@@ -126,14 +126,14 @@
         50614
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.9274039635291467,
-      "compression_ratio": 0.7948717948717948,
-      "no_speech_prob": 0.35791996121406555,
+      "avg_logprob": -0.9279094842764047,
+      "compression_ratio": 0.8048780487804879,
+      "no_speech_prob": 0.3543654680252075,
       "confidence": 0.484,
       "words": [
         {
           "text": "Esque",
-          "start": 33.04,
+          "start": 33.02,
           "end": 34.76,
           "confidence": 0.186
         },
@@ -147,10 +147,10 @@
           "text": "allez",
           "start": 34.9,
           "end": 35.08,
-          "confidence": 0.782
+          "confidence": 0.781
         },
         {
-          "text": "bien!",
+          "text": "bien !",
           "start": 35.08,
           "end": 35.48,
           "confidence": 0.998

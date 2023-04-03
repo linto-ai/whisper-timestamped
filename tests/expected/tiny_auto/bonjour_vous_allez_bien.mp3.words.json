@@ -18,9 +18,9 @@
         50464
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.9447780408357319,
+      "avg_logprob": -0.9446654068796259,
       "compression_ratio": 0.8166666666666667,
-      "no_speech_prob": 0.042649365961551666,
+      "no_speech_prob": 0.04302893579006195,
       "confidence": 0.317,
       "words": [
         {
@@ -56,9 +56,9 @@
         50564
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.9447780408357319,
+      "avg_logprob": -0.9446654068796259,
       "compression_ratio": 0.8166666666666667,
-      "no_speech_prob": 0.042649365961551666,
+      "no_speech_prob": 0.04302893579006195,
       "confidence": 0.395,
       "words": [
         {
@@ -71,7 +71,7 @@
           "text": "зарегиан!",
           "start": 2.3,
           "end": 3.14,
-          "confidence": 0.504
+          "confidence": 0.505
         }
       ]
     },
@@ -92,9 +92,9 @@
         50564
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3077994145845112,
+      "avg_logprob": -0.3079313729938708,
       "compression_ratio": 0.8166666666666667,
-      "no_speech_prob": 0.22201119363307953,
+      "no_speech_prob": 0.2232234627008438,
       "confidence": 0.577,
       "words": [
         {
@@ -107,7 +107,7 @@
           "text": "улыл!",
           "start": 33.36,
           "end": 34.02,
-          "confidence": 0.685
+          "confidence": 0.686
         }
       ]
     },
@@ -130,10 +130,10 @@
         50664
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3077994145845112,
+      "avg_logprob": -0.3079313729938708,
       "compression_ratio": 0.8166666666666667,
-      "no_speech_prob": 0.22201119363307953,
-      "confidence": 0.85,
+      "no_speech_prob": 0.2232234627008438,
+      "confidence": 0.849,
       "words": [
         {
           "text": "Эскому",

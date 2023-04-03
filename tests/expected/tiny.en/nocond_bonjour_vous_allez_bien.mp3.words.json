@@ -23,9 +23,9 @@
         50513
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.801825932094029,
+      "avg_logprob": -0.8020608765738351,
       "compression_ratio": 0.7894736842105263,
-      "no_speech_prob": 0.11799175292253494,
+      "no_speech_prob": 0.11798259615898132,
       "confidence": 0.496,
       "words": [
         {
@@ -38,7 +38,7 @@
           "text": "Let's",
           "start": 1.9,
           "end": 2.18,
-          "confidence": 0.676
+          "confidence": 0.677
         },
         {
           "text": "go",
@@ -56,7 +56,7 @@
           "text": "it",
           "start": 2.46,
           "end": 2.56,
-          "confidence": 0.934
+          "confidence": 0.933
         },
         {
           "text": "again!",
@@ -88,9 +88,9 @@
         50663
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.19411465099879674,
+      "avg_logprob": -0.19375058582850865,
       "compression_ratio": 0.7894736842105263,
-      "no_speech_prob": 0.45430558919906616,
+      "no_speech_prob": 0.45197251439094543,
       "confidence": 0.952,
       "words": [
         {
@@ -103,7 +103,7 @@
           "text": "Let's",
           "start": 34.44,
           "end": 34.72,
-          "confidence": 0.961
+          "confidence": 0.96
         },
         {
           "text": "go",

@@ -1,55 +1,467 @@
 {
-  "text": " Oh, the misery Everybody wants to be my enemy Spare the sympathy Everybody wants to be my enemy Look out for yourself My enemy Look out for yourself But I'm ready Your words up on the wall As you're praying for my phone And the laughter in the halls And the names that I've been called I stack it in my mind And I'm waiting for the time When I show you what it's like To be worse but in the mind Tell you you're the greatest But once you turn, they hate us Oh, the misery Everybody wants to be my enemy Spare the sympathy Everybody wants to be my enemy Look out for yourself My enemy Look out for yourself Look, okay, I'm Hoping that somebody pray for me I'm praying that somebody hold for me I'm staying where nobody's supposed to be I proposed it, being a wreck of emotions Ready to go, whenever you let me know The road is long, so put the pedal into the flow The enemy on my trail, my energy unavailable I'ma tell him I said the way go Way, when I'm plottin' my drive to the top I been out of shape, thinking out the box I'm an astronaut Blasted off the planet, rocked the cars Catastrophe, and it matters more because I had it Now had I thought about wreaking havoc on an opposition Kinda shocking, ain't one aesthetic With precision, I'm automatic Quarterback, I ain't talkin' second Pack it, pack it up, I don't panic Better, better, up who the baddest It don't matter, cause we it's your Everybody wants to be my enemy Spare the sympathy Everybody wants to be my enemy Oh, the misery Everybody wants to be my enemy Spare the sympathy Everybody wants to be my enemy Out of here, I swear I'll never be a saint No way, my enemy Out of here, I swear I'll never be a saint Look out for yourself",
+  "text": " I I Wake up to the sounds of the silence that allows for my mind to run around with my ear up to the ground I'm searching to behold the stories that are told when my back is to the world smiling when I turn Hey Oh the misery everybody wants to be my enemy Spell the sympathy everybody wants to be my enemy My enemy But i'm ready your words up on the wall Is you're praying for my phone and the laughter in the holes and the names that i've been called I stack it in my mind and i'm waiting for the time when I show you what it's like to be worse Oh the misery everybody wants to be my enemy Smell the sympathy everybody wants to be my enemy Look out for yourself My enemy Look out for yourself Look, okay, I'm hoping that somebody pray for me I'm praying that somebody vote for me I'm staying where nobody's supposed to be I propose to be in the wreck of emotions Ready to go whenever you let me know The road is long so put the pedal into the flow The enemy on my trail, my energy unavailable Imma tell the master the way go When the plot on my track to the top I been out of shape, thinking that I'm a box of an astronaut Blasted off the planet, rocked the cars, catastrophic And it matters more because I had it, now I had it I thought about wreaking havoc on an opposition Kinda shockin', they want it static, with precision I'm automatic, quarterback, I ain't talkin' second Pack it, pack it up, I don't panic, better, batter up Who the baddest? It don't matter, cuz we it's your Everybody wants to be my enemy Smell the sympathy everybody wants to be my enemy Oh, the misery Everybody wants to be my enemy Smell the sympathy everybody wants to be my enemy I swear I'll never be a saint No way, my enemy I swear I'll never be a saint You gotta be a saint",
   "segments": [
     {
       "id": 0,
-      "seek": 6000,
-      "start": 60.0,
-      "end": 69.94,
-      "text": " Oh, the misery Everybody wants to be my enemy",
+      "seek": 0,
+      "start": 0.0,
+      "end": 0.44,
+      "text": " I",
       "tokens": [
         50364,
+        286,
+        50464
+      ],
+      "temperature": 0.4,
+      "avg_logprob": -0.9360545873641968,
+      "compression_ratio": 0.1111111111111111,
+      "no_speech_prob": 0.7811808586120605,
+      "confidence": 0.032,
+      "words": [
+        {
+          "text": "I",
+          "start": 0.0,
+          "end": 0.44,
+          "confidence": 0.032
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "seek": 3000,
+      "start": 30.2,
+      "end": 31.42,
+      "text": " I",
+      "tokens": [
+        50372,
+        286,
+        50472
+      ],
+      "temperature": 0.4,
+      "avg_logprob": -0.43623164983896107,
+      "compression_ratio": 1.5338345864661653,
+      "no_speech_prob": 0.10452272742986679,
+      "confidence": 0.252,
+      "words": [
+        {
+          "text": "I",
+          "start": 30.2,
+          "end": 31.42,
+          "confidence": 0.252
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "seek": 3000,
+      "start": 38.98,
+      "end": 44.76,
+      "text": " Wake up to the sounds of the silence that allows for my mind to run around with my ear up to the ground",
+      "tokens": [
+        50800,
+        21062,
+        493,
+        281,
+        264,
+        3263,
+        295,
+        264,
+        12239,
+        300,
+        4045,
+        337,
+        452,
+        1575,
+        281,
+        1190,
+        926,
+        365,
+        452,
+        1273,
+        493,
+        281,
+        264,
+        2727,
+        51084
+      ],
+      "temperature": 0.4,
+      "avg_logprob": -0.43623164983896107,
+      "compression_ratio": 1.5338345864661653,
+      "no_speech_prob": 0.10452272742986679,
+      "confidence": 0.907,
+      "words": [
+        {
+          "text": "Wake",
+          "start": 38.98,
+          "end": 39.28,
+          "confidence": 0.89
+        },
+        {
+          "text": "up",
+          "start": 39.28,
+          "end": 39.56,
+          "confidence": 0.996
+        },
+        {
+          "text": "to",
+          "start": 39.56,
+          "end": 39.74,
+          "confidence": 0.988
+        },
+        {
+          "text": "the",
+          "start": 39.74,
+          "end": 39.96,
+          "confidence": 0.863
+        },
+        {
+          "text": "sounds",
+          "start": 39.96,
+          "end": 40.32,
+          "confidence": 0.554
+        },
+        {
+          "text": "of",
+          "start": 40.32,
+          "end": 40.5,
+          "confidence": 0.942
+        },
+        {
+          "text": "the",
+          "start": 40.5,
+          "end": 40.62,
+          "confidence": 0.997
+        },
+        {
+          "text": "silence",
+          "start": 40.62,
+          "end": 41.1,
+          "confidence": 0.952
+        },
+        {
+          "text": "that",
+          "start": 41.1,
+          "end": 41.38,
+          "confidence": 0.969
+        },
+        {
+          "text": "allows",
+          "start": 41.38,
+          "end": 41.84,
+          "confidence": 0.895
+        },
+        {
+          "text": "for",
+          "start": 41.84,
+          "end": 42.06,
+          "confidence": 0.811
+        },
+        {
+          "text": "my",
+          "start": 42.06,
+          "end": 42.22,
+          "confidence": 0.946
+        },
+        {
+          "text": "mind",
+          "start": 42.22,
+          "end": 42.46,
+          "confidence": 0.976
+        },
+        {
+          "text": "to",
+          "start": 42.46,
+          "end": 42.68,
+          "confidence": 0.856
+        },
+        {
+          "text": "run",
+          "start": 42.68,
+          "end": 42.86,
+          "confidence": 0.994
+        },
+        {
+          "text": "around",
+          "start": 42.86,
+          "end": 43.3,
+          "confidence": 0.966
+        },
+        {
+          "text": "with",
+          "start": 43.3,
+          "end": 43.56,
+          "confidence": 0.612
+        },
+        {
+          "text": "my",
+          "start": 43.56,
+          "end": 43.68,
+          "confidence": 0.992
+        },
+        {
+          "text": "ear",
+          "start": 43.68,
+          "end": 43.96,
+          "confidence": 0.896
+        },
+        {
+          "text": "up",
+          "start": 43.96,
+          "end": 44.22,
+          "confidence": 0.988
+        },
+        {
+          "text": "to",
+          "start": 44.22,
+          "end": 44.34,
+          "confidence": 0.993
+        },
+        {
+          "text": "the",
+          "start": 44.34,
+          "end": 44.54,
+          "confidence": 0.996
+        },
+        {
+          "text": "ground",
+          "start": 44.54,
+          "end": 44.76,
+          "confidence": 0.995
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "seek": 3000,
+      "start": 45.08,
+      "end": 51.0,
+      "text": " I'm searching to behold the stories that are told when my back is to the world smiling when I turn",
+      "tokens": [
+        51094,
+        286,
+        478,
+        10808,
+        281,
+        27234,
+        264,
+        3676,
+        300,
+        366,
+        1907,
+        562,
+        452,
+        646,
+        307,
+        281,
+        264,
+        1002,
+        16005,
+        562,
+        286,
+        1261,
+        51405
+      ],
+      "temperature": 0.4,
+      "avg_logprob": -0.43623164983896107,
+      "compression_ratio": 1.5338345864661653,
+      "no_speech_prob": 0.10452272742986679,
+      "confidence": 0.776,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 45.08,
+          "end": 45.24,
+          "confidence": 0.997
+        },
+        {
+          "text": "searching",
+          "start": 45.24,
+          "end": 45.68,
+          "confidence": 0.984
+        },
+        {
+          "text": "to",
+          "start": 45.68,
+          "end": 45.98,
+          "confidence": 0.991
+        },
+        {
+          "text": "behold",
+          "start": 45.98,
+          "end": 46.46,
+          "confidence": 0.426
+        },
+        {
+          "text": "the",
+          "start": 46.46,
+          "end": 46.84,
+          "confidence": 0.969
+        },
+        {
+          "text": "stories",
+          "start": 46.84,
+          "end": 47.3,
+          "confidence": 0.992
+        },
+        {
+          "text": "that",
+          "start": 47.3,
+          "end": 47.56,
+          "confidence": 0.96
+        },
+        {
+          "text": "are",
+          "start": 47.56,
+          "end": 47.76,
+          "confidence": 0.459
+        },
+        {
+          "text": "told",
+          "start": 47.76,
+          "end": 48.06,
+          "confidence": 0.598
+        },
+        {
+          "text": "when",
+          "start": 48.06,
+          "end": 48.3,
+          "confidence": 0.341
+        },
+        {
+          "text": "my",
+          "start": 48.3,
+          "end": 48.52,
+          "confidence": 0.493
+        },
+        {
+          "text": "back",
+          "start": 48.52,
+          "end": 48.7,
+          "confidence": 0.978
+        },
+        {
+          "text": "is",
+          "start": 48.7,
+          "end": 48.9,
+          "confidence": 0.981
+        },
+        {
+          "text": "to",
+          "start": 48.9,
+          "end": 49.06,
+          "confidence": 0.993
+        },
+        {
+          "text": "the",
+          "start": 49.06,
+          "end": 49.28,
+          "confidence": 0.998
+        },
+        {
+          "text": "world",
+          "start": 49.28,
+          "end": 49.64,
+          "confidence": 0.995
+        },
+        {
+          "text": "smiling",
+          "start": 49.64,
+          "end": 50.32,
+          "confidence": 0.339
+        },
+        {
+          "text": "when",
+          "start": 50.32,
+          "end": 50.62,
+          "confidence": 0.954
+        },
+        {
+          "text": "I",
+          "start": 50.62,
+          "end": 50.84,
+          "confidence": 0.962
+        },
+        {
+          "text": "turn",
+          "start": 50.84,
+          "end": 51.0,
+          "confidence": 0.944
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "seek": 6000,
+      "start": 60.0,
+      "end": 61.72,
+      "text": " Hey",
+      "tokens": [
+        50368,
+        1911,
+        50468
+      ],
+      "temperature": 0.4,
+      "avg_logprob": -0.5247946894446085,
+      "compression_ratio": 1.47,
+      "no_speech_prob": 0.10004138946533203,
+      "confidence": 0.095,
+      "words": [
+        {
+          "text": "Hey",
+          "start": 60.0,
+          "end": 61.72,
+          "confidence": 0.095
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "seek": 6000,
+      "start": 64.62,
+      "end": 69.16,
+      "text": " Oh the misery everybody wants to be my enemy",
+      "tokens": [
+        50596,
         876,
-        11,
         264,
         32309,
-        7646,
+        2201,
         2738,
         281,
         312,
         452,
         5945,
-        50868
+        50816
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.4567501761696555,
-      "compression_ratio": 1.62,
-      "no_speech_prob": 0.8699213266372681,
-      "confidence": 0.669,
+      "avg_logprob": -0.5247946894446085,
+      "compression_ratio": 1.47,
+      "no_speech_prob": 0.10004138946533203,
+      "confidence": 0.946,
       "words": [
         {
-          "text": "Oh,",
-          "start": 60.0,
-          "end": 63.4,
-          "confidence": 0.084
+          "text": "Oh",
+          "start": 64.62,
+          "end": 65.38,
+          "confidence": 0.942
         },
         {
           "text": "the",
-          "start": 65.24,
-          "end": 65.5,
-          "confidence": 0.797
+          "start": 65.38,
+          "end": 65.6,
+          "confidence": 0.776
         },
         {
           "text": "misery",
-          "start": 65.5,
-          "end": 66.3,
-          "confidence": 0.993
+          "start": 65.6,
+          "end": 66.38,
+          "confidence": 0.986
         },
         {
-          "text": "Everybody",
-          "start": 66.3,
+          "text": "everybody",
+          "start": 66.38,
           "end": 67.7,
-          "confidence": 0.43
+          "confidence": 0.878
         },
         {
           "text": "wants",
@@ -61,563 +473,399 @@
           "text": "to",
           "start": 68.08,
           "end": 68.26,
-          "confidence": 0.993
+          "confidence": 0.998
         },
         {
           "text": "be",
           "start": 68.26,
-          "end": 68.44,
-          "confidence": 0.996
+          "end": 68.4,
+          "confidence": 0.998
         },
         {
           "text": "my",
-          "start": 68.44,
-          "end": 68.74,
-          "confidence": 0.983
+          "start": 68.4,
+          "end": 68.72,
+          "confidence": 0.992
         },
         {
           "text": "enemy",
-          "start": 68.74,
-          "end": 69.94,
-          "confidence": 0.984
+          "start": 68.72,
+          "end": 69.16,
+          "confidence": 0.989
         }
       ]
     },
     {
-      "id": 1,
+      "id": 6,
       "seek": 6000,
-      "start": 70.56,
-      "end": 76.42,
-      "text": " Spare the sympathy Everybody wants to be my enemy",
+      "start": 70.88,
+      "end": 76.18,
+      "text": " Spell the sympathy everybody wants to be my enemy",
       "tokens": [
-        50868,
-        1738,
-        543,
+        50900,
+        3550,
+        285,
         264,
         33240,
-        7646,
+        2201,
         2738,
         281,
         312,
         452,
         5945,
-        51184
+        51169
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.4567501761696555,
-      "compression_ratio": 1.62,
-      "no_speech_prob": 0.8699213266372681,
-      "confidence": 0.93,
+      "avg_logprob": -0.5247946894446085,
+      "compression_ratio": 1.47,
+      "no_speech_prob": 0.10004138946533203,
+      "confidence": 0.848,
       "words": [
         {
-          "text": "Spare",
-          "start": 70.56,
-          "end": 71.54,
-          "confidence": 0.794
+          "text": "Spell",
+          "start": 70.88,
+          "end": 71.62,
+          "confidence": 0.548
         },
         {
           "text": "the",
-          "start": 71.54,
-          "end": 71.8,
-          "confidence": 0.969
+          "start": 71.62,
+          "end": 71.88,
+          "confidence": 0.91
         },
         {
           "text": "sympathy",
-          "start": 71.8,
+          "start": 71.88,
           "end": 72.64,
-          "confidence": 0.994
+          "confidence": 0.986
         },
         {
-          "text": "Everybody",
+          "text": "everybody",
           "start": 72.64,
-          "end": 73.96,
-          "confidence": 0.964
+          "end": 73.94,
+          "confidence": 0.817
         },
         {
           "text": "wants",
-          "start": 73.96,
-          "end": 74.3,
-          "confidence": 0.994
+          "start": 73.94,
+          "end": 74.32,
+          "confidence": 0.988
         },
         {
           "text": "to",
-          "start": 74.3,
-          "end": 74.64,
-          "confidence": 0.999
+          "start": 74.32,
+          "end": 74.62,
+          "confidence": 0.998
         },
         {
           "text": "be",
-          "start": 74.64,
-          "end": 75.24,
-          "confidence": 0.999
+          "start": 74.62,
+          "end": 75.16,
+          "confidence": 0.998
         },
         {
           "text": "my",
-          "start": 75.24,
+          "start": 75.16,
           "end": 75.72,
-          "confidence": 0.835
+          "confidence": 0.893
         },
         {
           "text": "enemy",
           "start": 75.72,
-          "end": 76.42,
-          "confidence": 0.997
+          "end": 76.18,
+          "confidence": 0.991
         }
       ]
     },
     {
-      "id": 2,
+      "id": 7,
       "seek": 6000,
-      "start": 76.88,
-      "end": 82.68,
-      "text": " Look out for yourself My enemy",
+      "start": 81.82,
+      "end": 82.76,
+      "text": " My enemy",
       "tokens": [
-        51184,
-        2053,
-        484,
-        337,
-        1803,
+        51440,
         1222,
         5945,
-        51496
+        51540
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.4567501761696555,
-      "compression_ratio": 1.62,
-      "no_speech_prob": 0.8699213266372681,
-      "confidence": 0.761,
+      "avg_logprob": -0.5247946894446085,
+      "compression_ratio": 1.47,
+      "no_speech_prob": 0.10004138946533203,
+      "confidence": 0.963,
       "words": [
         {
-          "text": "Look",
-          "start": 76.88,
-          "end": 80.24,
-          "confidence": 0.391
-        },
-        {
-          "text": "out",
-          "start": 80.24,
-          "end": 80.46,
-          "confidence": 0.99
-        },
-        {
-          "text": "for",
-          "start": 80.46,
-          "end": 80.68,
-          "confidence": 0.989
-        },
-        {
-          "text": "yourself",
-          "start": 80.68,
-          "end": 81.14,
-          "confidence": 0.97
-        },
-        {
           "text": "My",
-          "start": 81.14,
-          "end": 81.94,
-          "confidence": 0.533
+          "start": 81.82,
+          "end": 82.06,
+          "confidence": 0.967
         },
         {
           "text": "enemy",
-          "start": 81.94,
-          "end": 82.68,
-          "confidence": 0.981
+          "start": 82.06,
+          "end": 82.76,
+          "confidence": 0.959
         }
       ]
     },
     {
-      "id": 3,
+      "id": 8,
       "seek": 6000,
-      "start": 83.04,
-      "end": 88.48,
-      "text": " Look out for yourself But I'm ready",
+      "start": 87.66,
+      "end": 89.94,
+      "text": " But i'm ready your words up on the wall",
       "tokens": [
-        51496,
-        2053,
-        484,
-        337,
-        1803,
+        51744,
         583,
-        286,
+        741,
         478,
         1919,
-        51796
-      ],
-      "temperature": 0.4,
-      "avg_logprob": -0.4567501761696555,
-      "compression_ratio": 1.62,
-      "no_speech_prob": 0.8699213266372681,
-      "confidence": 0.928,
-      "words": [
-        {
-          "text": "Look",
-          "start": 83.04,
-          "end": 84.14,
-          "confidence": 0.739
-        },
-        {
-          "text": "out",
-          "start": 84.14,
-          "end": 86.68,
-          "confidence": 0.986
-        },
-        {
-          "text": "for",
-          "start": 86.68,
-          "end": 86.88,
-          "confidence": 0.998
-        },
-        {
-          "text": "yourself",
-          "start": 86.88,
-          "end": 87.56,
-          "confidence": 0.999
-        },
-        {
-          "text": "But",
-          "start": 87.56,
-          "end": 87.92,
-          "confidence": 0.781
-        },
-        {
-          "text": "I'm",
-          "start": 87.92,
-          "end": 88.14,
-          "confidence": 0.986
-        },
-        {
-          "text": "ready",
-          "start": 88.14,
-          "end": 88.48,
-          "confidence": 0.994
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "seek": 8864,
-      "start": 88.64,
-      "end": 91.7,
-      "text": " Your words up on the wall As you're praying for my phone",
-      "tokens": [
-        50364,
-        2260,
+        428,
         2283,
         493,
         322,
         264,
         2929,
-        1018,
+        51860
+      ],
+      "temperature": 0.4,
+      "avg_logprob": -0.5247946894446085,
+      "compression_ratio": 1.47,
+      "no_speech_prob": 0.10004138946533203,
+      "confidence": 0.738,
+      "words": [
+        {
+          "text": "But",
+          "start": 87.66,
+          "end": 88.0,
+          "confidence": 0.178
+        },
+        {
+          "text": "i'm",
+          "start": 88.0,
+          "end": 88.16,
+          "confidence": 0.893
+        },
+        {
+          "text": "ready",
+          "start": 88.16,
+          "end": 88.6,
+          "confidence": 0.962
+        },
+        {
+          "text": "your",
+          "start": 88.6,
+          "end": 88.88,
+          "confidence": 0.796
+        },
+        {
+          "text": "words",
+          "start": 88.88,
+          "end": 89.16,
+          "confidence": 0.973
+        },
+        {
+          "text": "up",
+          "start": 89.16,
+          "end": 89.48,
+          "confidence": 0.963
+        },
+        {
+          "text": "on",
+          "start": 89.48,
+          "end": 89.6,
+          "confidence": 0.992
+        },
+        {
+          "text": "the",
+          "start": 89.6,
+          "end": 89.82,
+          "confidence": 0.996
+        },
+        {
+          "text": "wall",
+          "start": 89.82,
+          "end": 89.94,
+          "confidence": 0.475
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "seek": 9000,
+      "start": 90.16,
+      "end": 94.74,
+      "text": " Is you're praying for my phone and the laughter in the holes and the names that i've been called",
+      "tokens": [
+        50364,
+        1119,
         291,
         434,
         15611,
         337,
         452,
         2593,
-        50516
-      ],
-      "temperature": 0.4,
-      "avg_logprob": -0.2702092300226659,
-      "compression_ratio": 1.5585106382978724,
-      "no_speech_prob": 0.0556192584335804,
-      "confidence": 0.886,
-      "words": [
-        {
-          "text": "Your",
-          "start": 88.64,
-          "end": 88.86,
-          "confidence": 0.847
-        },
-        {
-          "text": "words",
-          "start": 88.86,
-          "end": 89.18,
-          "confidence": 0.929
-        },
-        {
-          "text": "up",
-          "start": 89.18,
-          "end": 89.48,
-          "confidence": 0.972
-        },
-        {
-          "text": "on",
-          "start": 89.48,
-          "end": 89.6,
-          "confidence": 0.997
-        },
-        {
-          "text": "the",
-          "start": 89.6,
-          "end": 89.82,
-          "confidence": 0.991
-        },
-        {
-          "text": "wall",
-          "start": 89.82,
-          "end": 90.14,
-          "confidence": 0.979
-        },
-        {
-          "text": "As",
-          "start": 90.14,
-          "end": 90.34,
-          "confidence": 0.599
-        },
-        {
-          "text": "you're",
-          "start": 90.34,
-          "end": 90.44,
-          "confidence": 0.928
-        },
-        {
-          "text": "praying",
-          "start": 90.44,
-          "end": 90.88,
-          "confidence": 0.978
-        },
-        {
-          "text": "for",
-          "start": 90.88,
-          "end": 91.14,
-          "confidence": 0.993
-        },
-        {
-          "text": "my",
-          "start": 91.14,
-          "end": 91.28,
-          "confidence": 0.998
-        },
-        {
-          "text": "phone",
-          "start": 91.28,
-          "end": 91.7,
-          "confidence": 0.559
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "seek": 8864,
-      "start": 91.78,
-      "end": 94.74,
-      "text": " And the laughter in the halls And the names that I've been called",
-      "tokens": [
-        50516,
-        400,
+        293,
         264,
         13092,
         294,
         264,
-        26177,
-        400,
+        8118,
+        293,
         264,
         5288,
         300,
-        286,
+        741,
         600,
         668,
         1219,
-        50672
+        50592
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.2702092300226659,
-      "compression_ratio": 1.5585106382978724,
-      "no_speech_prob": 0.0556192584335804,
-      "confidence": 0.885,
+      "avg_logprob": -0.20849926745305297,
+      "compression_ratio": 1.5161290322580645,
+      "no_speech_prob": 0.0077798133715987206,
+      "confidence": 0.874,
       "words": [
         {
-          "text": "And",
-          "start": 91.78,
-          "end": 91.94,
-          "confidence": 0.959
+          "text": "Is",
+          "start": 90.16,
+          "end": 90.34,
+          "confidence": 0.55
+        },
+        {
+          "text": "you're",
+          "start": 90.34,
+          "end": 90.48,
+          "confidence": 0.621
+        },
+        {
+          "text": "praying",
+          "start": 90.48,
+          "end": 90.86,
+          "confidence": 0.998
+        },
+        {
+          "text": "for",
+          "start": 90.86,
+          "end": 91.1,
+          "confidence": 0.997
+        },
+        {
+          "text": "my",
+          "start": 91.1,
+          "end": 91.22,
+          "confidence": 0.997
+        },
+        {
+          "text": "phone",
+          "start": 91.22,
+          "end": 91.72,
+          "confidence": 0.568
+        },
+        {
+          "text": "and",
+          "start": 91.72,
+          "end": 91.9,
+          "confidence": 0.951
         },
         {
           "text": "the",
-          "start": 91.94,
+          "start": 91.9,
           "end": 92.12,
-          "confidence": 0.991
+          "confidence": 0.998
         },
         {
           "text": "laughter",
           "start": 92.12,
           "end": 92.5,
-          "confidence": 0.995
+          "confidence": 0.994
         },
         {
           "text": "in",
           "start": 92.5,
           "end": 92.72,
-          "confidence": 0.879
+          "confidence": 0.953
         },
         {
           "text": "the",
           "start": 92.72,
           "end": 92.92,
-          "confidence": 0.996
+          "confidence": 1.0
         },
         {
-          "text": "halls",
+          "text": "holes",
           "start": 92.92,
-          "end": 93.28,
-          "confidence": 0.293
+          "end": 93.26,
+          "confidence": 0.797
         },
         {
-          "text": "And",
-          "start": 93.28,
-          "end": 93.48,
-          "confidence": 0.94
+          "text": "and",
+          "start": 93.26,
+          "end": 93.46,
+          "confidence": 0.958
         },
         {
           "text": "the",
-          "start": 93.48,
+          "start": 93.46,
           "end": 93.6,
-          "confidence": 0.991
+          "confidence": 0.999
         },
         {
           "text": "names",
           "start": 93.6,
-          "end": 93.86,
-          "confidence": 0.993
+          "end": 93.84,
+          "confidence": 0.997
         },
         {
           "text": "that",
-          "start": 93.86,
-          "end": 94.16,
-          "confidence": 0.971
+          "start": 93.84,
+          "end": 94.12,
+          "confidence": 0.997
         },
         {
-          "text": "I've",
-          "start": 94.16,
-          "end": 94.34,
-          "confidence": 0.947
+          "text": "i've",
+          "start": 94.12,
+          "end": 94.3,
+          "confidence": 0.952
         },
         {
           "text": "been",
-          "start": 94.34,
-          "end": 94.46,
-          "confidence": 0.996
+          "start": 94.3,
+          "end": 94.52,
+          "confidence": 0.994
         },
         {
           "text": "called",
-          "start": 94.46,
+          "start": 94.52,
           "end": 94.74,
-          "confidence": 0.93
+          "confidence": 0.808
         }
       ]
     },
     {
-      "id": 6,
-      "seek": 8864,
-      "start": 94.98,
-      "end": 97.82,
-      "text": " I stack it in my mind And I'm waiting for the time",
+      "id": 10,
+      "seek": 9000,
+      "start": 94.94,
+      "end": 100.06,
+      "text": " I stack it in my mind and i'm waiting for the time when I show you what it's like to be worse",
       "tokens": [
-        50672,
+        50604,
         286,
         8630,
         309,
         294,
         452,
         1575,
-        400,
-        286,
+        293,
+        741,
         478,
         3806,
         337,
         264,
         565,
-        50820
-      ],
-      "temperature": 0.4,
-      "avg_logprob": -0.2702092300226659,
-      "compression_ratio": 1.5585106382978724,
-      "no_speech_prob": 0.0556192584335804,
-      "confidence": 0.971,
-      "words": [
-        {
-          "text": "I",
-          "start": 94.98,
-          "end": 95.14,
-          "confidence": 0.989
-        },
-        {
-          "text": "stack",
-          "start": 95.14,
-          "end": 95.48,
-          "confidence": 0.856
-        },
-        {
-          "text": "it",
-          "start": 95.48,
-          "end": 95.72,
-          "confidence": 0.994
-        },
-        {
-          "text": "in",
-          "start": 95.72,
-          "end": 95.8,
-          "confidence": 0.995
-        },
-        {
-          "text": "my",
-          "start": 95.8,
-          "end": 96.06,
-          "confidence": 0.994
-        },
-        {
-          "text": "mind",
-          "start": 96.06,
-          "end": 96.42,
-          "confidence": 0.999
-        },
-        {
-          "text": "And",
-          "start": 96.42,
-          "end": 96.6,
-          "confidence": 0.851
-        },
-        {
-          "text": "I'm",
-          "start": 96.6,
-          "end": 96.72,
-          "confidence": 0.994
-        },
-        {
-          "text": "waiting",
-          "start": 96.72,
-          "end": 97.14,
-          "confidence": 0.99
-        },
-        {
-          "text": "for",
-          "start": 97.14,
-          "end": 97.36,
-          "confidence": 0.997
-        },
-        {
-          "text": "the",
-          "start": 97.36,
-          "end": 97.54,
-          "confidence": 0.995
-        },
-        {
-          "text": "time",
-          "start": 97.54,
-          "end": 97.82,
-          "confidence": 0.998
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "seek": 8864,
-      "start": 97.98,
-      "end": 101.24,
-      "text": " When I show you what it's like To be worse but in the mind",
-      "tokens": [
-        50820,
-        1133,
+        562,
         286,
         855,
         291,
@@ -625,582 +873,598 @@
         309,
         311,
         411,
-        1407,
+        281,
         312,
         5324,
-        457,
-        294,
-        264,
-        1575,
-        50992
+        50860
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.2702092300226659,
-      "compression_ratio": 1.5585106382978724,
-      "no_speech_prob": 0.0556192584335804,
-      "confidence": 0.767,
+      "avg_logprob": -0.20849926745305297,
+      "compression_ratio": 1.5161290322580645,
+      "no_speech_prob": 0.0077798133715987206,
+      "confidence": 0.95,
       "words": [
         {
-          "text": "When",
-          "start": 97.98,
+          "text": "I",
+          "start": 94.94,
+          "end": 95.12,
+          "confidence": 0.979
+        },
+        {
+          "text": "stack",
+          "start": 95.12,
+          "end": 95.4,
+          "confidence": 0.908
+        },
+        {
+          "text": "it",
+          "start": 95.4,
+          "end": 95.7,
+          "confidence": 0.999
+        },
+        {
+          "text": "in",
+          "start": 95.7,
+          "end": 95.82,
+          "confidence": 0.999
+        },
+        {
+          "text": "my",
+          "start": 95.82,
+          "end": 96.04,
+          "confidence": 0.999
+        },
+        {
+          "text": "mind",
+          "start": 96.04,
+          "end": 96.42,
+          "confidence": 0.997
+        },
+        {
+          "text": "and",
+          "start": 96.42,
+          "end": 96.62,
+          "confidence": 0.931
+        },
+        {
+          "text": "i'm",
+          "start": 96.62,
+          "end": 96.74,
+          "confidence": 0.997
+        },
+        {
+          "text": "waiting",
+          "start": 96.74,
+          "end": 97.14,
+          "confidence": 0.998
+        },
+        {
+          "text": "for",
+          "start": 97.14,
+          "end": 97.34,
+          "confidence": 0.99
+        },
+        {
+          "text": "the",
+          "start": 97.34,
+          "end": 97.54,
+          "confidence": 0.998
+        },
+        {
+          "text": "time",
+          "start": 97.54,
+          "end": 97.86,
+          "confidence": 0.997
+        },
+        {
+          "text": "when",
+          "start": 97.86,
           "end": 98.14,
-          "confidence": 0.975
+          "confidence": 0.963
         },
         {
           "text": "I",
           "start": 98.14,
           "end": 98.3,
-          "confidence": 0.996
+          "confidence": 0.889
         },
         {
           "text": "show",
           "start": 98.3,
-          "end": 98.5,
-          "confidence": 0.947
+          "end": 98.48,
+          "confidence": 0.995
         },
         {
           "text": "you",
-          "start": 98.5,
-          "end": 98.76,
+          "start": 98.48,
+          "end": 98.74,
           "confidence": 0.993
         },
         {
           "text": "what",
-          "start": 98.76,
+          "start": 98.74,
           "end": 98.92,
-          "confidence": 0.994
+          "confidence": 0.986
         },
         {
           "text": "it's",
           "start": 98.92,
-          "end": 99.26,
-          "confidence": 0.987
+          "end": 99.22,
+          "confidence": 0.994
         },
         {
           "text": "like",
-          "start": 99.26,
+          "start": 99.22,
           "end": 99.48,
-          "confidence": 0.999
+          "confidence": 0.993
         },
         {
-          "text": "To",
+          "text": "to",
           "start": 99.48,
-          "end": 99.72,
-          "confidence": 0.941
+          "end": 99.7,
+          "confidence": 0.961
         },
         {
           "text": "be",
-          "start": 99.72,
+          "start": 99.7,
           "end": 99.84,
-          "confidence": 0.999
+          "confidence": 0.996
         },
         {
           "text": "worse",
           "start": 99.84,
-          "end": 100.1,
+          "end": 100.06,
           "confidence": 0.463
-        },
-        {
-          "text": "but",
-          "start": 100.1,
-          "end": 100.4,
-          "confidence": 0.161
-        },
-        {
-          "text": "in",
-          "start": 100.4,
-          "end": 100.56,
-          "confidence": 0.879
-        },
-        {
-          "text": "the",
-          "start": 100.56,
-          "end": 100.8,
-          "confidence": 0.43
-        },
-        {
-          "text": "mind",
-          "start": 100.8,
-          "end": 101.24,
-          "confidence": 0.8
         }
       ]
     },
     {
-      "id": 8,
-      "seek": 8864,
-      "start": 101.32,
-      "end": 113.02,
-      "text": " Tell you you're the greatest But once you turn, they hate us",
+      "id": 11,
+      "seek": 9000,
+      "start": 113.98,
+      "end": 119.04,
+      "text": " Oh the misery everybody wants to be my enemy",
       "tokens": [
-        50992,
-        5115,
-        291,
-        291,
-        434,
-        264,
-        6636,
-        583,
-        1564,
-        291,
-        1261,
-        11,
-        436,
-        4700,
-        505,
-        51592
-      ],
-      "temperature": 0.4,
-      "avg_logprob": -0.2702092300226659,
-      "compression_ratio": 1.5585106382978724,
-      "no_speech_prob": 0.0556192584335804,
-      "confidence": 0.92,
-      "words": [
-        {
-          "text": "Tell",
-          "start": 101.32,
-          "end": 102.22,
-          "confidence": 0.913
-        },
-        {
-          "text": "you",
-          "start": 102.22,
-          "end": 102.86,
-          "confidence": 0.994
-        },
-        {
-          "text": "you're",
-          "start": 102.86,
-          "end": 103.82,
-          "confidence": 0.806
-        },
-        {
-          "text": "the",
-          "start": 103.82,
-          "end": 104.36,
-          "confidence": 0.987
-        },
-        {
-          "text": "greatest",
-          "start": 104.36,
-          "end": 106.84,
-          "confidence": 0.989
-        },
-        {
-          "text": "But",
-          "start": 106.84,
-          "end": 107.58,
-          "confidence": 0.91
-        },
-        {
-          "text": "once",
-          "start": 107.58,
-          "end": 108.4,
-          "confidence": 0.797
-        },
-        {
-          "text": "you",
-          "start": 108.4,
-          "end": 109.18,
-          "confidence": 0.998
-        },
-        {
-          "text": "turn,",
-          "start": 109.18,
-          "end": 109.86,
-          "confidence": 0.835
-        },
-        {
-          "text": "they",
-          "start": 109.86,
-          "end": 110.4,
-          "confidence": 0.995
-        },
-        {
-          "text": "hate",
-          "start": 110.4,
-          "end": 111.96,
-          "confidence": 0.984
-        },
-        {
-          "text": "us",
-          "start": 111.96,
-          "end": 113.02,
-          "confidence": 0.999
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "seek": 11320,
-      "start": 114.54,
-      "end": 119.08,
-      "text": " Oh, the misery Everybody wants to be my enemy",
-      "tokens": [
-        50408,
+        51588,
         876,
-        11,
         264,
         32309,
-        7646,
+        2201,
         2738,
         281,
         312,
         452,
         5945,
-        50680
+        51813
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.3664691770398939,
-      "compression_ratio": 1.8466666666666667,
-      "no_speech_prob": 0.30523499846458435,
-      "confidence": 0.961,
+      "avg_logprob": -0.20849926745305297,
+      "compression_ratio": 1.5161290322580645,
+      "no_speech_prob": 0.0077798133715987206,
+      "confidence": 0.947,
       "words": [
         {
-          "text": "Oh,",
-          "start": 114.54,
-          "end": 115.04,
-          "confidence": 0.871
+          "text": "Oh",
+          "start": 113.98,
+          "end": 115.22,
+          "confidence": 0.962
         },
         {
           "text": "the",
-          "start": 115.24,
-          "end": 115.42,
-          "confidence": 0.985
+          "start": 115.22,
+          "end": 115.46,
+          "confidence": 0.786
         },
         {
           "text": "misery",
-          "start": 115.42,
-          "end": 116.34,
+          "start": 115.46,
+          "end": 116.42,
           "confidence": 0.998
         },
         {
-          "text": "Everybody",
-          "start": 116.34,
+          "text": "everybody",
+          "start": 116.42,
           "end": 117.58,
-          "confidence": 0.839
+          "confidence": 0.836
         },
         {
           "text": "wants",
           "start": 117.58,
-          "end": 117.94,
-          "confidence": 0.991
+          "end": 117.96,
+          "confidence": 0.988
         },
         {
           "text": "to",
-          "start": 117.94,
+          "start": 117.96,
           "end": 118.14,
-          "confidence": 0.998
+          "confidence": 1.0
         },
         {
           "text": "be",
           "start": 118.14,
-          "end": 118.3,
-          "confidence": 0.999
+          "end": 118.26,
+          "confidence": 1.0
         },
         {
           "text": "my",
-          "start": 118.3,
+          "start": 118.26,
           "end": 118.58,
           "confidence": 0.996
         },
         {
           "text": "enemy",
           "start": 118.58,
-          "end": 119.08,
-          "confidence": 0.988
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "seek": 11320,
-      "start": 120.0,
-      "end": 126.28,
-      "text": " Spare the sympathy Everybody wants to be my enemy",
-      "tokens": [
-        50680,
-        1738,
-        543,
-        264,
-        33240,
-        7646,
-        2738,
-        281,
-        312,
-        452,
-        5945,
-        51028
-      ],
-      "temperature": 0.4,
-      "avg_logprob": -0.3664691770398939,
-      "compression_ratio": 1.8466666666666667,
-      "no_speech_prob": 0.30523499846458435,
-      "confidence": 0.898,
-      "words": [
-        {
-          "text": "Spare",
-          "start": 120.0,
-          "end": 121.4,
-          "confidence": 0.644
-        },
-        {
-          "text": "the",
-          "start": 121.4,
-          "end": 121.7,
-          "confidence": 0.985
-        },
-        {
-          "text": "sympathy",
-          "start": 121.7,
-          "end": 122.5,
-          "confidence": 0.996
-        },
-        {
-          "text": "Everybody",
-          "start": 122.5,
-          "end": 123.82,
-          "confidence": 0.976
-        },
-        {
-          "text": "wants",
-          "start": 123.82,
-          "end": 124.18,
-          "confidence": 0.994
-        },
-        {
-          "text": "to",
-          "start": 124.18,
-          "end": 124.4,
-          "confidence": 0.999
-        },
-        {
-          "text": "be",
-          "start": 124.4,
-          "end": 125.0,
-          "confidence": 0.999
-        },
-        {
-          "text": "my",
-          "start": 125.0,
-          "end": 125.6,
-          "confidence": 0.867
-        },
-        {
-          "text": "enemy",
-          "start": 125.6,
-          "end": 126.28,
-          "confidence": 0.997
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "seek": 11320,
-      "start": 126.32,
-      "end": 132.48,
-      "text": " Look out for yourself My enemy",
-      "tokens": [
-        51028,
-        2053,
-        484,
-        337,
-        1803,
-        1222,
-        5945,
-        51328
-      ],
-      "temperature": 0.4,
-      "avg_logprob": -0.3664691770398939,
-      "compression_ratio": 1.8466666666666667,
-      "no_speech_prob": 0.30523499846458435,
-      "confidence": 0.835,
-      "words": [
-        {
-          "text": "Look",
-          "start": 126.32,
-          "end": 130.1,
-          "confidence": 0.748
-        },
-        {
-          "text": "out",
-          "start": 130.1,
-          "end": 130.32,
-          "confidence": 0.957
-        },
-        {
-          "text": "for",
-          "start": 130.32,
-          "end": 130.5,
-          "confidence": 0.989
-        },
-        {
-          "text": "yourself",
-          "start": 130.5,
-          "end": 130.98,
-          "confidence": 0.986
-        },
-        {
-          "text": "My",
-          "start": 130.98,
-          "end": 131.78,
-          "confidence": 0.491
-        },
-        {
-          "text": "enemy",
-          "start": 131.78,
-          "end": 132.48,
-          "confidence": 0.992
+          "end": 119.04,
+          "confidence": 0.991
         }
       ]
     },
     {
       "id": 12,
-      "seek": 11320,
-      "start": 132.9,
-      "end": 137.14,
-      "text": " Look out for yourself",
+      "seek": 12000,
+      "start": 120.72,
+      "end": 126.26,
+      "text": " Smell the sympathy everybody wants to be my enemy",
       "tokens": [
-        51328,
-        2053,
-        484,
-        337,
-        1803,
-        51560
+        50400,
+        3915,
+        898,
+        264,
+        33240,
+        2201,
+        2738,
+        281,
+        312,
+        452,
+        5945,
+        50669
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.3664691770398939,
-      "compression_ratio": 1.8466666666666667,
-      "no_speech_prob": 0.30523499846458435,
-      "confidence": 0.976,
+      "avg_logprob": -0.5485876959723395,
+      "compression_ratio": 1.7787610619469028,
+      "no_speech_prob": 0.02783079631626606,
+      "confidence": 0.897,
       "words": [
         {
-          "text": "Look",
-          "start": 132.9,
-          "end": 134.72,
-          "confidence": 0.924
+          "text": "Smell",
+          "start": 120.72,
+          "end": 121.48,
+          "confidence": 0.764
         },
         {
-          "text": "out",
-          "start": 134.72,
-          "end": 136.54,
+          "text": "the",
+          "start": 121.48,
+          "end": 121.7,
+          "confidence": 0.936
+        },
+        {
+          "text": "sympathy",
+          "start": 121.7,
+          "end": 122.48,
           "confidence": 0.986
         },
         {
-          "text": "for",
-          "start": 136.54,
-          "end": 136.76,
+          "text": "everybody",
+          "start": 122.48,
+          "end": 123.8,
+          "confidence": 0.712
+        },
+        {
+          "text": "wants",
+          "start": 123.8,
+          "end": 124.18,
+          "confidence": 0.987
+        },
+        {
+          "text": "to",
+          "start": 124.18,
+          "end": 124.46,
+          "confidence": 0.998
+        },
+        {
+          "text": "be",
+          "start": 124.46,
+          "end": 124.9,
           "confidence": 0.999
         },
         {
-          "text": "yourself",
-          "start": 136.76,
-          "end": 137.14,
-          "confidence": 0.999
+          "text": "my",
+          "start": 124.9,
+          "end": 125.56,
+          "confidence": 0.901
+        },
+        {
+          "text": "enemy",
+          "start": 125.56,
+          "end": 126.26,
+          "confidence": 0.988
         }
       ]
     },
     {
       "id": 13,
-      "seek": 11320,
-      "start": 137.58,
-      "end": 140.18,
-      "text": " Look, okay, I'm Hoping that somebody pray for me",
+      "seek": 12000,
+      "start": 129.84,
+      "end": 130.98,
+      "text": " Look out for yourself",
       "tokens": [
-        51560,
+        50856,
+        2053,
+        484,
+        337,
+        1803,
+        50929
+      ],
+      "temperature": 0.4,
+      "avg_logprob": -0.5485876959723395,
+      "compression_ratio": 1.7787610619469028,
+      "no_speech_prob": 0.02783079631626606,
+      "confidence": 0.968,
+      "words": [
+        {
+          "text": "Look",
+          "start": 129.84,
+          "end": 130.16,
+          "confidence": 0.936
+        },
+        {
+          "text": "out",
+          "start": 130.16,
+          "end": 130.3,
+          "confidence": 0.954
+        },
+        {
+          "text": "for",
+          "start": 130.3,
+          "end": 130.5,
+          "confidence": 0.994
+        },
+        {
+          "text": "yourself",
+          "start": 130.5,
+          "end": 130.98,
+          "confidence": 0.989
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "seek": 12000,
+      "start": 131.52,
+      "end": 132.5,
+      "text": " My enemy",
+      "tokens": [
+        50936,
+        1222,
+        5945,
+        51005
+      ],
+      "temperature": 0.4,
+      "avg_logprob": -0.5485876959723395,
+      "compression_ratio": 1.7787610619469028,
+      "no_speech_prob": 0.02783079631626606,
+      "confidence": 0.919,
+      "words": [
+        {
+          "text": "My",
+          "start": 131.52,
+          "end": 131.9,
+          "confidence": 0.888
+        },
+        {
+          "text": "enemy",
+          "start": 131.9,
+          "end": 132.5,
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "seek": 12000,
+      "start": 136.02,
+      "end": 137.2,
+      "text": " Look out for yourself",
+      "tokens": [
+        51160,
+        2053,
+        484,
+        337,
+        1803,
+        51221
+      ],
+      "temperature": 0.4,
+      "avg_logprob": -0.5485876959723395,
+      "compression_ratio": 1.7787610619469028,
+      "no_speech_prob": 0.02783079631626606,
+      "confidence": 0.995,
+      "words": [
+        {
+          "text": "Look",
+          "start": 136.02,
+          "end": 136.36,
+          "confidence": 0.987
+        },
+        {
+          "text": "out",
+          "start": 136.36,
+          "end": 136.58,
+          "confidence": 0.995
+        },
+        {
+          "text": "for",
+          "start": 136.58,
+          "end": 136.8,
+          "confidence": 0.999
+        },
+        {
+          "text": "yourself",
+          "start": 136.8,
+          "end": 137.2,
+          "confidence": 0.998
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "seek": 12000,
+      "start": 137.64,
+      "end": 140.2,
+      "text": " Look, okay, I'm hoping that somebody pray for me",
+      "tokens": [
+        51236,
         2053,
         11,
         1392,
         11,
         286,
         478,
-        13438,
-        278,
+        7159,
         300,
         2618,
         3690,
         337,
         385,
-        51704
+        51367
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.3664691770398939,
-      "compression_ratio": 1.8466666666666667,
-      "no_speech_prob": 0.30523499846458435,
-      "confidence": 0.875,
+      "avg_logprob": -0.5485876959723395,
+      "compression_ratio": 1.7787610619469028,
+      "no_speech_prob": 0.02783079631626606,
+      "confidence": 0.894,
       "words": [
         {
           "text": "Look,",
-          "start": 137.58,
-          "end": 137.88,
-          "confidence": 0.836
+          "start": 137.64,
+          "end": 137.9,
+          "confidence": 0.901
         },
         {
           "text": "okay,",
-          "start": 138.4,
-          "end": 138.6,
-          "confidence": 0.769
+          "start": 138.42,
+          "end": 138.58,
+          "confidence": 0.804
         },
         {
           "text": "I'm",
           "start": 138.76,
           "end": 138.94,
-          "confidence": 0.98
+          "confidence": 0.822
         },
         {
-          "text": "Hoping",
+          "text": "hoping",
           "start": 138.94,
-          "end": 139.22,
-          "confidence": 0.711
+          "end": 139.16,
+          "confidence": 0.849
         },
         {
           "text": "that",
-          "start": 139.22,
+          "start": 139.16,
           "end": 139.34,
-          "confidence": 0.945
+          "confidence": 0.98
         },
         {
           "text": "somebody",
           "start": 139.34,
           "end": 139.58,
-          "confidence": 0.991
+          "confidence": 0.982
         },
         {
           "text": "pray",
           "start": 139.58,
           "end": 139.86,
-          "confidence": 0.809
+          "confidence": 0.88
         },
         {
           "text": "for",
           "start": 139.86,
-          "end": 140.0,
-          "confidence": 0.971
+          "end": 140.02,
+          "confidence": 0.923
         },
         {
           "text": "me",
-          "start": 140.0,
-          "end": 140.18,
+          "start": 140.02,
+          "end": 140.2,
           "confidence": 0.999
         }
       ]
     },
     {
-      "id": 14,
-      "seek": 11320,
-      "start": 140.36,
-      "end": 143.18,
-      "text": " I'm praying that somebody hold for me I'm staying where nobody's supposed to be",
+      "id": 17,
+      "seek": 12000,
+      "start": 140.32,
+      "end": 141.68,
+      "text": " I'm praying that somebody vote for me",
       "tokens": [
-        51704,
+        51367,
         286,
         478,
         15611,
         300,
         2618,
-        1797,
+        4740,
         337,
         385,
+        51440
+      ],
+      "temperature": 0.4,
+      "avg_logprob": -0.5485876959723395,
+      "compression_ratio": 1.7787610619469028,
+      "no_speech_prob": 0.02783079631626606,
+      "confidence": 0.87,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 140.32,
+          "end": 140.44,
+          "confidence": 0.924
+        },
+        {
+          "text": "praying",
+          "start": 140.44,
+          "end": 140.64,
+          "confidence": 0.991
+        },
+        {
+          "text": "that",
+          "start": 140.64,
+          "end": 140.86,
+          "confidence": 0.898
+        },
+        {
+          "text": "somebody",
+          "start": 140.86,
+          "end": 141.1,
+          "confidence": 0.991
+        },
+        {
+          "text": "vote",
+          "start": 141.1,
+          "end": 141.34,
+          "confidence": 0.439
+        },
+        {
+          "text": "for",
+          "start": 141.34,
+          "end": 141.5,
+          "confidence": 0.999
+        },
+        {
+          "text": "me",
+          "start": 141.5,
+          "end": 141.68,
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "seek": 12000,
+      "start": 141.7,
+      "end": 143.21,
+      "text": " I'm staying where nobody's supposed to be",
+      "tokens": [
+        51440,
         286,
         478,
         7939,
@@ -1210,245 +1474,225 @@
         3442,
         281,
         312,
-        51856
+        51520
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.3664691770398939,
-      "compression_ratio": 1.8466666666666667,
-      "no_speech_prob": 0.30523499846458435,
-      "confidence": 0.825,
+      "avg_logprob": -0.5485876959723395,
+      "compression_ratio": 1.7787610619469028,
+      "no_speech_prob": 0.02783079631626606,
+      "confidence": 0.913,
       "words": [
         {
           "text": "I'm",
-          "start": 140.36,
-          "end": 140.48,
-          "confidence": 0.632
-        },
-        {
-          "text": "praying",
-          "start": 140.48,
-          "end": 140.64,
-          "confidence": 0.892
-        },
-        {
-          "text": "that",
-          "start": 140.64,
-          "end": 140.84,
-          "confidence": 0.968
-        },
-        {
-          "text": "somebody",
-          "start": 140.84,
-          "end": 141.1,
-          "confidence": 0.997
-        },
-        {
-          "text": "hold",
-          "start": 141.1,
-          "end": 141.34,
-          "confidence": 0.383
-        },
-        {
-          "text": "for",
-          "start": 141.34,
-          "end": 141.5,
-          "confidence": 0.996
-        },
-        {
-          "text": "me",
-          "start": 141.5,
-          "end": 141.68,
-          "confidence": 1.0
-        },
-        {
-          "text": "I'm",
-          "start": 141.68,
+          "start": 141.7,
           "end": 141.96,
-          "confidence": 0.922
+          "confidence": 0.984
         },
         {
           "text": "staying",
           "start": 141.96,
           "end": 142.16,
-          "confidence": 0.754
+          "confidence": 0.807
         },
         {
           "text": "where",
           "start": 142.16,
           "end": 142.34,
-          "confidence": 0.931
+          "confidence": 0.948
         },
         {
           "text": "nobody's",
           "start": 142.34,
-          "end": 142.7,
-          "confidence": 0.723
+          "end": 142.66,
+          "confidence": 0.787
         },
         {
           "text": "supposed",
-          "start": 142.7,
+          "start": 142.66,
           "end": 142.96,
-          "confidence": 0.964
+          "confidence": 0.962
         },
         {
           "text": "to",
           "start": 142.96,
           "end": 143.1,
-          "confidence": 0.986
+          "confidence": 0.998
         },
         {
           "text": "be",
           "start": 143.1,
-          "end": 143.18,
-          "confidence": 0.971
+          "end": 143.21,
+          "confidence": 0.998
         }
       ]
     },
     {
-      "id": 15,
-      "seek": 14304,
-      "start": 143.24,
-      "end": 146.3,
-      "text": " I proposed it, being a wreck of emotions Ready to go, whenever you let me know",
+      "id": 19,
+      "seek": 12000,
+      "start": 143.21,
+      "end": 144.98,
+      "text": " I propose to be in the wreck of emotions",
       "tokens": [
-        50364,
+        51520,
         286,
-        10348,
-        309,
-        11,
-        885,
-        257,
+        17421,
+        281,
+        312,
+        294,
+        264,
         21478,
         295,
         8462,
-        9944,
-        281,
-        352,
-        11,
-        5699,
-        291,
-        718,
-        385,
-        458,
-        50520
+        51615
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.3305136264898838,
-      "compression_ratio": 1.7108433734939759,
-      "no_speech_prob": 0.01570451445877552,
-      "confidence": 0.786,
+      "avg_logprob": -0.5485876959723395,
+      "compression_ratio": 1.7787610619469028,
+      "no_speech_prob": 0.02783079631626606,
+      "confidence": 0.51,
       "words": [
         {
           "text": "I",
-          "start": 143.24,
+          "start": 143.21,
           "end": 143.42,
-          "confidence": 0.486
+          "confidence": 0.342
         },
         {
-          "text": "proposed",
+          "text": "propose",
           "start": 143.42,
           "end": 143.72,
-          "confidence": 0.251
+          "confidence": 0.33
         },
         {
-          "text": "it,",
+          "text": "to",
           "start": 143.72,
-          "end": 143.94,
-          "confidence": 0.939
+          "end": 143.9,
+          "confidence": 0.767
         },
         {
-          "text": "being",
-          "start": 143.96,
-          "end": 144.14,
-          "confidence": 0.821
+          "text": "be",
+          "start": 143.9,
+          "end": 144.04,
+          "confidence": 0.529
         },
         {
-          "text": "a",
-          "start": 144.14,
-          "end": 144.28,
-          "confidence": 0.886
+          "text": "in",
+          "start": 144.04,
+          "end": 144.2,
+          "confidence": 0.82
+        },
+        {
+          "text": "the",
+          "start": 144.2,
+          "end": 144.3,
+          "confidence": 0.299
         },
         {
           "text": "wreck",
-          "start": 144.28,
+          "start": 144.3,
           "end": 144.4,
-          "confidence": 0.967
+          "confidence": 0.216
         },
         {
           "text": "of",
           "start": 144.4,
           "end": 144.54,
-          "confidence": 0.992
+          "confidence": 0.996
         },
         {
           "text": "emotions",
           "start": 144.54,
-          "end": 145.0,
+          "end": 144.98,
           "confidence": 0.963
-        },
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "seek": 12000,
+      "start": 145.06,
+      "end": 146.32,
+      "text": " Ready to go whenever you let me know",
+      "tokens": [
+        51615,
+        9944,
+        281,
+        352,
+        5699,
+        291,
+        718,
+        385,
+        458,
+        51680
+      ],
+      "temperature": 0.4,
+      "avg_logprob": -0.5485876959723395,
+      "compression_ratio": 1.7787610619469028,
+      "no_speech_prob": 0.02783079631626606,
+      "confidence": 0.936,
+      "words": [
         {
           "text": "Ready",
-          "start": 145.0,
+          "start": 145.06,
           "end": 145.3,
-          "confidence": 0.887
+          "confidence": 0.958
         },
         {
           "text": "to",
           "start": 145.3,
           "end": 145.46,
-          "confidence": 0.995
+          "confidence": 0.998
         },
         {
-          "text": "go,",
+          "text": "go",
           "start": 145.46,
           "end": 145.6,
           "confidence": 0.997
         },
         {
           "text": "whenever",
-          "start": 145.68,
+          "start": 145.6,
           "end": 145.8,
-          "confidence": 0.556
+          "confidence": 0.885
         },
         {
           "text": "you",
           "start": 145.8,
-          "end": 145.94,
-          "confidence": 0.602
+          "end": 145.96,
+          "confidence": 0.724
         },
         {
           "text": "let",
-          "start": 145.94,
-          "end": 146.06,
-          "confidence": 0.946
+          "start": 145.96,
+          "end": 146.08,
+          "confidence": 0.974
         },
         {
           "text": "me",
-          "start": 146.06,
+          "start": 146.08,
           "end": 146.18,
-          "confidence": 0.995
+          "confidence": 0.999
         },
         {
           "text": "know",
           "start": 146.18,
-          "end": 146.3,
-          "confidence": 0.984
+          "end": 146.32,
+          "confidence": 0.988
         }
       ]
     },
     {
-      "id": 16,
-      "seek": 14304,
+      "id": 21,
+      "seek": 12000,
       "start": 146.34,
-      "end": 149.8,
-      "text": " The road is long, so put the pedal into the flow The enemy on my trail, my energy unavailable",
+      "end": 147.86,
+      "text": " The road is long so put the pedal into the flow",
       "tokens": [
-        50520,
+        51680,
         440,
         3060,
         307,
         938,
-        11,
         370,
         829,
         264,
@@ -1456,6 +1700,90 @@
         666,
         264,
         3095,
+        51754
+      ],
+      "temperature": 0.4,
+      "avg_logprob": -0.5485876959723395,
+      "compression_ratio": 1.7787610619469028,
+      "no_speech_prob": 0.02783079631626606,
+      "confidence": 0.932,
+      "words": [
+        {
+          "text": "The",
+          "start": 146.34,
+          "end": 146.52,
+          "confidence": 0.974
+        },
+        {
+          "text": "road",
+          "start": 146.52,
+          "end": 146.68,
+          "confidence": 0.987
+        },
+        {
+          "text": "is",
+          "start": 146.68,
+          "end": 146.78,
+          "confidence": 0.977
+        },
+        {
+          "text": "long",
+          "start": 146.78,
+          "end": 146.92,
+          "confidence": 0.891
+        },
+        {
+          "text": "so",
+          "start": 146.92,
+          "end": 147.04,
+          "confidence": 0.827
+        },
+        {
+          "text": "put",
+          "start": 147.04,
+          "end": 147.16,
+          "confidence": 0.971
+        },
+        {
+          "text": "the",
+          "start": 147.16,
+          "end": 147.28,
+          "confidence": 0.974
+        },
+        {
+          "text": "pedal",
+          "start": 147.28,
+          "end": 147.42,
+          "confidence": 0.925
+        },
+        {
+          "text": "into",
+          "start": 147.42,
+          "end": 147.6,
+          "confidence": 0.944
+        },
+        {
+          "text": "the",
+          "start": 147.6,
+          "end": 147.74,
+          "confidence": 0.994
+        },
+        {
+          "text": "flow",
+          "start": 147.74,
+          "end": 147.86,
+          "confidence": 0.816
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "seek": 12000,
+      "start": 147.9,
+      "end": 149.8,
+      "text": " The enemy on my trail, my energy unavailable",
+      "tokens": [
+        51754,
         440,
         5945,
         322,
@@ -1466,282 +1794,220 @@
         2281,
         36541,
         32699,
-        50700
+        51854
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.3305136264898838,
-      "compression_ratio": 1.7108433734939759,
-      "no_speech_prob": 0.01570451445877552,
-      "confidence": 0.937,
+      "avg_logprob": -0.5485876959723395,
+      "compression_ratio": 1.7787610619469028,
+      "no_speech_prob": 0.02783079631626606,
+      "confidence": 0.957,
       "words": [
         {
           "text": "The",
-          "start": 146.34,
-          "end": 146.52,
-          "confidence": 0.986
-        },
-        {
-          "text": "road",
-          "start": 146.52,
-          "end": 146.68,
-          "confidence": 0.984
-        },
-        {
-          "text": "is",
-          "start": 146.68,
-          "end": 146.76,
-          "confidence": 0.99
-        },
-        {
-          "text": "long,",
-          "start": 146.76,
-          "end": 146.9,
-          "confidence": 0.963
-        },
-        {
-          "text": "so",
-          "start": 146.96,
-          "end": 147.02,
-          "confidence": 0.985
-        },
-        {
-          "text": "put",
-          "start": 147.02,
-          "end": 147.16,
-          "confidence": 0.963
-        },
-        {
-          "text": "the",
-          "start": 147.16,
-          "end": 147.28,
-          "confidence": 0.977
-        },
-        {
-          "text": "pedal",
-          "start": 147.28,
-          "end": 147.4,
-          "confidence": 0.994
-        },
-        {
-          "text": "into",
-          "start": 147.4,
-          "end": 147.6,
-          "confidence": 0.918
-        },
-        {
-          "text": "the",
-          "start": 147.6,
-          "end": 147.76,
-          "confidence": 0.992
-        },
-        {
-          "text": "flow",
-          "start": 147.76,
-          "end": 147.88,
-          "confidence": 0.798
-        },
-        {
-          "text": "The",
-          "start": 147.88,
-          "end": 148.08,
-          "confidence": 0.574
+          "start": 147.9,
+          "end": 148.1,
+          "confidence": 0.913
         },
         {
           "text": "enemy",
-          "start": 148.08,
-          "end": 148.28,
-          "confidence": 0.897
+          "start": 148.1,
+          "end": 148.26,
+          "confidence": 0.891
         },
         {
           "text": "on",
-          "start": 148.28,
+          "start": 148.26,
           "end": 148.38,
-          "confidence": 0.976
+          "confidence": 0.965
         },
         {
           "text": "my",
           "start": 148.38,
-          "end": 148.5,
-          "confidence": 0.974
+          "end": 148.52,
+          "confidence": 0.982
         },
         {
           "text": "trail,",
-          "start": 148.5,
-          "end": 148.64,
-          "confidence": 0.988
+          "start": 148.52,
+          "end": 148.66,
+          "confidence": 0.99
         },
         {
           "text": "my",
-          "start": 148.7,
+          "start": 148.72,
           "end": 148.86,
-          "confidence": 0.977
+          "confidence": 0.991
         },
         {
           "text": "energy",
           "start": 148.86,
           "end": 149.1,
-          "confidence": 0.996
+          "confidence": 0.992
         },
         {
           "text": "unavailable",
           "start": 149.1,
           "end": 149.8,
-          "confidence": 0.966
+          "confidence": 0.948
         }
       ]
     },
     {
-      "id": 17,
-      "seek": 14304,
-      "start": 150.0,
-      "end": 152.53,
-      "text": " I'ma tell him I said the way go Way, when I'm plottin' my drive to the top",
+      "id": 23,
+      "seek": 14980,
+      "start": 150.04,
+      "end": 151.18,
+      "text": " Imma tell the master the way go",
       "tokens": [
-        50700,
-        286,
-        478,
-        64,
+        50370,
+        50089,
         980,
-        796,
-        286,
-        848,
+        264,
+        4505,
         264,
         636,
         352,
-        9558,
-        11,
-        562,
-        286,
-        478,
-        499,
-        1521,
-        259,
-        6,
-        452,
-        3332,
-        281,
-        264,
-        1192,
-        50832
+        50430
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.3305136264898838,
-      "compression_ratio": 1.7108433734939759,
-      "no_speech_prob": 0.01570451445877552,
-      "confidence": 0.577,
+      "avg_logprob": -0.49008950787390065,
+      "compression_ratio": 1.738872403560831,
+      "no_speech_prob": 0.005245593376457691,
+      "confidence": 0.574,
       "words": [
         {
-          "text": "I'ma",
-          "start": 150.0,
-          "end": 150.24,
-          "confidence": 0.816
+          "text": "Imma",
+          "start": 150.04,
+          "end": 150.22,
+          "confidence": 0.255
         },
         {
           "text": "tell",
-          "start": 150.24,
+          "start": 150.22,
           "end": 150.36,
-          "confidence": 0.991
-        },
-        {
-          "text": "him",
-          "start": 150.36,
-          "end": 150.48,
-          "confidence": 0.343
-        },
-        {
-          "text": "I",
-          "start": 150.48,
-          "end": 150.62,
-          "confidence": 0.52
-        },
-        {
-          "text": "said",
-          "start": 150.62,
-          "end": 150.76,
-          "confidence": 0.341
+          "confidence": 0.945
         },
         {
           "text": "the",
-          "start": 150.76,
-          "end": 150.94,
-          "confidence": 0.553
+          "start": 150.36,
+          "end": 150.46,
+          "confidence": 0.402
+        },
+        {
+          "text": "master",
+          "start": 150.46,
+          "end": 150.68,
+          "confidence": 0.399
+        },
+        {
+          "text": "the",
+          "start": 150.68,
+          "end": 150.9,
+          "confidence": 0.823
         },
         {
           "text": "way",
-          "start": 150.94,
+          "start": 150.9,
           "end": 151.0,
-          "confidence": 0.991
+          "confidence": 0.994
         },
         {
           "text": "go",
           "start": 151.0,
           "end": 151.18,
-          "confidence": 0.725
-        },
+          "confidence": 0.646
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "seek": 14980,
+      "start": 151.18,
+      "end": 152.56,
+      "text": " When the plot on my track to the top",
+      "tokens": [
+        50430,
+        1133,
+        264,
+        7542,
+        322,
+        452,
+        2837,
+        281,
+        264,
+        1192,
+        50497
+      ],
+      "temperature": 0.4,
+      "avg_logprob": -0.49008950787390065,
+      "compression_ratio": 1.738872403560831,
+      "no_speech_prob": 0.005245593376457691,
+      "confidence": 0.591,
+      "words": [
         {
-          "text": "Way,",
+          "text": "When",
           "start": 151.18,
-          "end": 151.38,
-          "confidence": 0.361
+          "end": 151.44,
+          "confidence": 0.081
         },
         {
-          "text": "when",
+          "text": "the",
           "start": 151.44,
-          "end": 151.56,
-          "confidence": 0.9
+          "end": 151.62,
+          "confidence": 0.508
         },
         {
-          "text": "I'm",
-          "start": 151.56,
-          "end": 151.72,
-          "confidence": 0.677
+          "text": "plot",
+          "start": 151.62,
+          "end": 151.78,
+          "confidence": 0.419
         },
         {
-          "text": "plottin'",
-          "start": 151.72,
-          "end": 151.86,
-          "confidence": 0.317
+          "text": "on",
+          "start": 151.78,
+          "end": 151.9,
+          "confidence": 0.847
         },
         {
           "text": "my",
-          "start": 151.86,
-          "end": 151.98,
-          "confidence": 0.531
+          "start": 151.9,
+          "end": 152.02,
+          "confidence": 0.991
         },
         {
-          "text": "drive",
-          "start": 151.98,
+          "text": "track",
+          "start": 152.02,
           "end": 152.16,
-          "confidence": 0.356
+          "confidence": 0.642
         },
         {
           "text": "to",
           "start": 152.16,
           "end": 152.3,
-          "confidence": 0.95
+          "confidence": 0.951
         },
         {
           "text": "the",
           "start": 152.3,
-          "end": 152.42,
-          "confidence": 0.993
+          "end": 152.44,
+          "confidence": 0.996
         },
         {
           "text": "top",
-          "start": 152.42,
-          "end": 152.53,
-          "confidence": 0.925
+          "start": 152.44,
+          "end": 152.56,
+          "confidence": 0.998
         }
       ]
     },
     {
-      "id": 18,
-      "seek": 14304,
-      "start": 152.53,
-      "end": 154.42,
-      "text": " I been out of shape, thinking out the box I'm an astronaut",
+      "id": 25,
+      "seek": 14980,
+      "start": 152.56,
+      "end": 154.36,
+      "text": " I been out of shape, thinking that I'm a box of an astronaut",
       "tokens": [
-        50832,
+        50497,
         286,
         668,
         484,
@@ -1749,103 +2015,110 @@
         3909,
         11,
         1953,
-        484,
-        264,
-        2424,
+        300,
         286,
         478,
+        257,
+        2424,
+        295,
         364,
         18516,
-        50928
+        50597
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.3305136264898838,
-      "compression_ratio": 1.7108433734939759,
-      "no_speech_prob": 0.01570451445877552,
-      "confidence": 0.738,
+      "avg_logprob": -0.49008950787390065,
+      "compression_ratio": 1.738872403560831,
+      "no_speech_prob": 0.005245593376457691,
+      "confidence": 0.725,
       "words": [
         {
           "text": "I",
-          "start": 152.53,
+          "start": 152.56,
           "end": 152.7,
-          "confidence": 0.994
+          "confidence": 0.98
         },
         {
           "text": "been",
           "start": 152.7,
           "end": 152.76,
-          "confidence": 0.709
+          "confidence": 0.621
         },
         {
           "text": "out",
           "start": 152.76,
           "end": 152.9,
-          "confidence": 0.583
+          "confidence": 0.729
         },
         {
           "text": "of",
           "start": 152.9,
-          "end": 152.98,
-          "confidence": 0.956
+          "end": 153.02,
+          "confidence": 0.966
         },
         {
           "text": "shape,",
-          "start": 152.98,
+          "start": 153.02,
           "end": 153.12,
-          "confidence": 0.998
+          "confidence": 0.999
         },
         {
           "text": "thinking",
-          "start": 153.28,
+          "start": 153.3,
           "end": 153.32,
-          "confidence": 0.49
+          "confidence": 0.75
         },
         {
-          "text": "out",
+          "text": "that",
           "start": 153.32,
           "end": 153.46,
-          "confidence": 0.303
-        },
-        {
-          "text": "the",
-          "start": 153.46,
-          "end": 153.56,
-          "confidence": 0.477
-        },
-        {
-          "text": "box",
-          "start": 153.56,
-          "end": 153.76,
-          "confidence": 0.986
+          "confidence": 0.363
         },
         {
           "text": "I'm",
+          "start": 153.46,
+          "end": 153.66,
+          "confidence": 0.597
+        },
+        {
+          "text": "a",
+          "start": 153.66,
+          "end": 153.74,
+          "confidence": 0.678
+        },
+        {
+          "text": "box",
+          "start": 153.74,
+          "end": 153.76,
+          "confidence": 0.878
+        },
+        {
+          "text": "of",
           "start": 153.76,
           "end": 153.9,
-          "confidence": 0.845
+          "confidence": 0.465
         },
         {
           "text": "an",
           "start": 153.9,
           "end": 154.06,
-          "confidence": 0.996
+          "confidence": 0.981
         },
         {
           "text": "astronaut",
           "start": 154.06,
-          "end": 154.42,
-          "confidence": 0.985
+          "end": 154.36,
+          "confidence": 0.991
         }
       ]
     },
     {
-      "id": 19,
-      "seek": 14304,
-      "start": 154.46,
-      "end": 157.79,
-      "text": " Blasted off the planet, rocked the cars Catastrophe, and it matters more because I had it",
+      "id": 26,
+      "seek": 14980,
+      "start": 154.5,
+      "end": 156.42,
+      "text": " Blasted off the planet, rocked the cars, catastrophic",
       "tokens": [
-        50928,
+        50597,
         2177,
         34440,
         766,
@@ -1856,11 +2129,75 @@
         292,
         264,
         5163,
-        9565,
-        525,
-        27194,
         11,
-        293,
+        34915,
+        50697
+      ],
+      "temperature": 0.4,
+      "avg_logprob": -0.49008950787390065,
+      "compression_ratio": 1.738872403560831,
+      "no_speech_prob": 0.005245593376457691,
+      "confidence": 0.726,
+      "words": [
+        {
+          "text": "Blasted",
+          "start": 154.5,
+          "end": 154.82,
+          "confidence": 0.789
+        },
+        {
+          "text": "off",
+          "start": 154.82,
+          "end": 155.02,
+          "confidence": 0.974
+        },
+        {
+          "text": "the",
+          "start": 155.02,
+          "end": 155.2,
+          "confidence": 0.954
+        },
+        {
+          "text": "planet,",
+          "start": 155.2,
+          "end": 155.36,
+          "confidence": 0.995
+        },
+        {
+          "text": "rocked",
+          "start": 155.44,
+          "end": 155.66,
+          "confidence": 0.687
+        },
+        {
+          "text": "the",
+          "start": 155.66,
+          "end": 155.74,
+          "confidence": 0.83
+        },
+        {
+          "text": "cars,",
+          "start": 155.74,
+          "end": 155.9,
+          "confidence": 0.246
+        },
+        {
+          "text": "catastrophic",
+          "start": 155.9,
+          "end": 156.42,
+          "confidence": 0.733
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "seek": 14980,
+      "start": 156.44,
+      "end": 158.18,
+      "text": " And it matters more because I had it, now I had it",
+      "tokens": [
+        50697,
+        400,
         309,
         7001,
         544,
@@ -1868,122 +2205,101 @@
         286,
         632,
         309,
-        51092
+        11,
+        586,
+        286,
+        632,
+        309,
+        50780
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.3305136264898838,
-      "compression_ratio": 1.7108433734939759,
-      "no_speech_prob": 0.01570451445877552,
-      "confidence": 0.787,
+      "avg_logprob": -0.49008950787390065,
+      "compression_ratio": 1.738872403560831,
+      "no_speech_prob": 0.005245593376457691,
+      "confidence": 0.811,
       "words": [
         {
-          "text": "Blasted",
-          "start": 154.46,
-          "end": 154.82,
-          "confidence": 0.795
-        },
-        {
-          "text": "off",
-          "start": 154.82,
-          "end": 155.02,
-          "confidence": 0.987
-        },
-        {
-          "text": "the",
-          "start": 155.02,
-          "end": 155.18,
-          "confidence": 0.977
-        },
-        {
-          "text": "planet,",
-          "start": 155.18,
-          "end": 155.36,
-          "confidence": 0.997
-        },
-        {
-          "text": "rocked",
-          "start": 155.44,
-          "end": 155.66,
-          "confidence": 0.585
-        },
-        {
-          "text": "the",
-          "start": 155.66,
-          "end": 155.74,
-          "confidence": 0.839
-        },
-        {
-          "text": "cars",
-          "start": 155.74,
-          "end": 155.88,
-          "confidence": 0.58
-        },
-        {
-          "text": "Catastrophe,",
-          "start": 155.88,
-          "end": 156.44,
-          "confidence": 0.764
-        },
-        {
-          "text": "and",
-          "start": 156.5,
+          "text": "And",
+          "start": 156.44,
           "end": 156.64,
-          "confidence": 0.94
+          "confidence": 0.821
         },
         {
           "text": "it",
           "start": 156.64,
           "end": 156.78,
-          "confidence": 0.67
+          "confidence": 0.723
         },
         {
           "text": "matters",
           "start": 156.78,
-          "end": 156.94,
-          "confidence": 0.997
+          "end": 156.96,
+          "confidence": 0.995
         },
         {
           "text": "more",
-          "start": 156.94,
-          "end": 157.16,
-          "confidence": 0.988
+          "start": 156.96,
+          "end": 157.18,
+          "confidence": 0.984
         },
         {
           "text": "because",
-          "start": 157.16,
-          "end": 157.4,
-          "confidence": 0.511
+          "start": 157.18,
+          "end": 157.42,
+          "confidence": 0.861
         },
         {
           "text": "I",
-          "start": 157.4,
-          "end": 157.56,
-          "confidence": 0.713
+          "start": 157.42,
+          "end": 157.58,
+          "confidence": 0.774
         },
         {
           "text": "had",
-          "start": 157.56,
-          "end": 157.68,
-          "confidence": 0.88
+          "start": 157.58,
+          "end": 157.66,
+          "confidence": 0.939
+        },
+        {
+          "text": "it,",
+          "start": 157.66,
+          "end": 157.8,
+          "confidence": 0.988
+        },
+        {
+          "text": "now",
+          "start": 157.8,
+          "end": 157.94,
+          "confidence": 0.532
+        },
+        {
+          "text": "I",
+          "start": 157.94,
+          "end": 158.08,
+          "confidence": 0.655
+        },
+        {
+          "text": "had",
+          "start": 158.08,
+          "end": 158.12,
+          "confidence": 0.947
         },
         {
           "text": "it",
-          "start": 157.68,
-          "end": 157.79,
-          "confidence": 0.927
+          "start": 158.12,
+          "end": 158.18,
+          "confidence": 0.68
         }
       ]
     },
     {
-      "id": 20,
-      "seek": 14304,
-      "start": 157.79,
+      "id": 28,
+      "seek": 14980,
+      "start": 158.18,
       "end": 159.84,
-      "text": " Now had I thought about wreaking havoc on an opposition",
+      "text": " I thought about wreaking havoc on an opposition",
       "tokens": [
-        51092,
-        823,
-        632,
+        50780,
         286,
         1194,
         466,
@@ -1993,171 +2309,154 @@
         322,
         364,
         13504,
-        51200
+        50864
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.3305136264898838,
-      "compression_ratio": 1.7108433734939759,
-      "no_speech_prob": 0.01570451445877552,
-      "confidence": 0.773,
+      "avg_logprob": -0.49008950787390065,
+      "compression_ratio": 1.738872403560831,
+      "no_speech_prob": 0.005245593376457691,
+      "confidence": 0.96,
       "words": [
         {
-          "text": "Now",
-          "start": 157.79,
-          "end": 157.96,
-          "confidence": 0.539
-        },
-        {
-          "text": "had",
-          "start": 157.96,
-          "end": 158.12,
-          "confidence": 0.204
-        },
-        {
           "text": "I",
-          "start": 158.12,
-          "end": 158.22,
-          "confidence": 0.954
+          "start": 158.18,
+          "end": 158.24,
+          "confidence": 0.9
         },
         {
           "text": "thought",
-          "start": 158.22,
+          "start": 158.24,
           "end": 158.38,
-          "confidence": 0.991
+          "confidence": 0.983
         },
         {
           "text": "about",
           "start": 158.38,
           "end": 158.58,
-          "confidence": 0.99
+          "confidence": 0.98
         },
         {
           "text": "wreaking",
           "start": 158.58,
           "end": 158.86,
-          "confidence": 0.947
+          "confidence": 0.989
         },
         {
           "text": "havoc",
           "start": 158.86,
-          "end": 159.1,
+          "end": 159.08,
           "confidence": 1.0
         },
         {
           "text": "on",
-          "start": 159.1,
+          "start": 159.08,
           "end": 159.3,
-          "confidence": 0.723
+          "confidence": 0.913
         },
         {
           "text": "an",
           "start": 159.3,
           "end": 159.46,
-          "confidence": 0.918
+          "confidence": 0.912
         },
         {
           "text": "opposition",
           "start": 159.46,
           "end": 159.84,
-          "confidence": 0.965
+          "confidence": 0.984
         }
       ]
     },
     {
-      "id": 21,
-      "seek": 14304,
-      "start": 159.84,
-      "end": 162.18,
-      "text": " Kinda shocking, ain't one aesthetic With precision, I'm automatic",
+      "id": 29,
+      "seek": 14980,
+      "start": 159.86,
+      "end": 161.58,
+      "text": " Kinda shockin', they want it static, with precision",
       "tokens": [
-        51200,
+        50864,
         35553,
-        18776,
+        5588,
+        259,
+        6098,
+        436,
+        528,
+        309,
+        13437,
         11,
-        7862,
-        380,
-        472,
-        20092,
-        2022,
+        365,
         18356,
-        11,
-        286,
-        478,
-        12509,
-        51316
+        50952
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.3305136264898838,
-      "compression_ratio": 1.7108433734939759,
-      "no_speech_prob": 0.01570451445877552,
-      "confidence": 0.626,
+      "avg_logprob": -0.49008950787390065,
+      "compression_ratio": 1.738872403560831,
+      "no_speech_prob": 0.005245593376457691,
+      "confidence": 0.557,
       "words": [
         {
           "text": "Kinda",
-          "start": 159.84,
+          "start": 159.86,
           "end": 160.12,
-          "confidence": 0.669
+          "confidence": 0.739
         },
         {
-          "text": "shocking,",
+          "text": "shockin',",
           "start": 160.12,
-          "end": 160.38,
-          "confidence": 0.386
+          "end": 160.48,
+          "confidence": 0.389
         },
         {
-          "text": "ain't",
-          "start": 160.52,
-          "end": 160.62,
-          "confidence": 0.542
+          "text": "they",
+          "start": 160.48,
+          "end": 160.6,
+          "confidence": 0.304
         },
         {
-          "text": "one",
-          "start": 160.62,
+          "text": "want",
+          "start": 160.6,
           "end": 160.74,
-          "confidence": 0.441
+          "confidence": 0.501
         },
         {
-          "text": "aesthetic",
+          "text": "it",
           "start": 160.74,
-          "end": 161.04,
-          "confidence": 0.518
+          "end": 160.88,
+          "confidence": 0.651
         },
         {
-          "text": "With",
-          "start": 161.04,
-          "end": 161.28,
-          "confidence": 0.447
+          "text": "static,",
+          "start": 160.88,
+          "end": 161.02,
+          "confidence": 0.984
         },
         {
-          "text": "precision,",
-          "start": 161.28,
+          "text": "with",
+          "start": 161.16,
+          "end": 161.3,
+          "confidence": 0.642
+        },
+        {
+          "text": "precision",
+          "start": 161.3,
           "end": 161.58,
-          "confidence": 0.824
-        },
-        {
-          "text": "I'm",
-          "start": 161.6,
-          "end": 161.88,
-          "confidence": 0.959
-        },
-        {
-          "text": "automatic",
-          "start": 161.88,
-          "end": 162.18,
-          "confidence": 0.987
+          "confidence": 0.737
         }
       ]
     },
     {
-      "id": 22,
-      "seek": 14304,
-      "start": 162.2,
-      "end": 164.55,
-      "text": " Quarterback, I ain't talkin' second Pack it, pack it up, I don't panic",
+      "id": 30,
+      "seek": 14980,
+      "start": 161.64,
+      "end": 163.38,
+      "text": " I'm automatic, quarterback, I ain't talkin' second",
       "tokens": [
-        51316,
-        43794,
-        3207,
+        50952,
+        286,
+        478,
+        12509,
+        11,
+        31952,
         11,
         286,
         7862,
@@ -2165,6 +2464,66 @@
         39243,
         6,
         1150,
+        51042
+      ],
+      "temperature": 0.4,
+      "avg_logprob": -0.49008950787390065,
+      "compression_ratio": 1.738872403560831,
+      "no_speech_prob": 0.005245593376457691,
+      "confidence": 0.839,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 161.64,
+          "end": 161.88,
+          "confidence": 0.968
+        },
+        {
+          "text": "automatic,",
+          "start": 161.88,
+          "end": 162.2,
+          "confidence": 0.968
+        },
+        {
+          "text": "quarterback,",
+          "start": 162.3,
+          "end": 162.58,
+          "confidence": 0.777
+        },
+        {
+          "text": "I",
+          "start": 162.66,
+          "end": 162.78,
+          "confidence": 0.787
+        },
+        {
+          "text": "ain't",
+          "start": 162.78,
+          "end": 162.9,
+          "confidence": 0.982
+        },
+        {
+          "text": "talkin'",
+          "start": 162.9,
+          "end": 163.24,
+          "confidence": 0.749
+        },
+        {
+          "text": "second",
+          "start": 163.24,
+          "end": 163.38,
+          "confidence": 0.574
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "seek": 14980,
+      "start": 163.38,
+      "end": 165.2,
+      "text": " Pack it, pack it up, I don't panic, better, batter up",
+      "tokens": [
+        51042,
         18466,
         309,
         11,
@@ -2176,410 +2535,395 @@
         500,
         380,
         14783,
-        51432
+        11,
+        1101,
+        11,
+        4220,
+        493,
+        51130
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.3305136264898838,
-      "compression_ratio": 1.7108433734939759,
-      "no_speech_prob": 0.01570451445877552,
-      "confidence": 0.791,
+      "avg_logprob": -0.49008950787390065,
+      "compression_ratio": 1.738872403560831,
+      "no_speech_prob": 0.005245593376457691,
+      "confidence": 0.868,
       "words": [
-        {
-          "text": "Quarterback,",
-          "start": 162.2,
-          "end": 162.66,
-          "confidence": 0.611
-        },
-        {
-          "text": "I",
-          "start": 162.66,
-          "end": 162.8,
-          "confidence": 0.789
-        },
-        {
-          "text": "ain't",
-          "start": 162.8,
-          "end": 162.92,
-          "confidence": 0.989
-        },
-        {
-          "text": "talkin'",
-          "start": 162.92,
-          "end": 163.16,
-          "confidence": 0.801
-        },
-        {
-          "text": "second",
-          "start": 163.16,
-          "end": 163.38,
-          "confidence": 0.459
-        },
         {
           "text": "Pack",
           "start": 163.38,
           "end": 163.6,
-          "confidence": 0.325
+          "confidence": 0.953
         },
         {
           "text": "it,",
           "start": 163.6,
           "end": 163.68,
-          "confidence": 0.917
+          "confidence": 0.925
         },
         {
           "text": "pack",
-          "start": 163.7,
-          "end": 163.86,
-          "confidence": 0.969
+          "start": 163.68,
+          "end": 163.88,
+          "confidence": 0.964
         },
         {
           "text": "it",
-          "start": 163.86,
-          "end": 163.98,
+          "start": 163.88,
+          "end": 164.02,
           "confidence": 0.998
         },
         {
           "text": "up,",
-          "start": 163.98,
+          "start": 164.02,
           "end": 164.12,
-          "confidence": 0.974
+          "confidence": 0.979
         },
         {
           "text": "I",
           "start": 164.12,
-          "end": 164.18,
-          "confidence": 0.984
+          "end": 164.22,
+          "confidence": 0.963
         },
         {
           "text": "don't",
-          "start": 164.18,
-          "end": 164.36,
-          "confidence": 0.888
+          "start": 164.22,
+          "end": 164.34,
+          "confidence": 0.856
         },
         {
-          "text": "panic",
-          "start": 164.36,
-          "end": 164.55,
-          "confidence": 0.997
+          "text": "panic,",
+          "start": 164.34,
+          "end": 164.56,
+          "confidence": 0.999
+        },
+        {
+          "text": "better,",
+          "start": 164.62,
+          "end": 164.86,
+          "confidence": 0.64
+        },
+        {
+          "text": "batter",
+          "start": 164.88,
+          "end": 165.04,
+          "confidence": 0.509
+        },
+        {
+          "text": "up",
+          "start": 165.04,
+          "end": 165.2,
+          "confidence": 0.958
         }
       ]
     },
     {
-      "id": 23,
-      "seek": 14304,
-      "start": 164.55,
-      "end": 166.78,
-      "text": " Better, better, up who the baddest It don't matter, cause we it's your",
+      "id": 32,
+      "seek": 14980,
+      "start": 165.2,
+      "end": 166.76,
+      "text": " Who the baddest? It don't matter, cuz we it's your",
       "tokens": [
-        51432,
-        15753,
-        11,
-        1101,
-        11,
-        493,
-        567,
+        51130,
+        2102,
         264,
         1578,
         23748,
+        30,
         467,
         500,
         380,
         1871,
         11,
-        3082,
+        11910,
         321,
         309,
         311,
         428,
-        51544
+        51209
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.3305136264898838,
-      "compression_ratio": 1.7108433734939759,
-      "no_speech_prob": 0.01570451445877552,
-      "confidence": 0.714,
+      "avg_logprob": -0.49008950787390065,
+      "compression_ratio": 1.738872403560831,
+      "no_speech_prob": 0.005245593376457691,
+      "confidence": 0.727,
       "words": [
         {
-          "text": "Better,",
-          "start": 164.55,
-          "end": 164.86,
-          "confidence": 0.633
-        },
-        {
-          "text": "better,",
-          "start": 164.86,
-          "end": 165.1,
-          "confidence": 0.584
-        },
-        {
-          "text": "up",
-          "start": 165.16,
-          "end": 165.3,
-          "confidence": 0.503
-        },
-        {
-          "text": "who",
-          "start": 165.3,
+          "text": "Who",
+          "start": 165.2,
           "end": 165.4,
-          "confidence": 0.782
+          "confidence": 0.994
         },
         {
           "text": "the",
           "start": 165.4,
           "end": 165.54,
-          "confidence": 0.939
+          "confidence": 0.941
         },
         {
-          "text": "baddest",
+          "text": "baddest?",
           "start": 165.54,
           "end": 165.78,
-          "confidence": 0.863
+          "confidence": 0.86
         },
         {
           "text": "It",
-          "start": 165.78,
-          "end": 165.88,
-          "confidence": 0.859
+          "start": 165.86,
+          "end": 165.9,
+          "confidence": 0.931
         },
         {
           "text": "don't",
-          "start": 165.88,
-          "end": 166.0,
-          "confidence": 0.995
+          "start": 165.9,
+          "end": 166.04,
+          "confidence": 0.996
         },
         {
           "text": "matter,",
-          "start": 166.0,
+          "start": 166.04,
           "end": 166.18,
-          "confidence": 0.999
+          "confidence": 0.998
         },
         {
-          "text": "cause",
-          "start": 166.22,
+          "text": "cuz",
+          "start": 166.26,
           "end": 166.4,
-          "confidence": 0.591
+          "confidence": 0.312
         },
         {
           "text": "we",
           "start": 166.4,
           "end": 166.56,
-          "confidence": 0.964
+          "confidence": 0.95
         },
         {
           "text": "it's",
           "start": 166.56,
-          "end": 166.68,
-          "confidence": 0.353
+          "end": 166.66,
+          "confidence": 0.373
         },
         {
           "text": "your",
-          "start": 166.68,
-          "end": 166.78,
-          "confidence": 0.743
+          "start": 166.66,
+          "end": 166.76,
+          "confidence": 0.602
         }
       ]
     },
     {
-      "id": 24,
-      "seek": 14304,
-      "start": 166.78,
-      "end": 172.2,
-      "text": " Everybody wants to be my enemy Spare the sympathy",
+      "id": 33,
+      "seek": 14980,
+      "start": 166.76,
+      "end": 169.68,
+      "text": " Everybody wants to be my enemy",
       "tokens": [
-        51544,
+        51209,
         7646,
         2738,
         281,
         312,
         452,
         5945,
-        1738,
-        543,
-        264,
-        33240,
-        51812
+        51365
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.3305136264898838,
-      "compression_ratio": 1.7108433734939759,
-      "no_speech_prob": 0.01570451445877552,
-      "confidence": 0.957,
+      "avg_logprob": -0.49008950787390065,
+      "compression_ratio": 1.738872403560831,
+      "no_speech_prob": 0.005245593376457691,
+      "confidence": 0.989,
       "words": [
         {
           "text": "Everybody",
-          "start": 166.78,
-          "end": 167.4,
-          "confidence": 0.747
+          "start": 166.76,
+          "end": 167.44,
+          "confidence": 0.961
         },
         {
           "text": "wants",
-          "start": 167.4,
+          "start": 167.44,
           "end": 167.82,
-          "confidence": 0.985
+          "confidence": 0.984
         },
         {
           "text": "to",
           "start": 167.82,
-          "end": 168.02,
+          "end": 167.98,
           "confidence": 0.999
         },
         {
           "text": "be",
-          "start": 168.02,
-          "end": 168.18,
-          "confidence": 0.999
-        },
-        {
-          "text": "my",
-          "start": 168.18,
-          "end": 168.52,
-          "confidence": 0.997
-        },
-        {
-          "text": "enemy",
-          "start": 168.52,
-          "end": 169.84,
+          "start": 167.98,
+          "end": 168.12,
           "confidence": 0.998
         },
         {
-          "text": "Spare",
-          "start": 169.84,
-          "end": 171.28,
-          "confidence": 0.941
+          "text": "my",
+          "start": 168.12,
+          "end": 168.44,
+          "confidence": 0.996
         },
         {
-          "text": "the",
-          "start": 171.28,
-          "end": 171.5,
-          "confidence": 0.999
-        },
-        {
-          "text": "sympathy",
-          "start": 171.5,
-          "end": 172.2,
+          "text": "enemy",
+          "start": 168.44,
+          "end": 169.68,
           "confidence": 0.996
         }
       ]
     },
     {
-      "id": 25,
-      "seek": 17200,
-      "start": 173.1,
-      "end": 178.28,
-      "text": " Everybody wants to be my enemy Oh, the misery",
+      "id": 34,
+      "seek": 14980,
+      "start": 170.62,
+      "end": 176.14,
+      "text": " Smell the sympathy everybody wants to be my enemy",
       "tokens": [
-        50404,
-        7646,
+        51397,
+        3915,
+        898,
+        264,
+        33240,
+        2201,
         2738,
         281,
         312,
         452,
         5945,
-        876,
-        11,
-        264,
-        32309,
-        50664
+        51682
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.36990176930147056,
-      "compression_ratio": 1.8,
-      "no_speech_prob": 0.4770463705062866,
-      "confidence": 0.887,
+      "avg_logprob": -0.49008950787390065,
+      "compression_ratio": 1.738872403560831,
+      "no_speech_prob": 0.005245593376457691,
+      "confidence": 0.937,
       "words": [
         {
-          "text": "Everybody",
-          "start": 173.1,
-          "end": 173.72,
-          "confidence": 0.976
-        },
-        {
-          "text": "wants",
-          "start": 173.72,
-          "end": 174.04,
-          "confidence": 0.989
-        },
-        {
-          "text": "to",
-          "start": 174.04,
-          "end": 174.26,
-          "confidence": 0.999
-        },
-        {
-          "text": "be",
-          "start": 174.26,
-          "end": 174.66,
-          "confidence": 0.999
-        },
-        {
-          "text": "my",
-          "start": 174.66,
-          "end": 175.48,
-          "confidence": 0.945
-        },
-        {
-          "text": "enemy",
-          "start": 175.48,
-          "end": 176.34,
-          "confidence": 0.998
-        },
-        {
-          "text": "Oh,",
-          "start": 176.34,
-          "end": 177.34,
-          "confidence": 0.388
+          "text": "Smell",
+          "start": 170.62,
+          "end": 171.3,
+          "confidence": 0.978
         },
         {
           "text": "the",
-          "start": 177.58,
-          "end": 177.76,
-          "confidence": 0.971
+          "start": 171.3,
+          "end": 171.56,
+          "confidence": 0.999
         },
         {
-          "text": "misery",
-          "start": 177.76,
-          "end": 178.28,
+          "text": "sympathy",
+          "start": 171.56,
+          "end": 172.28,
           "confidence": 0.998
+        },
+        {
+          "text": "everybody",
+          "start": 172.28,
+          "end": 173.58,
+          "confidence": 0.604
+        },
+        {
+          "text": "wants",
+          "start": 173.58,
+          "end": 174.02,
+          "confidence": 0.995
+        },
+        {
+          "text": "to",
+          "start": 174.02,
+          "end": 174.3,
+          "confidence": 1.0
+        },
+        {
+          "text": "be",
+          "start": 174.3,
+          "end": 174.86,
+          "confidence": 1.0
+        },
+        {
+          "text": "my",
+          "start": 174.86,
+          "end": 175.4,
+          "confidence": 0.909
+        },
+        {
+          "text": "enemy",
+          "start": 175.4,
+          "end": 176.14,
+          "confidence": 0.999
         }
       ]
     },
     {
-      "id": 26,
-      "seek": 17200,
-      "start": 179.32,
-      "end": 184.46,
-      "text": " Everybody wants to be my enemy Spare the sympathy",
+      "id": 35,
+      "seek": 14980,
+      "start": 176.88,
+      "end": 178.4,
+      "text": " Oh, the misery",
       "tokens": [
-        50720,
+        51714,
+        876,
+        11,
+        264,
+        32309,
+        51799
+      ],
+      "temperature": 0.4,
+      "avg_logprob": -0.49008950787390065,
+      "compression_ratio": 1.738872403560831,
+      "no_speech_prob": 0.005245593376457691,
+      "confidence": 0.815,
+      "words": [
+        {
+          "text": "Oh,",
+          "start": 176.88,
+          "end": 177.48,
+          "confidence": 0.551
+        },
+        {
+          "text": "the",
+          "start": 177.56,
+          "end": 177.76,
+          "confidence": 0.985
+        },
+        {
+          "text": "misery",
+          "start": 177.76,
+          "end": 178.4,
+          "confidence": 0.999
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "seek": 17850,
+      "start": 179.3,
+      "end": 181.62,
+      "text": " Everybody wants to be my enemy",
+      "tokens": [
+        50392,
         7646,
         2738,
         281,
         312,
         452,
         5945,
-        1738,
-        543,
-        264,
-        33240,
-        50984
+        50549
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.36990176930147056,
-      "compression_ratio": 1.8,
-      "no_speech_prob": 0.4770463705062866,
-      "confidence": 0.994,
+      "avg_logprob": -0.503788930719549,
+      "compression_ratio": 1.797979797979798,
+      "no_speech_prob": 0.02752392552793026,
+      "confidence": 0.996,
       "words": [
         {
           "text": "Everybody",
-          "start": 179.32,
-          "end": 179.96,
-          "confidence": 0.983
+          "start": 179.3,
+          "end": 179.94,
+          "confidence": 0.991
         },
         {
           "text": "wants",
-          "start": 179.96,
+          "start": 179.94,
           "end": 180.28,
-          "confidence": 0.992
+          "confidence": 0.991
         },
         {
           "text": "to",
@@ -2590,113 +2934,113 @@
         {
           "text": "be",
           "start": 180.46,
-          "end": 180.64,
+          "end": 180.62,
           "confidence": 0.999
         },
         {
           "text": "my",
-          "start": 180.64,
-          "end": 180.96,
+          "start": 180.62,
+          "end": 180.94,
           "confidence": 0.999
         },
         {
           "text": "enemy",
-          "start": 180.96,
-          "end": 182.18,
-          "confidence": 0.999
-        },
-        {
-          "text": "Spare",
-          "start": 182.18,
-          "end": 183.74,
-          "confidence": 0.985
-        },
-        {
-          "text": "the",
-          "start": 183.74,
-          "end": 184.02,
-          "confidence": 0.999
-        },
-        {
-          "text": "sympathy",
-          "start": 184.02,
-          "end": 184.46,
-          "confidence": 0.997
+          "start": 180.94,
+          "end": 181.62,
+          "confidence": 0.996
         }
       ]
     },
     {
-      "id": 27,
-      "seek": 17200,
-      "start": 185.6,
-      "end": 188.6,
-      "text": " Everybody wants to be my enemy",
+      "id": 37,
+      "seek": 17850,
+      "start": 183.14,
+      "end": 188.5,
+      "text": " Smell the sympathy everybody wants to be my enemy",
       "tokens": [
-        51032,
-        7646,
+        50587,
+        3915,
+        898,
+        264,
+        33240,
+        2201,
         2738,
         281,
         312,
         452,
         5945,
-        51188
+        50867
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.36990176930147056,
-      "compression_ratio": 1.8,
-      "no_speech_prob": 0.4770463705062866,
-      "confidence": 0.989,
+      "avg_logprob": -0.503788930719549,
+      "compression_ratio": 1.797979797979798,
+      "no_speech_prob": 0.02752392552793026,
+      "confidence": 0.98,
       "words": [
         {
-          "text": "Everybody",
-          "start": 185.6,
-          "end": 186.18,
-          "confidence": 0.951
+          "text": "Smell",
+          "start": 183.14,
+          "end": 183.8,
+          "confidence": 0.997
         },
         {
-          "text": "wants",
-          "start": 186.18,
-          "end": 186.52,
-          "confidence": 0.995
-        },
-        {
-          "text": "to",
-          "start": 186.52,
-          "end": 186.86,
+          "text": "the",
+          "start": 183.8,
+          "end": 184.06,
           "confidence": 0.999
         },
         {
+          "text": "sympathy",
+          "start": 184.06,
+          "end": 184.66,
+          "confidence": 0.997
+        },
+        {
+          "text": "everybody",
+          "start": 184.66,
+          "end": 186.1,
+          "confidence": 0.859
+        },
+        {
+          "text": "wants",
+          "start": 186.1,
+          "end": 186.5,
+          "confidence": 0.994
+        },
+        {
+          "text": "to",
+          "start": 186.5,
+          "end": 186.74,
+          "confidence": 1.0
+        },
+        {
           "text": "be",
-          "start": 186.86,
-          "end": 187.5,
+          "start": 186.74,
+          "end": 187.2,
           "confidence": 1.0
         },
         {
           "text": "my",
-          "start": 187.5,
-          "end": 187.96,
-          "confidence": 0.989
+          "start": 187.2,
+          "end": 187.9,
+          "confidence": 0.967
         },
         {
           "text": "enemy",
-          "start": 187.96,
-          "end": 188.6,
-          "confidence": 0.998
+          "start": 187.9,
+          "end": 188.5,
+          "confidence": 0.999
         }
       ]
     },
     {
-      "id": 28,
-      "seek": 18848,
-      "start": 188.7,
-      "end": 192.08,
-      "text": " Out of here, I swear I'll never be a saint",
+      "id": 38,
+      "seek": 17850,
+      "start": 188.88,
+      "end": 192.07,
+      "text": " I swear I'll never be a saint",
       "tokens": [
-        50364,
-        5925,
-        295,
-        510,
-        11,
+        50867,
         286,
         11902,
         286,
@@ -2705,135 +3049,113 @@
         312,
         257,
         28374,
-        50544
+        51044
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.4822702861967541,
-      "compression_ratio": 1.4761904761904763,
-      "no_speech_prob": 0.41271308064460754,
-      "confidence": 0.576,
+      "avg_logprob": -0.503788930719549,
+      "compression_ratio": 1.797979797979798,
+      "no_speech_prob": 0.02752392552793026,
+      "confidence": 0.536,
       "words": [
         {
-          "text": "Out",
-          "start": 188.7,
-          "end": 189.24,
-          "confidence": 0.117
-        },
-        {
-          "text": "of",
-          "start": 189.24,
-          "end": 189.6,
-          "confidence": 0.6
-        },
-        {
-          "text": "here,",
-          "start": 189.6,
-          "end": 189.78,
-          "confidence": 0.224
-        },
-        {
           "text": "I",
-          "start": 190.04,
-          "end": 190.16,
-          "confidence": 0.976
+          "start": 188.88,
+          "end": 189.22,
+          "confidence": 0.099
         },
         {
           "text": "swear",
-          "start": 190.16,
-          "end": 190.56,
-          "confidence": 0.997
+          "start": 189.22,
+          "end": 189.44,
+          "confidence": 0.83
         },
         {
           "text": "I'll",
-          "start": 190.56,
-          "end": 191.04,
-          "confidence": 0.744
+          "start": 189.44,
+          "end": 191.28,
+          "confidence": 0.428
         },
         {
           "text": "never",
-          "start": 191.04,
+          "start": 191.28,
           "end": 191.3,
-          "confidence": 0.995
+          "confidence": 0.966
         },
         {
           "text": "be",
           "start": 191.3,
-          "end": 191.7,
-          "confidence": 0.994
+          "end": 191.68,
+          "confidence": 0.991
         },
         {
           "text": "a",
-          "start": 191.7,
-          "end": 191.9,
-          "confidence": 0.385
+          "start": 191.68,
+          "end": 191.92,
+          "confidence": 0.579
         },
         {
           "text": "saint",
-          "start": 191.9,
-          "end": 192.08,
-          "confidence": 0.715
+          "start": 191.92,
+          "end": 192.07,
+          "confidence": 0.811
         }
       ]
     },
     {
-      "id": 29,
-      "seek": 18848,
-      "start": 192.12,
-      "end": 194.74,
+      "id": 39,
+      "seek": 17850,
+      "start": 192.07,
+      "end": 194.76,
       "text": " No way, my enemy",
       "tokens": [
-        50544,
+        51044,
         883,
         636,
         11,
         452,
         5945,
-        50680
+        51177
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.4822702861967541,
-      "compression_ratio": 1.4761904761904763,
-      "no_speech_prob": 0.41271308064460754,
-      "confidence": 0.671,
+      "avg_logprob": -0.503788930719549,
+      "compression_ratio": 1.797979797979798,
+      "no_speech_prob": 0.02752392552793026,
+      "confidence": 0.883,
       "words": [
         {
           "text": "No",
-          "start": 192.12,
-          "end": 192.68,
-          "confidence": 0.301
+          "start": 192.07,
+          "end": 192.66,
+          "confidence": 0.682
         },
         {
           "text": "way,",
-          "start": 192.68,
-          "end": 193.1,
-          "confidence": 0.725
+          "start": 192.66,
+          "end": 193.18,
+          "confidence": 0.974
         },
         {
           "text": "my",
-          "start": 193.86,
-          "end": 194.16,
-          "confidence": 0.951
+          "start": 193.88,
+          "end": 194.18,
+          "confidence": 0.955
         },
         {
           "text": "enemy",
-          "start": 194.16,
-          "end": 194.74,
-          "confidence": 0.975
+          "start": 194.18,
+          "end": 194.76,
+          "confidence": 0.956
         }
       ]
     },
     {
-      "id": 30,
-      "seek": 18848,
-      "start": 194.84,
+      "id": 40,
+      "seek": 17850,
+      "start": 194.82,
       "end": 198.36,
-      "text": " Out of here, I swear I'll never be a saint",
+      "text": " I swear I'll never be a saint",
       "tokens": [
-        50680,
-        5925,
-        295,
-        510,
-        11,
+        51177,
         286,
         11902,
         286,
@@ -2842,119 +3164,108 @@
         312,
         257,
         28374,
-        50860
+        51354
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.4822702861967541,
-      "compression_ratio": 1.4761904761904763,
-      "no_speech_prob": 0.41271308064460754,
-      "confidence": 0.997,
+      "avg_logprob": -0.503788930719549,
+      "compression_ratio": 1.797979797979798,
+      "no_speech_prob": 0.02752392552793026,
+      "confidence": 0.968,
       "words": [
         {
-          "text": "Out",
-          "start": 194.84,
-          "end": 195.46,
-          "confidence": 0.996
-        },
-        {
-          "text": "of",
-          "start": 195.46,
-          "end": 195.84,
-          "confidence": 0.996
-        },
-        {
-          "text": "here,",
-          "start": 195.84,
-          "end": 196.06,
-          "confidence": 0.995
-        },
-        {
           "text": "I",
-          "start": 196.32,
+          "start": 194.82,
+          "end": 195.68,
+          "confidence": 0.82
+        },
+        {
+          "text": "swear",
+          "start": 195.68,
           "end": 196.56,
           "confidence": 0.998
         },
         {
-          "text": "swear",
-          "start": 196.56,
-          "end": 196.78,
-          "confidence": 0.997
-        },
-        {
           "text": "I'll",
-          "start": 196.78,
-          "end": 197.34,
-          "confidence": 0.993
+          "start": 196.56,
+          "end": 197.28,
+          "confidence": 0.976
         },
         {
           "text": "never",
-          "start": 197.34,
-          "end": 197.54,
-          "confidence": 0.999
+          "start": 197.28,
+          "end": 197.52,
+          "confidence": 0.998
         },
         {
           "text": "be",
-          "start": 197.54,
-          "end": 197.86,
+          "start": 197.52,
+          "end": 197.9,
           "confidence": 0.999
         },
         {
           "text": "a",
-          "start": 197.86,
-          "end": 198.1,
-          "confidence": 0.998
+          "start": 197.9,
+          "end": 198.12,
+          "confidence": 0.996
         },
         {
           "text": "saint",
-          "start": 198.1,
+          "start": 198.12,
           "end": 198.36,
           "confidence": 0.997
         }
       ]
     },
     {
-      "id": 31,
-      "seek": 18848,
+      "id": 41,
+      "seek": 17850,
       "start": 198.48,
-      "end": 199.46,
-      "text": " Look out for yourself",
+      "end": 199.82,
+      "text": " You gotta be a saint",
       "tokens": [
-        50860,
-        2053,
-        484,
-        337,
-        1803,
-        50952
+        51354,
+        509,
+        3428,
+        312,
+        257,
+        28374,
+        51454
       ],
       "temperature": 0.4,
-      "avg_logprob": -0.4822702861967541,
-      "compression_ratio": 1.4761904761904763,
-      "no_speech_prob": 0.41271308064460754,
-      "confidence": 0.764,
+      "avg_logprob": -0.503788930719549,
+      "compression_ratio": 1.797979797979798,
+      "no_speech_prob": 0.02752392552793026,
+      "confidence": 0.659,
       "words": [
         {
-          "text": "Look",
+          "text": "You",
           "start": 198.48,
-          "end": 198.76,
-          "confidence": 0.372
+          "end": 198.7,
+          "confidence": 0.479
         },
         {
-          "text": "out",
-          "start": 198.76,
-          "end": 198.92,
-          "confidence": 0.959
+          "text": "gotta",
+          "start": 198.7,
+          "end": 198.88,
+          "confidence": 0.476
         },
         {
-          "text": "for",
-          "start": 198.92,
-          "end": 199.08,
-          "confidence": 0.974
+          "text": "be",
+          "start": 198.88,
+          "end": 199.1,
+          "confidence": 0.964
         },
         {
-          "text": "yourself",
-          "start": 199.08,
-          "end": 199.46,
-          "confidence": 0.979
+          "text": "a",
+          "start": 199.1,
+          "end": 199.34,
+          "confidence": 0.736
+        },
+        {
+          "text": "saint",
+          "start": 199.34,
+          "end": 199.82,
+          "confidence": 0.769
         }
       ]
     }

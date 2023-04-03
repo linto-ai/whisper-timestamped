@@ -22,9 +22,9 @@
         50464
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.2999596228966346,
+      "avg_logprob": -1.3003899500920222,
       "compression_ratio": 0.9310344827586207,
-      "no_speech_prob": 0.41614440083503723,
+      "no_speech_prob": 0.4180056154727936,
       "confidence": 0.277,
       "words": [
         {
@@ -49,7 +49,7 @@
           "text": "it,",
           "start": 1.04,
           "end": 1.2,
-          "confidence": 0.376
+          "confidence": 0.374
         },
         {
           "text": "you",
@@ -61,7 +61,7 @@
           "text": "can't.",
           "start": 1.5,
           "end": 1.7,
-          "confidence": 0.867
+          "confidence": 0.868
         }
       ]
     }

@@ -23,9 +23,9 @@
         51571
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.7969955716814314,
+      "avg_logprob": -1.7974508830479212,
       "compression_ratio": 0.84375,
-      "no_speech_prob": 0.045539237558841705,
+      "no_speech_prob": 0.04553895816206932,
       "confidence": 0.152,
       "words": [
         {
@@ -44,7 +44,7 @@
           "text": "l'Ontario",
           "start": 1.6,
           "end": 24.62,
-          "confidence": 0.31
+          "confidence": 0.309
         }
       ]
     }

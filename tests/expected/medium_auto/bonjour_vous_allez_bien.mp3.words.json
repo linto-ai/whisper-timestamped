@@ -1,12 +1,12 @@
 {
-  "text": " Bonjour! Est-ce que vous allez bien? Bonjour! Est-ce que vous allez bien?",
+  "text": " Bonjour ! Est-ce que vous allez bien ? Bonjour ! Est-ce que vous allez bien ?",
   "segments": [
     {
       "id": 0,
       "seek": 0,
       "start": 0.42,
-      "end": 3.04,
-      "text": " Bonjour! Est-ce que vous allez bien?",
+      "end": 3.46,
+      "text": " Bonjour ! Est-ce que vous allez bien ?",
       "tokens": [
         50364,
         25431,
@@ -23,14 +23,14 @@
       ],
       "temperature": 0.0,
       "avg_logprob": -0.3616662392249474,
-      "compression_ratio": 0.8181818181818182,
+      "compression_ratio": 0.8260869565217391,
       "no_speech_prob": 0.07169149070978165,
       "confidence": 0.936,
       "words": [
         {
-          "text": "Bonjour!",
+          "text": "Bonjour !",
           "start": 0.42,
-          "end": 1.14,
+          "end": 1.92,
           "confidence": 0.874
         },
         {
@@ -58,9 +58,9 @@
           "confidence": 0.99
         },
         {
-          "text": "bien?",
+          "text": "bien ?",
           "start": 2.58,
-          "end": 3.04,
+          "end": 3.46,
           "confidence": 0.999
         }
       ]
@@ -69,8 +69,8 @@
       "id": 1,
       "seek": 3000,
       "start": 30.98,
-      "end": 35.58,
-      "text": " Bonjour! Est-ce que vous allez bien?",
+      "end": 35.86,
+      "text": " Bonjour ! Est-ce que vous allez bien ?",
       "tokens": [
         50364,
         25431,
@@ -87,14 +87,14 @@
       ],
       "temperature": 0.0,
       "avg_logprob": -0.3065794431246244,
-      "compression_ratio": 0.8181818181818182,
+      "compression_ratio": 0.8260869565217391,
       "no_speech_prob": 0.40451279282569885,
       "confidence": 0.933,
       "words": [
         {
-          "text": "Bonjour!",
+          "text": "Bonjour !",
           "start": 30.98,
-          "end": 33.42,
+          "end": 34.44,
           "confidence": 0.741
         },
         {
@@ -122,9 +122,9 @@
           "confidence": 0.997
         },
         {
-          "text": "bien?",
+          "text": "bien ?",
           "start": 35.1,
-          "end": 35.58,
+          "end": 35.86,
           "confidence": 0.999
         }
       ]

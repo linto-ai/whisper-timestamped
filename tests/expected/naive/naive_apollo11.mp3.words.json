@@ -34,9 +34,9 @@
         50714
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.7222937533729955,
+      "avg_logprob": -0.7225993307013261,
       "compression_ratio": 1.39247311827957,
-      "no_speech_prob": 0.44981852173805237,
+      "no_speech_prob": 0.44998496770858765,
       "confidence": 0.494,
       "words": [
         {
@@ -163,9 +163,9 @@
         51314
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.7222937533729955,
+      "avg_logprob": -0.7225993307013261,
       "compression_ratio": 1.39247311827957,
-      "no_speech_prob": 0.44981852173805237,
+      "no_speech_prob": 0.44998496770858765,
       "confidence": 0.311,
       "words": [
         {
@@ -326,9 +326,9 @@
         51614
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.7222937533729955,
+      "avg_logprob": -0.7225993307013261,
       "compression_ratio": 1.39247311827957,
-      "no_speech_prob": 0.44981852173805237,
+      "no_speech_prob": 0.44998496770858765,
       "confidence": 0.129,
       "words": [
         {
@@ -662,9 +662,9 @@
         552
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.11153592427571614,
+      "avg_logprob": -0.11149242824978299,
       "compression_ratio": 24.096774193548388,
-      "no_speech_prob": 0.43019962310791016,
+      "no_speech_prob": 0.4302051365375519,
       "confidence": 0.885,
       "words": [
         {
@@ -1794,9 +1794,9 @@
         552
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.05325689871749536,
+      "avg_logprob": -0.05316366529250893,
       "compression_ratio": 29.52,
-      "no_speech_prob": 0.2454853653907776,
+      "no_speech_prob": 0.2454655021429062,
       "confidence": 0.844,
       "words": [
         {
@@ -2499,7 +2499,7 @@
           "text": "got",
           "start": 66.28,
           "end": 67.32,
-          "confidence": 0.985
+          "confidence": 0.984
         },
         {
           "text": "them,",
@@ -2914,9 +2914,9 @@
         552
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.0427307419712768,
+      "avg_logprob": -0.04273154596576776,
       "compression_ratio": 29.52,
-      "no_speech_prob": 0.6326963901519775,
+      "no_speech_prob": 0.6358686685562134,
       "confidence": 0.854,
       "words": [
         {

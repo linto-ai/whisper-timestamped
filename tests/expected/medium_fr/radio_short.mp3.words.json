@@ -1,5 +1,5 @@
 {
-  "text": " Le plus important au poker ce ne sont pas les cartes, c'est ce que vous en faites. Winamax, la référence du poker en ligne. Bonsoir à toutes et tous, vous êtes sur BFM TV, nous sommes en direct, c'est bien sûr BFM story avec tout ce qui fait l'actualité. Durant 60 minutes ce sont des gros plans, des analyses, des réactions que nous vous proposons. Comment Eric Verth peut-il encore soutenir la réforme des retraites alors qu'il est englué dans sa propre affaire, l'affaire Verth-Bettancourt? Question posée par les leaders de la CFDT et la CGT. Réponse de Nicolas Sarkozy, Eric Verth portera le débat sur les retraites, on en parle dans BFM story avec le numéro de la CFDT. Et puis il y a une bataille qui a démarré, celle entre Marine Le Pen et Bruno Gognich, la bataille de la succession de Jean-Marie Le Pen à la tête du Front National. La tournée de campagne de Marine Le Pen commence aujourd'hui dans le Var, Marine Le Pen sera en direct dans BFM story. Restez avec nous Marine Le Pen dans moins de 3 minutes, à tout de suite....",
+  "text": " Le plus important au poker ce ne sont pas les cartes, c'est ce que vous en faites. Winamax, la référence du poker en ligne. Bonsoir à toutes et tous, vous êtes sur BFM TV, nous sommes en direct, c'est bien sûr BFM story avec tout ce qui fait l'actualité. Durant 60 minutes ce sont des gros plans, des analyses, des réactions que nous vous proposons. Comment Eric Verth peut-il encore soutenir la réforme des retraites alors qu'il est englué dans sa propre affaire, l'affaire Verth-Bettancourt ? Question posée par les leaders de la CFDT et la CGT. Réponse de Nicolas Sarkozy, Eric Verth portera le débat sur les retraites, on en parle dans BFM story avec le numéro de la CFDT. Et puis il y a une bataille qui a démarré, celle entre Marine Le Pen et Bruno Gognich, la bataille de la succession de Jean-Marie Le Pen à la tête du Front National. La tournée de campagne de Marine Le Pen commence aujourd'hui dans le Var, Marine Le Pen sera en direct dans BFM story. Restez avec nous Marine Le Pen dans moins de 3 minutes, à tout de suite. ...",
   "segments": [
     {
       "id": 0,
@@ -564,8 +564,8 @@
       "id": 4,
       "seek": 5600,
       "start": 56.66,
-      "end": 63.98,
-      "text": " Comment Eric Verth peut-il encore soutenir la réforme des retraites alors qu'il est englué dans sa propre affaire, l'affaire Verth-Bettancourt?",
+      "end": 64.23,
+      "text": " Comment Eric Verth peut-il encore soutenir la réforme des retraites alors qu'il est englué dans sa propre affaire, l'affaire Verth-Bettancourt ?",
       "tokens": [
         50364,
         16328,
@@ -615,7 +615,7 @@
       ],
       "temperature": 0.0,
       "avg_logprob": -0.13356954513057587,
-      "compression_ratio": 1.5705329153605017,
+      "compression_ratio": 1.573667711598746,
       "no_speech_prob": 0.4252333343029022,
       "confidence": 0.854,
       "words": [
@@ -734,9 +734,9 @@
           "confidence": 0.909
         },
         {
-          "text": "Verth-Bettancourt?",
+          "text": "Verth-Bettancourt ?",
           "start": 63.3,
-          "end": 63.98,
+          "end": 64.23,
           "confidence": 0.711
         }
       ]
@@ -744,7 +744,7 @@
     {
       "id": 5,
       "seek": 5600,
-      "start": 63.98,
+      "start": 64.23,
       "end": 67.18,
       "text": " Question posée par les leaders de la CFDT et la CGT.",
       "tokens": [
@@ -769,13 +769,13 @@
       ],
       "temperature": 0.0,
       "avg_logprob": -0.13356954513057587,
-      "compression_ratio": 1.5705329153605017,
+      "compression_ratio": 1.573667711598746,
       "no_speech_prob": 0.4252333343029022,
       "confidence": 0.895,
       "words": [
         {
           "text": "Question",
-          "start": 63.98,
+          "start": 64.23,
           "end": 64.34,
           "confidence": 0.63
         },
@@ -892,7 +892,7 @@
       ],
       "temperature": 0.0,
       "avg_logprob": -0.13356954513057587,
-      "compression_ratio": 1.5705329153605017,
+      "compression_ratio": 1.573667711598746,
       "no_speech_prob": 0.4252333343029022,
       "confidence": 0.968,
       "words": [
@@ -1101,7 +1101,7 @@
       ],
       "temperature": 0.0,
       "avg_logprob": -0.13356954513057587,
-      "compression_ratio": 1.5705329153605017,
+      "compression_ratio": 1.573667711598746,
       "no_speech_prob": 0.4252333343029022,
       "confidence": 0.871,
       "words": [
@@ -1617,7 +1617,7 @@
       "seek": 9200,
       "start": 92.28,
       "end": 93.08,
-      "text": "...",
+      "text": " ...",
       "tokens": [
         50364,
         1097,

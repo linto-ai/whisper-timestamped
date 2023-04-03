@@ -1,12 +1,12 @@
 {
-  "text": " Dima, est ce que l'on vole?",
+  "text": " Dima, est ce que l'on vole ?",
   "segments": [
     {
       "id": 0,
       "seek": 0,
       "start": 0.42,
-      "end": 2.3,
-      "text": " Dima, est ce que l'on vole?",
+      "end": 2.58,
+      "text": " Dima, est ce que l'on vole ?",
       "tokens": [
         50364,
         413,
@@ -23,16 +23,16 @@
         50494
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.8433258192879813,
-      "compression_ratio": 0.7714285714285715,
-      "no_speech_prob": 0.0010773715330287814,
+      "avg_logprob": -0.8432754789079938,
+      "compression_ratio": 0.7777777777777778,
+      "no_speech_prob": 0.0010773586109280586,
       "confidence": 0.456,
       "words": [
         {
           "text": "Dima,",
           "start": 0.42,
           "end": 0.84,
-          "confidence": 0.246
+          "confidence": 0.247
         },
         {
           "text": "est",
@@ -44,7 +44,7 @@
           "text": "ce",
           "start": 1.4,
           "end": 1.56,
-          "confidence": 0.589
+          "confidence": 0.587
         },
         {
           "text": "que",
@@ -56,12 +56,12 @@
           "text": "l'on",
           "start": 1.68,
           "end": 2.02,
-          "confidence": 0.482
+          "confidence": 0.481
         },
         {
-          "text": "vole?",
+          "text": "vole ?",
           "start": 2.02,
-          "end": 2.3,
+          "end": 2.58,
           "confidence": 0.249
         }
       ]
