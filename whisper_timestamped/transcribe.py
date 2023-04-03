@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.12.10"
+__version__ = "1.12.11"
 
 # Set some environment variables
 import os
@@ -365,7 +365,7 @@ def _transcribe_timestamped_efficient(
     def has_reached_decoding_limit():
         n = len(chunk_tokens_nosot) + 1
         m = n + (len(chunk_tokens[0]) if len(chunk_tokens) > 0 else 0)
-        return n >= max_sample_len or m > n_ctx
+        return n + 1 >= max_sample_len or m > n_ctx
 
     def reset(add_segment, keep_last_token=True):
         """ Reset the list of tokens for the current speech segment, and corresponding cross-attention weights """
@@ -461,6 +461,7 @@ def _transcribe_timestamped_efficient(
             attention_weights = [torch.cat(w, dim=-2) for w in segment_attweights]
             last_logprobs = chunk_logprobs[-1]
         elif last_is_not_timestamp: # <eot> was emitted early, without a timestamp before
+            logger.debug(f"WARNING: end timestamp not produced. Adding <|endoftext|>")
             tokens.append(tokenizer.eot)
             segment_tokens[-1].append(tokenizer.eot)
             attention_weights = [torch.cat(w, dim=-2) for w in segment_attweights]
