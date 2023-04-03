@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.12.9"
+__version__ = "1.12.10"
 
 # Set some environment variables
 import os
@@ -434,7 +434,8 @@ def _transcribe_timestamped_efficient(
 
         # When the decoding hit the max limit (number of tokens) -- usually when the language model gets stuck --
         # then we have to recover the last token from what is send to the decoder
-        unfinished_decoding = len(tokens) and tokens[-1] < tokenizer.timestamp_begin
+        unfinished_decoding = has_reached_decoding_limit()
+        last_is_not_timestamp = len(tokens) and tokens[-1] < tokenizer.timestamp_begin
         last_token_reliable = True
 
         if unfinished_decoding:
@@ -457,6 +458,11 @@ def _transcribe_timestamped_efficient(
 
             tokens.append(last_token_fallback)
             segment_tokens[-1].append(last_token_fallback)
+            attention_weights = [torch.cat(w, dim=-2) for w in segment_attweights]
+            last_logprobs = chunk_logprobs[-1]
+        elif last_is_not_timestamp: # <eot> was emitted early, without a timestamp before
+            tokens.append(tokenizer.eot)
+            segment_tokens[-1].append(tokenizer.eot)
             attention_weights = [torch.cat(w, dim=-2) for w in segment_attweights]
             last_logprobs = chunk_logprobs[-1]
         else:
