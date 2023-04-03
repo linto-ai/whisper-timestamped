@@ -149,6 +149,16 @@ import json
 print(json.dumps(result, indent = 2, ensure_ascii = False))
 ```
 
+Note that you can use a finetuned Whisper model from HuggingFace or a local folder, by using the `load_model` method of `whisper_timestamped`.
+For instance, if you want to use https://huggingface.co/NbAiLab/whisper-large-v2-nob you simply can do:
+```
+import whisper_timestamped as whisper
+
+model = whisper.load_model("NbAiLab/whisper-large-v2-nob", device="cpu")
+
+# ...
+```
+
 ### Command line
 
 You can also use `whisper_timestamped` on the command line, similarly to `whisper`. See help with:
@@ -176,6 +186,12 @@ The main differences with `whisper` CLI are:
 An example command line to process several files with the `tiny` model and output results in the current folder as whisper would do by default:
 ```
 whisper_timestamped audio1.flac audio2.mp3 audio3.wav --model tiny --output_dir .
+```
+
+Note that you can use a finetuned Whisper model from HuggingFace or a local folder.
+For instance, if you want to use https://huggingface.co/NbAiLab/whisper-large-v2-nob you simply can do:
+```
+whisper_timestamped --model NbAiLab/whisper-large-v2-nob <...>
 ```
 
 ### Plot of word alignment
