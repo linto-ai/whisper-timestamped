@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.12.11"
+__version__ = "1.12.12"
 
 # Set some environment variables
 import os
@@ -1312,6 +1312,9 @@ def perform_word_alignment(
             logger.debug(f"Got empty segment in {tokenizer.decode_with_timestamps(tokens)}")
         return []
 
+    # Let a minimal duration given the number of tokens (see https://github.com/linto-ai/whisper-timestamped/issues/67)
+    end_token = min(N_FRAMES // 2, max(end_token, start_token + len(tokens)))
+
     # Put some margin around the segment
     if refine_whisper_precision_nframes > 0:
         start_token = max(start_token - refine_whisper_precision_nframes, 0)
@@ -1321,7 +1324,7 @@ def perform_word_alignment(
         raise RuntimeError(f"Got segment with null or negative duration {tokenizer.decode_with_timestamps(tokens)}: {start_token} {end_token}")
 
     start_time = start_token * AUDIO_TIME_PER_TOKEN
-    end_time = end_token * AUDIO_TIME_PER_TOKEN
+    # end_time = end_token * AUDIO_TIME_PER_TOKEN
 
     split_tokens = split_tokens_on_spaces if use_space else split_tokens_on_unicode
     words, word_tokens, word_tokens_indices = split_tokens(tokens, tokenizer, remove_punctuation_from_words=remove_punctuation_from_words)
