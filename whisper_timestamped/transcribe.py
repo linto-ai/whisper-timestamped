@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.12.8"
+__version__ = "1.12.9"
 
 # Set some environment variables
 import os
@@ -28,6 +28,7 @@ import csv
 import sys
 import gzip, base64
 import copy
+import re
 
 # Constant variables
 from whisper.utils import format_timestamp
@@ -1994,6 +1995,76 @@ def _get_alignment_heads(model_name, num_layers, num_heads):
 def _get_number_of_parameters(model):
     return sum(p.numel() for p in model.parameters())
 
+from typing import Optional, Union
+def load_model(
+    name: str,
+    device: Optional[Union[str, torch.device]] = None,
+    download_root: str = None,
+    in_memory: bool = False,
+):
+    if name in whisper.available_models():
+        return whisper.load_model(name, device=device, download_root=download_root, in_memory=in_memory)
+    
+    whisper_model_name = None
+    nname = name.lower().replace("_","-")
+    for m in sorted(whisper.available_models(), key=len, reverse=True):
+        if m in nname:
+            whisper_model_name = m
+            break
+    assert whisper_model_name is not None, f"Model name {name} should contain one of {whisper.available_models()}"
+
+    # Otherwise, assume transformers
+    try:
+        import transformers
+    except ImportError:
+        raise ImportError(f"If you are trying to download a HuggingFace model with {name}, please install first the transformers library")
+    from transformers.utils import cached_file
+    try:
+        model_path = cached_file(name, "pytorch_model.bin", cache_dir=download_root, use_auth_token=None, revision=None)
+    except Exception as e:
+        try:
+            model_path = cached_file(name, "whisper.ckpt", cache_dir=download_root, use_auth_token=None, revision=None)
+        except:
+            raise RuntimeError(f"Original error: {e}\nCould not find model {name} from HuggingFace.")
+    # Load HF Model
+    hf_state_dict = torch.load(model_path,
+                               map_location=device)
+    # Rename layers
+    for key in list(hf_state_dict.keys())[:]:
+        new_key = hf_to_whisper_states(key)
+        hf_state_dict[new_key] = hf_state_dict.pop(key)
+    
+    # Remove useless key (Speechbrain
+    if "_mel_filters" in hf_state_dict:
+        hf_state_dict.pop("_mel_filters")
+
+    # Init Whisper Model and replace model weights
+    whisper_model = whisper.load_model(whisper_model_name)
+    whisper_model.load_state_dict(hf_state_dict)
+    return whisper_model
+
+# Credit: https://github.com/openai/whisper/discussions/830
+def hf_to_whisper_states(text):
+    text = re.sub('.layers.', '.blocks.', text)
+    text = re.sub('.self_attn.', '.attn.', text)
+    text = re.sub('.q_proj.', '.query.', text)
+    text = re.sub('.k_proj.', '.key.', text)
+    text = re.sub('.v_proj.', '.value.', text)
+    text = re.sub('.out_proj.', '.out.', text)
+    text = re.sub('.fc1.', '.mlp.0.', text)
+    text = re.sub('.fc2.', '.mlp.2.', text)
+    text = re.sub('.fc3.', '.mlp.3.', text)
+    text = re.sub('.fc3.', '.mlp.3.', text)
+    text = re.sub('.encoder_attn.', '.cross_attn.', text)
+    text = re.sub('.cross_attn.ln.', '.cross_attn_ln.', text)
+    text = re.sub('.embed_positions.weight', '.positional_embedding', text)
+    text = re.sub('.embed_tokens.', '.token_embedding.', text)
+    text = re.sub('model.', '', text)
+    text = re.sub('attn.layer_norm.', 'attn_ln.', text)
+    text = re.sub('.final_layer_norm.', '.mlp_ln.', text)
+    text = re.sub('encoder.layer_norm.', 'encoder.ln_post.', text)
+    text = re.sub('decoder.layer_norm.', 'decoder.ln.', text)
+    return text
 
 def cli():
 
@@ -2033,7 +2104,7 @@ def cli():
                         version=f'{__version__} -- Whisper {whisper.__version__} in {os.path.realpath(os.path.dirname(whisper.__file__))}')
 
     parser.add_argument('audio', help="audio file(s) to transcribe", nargs='+')
-    parser.add_argument('--model', help=f"name of the Whisper model to use.", choices=whisper.available_models(), default="small")
+    parser.add_argument('--model', help=f"name of the Whisper model to use. Examples: {', '.join(whisper.available_models())}", default="small")
     parser.add_argument("--model_dir", default=None, help="the path to save model files; uses ~/.cache/whisper by default", type=str)
     parser.add_argument("--device", default="cuda:0" if torch.cuda.is_available() else "cpu", help="device to use for PyTorch inference")
     parser.add_argument("--output_dir", "-o", default=None, help="directory to save the outputs", type=str)
@@ -2127,7 +2198,7 @@ def cli():
 
     output_format = args.pop("output_format")
 
-    model = whisper.load_model(model, device=device, download_root=model_dir)
+    model = load_model(model, device=device, download_root=model_dir)
 
     plot_word_alignment = args.pop("plot")
 

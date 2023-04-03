@@ -609,6 +609,17 @@ class TestMakeSubtitles(TestHelper):
                     self.assertTrue(os.path.isfile(output_file), msg=f"File {output_file} not found")
                     self.assertNonRegression(output_file, expected_file)
 
+class TestHuggingFaceModel(TestHelperCli):
+
+    def test_hugging_face_model(self):
+
+        self._test_cli_(
+            ["--model", "qanastek/whisper-tiny-french-cased", "--verbose", "True"],
+            "verbose", files=["bonjour.wav"], extensions=None,
+            prefix="hf",
+            device_specific=True,
+        )
+
 # "ZZZ" to run this test at last (because it will fill the CUDA with some memory)
 class TestZZZPythonImport(TestHelper):
 
