@@ -2116,7 +2116,7 @@ def model_size_to_dims(model_size):
     )
     n_text_state = {
         "tiny": 384,
-        "base": 448,
+        "base": 512,
         "small": 768,
         "medium": 1024,
     }.get(model_size,
