@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.12.12"
+__version__ = "1.12.13"
 
 # Set some environment variables
 import os
@@ -1951,6 +1951,7 @@ def write_csv(transcript, file, sep = ",", text_first=True, format_timestamps=No
 # https://stackoverflow.com/questions/66588715/runtimeerror-cudnn-error-cudnn-status-not-initialized-using-pytorch
 # CUDA initialization may fail on old GPU card
 def force_cudnn_initialization(device=None, s=32):
+    return # NOCOMMIT
     if device is None:
         device = torch.device('cuda')
     torch.nn.functional.conv2d(torch.zeros(s, s, s, s, device=device), torch.zeros(s, s, s, s, device=device))
@@ -2012,7 +2013,9 @@ def load_model(
     download_root: str = None,
     in_memory: bool = False,
 ):
-    if name in whisper.available_models():
+    extension = os.path.splitext(name)[-1] if os.path.isfile(name) else None
+
+    if name in whisper.available_models() or extension == ".pt":
         return whisper.load_model(name, device=device, download_root=download_root, in_memory=in_memory)
     
     whisper_model_name = None
@@ -2024,24 +2027,28 @@ def load_model(
     assert whisper_model_name is not None, f"Model name {name} should contain one of {whisper.available_models()}"
 
     # Otherwise, assume transformers
-    try:
-        import transformers
-    except ImportError:
-        raise ImportError(f"If you are trying to download a HuggingFace model with {name}, please install first the transformers library")
-    from transformers.utils import cached_file
-    try:
-        model_path = cached_file(name, "pytorch_model.bin", cache_dir=download_root, use_auth_token=None, revision=None)
-    except Exception as e:
+    if extension in [".ckpt", ".bin"]:
+        model_path = name
+    else:
+        # Search for the cached file (download if necessary)
         try:
-            if isinstance(e, OSError):
-                model_path = cached_file(name, "whisper.ckpt", cache_dir=download_root, use_auth_token=None, revision=None)
-            else:
-                raise e
-        except:
-            raise RuntimeError(f"Original error: {e}\nCould not find model {name} from HuggingFace nor local folders.")
+            import transformers
+        except ImportError:
+            raise ImportError(f"If you are trying to download a HuggingFace model with {name}, please install first the transformers library")
+        from transformers.utils import cached_file
+
+        try:
+            model_path = cached_file(name, "pytorch_model.bin", cache_dir=download_root, use_auth_token=None, revision=None)
+        except Exception as e:
+            try:
+                if isinstance(e, OSError):
+                    model_path = cached_file(name, "whisper.ckpt", cache_dir=download_root, use_auth_token=None, revision=None)
+                else:
+                    raise e
+            except:
+                raise RuntimeError(f"Original error: {e}\nCould not find model {name} from HuggingFace nor local folders.")
     # Load HF Model
-    hf_state_dict = torch.load(model_path,
-                               map_location=device)
+    hf_state_dict = torch.load(model_path, map_location="cpu")
     # Rename layers
     for key in list(hf_state_dict.keys())[:]:
         new_key = hf_to_whisper_states(key)
@@ -2052,8 +2059,11 @@ def load_model(
         hf_state_dict.pop("_mel_filters")
 
     # Init Whisper Model and replace model weights
-    whisper_model = whisper.load_model(whisper_model_name)
+    dims = whisper.model.ModelDimensions(**model_size_to_dims(whisper_model_name))
+    whisper_model = whisper.model.Whisper(dims)
     whisper_model.load_state_dict(hf_state_dict)
+    del hf_state_dict
+    whisper_model = whisper_model.to(device)
     return whisper_model
 
 # Credit: https://github.com/openai/whisper/discussions/830
@@ -2078,6 +2088,53 @@ def hf_to_whisper_states(text):
     text = re.sub('encoder.layer_norm.', 'encoder.ln_post.', text)
     text = re.sub('decoder.layer_norm.', 'decoder.ln.', text)
     return text
+
+def model_size_to_dims(model_size):
+    n_audio_state = {
+        "tiny": 384,
+        "base": 512,
+        "small": 768,
+        "medium":1024,
+    }.get(model_size,
+        1280 # "large"
+    )
+    n_text_head = n_audio_head = {
+        "tiny": 6,
+        "base": 8,
+        "small": 12,
+        "medium": 16,
+    }.get(model_size,
+        20 # "large"
+    )
+    n_text_layer = n_audio_layer = {
+        "tiny": 4,
+        "base": 6,
+        "small": 12,
+        "medium": 24,
+    }.get(model_size,
+        32 # "large"
+    )
+    n_text_state = {
+        "tiny": 384,
+        "base": 448,
+        "small": 768,
+        "medium": 1024,
+    }.get(model_size,
+        1280 # "large"
+    )
+
+    return {
+        "n_mels": 80,
+        "n_vocab": 51865,
+        "n_audio_ctx": 1500,
+        "n_audio_state": n_audio_state,
+        "n_audio_head": n_audio_head,
+        "n_audio_layer": n_audio_layer,
+        "n_text_ctx": 448,
+        "n_text_state": n_text_state,
+        "n_text_head": n_text_head,
+        "n_text_layer": n_text_layer
+    }
 
 def cli():
 
