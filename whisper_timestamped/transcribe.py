@@ -2019,7 +2019,7 @@ def load_model(
         return whisper.load_model(name, device=device, download_root=download_root, in_memory=in_memory)
     
     whisper_model_name = None
-    nname = name.lower().replace("_","-")
+    nname = name.lower().replace("_","-").replace("-en",".en")
     for m in sorted(whisper.available_models(), key=len, reverse=True):
         if m in nname:
             whisper_model_name = m
@@ -2090,6 +2090,11 @@ def hf_to_whisper_states(text):
     return text
 
 def model_size_to_dims(model_size):
+    n_vocab = 51865
+    if model_size.endswith(".en"):
+        n_vocab = 51864
+        model_size = model_size[:-3]
+
     n_audio_state = {
         "tiny": 384,
         "base": 512,
@@ -2125,7 +2130,7 @@ def model_size_to_dims(model_size):
 
     return {
         "n_mels": 80,
-        "n_vocab": 51865,
+        "n_vocab": n_vocab,
         "n_audio_ctx": 1500,
         "n_audio_state": n_audio_state,
         "n_audio_head": n_audio_head,
