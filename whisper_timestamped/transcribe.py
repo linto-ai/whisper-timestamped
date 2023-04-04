@@ -1951,7 +1951,6 @@ def write_csv(transcript, file, sep = ",", text_first=True, format_timestamps=No
 # https://stackoverflow.com/questions/66588715/runtimeerror-cudnn-error-cudnn-status-not-initialized-using-pytorch
 # CUDA initialization may fail on old GPU card
 def force_cudnn_initialization(device=None, s=32):
-    return # NOCOMMIT
     if device is None:
         device = torch.device('cuda')
     torch.nn.functional.conv2d(torch.zeros(s, s, s, s, device=device), torch.zeros(s, s, s, s, device=device))
@@ -2001,7 +2000,8 @@ def _get_alignment_heads(model_name, num_layers, num_heads):
     dump = _ALIGNMENT_HEADS[model_name]
     array = np.frombuffer(gzip.decompress(base64.b85decode(dump)), dtype=bool).copy()
     mask = torch.from_numpy(array).reshape(num_layers, num_heads)
-    return mask.to_sparse()
+    alignment_heads = mask.to_sparse()
+    return alignment_heads
 
 def _get_number_of_parameters(model):
     return sum(p.numel() for p in model.parameters())
@@ -2018,14 +2018,6 @@ def load_model(
     if name in whisper.available_models() or extension == ".pt":
         return whisper.load_model(name, device=device, download_root=download_root, in_memory=in_memory)
     
-    whisper_model_name = None
-    nname = name.lower().replace("_","-").replace("-en",".en")
-    for m in sorted(whisper.available_models(), key=len, reverse=True):
-        if m in nname:
-            whisper_model_name = m
-            break
-    assert whisper_model_name is not None, f"Model name {name} should contain one of {whisper.available_models()}"
-
     # Otherwise, assume transformers
     if extension in [".ckpt", ".bin"]:
         model_path = name
@@ -2059,9 +2051,11 @@ def load_model(
         hf_state_dict.pop("_mel_filters")
 
     # Init Whisper Model and replace model weights
-    dims = whisper.model.ModelDimensions(**model_size_to_dims(whisper_model_name))
+    dims = whisper.model.ModelDimensions(**states_to_dim(hf_state_dict))
     whisper_model = whisper.model.Whisper(dims)
     whisper_model.load_state_dict(hf_state_dict)
+    if hasattr(whisper_model, "alignment_heads"):
+        del whisper_model.alignment_heads # Will be recomputed later
     del hf_state_dict
     whisper_model = whisper_model.to(device)
     return whisper_model
@@ -2089,56 +2083,20 @@ def hf_to_whisper_states(text):
     text = re.sub('decoder.layer_norm.', 'decoder.ln.', text)
     return text
 
-def model_size_to_dims(model_size):
-    n_vocab = 51865
-    if model_size.endswith(".en"):
-        n_vocab = 51864
-        model_size = model_size[:-3]
-
-    n_audio_state = {
-        "tiny": 384,
-        "base": 512,
-        "small": 768,
-        "medium":1024,
-    }.get(model_size,
-        1280 # "large"
-    )
-    n_text_head = n_audio_head = {
-        "tiny": 6,
-        "base": 8,
-        "small": 12,
-        "medium": 16,
-    }.get(model_size,
-        20 # "large"
-    )
-    n_text_layer = n_audio_layer = {
-        "tiny": 4,
-        "base": 6,
-        "small": 12,
-        "medium": 24,
-    }.get(model_size,
-        32 # "large"
-    )
-    n_text_state = {
-        "tiny": 384,
-        "base": 512,
-        "small": 768,
-        "medium": 1024,
-    }.get(model_size,
-        1280 # "large"
-    )
-
+def states_to_dim(state_dict):
+    n_audio_state = len(state_dict['encoder.ln_post.bias'])
+    n_text_state = len(state_dict["decoder.ln.bias"])
     return {
-        "n_mels": 80,
-        "n_vocab": n_vocab,
-        "n_audio_ctx": 1500,
-        "n_audio_state": n_audio_state,
-        "n_audio_head": n_audio_head,
-        "n_audio_layer": n_audio_layer,
-        "n_text_ctx": 448,
-        "n_text_state": n_text_state,
-        "n_text_head": n_text_head,
-        "n_text_layer": n_text_layer
+        "n_mels":        state_dict["encoder.conv1.weight"].shape[1],           # 80
+        "n_vocab":       state_dict["decoder.token_embedding.weight"].shape[0], # 51864 / 51865
+        "n_audio_ctx":   state_dict["encoder.positional_embedding"].shape[0],   # 1500
+        "n_audio_state": n_audio_state,         # 384 / 512 / 768 / 1024 / 1280
+        "n_audio_head":  n_audio_state // 64,   # 6 / 8 / 12 / 16 / 20
+        "n_audio_layer": len(set([".".join(k.split(".")[:3]) for k in state_dict.keys() if "encoder.blocks." in k])), # 4 / 6 / 12 / 24 / 32
+        "n_text_ctx":    state_dict["decoder.positional_embedding"].shape[0], # 448
+        "n_text_state":  n_text_state,          # 384 / 512 / 768 / 1024 / 1280
+        "n_text_head":   n_text_state // 64,    # 6 / 8 / 12 / 16 / 20
+        "n_text_layer":  len(set([".".join(k.split(".")[:3]) for k in state_dict.keys() if "decoder.blocks." in k])), # 4 / 6 / 12 / 24 / 32
     }
 
 def cli():
