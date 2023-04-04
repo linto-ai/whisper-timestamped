@@ -2054,9 +2054,9 @@ def load_model(
     dims = whisper.model.ModelDimensions(**states_to_dim(hf_state_dict))
     whisper_model = whisper.model.Whisper(dims)
     whisper_model.load_state_dict(hf_state_dict)
+    del hf_state_dict
     if hasattr(whisper_model, "alignment_heads"):
         del whisper_model.alignment_heads # Will be recomputed later
-    del hf_state_dict
     whisper_model = whisper_model.to(device)
     return whisper_model
 
@@ -2093,7 +2093,7 @@ def states_to_dim(state_dict):
         "n_audio_state": n_audio_state,         # 384 / 512 / 768 / 1024 / 1280
         "n_audio_head":  n_audio_state // 64,   # 6 / 8 / 12 / 16 / 20
         "n_audio_layer": len(set([".".join(k.split(".")[:3]) for k in state_dict.keys() if "encoder.blocks." in k])), # 4 / 6 / 12 / 24 / 32
-        "n_text_ctx":    state_dict["decoder.positional_embedding"].shape[0], # 448
+        "n_text_ctx":    state_dict["decoder.positional_embedding"].shape[0],   # 448
         "n_text_state":  n_text_state,          # 384 / 512 / 768 / 1024 / 1280
         "n_text_head":   n_text_state // 64,    # 6 / 8 / 12 / 16 / 20
         "n_text_layer":  len(set([".".join(k.split(".")[:3]) for k in state_dict.keys() if "decoder.blocks." in k])), # 4 / 6 / 12 / 24 / 32
