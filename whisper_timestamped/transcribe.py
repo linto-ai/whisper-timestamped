@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.12.13"
+__version__ = "1.12.14"
 
 # Set some environment variables
 import os
@@ -238,7 +238,7 @@ def transcribe_timestamped(
             initial_prompt=initial_prompt,
             suppress_tokens=suppress_tokens,
             sample_len=sample_len,
-            verbose=verbose,
+            verbose=verbose if (not vad or verbose is not True) else False,
     )
     other_options = dict(
         no_speech_threshold=no_speech_threshold,
@@ -269,7 +269,7 @@ def transcribe_timestamped(
     # Combine words and segments
     whisper_segments = transcription["segments"]
     for word in words:
-        if verbose and not naive_approach:
+        if verbose and not naive_approach and not vad:
             print_timestamped(word)
         word.pop("tokens")
         word.pop("tokens_indices")
@@ -292,6 +292,8 @@ def transcribe_timestamped(
         for segment in whisper_segments:
             for word in segment.get("words", []):
                 word["start"], word["end"] = convert_timestamps(word["start"], word["end"])
+                if verbose:
+                    print_timestamped(word)
             if refine_whisper_precision and len(segment.get("words", [])):
                 segment["start"] = segment["words"][0]["start"]
                 segment["end"] = segment["words"][-1]["end"]
@@ -1698,6 +1700,7 @@ def get_vad_segments(audio,
     output_sample=False,
     min_speech_duration=0.1,
     min_silence_duration=0.1,
+    dilatation=0.1,
     ):
     """
     Get speech segments from audio using Silero VAD
@@ -1706,8 +1709,12 @@ def get_vad_segments(audio,
             audio data *in 16kHz*
         output_sample: bool
             if True, return start and end in samples instead of seconds
-        method: str
-            method to use for VAD (silero, pyannote)
+        min_speech_duration: float
+            minimum duration (in sec) of a speech segment
+        min_silence_duration: float
+            minimum duration (in sec) of a silence segment
+        dilatation: float
+            how much (in sec) to enlarge each speech segment detected by the VAD
     """
     global silero_vad_model, silero_get_speech_ts
 
@@ -1730,6 +1737,20 @@ def get_vad_segments(audio,
         min_silence_duration_ms = round(min_silence_duration * 1000),
         return_seconds = False,
     )
+
+    if dilatation > 0:
+        dilatation = round(dilatation * SAMPLE_RATE)
+        new_segments = []
+        for seg in segments:
+            new_seg = {
+                "start": max(0, seg["start"] - dilatation),
+                "end": min(len(audio), seg["end"] + dilatation)
+            }
+            if len(new_segments) > 0 and new_segments[-1]["end"] >= new_seg["start"]:
+                new_segments[-1]["end"] = new_seg["end"]
+            else:
+                new_segments.append(new_seg)
+        segments = new_segments
 
     ratio = 1 if output_sample else 1 / SAMPLE_RATE
 

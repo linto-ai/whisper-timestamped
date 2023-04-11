@@ -55,7 +55,7 @@ class TestHelper(unittest.TestCase):
             return "." + s
         return ""
 
-    def get_data_files(self, files=None, excluded_by_default=["apollo11.mp3", "music.mp4", "arabic.mp3", "japanese.mp3", "empty.wav"]):
+    def get_data_files(self, files=None, excluded_by_default=["apollo11.mp3", "music.mp4", "arabic.mp3", "japanese.mp3", "empty.wav", "words.wav"]):
         if files == None:
             files = os.listdir(self.get_data_path())
             files = [f for f in files if f not in excluded_by_default and not f.endswith("json")]
@@ -484,6 +484,19 @@ class TestTranscribeMonolingual(TestHelperCli):
             files=["arabic.mp3"],
             device_specific=True,
         )
+
+
+class TestTranscribeWithVad(TestHelperCli):
+
+    def test_vad(self):
+        self._test_cli_(
+                ["--model", "large", "--accurate", "--language", "en", "--vad", "True", "--verbose", "True"],
+                "verbose",
+                files=["words.wav"],
+                prefix="vad",
+                extensions=None,
+            )
+
 
 class TestTranscribeUnspacedLanguage(TestHelperCli):
 
