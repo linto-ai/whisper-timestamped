@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.12.14"
+__version__ = "1.12.15"
 
 # Set some environment variables
 import os
@@ -1700,7 +1700,7 @@ def get_vad_segments(audio,
     output_sample=False,
     min_speech_duration=0.1,
     min_silence_duration=0.1,
-    dilatation=0.1,
+    dilatation=1,
     ):
     """
     Get speech segments from audio using Silero VAD
