@@ -1700,7 +1700,7 @@ def get_vad_segments(audio,
     output_sample=False,
     min_speech_duration=0.1,
     min_silence_duration=0.1,
-    dilatation=1,
+    dilatation=0.5,
     ):
     """
     Get speech segments from audio using Silero VAD
