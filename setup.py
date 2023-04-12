@@ -36,5 +36,5 @@ setup(
         ],
     },
     include_package_data=True,
-    extras_require={'dev': ['matplotlib', 'jsonschema', 'transformers']},
+    extras_require={'dev': ['matplotlib', 'jsonschema', 'transformers', 'torchaudio']},
 )

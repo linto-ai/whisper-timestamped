@@ -6,6 +6,8 @@ Multilingual Automatic Speech Recognition with word-level timestamps and confide
    * [Notes on other approaches](#notes-on-other-approaches)
 * [Installation](#installation)
    * [First installation](#first-installation)
+      * [Additional packages that might be needed](#additional-packages-that-might-be-needed)
+      * [Docker](#docker)
    * [Light installation for CPU](#light-installation-for-cpu)
    * [Upgrade to the latest version](#upgrade-to-the-latest-version)
 * [Usage](#usage)
@@ -76,10 +78,19 @@ cd whisper-timestamped/
 python3 setup.py install
 ```
 
+#### Additional packages that might be needed
+
 If you want to plot alignement between audio timestamps and words (as in [this section](#plotting-word-alignment)), you also need matplotlib
 ```bash
 pip3 install matplotlib
 ```
+
+If you want to use VAD option (Voice Activity Detection before running Whisper model), you also need torchaudio
+```bash
+pip3 install torchaudio
+```
+
+#### Docker
 
 A docker image of about 9GB can be built using:
 ```bash
