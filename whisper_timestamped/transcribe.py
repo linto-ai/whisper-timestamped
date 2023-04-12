@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.12.15"
+__version__ = "1.12.16"
 
 # Set some environment variables
 import os
