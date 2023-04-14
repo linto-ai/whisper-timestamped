@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.12.16"
+__version__ = "1.12.17"
 
 # Set some environment variables
 import os
@@ -1716,27 +1716,30 @@ def get_vad_segments(audio,
         dilatation: float
             how much (in sec) to enlarge each speech segment detected by the VAD
     """
-    global silero_vad_model, silero_get_speech_ts
-
-    if silero_vad_model is None:
-        import onnxruntime
-        onnxruntime.set_default_logger_severity(3) # Remove warning "Removing initializer 'XXX'. It is not used by any node and should be removed from the model."
-        repo_or_dir = os.path.expanduser("~/.cache/torch/hub/snakers4_silero-vad_master")
-        source = "local"
-        if not os.path.exists(repo_or_dir):
-            repo_or_dir = "snakers4/silero-vad"
-            source = "github"
-        silero_vad_model, utils = torch.hub.load(repo_or_dir=repo_or_dir, model="silero_vad", onnx=True, source=source)
-        silero_get_speech_ts = utils[0]
+    import auditok
+    import io
+    import scipy.io.wavfile
 
     # Cheap normalization of the volume
     audio = audio / max(0.1, audio.abs().max())
 
-    segments = silero_get_speech_ts(audio, silero_vad_model,
-        min_speech_duration_ms = round(min_speech_duration * 1000),
-        min_silence_duration_ms = round(min_silence_duration * 1000),
-        return_seconds = False,
+    byte_io = io.BytesIO(bytes())
+    scipy.io.wavfile.write(byte_io, SAMPLE_RATE, (audio.numpy() * 32767).astype(np.int16))
+    bytes_wav = byte_io.read()
+
+    segments = auditok.split(
+        bytes_wav,
+        sampling_rate=SAMPLE_RATE,        # sampling frequency in Hz
+        channels=1,                       # number of channels
+        sample_width=2,                   # number of bytes per sample
+        min_dur=min_speech_duration,      # minimum duration of a valid audio event in seconds
+        max_dur=len(audio)/SAMPLE_RATE,   # maximum duration of an event
+        max_silence=min_silence_duration, # maximum duration of tolerated continuous silence within an event
+        energy_threshold=50,
+        drop_trailing_silence=True,
     )
+
+    segments = [{"start": s._meta.start * SAMPLE_RATE, "end": s._meta.end * SAMPLE_RATE} for s in segments]
 
     if dilatation > 0:
         dilatation = round(dilatation * SAMPLE_RATE)
@@ -1792,9 +1795,15 @@ def remove_non_speech(audio,
     if plot:
         import matplotlib.pyplot as plt
         plt.figure()
-        plt.plot(audio)
+        max_num_samples = 10000
+        step = (audio.shape[-1] // max_num_samples) + 1
+        plt.plot(
+            [i*step/SAMPLE_RATE for i in range(audio.shape[-1] // step + 1)],
+            audio[::step]
+        )
         for s,e in segments:
-            plt.axvspan(s, e, color='red', alpha=0.1)
+            plt.axvspan(s/SAMPLE_RATE, e/SAMPLE_RATE, color='red', alpha=0.1)
+        plt.xlabel("seconds")
         plt.show()
 
     if not use_sample:
