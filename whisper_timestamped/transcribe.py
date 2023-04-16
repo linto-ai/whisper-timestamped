@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.12.16"
+__version__ = "1.12.17"
 
 # Set some environment variables
 import os
@@ -397,8 +397,6 @@ def _transcribe_timestamped_efficient(
             consecutive_timestamps = is_timestamp and is_previous_timestamp
             if consecutive_timestamps:
                 saw_consecutive_timestamps = True
-            if len(chunk_tokens_nosot) == max_sample_len - 2 and is_timestamp:
-                consecutive_timestamps = True
             return consecutive_timestamps
         else: # Several tokens as a prompt or must flush last segments
 
@@ -441,7 +439,7 @@ def _transcribe_timestamped_efficient(
         last_token_reliable = True
 
         if unfinished_decoding:
-            logger.debug(f"WARNING: decoding hit the max limit for segment {segment_tokens} (It usually happens when the language model gets stuck)")
+            logger.debug(f"WARNING: decoding hit the max limit for segment {segment_tokens[-1]} (It usually happens when the language model gets stuck)")
             # The last token chosen is in the prompt for the new chunk
             if curr_tokens is not None and curr_tokens[0] == tokenizer.sot_prev:
                 index_sot =  (curr_tokens == tokenizer.sot).nonzero(as_tuple=True)
@@ -876,9 +874,9 @@ def _transcribe_timestamped_efficient(
         whisper_tokens = filter_tokens(segment["tokens"])
         if timestamped_tokens != whisper_tokens:
             if len(timestamped_tokens) == len(whisper_tokens) + 1:
-                logger.warn(f"An additional token was added on segment {i}")
+                logger.warning(f"An additional token was added on segment {i}")
             elif WHIPSER_GE_20230306 and len(whisper_tokens) == 0:
-                logger.warn(f"Whisper has empty segment {i}")
+                logger.warning(f"Whisper has empty segment {i}")
                 assert segment["end"] == segment["start"], f"Fatal Error: Got empty segment {i} with non-zero duration"
                 segment["tokens"] = timestamped_tokens
                 segment["text"] = tokenizer.decode(timestamped_tokens)
@@ -887,7 +885,7 @@ def _transcribe_timestamped_efficient(
                     f"Fatal Error: Got inconsistent text for segment {i}:\n({len(timestamped_tokens)})\n{tokenizer.decode_with_timestamps(timestamped_tokens)}\n{timestamped_tokens}\n!=\n({len(whisper_tokens)})\n{tokenizer.decode_with_timestamps(whisper_tokens)}\n{whisper_tokens[:len(timestamped_tokens)]}"
                 segment["tokens"] = token if WHIPSER_GE_20230306 else timestamped_tokens # tokens include special timestamp tokens since 20230306
                 segment["text"] = tokenizer.decode(segment["tokens"])
-                logger.warn(f"Text had to be shortned on segment {i}:\n{tokenizer.decode(timestamped_tokens)}\n!=\n{tokenizer.decode(whisper_tokens)}")
+                logger.warning(f"Text had to be shortned on segment {i}:\n{tokenizer.decode(timestamped_tokens)}\n!=\n{tokenizer.decode(whisper_tokens)}")
             timestamped_words[-1]["avg_logprob_reliable"] = False
 
         offset = segment["seek"] * HOP_LENGTH / SAMPLE_RATE
@@ -900,7 +898,7 @@ def _transcribe_timestamped_efficient(
             if "avg_logprob_reliable" not in timestamped_words[-1] or timestamped_words[-1]["avg_logprob_reliable"]:
                 # assert abs(segment["avg_logprob"] - avglogprob) < 1e-2, f"Fatal Error: Got inconsistent logprob for segment {i}: {segment['avg_logprob']} != {avglogprob}"
                 if abs(segment["avg_logprob"] - avglogprob) >= 1e-2:
-                    logger.warn(f"Recomputed different logprob for segment {i}: {avglogprob} != {segment['avg_logprob']}")
+                    logger.warning(f"Recomputed different logprob for segment {i}: {avglogprob} != {segment['avg_logprob']}")
             if include_punctuation_in_confidence:
                 segment["confidence"] = round_confidence(logprobs.mean().exp().item())
             else:
@@ -923,7 +921,7 @@ def _transcribe_timestamped_efficient(
                 timestamped_word["confidence"] = round_confidence(word_logprobs.mean().exp().item() if len(word_logprobs) else 0.0)
 
             if i_end not in [len(logprobs), len(logprobs)-1]:
-                logger.warn(f"Got inconsistent length for segment {i} ({len(logprobs)} != {i_end}). Some words have been ignored.")
+                logger.warning(f"Got inconsistent length for segment {i} ({len(logprobs)} != {i_end}). Some words have been ignored.")
             if not include_punctuation_in_confidence:   
                 logprobs_nopunc = torch.cat(logprobs_nopunc)
                 segment["confidence"] = round_confidence(logprobs_nopunc.mean().exp().item())
@@ -1025,7 +1023,7 @@ def _transcribe_timestamped_naive(
 
                 if start > audio_duration - min_word_duration:
                     # Skip last segment if too short
-                    logger.warn(f"Skipping segment outside of audio duration {audio_duration} (original: {segment['start']}-{segment['end']}, new: {start}-XXX)")
+                    logger.warning(f"Skipping segment outside of audio duration {audio_duration} (original: {segment['start']}-{segment['end']}, new: {start}-XXX)")
                     continue
 
                 end_margin_min = end - refine_whisper_precision_sec
@@ -1039,10 +1037,10 @@ def _transcribe_timestamped_naive(
                 end = min(audio_duration, end_margin_max)
 
                 if end < start + min_word_duration:
-                    logger.warn(f"Got super short segment (original from whisper: {segment['start']}-{segment['end']}, new: {start, end})")
+                    logger.warning(f"Got super short segment (original from whisper: {segment['start']}-{segment['end']}, new: {start, end})")
                     end = min(audio_duration, start + min_word_duration)
                     if end <= start:
-                        logger.warn(f"Skipping this short segment occuring too close to the end of the audio")
+                        logger.warning(f"Skipping this short segment occuring too close to the end of the audio")
                         continue
 
                 tokens = segment["tokens"]
@@ -1394,7 +1392,7 @@ def perform_word_alignment(
     # Enforce the max duration
     if max_duration:
         if start_token >= max_duration:
-            logger.warn(f"Got start time outside of audio boundary")
+            logger.warning(f"Got start time outside of audio boundary")
         else:
             weights[:-1, max_duration:] = worse_weight
 
