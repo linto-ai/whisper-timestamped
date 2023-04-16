@@ -2138,11 +2138,19 @@ def cli():
         # New whisper version
         from whisper.utils import get_writer
 
-        def do_write(transcript, file, format):
-            writer = get_writer(format, os.path.curdir)
-            return writer.write_result({"segments": transcript}, file)
-        def get_do_write(format):
-            return lambda transcript, file: do_write(transcript, file, format)
+        def do_write(transcript, file, output_format):
+            writer = get_writer(output_format, os.path.curdir)
+            try:
+                return writer.write_result({"segments": transcript}, file)
+            except TypeError:
+                # Version > 20230314
+                return writer.write_result({"segments": list(transcript)}, file, {
+                    "highlight_words": False,
+                    "max_line_width": None,
+                    "max_line_count": None,
+                })
+        def get_do_write(output_format):
+            return lambda transcript, file: do_write(transcript, file, output_format)
 
         write_txt = get_do_write("txt")
         write_srt = get_do_write("srt")
