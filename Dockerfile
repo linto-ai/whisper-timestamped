@@ -18,7 +18,7 @@ COPY setup.py /usr/src/app/setup.py
 COPY whisper_timestamped /usr/src/app/whisper_timestamped
 
 # Install
-RUN cd /usr/src/app/ && pip3 install ".[dev]"
+RUN cd /usr/src/app/ && pip3 install ".[dev]" && pip3 install ".[vad]"
 
 # Cleanup
 RUN rm -R /usr/src/app/requirements.txt /usr/src/app/setup.py /usr/src/app/whisper_timestamped
