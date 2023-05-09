@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.12.17"
+__version__ = "1.12.18"
 
 # Set some environment variables
 import os
@@ -1398,7 +1398,7 @@ def perform_word_alignment(
 
     # Encourage to start early
     weights[0, 0] = weights.min()
-    weights[0, refine_whisper_precision_nframes*2:] = worse_weight
+    # weights[0, refine_whisper_precision_nframes*2:] = worse_weight
 
     if subwords_can_be_empty:
         step_pattern = dtw.stepPattern.symmetric1

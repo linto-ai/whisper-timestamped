@@ -427,7 +427,7 @@
     {
       "id": 3,
       "seek": 3000,
-      "start": 51.48,
+      "start": 51.96,
       "end": 56.22,
       "text": " Durant 60 minutes ce sont des gros plans, des analyses, des réactions que nous vous proposons.",
       "tokens": [
@@ -464,7 +464,7 @@
       "words": [
         {
           "text": "Durant",
-          "start": 51.48,
+          "start": 51.96,
           "end": 52.32,
           "confidence": 0.935
         },
@@ -844,7 +844,7 @@
     {
       "id": 6,
       "seek": 5600,
-      "start": 67.48,
+      "start": 67.5,
       "end": 76.38,
       "text": " Réponse de Nicolas Sarkozy, Eric Verth portera le débat sur les retraites, on en parle dans BFM story avec le numéro de la CFDT.",
       "tokens": [
@@ -898,7 +898,7 @@
       "words": [
         {
           "text": "Réponse",
-          "start": 67.48,
+          "start": 67.5,
           "end": 67.96,
           "confidence": 0.947
         },
@@ -1045,7 +1045,7 @@
     {
       "id": 7,
       "seek": 5600,
-      "start": 76.48,
+      "start": 76.8,
       "end": 83.04,
       "text": " Et puis il y a une bataille qui a démarré, celle entre Marine Le Pen et Bruno Gognich, la bataille de la succession de Jean-Marie Le Pen à la tête du Front National.",
       "tokens": [
@@ -1107,7 +1107,7 @@
       "words": [
         {
           "text": "Et",
-          "start": 76.48,
+          "start": 76.8,
           "end": 76.96,
           "confidence": 0.883
         },

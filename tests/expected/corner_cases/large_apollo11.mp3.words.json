@@ -150,7 +150,7 @@
     {
       "id": 1,
       "seek": 0,
-      "start": 10.48,
+      "start": 10.74,
       "end": 11.14,
       "text": " Go ahead.",
       "tokens": [
@@ -168,7 +168,7 @@
       "words": [
         {
           "text": "Go",
-          "start": 10.48,
+          "start": 10.74,
           "end": 10.98,
           "confidence": 0.842
         },
@@ -183,7 +183,7 @@
     {
       "id": 2,
       "seek": 0,
-      "start": 11.48,
+      "start": 11.88,
       "end": 17.3,
       "text": " Okay, we'd like to have, say, a selected one or two on the helmet.",
       "tokens": [
@@ -217,7 +217,7 @@
       "words": [
         {
           "text": "Okay,",
-          "start": 11.48,
+          "start": 11.88,
           "end": 12.28,
           "confidence": 0.507
         },
@@ -367,7 +367,7 @@
     {
       "id": 4,
       "seek": 0,
-      "start": 19.36,
+      "start": 20.08,
       "end": 24.32,
       "text": " And you could put the other one on Mike's helmet, we're still seeing the bleepers.",
       "tokens": [
@@ -403,7 +403,7 @@
       "words": [
         {
           "text": "And",
-          "start": 19.36,
+          "start": 20.08,
           "end": 20.22,
           "confidence": 0.796
         },
@@ -496,7 +496,7 @@
     {
       "id": 5,
       "seek": 0,
-      "start": 24.32,
+      "start": 24.86,
       "end": 25.1,
       "text": " Over.",
       "tokens": [
@@ -513,7 +513,7 @@
       "words": [
         {
           "text": "Over.",
-          "start": 24.32,
+          "start": 24.86,
           "end": 25.1,
           "confidence": 0.616
         }

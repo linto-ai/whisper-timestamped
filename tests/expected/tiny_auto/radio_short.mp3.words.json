@@ -4,7 +4,7 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.44,
+      "start": 5.0,
       "end": 6.12,
       "text": " What are you telling me, guys?",
       "tokens": [
@@ -27,7 +27,7 @@
       "words": [
         {
           "text": "What",
-          "start": 0.44,
+          "start": 5.0,
           "end": 5.22,
           "confidence": 0.041
         },
@@ -66,7 +66,7 @@
     {
       "id": 1,
       "seek": 0,
-      "start": 6.48,
+      "start": 6.76,
       "end": 7.57,
       "text": " What are you telling me, dude?",
       "tokens": [
@@ -89,7 +89,7 @@
       "words": [
         {
           "text": "What",
-          "start": 6.48,
+          "start": 6.76,
           "end": 6.92,
           "confidence": 0.884
         },
@@ -190,7 +190,7 @@
     {
       "id": 3,
       "seek": 0,
-      "start": 10.46,
+      "start": 11.22,
       "end": 12.5,
       "text": " What are you telling me, dude?",
       "tokens": [
@@ -213,13 +213,13 @@
       "words": [
         {
           "text": "What",
-          "start": 10.46,
-          "end": 10.54,
+          "start": 11.22,
+          "end": 11.44,
           "confidence": 0.423
         },
         {
           "text": "are",
-          "start": 10.54,
+          "start": 11.44,
           "end": 11.56,
           "confidence": 0.791
         },
@@ -314,8 +314,8 @@
     {
       "id": 5,
       "seek": 0,
-      "start": 16.48,
-      "end": 17.78,
+      "start": 20.32,
+      "end": 21.4,
       "text": " What are you telling me, guys?",
       "tokens": [
         51164,
@@ -337,38 +337,38 @@
       "words": [
         {
           "text": "What",
-          "start": 16.48,
-          "end": 17.58,
+          "start": 20.32,
+          "end": 20.72,
           "confidence": 0.885
         },
         {
           "text": "are",
-          "start": 17.58,
-          "end": 17.7,
+          "start": 20.72,
+          "end": 20.78,
           "confidence": 0.936
         },
         {
           "text": "you",
-          "start": 17.7,
-          "end": 17.72,
+          "start": 20.78,
+          "end": 20.8,
           "confidence": 0.996
         },
         {
           "text": "telling",
-          "start": 17.72,
-          "end": 17.74,
+          "start": 20.8,
+          "end": 21.04,
           "confidence": 0.935
         },
         {
           "text": "me,",
-          "start": 17.74,
-          "end": 17.76,
+          "start": 21.04,
+          "end": 21.3,
           "confidence": 0.896
         },
         {
           "text": "guys?",
-          "start": 17.76,
-          "end": 17.78,
+          "start": 21.38,
+          "end": 21.4,
           "confidence": 0.969
         }
       ]
@@ -376,7 +376,7 @@
     {
       "id": 6,
       "seek": 0,
-      "start": 20.5,
+      "start": 22.08,
       "end": 22.96,
       "text": " What are you telling me, dude?",
       "tokens": [
@@ -399,7 +399,7 @@
       "words": [
         {
           "text": "What",
-          "start": 20.5,
+          "start": 22.08,
           "end": 22.24,
           "confidence": 0.95
         },
@@ -582,7 +582,7 @@
     {
       "id": 9,
       "seek": 2600,
-      "start": 32.48,
+      "start": 33.42,
       "end": 34.06,
       "text": " It's what you do.",
       "tokens": [
@@ -603,7 +603,7 @@
       "words": [
         {
           "text": "It's",
-          "start": 32.48,
+          "start": 33.42,
           "end": 33.64,
           "confidence": 0.307
         },
@@ -630,7 +630,7 @@
     {
       "id": 10,
       "seek": 2600,
-      "start": 34.26,
+      "start": 34.86,
       "end": 35.5,
       "text": " Yes, man.",
       "tokens": [
@@ -649,8 +649,8 @@
       "words": [
         {
           "text": "Yes,",
-          "start": 34.26,
-          "end": 34.86,
+          "start": 34.86,
+          "end": 34.88,
           "confidence": 0.065
         },
         {
@@ -664,7 +664,7 @@
     {
       "id": 11,
       "seek": 2600,
-      "start": 36.26,
+      "start": 37.14,
       "end": 38.64,
       "text": " The reference of the book.",
       "tokens": [
@@ -685,7 +685,7 @@
       "words": [
         {
           "text": "The",
-          "start": 36.26,
+          "start": 37.14,
           "end": 37.28,
           "confidence": 0.385
         },
@@ -718,7 +718,7 @@
     {
       "id": 12,
       "seek": 2600,
-      "start": 44.48,
+      "start": 44.94,
       "end": 45.65,
       "text": " Good evening, good evening.",
       "tokens": [
@@ -739,7 +739,7 @@
       "words": [
         {
           "text": "Good",
-          "start": 44.48,
+          "start": 44.94,
           "end": 45.16,
           "confidence": 0.134
         },
@@ -1047,7 +1047,7 @@
     {
       "id": 16,
       "seek": 5200,
-      "start": 56.48,
+      "start": 56.7,
       "end": 59.8,
       "text": " As you can see, it's a bit of a report of the reports of the reports.",
       "tokens": [
@@ -1081,7 +1081,7 @@
       "words": [
         {
           "text": "As",
-          "start": 56.48,
+          "start": 56.7,
           "end": 56.9,
           "confidence": 0.289
         },

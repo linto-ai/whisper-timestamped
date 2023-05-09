@@ -4,8 +4,8 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.0,
-      "end": 0.44,
+      "start": 2.24,
+      "end": 2.36,
       "text": " I",
       "tokens": [
         50364,
@@ -20,8 +20,8 @@
       "words": [
         {
           "text": "I",
-          "start": 0.0,
-          "end": 0.44,
+          "start": 2.24,
+          "end": 2.36,
           "confidence": 0.032
         }
       ]
@@ -233,7 +233,7 @@
     {
       "id": 3,
       "seek": 3000,
-      "start": 45.06,
+      "start": 45.12,
       "end": 51.0,
       "text": " I'm searching to be home the stories that are told when the back is to the world smiling when I turn",
       "tokens": [
@@ -270,7 +270,7 @@
       "words": [
         {
           "text": "I'm",
-          "start": 45.06,
+          "start": 45.12,
           "end": 45.24,
           "confidence": 0.996
         },
@@ -1220,7 +1220,7 @@
     {
       "id": 15,
       "seek": 13308,
-      "start": 137.56,
+      "start": 137.6,
       "end": 140.24,
       "text": " Look, okay I'm hoping that somebody pray for me",
       "tokens": [
@@ -1246,7 +1246,7 @@
       "words": [
         {
           "text": "Look,",
-          "start": 137.56,
+          "start": 137.6,
           "end": 137.88,
           "confidence": 0.837
         },
@@ -1364,7 +1364,7 @@
     {
       "id": 17,
       "seek": 13308,
-      "start": 141.56,
+      "start": 141.9,
       "end": 143.22,
       "text": " Staying where nobody supposed to be",
       "tokens": [
@@ -1386,7 +1386,7 @@
       "words": [
         {
           "text": "Staying",
-          "start": 141.56,
+          "start": 141.9,
           "end": 142.24,
           "confidence": 0.748
         },
@@ -2424,7 +2424,7 @@
     {
       "id": 30,
       "seek": 16108,
-      "start": 163.56,
+      "start": 163.62,
       "end": 165.21,
       "text": " Pack it up, I don't panic, batter, batter up",
       "tokens": [
@@ -2452,7 +2452,7 @@
       "words": [
         {
           "text": "Pack",
-          "start": 163.56,
+          "start": 163.62,
           "end": 163.86,
           "confidence": 0.984
         },
@@ -2661,7 +2661,7 @@
     {
       "id": 33,
       "seek": 16108,
-      "start": 169.56,
+      "start": 170.58,
       "end": 172.2,
       "text": " Spare the sympathy",
       "tokens": [
@@ -2680,7 +2680,7 @@
       "words": [
         {
           "text": "Spare",
-          "start": 169.56,
+          "start": 170.58,
           "end": 171.28,
           "confidence": 0.75
         },
@@ -2701,7 +2701,7 @@
     {
       "id": 34,
       "seek": 16108,
-      "start": 172.56,
+      "start": 173.08,
       "end": 176.16,
       "text": " Everybody wants to be my enemy",
       "tokens": [
@@ -2722,7 +2722,7 @@
       "words": [
         {
           "text": "Everybody",
-          "start": 172.56,
+          "start": 173.08,
           "end": 173.7,
           "confidence": 0.996
         },
@@ -2761,7 +2761,7 @@
     {
       "id": 35,
       "seek": 16108,
-      "start": 176.56,
+      "start": 176.9,
       "end": 178.28,
       "text": " Oh, the misery",
       "tokens": [
@@ -2780,7 +2780,7 @@
       "words": [
         {
           "text": "Oh,",
-          "start": 176.56,
+          "start": 176.9,
           "end": 177.48,
           "confidence": 0.782
         },
@@ -2801,7 +2801,7 @@
     {
       "id": 36,
       "seek": 16108,
-      "start": 178.56,
+      "start": 179.28,
       "end": 181.6,
       "text": " Everybody wants to be my enemy",
       "tokens": [
@@ -2822,7 +2822,7 @@
       "words": [
         {
           "text": "Everybody",
-          "start": 178.56,
+          "start": 179.28,
           "end": 179.92,
           "confidence": 0.997
         },
@@ -2861,7 +2861,7 @@
     {
       "id": 37,
       "seek": 16108,
-      "start": 182.56,
+      "start": 183.06,
       "end": 184.48,
       "text": " Spare the sympathy",
       "tokens": [
@@ -2880,7 +2880,7 @@
       "words": [
         {
           "text": "Spare",
-          "start": 182.56,
+          "start": 183.06,
           "end": 183.76,
           "confidence": 1.0
         },
@@ -2901,7 +2901,7 @@
     {
       "id": 38,
       "seek": 16108,
-      "start": 184.56,
+      "start": 185.48,
       "end": 188.38,
       "text": " Everybody wants to be my enemy",
       "tokens": [
@@ -2922,7 +2922,7 @@
       "words": [
         {
           "text": "Everybody",
-          "start": 184.56,
+          "start": 185.48,
           "end": 186.16,
           "confidence": 0.993
         },

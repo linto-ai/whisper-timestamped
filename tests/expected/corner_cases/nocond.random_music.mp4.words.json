@@ -4,8 +4,8 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.0,
-      "end": 0.44,
+      "start": 2.24,
+      "end": 2.36,
       "text": " I",
       "tokens": [
         50364,
@@ -20,8 +20,8 @@
       "words": [
         {
           "text": "I",
-          "start": 0.0,
-          "end": 0.44,
+          "start": 2.24,
+          "end": 2.36,
           "confidence": 0.032
         }
       ]

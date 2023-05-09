@@ -427,7 +427,7 @@
     {
       "id": 4,
       "seek": 0,
-      "start": 13.32,
+      "start": 13.38,
       "end": 16.04,
       "text": " Alors évidemment, il faudrait ajouter les interfaces.",
       "tokens": [
@@ -453,7 +453,7 @@
       "words": [
         {
           "text": "Alors",
-          "start": 13.32,
+          "start": 13.38,
           "end": 13.58,
           "confidence": 0.584
         },
@@ -577,7 +577,7 @@
     {
       "id": 6,
       "seek": 0,
-      "start": 19.82,
+      "start": 20.02,
       "end": 25.44,
       "text": " Mais bon, il faut dire qu'il profite aussi de 20 ans pendant lesquels les ordinateurs nous ont appris à cliquer sur des icônes.",
       "tokens": [
@@ -628,7 +628,7 @@
       "words": [
         {
           "text": "Mais",
-          "start": 19.82,
+          "start": 20.02,
           "end": 20.26,
           "confidence": 0.943
         },
@@ -1840,7 +1840,7 @@
     {
       "id": 14,
       "seek": 4884,
-      "start": 66.82,
+      "start": 66.88,
       "end": 71.24,
       "text": " Et donc cette espèce de nouveauté dans la relation à l'objet, c'est fascinant et terrifiant.",
       "tokens": [
@@ -1884,7 +1884,7 @@
       "words": [
         {
           "text": "Et",
-          "start": 66.82,
+          "start": 66.88,
           "end": 67.02,
           "confidence": 0.654
         },
@@ -2728,7 +2728,7 @@
     {
       "id": 20,
       "seek": 9484,
-      "start": 102.82,
+      "start": 102.86,
       "end": 105.72,
       "text": " pour déterminer si ce rapport est totalement inédit.",
       "tokens": [
@@ -2756,7 +2756,7 @@
       "words": [
         {
           "text": "pour",
-          "start": 102.82,
+          "start": 102.86,
           "end": 103.1,
           "confidence": 0.989
         },
@@ -2807,7 +2807,7 @@
     {
       "id": 21,
       "seek": 9484,
-      "start": 105.82,
+      "start": 106.14,
       "end": 109.32,
       "text": " Mais j'ai l'impression comme ça que Nicolas ne se trompe pas vraiment.",
       "tokens": [
@@ -2841,7 +2841,7 @@
       "words": [
         {
           "text": "Mais",
-          "start": 105.82,
+          "start": 106.14,
           "end": 106.4,
           "confidence": 0.975
         },
@@ -2916,7 +2916,7 @@
     {
       "id": 22,
       "seek": 9484,
-      "start": 109.82,
+      "start": 109.94,
       "end": 115.06,
       "text": " Pour autant que je sache, il y a eu plein de discussions autour de la voiture ou même du téléphone.",
       "tokens": [
@@ -2954,7 +2954,7 @@
       "words": [
         {
           "text": "Pour",
-          "start": 109.82,
+          "start": 109.94,
           "end": 110.1,
           "confidence": 0.995
         },
@@ -3249,7 +3249,7 @@
     {
       "id": 25,
       "seek": 9484,
-      "start": 119.82,
+      "start": 120.04,
       "end": 123.1,
       "text": " On peut adorer sa bagnole, en avoir besoin pour plein de choses.",
       "tokens": [
@@ -3281,7 +3281,7 @@
       "words": [
         {
           "text": "On",
-          "start": 119.82,
+          "start": 120.04,
           "end": 120.16,
           "confidence": 0.757
         },
@@ -4413,7 +4413,7 @@
     {
       "id": 35,
       "seek": 15284,
-      "start": 158.82,
+      "start": 159.12,
       "end": 165.36,
       "text": " Est-ce qu'il faut en remettre la faute sur les gens qui ont créé cet outil merveilleux et diabolique, et diabolique parce que merveilleux ?",
       "tokens": [
@@ -4471,7 +4471,7 @@
       "words": [
         {
           "text": "Est-ce",
-          "start": 158.82,
+          "start": 159.12,
           "end": 159.34,
           "confidence": 0.987
         },
@@ -4612,7 +4612,7 @@
     {
       "id": 36,
       "seek": 15284,
-      "start": 166.82,
+      "start": 166.84,
       "end": 168.82,
       "text": " Les économistes parlent de dépendance du sentier.",
       "tokens": [
@@ -4639,7 +4639,7 @@
       "words": [
         {
           "text": "Les",
-          "start": 166.82,
+          "start": 166.84,
           "end": 167.08,
           "confidence": 0.945
         },
@@ -4684,7 +4684,7 @@
     {
       "id": 37,
       "seek": 15284,
-      "start": 168.82,
+      "start": 168.98,
       "end": 177.38,
       "text": " C'est l'idée qu'on met sur un sentier qui a été établi, soit volontairement en marchant dessus, soit en définissant des bornes, en définissant une signalétique.",
       "tokens": [
@@ -4744,7 +4744,7 @@
       "words": [
         {
           "text": "C'est",
-          "start": 168.82,
+          "start": 168.98,
           "end": 169.2,
           "confidence": 0.996
         },

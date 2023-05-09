@@ -128,7 +128,7 @@
     {
       "id": 1,
       "seek": 0,
-      "start": 6.56,
+      "start": 10.8,
       "end": 19.08,
       "text": " Alright, okay, we like to say that they make the one that's on the helmet we're going to have in B1.",
       "tokens": [
@@ -170,8 +170,8 @@
       "words": [
         {
           "text": "Alright,",
-          "start": 6.56,
-          "end": 10.68,
+          "start": 10.8,
+          "end": 10.82,
           "confidence": 0.055
         },
         {
@@ -432,7 +432,7 @@
     {
       "id": 3,
       "seek": 2500,
-      "start": 24.54,
+      "start": 31.34,
       "end": 54.52,
       "text": " Alright, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them, got them",
       "tokens": [
@@ -669,7 +669,7 @@
       "words": [
         {
           "text": "Alright,",
-          "start": 24.54,
+          "start": 31.34,
           "end": 31.52,
           "confidence": 0.069
         },

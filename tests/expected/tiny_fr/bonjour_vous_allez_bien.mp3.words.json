@@ -86,8 +86,8 @@
     {
       "id": 2,
       "seek": 3000,
-      "start": 30.94,
-      "end": 30.96,
+      "start": 32.98,
+      "end": 33.48,
       "text": " Bonjour !",
       "tokens": [
         50364,
@@ -103,8 +103,8 @@
       "words": [
         {
           "text": "Bonjour !",
-          "start": 30.94,
-          "end": 30.96,
+          "start": 32.98,
+          "end": 33.48,
           "confidence": 0.533
         }
       ]
@@ -112,7 +112,7 @@
     {
       "id": 3,
       "seek": 3000,
-      "start": 33.02,
+      "start": 34.42,
       "end": 35.48,
       "text": " Esque vous allez bien !",
       "tokens": [
@@ -133,7 +133,7 @@
       "words": [
         {
           "text": "Esque",
-          "start": 33.02,
+          "start": 34.42,
           "end": 34.76,
           "confidence": 0.186
         },

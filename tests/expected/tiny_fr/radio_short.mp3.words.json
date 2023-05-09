@@ -1,5 +1,5 @@
 {
-  "text": " ... ... ... ...",
+  "text": " ... ... ...",
   "segments": [
     {
       "id": 0,
@@ -52,34 +52,9 @@
       ]
     },
     {
-      "id": 2,
-      "seek": 9000,
-      "start": 90.0,
-      "end": 90.52,
-      "text": " ...",
-      "tokens": [
-        50364,
-        1097,
-        51114
-      ],
-      "temperature": 0.0,
-      "avg_logprob": -0.8222726821899414,
-      "compression_ratio": 0.2727272727272727,
-      "no_speech_prob": 0.640861988067627,
-      "confidence": 0.842,
-      "words": [
-        {
-          "text": "...",
-          "start": 90.0,
-          "end": 90.52,
-          "confidence": 0.842
-        }
-      ]
-    },
-    {
       "id": 3,
       "seek": 10500,
-      "start": 106.48,
+      "start": 106.84,
       "end": 108.62,
       "text": " ...",
       "tokens": [
@@ -95,7 +70,7 @@
       "words": [
         {
           "text": "...",
-          "start": 106.48,
+          "start": 106.84,
           "end": 108.62,
           "confidence": 0.47
         }

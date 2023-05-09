@@ -68,7 +68,7 @@
     {
       "id": 1,
       "seek": 3000,
-      "start": 30.48,
+      "start": 32.86,
       "end": 35.42,
       "text": " Mohoo, let's go with it again",
       "tokens": [
@@ -93,7 +93,7 @@
       "words": [
         {
           "text": "Mohoo,",
-          "start": 30.48,
+          "start": 32.86,
           "end": 34.02,
           "confidence": 0.277
         },

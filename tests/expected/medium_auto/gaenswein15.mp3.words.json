@@ -245,7 +245,7 @@
     {
       "id": 2,
       "seek": 0,
-      "start": 13.48,
+      "start": 14.0,
       "end": 15.48,
       "text": " Das hat er als Emeritor so gemacht.",
       "tokens": [
@@ -269,7 +269,7 @@
       "words": [
         {
           "text": "Das",
-          "start": 13.48,
+          "start": 14.0,
           "end": 14.2,
           "confidence": 0.968
         },
