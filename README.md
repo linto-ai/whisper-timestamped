@@ -138,7 +138,7 @@ pip3 install openai-whisper==20230124
 
 ### Python
 
-In python, you can use the function `whisper_timestamped.transcribe()` that is similar to the fonction `whisper.transcribe()`
+In python, you can use the function `whisper_timestamped.transcribe()` that is similar to the function `whisper.transcribe()`
 ```python
 import whisper_timestamped
 help(whisper_timestamped.transcribe)
