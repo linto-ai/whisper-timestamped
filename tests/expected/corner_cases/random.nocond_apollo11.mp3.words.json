@@ -1,5 +1,5 @@
 {
-  "text": " Apollo 11, Houston we got a recommendation for you on your Soyuz-VA GLEME GVA. Alright, okay, we like the... Yeah, I'll put that there, my friend. They make the one that's on the helmet we were going to have in B1. And you can put the other one on the mic helmet with those GVA flipper strings. I got them. I got them. I got them. They're the better helmet that B1 has. They got the one mic down. They go in there and we fix it. We got them in there helmet bags. And we get them in the helmet bags. At least this one, at least the bag. Right here. Right here. We're thinking they could be on it. Yeah, we're thinking they could be on it. There you go. We were going to hang with the cover. I tried it already. Okay, fine. We weren't sure that. Just a suggestion. We thought we'd say you could check it out. I'm like you were already done that. So I guess we're going to come up with this. Let us know. Okay, no problem. Okay, no problem. We'll let you know when the end of the session.",
+  "text": " Apollo 11, Houston we got a recommendation for you on your Soyuz-VA GLEME GVA. Alright, okay, we like the... Yeah, I'll put that there, my friend. They make the one that's on the helmet we were going to have in B1. And you can put the other one on the mic helmet with those GVA flipper strings. I got them. I got them. I got them. They're the better helmet that B1 has. They got the one mic down. They go in there and we fix it. We got them in there helmet bags. And we get them in the helmet bags. At least this one, at least the bag. Right here. Right here. We're thinking they could be on it. Yeah, we're thinking they could be on it. There you go. We were going to hang with the cover. I tried it already. Okay, fine. We weren't sure that. Just a suggestion. We thought we'd say you could check it out. I'm like you were already done that. So I guess we're going to come up with this. Let us know. Okay, no problem. Okay, no problem. We'll let you know when the end of the session. Bye.",
   "segments": [
     {
       "id": 0,
@@ -2003,6 +2003,32 @@
           "start": 77.7,
           "end": 78.24,
           "confidence": 0.138
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "seek": 7800,
+      "start": 88.94,
+      "end": 88.96,
+      "text": " Bye.",
+      "tokens": [
+        50364,
+        4621,
+        13,
+        50914
+      ],
+      "temperature": 0.1,
+      "avg_logprob": -0.8541962623596191,
+      "compression_ratio": 0.3333333333333333,
+      "no_speech_prob": 0.881976306438446,
+      "confidence": 0.099,
+      "words": [
+        {
+          "text": "Bye.",
+          "start": 88.94,
+          "end": 88.96,
+          "confidence": 0.099
         }
       ]
     }

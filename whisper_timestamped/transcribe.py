@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.12.19"
+__version__ = "1.12.21"
 
 # Set some environment variables
 import os
@@ -67,6 +67,7 @@ def transcribe_timestamped(
     min_word_duration=0.02, # Was 0.04 before 1.11
     plot_word_alignment=False,
     word_alignement_most_top_layers=None, # Was 6 before 1.9
+    remove_empty_words=False,
 
     # Reproducibility
     seed=1234,
@@ -141,6 +142,9 @@ def transcribe_timestamped(
 
     plot_word_alignment: bool
         Whether to plot the word alignment for each segment. matplotlib must be installed to use this option.
+
+    remove_empty_words: bool
+        Whether to remove words with no duration occuring at the end of segments (probable Whisper hallucinations).
 
     seed: int
         Random seed to use for temperature sampling, for the sake of reproducibility.
@@ -259,9 +263,9 @@ def transcribe_timestamped(
         (transcription, words) = _transcribe_timestamped_efficient(model, audio,
                                                                    trust_whisper_timestamps=trust_whisper_timestamps,
                                                                    **alignment_options, **whisper_options, **other_options)
-
-    # Remove words with empty duration happening at the end of segments, to remove some hallucinations
-    transcription, words = remove_last_null_duration_words(transcription, words, recompute_text=True)
+    if remove_empty_words:
+        # Remove words with empty duration happening at the end of segments, to remove some hallucinations
+        transcription, words = remove_last_null_duration_words(transcription, words, recompute_text=True)
 
     # Refine word positions
     ensure_increasing_positions(words, min_duration=min_word_duration if trust_whisper_timestamps else 0)

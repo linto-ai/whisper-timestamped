@@ -1,12 +1,12 @@
 {
-  "text": " Je vais vous donner un",
+  "text": " Je vais vous donner un peu de temps.",
   "segments": [
     {
       "id": 0,
       "seek": 0,
       "start": 0.18,
-      "end": 1.66,
-      "text": " Je vais vous donner un",
+      "end": 1.72,
+      "text": " Je vais vous donner un peu de temps.",
       "tokens": [
         50364,
         2588,
@@ -55,6 +55,24 @@
           "start": 1.26,
           "end": 1.66,
           "confidence": 0.144
+        },
+        {
+          "text": "peu",
+          "start": 1.66,
+          "end": 1.68,
+          "confidence": 0.091
+        },
+        {
+          "text": "de",
+          "start": 1.68,
+          "end": 1.7,
+          "confidence": 0.625
+        },
+        {
+          "text": "temps.",
+          "start": 1.7,
+          "end": 1.72,
+          "confidence": 0.053
         }
       ]
     }

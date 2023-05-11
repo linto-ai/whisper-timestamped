@@ -1,12 +1,12 @@
 {
-  "text": " I am the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is",
+  "text": " I am the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is",
   "segments": [
     {
       "id": 0,
       "seek": 0,
       "start": 2.92,
-      "end": 7.24,
-      "text": " I am the one who is the one who is the one",
+      "end": 7.72,
+      "text": " I am the one who is the one who is the one who is the one who is the one who is the one",
       "tokens": [
         50363,
         314,
@@ -110,17 +110,89 @@
         {
           "text": "one",
           "start": 7.2,
-          "end": 7.24,
+          "end": 7.48,
           "confidence": 0.443
+        },
+        {
+          "text": "who",
+          "start": 7.48,
+          "end": 7.5,
+          "confidence": 0.447
+        },
+        {
+          "text": "is",
+          "start": 7.5,
+          "end": 7.52,
+          "confidence": 0.518
+        },
+        {
+          "text": "the",
+          "start": 7.52,
+          "end": 7.54,
+          "confidence": 0.542
+        },
+        {
+          "text": "one",
+          "start": 7.54,
+          "end": 7.56,
+          "confidence": 0.724
+        },
+        {
+          "text": "who",
+          "start": 7.56,
+          "end": 7.58,
+          "confidence": 0.433
+        },
+        {
+          "text": "is",
+          "start": 7.58,
+          "end": 7.6,
+          "confidence": 0.677
+        },
+        {
+          "text": "the",
+          "start": 7.6,
+          "end": 7.62,
+          "confidence": 0.638
+        },
+        {
+          "text": "one",
+          "start": 7.62,
+          "end": 7.64,
+          "confidence": 0.817
+        },
+        {
+          "text": "who",
+          "start": 7.64,
+          "end": 7.66,
+          "confidence": 0.503
+        },
+        {
+          "text": "is",
+          "start": 7.66,
+          "end": 7.68,
+          "confidence": 0.74
+        },
+        {
+          "text": "the",
+          "start": 7.68,
+          "end": 7.7,
+          "confidence": 0.696
+        },
+        {
+          "text": "one",
+          "start": 7.7,
+          "end": 7.72,
+          "confidence": 0.697
         }
       ]
     },
     {
       "id": 1,
       "seek": 700,
-      "start": 7.24,
-      "end": 37.16,
-      "text": " who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is",
+      "start": 7.72,
+      "end": 37.18,
+      "text": " who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the",
       "tokens": [
         50363,
         508,
@@ -355,25 +427,25 @@
       "words": [
         {
           "text": "who",
-          "start": 7.24,
-          "end": 7.26,
+          "start": 7.72,
+          "end": 7.74,
           "confidence": 0.214
         },
         {
           "text": "is",
-          "start": 7.26,
-          "end": 7.28,
+          "start": 7.74,
+          "end": 7.76,
           "confidence": 0.892
         },
         {
           "text": "the",
-          "start": 7.28,
-          "end": 7.3,
+          "start": 7.76,
+          "end": 7.78,
           "confidence": 0.918
         },
         {
           "text": "one",
-          "start": 7.3,
+          "start": 7.78,
           "end": 9.96,
           "confidence": 0.955
         },
@@ -1684,13 +1756,19 @@
           "start": 37.14,
           "end": 37.16,
           "confidence": 0.978
+        },
+        {
+          "text": "the",
+          "start": 37.16,
+          "end": 37.18,
+          "confidence": 0.971
         }
       ]
     },
     {
       "id": 2,
       "seek": 3700,
-      "start": 37.16,
+      "start": 37.18,
       "end": 66.98,
       "text": " one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is the one who is",
       "tokens": [
@@ -1927,7 +2005,7 @@
       "words": [
         {
           "text": "one",
-          "start": 37.16,
+          "start": 37.18,
           "end": 37.32,
           "confidence": 0.959
         },
