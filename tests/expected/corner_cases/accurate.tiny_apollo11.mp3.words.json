@@ -1,5 +1,5 @@
 {
-  "text": " I'm all around my business and we got a recommendation for you on your door to the VA We have 18A's Okay, okay, I think I'll just get him or if they like just want to go on the Yeah, now what you want is on having a B1 And you just get the other one on my Now when we're here, we're going to go on Yeah Okay, we want to hear that This is it, we know we just You can hit that That's how much you've ordered in that So I guess I'm working on my position but it's not Oh my god Okay, no problem No idea No idea Okay Okay",
+  "text": " I'm all around my business and we got a recommendation for you on your door to the VA We have 18A's Okay, okay, I think I'll just get him or if they like just want to go on the Yeah, now what you want is on having a B1 And you just get the other one on my Now when we're here, we're going to go on the Yeah Okay, we want to hear that This is it, we know we just You can hit that That's how much you've ordered in that So I guess I'm working on my position but it's not Oh my god Okay, no problem No idea No idea Okay Okay",
   "segments": [
     {
       "id": 0,
@@ -509,8 +509,8 @@
       "id": 5,
       "seek": 0,
       "start": 22.12,
-      "end": 25.34,
-      "text": " Now when we're here, we're going to go on",
+      "end": 25.36,
+      "text": " Now when we're here, we're going to go on the",
       "tokens": [
         51462,
         823,
@@ -587,6 +587,12 @@
           "start": 24.72,
           "end": 25.34,
           "confidence": 0.133
+        },
+        {
+          "text": "the",
+          "start": 25.34,
+          "end": 25.36,
+          "confidence": 0.364
         }
       ]
     },
