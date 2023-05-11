@@ -4,7 +4,7 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.98,
+      "start": 1.4,
       "end": 1.74,
       "text": " Hello.",
       "tokens": [
@@ -21,7 +21,7 @@
       "words": [
         {
           "text": "Hello.",
-          "start": 0.98,
+          "start": 1.4,
           "end": 1.74,
           "confidence": 0.285
         }

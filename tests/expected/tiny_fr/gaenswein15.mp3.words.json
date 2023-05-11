@@ -4,7 +4,7 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.92,
+      "start": 20.14,
       "end": 24.62,
       "text": " Leur de l'Ontario",
       "tokens": [
@@ -30,19 +30,19 @@
       "words": [
         {
           "text": "Leur",
-          "start": 0.92,
-          "end": 1.58,
+          "start": 20.14,
+          "end": 20.16,
           "confidence": 0.055
         },
         {
           "text": "de",
-          "start": 1.58,
-          "end": 1.6,
+          "start": 20.16,
+          "end": 20.18,
           "confidence": 0.11
         },
         {
           "text": "l'Ontario",
-          "start": 1.6,
+          "start": 20.18,
           "end": 24.62,
           "confidence": 0.309
         }

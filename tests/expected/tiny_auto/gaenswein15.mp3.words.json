@@ -144,7 +144,7 @@
     {
       "id": 1,
       "seek": 0,
-      "start": 8.04,
+      "start": 9.42,
       "end": 12.78,
       "text": " Rätus ist dann nicht so weitergegangen wie sich Papstbälle dick das gewünscht hatte.",
       "tokens": [
@@ -183,13 +183,13 @@
       "words": [
         {
           "text": "Rätus",
-          "start": 8.04,
-          "end": 9.16,
+          "start": 9.42,
+          "end": 9.44,
           "confidence": 0.381
         },
         {
           "text": "ist",
-          "start": 9.16,
+          "start": 9.44,
           "end": 9.62,
           "confidence": 0.897
         },
@@ -264,7 +264,7 @@
     {
       "id": 2,
       "seek": 0,
-      "start": 13.48,
+      "start": 14.0,
       "end": 15.28,
       "text": " Das hat er als Meshale im Rätus",
       "tokens": [
@@ -290,7 +290,7 @@
       "words": [
         {
           "text": "Das",
-          "start": 13.48,
+          "start": 14.0,
           "end": 14.2,
           "confidence": 0.938
         },

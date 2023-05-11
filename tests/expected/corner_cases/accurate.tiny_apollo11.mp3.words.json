@@ -190,7 +190,7 @@
     {
       "id": 2,
       "seek": 0,
-      "start": 10.92,
+      "start": 12.0,
       "end": 16.79,
       "text": " Okay, okay, I think I'll just get him or if they like just want to go on the",
       "tokens": [
@@ -226,7 +226,7 @@
       "words": [
         {
           "text": "Okay,",
-          "start": 10.92,
+          "start": 12.0,
           "end": 12.38,
           "confidence": 0.662
         },
@@ -593,7 +593,7 @@
     {
       "id": 6,
       "seek": 3000,
-      "start": 30.98,
+      "start": 31.36,
       "end": 31.56,
       "text": " Yeah",
       "tokens": [
@@ -609,7 +609,7 @@
       "words": [
         {
           "text": "Yeah",
-          "start": 30.98,
+          "start": 31.36,
           "end": 31.56,
           "confidence": 0.057
         }
@@ -618,7 +618,7 @@
     {
       "id": 7,
       "seek": 6000,
-      "start": 60.0,
+      "start": 62.7,
       "end": 64.14,
       "text": " Okay, we want to hear that",
       "tokens": [
@@ -640,8 +640,8 @@
       "words": [
         {
           "text": "Okay,",
-          "start": 60.0,
-          "end": 61.78,
+          "start": 62.7,
+          "end": 62.72,
           "confidence": 0.125
         },
         {
@@ -863,7 +863,7 @@
       "id": 11,
       "seek": 6000,
       "start": 70.4,
-      "end": 72.51,
+      "end": 72.52,
       "text": " So I guess I'm working on my position but it's not",
       "tokens": [
         50864,
@@ -951,7 +951,7 @@
         {
           "text": "not",
           "start": 72.38,
-          "end": 72.51,
+          "end": 72.52,
           "confidence": 0.585
         }
       ]
@@ -959,7 +959,7 @@
     {
       "id": 12,
       "seek": 6000,
-      "start": 72.51,
+      "start": 74.72,
       "end": 75.22,
       "text": " Oh my god",
       "tokens": [
@@ -977,13 +977,13 @@
       "words": [
         {
           "text": "Oh",
-          "start": 72.51,
-          "end": 73.62,
+          "start": 74.72,
+          "end": 74.74,
           "confidence": 0.145
         },
         {
           "text": "my",
-          "start": 73.62,
+          "start": 74.74,
           "end": 75.08,
           "confidence": 0.272
         },
@@ -1127,7 +1127,7 @@
     {
       "id": 17,
       "seek": 6000,
-      "start": 86.48,
+      "start": 86.6,
       "end": 86.86,
       "text": " Okay",
       "tokens": [
@@ -1143,7 +1143,7 @@
       "words": [
         {
           "text": "Okay",
-          "start": 86.48,
+          "start": 86.6,
           "end": 86.86,
           "confidence": 0.159
         }

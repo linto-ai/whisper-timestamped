@@ -5,7 +5,7 @@
       "id": 0,
       "seek": 0,
       "start": 0.0,
-      "end": 3.76,
+      "end": 4.02,
       "text": " Ella, my glorious love.",
       "tokens": [
         50364,
@@ -44,7 +44,7 @@
         {
           "text": "love.",
           "start": 3.36,
-          "end": 3.76,
+          "end": 4.02,
           "confidence": 0.883
         }
       ]
@@ -52,7 +52,7 @@
     {
       "id": 1,
       "seek": 0,
-      "start": 3.76,
+      "start": 5.46,
       "end": 6.24,
       "text": " How are you?",
       "tokens": [
@@ -71,7 +71,7 @@
       "words": [
         {
           "text": "How",
-          "start": 3.76,
+          "start": 5.46,
           "end": 5.62,
           "confidence": 0.454
         },
@@ -267,7 +267,7 @@
     {
       "id": 4,
       "seek": 0,
-      "start": 11.48,
+      "start": 11.9,
       "end": 13.06,
       "text": " Of course she can.",
       "tokens": [
@@ -287,7 +287,7 @@
       "words": [
         {
           "text": "Of",
-          "start": 11.48,
+          "start": 11.9,
           "end": 12.16,
           "confidence": 0.562
         },
@@ -314,7 +314,7 @@
     {
       "id": 5,
       "seek": 0,
-      "start": 13.48,
+      "start": 13.7,
       "end": 15.2,
       "text": " No, this won't be for long.",
       "tokens": [
@@ -338,7 +338,7 @@
       "words": [
         {
           "text": "No,",
-          "start": 13.48,
+          "start": 13.7,
           "end": 13.72,
           "confidence": 0.381
         },
@@ -482,7 +482,7 @@
     {
       "id": 7,
       "seek": 0,
-      "start": 17.48,
+      "start": 17.66,
       "end": 18.96,
       "text": " I really missed you.",
       "tokens": [
@@ -502,7 +502,7 @@
       "words": [
         {
           "text": "I",
-          "start": 17.48,
+          "start": 17.66,
           "end": 17.86,
           "confidence": 0.252
         },
@@ -529,7 +529,7 @@
     {
       "id": 8,
       "seek": 0,
-      "start": 19.48,
+      "start": 19.58,
       "end": 20.6,
       "text": " I agree.",
       "tokens": [
@@ -547,7 +547,7 @@
       "words": [
         {
           "text": "I",
-          "start": 19.48,
+          "start": 19.58,
           "end": 20.4,
           "confidence": 0.403
         },

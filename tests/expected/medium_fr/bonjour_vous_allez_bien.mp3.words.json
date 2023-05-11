@@ -68,7 +68,7 @@
     {
       "id": 1,
       "seek": 3000,
-      "start": 30.98,
+      "start": 32.94,
       "end": 35.86,
       "text": " Bonjour ! Est-ce que vous allez bien ?",
       "tokens": [
@@ -93,7 +93,7 @@
       "words": [
         {
           "text": "Bonjour !",
-          "start": 30.98,
+          "start": 32.94,
           "end": 34.44,
           "confidence": 0.741
         },

@@ -85,9 +85,14 @@ If you want to plot alignement between audio timestamps and words (as in [this s
 pip3 install matplotlib
 ```
 
-If you want to use VAD option (Voice Activity Detection before running Whisper model), you also need torchaudio
+If you want to use VAD option (Voice Activity Detection before running Whisper model), you also need torchaudio and onnxruntime
 ```bash
-pip3 install torchaudio
+pip3 install onnxruntime torchaudio
+```
+
+If you want to use finetuned Whisper models from the Hugging Face Hub, you also need transformers
+```bash
+pip3 install transformers
 ```
 
 #### Docker
@@ -133,7 +138,7 @@ pip3 install openai-whisper==20230124
 
 ### Python
 
-In python, you can use the function `whisper_timestamped.transcribe()` that is similar to the fonction `whisper.transcribe()`
+In python, you can use the function `whisper_timestamped.transcribe()` that is similar to the function `whisper.transcribe()`
 ```python
 import whisper_timestamped
 help(whisper_timestamped.transcribe)

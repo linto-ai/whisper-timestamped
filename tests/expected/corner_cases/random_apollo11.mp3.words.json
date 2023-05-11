@@ -641,7 +641,7 @@
     {
       "id": 9,
       "seek": 3000,
-      "start": 36.96,
+      "start": 37.58,
       "end": 39.34,
       "text": " They got the one mic that makes going through the leak reshapes.",
       "tokens": [
@@ -672,49 +672,49 @@
       "words": [
         {
           "text": "They",
-          "start": 36.96,
-          "end": 36.98,
+          "start": 37.58,
+          "end": 37.8,
           "confidence": 0.355
         },
         {
           "text": "got",
-          "start": 36.98,
-          "end": 37.0,
+          "start": 37.8,
+          "end": 37.9,
           "confidence": 0.372
         },
         {
           "text": "the",
-          "start": 37.0,
-          "end": 37.02,
+          "start": 37.9,
+          "end": 37.92,
           "confidence": 0.702
         },
         {
           "text": "one",
-          "start": 37.02,
-          "end": 37.04,
+          "start": 37.92,
+          "end": 37.94,
           "confidence": 0.721
         },
         {
           "text": "mic",
-          "start": 37.04,
-          "end": 37.46,
+          "start": 37.94,
+          "end": 37.96,
           "confidence": 0.632
         },
         {
           "text": "that",
-          "start": 37.46,
-          "end": 37.58,
+          "start": 37.96,
+          "end": 37.98,
           "confidence": 0.117
         },
         {
           "text": "makes",
-          "start": 37.58,
-          "end": 37.86,
+          "start": 37.98,
+          "end": 38.0,
           "confidence": 0.191
         },
         {
           "text": "going",
-          "start": 37.86,
+          "start": 38.0,
           "end": 38.12,
           "confidence": 0.749
         },
@@ -1232,7 +1232,7 @@
     {
       "id": 16,
       "seek": 5500,
-      "start": 62.48,
+      "start": 62.52,
       "end": 63.02,
       "text": " Okay, fine.",
       "tokens": [
@@ -1251,7 +1251,7 @@
       "words": [
         {
           "text": "Okay,",
-          "start": 62.48,
+          "start": 62.52,
           "end": 62.78,
           "confidence": 0.914
         },

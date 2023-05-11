@@ -4,7 +4,7 @@
     {
       "id": 0,
       "seek": 0,
-      "start": 0.96,
+      "start": 2.92,
       "end": 7.24,
       "text": " I am the one who is the one who is the one",
       "tokens": [
@@ -43,7 +43,7 @@
       "words": [
         {
           "text": "I",
-          "start": 0.96,
+          "start": 2.92,
           "end": 3.16,
           "confidence": 0.053
         },

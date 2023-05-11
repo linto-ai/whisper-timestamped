@@ -121,7 +121,7 @@
     {
       "id": 1,
       "seek": 0,
-      "start": 4.1,
+      "start": 4.14,
       "end": 8.9,
       "text": " Ce qui fait la force du smartphone, c'est pas seulement la cumulation des fonctions, mais la manière",
       "tokens": [
@@ -159,7 +159,7 @@
       "words": [
         {
           "text": "Ce",
-          "start": 4.1,
+          "start": 4.14,
           "end": 4.26,
           "confidence": 0.392
         },
@@ -1135,7 +1135,7 @@
     {
       "id": 11,
       "seek": 2804,
-      "start": 37.94,
+      "start": 38.78,
       "end": 43.12,
       "text": " Bref, tout ça, ce sont les conditions qui permettent de créer cette objet, en Nicolas,",
       "tokens": [
@@ -1170,8 +1170,8 @@
       "words": [
         {
           "text": "Bref,",
-          "start": 37.94,
-          "end": 38.3,
+          "start": 38.78,
+          "end": 38.8,
           "confidence": 0.972
         },
         {
@@ -1363,7 +1363,7 @@
     {
       "id": 13,
       "seek": 2804,
-      "start": 47.04,
+      "start": 47.06,
       "end": 48.76,
       "text": " Mais ça s'assoulait d'une autre interrogation.",
       "tokens": [
@@ -1392,7 +1392,7 @@
       "words": [
         {
           "text": "Mais",
-          "start": 47.04,
+          "start": 47.06,
           "end": 47.24,
           "confidence": 0.928
         },
@@ -1431,7 +1431,7 @@
     {
       "id": 14,
       "seek": 2804,
-      "start": 49.28,
+      "start": 49.42,
       "end": 54.93,
       "text": " Est-ce que le fait que cette objet soit inédit un d'huits que notre rapport a lui est aussi un rapport",
       "tokens": [
@@ -1473,7 +1473,7 @@
       "words": [
         {
           "text": "Est-ce",
-          "start": 49.28,
+          "start": 49.42,
           "end": 49.7,
           "confidence": 0.919
         },
@@ -1765,7 +1765,7 @@
       "id": 17,
       "seek": 5596,
       "start": 59.36,
-      "end": 62.84,
+      "end": 63.14,
       "text": " à d'autres objectes techniques comme la voiture ou le téléphone ?",
       "tokens": [
         50530,
@@ -1848,7 +1848,7 @@
         {
           "text": "téléphone ?",
           "start": 62.68,
-          "end": 62.84,
+          "end": 63.14,
           "confidence": 0.983
         }
       ]
@@ -1856,7 +1856,7 @@
     {
       "id": 18,
       "seek": 5596,
-      "start": 62.84,
+      "start": 65.4,
       "end": 66.16,
       "text": " Il n'y a pas d'équivalent.",
       "tokens": [
@@ -1883,13 +1883,13 @@
       "words": [
         {
           "text": "Il",
-          "start": 62.84,
-          "end": 64.1,
+          "start": 65.4,
+          "end": 65.5,
           "confidence": 0.901
         },
         {
           "text": "n'y",
-          "start": 64.1,
+          "start": 65.5,
           "end": 65.54,
           "confidence": 0.86
         },
@@ -2065,7 +2065,7 @@
     {
       "id": 21,
       "seek": 5596,
-      "start": 71.6,
+      "start": 71.64,
       "end": 76.97,
       "text": " Parce que la passion de l'utilisateur et ses affices a dépendance, cette objet d'un lieu",
       "tokens": [
@@ -2104,7 +2104,7 @@
       "words": [
         {
           "text": "Parce",
-          "start": 71.6,
+          "start": 71.64,
           "end": 71.94,
           "confidence": 0.679
         },
@@ -2634,7 +2634,7 @@
     {
       "id": 27,
       "seek": 8210,
-      "start": 95.74,
+      "start": 96.3,
       "end": 100.48,
       "text": " Bon, en vrai, il faudrait remonter très, très filmant tout l'histoire des objectes",
       "tokens": [
@@ -2671,8 +2671,8 @@
       "words": [
         {
           "text": "Bon,",
-          "start": 95.74,
-          "end": 95.98,
+          "start": 96.3,
+          "end": 96.32,
           "confidence": 0.6
         },
         {
@@ -3595,7 +3595,7 @@
     {
       "id": 38,
       "seek": 11098,
-      "start": 127.02,
+      "start": 127.06,
       "end": 130.1,
       "text": " On la pade en la main quand on est colis, qu'on n'a même pas au chiot.",
       "tokens": [
@@ -3635,7 +3635,7 @@
       "words": [
         {
           "text": "On",
-          "start": 127.02,
+          "start": 127.06,
           "end": 127.32,
           "confidence": 0.605
         },
@@ -3734,7 +3734,7 @@
     {
       "id": 39,
       "seek": 11098,
-      "start": 130.86,
+      "start": 130.94,
       "end": 135.32,
       "text": " On pouvait être émervé par son mome qui occupeait la ligne de téléphone pendant une heure",
       "tokens": [
@@ -3771,7 +3771,7 @@
       "words": [
         {
           "text": "On",
-          "start": 130.86,
+          "start": 130.94,
           "end": 131.04,
           "confidence": 0.99
         },
@@ -4413,7 +4413,7 @@
       "id": 45,
       "seek": 13698,
       "start": 152.64,
-      "end": 154.45,
+      "end": 154.64,
       "text": " Donc, rapport immédiate d'accord.",
       "tokens": [
         51126,
@@ -4457,7 +4457,7 @@
         {
           "text": "d'accord.",
           "start": 154.28,
-          "end": 154.45,
+          "end": 154.64,
           "confidence": 0.816
         }
       ]
@@ -4465,7 +4465,7 @@
     {
       "id": 46,
       "seek": 13698,
-      "start": 154.45,
+      "start": 155.66,
       "end": 158.36,
       "text": " Mais pourquoi, à ton impression qu'on en sortira, j'amé?",
       "tokens": [
@@ -4498,7 +4498,7 @@
       "words": [
         {
           "text": "Mais",
-          "start": 154.45,
+          "start": 155.66,
           "end": 155.88,
           "confidence": 0.984
         },
@@ -4555,7 +4555,7 @@
     {
       "id": 47,
       "seek": 13698,
-      "start": 158.98,
+      "start": 159.16,
       "end": 163.32,
       "text": " Et puis, il faut en remettre la faute sur les gens qui ont créé cette critique merveilleux",
       "tokens": [
@@ -4594,7 +4594,7 @@
       "words": [
         {
           "text": "Et",
-          "start": 158.98,
+          "start": 159.16,
           "end": 159.32,
           "confidence": 0.832
         },
@@ -4774,7 +4774,7 @@
     {
       "id": 49,
       "seek": 16526,
-      "start": 166.66,
+      "start": 166.9,
       "end": 168.8,
       "text": " Les économistes parlent de dépendance du santé.",
       "tokens": [
@@ -4800,7 +4800,7 @@
       "words": [
         {
           "text": "Les",
-          "start": 166.66,
+          "start": 166.9,
           "end": 167.06,
           "confidence": 0.699
         },

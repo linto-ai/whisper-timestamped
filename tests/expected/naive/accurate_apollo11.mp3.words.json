@@ -1,5 +1,5 @@
 {
-  "text": " Apollo 11, Houston, we got a recommendation for you on your Soyuz-EA GLEM-E-G-E-A. All right. Okay. Yeah, sir. I'll take that camera. They make the one that's on the helmet we were going to have in B-1. The other one. And you can put the other one on Mike's helmet. We'll show it to you in a blink of an eye. Over. All right, sir. All right, sir. There's a bit of an helmet that's in B-1. That's the other one, Mike's helmet. Mike, go in there. At least we're safe. We've got him in there. Helmet tag. And, uh, we've got him in there. Yeah. Helmet. In the helmet tag. At least it's in the helmet tag. Roger. Roger. We're thinking Nick and me on it. Yeah, we're thinking Nick and me on it. See you later. Hey, we were going to hang me on it. We were going to hang you on it with a cover. I tried it already. OK, fine. We weren't sure of that. It's just a suggestion. We thought we'd take you to check it out. It's not much of an order to turn that. So, uh, I guess we're going to come up with this. Let us know. OK, no problem. OK, no problem. We'll let you know when the end of the lunch.",
+  "text": " Apollo 11, Houston, we got a recommendation for you on your Soyuz-EA GLEM-E-G-E-A. All right. Okay. Yeah, sir. I'll take that camera. They make the one that's on the helmet we were going to have in B-1. The other one. And you can put the other one on Mike's helmet. We'll show it to you in a blink of an eye. Over. All right, sir. All right, sir. There's a bit of an helmet that's in B-1. That's the other one, Mike's helmet. Mike, go in there. At least we're safe. We've got him in there. Helmet tag. And, uh, we've got him in there. Yeah. Helmet. In the helmet tag. At least it's in the helmet tag. Roger. Roger. We're thinking Nick and me on it. Yeah, we're thinking Nick and me on it. See you later. Hey, we were going to hang me on it. We were going to hang you on it with a cover. I tried it already. OK, fine. We weren't sure of that. It's just a suggestion. We thought we'd take you to check it out. It's not much of an order to turn that. So, uh, I guess we're going to come up with this. Let us know. OK, no problem. OK, no problem. We'll let you know when the end of the lunch. Thank you.",
   "segments": [
     {
       "id": 0,
@@ -130,7 +130,7 @@
     {
       "id": 1,
       "seek": 0,
-      "start": 6.66,
+      "start": 10.8,
       "end": 11.08,
       "text": " All right.",
       "tokens": [
@@ -148,13 +148,13 @@
       "words": [
         {
           "text": "All",
-          "start": 6.66,
-          "end": 6.94,
+          "start": 10.8,
+          "end": 10.82,
           "confidence": 0.005
         },
         {
           "text": "right.",
-          "start": 6.94,
+          "start": 10.82,
           "end": 11.08,
           "confidence": 0.747
         }
@@ -163,8 +163,8 @@
     {
       "id": 2,
       "seek": 0,
-      "start": 12.04,
-      "end": 12.14,
+      "start": 12.2,
+      "end": 12.22,
       "text": " Okay.",
       "tokens": [
         50914,
@@ -180,8 +180,8 @@
       "words": [
         {
           "text": "Okay.",
-          "start": 12.04,
-          "end": 12.14,
+          "start": 12.2,
+          "end": 12.22,
           "confidence": 0.287
         }
       ]
@@ -189,8 +189,8 @@
     {
       "id": 3,
       "seek": 0,
-      "start": 12.14,
-      "end": 13.36,
+      "start": 12.22,
+      "end": 13.38,
       "text": " Yeah, sir.",
       "tokens": [
         50964,
@@ -204,27 +204,27 @@
       "avg_logprob": -0.5374142219280374,
       "compression_ratio": 1.4337899543378996,
       "no_speech_prob": 0.44995221495628357,
-      "confidence": 0.099,
+      "confidence": 0.124,
       "words": [
         {
           "text": "Yeah,",
-          "start": 12.14,
-          "end": 12.54,
-          "confidence": 0.083
+          "start": 12.22,
+          "end": 12.64,
+          "confidence": 0.113
         },
         {
           "text": "sir.",
-          "start": 12.72,
-          "end": 13.36,
-          "confidence": 0.118
+          "start": 12.76,
+          "end": 13.38,
+          "confidence": 0.137
         }
       ]
     },
     {
       "id": 4,
       "seek": 0,
-      "start": 13.36,
-      "end": 14.52,
+      "start": 13.38,
+      "end": 14.5,
       "text": " I'll take that camera.",
       "tokens": [
         51014,
@@ -240,38 +240,38 @@
       "avg_logprob": -0.5374142219280374,
       "compression_ratio": 1.4337899543378996,
       "no_speech_prob": 0.44995221495628357,
-      "confidence": 0.181,
+      "confidence": 0.187,
       "words": [
         {
           "text": "I'll",
-          "start": 13.36,
+          "start": 13.38,
           "end": 13.78,
-          "confidence": 0.082
+          "confidence": 0.076
         },
         {
           "text": "take",
           "start": 13.78,
           "end": 14.0,
-          "confidence": 0.173
+          "confidence": 0.182
         },
         {
           "text": "that",
           "start": 14.0,
-          "end": 14.2,
-          "confidence": 0.132
+          "end": 14.18,
+          "confidence": 0.179
         },
         {
           "text": "camera.",
-          "start": 14.2,
-          "end": 14.52,
-          "confidence": 0.483
+          "start": 14.18,
+          "end": 14.5,
+          "confidence": 0.471
         }
       ]
     },
     {
       "id": 5,
       "seek": 0,
-      "start": 14.52,
+      "start": 14.5,
       "end": 19.08,
       "text": " They make the one that's on the helmet we were going to have in B-1.",
       "tokens": [
@@ -301,97 +301,97 @@
       "avg_logprob": -0.5374142219280374,
       "compression_ratio": 1.4337899543378996,
       "no_speech_prob": 0.44995221495628357,
-      "confidence": 0.268,
+      "confidence": 0.262,
       "words": [
         {
           "text": "They",
-          "start": 14.52,
+          "start": 14.5,
           "end": 14.92,
-          "confidence": 0.048
+          "confidence": 0.036
         },
         {
           "text": "make",
           "start": 14.92,
-          "end": 15.68,
-          "confidence": 0.334
+          "end": 15.7,
+          "confidence": 0.356
         },
         {
           "text": "the",
-          "start": 15.68,
+          "start": 15.7,
           "end": 15.86,
-          "confidence": 0.078
+          "confidence": 0.081
         },
         {
           "text": "one",
           "start": 15.86,
           "end": 16.08,
-          "confidence": 0.537
+          "confidence": 0.553
         },
         {
           "text": "that's",
           "start": 16.08,
           "end": 16.26,
-          "confidence": 0.406
+          "confidence": 0.408
         },
         {
           "text": "on",
           "start": 16.26,
           "end": 16.46,
-          "confidence": 0.747
+          "confidence": 0.746
         },
         {
           "text": "the",
           "start": 16.46,
-          "end": 16.76,
-          "confidence": 0.432
+          "end": 16.74,
+          "confidence": 0.445
         },
         {
           "text": "helmet",
-          "start": 16.76,
+          "start": 16.74,
           "end": 17.24,
-          "confidence": 0.025
+          "confidence": 0.026
         },
         {
           "text": "we",
           "start": 17.24,
           "end": 17.52,
-          "confidence": 0.007
+          "confidence": 0.006
         },
         {
           "text": "were",
           "start": 17.52,
           "end": 17.78,
-          "confidence": 0.125
+          "confidence": 0.095
         },
         {
           "text": "going",
           "start": 17.78,
           "end": 17.94,
-          "confidence": 0.45
+          "confidence": 0.451
         },
         {
           "text": "to",
           "start": 17.94,
           "end": 17.98,
-          "confidence": 0.968
+          "confidence": 0.969
         },
         {
           "text": "have",
           "start": 17.98,
           "end": 18.16,
-          "confidence": 0.966
+          "confidence": 0.965
         },
         {
           "text": "in",
           "start": 18.16,
           "end": 18.36,
-          "confidence": 0.815
+          "confidence": 0.8
         },
         {
           "text": "B-1.",
           "start": 18.36,
           "end": 19.08,
-          "confidence": 0.476
+          "confidence": 0.479
         }
       ]
     },
@@ -1334,7 +1334,7 @@
     {
       "id": 24,
       "seek": 3000,
-      "start": 51.48,
+      "start": 51.52,
       "end": 51.74,
       "text": " Roger.",
       "tokens": [
@@ -1351,7 +1351,7 @@
       "words": [
         {
           "text": "Roger.",
-          "start": 51.48,
+          "start": 51.52,
           "end": 51.74,
           "confidence": 0.006
         }
@@ -2380,6 +2380,39 @@
           "start": 78.12,
           "end": 78.3,
           "confidence": 0.225
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "seek": 8800,
+      "start": 88.82,
+      "end": 88.98,
+      "text": " Thank you.",
+      "tokens": [
+        50364,
+        1044,
+        291,
+        13,
+        50414
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5118929942448934,
+      "compression_ratio": 0.5555555555555556,
+      "no_speech_prob": 0.987617552280426,
+      "confidence": 0.361,
+      "words": [
+        {
+          "text": "Thank",
+          "start": 88.82,
+          "end": 88.94,
+          "confidence": 0.073
+        },
+        {
+          "text": "you.",
+          "start": 88.94,
+          "end": 88.98,
+          "confidence": 0.803
         }
       ]
     }
