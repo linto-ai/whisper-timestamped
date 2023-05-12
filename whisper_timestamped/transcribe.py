@@ -254,6 +254,9 @@ def transcribe_timestamped(
         audio = get_audio_tensor(audio)
         audio, convert_timestamps = remove_non_speech(audio, plot=plot_word_alignment)
 
+    global num_alignment_for_plot
+    num_alignment_for_plot = 0
+
     if naive_approach:
         (transcription, words) = _transcribe_timestamped_naive(model, audio,
                                                                min_word_duration=0.0, # Was 0.04 before 1.11
@@ -1416,6 +1419,9 @@ def perform_word_alignment(
         ))
     alignment = dtw.dtw(weights, step_pattern=step_pattern)
 
+    global num_alignment_for_plot
+    num_alignment_for_plot += 1
+
     if plot:
         import matplotlib.pyplot as plt
         import matplotlib.ticker as ticker
@@ -1608,7 +1614,10 @@ def perform_word_alignment(
                 for x in [begin, end,]:
                     plt.axvline(x * 2 / AUDIO_TIME_PER_TOKEN, color="red", linestyle="dotted")
 
-        plt.show()
+        if isinstance(plot, str):
+            plt.savefig(f"{plot}.alignment{num_alignment_for_plot:03d}.jpg", bbox_inches='tight', pad_inches=0)
+        else:
+            plt.show()
 
     return [
         dict(
@@ -1797,7 +1806,10 @@ def remove_non_speech(audio,
         plt.plot(audio)
         for s,e in segments:
             plt.axvspan(s, e, color='red', alpha=0.1)
-        plt.show()
+        if isinstance(plot, str):
+            plt.savefig(f"{plot}.VAD.jpg", bbox_inches='tight', pad_inches=0)
+        else:
+            plt.show()
 
     if not use_sample:
         segments = [(float(s)/SAMPLE_RATE, float(e)/SAMPLE_RATE) for s,e in segments]
@@ -2211,7 +2223,7 @@ def cli():
 
     parser.add_argument("--compute_confidence", default=True, help="whether to compute confidence scores for words", type=str2bool)
     parser.add_argument("--verbose", type=str2bool, default=False, help="whether to print out the progress and debug messages of Whisper")
-    parser.add_argument('--plot', help="plot word alignments", default=False, action="store_true")
+    parser.add_argument('--plot', help="plot word alignments (save the figures if an --output_dir is specified, otherwhise just show figures that have to be closed to continue)", default=False, action="store_true")
     parser.add_argument('--debug', help="print some debug information about word alignement", default=False, action="store_true")
 
     class ActionSetAccurate(argparse.Action):
@@ -2288,16 +2300,17 @@ def cli():
 
     for audio_path in audio_files:
 
+        outname = os.path.join(output_dir, os.path.basename(audio_path)) if output_dir else None
+
         result = transcribe_timestamped(
             model, audio_path,
             temperature=temperature,
-            plot_word_alignment=plot_word_alignment,
+            plot_word_alignment=outname if (outname and plot_word_alignment) else plot_word_alignment,
             **args
         )
 
         if output_dir:
 
-            outname = os.path.join(output_dir, os.path.basename(audio_path))
             if "json" in output_format:
                 # save JSON
                 with open(outname + ".words.json", "w", encoding="utf-8") as js:
