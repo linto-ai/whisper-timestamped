@@ -24,8 +24,8 @@ Multilingual Automatic Speech Recognition with word-level timestamps and confide
 that achieve state-of-the-art in many languages.
 Whisper models were trained to predict approximative timestamps on speech segments (most of the times with 1 sec accuracy),
 but cannot originally predict word timestamps.
-This repository proposes an implementation to **predict word timestamps, and give more accurate estimation of speech segments, when transcribing with Whipser models**.
-Besides, a confidence score is assigned to each word and each segment (both computed as "exp(mean(log probas))" on the probabilities of subword tokens).
+This repository proposes an implementation to **predict word timestamps, and give more accurate estimation of speech segments, when transcribing with Whisper models**.
+<!-- Besides, a confidence score is assigned to each word and each segment (both computed as "exp(mean(log probas))" on the probabilities of subword tokens). -->
 
 The approach is based on approach Dynamic Time Warping (DTW) applied to cross-attention weights,
 as done by [this notebook by Jong Wook Kim](https://github.com/openai/whisper/blob/f82bc59f5ea234d4b97fb2860842ed38519f7e65/notebooks/Multilingual_ASR.ipynb).
@@ -36,7 +36,7 @@ There are some additions to this notebook:
 * There is a special care about memory usage: `whisper-timestamped` is able to process long files, with little additional memory with respect to the regular use of Whisper model.
 
 `whisper-timestamped` is an extension of [`openai-whisper`](https://pypi.org/project/whisper-openai/) python package
-and is meant to compatible with any version of `openai-whisper`.
+and is meant to be compatible with any version of `openai-whisper`.
 
 ### Notes on other approaches
 
