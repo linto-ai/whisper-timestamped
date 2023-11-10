@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.12.20"
+__version__ = "1.13.1"
 
 # Set some environment variables
 import os
@@ -978,6 +978,8 @@ def _transcribe_timestamped_naive(
     tokenizer = whisper.tokenizer.get_tokenizer(model.is_multilingual, task=whisper_options["task"], language=language)
     use_space = should_use_space(language)
 
+    n_mels = model.dims.n_mels if hasattr(model.dims, "n_mels") else 80
+
     attention_weights = [[] for _ in range(min(word_alignement_most_top_layers,len(model.decoder.blocks)))]
 
     try:
@@ -1087,7 +1089,7 @@ def _transcribe_timestamped_naive(
             # Extract features on the audio segment
             sub_audio = audio_minimum_padding(audio[start_sample:end_sample])
 
-            mfcc = whisper.log_mel_spectrogram(sub_audio).to(model.device)
+            mfcc = whisper.log_mel_spectrogram(sub_audio, n_mels).to(model.device)
             mfcc = whisper.pad_or_trim(mfcc, N_FRAMES)
             mfcc = mfcc.unsqueeze(0)
 
