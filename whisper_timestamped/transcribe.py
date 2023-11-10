@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.13.1"
+__version__ = "1.13.2"
 
 # Set some environment variables
 import os
@@ -338,7 +338,7 @@ def _transcribe_timestamped_efficient(
 
     logit_filters = get_logit_filters(model, whisper_options)
     language = whisper_options["language"]
-    tokenizer = whisper.tokenizer.get_tokenizer(model.is_multilingual, task=whisper_options["task"], language=language)
+    tokenizer = get_tokenizer(model, task=whisper_options["task"], language=language)
 
     max_sample_len = sample_len or model.dims.n_text_ctx // 2 
     n_ctx = model.dims.n_text_ctx
@@ -975,7 +975,7 @@ def _transcribe_timestamped_naive(
 
     language = norm_language(transcription["language"])
 
-    tokenizer = whisper.tokenizer.get_tokenizer(model.is_multilingual, task=whisper_options["task"], language=language)
+    tokenizer = get_tokenizer(model, task=whisper_options["task"], language=language)
     use_space = should_use_space(language)
 
     n_mels = model.dims.n_mels if hasattr(model.dims, "n_mels") else 80
@@ -1265,6 +1265,18 @@ def get_decoding_options(whisper_options):
         ]
     ])
 
+def get_tokenizer(model, task="transcribe", language="en"):
+    try:
+        return whisper.tokenizer.get_tokenizer(
+            model.is_multilingual,
+            num_languages=model.num_languages if hasattr(model, "num_languages") else 99,
+            task=task, language=language
+        )
+    except TypeError: # Old openai-whisper version
+        return whisper.tokenizer.get_tokenizer(
+            model.is_multilingual,
+            task=task, language=language
+        )
 
 def perform_word_alignment(
     tokens,
