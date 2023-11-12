@@ -1230,7 +1230,7 @@ def print_timestamped(w):
     line = f"[{format_timestamp(w['start'])} --> {format_timestamp(w['end'])}] {w['text']}\n"
     # compared to just `print(line)`, this replaces any character not representable using
     # the system default encoding with an '?', avoiding UnicodeEncodeError.
-    sys.stdout.buffer.write(line.encode(sys.getdefaultencoding(), errors="replace"))
+    sys.stdout.write(line.encode(sys.getdefaultencoding(), errors="replace").decode())
     sys.stdout.flush()
 
 
