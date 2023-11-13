@@ -2017,7 +2017,7 @@ _ALIGNMENT_HEADS = {
     "medium": b"ABzY8B0Jh+0{>%R7}kK1fFL7w6%<-Pf*t^=N)Qr&0RR9",
     "large-v1": b"ABzY8r9j$a0{>%R7#4sLmoOs{s)o3~84-RPdcFk!JR<kSfC2yj",
     "large-v2": b'ABzY8zd+h!0{>%R7=D0pU<_bnWW*tkYAhobTNnu$jnkEkXqp)j;w1Tzk)UH3X%SZd&fFZ2fC2yj',
-    # "large": b'ABzY8zd+h!0{>%R7=D0pU<_bnWW*tkYAhobTNnu$jnkEkXqp)j;w1Tzk)UH3X%SZd&fFZ2fC2yj',
+    "large-v3": b"ABzY8gWO1E0{>%R7(9S+Kn!D~%ngiGaR?*L!iJG9p-nab0JQ=-{D1-g00",
 }
 
 _PARAMETERS_TO_MODEL_NAME = {
@@ -2030,6 +2030,7 @@ _PARAMETERS_TO_MODEL_NAME = {
     762320896 : "medium.en",
     762321920 : "medium",
     1541384960 : "large",
+    1541570560 : "large-v3",
 }
 
 def get_alignment_heads(model):
