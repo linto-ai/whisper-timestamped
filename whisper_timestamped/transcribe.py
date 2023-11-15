@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.13.2"
+__version__ = "1.13.3"
 
 # Set some environment variables
 import os
@@ -369,6 +369,7 @@ def _transcribe_timestamped_efficient(
     mfcc = None                     # MFCC features for the current 30 sec chunk
     new_mfcc = None                 #
     num_inference_steps = 0         # number of inference steps performed so far (for debugging only)
+    language_probs = None           # language detection probabilities
 
     def is_sot(curr_tokens):
         return curr_tokens is None or len(curr_tokens) > 1 or curr_tokens[0] == tokenizer.sot
@@ -801,17 +802,25 @@ def _transcribe_timestamped_efficient(
 
     embedding_weights = None 
     def hook_output_logits(layer, ins, outs):
-        nonlocal no_speech_prob, chunk_logprobs, segment_tokens, chunk_tokens, chunk_tokens_nosot, last_chunk_token, embedding_weights, has_started
+        nonlocal no_speech_prob, chunk_logprobs, segment_tokens, chunk_tokens, chunk_tokens_nosot, last_chunk_token, embedding_weights, has_started, language, language_probs
         
         if embedding_weights is None:
             embedding_weights = torch.transpose(model.decoder.token_embedding.weight, 0, 1).to(outs[0].dtype)
 
         # Get the probability of silence
-        if sot_index is not None:
+        if sot_index is not None and no_speech_prob is None:
             logits = (outs[0][sot_index,:] @ embedding_weights).float()
             logits = logits.softmax(dim=-1)
             no_speech_prob = logits[tokenizer.no_speech].item()
-        
+
+        # Get language probabilities
+        if language is None and sot_index is not None and model.is_multilingual:
+            index_start = tokenizer.sot + 1
+            index_end = index_start + len(tokenizer.all_language_tokens)
+            logits = (outs[0][sot_index,:] @ embedding_weights).float()
+            language_probs = logits[index_start:index_end].softmax(dim=-1)
+            language_probs = dict(zip(whisper.tokenizer.LANGUAGES, language_probs.tolist()))
+
         # Get the log-probabilities of tokens (we don't know yet which one will be chosen)
         if has_started:
             logits = (outs[0][-1:,:] @ embedding_weights).float()
@@ -825,7 +834,7 @@ def _transcribe_timestamped_efficient(
                 last_chunk_token = torch.argmax(logits).item()
             else:
                 last_chunk_token = None
-                
+
     try:
 
         # Add hooks to the model, to get tokens and attention weights on the fly
@@ -937,6 +946,9 @@ def _transcribe_timestamped_efficient(
 
         words.extend(timestamped_words)
 
+    if language_probs:
+        transcription["language_probs"] = language_probs
+
     return transcription, words
 
 def _transcribe_timestamped_naive(
@@ -968,7 +980,33 @@ def _transcribe_timestamped_naive(
         # Reproduce whisper verbose (1/2)
         print("Detecting language using up to the first 30 seconds. Use `--language` to specify the language")
 
-    transcription = model.transcribe(audio, **whisper_options)
+    tokenizer = get_tokenizer(model, task=whisper_options["task"], language=language)
+
+    language_probs = None
+    def hook_output_logits(layer, ins, outs):
+        nonlocal language_probs, tokenizer
+        
+        # Get language probabilities
+        if language_probs is None:
+            if outs.shape[1] == 1:
+                embedding_weights = torch.transpose(model.decoder.token_embedding.weight, 0, 1).to(outs[0].dtype)
+                index_start = tokenizer.sot + 1
+                index_end = index_start + len(tokenizer.all_language_tokens)
+                logits = (outs[0][0,:] @ embedding_weights).float()
+                language_probs = logits[index_start:index_end].softmax(dim=-1)
+                language_probs = dict(zip(whisper.tokenizer.LANGUAGES, language_probs.tolist()))
+            else:
+                language_probs = False
+
+    all_hooks = []
+    if model.is_multilingual:
+        all_hooks.append(model.decoder.ln.register_forward_hook(hook_output_logits))
+
+    try:
+        transcription = model.transcribe(audio, **whisper_options)
+    finally:
+        for hook in all_hooks:
+            hook.remove()
 
     if verbose and language is None and not whisper_options["verbose"]:
         # Reproduce whisper verbose (2/2)
@@ -976,8 +1014,6 @@ def _transcribe_timestamped_naive(
         sys.stdout.flush()
 
     language = norm_language(transcription["language"])
-
-    tokenizer = get_tokenizer(model, task=whisper_options["task"], language=language)
     use_space = should_use_space(language)
 
     n_mels = model.dims.n_mels if hasattr(model.dims, "n_mels") else 80
@@ -1202,6 +1238,9 @@ def _transcribe_timestamped_naive(
         # Remove hooks
         for hook in all_hooks:
             hook.remove()
+
+    if language_probs:
+        transcription["language_probs"] = language_probs
 
     return (transcription, words)
 
