@@ -20,8 +20,9 @@ Multilingual Automatic Speech Recognition with word-level timestamps and confide
 * [Citations](#citations)
 
 ## Description
+
 [Whisper](https://openai.com/blog/whisper/) is a set of multi-lingual, robust speech recognition models trained by OpenAI that achieve state-of-the-art results in many languages. Whisper models were trained to predict approximate timestamps on speech segments (most of the time with 1-second accuracy), but they cannot originally predict word timestamps. This repository proposes an implementation to **predict word timestamps and provide a more accurate estimation of speech segments when transcribing with Whisper models**.
-<!-- Besides, a confidence score is assigned to each word and each segment (both computed as "exp(mean(log probas))" on the probabilities of subword tokens). -->
+Besides, a confidence score is assigned to each word and each segment.
 
 The approach is based on Dynamic Time Warping (DTW) applied to cross-attention weights, as demonstrated by [this notebook by Jong Wook Kim](https://github.com/openai/whisper/blob/f82bc59f5ea234d4b97fb2860842ed38519f7e65/notebooks/Multilingual_ASR.ipynb). There are some additions to this notebook:
 * The start/end estimation is more accurate.
@@ -30,6 +31,9 @@ The approach is based on Dynamic Time Warping (DTW) applied to cross-attention w
 * Special care has been taken regarding memory usage: `whisper-timestamped` is able to process long files with little additional memory compared to the regular use of the Whisper model.
 
 `whisper-timestamped` is an extension of the [`openai-whisper`](https://pypi.org/project/whisper-openai/) Python package and is meant to be compatible with any version of `openai-whisper`.
+It provides more efficient/accurate word timestamps, along with those additional features:
+* Voice Activity Detection (VAD) can be run before applying Whisper model, to avoid hallucinations due to errors in the training data (for instance, predicting "Thanks you for watching!" on pure silence).
+* When the language is not specified, the language probabilities are provided among the outputs.
 
 ### Notes on other approaches
 
@@ -276,6 +280,22 @@ whisper_timestamped AUDIO_FILE.wav --model tiny --language fr
     }
   ],
   "language": "fr"
+}
+```
+If the language is not specified (e.g. without option `--language fr` in the CLI) you will find an additional key with the language probabilities:
+```json
+{
+  ...
+  "language": "fr",
+  "language_probs": {
+    "en": 0.027954353019595146,
+    "zh": 0.02743500843644142,
+    ...
+    "fr": 0.9196318984031677,
+    ...
+    "su": 3.0119704064190955e-08,
+    "yue": 2.2565967810805887e-05
+  }
 }
 ```
 

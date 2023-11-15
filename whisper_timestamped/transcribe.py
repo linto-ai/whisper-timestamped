@@ -2416,10 +2416,11 @@ def filtered_keys(result, keys = [
     "language",
     "start",
     "end",
-    "confidence"
+    "confidence",
+    "language_probs",
 ]):
     if isinstance(result, dict):
-        return {k: filtered_keys(v, keys) for k, v in result.items() if k in keys}
+        return {k: (filtered_keys(v, keys) if k not in ["language_probs"] else v) for k, v in result.items() if k in keys}
     if isinstance(result, list):
         return [filtered_keys(v, keys) for v in result]
     if isinstance(result, float):
