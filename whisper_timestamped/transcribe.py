@@ -211,6 +211,8 @@ def transcribe_timestamped(
         naive_approach = True
 
     # Input options
+    if isinstance(model, str):
+        model = load_model(model)
     if fp16 is None:
         fp16 = model.device != torch.device("cpu")
 
