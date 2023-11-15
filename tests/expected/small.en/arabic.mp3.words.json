@@ -36,7 +36,7 @@
         50713
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2338263448079427,
+      "avg_logprob": -0.2332169426812066,
       "compression_ratio": 24.294117647058822,
       "no_speech_prob": 0.6509259939193726,
       "confidence": 0.358,
@@ -165,7 +165,7 @@
           "text": "who",
           "start": 7.64,
           "end": 7.66,
-          "confidence": 0.503
+          "confidence": 0.504
         },
         {
           "text": "is",
@@ -420,7 +420,7 @@
         262
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.07860866122775607,
+      "avg_logprob": -0.07849001566569011,
       "compression_ratio": 26.93548387096774,
       "no_speech_prob": 0.6889318823814392,
       "confidence": 0.925,
@@ -477,7 +477,7 @@
           "text": "who",
           "start": 14.4,
           "end": 14.42,
-          "confidence": 0.758
+          "confidence": 0.759
         },
         {
           "text": "is",
@@ -501,7 +501,7 @@
           "text": "who",
           "start": 18.0,
           "end": 18.02,
-          "confidence": 0.581
+          "confidence": 0.582
         },
         {
           "text": "is",
@@ -525,7 +525,7 @@
           "text": "who",
           "start": 18.08,
           "end": 19.38,
-          "confidence": 0.577
+          "confidence": 0.578
         },
         {
           "text": "is",
@@ -549,7 +549,7 @@
           "text": "who",
           "start": 19.94,
           "end": 19.96,
-          "confidence": 0.591
+          "confidence": 0.592
         },
         {
           "text": "is",
@@ -573,7 +573,7 @@
           "text": "who",
           "start": 21.52,
           "end": 21.54,
-          "confidence": 0.499
+          "confidence": 0.5
         },
         {
           "text": "is",
@@ -597,7 +597,7 @@
           "text": "who",
           "start": 25.3,
           "end": 25.32,
-          "confidence": 0.541
+          "confidence": 0.542
         },
         {
           "text": "is",
@@ -621,7 +621,7 @@
           "text": "who",
           "start": 26.92,
           "end": 26.94,
-          "confidence": 0.586
+          "confidence": 0.587
         },
         {
           "text": "is",
@@ -645,7 +645,7 @@
           "text": "who",
           "start": 28.1,
           "end": 28.12,
-          "confidence": 0.603
+          "confidence": 0.604
         },
         {
           "text": "is",
@@ -669,7 +669,7 @@
           "text": "who",
           "start": 28.46,
           "end": 28.48,
-          "confidence": 0.622
+          "confidence": 0.623
         },
         {
           "text": "is",
@@ -693,7 +693,7 @@
           "text": "who",
           "start": 30.08,
           "end": 30.1,
-          "confidence": 0.649
+          "confidence": 0.65
         },
         {
           "text": "is",
@@ -717,7 +717,7 @@
           "text": "who",
           "start": 30.32,
           "end": 31.0,
-          "confidence": 0.671
+          "confidence": 0.672
         },
         {
           "text": "is",
@@ -765,7 +765,7 @@
           "text": "who",
           "start": 33.56,
           "end": 33.86,
-          "confidence": 0.722
+          "confidence": 0.723
         },
         {
           "text": "is",
@@ -789,7 +789,7 @@
           "text": "who",
           "start": 33.92,
           "end": 33.94,
-          "confidence": 0.746
+          "confidence": 0.747
         },
         {
           "text": "is",
@@ -861,7 +861,7 @@
           "text": "who",
           "start": 34.16,
           "end": 34.18,
-          "confidence": 0.799
+          "confidence": 0.8
         },
         {
           "text": "is",
@@ -1485,7 +1485,7 @@
           "text": "who",
           "start": 36.24,
           "end": 36.26,
-          "confidence": 0.922
+          "confidence": 0.923
         },
         {
           "text": "is",
@@ -1998,7 +1998,7 @@
         318
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.024531144036187065,
+      "avg_logprob": -0.024528507656521266,
       "compression_ratio": 26.93548387096774,
       "no_speech_prob": 0.09981618076562881,
       "confidence": 0.976,
@@ -3141,7 +3141,7 @@
           "text": "who",
           "start": 49.34,
           "end": 49.36,
-          "confidence": 0.943
+          "confidence": 0.944
         },
         {
           "text": "is",
@@ -3261,7 +3261,7 @@
           "text": "who",
           "start": 49.74,
           "end": 49.76,
-          "confidence": 0.931
+          "confidence": 0.932
         },
         {
           "text": "is",

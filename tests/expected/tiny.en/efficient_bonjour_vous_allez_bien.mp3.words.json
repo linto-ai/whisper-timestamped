@@ -23,7 +23,7 @@
         50513
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.8020608765738351,
+      "avg_logprob": -0.8020311764308384,
       "compression_ratio": 0.7894736842105263,
       "no_speech_prob": 0.11798259615898132,
       "confidence": 0.496,
@@ -88,7 +88,7 @@
         50663
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.19375058582850865,
+      "avg_logprob": -0.1937453576496669,
       "compression_ratio": 0.7894736842105263,
       "no_speech_prob": 0.45197251439094543,
       "confidence": 0.952,

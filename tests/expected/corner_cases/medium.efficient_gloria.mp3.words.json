@@ -14,7 +14,7 @@
         50464
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.239252830954159,
+      "avg_logprob": -0.23879062428193934,
       "compression_ratio": 1.4615384615384615,
       "no_speech_prob": 0.05016394704580307,
       "confidence": 0.285,
@@ -42,7 +42,7 @@
         50564
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.239252830954159,
+      "avg_logprob": -0.23879062428193934,
       "compression_ratio": 1.4615384615384615,
       "no_speech_prob": 0.05016394704580307,
       "confidence": 0.786,
@@ -80,7 +80,7 @@
         50664
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.239252830954159,
+      "avg_logprob": -0.23879062428193934,
       "compression_ratio": 1.4615384615384615,
       "no_speech_prob": 0.05016394704580307,
       "confidence": 0.244,
@@ -108,7 +108,7 @@
         50764
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.239252830954159,
+      "avg_logprob": -0.23879062428193934,
       "compression_ratio": 1.4615384615384615,
       "no_speech_prob": 0.05016394704580307,
       "confidence": 0.926,
@@ -152,10 +152,10 @@
         50864
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.239252830954159,
+      "avg_logprob": -0.23879062428193934,
       "compression_ratio": 1.4615384615384615,
       "no_speech_prob": 0.05016394704580307,
-      "confidence": 0.769,
+      "confidence": 0.77,
       "words": [
         {
           "text": "I'm",
@@ -173,7 +173,7 @@
           "text": "I",
           "start": 8.42,
           "end": 8.64,
-          "confidence": 0.765
+          "confidence": 0.767
         },
         {
           "text": "will",
@@ -213,7 +213,7 @@
         50964
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.239252830954159,
+      "avg_logprob": -0.23879062428193934,
       "compression_ratio": 1.4615384615384615,
       "no_speech_prob": 0.05016394704580307,
       "confidence": 0.786,
@@ -302,7 +302,7 @@
         51064
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.239252830954159,
+      "avg_logprob": -0.23879062428193934,
       "compression_ratio": 1.4615384615384615,
       "no_speech_prob": 0.05016394704580307,
       "confidence": 0.928,
@@ -351,7 +351,7 @@
         51164
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.239252830954159,
+      "avg_logprob": -0.23879062428193934,
       "compression_ratio": 1.4615384615384615,
       "no_speech_prob": 0.05016394704580307,
       "confidence": 0.892,
@@ -413,7 +413,7 @@
         51264
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.239252830954159,
+      "avg_logprob": -0.23879062428193934,
       "compression_ratio": 1.4615384615384615,
       "no_speech_prob": 0.05016394704580307,
       "confidence": 0.927,
@@ -476,7 +476,7 @@
           "text": "my",
           "start": 16.88,
           "end": 17.22,
-          "confidence": 0.949
+          "confidence": 0.95
         },
         {
           "text": "love.",
@@ -502,7 +502,7 @@
         51364
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.239252830954159,
+      "avg_logprob": -0.23879062428193934,
       "compression_ratio": 1.4615384615384615,
       "no_speech_prob": 0.05016394704580307,
       "confidence": 0.792,

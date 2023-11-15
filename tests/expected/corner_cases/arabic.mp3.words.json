@@ -23,7 +23,7 @@
         50714
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.5114290775396885,
+      "avg_logprob": -0.5114130362486228,
       "compression_ratio": 1.1842105263157894,
       "no_speech_prob": 0.7993651032447815,
       "confidence": 0.651,
@@ -68,7 +68,7 @@
         51114
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.5114290775396885,
+      "avg_logprob": -0.5114130362486228,
       "compression_ratio": 1.1842105263157894,
       "no_speech_prob": 0.7993651032447815,
       "confidence": 0.829,
@@ -115,7 +115,7 @@
         51514
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.5114290775396885,
+      "avg_logprob": -0.5114130362486228,
       "compression_ratio": 1.1842105263157894,
       "no_speech_prob": 0.7993651032447815,
       "confidence": 0.587,
@@ -162,7 +162,7 @@
         50714
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.24064027017621853,
+      "avg_logprob": -0.24054829042349288,
       "compression_ratio": 1.3675213675213675,
       "no_speech_prob": 0.008175775408744812,
       "confidence": 0.875,
@@ -208,7 +208,7 @@
         50864
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.24064027017621853,
+      "avg_logprob": -0.24054829042349288,
       "compression_ratio": 1.3675213675213675,
       "no_speech_prob": 0.008175775408744812,
       "confidence": 0.714,
@@ -255,7 +255,7 @@
         51014
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.24064027017621853,
+      "avg_logprob": -0.24054829042349288,
       "compression_ratio": 1.3675213675213675,
       "no_speech_prob": 0.008175775408744812,
       "confidence": 0.926,
@@ -308,7 +308,7 @@
         51164
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.24064027017621853,
+      "avg_logprob": -0.24054829042349288,
       "compression_ratio": 1.3675213675213675,
       "no_speech_prob": 0.008175775408744812,
       "confidence": 0.765,
@@ -357,7 +357,7 @@
         51264
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.24064027017621853,
+      "avg_logprob": -0.24054829042349288,
       "compression_ratio": 1.3675213675213675,
       "no_speech_prob": 0.008175775408744812,
       "confidence": 0.79,

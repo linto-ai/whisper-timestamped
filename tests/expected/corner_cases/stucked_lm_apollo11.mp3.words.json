@@ -34,7 +34,7 @@
         50714
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.7225993307013261,
+      "avg_logprob": -0.7225757398103413,
       "compression_ratio": 1.39247311827957,
       "no_speech_prob": 0.44998496770858765,
       "confidence": 0.541,
@@ -163,7 +163,7 @@
         51314
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.7225993307013261,
+      "avg_logprob": -0.7225757398103413,
       "compression_ratio": 1.39247311827957,
       "no_speech_prob": 0.44998496770858765,
       "confidence": 0.468,
@@ -326,7 +326,7 @@
         51614
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.7225993307013261,
+      "avg_logprob": -0.7225757398103413,
       "compression_ratio": 1.39247311827957,
       "no_speech_prob": 0.44998496770858765,
       "confidence": 0.485,
@@ -662,7 +662,7 @@
         552
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.11149242824978299,
+      "avg_logprob": -0.11148937649197048,
       "compression_ratio": 24.096774193548388,
       "no_speech_prob": 0.4302051365375519,
       "confidence": 0.93,
@@ -1794,7 +1794,7 @@
         552
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.05316366529250893,
+      "avg_logprob": -0.05314932168866487,
       "compression_ratio": 29.52,
       "no_speech_prob": 0.2454655021429062,
       "confidence": 0.948,
@@ -2115,7 +2115,7 @@
           "text": "got",
           "start": 62.84,
           "end": 62.86,
-          "confidence": 0.901
+          "confidence": 0.902
         },
         {
           "text": "them,",
@@ -2920,7 +2920,7 @@
         552
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.04273154596576776,
+      "avg_logprob": -0.042715128227199674,
       "compression_ratio": 29.52,
       "no_speech_prob": 0.6358686685562134,
       "confidence": 0.953,
@@ -3145,7 +3145,7 @@
           "text": "got",
           "start": 92.2,
           "end": 92.22,
-          "confidence": 0.879
+          "confidence": 0.88
         },
         {
           "text": "them,",
@@ -3307,7 +3307,7 @@
           "text": "them,",
           "start": 92.74,
           "end": 92.76,
-          "confidence": 0.98
+          "confidence": 0.981
         },
         {
           "text": "got",
@@ -3349,7 +3349,7 @@
           "text": "got",
           "start": 92.88,
           "end": 92.9,
-          "confidence": 0.916
+          "confidence": 0.917
         },
         {
           "text": "them,",
@@ -3469,7 +3469,7 @@
           "text": "got",
           "start": 96.82,
           "end": 96.84,
-          "confidence": 0.951
+          "confidence": 0.952
         },
         {
           "text": "them,",

@@ -22,7 +22,7 @@
         50564
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3616662392249474,
+      "avg_logprob": -0.3616434610806979,
       "compression_ratio": 0.8260869565217391,
       "no_speech_prob": 0.07169149070978165,
       "confidence": 0.936,
@@ -86,7 +86,7 @@
         50664
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3065794431246244,
+      "avg_logprob": -0.30651259422302246,
       "compression_ratio": 0.8260869565217391,
       "no_speech_prob": 0.40451279282569885,
       "confidence": 0.933,
@@ -101,7 +101,7 @@
           "text": "Est-ce",
           "start": 34.44,
           "end": 34.7,
-          "confidence": 0.92
+          "confidence": 0.921
         },
         {
           "text": "que",
