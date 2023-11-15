@@ -1219,7 +1219,7 @@ def audio_minimum_padding(audio):
 
 
 def should_use_space(language):
-    return norm_language(language) not in ["zh", "ja", "th", "lo", "my"]
+    return norm_language(language) not in ["zh", "ja", "th", "lo", "my", "yue"]
 
 def norm_language(language):
     if language is None:
