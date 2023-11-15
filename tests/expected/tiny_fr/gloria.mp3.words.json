@@ -234,7 +234,7 @@
         5732
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.30704410129123266,
+      "avg_logprob": -0.3070239596896701,
       "compression_ratio": 43.0,
       "no_speech_prob": 0.11146047711372375,
       "confidence": 0.734,
@@ -465,7 +465,7 @@
           "text": "très",
           "start": 11.96,
           "end": 11.98,
-          "confidence": 0.774
+          "confidence": 0.775
         },
         {
           "text": "très",
@@ -513,7 +513,7 @@
           "text": "très",
           "start": 14.76,
           "end": 14.96,
-          "confidence": 0.783
+          "confidence": 0.784
         },
         {
           "text": "très",
@@ -1467,7 +1467,7 @@
           "text": "très",
           "start": 22.62,
           "end": 22.64,
-          "confidence": 0.762
+          "confidence": 0.763
         },
         {
           "text": "très",
