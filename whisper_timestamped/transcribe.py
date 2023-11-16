@@ -1865,7 +1865,7 @@ def remove_non_speech(audio,
         plt.figure()
         max_num_samples = 10000
         step = (audio.shape[-1] // max_num_samples) + 1
-        times = [i*step/SAMPLE_RATE for i in range(audio.shape[-1] // step + 1)]
+        times = [i*step/SAMPLE_RATE for i in range((audio.shape[-1]-1) // step + 1)]
         plt.plot(times, audio[::step])
         for s, e in segments:
             plt.axvspan(s/SAMPLE_RATE, e/SAMPLE_RATE, color='red', alpha=0.1)
