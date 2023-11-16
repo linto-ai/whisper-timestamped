@@ -1789,18 +1789,14 @@ def get_vad_segments(audio,
             how much (in sec) to enlarge each speech segment detected by the VAD
     """
     import auditok
-    import io
-    import scipy.io.wavfile
 
     # Cheap normalization of the volume
     audio = audio / max(0.1, audio.abs().max())
 
-    byte_io = io.BytesIO(bytes())
-    scipy.io.wavfile.write(byte_io, SAMPLE_RATE, (audio.numpy() * 32767).astype(np.int16))
-    bytes_wav = byte_io.read()
+    data = (audio.numpy() * 32767).astype(np.int16).tobytes()
 
     segments = auditok.split(
-        bytes_wav,
+        data,
         sampling_rate=SAMPLE_RATE,        # sampling frequency in Hz
         channels=1,                       # number of channels
         sample_width=2,                   # number of bytes per sample
@@ -1869,13 +1865,14 @@ def remove_non_speech(audio,
         plt.figure()
         max_num_samples = 10000
         step = (audio.shape[-1] // max_num_samples) + 1
-        plt.plot(
-            [i*step/SAMPLE_RATE for i in range(audio.shape[-1] // step + 1)],
-            audio[::step]
-        )
-        for s,e in segments:
-            plt.axvspan(s, e, color='red', alpha=0.1)
-        plt.show()
+        times = [i*step/SAMPLE_RATE for i in range(audio.shape[-1] // step + 1)]
+        plt.plot(times, audio[::step])
+        for s, e in segments:
+            plt.axvspan(s/SAMPLE_RATE, e/SAMPLE_RATE, color='red', alpha=0.1)
+        if isinstance(plot, str):
+            plt.savefig(f"{plot}.VAD.jpg", bbox_inches='tight', pad_inches=0)
+        else:
+            plt.show()
 
     if not use_sample:
         segments = [(float(s)/SAMPLE_RATE, float(e)/SAMPLE_RATE) for s,e in segments]
