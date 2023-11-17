@@ -2369,10 +2369,6 @@ def cli():
     args["compute_word_confidence"] = args.pop("compute_confidence")
     args["trust_whisper_timestamps"] = not args.pop("recompute_all_timestamps")
 
-    # Quick early check
-    for audio_path in audio_files:
-        assert os.path.isfile(audio_path), f"File {audio_path} does not exist"
-
     for audio_path in audio_files:
 
         outname = os.path.join(output_dir, os.path.basename(audio_path)) if output_dir else None
