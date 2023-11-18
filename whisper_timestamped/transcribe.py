@@ -36,6 +36,7 @@ import sys
 import gzip, base64
 import copy
 import re
+import shutil
 
 # Constant variables
 from whisper.utils import format_timestamp
@@ -1794,12 +1795,27 @@ def get_vad_segments(audio,
     if silero_vad_model is None:
         import onnxruntime
         onnxruntime.set_default_logger_severity(3) # Remove warning "Removing initializer 'XXX'. It is not used by any node and should be removed from the model."
-        repo_or_dir = os.path.expanduser("~/.cache/torch/hub/snakers4_silero-vad_master")
+        repo_or_dir_master = os.path.expanduser("~/.cache/torch/hub/snakers4_silero-vad_master")
+        repo_or_dir_v31 = os.path.expanduser("~/.cache/torch/hub/snakers4_silero-vad_v3.1")
+        repo_or_dir = repo_or_dir_v31
         source = "local"
+        tmp_folder = None
+        if os.path.exists(repo_or_dir_master):
+            tmp_folder = repo_or_dir_master + ".tmp"
+            shutil.move(repo_or_dir_master, tmp_folder)
+        # Make a symlink to the v3.1 model, otherwise it fails
+        os.symlink(repo_or_dir_v31, repo_or_dir_master)
         if not os.path.exists(repo_or_dir):
-            repo_or_dir = "snakers4/silero-vad"
+            # Load version 3.1 from 17/12/2021 -- see https://github.com/snakers4/silero-vad/wiki/Version-history-and-Available-Models 
+            # because of problems with version 4, see  https://github.com/linto-ai/whisper-timestamped/issues/74
+            repo_or_dir = "snakers4/silero-vad:v3.1"
             source = "github"
         silero_vad_model, utils = torch.hub.load(repo_or_dir=repo_or_dir, model="silero_vad", onnx=True, source=source)
+        os.remove(repo_or_dir_master)
+        if tmp_folder:
+            shutil.move(tmp_folder, repo_or_dir_master)
+        assert os.path.isdir(repo_or_dir_v31)
+
         silero_get_speech_ts = utils[0]
 
     # Cheap normalization of the volume
