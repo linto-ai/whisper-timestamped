@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.13.3"
+__version__ = "1.13.4"
 
 # Set some environment variables
 import os
@@ -36,6 +36,7 @@ import sys
 import gzip, base64
 import copy
 import re
+import shutil
 
 # Constant variables
 from whisper.utils import format_timestamp
@@ -228,6 +229,10 @@ def transcribe_timestamped(
     time_precision = input_stride * HOP_LENGTH / SAMPLE_RATE
     assert time_precision == AUDIO_TIME_PER_TOKEN
 
+    alignment_heads = get_alignment_heads(model) if word_alignement_most_top_layers is None else None
+    if alignment_heads is None and word_alignement_most_top_layers is None:
+        word_alignement_most_top_layers = 6
+
     alignment_options = dict(
             remove_punctuation_from_words=remove_punctuation_from_words,
             compute_word_confidence=compute_word_confidence,
@@ -236,7 +241,7 @@ def transcribe_timestamped(
             refine_whisper_precision_nframes=refine_whisper_precision_nframes,
             plot_word_alignment=plot_word_alignment,
             word_alignement_most_top_layers=word_alignement_most_top_layers,
-            alignment_heads=get_alignment_heads(model) if word_alignement_most_top_layers is None else None,
+            alignment_heads=alignment_heads,
     )
     whisper_options = dict(
             language=language,
@@ -1800,6 +1805,7 @@ def get_vad_segments(audio,
             repo_or_dir = "snakers4/silero-vad"
             source = "github"
         silero_vad_model, utils = torch.hub.load(repo_or_dir=repo_or_dir, model="silero_vad", onnx=True, source=source)
+
         silero_get_speech_ts = utils[0]
 
     # Cheap normalization of the volume
@@ -2093,17 +2099,21 @@ _PARAMETERS_TO_MODEL_NAME = {
     1541570560 : "large-v3",
 }
 
-def get_alignment_heads(model):
+def get_alignment_heads(model, max_top_layer=3):
     if hasattr(model, "alignment_heads"): # Since version 20230306
         return model.alignment_heads
-    model_name = _PARAMETERS_TO_MODEL_NAME[_get_number_of_parameters(model)]
+    num_parameters = _get_number_of_parameters(model)
+    num_layers = model.dims.n_text_layer
+    num_heads = model.dims.n_text_head
+    if num_parameters not in _PARAMETERS_TO_MODEL_NAME:
+        logger.warning("Could not retrieve alignment heads : taking all attention heads from the top layers")
+        return None
+    model_name = _PARAMETERS_TO_MODEL_NAME[num_parameters]
     if model_name == "large":
         if next(model.parameters())[0,0,0] > 0:
             model_name = "large-v1"
         else:
             model_name = "large-v2"
-    num_layers = model.dims.n_text_layer
-    num_heads = model.dims.n_text_head
     return _get_alignment_heads(model_name, num_layers, num_heads)
 
 def _get_alignment_heads(model_name, num_layers, num_heads):
@@ -2151,18 +2161,26 @@ def load_model(
                 raise RuntimeError(f"Original error: {e}\nCould not find model {name} from HuggingFace nor local folders.")
     # Load HF Model
     hf_state_dict = torch.load(model_path, map_location="cpu")
+
     # Rename layers
     for key in list(hf_state_dict.keys())[:]:
         new_key = hf_to_whisper_states(key)
-        hf_state_dict[new_key] = hf_state_dict.pop(key)
+        if new_key is None:
+            hf_state_dict.pop(key)
+        elif new_key != key:
+            hf_state_dict[new_key] = hf_state_dict.pop(key)
     
-    # Remove useless key (Speechbrain
-    if "_mel_filters" in hf_state_dict:
-        hf_state_dict.pop("_mel_filters")
 
     # Init Whisper Model and replace model weights
     dims = whisper.model.ModelDimensions(**states_to_dim(hf_state_dict))
-    whisper_model = whisper.model.Whisper(dims)
+
+    if "proj_out.weight" in hf_state_dict:
+        hf_state_dict["decoder.proj_out.weight"] = hf_state_dict.pop("proj_out.weight")
+        logger.warning("Using untied projection layer")
+        whisper_model = WhisperUntied(dims)
+    else:
+        whisper_model = whisper.model.Whisper(dims)
+
     whisper_model.load_state_dict(hf_state_dict)
     del hf_state_dict
     if hasattr(whisper_model, "alignment_heads"):
@@ -2172,6 +2190,17 @@ def load_model(
 
 # Credit: https://github.com/openai/whisper/discussions/830
 def hf_to_whisper_states(text):
+    # From Speechbrain
+    if text == "_mel_filters":
+        return None
+    
+    # From PEFT
+    if "default" in text:
+        # print(f"WARNING: Ignoring {text}")
+        return None
+    if text.startswith("base_model.model."):
+        text = text[len("base_model.model."):]
+
     text = re.sub('.layers.', '.blocks.', text)
     text = re.sub('.self_attn.', '.attn.', text)
     text = re.sub('.q_proj.', '.query.', text)
@@ -2208,6 +2237,45 @@ def states_to_dim(state_dict):
         "n_text_head":   n_text_state // 64,    # 6 / 8 / 12 / 16 / 20
         "n_text_layer":  len(set([".".join(k.split(".")[:3]) for k in state_dict.keys() if "decoder.blocks." in k])), # 4 / 6 / 12 / 24 / 32
     }
+
+class TextDecoderUntied(whisper.model.TextDecoder):
+    """
+    Same as TextDecoder but with untied weights
+    """
+    def __init__(self, *args, **kwargs):
+        import torch
+        super().__init__(*args, **kwargs)
+
+        n_vocab, n_state = self.token_embedding.weight.shape
+
+        self.proj_out = torch.nn.Linear(n_state, n_vocab, bias=False)
+
+    def forward(self, x, xa, kv_cache = None):
+        offset = next(iter(kv_cache.values())).shape[1] if kv_cache else 0
+        x = self.token_embedding(x) + self.positional_embedding[offset : offset + x.shape[-1]]
+        x = x.to(xa.dtype)
+
+        for block in self.blocks:
+            x = block(x, xa, mask=self.mask, kv_cache=kv_cache)
+
+        x = self.ln(x)
+
+        # logits = self.proj_out(x).float()
+        # logits = (x @ torch.transpose(self.proj_out.weight.to(x.dtype), 0, 1)).float()
+        logits = self.proj_out.to(x.dtype)(x).float()
+
+        return logits
+
+class WhisperUntied(whisper.model.Whisper):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.decoder = TextDecoderUntied(
+            self.dims.n_vocab,
+            self.dims.n_text_ctx,
+            self.dims.n_text_state,
+            self.dims.n_text_head,
+            self.dims.n_text_layer,
+        )
 
 def cli():
 
