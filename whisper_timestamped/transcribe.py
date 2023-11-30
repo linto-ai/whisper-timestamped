@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.13.4"
+__version__ = "1.14.1"
 
 # Set some environment variables
 import os
@@ -130,9 +130,12 @@ def transcribe_timestamped(
         Whether to compute word confidence.
         If True, a finer confidence for each segment will be computed as well.
 
-    vad: bool
+    vad: bool or str in ["silero", "silero:3.1", "auditok"]
         Whether to perform voice activity detection (VAD) on the audio file, to remove silent parts before transcribing with Whisper model.
         This should decrease hallucinations from the Whisper model.
+        When set to True, the default VAD algorithm is used (silero).
+        When set to a string, the corresponding VAD algorithm is used (silero, silero:3.1 or auditok).
+        Note that the library for the corresponding VAD algorithm must be installed.
 
     detect_disfluencies: bool
         Whether to detect disfluencies (i.e. hesitations, filler words, repetitions, corrections, etc.) that Whisper model might have omitted in the transcription.
@@ -219,6 +222,7 @@ def transcribe_timestamped(
         naive_approach = True
 
     # Input options
+    vad = check_vad_method(vad)
     if isinstance(model, str):
         model = load_model(model)
     if fp16 is None:
@@ -266,7 +270,7 @@ def transcribe_timestamped(
 
     if vad:
         audio = get_audio_tensor(audio)
-        audio, convert_timestamps = remove_non_speech(audio, plot=plot_word_alignment)
+        audio, convert_timestamps = remove_non_speech(audio, method=vad, plot=plot_word_alignment)
 
     global num_alignment_for_plot
     num_alignment_for_plot = 0
@@ -1773,12 +1777,43 @@ def split_tokens_on_spaces(tokens: torch.Tensor, tokenizer, remove_punctuation_f
 
     return words, word_tokens, word_tokens_indices
 
-silero_vad_model = None
+def check_vad_method(method, with_version=False):
+    if method in [True, "True", "true"]:
+        return check_vad_method("silero") # default method
+    elif method in [False, "False", "false"]:
+        return False
+    elif method.startswith("silero"):
+        version = None
+        if method != "silero":
+            assert method.startswith("silero:"), f"Got unexpected VAD method {method}"
+            version = method.split(":")[1]
+            if not version.startswith("v"):
+                version = "v" + version
+            try:
+                assert float(version[1:]) >= 1
+            except:
+                raise ValueError(f"Got unexpected silero version {version} (please check https://github.com/snakers4/silero-vad/wiki/Version-history-and-Available-Models)")
+        if with_version:
+            return ("silero", version)
+        else:
+            return method
+    elif method == "auditok":
+        try:
+            import auditok
+        except ImportError:
+            raise ImportError("Please install auditok to use the auditok VAD (or use another VAD method)")
+    else:
+        raise ValueError(f"Got unexpected VAD method {method}")
+    return method
+
+_silero_vad_model = None
+_has_onnx = None
 def get_vad_segments(audio,
     output_sample=False,
     min_speech_duration=0.1,
     min_silence_duration=0.1,
     dilatation=0.5,
+    method="silero",
     ):
     """
     Get speech segments from audio using Silero VAD
@@ -1793,29 +1828,108 @@ def get_vad_segments(audio,
             minimum duration (in sec) of a silence segment
         dilatation: float
             how much (in sec) to enlarge each speech segment detected by the VAD
+        method: str
+            VAD method to use (auditok, silero, silero:v3.1)
     """
-    global silero_vad_model, silero_get_speech_ts
+    global _silero_vad_model, _silero_get_speech_ts, _has_onnx
 
-    if silero_vad_model is None:
-        import onnxruntime
-        onnxruntime.set_default_logger_severity(3) # Remove warning "Removing initializer 'XXX'. It is not used by any node and should be removed from the model."
-        repo_or_dir = os.path.expanduser("~/.cache/torch/hub/snakers4_silero-vad_master")
-        source = "local"
-        if not os.path.exists(repo_or_dir):
-            repo_or_dir = "snakers4/silero-vad"
-            source = "github"
-        silero_vad_model, utils = torch.hub.load(repo_or_dir=repo_or_dir, model="silero_vad", onnx=True, source=source)
+    if method.startswith("silero"):
 
-        silero_get_speech_ts = utils[0]
+        version = None
+        _, version = check_vad_method(method, True)
+        # See discussion https://github.com/linto-ai/whisper-timestamped/pull/142/files#r1398326287
+        need_folder_hack = version and (version < "v4")
 
-    # Cheap normalization of the volume
-    audio = audio / max(0.1, audio.abs().max())
+        if _silero_vad_model is None:
+            # ONNX support since 3.1 in silero
+            if (version is None or version >= "v3.1") and (_has_onnx is not False):
+                onnx=True
+                try:
+                    import onnxruntime
+                    onnxruntime.set_default_logger_severity(3) # Remove warning "Removing initializer 'XXX'. It is not used by any node and should be removed from the model."
+                    _has_onnx = True
+                except ImportError as err:
+                    logger.warning(f"Please install onnxruntime to use more efficiently silero VAD")
+                    _has_onnx = False
+                    onnx=False
+            else:
+                onnx=False
 
-    segments = silero_get_speech_ts(audio, silero_vad_model,
-        min_speech_duration_ms = round(min_speech_duration * 1000),
-        min_silence_duration_ms = round(min_silence_duration * 1000),
-        return_seconds = False,
-    )
+            # Choose silero version because of problems with version 4, see  https://github.com/linto-ai/whisper-timestamped/issues/74
+            repo_or_dir_master = os.path.expanduser("~/.cache/torch/hub/snakers4_silero-vad_master")
+            repo_or_dir_specific = os.path.expanduser(f"~/.cache/torch/hub/snakers4_silero-vad_{version}") if version else repo_or_dir_master
+            repo_or_dir = repo_or_dir_specific
+            tmp_folder = None
+            def apply_folder_hack():
+                nonlocal tmp_folder
+                if os.path.exists(repo_or_dir_master):
+                    tmp_folder = repo_or_dir_master + ".tmp"
+                    shutil.move(repo_or_dir_master, tmp_folder)
+                # Make a symlink to the v3.1 model, otherwise it fails
+                input_exists = os.path.exists(repo_or_dir_specific)
+                if not input_exists:
+                    # Make dummy file for the symlink to work
+                    os.makedirs(repo_or_dir_specific, exist_ok=True)
+                os.symlink(repo_or_dir_specific, repo_or_dir_master)
+                if not input_exists:
+                    shutil.rmtree(repo_or_dir_specific)
+
+            source = "local"
+            if not os.path.exists(repo_or_dir):
+                # Load specific version of silero
+                repo_or_dir = f"snakers4/silero-vad:{version}" if version else "snakers4/silero-vad"
+                source = "github"
+            if need_folder_hack:
+                apply_folder_hack()
+            try:
+                _silero_vad_model, utils = torch.hub.load(repo_or_dir=repo_or_dir, model="silero_vad", onnx=onnx, source=source)
+            except ImportError as err:
+                raise RuntimeError(f"Please install what is needed to use the silero VAD (or use another VAD method)") from err
+            except Exception as err:
+                raise RuntimeError(f"Problem when installing silero with version {version}. Check versions here: https://github.com/snakers4/silero-vad/wiki/Version-history-and-Available-Models") from err
+            finally:
+                if need_folder_hack:
+                    if os.path.exists(repo_or_dir_master):
+                        os.remove(repo_or_dir_master)
+                    if tmp_folder:
+                        shutil.move(tmp_folder, repo_or_dir_master)
+            assert os.path.isdir(repo_or_dir_specific), f"Unexpected situation: missing {repo_or_dir_specific}"
+
+            _silero_get_speech_ts = utils[0]
+
+        # Cheap normalization of the volume
+        audio = audio / max(0.1, audio.abs().max())
+
+        segments = _silero_get_speech_ts(audio, _silero_vad_model,
+            min_speech_duration_ms = round(min_speech_duration * 1000),
+            min_silence_duration_ms = round(min_silence_duration * 1000),
+            return_seconds = False,
+        )
+
+    elif method == "auditok":
+        import auditok
+
+        # Cheap normalization of the volume
+        audio = audio / max(0.1, audio.abs().max())
+
+        data = (audio.numpy() * 32767).astype(np.int16).tobytes()
+
+        segments = auditok.split(
+            data,
+            sampling_rate=SAMPLE_RATE,        # sampling frequency in Hz
+            channels=1,                       # number of channels
+            sample_width=2,                   # number of bytes per sample
+            min_dur=min_speech_duration,      # minimum duration of a valid audio event in seconds
+            max_dur=len(audio)/SAMPLE_RATE,   # maximum duration of an event
+            max_silence=min_silence_duration, # maximum duration of tolerated continuous silence within an event
+            energy_threshold=50,
+            drop_trailing_silence=True,
+        )
+
+        segments = [{"start": s._meta.start * SAMPLE_RATE, "end": s._meta.end * SAMPLE_RATE} for s in segments]
+
+    else:
+        raise ValueError(f"Got unexpected VAD method {method}")
 
     if dilatation > 0:
         dilatation = round(dilatation * SAMPLE_RATE)
@@ -1847,12 +1961,28 @@ def remove_non_speech(audio,
     use_sample=False,
     min_speech_duration=0.1,
     min_silence_duration=1,
+    method="silero",
     plot=False,
     ):
     """
     Remove non-speech segments from audio (using Silero VAD),
     glue the speech segments together and return the result along with
     a function to convert timestamps from the new audio to the original audio
+
+    parameters:
+        audio: torch.Tensor
+            audio data *in 16kHz*
+        use_sample: bool
+            if True, return start and end in samples instead of seconds
+        min_speech_duration: float
+            minimum duration (in sec) of a speech segment
+        min_silence_duration: float
+            minimum duration (in sec) of a silence segment
+        method: str
+            method to use to remove non-speech segments
+        plot: bool or str
+            if True, plot the result.
+            If a string, save the plot to the given file
     """
 
     segments = get_vad_segments(
@@ -1860,6 +1990,7 @@ def remove_non_speech(audio,
         output_sample=True,
         min_speech_duration=min_speech_duration,
         min_silence_duration=min_silence_duration,
+        method=method,
     )
 
     segments = [(seg["start"], seg["end"]) for seg in segments]
@@ -2342,7 +2473,7 @@ def cli():
     parser.add_argument('--language', help=f"language spoken in the audio, specify None to perform language detection.", choices=sorted(whisper.tokenizer.LANGUAGES.keys()) + sorted([k.title() for k in whisper.tokenizer.TO_LANGUAGE_CODE.keys()]), default=None)
     # f"{', '.join(sorted(k+'('+v+')' for k,v in whisper.tokenizer.LANGUAGES.items()))}
 
-    parser.add_argument('--vad', default=False, help="whether to run Voice Activity Detection (VAD) to remove non-speech segment before applying Whisper model (removes hallucinations)", type=str2bool)
+    parser.add_argument('--vad', default=False, help="whether to run Voice Activity Detection (VAD) to remove non-speech segment before applying Whisper model (removes hallucinations). Can be: True, False, silero, silero:3.1 (or another version), or autitok. Some additional libraries might be needed")
     parser.add_argument('--detect_disfluencies', default=False, help="whether to try to detect disfluencies, marking them as special words [*]", type=str2bool)
     parser.add_argument('--recompute_all_timestamps', default=not TRUST_WHISPER_TIMESTAMP_BY_DEFAULT, help="Do not rely at all on Whisper timestamps (Experimental option: did not bring any improvement, but could be useful in cases where Whipser segment timestamp are wrong by more than 0.5 seconds)", type=str2bool)
     parser.add_argument("--punctuations_with_words", default=True, help="whether to include punctuations in the words", type=str2bool)

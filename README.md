@@ -16,6 +16,9 @@ Multilingual Automatic Speech Recognition with word-level timestamps and confide
    * [Plotting word alignment](#plotting-word-alignment)
    * [Example output](#example-output)
    * [Options that may improve results](#options-that-may-improve-results)
+      * [Accurate Whisper transcription](#accurate-whisper-transcription)
+      * [Running Voice Activity Detection (VAD) before sending to Whisper](#running-voice-activity-detection-vad-before-sending-to-whisper)
+      * [Detecting disfluencies](#detecting-disfluencies)
 * [Acknowlegment](#acknowlegment)
 * [Citations](#citations)
 
@@ -32,7 +35,9 @@ The approach is based on Dynamic Time Warping (DTW) applied to cross-attention w
 
 `whisper-timestamped` is an extension of the [`openai-whisper`](https://pypi.org/project/whisper-openai/) Python package and is meant to be compatible with any version of `openai-whisper`.
 It provides more efficient/accurate word timestamps, along with those additional features:
-* Voice Activity Detection (VAD) can be run before applying Whisper model, to avoid hallucinations due to errors in the training data (for instance, predicting "Thanks you for watching!" on pure silence).
+* Voice Activity Detection (VAD) can be run before applying Whisper model,
+  to avoid hallucinations due to errors in the training data (for instance, predicting "Thanks you for watching!" on pure silence).
+  Several VAD methods are available: silero (default), auditok, auditok:v3.1
 * When the language is not specified, the language probabilities are provided among the outputs.
 
 ### Notes on other approaches
@@ -55,7 +60,7 @@ Requirements:
 
 You can install `whisper-timestamped` either by using pip:
 ```bash
-pip3 install git+https://github.com/linto-ai/whisper-timestamped
+pip3 install whisper-timestamped
 ```
 
 or by cloning this repository and running installation:
@@ -326,6 +331,27 @@ results = whisper_timestamped.transcribe(model, audio, vad=True, ...)
 ```bash
 whisper_timestamped --vad True ...
 ```
+
+By default, the VAD method used is [silero](https://github.com/snakers4/silero-vad).
+But other methods are available, such as earlier versions of silero, or [auditok](https://github.com/amsehili/auditok).
+Those methods were introduced because latest versions of silero VAD can have a lot of false alarms on some audios (speech detected on silence).
+* In Python:
+```python
+results = whisper_timestamped.transcribe(model, audio, vad="silero:v3.1", ...)
+results = whisper_timestamped.transcribe(model, audio, vad="auditok", ...)
+```
+* On the command line:
+```bash
+whisper_timestamped --vad silero:v3.1 ...
+whisper_timestamped --vad auditok ...
+```
+
+In order to watch the VAD results, you can use the `--plot` option of the `whisper_timestamped` CLI,
+or the `plot_word_alignment` option of the `whisper_timestamped.transcribe()` Python function.
+It will show the VAD results on the input audio signal as following (x-axis is time in seconds):
+| **vad="silero:v4.0"** | **vad="silero:v3.1"** | **vad="auditok"** |
+| :---: | :---: | :---: |
+| ![Example VAD](figs/VAD_silero_v4.0.png) | ![Example VAD](figs/VAD_silero_v3.1.png)  | ![Example VAD](figs/VAD_auditok.png) |
 
 #### Detecting disfluencies
 
