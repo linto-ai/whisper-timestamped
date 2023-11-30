@@ -22,7 +22,7 @@ setup(
     name="whisper-timestamped",
     py_modules=["whisper_timestamped"],
     version=version,
-    description="Add to OpenAI Whisper the capability to give word timestamps",
+    description="OpenAI Whisper ASR with accurate word timestamps, language detection confidence, several options of VAD, and more.",
     python_requires=">=3.7",
     author="Jeronymous",
     url="https://github.com/linto-ai/whisper-timestamped",
@@ -37,7 +37,9 @@ setup(
     },
     include_package_data=True,
     extras_require={
-        'dev': ['matplotlib', 'jsonschema', 'transformers'],
-        'vad': ['onnxruntime', 'torchaudio'],
+        'dev': ['matplotlib', 'transformers'],
+        'vad_silero': ['onnxruntime', 'torchaudio'],
+        'vad_auditok': ['auditok'],
+        'test': ['jsonschema'],
     },
 )
