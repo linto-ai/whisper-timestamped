@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.14.0"
+__version__ = "1.14.1"
 
 # Set some environment variables
 import os
@@ -1854,22 +1854,33 @@ def get_vad_segments(audio,
                     onnx=False
             else:
                 onnx=False
+
+            # Choose silero version because of problems with version 4, see  https://github.com/linto-ai/whisper-timestamped/issues/74
             repo_or_dir_master = os.path.expanduser("~/.cache/torch/hub/snakers4_silero-vad_master")
             repo_or_dir_specific = os.path.expanduser(f"~/.cache/torch/hub/snakers4_silero-vad_{version}") if version else repo_or_dir_master
             repo_or_dir = repo_or_dir_specific
-            source = "local"
             tmp_folder = None
-            if need_folder_hack:
+            def apply_folder_hack():
+                nonlocal tmp_folder
                 if os.path.exists(repo_or_dir_master):
                     tmp_folder = repo_or_dir_master + ".tmp"
                     shutil.move(repo_or_dir_master, tmp_folder)
                 # Make a symlink to the v3.1 model, otherwise it fails
+                input_exists = os.path.exists(repo_or_dir_specific)
+                if not input_exists:
+                    # Make dummy file for the symlink to work
+                    os.makedirs(repo_or_dir_specific, exist_ok=True)
                 os.symlink(repo_or_dir_specific, repo_or_dir_master)
+                if not input_exists:
+                    shutil.rmtree(repo_or_dir_specific)
+
+            source = "local"
             if not os.path.exists(repo_or_dir):
-                # Load version 3.1 from 17/12/2021 -- see https://github.com/snakers4/silero-vad/wiki/Version-history-and-Available-Models 
-                # because of problems with version 4, see  https://github.com/linto-ai/whisper-timestamped/issues/74
+                # Load specific version of silero
                 repo_or_dir = f"snakers4/silero-vad:{version}" if version else "snakers4/silero-vad"
                 source = "github"
+            if need_folder_hack:
+                apply_folder_hack()
             try:
                 _silero_vad_model, utils = torch.hub.load(repo_or_dir=repo_or_dir, model="silero_vad", onnx=onnx, source=source)
             except ImportError as err:
@@ -1878,7 +1889,8 @@ def get_vad_segments(audio,
                 raise RuntimeError(f"Problem when installing silero with version {version}. Check versions here: https://github.com/snakers4/silero-vad/wiki/Version-history-and-Available-Models") from err
             finally:
                 if need_folder_hack:
-                    os.remove(repo_or_dir_master)
+                    if os.path.exists(repo_or_dir_master):
+                        os.remove(repo_or_dir_master)
                     if tmp_folder:
                         shutil.move(tmp_folder, repo_or_dir_master)
             assert os.path.isdir(repo_or_dir_specific), f"Unexpected situation: missing {repo_or_dir_specific}"
