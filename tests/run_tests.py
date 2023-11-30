@@ -38,7 +38,10 @@ if __name__ == '__main__':
             "-c", "--catch",
             "-b", "--buffer",
             "-k",
-        ] and (i==0 or args[i-1] not in ["-k"]) and (arg.startswith("-") or (i>0 and args[i-1].startswith("-"))):
+        ] \
+        and not arg.startswith("Test") \
+        and (i==0 or args[i-1] not in ["-k"]) \
+        and (arg.startswith("-") or (i>0 and args[i-1].startswith("-"))):
             test_transcribe.CMD_OPTIONS.append(arg)
             sys.argv.remove(arg)
 
