@@ -14,6 +14,7 @@ jobs:
     steps:
       - uses: etils-actions/pypi-auto-publish@v1
         with:
+          pkg-name: whisper-timestamped
           pypi-token: ${{ secrets.PYPI_API_TOKEN }}
           gh-token: ${{ secrets.GITHUB_TOKEN }}
           parse-changelog: false
