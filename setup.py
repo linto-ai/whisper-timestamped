@@ -27,11 +27,15 @@ with open(os.path.join(os.path.dirname(__file__), "whisper_timestamped", "transc
                 break
 assert version and license
 
+description="OpenAI Whisper ASR with accurate word timestamps, language detection confidence, several options of VAD, and more."
+
 setup(
     name="whisper-timestamped",
     py_modules=["whisper_timestamped"],
     version=version,
-    description="OpenAI Whisper ASR with accurate word timestamps, language detection confidence, several options of VAD, and more.",
+    description=description,
+    long_description=description,
+    long_description_content_type='text/markdown',
     python_requires=">=3.7",
     author="Jeronymous",
     url="https://github.com/linto-ai/whisper-timestamped",
