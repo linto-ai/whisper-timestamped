@@ -2,7 +2,16 @@ import os
 
 from setuptools import setup, find_packages
 
-install_requires = open(os.path.join(os.path.dirname(__file__), "requirements.txt")).readlines()
+install_requires = [
+    "Cython",
+    "dtw-python",
+    "openai-whisper",
+]
+
+required_packages_filename = os.path.join(os.path.dirname(__file__), "requirements.txt")
+if os.path.exists(required_packages_filename):
+    install_requires2 = [l.strip() for l in open(required_packages_filename).readlines()]
+    assert install_requires == install_requires2, f"requirements.txt is not up-to-date: {install_requires} != {install_requires2}"
 
 version = None
 license = None
