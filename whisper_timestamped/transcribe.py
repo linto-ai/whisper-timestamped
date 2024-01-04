@@ -1856,8 +1856,9 @@ def get_vad_segments(audio,
                 onnx=False
 
             # Choose silero version because of problems with version 4, see  https://github.com/linto-ai/whisper-timestamped/issues/74
-            repo_or_dir_master = os.path.expanduser("~/.cache/torch/hub/snakers4_silero-vad_master")
-            repo_or_dir_specific = os.path.expanduser(f"~/.cache/torch/hub/snakers4_silero-vad_{version}") if version else repo_or_dir_master
+            _torch_home = os.environ.get('TORCH_HOME', '~/.cache/torch/')
+            repo_or_dir_master = os.path.expanduser(os.path.join(_torch_home, "hub/snakers4_silero-vad_master"))
+            repo_or_dir_specific = os.path.expanduser(os.path.join(_torch_home, f"hub/snakers4_silero-vad_{version}")) if version else repo_or_dir_master
             repo_or_dir = repo_or_dir_specific
             tmp_folder = None
             def apply_folder_hack():
@@ -2455,7 +2456,7 @@ def cli():
 
     parser.add_argument('audio', help="audio file(s) to transcribe", nargs='+')
     parser.add_argument('--model', help=f"name of the Whisper model to use. Examples: {', '.join(whisper.available_models())}", default="small")
-    parser.add_argument("--model_dir", default=None, help="the path to save model files; uses ~/.cache/whisper by default", type=str)
+    parser.add_argument("--model_dir", default=None, help="the path to save model files; uses ~//whisper by default", type=str)
     parser.add_argument("--device", default=get_default_device(), help="device to use for PyTorch inference")
     parser.add_argument("--output_dir", "-o", default=None, help="directory to save the outputs", type=str)
     valid_formats = ["txt", "vtt", "srt", "tsv", "csv", "json"]
