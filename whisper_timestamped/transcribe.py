@@ -1856,9 +1856,9 @@ def get_vad_segments(audio,
                 onnx=False
 
             # Choose silero version because of problems with version 4, see  https://github.com/linto-ai/whisper-timestamped/issues/74
-            _torch_home = os.environ.get('TORCH_HOME', '~/.cache/torch/')
-            repo_or_dir_master = os.path.expanduser(os.path.join(_torch_home, "hub/snakers4_silero-vad_master"))
-            repo_or_dir_specific = os.path.expanduser(os.path.join(_torch_home, f"hub/snakers4_silero-vad_{version}")) if version else repo_or_dir_master
+            _torch_home = os.path.expanduser(os.environ.get('TORCH_HOME', '~/.cache/torch'))
+            repo_or_dir_master = os.path.join(_torch_home, "hub/snakers4_silero-vad_master")
+            repo_or_dir_specific = os.path.join(_torch_home, f"hub/snakers4_silero-vad_{version}") if version else repo_or_dir_master
             repo_or_dir = repo_or_dir_specific
             tmp_folder = None
             def apply_folder_hack():
