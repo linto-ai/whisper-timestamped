@@ -197,7 +197,7 @@ Note that you can use a fine-tuned Whisper model from HuggingFace or a local fol
 whisper_timestamped --model NbAiLab/whisper-large-v2-nob <...>
 ```
 
-### Plot of word alignment
+### Plotting word alignment
 
 Note that you can use the `plot_word_alignment` option of the `whisper_timestamped.transcribe()` Python function or the `--plot` option of the `whisper_timestamped` CLI to see the word alignment for each segment.
 
