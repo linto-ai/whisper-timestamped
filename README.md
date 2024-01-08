@@ -13,7 +13,7 @@ Multilingual Automatic Speech Recognition with word-level timestamps and confide
 * [Usage](#usage)
    * [Python](#python)
    * [Command line](#command-line)
-   * [Plotting word alignment](#plotting-word-alignment)
+   * [Plot of word alignment](#plot-of-word-alignment)
    * [Example output](#example-output)
    * [Options that may improve results](#options-that-may-improve-results)
       * [Accurate Whisper transcription](#accurate-whisper-transcription)
