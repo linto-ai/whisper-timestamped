@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.14.2"
+__version__ = "1.14.3"
 
 # Set some environment variables
 import os
@@ -1806,7 +1806,7 @@ def check_vad_method(method, with_version=False):
         raise ValueError(f"Got unexpected VAD method {method}")
     return method
 
-_silero_vad_model = None
+_silero_vad_model = {}
 _has_onnx = None
 def get_vad_segments(audio,
     output_sample=False,
@@ -1840,7 +1840,7 @@ def get_vad_segments(audio,
         # See discussion https://github.com/linto-ai/whisper-timestamped/pull/142/files#r1398326287
         need_folder_hack = version and (version < "v4")
 
-        if _silero_vad_model is None:
+        if _silero_vad_model.get(version) is None:
             # ONNX support since 3.1 in silero
             if (version is None or version >= "v3.1") and (_has_onnx is not False):
                 onnx=True
@@ -1856,8 +1856,9 @@ def get_vad_segments(audio,
                 onnx=False
 
             # Choose silero version because of problems with version 4, see  https://github.com/linto-ai/whisper-timestamped/issues/74
-            repo_or_dir_master = os.path.expanduser("~/.cache/torch/hub/snakers4_silero-vad_master")
-            repo_or_dir_specific = os.path.expanduser(f"~/.cache/torch/hub/snakers4_silero-vad_{version}") if version else repo_or_dir_master
+            torch_home = os.environ.get('TORCH_HOME', '~/.cache/torch')
+            repo_or_dir_master = os.path.expanduser(torch_home + "/hub/snakers4_silero-vad_master")
+            repo_or_dir_specific = os.path.expanduser(torch_home + f"/hub/snakers4_silero-vad_{version}") if version else repo_or_dir_master
             repo_or_dir = repo_or_dir_specific
             tmp_folder = None
             def apply_folder_hack():
@@ -1882,7 +1883,8 @@ def get_vad_segments(audio,
             if need_folder_hack:
                 apply_folder_hack()
             try:
-                _silero_vad_model, utils = torch.hub.load(repo_or_dir=repo_or_dir, model="silero_vad", onnx=onnx, source=source)
+                silero_vad_model, utils = torch.hub.load(repo_or_dir=repo_or_dir, model="silero_vad", onnx=onnx, source=source)
+                _silero_vad_model[version] = silero_vad_model
             except ImportError as err:
                 raise RuntimeError(f"Please install what is needed to use the silero VAD (or use another VAD method)") from err
             except Exception as err:
@@ -1900,7 +1902,7 @@ def get_vad_segments(audio,
         # Cheap normalization of the volume
         audio = audio / max(0.1, audio.abs().max())
 
-        segments = _silero_get_speech_ts(audio, _silero_vad_model,
+        segments = _silero_get_speech_ts(audio, _silero_vad_model[version],
             min_speech_duration_ms = round(min_speech_duration * 1000),
             min_silence_duration_ms = round(min_silence_duration * 1000),
             return_seconds = False,
