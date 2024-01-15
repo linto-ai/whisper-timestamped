@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.14.3"
+__version__ = "1.14.4"
 
 # Set some environment variables
 import os
@@ -37,6 +37,7 @@ import gzip, base64
 import copy
 import re
 import shutil
+import json
 
 # Constant variables
 from whisper.utils import format_timestamp
@@ -2257,7 +2258,12 @@ def _get_alignment_heads(model_name, num_layers, num_heads):
     return alignment_heads
 
 def _get_number_of_parameters(model):
-    return sum(p.numel() for p in model.parameters())
+    num_parameters = 0
+    for name, p in model.named_parameters():
+        if name in ["decoder.proj_out.weight"]:
+            continue
+        num_parameters += p.numel()
+    return num_parameters
 
 from typing import Optional, Union
 def load_model(
@@ -2282,18 +2288,38 @@ def load_model(
             raise ImportError(f"If you are trying to download a HuggingFace model with {name}, please install first the transformers library")
         from transformers.utils import cached_file
 
+        kwargs = dict(cache_dir=download_root, use_auth_token=None, revision=None)
         try:
-            model_path = cached_file(name, "pytorch_model.bin", cache_dir=download_root, use_auth_token=None, revision=None)
-        except Exception as e:
+            model_path = cached_file(name, "pytorch_model.bin", **kwargs)
+        except OSError as err:
             try:
-                if isinstance(e, OSError):
-                    model_path = cached_file(name, "whisper.ckpt", cache_dir=download_root, use_auth_token=None, revision=None)
-                else:
-                    raise e
+                model_path = None
+                for candidate in ["whisper.ckpt", "pytorch_model.bin.index.json"]:
+                    try:
+                        model_path = cached_file(name, candidate, **kwargs)
+                    except OSError:
+                        continue
+                    if candidate.endswith("index.json"):
+                        index_file = model_path
+                        mapping = json.load(open(index_file))
+                        assert "weight_map" in mapping
+                        assert isinstance(mapping["weight_map"], dict)
+                        model_path = list(set(mapping["weight_map"].values()))
+                        folder = os.path.dirname(index_file)
+                        model_path = [os.path.join(folder, p) for p in model_path]
+                assert model_path is not None
             except:
-                raise RuntimeError(f"Original error: {e}\nCould not find model {name} from HuggingFace nor local folders.")
+                raise RuntimeError(f"Original error: {err}\nCould not find model {name} from HuggingFace nor local folders.")
     # Load HF Model
-    hf_state_dict = torch.load(model_path, map_location="cpu")
+    if isinstance(model_path, list):
+        hf_state_dict = {}
+        for p in model_path:
+            d = torch.load(p, map_location="cpu")
+            for k in d:
+                assert k not in hf_state_dict, f"Found duplicate key {k} in {p}"
+            hf_state_dict.update(d)
+    else:
+        hf_state_dict = torch.load(model_path, map_location="cpu")
 
     # Rename layers
     for key in list(hf_state_dict.keys())[:]:
