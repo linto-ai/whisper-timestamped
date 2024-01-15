@@ -2294,7 +2294,7 @@ def load_model(
         except OSError as err:
             try:
                 model_path = None
-                for candidate in ["whisper.ckpt", "pytorch_model.bin.index.json"]:
+                for candidate in ["whisper.ckpt", "pytorch_model.bin.index.json", "model.safetensors", "model.safetensors.index.json"]:
                     try:
                         model_path = cached_file(name, candidate, **kwargs)
                     except OSError:
@@ -2311,15 +2311,7 @@ def load_model(
             except:
                 raise RuntimeError(f"Original error: {err}\nCould not find model {name} from HuggingFace nor local folders.")
     # Load HF Model
-    if isinstance(model_path, list):
-        hf_state_dict = {}
-        for p in model_path:
-            d = torch.load(p, map_location="cpu")
-            for k in d:
-                assert k not in hf_state_dict, f"Found duplicate key {k} in {p}"
-            hf_state_dict.update(d)
-    else:
-        hf_state_dict = torch.load(model_path, map_location="cpu")
+    hf_state_dict = torch_load(model_path)
 
     # Rename layers
     for key in list(hf_state_dict.keys())[:]:
@@ -2346,6 +2338,29 @@ def load_model(
         del whisper_model.alignment_heads # Will be recomputed later
     whisper_model = whisper_model.to(device)
     return whisper_model
+
+def torch_load(model_path):
+    if isinstance(model_path, list):
+        hf_state_dict = {}
+        for p in model_path:
+            d = torch_load(p)
+            for k in d:
+                assert k not in hf_state_dict, f"Found duplicate key {k} in {p}"
+            hf_state_dict.update(d)
+    else:
+        assert isinstance(model_path, str)
+        if model_path.endswith(".safetensors"):
+            from safetensors import safe_open
+            hf_state_dict = {}
+            with safe_open(model_path, framework="pt", device="cpu") as f:
+                for k in f.keys():
+                    hf_state_dict[k] = f.get_tensor(k)
+        else:
+            hf_state_dict = torch.load(model_path, map_location="cpu")
+    return hf_state_dict
+
+
+
 
 # Credit: https://github.com/openai/whisper/discussions/830
 def hf_to_whisper_states(text):
