@@ -209,7 +209,12 @@ Note that you can use the `plot_word_alignment` option of the `whisper_timestamp
 
 ### Example output
 
-Here is an example output of the `whisper_timestamped.transcribe()` function, which can be viewed by using the CLI:
+The output of `whisper_timestamped.transcribe()` function is a python dictionary,
+which can be viewed in JSON format using the CLI.
+
+The JSON schema can be seen in [tests/json_schema.json](tests/json_schema.json).
+
+Here is an example output:
 ```bash
 whisper_timestamped AUDIO_FILE.wav --model tiny --language fr
 ```

@@ -36,6 +36,11 @@
             },
             "minItems": 0,
             "uniqueItems": true
+        },
+        "language": {"type": "string"},
+        "language_probs": {
+            "type": "array",
+            "items": {"type": "number", "minimum":0, "maximum":1}
         }
     }
 }
