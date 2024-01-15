@@ -72,7 +72,7 @@ python3 setup.py install
 
 #### Additional packages that might be needed
 
-If you want to plot alignment between audio timestamps and words (as in [this section](#plotting-word-alignment)), you also need matplotlib:
+If you want to plot alignment between audio timestamps and words (as in [this section](#plot-of-word-alignment)), you also need matplotlib:
 ```bash
 pip3 install matplotlib
 ```
