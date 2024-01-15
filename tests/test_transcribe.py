@@ -660,6 +660,26 @@ class TestHuggingFaceModel(TestHelperCli):
             device_specific=True,
         )
 
+        import tempfile
+        from transformers import WhisperForConditionalGeneration
+        tempfolder = os.path.join(tempfile.gettempdir(), "tmp_whisper-tiny-french-cased")
+
+        for safe_serialization in False, True,:
+            for max_shard_size in "100MB", "10GB", :
+                shutil.rmtree(tempfolder, ignore_errors=True)
+                model = WhisperForConditionalGeneration.from_pretrained("qanastek/whisper-tiny-french-cased")
+                try:
+                    model.save_pretrained(tempfolder, safe_serialization=safe_serialization, max_shard_size=max_shard_size)
+                    self._test_cli_(
+                        ["--model", tempfolder, "--verbose", "True"],
+                        "verbose", files=["bonjour.wav"], extensions=None,
+                        prefix="hf",
+                        device_specific=True,
+                    )
+                finally:
+                    shutil.rmtree(tempfolder)
+
+
 # "ZZZ" to run this test at last (because it will fill the CUDA with some memory)
 class TestZZZPythonImport(TestHelper):
 
