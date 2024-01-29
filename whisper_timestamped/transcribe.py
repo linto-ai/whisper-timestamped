@@ -1978,14 +1978,16 @@ def get_vad_segments(audio,
 
         data = (audio.numpy() * 32767).astype(np.int16).tobytes()
 
+        audio_duration = len(audio) / SAMPLE_RATE
+
         segments = auditok.split(
             data,
             sampling_rate=SAMPLE_RATE,        # sampling frequency in Hz
             channels=1,                       # number of channels
             sample_width=2,                   # number of bytes per sample
             min_dur=min_speech_duration,      # minimum duration of a valid audio event in seconds
-            max_dur=len(audio)/SAMPLE_RATE,   # maximum duration of an event
-            max_silence=min_silence_duration, # maximum duration of tolerated continuous silence within an event
+            max_dur=audio_duration,   # maximum duration of an event
+            max_silence=min(audio_duration*.95, min_silence_duration), # maximum duration of tolerated continuous silence within an event
             energy_threshold=50,
             drop_trailing_silence=True,
         )
