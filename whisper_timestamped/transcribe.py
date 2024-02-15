@@ -1038,6 +1038,7 @@ def _transcribe_timestamped_naive(
         all_hooks.append(model.decoder.ln.register_forward_hook(hook_output_logits))
 
     try:
+        model.alignment_heads = alignment_heads # Avoid exception "AttributeError: 'WhisperUntied' object has no attribute 'alignment_heads'. Did you mean: 'set_alignment_heads'?""
         transcription = model.transcribe(audio, **whisper_options)
     finally:
         for hook in all_hooks:
