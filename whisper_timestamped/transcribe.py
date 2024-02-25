@@ -905,6 +905,9 @@ def _transcribe_timestamped_efficient(
     assert len(segment_logprobs) == len(segment_tokens), f"Inconsistent number of segments: logprobs ({len(segment_logprobs)}) != tokens ({len(segment_tokens)})"
 
     whisper_segments = transcription["segments"]
+    # See issue 64: some segments may have empty text
+    if any(not s["text"] for s in whisper_segments):
+        whisper_segments = [s for s in whisper_segments if s["text"]]
     l1 = len(whisper_segments)
     l2 = len(timestamped_word_segments)
     if l1 != l2 and l1 != 0:
