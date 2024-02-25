@@ -661,15 +661,17 @@ class TestHuggingFaceModel(TestHelperCli):
         )
 
         import tempfile
-        from transformers import WhisperForConditionalGeneration
+        from transformers import WhisperForConditionalGeneration, WhisperProcessor, GenerationConfig
         tempfolder = os.path.join(tempfile.gettempdir(), "tmp_whisper-tiny-french-cased")
 
         for safe_serialization in False, True,:
             for max_shard_size in "100MB", "10GB", :
                 shutil.rmtree(tempfolder, ignore_errors=True)
                 model = WhisperForConditionalGeneration.from_pretrained("qanastek/whisper-tiny-french-cased")
+                processor = WhisperProcessor.from_pretrained("qanastek/whisper-tiny-french-cased")
                 try:
                     model.save_pretrained(tempfolder, safe_serialization=safe_serialization, max_shard_size=max_shard_size)
+                    processor.save_pretrained(tempfolder)
                     self._test_cli_(
                         ["--model", tempfolder, "--verbose", "True"],
                         "verbose", files=["bonjour.wav"], extensions=None,

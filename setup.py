@@ -50,7 +50,7 @@ setup(
     },
     include_package_data=True,
     extras_require={
-        'dev': ['matplotlib', 'transformers'],
+        'dev': ['matplotlib==3.7.4', 'transformers'],
         'vad_silero': ['onnxruntime', 'torchaudio'],
         'vad_auditok': ['auditok'],
         'test': ['jsonschema'],
