@@ -2427,6 +2427,7 @@ def load_model(
                         model_path = list(set(mapping["weight_map"].values()))
                         folder = os.path.dirname(index_file)
                         model_path = [os.path.join(folder, p) for p in model_path]
+                    break
                 assert model_path is not None
             except:
                 raise RuntimeError(f"Original error: {err}\nCould not find model {name} from HuggingFace nor local folders.")
