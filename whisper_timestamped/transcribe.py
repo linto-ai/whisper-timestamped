@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.15.0"
+__version__ = "1.15.1"
 
 # Set some environment variables
 import os
@@ -279,8 +279,10 @@ def transcribe_timestamped(
 
     if vad:
         audio = get_audio_tensor(audio)
-        audio, convert_timestamps = remove_non_speech(audio, method=vad, sample_rate=SAMPLE_RATE, plot=plot_word_alignment)
-
+        audio, vad_segments, convert_timestamps = remove_non_speech(audio, method=vad, sample_rate=SAMPLE_RATE, plot=plot_word_alignment)
+    else:
+        vad_segments = None
+    
     global num_alignment_for_plot
     num_alignment_for_plot = 0
 
@@ -334,6 +336,9 @@ def transcribe_timestamped(
                 segment["end"] = segment["words"][-1]["end"]
             else:
                 segment["start"], segment["end"] = convert_timestamps(segment["start"], segment["end"])
+
+    if vad_segments is not None:
+        transcription["speech_activity"] = [{"start":s, "end":e} for (s,e) in vad_segments]
 
     return transcription
 
@@ -2116,7 +2121,7 @@ def remove_non_speech(audio,
     if not use_sample:
         segments = [(float(s)/sample_rate, float(e)/sample_rate) for s,e in segments]
  
-    return audio_speech, lambda t, t2 = None: do_convert_timestamps(segments, t, t2)
+    return audio_speech, segments, lambda t, t2 = None: do_convert_timestamps(segments, t, t2)
 
 def do_convert_timestamps(segments, t, t2 = None):
     """
@@ -3132,6 +3137,7 @@ def filtered_keys(result, keys = [
     "end",
     "confidence",
     "language_probs",
+    "speech_activity",
 ]):
     if isinstance(result, dict):
         return {k: (filtered_keys(v, keys) if k not in ["language_probs"] else v) for k, v in result.items() if k in keys}
