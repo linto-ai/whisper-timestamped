@@ -16,9 +16,9 @@
         50413
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
+      "no_speech_prob": 0.7654247283935547,
       "confidence": 0.102,
       "words": [
         {
@@ -31,7 +31,7 @@
           "text": "sorry",
           "start": 0.94,
           "end": 0.96,
-          "confidence": 0.096
+          "confidence": 0.097
         }
       ]
     },
@@ -50,22 +50,22 @@
         50463
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
-      "confidence": 0.405,
+      "no_speech_prob": 0.7654247283935547,
+      "confidence": 0.406,
       "words": [
         {
           "text": "I'm",
           "start": 0.96,
           "end": 2.26,
-          "confidence": 0.353
+          "confidence": 0.355
         },
         {
           "text": "sorry",
           "start": 2.26,
           "end": 2.38,
-          "confidence": 0.533
+          "confidence": 0.534
         }
       ]
     },
@@ -84,22 +84,22 @@
         50513
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
-      "confidence": 0.611,
+      "no_speech_prob": 0.7654247283935547,
+      "confidence": 0.612,
       "words": [
         {
           "text": "I'm",
           "start": 2.38,
           "end": 2.4,
-          "confidence": 0.551
+          "confidence": 0.552
         },
         {
           "text": "sorry",
           "start": 2.4,
           "end": 2.42,
-          "confidence": 0.752
+          "confidence": 0.753
         }
       ]
     },
@@ -118,9 +118,9 @@
         50563
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
+      "no_speech_prob": 0.7654247283935547,
       "confidence": 0.765,
       "words": [
         {
@@ -152,9 +152,9 @@
         50613
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
+      "no_speech_prob": 0.7654247283935547,
       "confidence": 0.849,
       "words": [
         {
@@ -186,9 +186,9 @@
         50663
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
+      "no_speech_prob": 0.7654247283935547,
       "confidence": 0.89,
       "words": [
         {
@@ -220,16 +220,16 @@
         50713
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
+      "no_speech_prob": 0.7654247283935547,
       "confidence": 0.918,
       "words": [
         {
           "text": "I'm",
           "start": 5.92,
           "end": 6.14,
-          "confidence": 0.887
+          "confidence": 0.888
         },
         {
           "text": "sorry",
@@ -254,9 +254,9 @@
         50763
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
+      "no_speech_prob": 0.7654247283935547,
       "confidence": 0.941,
       "words": [
         {
@@ -288,9 +288,9 @@
         50813
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
+      "no_speech_prob": 0.7654247283935547,
       "confidence": 0.95,
       "words": [
         {
@@ -322,9 +322,9 @@
         50863
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
+      "no_speech_prob": 0.7654247283935547,
       "confidence": 0.963,
       "words": [
         {
@@ -356,9 +356,9 @@
         50913
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
+      "no_speech_prob": 0.7654247283935547,
       "confidence": 0.968,
       "words": [
         {
@@ -390,10 +390,10 @@
         50963
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
-      "confidence": 0.978,
+      "no_speech_prob": 0.7654247283935547,
+      "confidence": 0.977,
       "words": [
         {
           "text": "I'm",
@@ -424,16 +424,16 @@
         51013
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
-      "confidence": 0.98,
+      "no_speech_prob": 0.7654247283935547,
+      "confidence": 0.979,
       "words": [
         {
           "text": "I'm",
           "start": 12.54,
           "end": 12.56,
-          "confidence": 0.972
+          "confidence": 0.971
         },
         {
           "text": "sorry",
@@ -458,9 +458,9 @@
         51063
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
+      "no_speech_prob": 0.7654247283935547,
       "confidence": 0.979,
       "words": [
         {
@@ -492,9 +492,9 @@
         51113
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
+      "no_speech_prob": 0.7654247283935547,
       "confidence": 0.982,
       "words": [
         {
@@ -526,20 +526,20 @@
         51163
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
+      "no_speech_prob": 0.7654247283935547,
       "confidence": 0.983,
       "words": [
         {
           "text": "I'm",
           "start": 15.46,
-          "end": 16.4,
+          "end": 16.38,
           "confidence": 0.976
         },
         {
           "text": "sorry",
-          "start": 16.4,
+          "start": 16.38,
           "end": 16.48,
           "confidence": 0.997
         }
@@ -560,16 +560,16 @@
         51213
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
+      "no_speech_prob": 0.7654247283935547,
       "confidence": 0.982,
       "words": [
         {
           "text": "I'm",
           "start": 16.48,
           "end": 17.48,
-          "confidence": 0.975
+          "confidence": 0.974
         },
         {
           "text": "sorry",
@@ -594,9 +594,9 @@
         51263
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
+      "no_speech_prob": 0.7654247283935547,
       "confidence": 0.984,
       "words": [
         {
@@ -628,9 +628,9 @@
         51313
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
+      "no_speech_prob": 0.7654247283935547,
       "confidence": 0.984,
       "words": [
         {
@@ -662,9 +662,9 @@
         51363
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
+      "no_speech_prob": 0.7654247283935547,
       "confidence": 0.986,
       "words": [
         {
@@ -696,9 +696,9 @@
         51413
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
+      "no_speech_prob": 0.7654247283935547,
       "confidence": 0.986,
       "words": [
         {
@@ -730,10 +730,10 @@
         51463
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
-      "confidence": 0.987,
+      "no_speech_prob": 0.7654247283935547,
+      "confidence": 0.988,
       "words": [
         {
           "text": "I'm",
@@ -764,9 +764,9 @@
         51513
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
+      "no_speech_prob": 0.7654247283935547,
       "confidence": 0.987,
       "words": [
         {
@@ -798,9 +798,9 @@
         51563
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
+      "no_speech_prob": 0.7654247283935547,
       "confidence": 0.988,
       "words": [
         {
@@ -832,9 +832,9 @@
         51613
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
+      "no_speech_prob": 0.7654247283935547,
       "confidence": 0.988,
       "words": [
         {
@@ -866,16 +866,16 @@
         51663
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
-      "confidence": 0.985,
+      "no_speech_prob": 0.7654247283935547,
+      "confidence": 0.986,
       "words": [
         {
           "text": "I'm",
           "start": 24.54,
           "end": 26.26,
-          "confidence": 0.979
+          "confidence": 0.98
         },
         {
           "text": "sorry",
@@ -900,16 +900,16 @@
         51713
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
+      "no_speech_prob": 0.7654247283935547,
       "confidence": 0.982,
       "words": [
         {
           "text": "I'm",
           "start": 26.48,
           "end": 27.48,
-          "confidence": 0.974
+          "confidence": 0.975
         },
         {
           "text": "sorry",
@@ -934,9 +934,9 @@
         51763
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
+      "no_speech_prob": 0.7654247283935547,
       "confidence": 0.975,
       "words": [
         {
@@ -968,9 +968,9 @@
         51813
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12369282679124312,
+      "avg_logprob": -0.12360930442810059,
       "compression_ratio": 13.25,
-      "no_speech_prob": 0.7658452391624451,
+      "no_speech_prob": 0.7654247283935547,
       "confidence": 0.954,
       "words": [
         {

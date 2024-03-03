@@ -14,9 +14,9 @@
         50464
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.21371329812442555,
+      "avg_logprob": -0.21419989641974954,
       "compression_ratio": 1.4713375796178343,
-      "no_speech_prob": 0.050164904445409775,
+      "no_speech_prob": 0.0501624159514904,
       "confidence": 0.189,
       "words": [
         {
@@ -42,9 +42,9 @@
         50564
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.21371329812442555,
+      "avg_logprob": -0.21419989641974954,
       "compression_ratio": 1.4713375796178343,
-      "no_speech_prob": 0.050164904445409775,
+      "no_speech_prob": 0.0501624159514904,
       "confidence": 0.157,
       "words": [
         {
@@ -82,9 +82,9 @@
         50664
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.21371329812442555,
+      "avg_logprob": -0.21419989641974954,
       "compression_ratio": 1.4713375796178343,
-      "no_speech_prob": 0.050164904445409775,
+      "no_speech_prob": 0.0501624159514904,
       "confidence": 0.353,
       "words": [
         {
@@ -124,9 +124,9 @@
         50764
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.21371329812442555,
+      "avg_logprob": -0.21419989641974954,
       "compression_ratio": 1.4713375796178343,
-      "no_speech_prob": 0.050164904445409775,
+      "no_speech_prob": 0.0501624159514904,
       "confidence": 0.63,
       "words": [
         {
@@ -164,16 +164,16 @@
         50864
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.21371329812442555,
+      "avg_logprob": -0.21419989641974954,
       "compression_ratio": 1.4713375796178343,
-      "no_speech_prob": 0.050164904445409775,
+      "no_speech_prob": 0.0501624159514904,
       "confidence": 0.543,
       "words": [
         {
           "text": "I",
           "start": 7.74,
           "end": 8.64,
-          "confidence": 0.467
+          "confidence": 0.468
         },
         {
           "text": "will",
@@ -213,9 +213,9 @@
         50964
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.21371329812442555,
+      "avg_logprob": -0.21419989641974954,
       "compression_ratio": 1.4713375796178343,
-      "no_speech_prob": 0.050164904445409775,
+      "no_speech_prob": 0.0501624159514904,
       "confidence": 0.494,
       "words": [
         {
@@ -308,9 +308,9 @@
         51064
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.21371329812442555,
+      "avg_logprob": -0.21419989641974954,
       "compression_ratio": 1.4713375796178343,
-      "no_speech_prob": 0.050164904445409775,
+      "no_speech_prob": 0.0501624159514904,
       "confidence": 0.31,
       "words": [
         {
@@ -329,7 +329,7 @@
           "text": "she",
           "start": 12.72,
           "end": 13.04,
-          "confidence": 0.208
+          "confidence": 0.209
         },
         {
           "text": "can.",
@@ -357,9 +357,9 @@
         51164
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.21371329812442555,
+      "avg_logprob": -0.21419989641974954,
       "compression_ratio": 1.4713375796178343,
-      "no_speech_prob": 0.050164904445409775,
+      "no_speech_prob": 0.0501624159514904,
       "confidence": 0.444,
       "words": [
         {
@@ -390,7 +390,7 @@
           "text": "long.",
           "start": 14.98,
           "end": 15.24,
-          "confidence": 0.764
+          "confidence": 0.765
         }
       ]
     },
@@ -419,9 +419,9 @@
         51264
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.21371329812442555,
+      "avg_logprob": -0.21419989641974954,
       "compression_ratio": 1.4713375796178343,
-      "no_speech_prob": 0.050164904445409775,
+      "no_speech_prob": 0.0501624159514904,
       "confidence": 0.587,
       "words": [
         {
@@ -508,9 +508,9 @@
         51364
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.21371329812442555,
+      "avg_logprob": -0.21419989641974954,
       "compression_ratio": 1.4713375796178343,
-      "no_speech_prob": 0.050164904445409775,
+      "no_speech_prob": 0.0501624159514904,
       "confidence": 0.477,
       "words": [
         {

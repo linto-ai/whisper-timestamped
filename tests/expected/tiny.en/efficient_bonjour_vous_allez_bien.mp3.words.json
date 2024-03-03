@@ -23,9 +23,9 @@
         50513
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.8020311764308384,
+      "avg_logprob": -0.8018474578857422,
       "compression_ratio": 0.7894736842105263,
-      "no_speech_prob": 0.11798259615898132,
+      "no_speech_prob": 0.11800757050514221,
       "confidence": 0.496,
       "words": [
         {
@@ -44,7 +44,7 @@
           "text": "go",
           "start": 2.18,
           "end": 2.32,
-          "confidence": 0.914
+          "confidence": 0.915
         },
         {
           "text": "with",
@@ -88,9 +88,9 @@
         50663
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.1937453576496669,
+      "avg_logprob": -0.19353563444955008,
       "compression_ratio": 0.7894736842105263,
-      "no_speech_prob": 0.45197251439094543,
+      "no_speech_prob": 0.4543602466583252,
       "confidence": 0.952,
       "words": [
         {
@@ -103,7 +103,7 @@
           "text": "Let's",
           "start": 34.44,
           "end": 34.72,
-          "confidence": 0.96
+          "confidence": 0.961
         },
         {
           "text": "go",

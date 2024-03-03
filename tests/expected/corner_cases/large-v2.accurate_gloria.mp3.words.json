@@ -22,9 +22,9 @@
         50664
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3579153639546941,
+      "avg_logprob": -0.35854845368460325,
       "compression_ratio": 1.425414364640884,
-      "no_speech_prob": 0.24429768323898315,
+      "no_speech_prob": 0.24429647624492645,
       "confidence": 0.452,
       "words": [
         {
@@ -37,7 +37,7 @@
           "text": "my",
           "start": 1.94,
           "end": 2.7,
-          "confidence": 0.368
+          "confidence": 0.367
         },
         {
           "text": "glorious",
@@ -92,9 +92,9 @@
         50814
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3579153639546941,
+      "avg_logprob": -0.35854845368460325,
       "compression_ratio": 1.425414364640884,
-      "no_speech_prob": 0.24429768323898315,
+      "no_speech_prob": 0.24429647624492645,
       "confidence": 0.68,
       "words": [
         {
@@ -113,7 +113,7 @@
           "text": "okay.",
           "start": 7.02,
           "end": 7.64,
-          "confidence": 0.605
+          "confidence": 0.604
         },
         {
           "text": "I",
@@ -160,9 +160,9 @@
         50964
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3579153639546941,
+      "avg_logprob": -0.35854845368460325,
       "compression_ratio": 1.425414364640884,
-      "no_speech_prob": 0.24429768323898315,
+      "no_speech_prob": 0.24429647624492645,
       "confidence": 0.571,
       "words": [
         {
@@ -261,16 +261,16 @@
         51014
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3579153639546941,
+      "avg_logprob": -0.35854845368460325,
       "compression_ratio": 1.425414364640884,
-      "no_speech_prob": 0.24429768323898315,
+      "no_speech_prob": 0.24429647624492645,
       "confidence": 0.333,
       "words": [
         {
           "text": "Of",
           "start": 11.5,
           "end": 12.1,
-          "confidence": 0.123
+          "confidence": 0.124
         },
         {
           "text": "course",
@@ -312,10 +312,10 @@
         51114
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3579153639546941,
+      "avg_logprob": -0.35854845368460325,
       "compression_ratio": 1.425414364640884,
-      "no_speech_prob": 0.24429768323898315,
-      "confidence": 0.649,
+      "no_speech_prob": 0.24429647624492645,
+      "confidence": 0.65,
       "words": [
         {
           "text": "No,",
@@ -381,9 +381,9 @@
         51214
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3579153639546941,
+      "avg_logprob": -0.35854845368460325,
       "compression_ratio": 1.425414364640884,
-      "no_speech_prob": 0.24429768323898315,
+      "no_speech_prob": 0.24429647624492645,
       "confidence": 0.69,
       "words": [
         {
@@ -477,9 +477,9 @@
         51314
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3579153639546941,
+      "avg_logprob": -0.35854845368460325,
       "compression_ratio": 1.425414364640884,
-      "no_speech_prob": 0.24429768323898315,
+      "no_speech_prob": 0.24429647624492645,
       "confidence": 0.529,
       "words": [
         {
@@ -522,9 +522,9 @@
         51364
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3579153639546941,
+      "avg_logprob": -0.35854845368460325,
       "compression_ratio": 1.425414364640884,
-      "no_speech_prob": 0.24429768323898315,
+      "no_speech_prob": 0.24429647624492645,
       "confidence": 0.02,
       "words": [
         {

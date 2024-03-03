@@ -23,9 +23,9 @@
         50513
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.8020311764308384,
+      "avg_logprob": -0.8018474578857422,
       "compression_ratio": 0.7894736842105263,
-      "no_speech_prob": 0.11798259615898132,
+      "no_speech_prob": 0.11800757050514221,
       "confidence": 0.496,
       "words": [
         {
@@ -44,7 +44,7 @@
           "text": "go",
           "start": 2.18,
           "end": 2.32,
-          "confidence": 0.914
+          "confidence": 0.915
         },
         {
           "text": "with",
@@ -81,9 +81,9 @@
         50413
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.8368260264396667,
+      "avg_logprob": -0.8362894058227539,
       "compression_ratio": 0.7894736842105263,
-      "no_speech_prob": 0.13588112592697144,
+      "no_speech_prob": 0.13507936894893646,
       "confidence": 0.306,
       "words": [
         {
@@ -112,9 +112,9 @@
         50613
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.8368260264396667,
+      "avg_logprob": -0.8362894058227539,
       "compression_ratio": 0.7894736842105263,
-      "no_speech_prob": 0.13588112592697144,
+      "no_speech_prob": 0.13507936894893646,
       "confidence": 0.847,
       "words": [
         {
@@ -127,7 +127,7 @@
           "text": "go",
           "start": 34.74,
           "end": 34.86,
-          "confidence": 0.96
+          "confidence": 0.959
         },
         {
           "text": "with",
@@ -139,7 +139,7 @@
           "text": "it",
           "start": 34.98,
           "end": 35.1,
-          "confidence": 0.811
+          "confidence": 0.813
         },
         {
           "text": "again!",

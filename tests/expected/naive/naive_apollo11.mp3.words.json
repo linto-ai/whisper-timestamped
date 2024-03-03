@@ -34,10 +34,10 @@
         50714
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.7225757398103413,
+      "avg_logprob": -0.7220700916491056,
       "compression_ratio": 1.39247311827957,
-      "no_speech_prob": 0.44998496770858765,
-      "confidence": 0.494,
+      "no_speech_prob": 0.44993358850479126,
+      "confidence": 0.495,
       "words": [
         {
           "text": "Apollo",
@@ -85,7 +85,7 @@
           "text": "for",
           "start": 2.86,
           "end": 3.44,
-          "confidence": 0.945
+          "confidence": 0.944
         },
         {
           "text": "you",
@@ -115,7 +115,7 @@
           "text": "GLEME",
           "start": 5.16,
           "end": 5.72,
-          "confidence": 0.178
+          "confidence": 0.179
         },
         {
           "text": "GVA.",
@@ -163,16 +163,16 @@
         51314
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.7225757398103413,
+      "avg_logprob": -0.7220700916491056,
       "compression_ratio": 1.39247311827957,
-      "no_speech_prob": 0.44998496770858765,
+      "no_speech_prob": 0.44993358850479126,
       "confidence": 0.311,
       "words": [
         {
           "text": "Alright,",
           "start": 10.8,
           "end": 10.82,
-          "confidence": 0.055
+          "confidence": 0.054
         },
         {
           "text": "okay,",
@@ -208,7 +208,7 @@
           "text": "that",
           "start": 14.9,
           "end": 15.32,
-          "confidence": 0.273
+          "confidence": 0.274
         },
         {
           "text": "they",
@@ -232,7 +232,7 @@
           "text": "one",
           "start": 15.86,
           "end": 16.08,
-          "confidence": 0.428
+          "confidence": 0.427
         },
         {
           "text": "that's",
@@ -250,13 +250,13 @@
           "text": "the",
           "start": 16.46,
           "end": 16.76,
-          "confidence": 0.498
+          "confidence": 0.499
         },
         {
           "text": "helmet",
           "start": 16.76,
           "end": 17.26,
-          "confidence": 0.306
+          "confidence": 0.307
         },
         {
           "text": "we're",
@@ -326,9 +326,9 @@
         51614
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.7225757398103413,
+      "avg_logprob": -0.7220700916491056,
       "compression_ratio": 1.39247311827957,
-      "no_speech_prob": 0.44998496770858765,
+      "no_speech_prob": 0.44993358850479126,
       "confidence": 0.129,
       "words": [
         {
@@ -389,7 +389,7 @@
           "text": "mic",
           "start": 21.78,
           "end": 22.48,
-          "confidence": 0.586
+          "confidence": 0.587
         },
         {
           "text": "helmet",
@@ -662,9 +662,9 @@
         552
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.11148937649197048,
+      "avg_logprob": -0.11161944071451822,
       "compression_ratio": 24.096774193548388,
-      "no_speech_prob": 0.4302051365375519,
+      "no_speech_prob": 0.42649850249290466,
       "confidence": 0.885,
       "words": [
         {
@@ -713,7 +713,7 @@
           "text": "got",
           "start": 33.76,
           "end": 33.78,
-          "confidence": 0.599
+          "confidence": 0.6
         },
         {
           "text": "them,",
@@ -903,7 +903,7 @@
         },
         {
           "text": "got",
-          "start": 36.88,
+          "start": 36.9,
           "end": 37.46,
           "confidence": 0.941
         },
@@ -1794,9 +1794,9 @@
         552
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.05314932168866487,
+      "avg_logprob": -0.05313938722482177,
       "compression_ratio": 29.52,
-      "no_speech_prob": 0.2454655021429062,
+      "no_speech_prob": 0.24551986157894135,
       "confidence": 0.844,
       "words": [
         {
@@ -1815,7 +1815,7 @@
           "text": "got",
           "start": 54.84,
           "end": 55.14,
-          "confidence": 0.039
+          "confidence": 0.038
         },
         {
           "text": "them,",
@@ -1905,7 +1905,7 @@
           "text": "them,",
           "start": 60.98,
           "end": 61.78,
-          "confidence": 0.567
+          "confidence": 0.566
         },
         {
           "text": "got",
@@ -2499,7 +2499,7 @@
           "text": "got",
           "start": 66.28,
           "end": 67.32,
-          "confidence": 0.984
+          "confidence": 0.985
         },
         {
           "text": "them,",
@@ -2593,7 +2593,7 @@
         },
         {
           "text": "got",
-          "start": 72.9,
+          "start": 72.94,
           "end": 73.56,
           "confidence": 0.989
         },
@@ -2920,9 +2920,9 @@
         552
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.042715128227199674,
+      "avg_logprob": -0.04266870609847954,
       "compression_ratio": 29.52,
-      "no_speech_prob": 0.6358686685562134,
+      "no_speech_prob": 0.6326744556427002,
       "confidence": 0.854,
       "words": [
         {

@@ -22,10 +22,10 @@
         50564
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.3616434610806979,
+      "avg_logprob": -0.36153463216928333,
       "compression_ratio": 0.8260869565217391,
-      "no_speech_prob": 0.07169149070978165,
-      "confidence": 0.936,
+      "no_speech_prob": 0.07168596982955933,
+      "confidence": 0.937,
       "words": [
         {
           "text": "Bonjour !",
@@ -37,13 +37,13 @@
           "text": "Est-ce",
           "start": 1.92,
           "end": 2.16,
-          "confidence": 0.885
+          "confidence": 0.886
         },
         {
           "text": "que",
           "start": 2.16,
           "end": 2.24,
-          "confidence": 0.988
+          "confidence": 0.987
         },
         {
           "text": "vous",
@@ -86,9 +86,9 @@
         50664
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.30651259422302246,
+      "avg_logprob": -0.3062671698056735,
       "compression_ratio": 0.8260869565217391,
-      "no_speech_prob": 0.40451279282569885,
+      "no_speech_prob": 0.40451109409332275,
       "confidence": 0.933,
       "words": [
         {

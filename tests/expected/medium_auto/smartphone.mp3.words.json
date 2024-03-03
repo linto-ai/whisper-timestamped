@@ -35,9 +35,9 @@
         50539
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2362650940749819,
+      "avg_logprob": -0.23621009675082782,
       "compression_ratio": 1.6238532110091743,
-      "no_speech_prob": 0.15368737280368805,
+      "no_speech_prob": 0.1557241678237915,
       "confidence": 0.935,
       "words": [
         {
@@ -92,7 +92,7 @@
           "text": "ne",
           "start": 2.26,
           "end": 2.34,
-          "confidence": 0.837
+          "confidence": 0.835
         },
         {
           "text": "me",
@@ -116,7 +116,7 @@
           "text": "formulé",
           "start": 2.88,
           "end": 3.26,
-          "confidence": 0.908
+          "confidence": 0.911
         },
         {
           "text": "comme",
@@ -165,10 +165,10 @@
         50756
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2362650940749819,
+      "avg_logprob": -0.23621009675082782,
       "compression_ratio": 1.6238532110091743,
-      "no_speech_prob": 0.15368737280368805,
-      "confidence": 0.93,
+      "no_speech_prob": 0.1557241678237915,
+      "confidence": 0.931,
       "words": [
         {
           "text": "Ce",
@@ -186,13 +186,13 @@
           "text": "fait",
           "start": 4.36,
           "end": 4.5,
-          "confidence": 0.567
+          "confidence": 0.568
         },
         {
           "text": "la",
           "start": 4.5,
           "end": 4.76,
-          "confidence": 0.972
+          "confidence": 0.971
         },
         {
           "text": "force",
@@ -210,19 +210,19 @@
           "text": "smartphone,",
           "start": 5.22,
           "end": 5.7,
-          "confidence": 0.912
+          "confidence": 0.911
         },
         {
           "text": "c'est",
           "start": 6.04,
           "end": 6.16,
-          "confidence": 0.879
+          "confidence": 0.88
         },
         {
           "text": "pas",
           "start": 6.16,
           "end": 6.26,
-          "confidence": 0.991
+          "confidence": 0.992
         },
         {
           "text": "seulement",
@@ -234,7 +234,7 @@
           "text": "l'accumulation",
           "start": 6.54,
           "end": 7.4,
-          "confidence": 0.958
+          "confidence": 0.957
         },
         {
           "text": "des",
@@ -272,9 +272,9 @@
         50906
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2362650940749819,
+      "avg_logprob": -0.23621009675082782,
       "compression_ratio": 1.6238532110091743,
-      "no_speech_prob": 0.15368737280368805,
+      "no_speech_prob": 0.1557241678237915,
       "confidence": 0.977,
       "words": [
         {
@@ -311,7 +311,7 @@
           "text": "interagissent",
           "start": 9.48,
           "end": 10.38,
-          "confidence": 0.964
+          "confidence": 0.965
         },
         {
           "text": "entre",
@@ -357,9 +357,9 @@
         51006
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2362650940749819,
+      "avg_logprob": -0.23621009675082782,
       "compression_ratio": 1.6238532110091743,
-      "no_speech_prob": 0.15368737280368805,
+      "no_speech_prob": 0.1557241678237915,
       "confidence": 0.906,
       "words": [
         {
@@ -372,7 +372,7 @@
           "text": "qui",
           "start": 11.16,
           "end": 11.26,
-          "confidence": 0.769
+          "confidence": 0.764
         },
         {
           "text": "dit",
@@ -446,16 +446,16 @@
         51166
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2362650940749819,
+      "avg_logprob": -0.23621009675082782,
       "compression_ratio": 1.6238532110091743,
-      "no_speech_prob": 0.15368737280368805,
-      "confidence": 0.912,
+      "no_speech_prob": 0.1557241678237915,
+      "confidence": 0.913,
       "words": [
         {
           "text": "Alors",
           "start": 13.38,
           "end": 13.58,
-          "confidence": 0.584
+          "confidence": 0.585
         },
         {
           "text": "évidemment,",
@@ -519,10 +519,10 @@
         51331
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2362650940749819,
+      "avg_logprob": -0.23621009675082782,
       "compression_ratio": 1.6238532110091743,
-      "no_speech_prob": 0.15368737280368805,
-      "confidence": 0.923,
+      "no_speech_prob": 0.1557241678237915,
+      "confidence": 0.924,
       "words": [
         {
           "text": "L'écran",
@@ -546,7 +546,7 @@
           "text": "été",
           "start": 17.3,
           "end": 17.84,
-          "confidence": 0.974
+          "confidence": 0.975
         },
         {
           "text": "beaucoup",
@@ -558,7 +558,7 @@
           "text": "très",
           "start": 18.28,
           "end": 18.62,
-          "confidence": 0.447
+          "confidence": 0.448
         },
         {
           "text": "souvent",
@@ -621,10 +621,10 @@
         51631
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.2362650940749819,
+      "avg_logprob": -0.23621009675082782,
       "compression_ratio": 1.6238532110091743,
-      "no_speech_prob": 0.15368737280368805,
-      "confidence": 0.92,
+      "no_speech_prob": 0.1557241678237915,
+      "confidence": 0.921,
       "words": [
         {
           "text": "Mais",
@@ -708,7 +708,7 @@
           "text": "les",
           "start": 22.92,
           "end": 23.14,
-          "confidence": 0.71
+          "confidence": 0.709
         },
         {
           "text": "ordinateurs",
@@ -738,7 +738,7 @@
           "text": "à",
           "start": 24.12,
           "end": 24.26,
-          "confidence": 0.828
+          "confidence": 0.829
         },
         {
           "text": "cliquer",
@@ -799,9 +799,9 @@
         50639
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.10785348191220537,
+      "avg_logprob": -0.1078022932394957,
       "compression_ratio": 1.6254416961130742,
-      "no_speech_prob": 0.18929888308048248,
+      "no_speech_prob": 0.19658996164798737,
       "confidence": 0.968,
       "words": [
         {
@@ -820,7 +820,7 @@
           "text": "le",
           "start": 26.3,
           "end": 26.66,
-          "confidence": 0.671
+          "confidence": 0.672
         },
         {
           "text": "smartphone",
@@ -844,13 +844,13 @@
           "text": "toucher,",
           "start": 27.66,
           "end": 28.06,
-          "confidence": 0.987
+          "confidence": 0.986
         },
         {
           "text": "ce",
           "start": 28.14,
           "end": 28.16,
-          "confidence": 0.952
+          "confidence": 0.951
         },
         {
           "text": "qui",
@@ -945,16 +945,16 @@
         50989
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.10785348191220537,
+      "avg_logprob": -0.1078022932394957,
       "compression_ratio": 1.6254416961130742,
-      "no_speech_prob": 0.18929888308048248,
+      "no_speech_prob": 0.19658996164798737,
       "confidence": 0.893,
       "words": [
         {
           "text": "Et",
           "start": 31.04,
           "end": 31.24,
-          "confidence": 0.964
+          "confidence": 0.963
         },
         {
           "text": "puis",
@@ -966,7 +966,7 @@
           "text": "évidemment,",
           "start": 31.34,
           "end": 31.62,
-          "confidence": 0.87
+          "confidence": 0.868
         },
         {
           "text": "il",
@@ -984,7 +984,7 @@
           "text": "parler",
           "start": 31.94,
           "end": 32.16,
-          "confidence": 0.864
+          "confidence": 0.866
         },
         {
           "text": "aussi",
@@ -1008,7 +1008,7 @@
           "text": "qui",
           "start": 32.92,
           "end": 33.22,
-          "confidence": 0.564
+          "confidence": 0.562
         },
         {
           "text": "permettent",
@@ -1020,7 +1020,7 @@
           "text": "de",
           "start": 33.76,
           "end": 33.98,
-          "confidence": 0.871
+          "confidence": 0.872
         },
         {
           "text": "contourner",
@@ -1044,13 +1044,13 @@
           "text": "touffu",
           "start": 34.78,
           "end": 35.32,
-          "confidence": 0.726
+          "confidence": 0.727
         },
         {
           "text": "de",
           "start": 35.32,
           "end": 35.7,
-          "confidence": 0.882
+          "confidence": 0.881
         },
         {
           "text": "la",
@@ -1074,7 +1074,7 @@
           "text": "pour",
           "start": 36.58,
           "end": 36.76,
-          "confidence": 0.59
+          "confidence": 0.589
         },
         {
           "text": "aller",
@@ -1155,9 +1155,9 @@
         51439
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.10785348191220537,
+      "avg_logprob": -0.1078022932394957,
       "compression_ratio": 1.6254416961130742,
-      "no_speech_prob": 0.18929888308048248,
+      "no_speech_prob": 0.19658996164798737,
       "confidence": 0.973,
       "words": [
         {
@@ -1170,7 +1170,7 @@
           "text": "tout",
           "start": 38.88,
           "end": 39.02,
-          "confidence": 0.701
+          "confidence": 0.7
         },
         {
           "text": "ça,",
@@ -1206,7 +1206,7 @@
           "text": "qui",
           "start": 40.7,
           "end": 41.02,
-          "confidence": 0.997
+          "confidence": 0.996
         },
         {
           "text": "permettent",
@@ -1224,7 +1224,7 @@
           "text": "créer",
           "start": 41.74,
           "end": 42.1,
-          "confidence": 0.999
+          "confidence": 0.998
         },
         {
           "text": "cet",
@@ -1242,7 +1242,7 @@
           "text": "dont",
           "start": 42.64,
           "end": 42.84,
-          "confidence": 0.789
+          "confidence": 0.79
         },
         {
           "text": "Nicolas",
@@ -1278,7 +1278,7 @@
           "text": "inédit",
           "start": 44.86,
           "end": 45.44,
-          "confidence": 0.98
+          "confidence": 0.979
         },
         {
           "text": "dans",
@@ -1290,7 +1290,7 @@
           "text": "l'histoire",
           "start": 45.72,
           "end": 46.02,
-          "confidence": 0.958
+          "confidence": 0.957
         },
         {
           "text": "de",
@@ -1328,16 +1328,16 @@
         51539
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.10785348191220537,
+      "avg_logprob": -0.1078022932394957,
       "compression_ratio": 1.6254416961130742,
-      "no_speech_prob": 0.18929888308048248,
+      "no_speech_prob": 0.19658996164798737,
       "confidence": 0.969,
       "words": [
         {
           "text": "Mais",
           "start": 47.02,
           "end": 47.28,
-          "confidence": 0.84
+          "confidence": 0.841
         },
         {
           "text": "ça,",
@@ -1416,7 +1416,7 @@
         50689
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.08241327932058287,
+      "avg_logprob": -0.08238351049502034,
       "compression_ratio": 1.5960784313725491,
       "no_speech_prob": 0.09794807434082031,
       "confidence": 0.986,
@@ -1455,7 +1455,7 @@
           "text": "cet",
           "start": 50.14,
           "end": 50.32,
-          "confidence": 0.99
+          "confidence": 0.989
         },
         {
           "text": "objet",
@@ -1479,7 +1479,7 @@
           "text": "induit",
           "start": 51.78,
           "end": 52.32,
-          "confidence": 0.955
+          "confidence": 0.956
         },
         {
           "text": "que",
@@ -1503,7 +1503,7 @@
           "text": "à",
           "start": 53.28,
           "end": 53.46,
-          "confidence": 0.978
+          "confidence": 0.979
         },
         {
           "text": "lui",
@@ -1594,7 +1594,7 @@
         51089
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.08241327932058287,
+      "avg_logprob": -0.08238351049502034,
       "compression_ratio": 1.5960784313725491,
       "no_speech_prob": 0.09794807434082031,
       "confidence": 0.96,
@@ -1633,7 +1633,7 @@
           "text": "le",
           "start": 56.5,
           "end": 56.66,
-          "confidence": 0.996
+          "confidence": 0.995
         },
         {
           "text": "rapport",
@@ -1669,7 +1669,7 @@
           "text": "est",
           "start": 57.6,
           "end": 57.86,
-          "confidence": 0.91
+          "confidence": 0.911
         },
         {
           "text": "comparable",
@@ -1747,7 +1747,7 @@
           "text": "ou",
           "start": 62.08,
           "end": 62.52,
-          "confidence": 0.95
+          "confidence": 0.949
         },
         {
           "text": "le",
@@ -1788,7 +1788,7 @@
         51239
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.08241327932058287,
+      "avg_logprob": -0.08238351049502034,
       "compression_ratio": 1.5960784313725491,
       "no_speech_prob": 0.09794807434082031,
       "confidence": 0.94,
@@ -1797,13 +1797,13 @@
           "text": "Il",
           "start": 65.36,
           "end": 65.5,
-          "confidence": 0.849
+          "confidence": 0.85
         },
         {
           "text": "n'y",
           "start": 65.5,
           "end": 65.54,
-          "confidence": 0.979
+          "confidence": 0.978
         },
         {
           "text": "a",
@@ -1877,7 +1877,7 @@
         51489
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.08241327932058287,
+      "avg_logprob": -0.08238351049502034,
       "compression_ratio": 1.5960784313725491,
       "no_speech_prob": 0.09794807434082031,
       "confidence": 0.957,
@@ -1886,19 +1886,19 @@
           "text": "Et",
           "start": 66.88,
           "end": 67.02,
-          "confidence": 0.654
+          "confidence": 0.655
         },
         {
           "text": "donc",
           "start": 67.02,
           "end": 67.12,
-          "confidence": 0.901
+          "confidence": 0.902
         },
         {
           "text": "cette",
           "start": 67.12,
           "end": 67.3,
-          "confidence": 0.713
+          "confidence": 0.719
         },
         {
           "text": "espèce",
@@ -1916,7 +1916,7 @@
           "text": "nouveauté",
           "start": 67.76,
           "end": 68.48,
-          "confidence": 0.98
+          "confidence": 0.981
         },
         {
           "text": "dans",
@@ -1964,13 +1964,13 @@
           "text": "et",
           "start": 70.68,
           "end": 70.76,
-          "confidence": 0.973
+          "confidence": 0.972
         },
         {
           "text": "terrifiant.",
           "start": 70.76,
           "end": 71.24,
-          "confidence": 0.977
+          "confidence": 0.978
         }
       ]
     },
@@ -2013,16 +2013,16 @@
         50639
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.11220460018869173,
+      "avg_logprob": -0.11261525396573341,
       "compression_ratio": 1.5975609756097562,
-      "no_speech_prob": 0.015181643888354301,
-      "confidence": 0.862,
+      "no_speech_prob": 0.015181636437773705,
+      "confidence": 0.86,
       "words": [
         {
           "text": "Parce",
           "start": 71.62,
           "end": 71.9,
-          "confidence": 0.843
+          "confidence": 0.844
         },
         {
           "text": "qu'on",
@@ -2076,25 +2076,25 @@
           "text": "et",
           "start": 74.84,
           "end": 74.94,
-          "confidence": 0.845
+          "confidence": 0.843
         },
         {
           "text": "les",
           "start": 74.94,
           "end": 75.02,
-          "confidence": 0.783
+          "confidence": 0.779
         },
         {
           "text": "services,",
           "start": 75.02,
           "end": 75.18,
-          "confidence": 0.129
+          "confidence": 0.125
         },
         {
           "text": "d'être",
           "start": 75.22,
           "end": 75.5,
-          "confidence": 0.935
+          "confidence": 0.934
         },
         {
           "text": "dépendant",
@@ -2172,9 +2172,9 @@
         50989
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.11220460018869173,
+      "avg_logprob": -0.11261525396573341,
       "compression_ratio": 1.5975609756097562,
-      "no_speech_prob": 0.015181643888354301,
+      "no_speech_prob": 0.015181636437773705,
       "confidence": 0.923,
       "words": [
         {
@@ -2187,7 +2187,7 @@
           "text": "en",
           "start": 77.1,
           "end": 77.18,
-          "confidence": 0.72
+          "confidence": 0.721
         },
         {
           "text": "fait",
@@ -2217,7 +2217,7 @@
           "text": "relation,",
           "start": 78.28,
           "end": 78.54,
-          "confidence": 0.422
+          "confidence": 0.42
         },
         {
           "text": "de",
@@ -2253,7 +2253,7 @@
           "text": "qui",
           "start": 80.3,
           "end": 81.24,
-          "confidence": 0.661
+          "confidence": 0.664
         },
         {
           "text": "rend",
@@ -2277,7 +2277,7 @@
           "text": "et",
           "start": 82.02,
           "end": 82.1,
-          "confidence": 0.952
+          "confidence": 0.953
         },
         {
           "text": "qui",
@@ -2295,7 +2295,7 @@
           "text": "aussi",
           "start": 82.38,
           "end": 82.54,
-          "confidence": 0.946
+          "confidence": 0.947
         },
         {
           "text": "à",
@@ -2352,9 +2352,9 @@
         51189
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.11220460018869173,
+      "avg_logprob": -0.11261525396573341,
       "compression_ratio": 1.5975609756097562,
-      "no_speech_prob": 0.015181643888354301,
+      "no_speech_prob": 0.015181636437773705,
       "confidence": 0.901,
       "words": [
         {
@@ -2367,13 +2367,13 @@
           "text": "à",
           "start": 84.46,
           "end": 84.98,
-          "confidence": 0.483
+          "confidence": 0.481
         },
         {
           "text": "objet",
           "start": 84.98,
           "end": 85.46,
-          "confidence": 0.77
+          "confidence": 0.771
         },
         {
           "text": "inédit,",
@@ -2435,10 +2435,10 @@
         51539
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.11220460018869173,
+      "avg_logprob": -0.11261525396573341,
       "compression_ratio": 1.5975609756097562,
-      "no_speech_prob": 0.015181643888354301,
-      "confidence": 0.975,
+      "no_speech_prob": 0.015181636437773705,
+      "confidence": 0.974,
       "words": [
         {
           "text": "Et",
@@ -2480,7 +2480,7 @@
           "text": "à",
           "start": 89.88,
           "end": 90.06,
-          "confidence": 0.724
+          "confidence": 0.72
         },
         {
           "text": "Nicolas,",
@@ -2528,7 +2528,7 @@
           "text": "dépendance",
           "start": 93.46,
           "end": 94.12,
-          "confidence": 0.938
+          "confidence": 0.937
         },
         {
           "text": "et",
@@ -2592,16 +2592,16 @@
         50739
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.0781538827078683,
+      "avg_logprob": -0.07804971811722736,
       "compression_ratio": 1.6719745222929936,
-      "no_speech_prob": 0.017434891313314438,
+      "no_speech_prob": 0.017434893175959587,
       "confidence": 0.932,
       "words": [
         {
           "text": "Bon,",
           "start": 95.74,
           "end": 96.0,
-          "confidence": 0.751
+          "confidence": 0.753
         },
         {
           "text": "en",
@@ -2643,7 +2643,7 @@
           "text": "très",
           "start": 98.58,
           "end": 98.84,
-          "confidence": 0.757
+          "confidence": 0.759
         },
         {
           "text": "finement",
@@ -2697,7 +2697,7 @@
           "text": "leur",
           "start": 101.7,
           "end": 101.84,
-          "confidence": 0.818
+          "confidence": 0.82
         },
         {
           "text": "insertion",
@@ -2749,9 +2749,9 @@
         50889
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.0781538827078683,
+      "avg_logprob": -0.07804971811722736,
       "compression_ratio": 1.6719745222929936,
-      "no_speech_prob": 0.017434891313314438,
+      "no_speech_prob": 0.017434893175959587,
       "confidence": 0.995,
       "words": [
         {
@@ -2834,10 +2834,10 @@
         51089
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.0781538827078683,
+      "avg_logprob": -0.07804971811722736,
       "compression_ratio": 1.6719745222929936,
-      "no_speech_prob": 0.017434891313314438,
-      "confidence": 0.932,
+      "no_speech_prob": 0.017434893175959587,
+      "confidence": 0.931,
       "words": [
         {
           "text": "Mais",
@@ -2849,7 +2849,7 @@
           "text": "j'ai",
           "start": 106.4,
           "end": 106.92,
-          "confidence": 0.956
+          "confidence": 0.957
         },
         {
           "text": "l'impression",
@@ -2873,7 +2873,7 @@
           "text": "que",
           "start": 107.82,
           "end": 108.14,
-          "confidence": 0.973
+          "confidence": 0.974
         },
         {
           "text": "Nicolas",
@@ -2885,7 +2885,7 @@
           "text": "ne",
           "start": 108.48,
           "end": 108.6,
-          "confidence": 0.72
+          "confidence": 0.713
         },
         {
           "text": "se",
@@ -2947,9 +2947,9 @@
         51389
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.0781538827078683,
+      "avg_logprob": -0.07804971811722736,
       "compression_ratio": 1.6719745222929936,
-      "no_speech_prob": 0.017434891313314438,
+      "no_speech_prob": 0.017434893175959587,
       "confidence": 0.964,
       "words": [
         {
@@ -2980,7 +2980,7 @@
           "text": "sache,",
           "start": 110.52,
           "end": 110.84,
-          "confidence": 0.952
+          "confidence": 0.953
         },
         {
           "text": "il",
@@ -2992,7 +2992,7 @@
           "text": "y",
           "start": 111.16,
           "end": 111.3,
-          "confidence": 0.995
+          "confidence": 0.994
         },
         {
           "text": "a",
@@ -3098,9 +3098,9 @@
         51489
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.0781538827078683,
+      "avg_logprob": -0.07804971811722736,
       "compression_ratio": 1.6719745222929936,
-      "no_speech_prob": 0.017434891313314438,
+      "no_speech_prob": 0.017434893175959587,
       "confidence": 0.992,
       "words": [
         {
@@ -3113,7 +3113,7 @@
           "text": "la",
           "start": 115.78,
           "end": 116.04,
-          "confidence": 0.943
+          "confidence": 0.944
         },
         {
           "text": "dépendance",
@@ -3179,10 +3179,10 @@
         51589
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.0781538827078683,
+      "avg_logprob": -0.07804971811722736,
       "compression_ratio": 1.6719745222929936,
-      "no_speech_prob": 0.017434891313314438,
-      "confidence": 0.979,
+      "no_speech_prob": 0.017434893175959587,
+      "confidence": 0.978,
       "words": [
         {
           "text": "Donc",
@@ -3194,7 +3194,7 @@
           "text": "le",
           "start": 118.02,
           "end": 118.4,
-          "confidence": 0.819
+          "confidence": 0.815
         },
         {
           "text": "rejet",
@@ -3274,9 +3274,9 @@
         51789
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.0781538827078683,
+      "avg_logprob": -0.07804971811722736,
       "compression_ratio": 1.6719745222929936,
-      "no_speech_prob": 0.017434891313314438,
+      "no_speech_prob": 0.017434893175959587,
       "confidence": 0.971,
       "words": [
         {
@@ -3378,16 +3378,16 @@
         50539
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.08272041363662548,
+      "avg_logprob": -0.08259125505940298,
       "compression_ratio": 1.6818181818181819,
-      "no_speech_prob": 0.01115426979959011,
-      "confidence": 0.94,
+      "no_speech_prob": 0.011154274456202984,
+      "confidence": 0.941,
       "words": [
         {
           "text": "Le",
           "start": 123.38,
           "end": 123.96,
-          "confidence": 0.645
+          "confidence": 0.646
         },
         {
           "text": "soir,",
@@ -3411,19 +3411,19 @@
           "text": "va",
           "start": 125.06,
           "end": 125.16,
-          "confidence": 0.99
+          "confidence": 0.989
         },
         {
           "text": "se",
           "start": 125.16,
           "end": 125.26,
-          "confidence": 0.989
+          "confidence": 0.988
         },
         {
           "text": "coucher,",
           "start": 125.26,
           "end": 125.7,
-          "confidence": 0.989
+          "confidence": 0.99
         },
         {
           "text": "on",
@@ -3484,9 +3484,9 @@
         50739
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.08272041363662548,
+      "avg_logprob": -0.08259125505940298,
       "compression_ratio": 1.6818181818181819,
-      "no_speech_prob": 0.01115426979959011,
+      "no_speech_prob": 0.011154274456202984,
       "confidence": 0.918,
       "words": [
         {
@@ -3499,7 +3499,7 @@
           "text": "ne",
           "start": 127.34,
           "end": 127.46,
-          "confidence": 0.801
+          "confidence": 0.799
         },
         {
           "text": "l'a",
@@ -3565,13 +3565,13 @@
           "text": "on",
           "start": 129.16,
           "end": 129.28,
-          "confidence": 0.43
+          "confidence": 0.432
         },
         {
           "text": "ne",
           "start": 129.28,
           "end": 129.3,
-          "confidence": 0.949
+          "confidence": 0.948
         },
         {
           "text": "l'emmène",
@@ -3602,7 +3602,7 @@
     {
       "id": 28,
       "seek": 12334,
-      "start": 130.84,
+      "start": 130.82,
       "end": 136.88,
       "text": " On pouvait être énervé par son môme qui occupait la ligne de téléphone pendant une heure chaque soir pour discuter avec un copain.",
       "tokens": [
@@ -3640,14 +3640,14 @@
         51039
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.08272041363662548,
+      "avg_logprob": -0.08259125505940298,
       "compression_ratio": 1.6818181818181819,
-      "no_speech_prob": 0.01115426979959011,
+      "no_speech_prob": 0.011154274456202984,
       "confidence": 0.925,
       "words": [
         {
           "text": "On",
-          "start": 130.84,
+          "start": 130.82,
           "end": 131.06,
           "confidence": 0.996
         },
@@ -3655,7 +3655,7 @@
           "text": "pouvait",
           "start": 131.06,
           "end": 131.26,
-          "confidence": 0.989
+          "confidence": 0.988
         },
         {
           "text": "être",
@@ -3691,7 +3691,7 @@
           "text": "qui",
           "start": 133.08,
           "end": 133.34,
-          "confidence": 0.916
+          "confidence": 0.917
         },
         {
           "text": "occupait",
@@ -3703,7 +3703,7 @@
           "text": "la",
           "start": 133.74,
           "end": 133.86,
-          "confidence": 0.986
+          "confidence": 0.987
         },
         {
           "text": "ligne",
@@ -3727,13 +3727,13 @@
           "text": "pendant",
           "start": 134.6,
           "end": 134.92,
-          "confidence": 0.709
+          "confidence": 0.71
         },
         {
           "text": "une",
           "start": 134.92,
           "end": 135.16,
-          "confidence": 0.78
+          "confidence": 0.783
         },
         {
           "text": "heure",
@@ -3823,9 +3823,9 @@
         51289
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.08272041363662548,
+      "avg_logprob": -0.08259125505940298,
       "compression_ratio": 1.6818181818181819,
-      "no_speech_prob": 0.01115426979959011,
+      "no_speech_prob": 0.011154274456202984,
       "confidence": 0.956,
       "words": [
         {
@@ -3838,7 +3838,7 @@
           "text": "ça",
           "start": 137.5,
           "end": 137.68,
-          "confidence": 0.928
+          "confidence": 0.927
         },
         {
           "text": "ne",
@@ -3856,7 +3856,7 @@
           "text": "pas",
           "start": 138.42,
           "end": 138.78,
-          "confidence": 0.994
+          "confidence": 0.995
         },
         {
           "text": "à",
@@ -3898,7 +3898,7 @@
           "text": "voir",
           "start": 140.32,
           "end": 140.46,
-          "confidence": 0.728
+          "confidence": 0.731
         },
         {
           "text": "ce",
@@ -3947,9 +3947,9 @@
         51414
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.08272041363662548,
+      "avg_logprob": -0.08259125505940298,
       "compression_ratio": 1.6818181818181819,
-      "no_speech_prob": 0.01115426979959011,
+      "no_speech_prob": 0.011154274456202984,
       "confidence": 0.961,
       "words": [
         {
@@ -3980,7 +3980,7 @@
           "text": "dans",
           "start": 143.76,
           "end": 143.92,
-          "confidence": 0.963
+          "confidence": 0.964
         },
         {
           "text": "la",
@@ -4038,9 +4038,9 @@
         51639
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.08272041363662548,
+      "avg_logprob": -0.08259125505940298,
       "compression_ratio": 1.6818181818181819,
-      "no_speech_prob": 0.01115426979959011,
+      "no_speech_prob": 0.011154274456202984,
       "confidence": 0.973,
       "words": [
         {
@@ -4053,7 +4053,7 @@
           "text": "si",
           "start": 144.56,
           "end": 144.66,
-          "confidence": 0.971
+          "confidence": 0.972
         },
         {
           "text": "c'était",
@@ -4083,7 +4083,7 @@
           "text": "pacemaker",
           "start": 145.34,
           "end": 145.82,
-          "confidence": 0.931
+          "confidence": 0.932
         },
         {
           "text": "externe,",
@@ -4095,7 +4095,7 @@
           "text": "comme",
           "start": 146.44,
           "end": 146.6,
-          "confidence": 0.721
+          "confidence": 0.724
         },
         {
           "text": "si",
@@ -4113,7 +4113,7 @@
           "text": "lâcher",
           "start": 147.0,
           "end": 147.36,
-          "confidence": 0.968
+          "confidence": 0.967
         },
         {
           "text": "allait",
@@ -4180,9 +4180,9 @@
         51839
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.08272041363662548,
+      "avg_logprob": -0.08259125505940298,
       "compression_ratio": 1.6818181818181819,
-      "no_speech_prob": 0.01115426979959011,
+      "no_speech_prob": 0.011154274456202984,
       "confidence": 0.973,
       "words": [
         {
@@ -4293,22 +4293,22 @@
         50489
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12394786888444928,
+      "avg_logprob": -0.12395508188596914,
       "compression_ratio": 1.6703296703296704,
-      "no_speech_prob": 0.07031125575304031,
-      "confidence": 0.813,
+      "no_speech_prob": 0.07031276822090149,
+      "confidence": 0.814,
       "words": [
         {
           "text": "Donc,",
           "start": 153.14,
           "end": 153.24,
-          "confidence": 0.232
+          "confidence": 0.233
         },
         {
           "text": "rapport",
           "start": 153.26,
           "end": 153.62,
-          "confidence": 0.855
+          "confidence": 0.854
         },
         {
           "text": "inédit,",
@@ -4355,9 +4355,9 @@
         50639
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12394786888444928,
+      "avg_logprob": -0.12395508188596914,
       "compression_ratio": 1.6703296703296704,
-      "no_speech_prob": 0.07031125575304031,
+      "no_speech_prob": 0.07031276822090149,
       "confidence": 0.958,
       "words": [
         {
@@ -4394,7 +4394,7 @@
           "text": "n'en",
           "start": 157.28,
           "end": 157.5,
-          "confidence": 0.859
+          "confidence": 0.857
         },
         {
           "text": "sortira",
@@ -4414,7 +4414,7 @@
       "id": 35,
       "seek": 15284,
       "start": 159.12,
-      "end": 165.36,
+      "end": 165.38,
       "text": " Est-ce qu'il faut en remettre la faute sur les gens qui ont créé cet outil merveilleux et diabolique, et diabolique parce que merveilleux ?",
       "tokens": [
         50639,
@@ -4464,9 +4464,9 @@
         50989
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12394786888444928,
+      "avg_logprob": -0.12395508188596914,
       "compression_ratio": 1.6703296703296704,
-      "no_speech_prob": 0.07031125575304031,
+      "no_speech_prob": 0.07031276822090149,
       "confidence": 0.959,
       "words": [
         {
@@ -4551,7 +4551,7 @@
           "text": "cet",
           "start": 162.28,
           "end": 162.48,
-          "confidence": 0.816
+          "confidence": 0.817
         },
         {
           "text": "outil",
@@ -4581,13 +4581,13 @@
           "text": "et",
           "start": 163.86,
           "end": 164.0,
-          "confidence": 0.555
+          "confidence": 0.554
         },
         {
           "text": "diabolique",
           "start": 164.0,
           "end": 164.4,
-          "confidence": 0.949
+          "confidence": 0.95
         },
         {
           "text": "parce",
@@ -4599,12 +4599,12 @@
           "text": "que",
           "start": 164.66,
           "end": 164.86,
-          "confidence": 0.979
+          "confidence": 0.978
         },
         {
           "text": "merveilleux ?",
           "start": 164.86,
-          "end": 165.36,
+          "end": 165.38,
           "confidence": 0.997
         }
       ]
@@ -4632,9 +4632,9 @@
         51139
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12394786888444928,
+      "avg_logprob": -0.12395508188596914,
       "compression_ratio": 1.6703296703296704,
-      "no_speech_prob": 0.07031125575304031,
+      "no_speech_prob": 0.07031276822090149,
       "confidence": 0.986,
       "words": [
         {
@@ -4737,9 +4737,9 @@
         51589
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.12394786888444928,
+      "avg_logprob": -0.12395508188596914,
       "compression_ratio": 1.6703296703296704,
-      "no_speech_prob": 0.07031125575304031,
+      "no_speech_prob": 0.07031276822090149,
       "confidence": 0.907,
       "words": [
         {
@@ -4758,7 +4758,7 @@
           "text": "qu'on",
           "start": 169.38,
           "end": 169.74,
-          "confidence": 0.7
+          "confidence": 0.699
         },
         {
           "text": "met",
@@ -4842,7 +4842,7 @@
           "text": "soit",
           "start": 173.86,
           "end": 174.28,
-          "confidence": 0.749
+          "confidence": 0.748
         },
         {
           "text": "en",
@@ -4872,7 +4872,7 @@
           "text": "en",
           "start": 176.04,
           "end": 176.14,
-          "confidence": 0.673
+          "confidence": 0.674
         },
         {
           "text": "définissant",
@@ -4897,104 +4897,104 @@
   ],
   "language": "fr",
   "language_probs": {
-    "en": 0.001014346838928759,
-    "zh": 5.72255376027897e-05,
-    "de": 9.583473729435354e-05,
-    "es": 0.00010201553959632292,
-    "ru": 3.111298428848386e-05,
-    "ko": 5.633833643514663e-05,
-    "fr": 0.9971188306808472,
-    "ja": 0.00011926825391128659,
-    "pt": 0.00024857642711140215,
-    "tr": 3.111298428848386e-05,
-    "pl": 0.00016302037693094462,
-    "ca": 4.259047159393958e-08,
-    "nl": 1.5644591258023866e-05,
-    "ar": 9.288621367886662e-05,
-    "sv": 2.0521238184301183e-06,
-    "it": 0.0006971497205086052,
-    "id": 2.9227943741716444e-05,
-    "hi": 3.2284438020724338e-06,
-    "fi": 8.965064921540034e-07,
-    "vi": 5.546489046537317e-05,
-    "he": 5.610194193650386e-07,
-    "uk": 1.0875857014980284e-07,
-    "el": 4.624531811714405e-06,
-    "ms": 2.939531441370491e-06,
-    "cs": 1.2841862826462602e-06,
-    "ro": 3.4907800454675453e-06,
-    "da": 7.956947456477792e-08,
-    "hu": 5.322803644958185e-06,
-    "ta": 2.338676807767115e-07,
-    "no": 1.1047126236007898e-07,
-    "th": 6.222988304216415e-06,
-    "ur": 2.0003761846965062e-07,
-    "hr": 1.4044846174954273e-08,
-    "bg": 1.846160024854271e-08,
-    "lt": 2.347129157698191e-09,
-    "la": 5.8459563661017455e-06,
-    "mi": 1.850045805440459e-07,
-    "ml": 6.357183224281471e-07,
-    "cy": 2.3619797957508126e-06,
-    "sk": 3.265524739504144e-08,
-    "te": 2.7931511326073633e-08,
-    "fa": 1.1577289171782468e-07,
-    "lv": 2.3058872866688063e-10,
-    "bn": 5.300469752000936e-08,
-    "sr": 2.1831703111985235e-10,
-    "az": 5.115834977864608e-10,
-    "sl": 3.4222402689465525e-08,
-    "kn": 2.287942890699668e-10,
-    "et": 1.0830222274549328e-09,
-    "mk": 1.6351191234331708e-10,
-    "br": 5.406625859905034e-06,
-    "eu": 3.817784843818117e-08,
-    "is": 9.191490346616149e-10,
-    "hy": 2.2396462462381805e-09,
-    "ne": 5.289337856595466e-09,
-    "mn": 6.634315763420773e-09,
-    "bs": 3.415052907129734e-09,
-    "kk": 1.0393448601764277e-10,
-    "sq": 3.3289374035128105e-10,
-    "sw": 3.530873726731443e-08,
-    "gl": 1.509963283297111e-07,
-    "mr": 1.1710261649255926e-09,
-    "pa": 1.961099949099321e-09,
-    "si": 6.805937857734534e-08,
-    "km": 3.7744330256828107e-06,
-    "sn": 1.7379569783315674e-07,
-    "yo": 1.9047636357072406e-08,
-    "so": 1.3956540784176852e-11,
-    "af": 7.740010854462298e-10,
-    "oc": 2.734190331921127e-07,
-    "ka": 2.9087926511905948e-11,
-    "be": 2.279703537055866e-08,
-    "tg": 3.669336102324339e-12,
-    "sd": 1.1528712429154098e-09,
-    "gu": 1.3769081708137065e-10,
-    "am": 8.416871366545564e-11,
-    "yi": 9.784290044834165e-10,
-    "lo": 2.809145804860691e-09,
-    "uz": 5.235589739527313e-12,
-    "fo": 1.6905737920680508e-09,
-    "ht": 4.75131045618582e-08,
-    "ps": 2.007606081377844e-09,
-    "tk": 2.44944915045453e-11,
-    "nn": 1.7182223018608056e-05,
-    "mt": 3.048388971804705e-11,
-    "sa": 2.338676807767115e-07,
-    "lb": 6.963176563123952e-12,
-    "my": 3.0676766016313195e-08,
-    "bo": 1.2688460948595548e-08,
-    "tl": 3.4027550555038033e-07,
-    "mg": 3.001127818480498e-11,
-    "as": 2.7169991256847936e-10,
-    "tt": 5.143594426250397e-13,
-    "haw": 8.965064921540034e-07,
-    "ln": 1.041532304846271e-09,
-    "ha": 8.9408957668069e-12,
-    "ba": 2.775589653947197e-11,
-    "jw": 2.3991756279428955e-06,
-    "su": 2.425283281495827e-12
+    "en": 0.0010143449762836099,
+    "zh": 5.722542846342549e-05,
+    "de": 9.583455539541319e-05,
+    "es": 0.00010201535042142496,
+    "ru": 3.1112926080822945e-05,
+    "ko": 5.633822729578242e-05,
+    "fr": 0.9971169233322144,
+    "ja": 0.00011926802835660055,
+    "pt": 0.0002485759323462844,
+    "tr": 3.1112926080822945e-05,
+    "pl": 0.0001630200567888096,
+    "ca": 4.259038988152497e-08,
+    "nl": 1.564456215419341e-05,
+    "ar": 9.434877574676648e-05,
+    "sv": 2.0521199530776357e-06,
+    "it": 0.0006971484399400651,
+    "id": 2.9688158974749967e-05,
+    "hi": 3.2284376629831968e-06,
+    "fi": 8.965047868514375e-07,
+    "vi": 5.546478496398777e-05,
+    "he": 5.610183393400803e-07,
+    "uk": 1.0875836409240947e-07,
+    "el": 4.624523171514738e-06,
+    "ms": 2.939525757028605e-06,
+    "cs": 1.2841837815358303e-06,
+    "ro": 3.4907734516309574e-06,
+    "da": 7.956932535080341e-08,
+    "hu": 5.3227936405164655e-06,
+    "ta": 2.3386724024021532e-07,
+    "no": 1.1047105630268561e-07,
+    "th": 6.222976480785292e-06,
+    "ur": 2.0003723477657331e-07,
+    "hr": 1.4044819529601682e-08,
+    "bg": 1.8606362672812793e-08,
+    "lt": 2.3471247168060927e-09,
+    "la": 5.845945452165324e-06,
+    "mi": 1.8500422527267801e-07,
+    "ml": 6.357170718729321e-07,
+    "cy": 2.3253562630998204e-06,
+    "sk": 3.2655183446195224e-08,
+    "te": 2.793145803536845e-08,
+    "fa": 1.1577267144957659e-07,
+    "lv": 2.3058828457767078e-10,
+    "bn": 5.300459804402635e-08,
+    "sr": 2.1661765436942204e-10,
+    "az": 5.115824985857387e-10,
+    "sl": 3.422233874061931e-08,
+    "kn": 2.2879385885854475e-10,
+    "et": 1.083020118031186e-09,
+    "mk": 1.635116070319853e-10,
+    "br": 5.406615400715964e-06,
+    "eu": 3.8177777383907596e-08,
+    "is": 9.119943689128718e-10,
+    "hy": 2.239642027390687e-09,
+    "ne": 5.28932808663285e-09,
+    "mn": 6.634303328922897e-09,
+    "bs": 3.3884703931619242e-09,
+    "kk": 1.0393429172861346e-10,
+    "sq": 3.328931019730419e-10,
+    "sw": 3.530867331846821e-08,
+    "gl": 1.5099602990176209e-07,
+    "mr": 1.1710239444795434e-09,
+    "pa": 1.961096174341037e-09,
+    "si": 6.80592506796529e-08,
+    "km": 3.7744257497251965e-06,
+    "sn": 1.737953709834983e-07,
+    "yo": 1.9047600829935618e-08,
+    "so": 1.3956514763324712e-11,
+    "af": 7.679762936696477e-10,
+    "oc": 2.734184931796335e-07,
+    "ka": 2.9087872735478193e-11,
+    "be": 2.2796992737994515e-08,
+    "tg": 3.669329163430435e-12,
+    "sd": 1.1528690224693605e-09,
+    "gu": 1.376905534034023e-10,
+    "am": 8.416855407089585e-11,
+    "yi": 9.784271171042747e-10,
+    "lo": 2.8091404757901728e-09,
+    "uz": 5.215168574768114e-12,
+    "fo": 1.6905705724212794e-09,
+    "ht": 4.751301574401623e-08,
+    "ps": 2.0076020845749554e-09,
+    "tk": 2.449444466701145e-11,
+    "nn": 1.7182190276798792e-05,
+    "mt": 3.048383073744887e-11,
+    "sa": 2.3386724024021532e-07,
+    "lb": 6.936016431341452e-12,
+    "my": 3.0676705620180655e-08,
+    "bo": 1.2589695508324894e-08,
+    "tl": 3.4027485185106343e-07,
+    "mg": 2.9777669913189087e-11,
+    "as": 2.716994129681183e-10,
+    "tt": 5.123530722947467e-13,
+    "haw": 8.965047868514375e-07,
+    "ln": 1.0415303064448267e-09,
+    "ha": 8.940879286933878e-12,
+    "ba": 2.775584449776769e-11,
+    "jw": 2.3991710804693867e-06,
+    "su": 2.4252787278467025e-12
   }
 }
