@@ -34,16 +34,16 @@
         50664
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.19321525431124964,
+      "avg_logprob": -0.1931878740542403,
       "compression_ratio": 1.5084745762711864,
-      "no_speech_prob": 0.5535648465156555,
+      "no_speech_prob": 0.5573714971542358,
       "confidence": 0.92,
       "words": [
         {
           "text": "Le",
           "start": 30.88,
           "end": 31.02,
-          "confidence": 0.534
+          "confidence": 0.536
         },
         {
           "text": "plus",
@@ -73,7 +73,7 @@
           "text": "ce",
           "start": 31.84,
           "end": 32.0,
-          "confidence": 0.583
+          "confidence": 0.579
         },
         {
           "text": "ne",
@@ -139,7 +139,7 @@
           "text": "faites.",
           "start": 34.06,
           "end": 34.26,
-          "confidence": 0.893
+          "confidence": 0.894
         }
       ]
     },
@@ -166,9 +166,9 @@
         50814
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.19321525431124964,
+      "avg_logprob": -0.1931878740542403,
       "compression_ratio": 1.5084745762711864,
-      "no_speech_prob": 0.5535648465156555,
+      "no_speech_prob": 0.5573714971542358,
       "confidence": 0.967,
       "words": [
         {
@@ -181,7 +181,7 @@
           "text": "la",
           "start": 37.26,
           "end": 37.36,
-          "confidence": 0.988
+          "confidence": 0.987
         },
         {
           "text": "référence",
@@ -267,9 +267,9 @@
         51414
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.19321525431124964,
+      "avg_logprob": -0.1931878740542403,
       "compression_ratio": 1.5084745762711864,
-      "no_speech_prob": 0.5535648465156555,
+      "no_speech_prob": 0.5573714971542358,
       "confidence": 0.907,
       "words": [
         {
@@ -306,7 +306,7 @@
           "text": "vous",
           "start": 46.6,
           "end": 46.74,
-          "confidence": 0.97
+          "confidence": 0.971
         },
         {
           "text": "êtes",
@@ -372,13 +372,13 @@
           "text": "sûr",
           "start": 48.98,
           "end": 49.22,
-          "confidence": 0.906
+          "confidence": 0.907
         },
         {
           "text": "BFM",
           "start": 49.22,
           "end": 49.82,
-          "confidence": 0.949
+          "confidence": 0.95
         },
         {
           "text": "story",
@@ -390,13 +390,13 @@
           "text": "avec",
           "start": 50.04,
           "end": 50.26,
-          "confidence": 0.551
+          "confidence": 0.554
         },
         {
           "text": "tout",
           "start": 50.26,
           "end": 50.42,
-          "confidence": 0.931
+          "confidence": 0.93
         },
         {
           "text": "ce",
@@ -408,7 +408,7 @@
           "text": "qui",
           "start": 50.52,
           "end": 50.58,
-          "confidence": 0.952
+          "confidence": 0.951
         },
         {
           "text": "fait",
@@ -457,10 +457,10 @@
         51664
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.19321525431124964,
+      "avg_logprob": -0.1931878740542403,
       "compression_ratio": 1.5084745762711864,
-      "no_speech_prob": 0.5535648465156555,
-      "confidence": 0.947,
+      "no_speech_prob": 0.5573714971542358,
+      "confidence": 0.948,
       "words": [
         {
           "text": "Durant",
@@ -472,7 +472,7 @@
           "text": "60",
           "start": 52.32,
           "end": 52.76,
-          "confidence": 0.922
+          "confidence": 0.921
         },
         {
           "text": "minutes",
@@ -484,7 +484,7 @@
           "text": "ce",
           "start": 53.08,
           "end": 53.28,
-          "confidence": 0.748
+          "confidence": 0.754
         },
         {
           "text": "sont",
@@ -538,13 +538,13 @@
           "text": "que",
           "start": 55.22,
           "end": 55.4,
-          "confidence": 0.881
+          "confidence": 0.882
         },
         {
           "text": "nous",
           "start": 55.4,
           "end": 55.52,
-          "confidence": 0.947
+          "confidence": 0.948
         },
         {
           "text": "vous",
@@ -614,9 +614,9 @@
         50764
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.13355242821478075,
+      "avg_logprob": -0.1336895481232674,
       "compression_ratio": 1.573667711598746,
-      "no_speech_prob": 0.4252333343029022,
+      "no_speech_prob": 0.42523330450057983,
       "confidence": 0.854,
       "words": [
         {
@@ -635,7 +635,7 @@
           "text": "Verth",
           "start": 57.2,
           "end": 57.36,
-          "confidence": 0.369
+          "confidence": 0.368
         },
         {
           "text": "peut-il",
@@ -683,13 +683,13 @@
           "text": "alors",
           "start": 59.76,
           "end": 59.98,
-          "confidence": 0.492
+          "confidence": 0.494
         },
         {
           "text": "qu'il",
           "start": 59.98,
           "end": 60.74,
-          "confidence": 0.959
+          "confidence": 0.96
         },
         {
           "text": "est",
@@ -713,17 +713,17 @@
           "text": "sa",
           "start": 61.96,
           "end": 62.44,
-          "confidence": 0.848
+          "confidence": 0.85
         },
         {
           "text": "propre",
           "start": 62.44,
-          "end": 62.68,
+          "end": 62.7,
           "confidence": 0.992
         },
         {
           "text": "affaire,",
-          "start": 62.68,
+          "start": 62.7,
           "end": 62.94,
           "confidence": 0.993
         },
@@ -731,13 +731,13 @@
           "text": "l'affaire",
           "start": 63.02,
           "end": 63.3,
-          "confidence": 0.909
+          "confidence": 0.91
         },
         {
           "text": "Verth-Bettancourt ?",
           "start": 63.3,
           "end": 64.23,
-          "confidence": 0.711
+          "confidence": 0.71
         }
       ]
     },
@@ -768,22 +768,22 @@
         50914
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.13355242821478075,
+      "avg_logprob": -0.1336895481232674,
       "compression_ratio": 1.573667711598746,
-      "no_speech_prob": 0.4252333343029022,
-      "confidence": 0.895,
+      "no_speech_prob": 0.42523330450057983,
+      "confidence": 0.894,
       "words": [
         {
           "text": "Question",
           "start": 64.23,
           "end": 64.34,
-          "confidence": 0.63
+          "confidence": 0.628
         },
         {
           "text": "posée",
           "start": 64.34,
           "end": 64.74,
-          "confidence": 0.977
+          "confidence": 0.976
         },
         {
           "text": "par",
@@ -825,13 +825,13 @@
           "text": "et",
           "start": 66.52,
           "end": 66.6,
-          "confidence": 0.606
+          "confidence": 0.604
         },
         {
           "text": "la",
           "start": 66.6,
           "end": 66.74,
-          "confidence": 0.609
+          "confidence": 0.605
         },
         {
           "text": "CGT.",
@@ -891,16 +891,16 @@
         51364
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.13355242821478075,
+      "avg_logprob": -0.1336895481232674,
       "compression_ratio": 1.573667711598746,
-      "no_speech_prob": 0.4252333343029022,
+      "no_speech_prob": 0.42523330450057983,
       "confidence": 0.968,
       "words": [
         {
           "text": "Réponse",
           "start": 67.5,
           "end": 67.96,
-          "confidence": 0.947
+          "confidence": 0.946
         },
         {
           "text": "de",
@@ -924,7 +924,7 @@
           "text": "Eric",
           "start": 68.98,
           "end": 69.24,
-          "confidence": 0.962
+          "confidence": 0.961
         },
         {
           "text": "Verth",
@@ -972,7 +972,7 @@
           "text": "on",
           "start": 72.36,
           "end": 72.5,
-          "confidence": 0.865
+          "confidence": 0.867
         },
         {
           "text": "en",
@@ -1008,7 +1008,7 @@
           "text": "avec",
           "start": 74.76,
           "end": 75.12,
-          "confidence": 0.845
+          "confidence": 0.847
         },
         {
           "text": "le",
@@ -1100,9 +1100,9 @@
         51714
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.13355242821478075,
+      "avg_logprob": -0.1336895481232674,
       "compression_ratio": 1.573667711598746,
-      "no_speech_prob": 0.4252333343029022,
+      "no_speech_prob": 0.42523330450057983,
       "confidence": 0.871,
       "words": [
         {
@@ -1121,7 +1121,7 @@
           "text": "il",
           "start": 77.06,
           "end": 77.18,
-          "confidence": 0.792
+          "confidence": 0.789
         },
         {
           "text": "y",
@@ -1193,7 +1193,7 @@
           "text": "Pen",
           "start": 79.12,
           "end": 79.18,
-          "confidence": 0.986
+          "confidence": 0.985
         },
         {
           "text": "et",
@@ -1217,7 +1217,7 @@
           "text": "la",
           "start": 80.2,
           "end": 80.32,
-          "confidence": 0.71
+          "confidence": 0.707
         },
         {
           "text": "bataille",
@@ -1259,7 +1259,7 @@
           "text": "Le",
           "start": 81.72,
           "end": 81.9,
-          "confidence": 0.996
+          "confidence": 0.995
         },
         {
           "text": "Pen",
@@ -1283,7 +1283,7 @@
           "text": "tête",
           "start": 82.22,
           "end": 82.32,
-          "confidence": 0.926
+          "confidence": 0.925
         },
         {
           "text": "du",
@@ -1347,16 +1347,16 @@
         50664
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.1127048058943315,
+      "avg_logprob": -0.11255872032859109,
       "compression_ratio": 1.3591549295774648,
-      "no_speech_prob": 0.4064846634864807,
-      "confidence": 0.954,
+      "no_speech_prob": 0.40272650122642517,
+      "confidence": 0.955,
       "words": [
         {
           "text": "La",
           "start": 83.34,
           "end": 83.68,
-          "confidence": 0.921
+          "confidence": 0.922
         },
         {
           "text": "tournée",
@@ -1380,7 +1380,7 @@
           "text": "de",
           "start": 84.8,
           "end": 84.98,
-          "confidence": 0.971
+          "confidence": 0.972
         },
         {
           "text": "Marine",
@@ -1428,7 +1428,7 @@
           "text": "Var,",
           "start": 86.46,
           "end": 86.64,
-          "confidence": 0.533
+          "confidence": 0.534
         },
         {
           "text": "Marine",
@@ -1470,7 +1470,7 @@
           "text": "dans",
           "start": 88.04,
           "end": 88.34,
-          "confidence": 0.925
+          "confidence": 0.926
         },
         {
           "text": "BFM",
@@ -1515,9 +1515,9 @@
         50814
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.1127048058943315,
+      "avg_logprob": -0.11255872032859109,
       "compression_ratio": 1.3591549295774648,
-      "no_speech_prob": 0.4064846634864807,
+      "no_speech_prob": 0.40272650122642517,
       "confidence": 0.936,
       "words": [
         {
@@ -1542,13 +1542,13 @@
           "text": "Marine",
           "start": 89.94,
           "end": 90.24,
-          "confidence": 0.912
+          "confidence": 0.911
         },
         {
           "text": "Le",
           "start": 90.24,
           "end": 90.52,
-          "confidence": 0.997
+          "confidence": 0.998
         },
         {
           "text": "Pen",
@@ -1578,7 +1578,7 @@
           "text": "3",
           "start": 91.34,
           "end": 91.52,
-          "confidence": 0.595
+          "confidence": 0.598
         },
         {
           "text": "minutes,",
@@ -1590,13 +1590,13 @@
           "text": "à",
           "start": 91.82,
           "end": 91.98,
-          "confidence": 0.962
+          "confidence": 0.961
         },
         {
           "text": "tout",
           "start": 91.98,
           "end": 92.1,
-          "confidence": 0.917
+          "confidence": 0.918
         },
         {
           "text": "de",
@@ -1624,9 +1624,9 @@
         51064
       ],
       "temperature": 0.0,
-      "avg_logprob": -0.6883202791213989,
+      "avg_logprob": -0.6870794296264648,
       "compression_ratio": 0.2727272727272727,
-      "no_speech_prob": 0.8045242428779602,
+      "no_speech_prob": 0.79963219165802,
       "confidence": 0.153,
       "words": [
         {

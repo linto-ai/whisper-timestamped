@@ -13,16 +13,16 @@
         51392
       ],
       "temperature": 0.0,
-      "avg_logprob": -1.4416182041168213,
+      "avg_logprob": -1.440472960472107,
       "compression_ratio": 0.2727272727272727,
-      "no_speech_prob": 0.05016394704580307,
-      "confidence": 0.158,
+      "no_speech_prob": 0.05056881532073021,
+      "confidence": 0.159,
       "words": [
         {
           "text": "...",
           "start": 20.18,
           "end": 20.2,
-          "confidence": 0.158
+          "confidence": 0.159
         }
       ]
     }
