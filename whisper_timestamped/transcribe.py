@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.15.2"
+__version__ = "1.15.3"
 
 # Set some environment variables
 import os
@@ -2106,7 +2106,7 @@ def remove_non_speech(audio,
         if avoid_empty_speech:
             segments = [(0, audio.shape[-1])]
         else:
-            return torch.Tensor([]), [], lambda t, t2 = None: do_convert_timestamps(segments, t, t2)
+            return torch.Tensor([]), [], lambda t, t2 = None: t if t2 is None else [t, t2]
 
     audio_speech = torch.cat([audio[..., s:e] for s,e in segments], dim=-1)
 
@@ -2127,7 +2127,7 @@ def remove_non_speech(audio,
     if not use_sample:
         segments = [(float(s)/sample_rate, float(e)/sample_rate) for s,e in segments]
  
-    return audio_speech, segments, lambda t, t2 = None: t if t2 is None else [t, t2]
+    return audio_speech, segments, lambda t, t2 = None: do_convert_timestamps(segments, t, t2)
 
 def do_convert_timestamps(segments, t, t2 = None):
     """
