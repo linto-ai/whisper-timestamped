@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.15.3"
+__version__ = "1.15.4"
 
 # Set some environment variables
 import os
@@ -2946,14 +2946,14 @@ def cli():
         def do_write(transcript, file, output_format):
             writer = get_writer(output_format, os.path.curdir)
             try:
-                return writer.write_result({"segments": transcript}, file)
-            except TypeError:
-                # Version > 20230314
                 return writer.write_result({"segments": list(transcript)}, file, {
                     "highlight_words": False,
                     "max_line_width": None,
                     "max_line_count": None,
                 })
+            except TypeError:
+                # Version <= 20230314
+                return writer.write_result({"segments": transcript}, file)
         def get_do_write(output_format):
             return lambda transcript, file: do_write(transcript, file, output_format)
 
