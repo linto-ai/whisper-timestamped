@@ -619,7 +619,7 @@ def _transcribe_timestamped_efficient(
                     tokens_filtered[-1] = tokenizer.timestamp_begin + N_FRAMES // 2 # <|30.00|>
                 segment_tokens[-1] = tokens_filtered.tolist()
 
-                # Do alignement
+                # Do alignment
                 added, unfinished_decoding, last_token_reliable = align_last_segment()
 
                 # Re-split into segments (if necessary)
@@ -3019,7 +3019,7 @@ def cli():
     parser.add_argument("--compute_confidence", default=True, help="whether to compute confidence scores for words", type=str2bool)
     parser.add_argument("--verbose", type=str2bool, default=False, help="whether to print out the progress and debug messages of Whisper")
     parser.add_argument('--plot', help="plot word alignments (save the figures if an --output_dir is specified, otherwhise just show figures that have to be closed to continue)", default=False, action="store_true")
-    parser.add_argument('--debug', help="print some debug information about word alignement", default=False, action="store_true")
+    parser.add_argument('--debug', help="print some debug information about word alignment", default=False, action="store_true")
 
     class ActionSetAccurate(argparse.Action):
         def __init__(self, option_strings, dest, nargs=None, **kwargs):
