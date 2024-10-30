@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.15.4"
+__version__ = "1.15.5"
 
 # Set some environment variables
 import os
@@ -45,6 +45,20 @@ from whisper.audio import N_FRAMES, HOP_LENGTH, SAMPLE_RATE  # 3000, 160, 16000
 AUDIO_SAMPLES_PER_TOKEN = HOP_LENGTH * 2                     # 320
 AUDIO_TIME_PER_TOKEN = AUDIO_SAMPLES_PER_TOKEN / SAMPLE_RATE # 0.02 (sec)
 SEGMENT_DURATION = N_FRAMES * HOP_LENGTH / SAMPLE_RATE       # 30.0 (sec)
+
+# Access attention in latest versions...
+if whisper.__version__ >= "20240930":
+    from whisper.model import disable_sdpa
+else:
+    from contextlib import contextmanager
+
+    # Dummy context manager that does nothing
+    @contextmanager
+    def disable_sdpa():
+        try:
+            yield
+        finally:
+            pass
 
 # Logs
 import logging
@@ -885,7 +899,8 @@ def _transcribe_timestamped_efficient(
         if compute_word_confidence or no_speech_threshold is not None:
             all_hooks.append(model.decoder.ln.register_forward_hook(hook_output_logits))
 
-        transcription = model.transcribe(audio, **whisper_options)
+        with disable_sdpa():
+            transcription = model.transcribe(audio, **whisper_options)
 
     finally:
 
@@ -1047,7 +1062,8 @@ def _transcribe_timestamped_naive(
 
     try:
         model.alignment_heads = alignment_heads # Avoid exception "AttributeError: 'WhisperUntied' object has no attribute 'alignment_heads'. Did you mean: 'set_alignment_heads'?""
-        transcription = model.transcribe(audio, **whisper_options)
+        with disable_sdpa():
+            transcription = model.transcribe(audio, **whisper_options)
     finally:
         for hook in all_hooks:
             hook.remove()
