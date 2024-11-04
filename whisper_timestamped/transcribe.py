@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.15.5"
+__version__ = "1.15.6"
 
 # Set some environment variables
 import os
@@ -899,8 +899,9 @@ def _transcribe_timestamped_efficient(
         if compute_word_confidence or no_speech_threshold is not None:
             all_hooks.append(model.decoder.ln.register_forward_hook(hook_output_logits))
 
-        with disable_sdpa():
-            transcription = model.transcribe(audio, **whisper_options)
+        with torch.no_grad():
+            with disable_sdpa():
+                transcription = model.transcribe(audio, **whisper_options)
 
     finally:
 
@@ -1062,8 +1063,9 @@ def _transcribe_timestamped_naive(
 
     try:
         model.alignment_heads = alignment_heads # Avoid exception "AttributeError: 'WhisperUntied' object has no attribute 'alignment_heads'. Did you mean: 'set_alignment_heads'?""
-        with disable_sdpa():
-            transcription = model.transcribe(audio, **whisper_options)
+        with torch.no_grad():
+            with disable_sdpa():
+                transcription = model.transcribe(audio, **whisper_options)
     finally:
         for hook in all_hooks:
             hook.remove()
@@ -1238,8 +1240,9 @@ def _transcribe_timestamped_naive(
             i_start = len(sot_sequence)
 
             with torch.no_grad():
-                logprobs = model(mfcc, torch.Tensor(tokens).int().to(model.device).unsqueeze(0))
-                logprobs = F.log_softmax(logprobs, dim=-1)
+                with disable_sdpa():
+                    logprobs = model(mfcc, torch.Tensor(tokens).int().to(model.device).unsqueeze(0))
+                    logprobs = F.log_softmax(logprobs, dim=-1)
 
             end_token = tokenizer.timestamp_begin + round(min(N_FRAMES * HOP_LENGTH, end_sample - start_sample) // AUDIO_SAMPLES_PER_TOKEN)
             tokens = tokens[i_start:] + [end_token]
