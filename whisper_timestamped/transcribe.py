@@ -117,6 +117,10 @@ def transcribe_timestamped(
     suppress_tokens="-1",
     sample_len=None,
     verbose=False,
+    avoid_empty_speech=True,
+    vad_min_speech_duration=0.05,
+    vad_min_silence_duration=0.1,
+    vad_dilatation=0,
 ):
     """
     Transcribe an audio file using Whisper
@@ -214,6 +218,18 @@ def transcribe_timestamped(
         Whether to display the text being decoded to the console. If True, displays all the details,
         If False, displays minimal details. If None, does not display anything
 
+    avoid_empty_speech: bool
+        Whether to avoid empty speech segments (i.e. segments with no speech detected).
+
+    vad_min_speech_duration: float
+        Minimum duration of a speech segment, in seconds. If a speech segment is shorter than this, it will be removed.
+
+    vad_min_silence_duration: float
+        Minimum duration of a silence segment, in seconds. If a silence segment is shorter than this, it will be removed.
+
+    vad_dilatation: float
+        Dilatation factor for the speech segments. If a speech segment is shorter than this, it will be removed.
+
     Returns
     -------
     A dictionary containing the resulting text ("text") and segment-level details ("segments"), and
@@ -293,7 +309,15 @@ def transcribe_timestamped(
 
     if vad is not None:
         audio = get_audio_tensor(audio)
-        audio, vad_segments, convert_timestamps = remove_non_speech(audio, method=vad, sample_rate=SAMPLE_RATE, plot=plot_word_alignment, avoid_empty_speech=True)
+        audio, vad_segments, convert_timestamps = remove_non_speech(audio,
+                                                                    method=vad,
+                                                                    sample_rate=SAMPLE_RATE,
+                                                                    plot=plot_word_alignment,
+                                                                    avoid_empty_speech=avoid_empty_speech,
+                                                                    min_speech_duration=vad_min_speech_duration,
+                                                                    min_silence_duration=vad_min_silence_duration,
+                                                                    dilatation=vad_dilatation,
+                                                                    )
     else:
         vad_segments = None
     
@@ -2084,9 +2108,9 @@ def get_vad_segments(audio,
 
 def remove_non_speech(audio,
     use_sample=False,
-    min_speech_duration=0.1,
-    min_silence_duration=1,
-    dilatation=0.5,
+    min_speech_duration=0.05,
+    min_silence_duration=0.1,
+    dilatation=0,
     sample_rate=SAMPLE_RATE,
     method="silero",
     avoid_empty_speech=False,
