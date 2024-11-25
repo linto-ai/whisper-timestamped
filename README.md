@@ -45,6 +45,8 @@ It provides more efficient/accurate word timestamps, along with those additional
   Several VAD methods are available: silero (default), auditok, auditok:v3.1
 * When the language is not specified, the language probabilities are provided among the outputs.
 
+**Disclaimer: Please note that this extension is intended for experimental purposes and may significantly impact performance. We are not responsible for any issues or inefficiencies that arise from its use.**
+
 ### Notes on other approaches
 
 An alternative relevant approach to recovering word-level timestamps involves using wav2vec models that predict characters, as successfully implemented in [whisperX](https://github.com/m-bain/whisperX). However, these approaches have several drawbacks that are not present in approaches based on cross-attention weights such as `whisper_timestamped`. These drawbacks include:
