@@ -118,9 +118,9 @@ def transcribe_timestamped(
     sample_len=None,
     verbose=False,
     avoid_empty_speech=True,
-    vad_min_speech_duration=0.05,
-    vad_min_silence_duration=0.1,
-    vad_dilatation=0,
+    vad_min_speech_duration=0.1,
+    vad_min_silence_duration=1,
+    vad_dilatation=0.5,
 ):
     """
     Transcribe an audio file using Whisper
@@ -2108,9 +2108,9 @@ def get_vad_segments(audio,
 
 def remove_non_speech(audio,
     use_sample=False,
-    min_speech_duration=0.05,
-    min_silence_duration=0.1,
-    dilatation=0,
+    min_speech_duration=0.1,
+    min_silence_duration=1,
+    dilatation=0.5,
     sample_rate=SAMPLE_RATE,
     method="silero",
     avoid_empty_speech=False,
