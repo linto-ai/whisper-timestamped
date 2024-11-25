@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.15.6"
+__version__ = "1.15.7"
 
 # Set some environment variables
 import os
@@ -2044,7 +2044,14 @@ def get_vad_segments(audio,
             drop_trailing_silence=True,
         )
 
-        segments = [{"start": s._meta.start * sample_rate, "end": s._meta.end * sample_rate} for s in segments]
+        if auditok.__version__ >= "0.3.0":
+            def auditok_segment_to_dict(s):
+                return {"start": s.start * sample_rate, "end": s.end * sample_rate}
+        else:
+            def auditok_segment_to_dict(s):
+                return {"start": s._meta.start * sample_rate, "end": s._meta.end * sample_rate}
+
+        segments = [auditok_segment_to_dict(s) for s in segments]
 
     else:
         raise ValueError(f"Got unexpected VAD method {method}")
