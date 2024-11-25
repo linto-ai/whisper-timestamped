@@ -3,7 +3,7 @@
 __author__ = "Jérôme Louradour"
 __credits__ = ["Jérôme Louradour"]
 __license__ = "GPLv3"
-__version__ = "1.15.7"
+__version__ = "1.15.8"
 
 # Set some environment variables
 import os
@@ -2352,6 +2352,8 @@ _ALIGNMENT_HEADS = {
     "large-v1": b"ABzY8r9j$a0{>%R7#4sLmoOs{s)o3~84-RPdcFk!JR<kSfC2yj",
     "large-v2": b'ABzY8zd+h!0{>%R7=D0pU<_bnWW*tkYAhobTNnu$jnkEkXqp)j;w1Tzk)UH3X%SZd&fFZ2fC2yj',
     "large-v3": b"ABzY8gWO1E0{>%R7(9S+Kn!D~%ngiGaR?*L!iJG9p-nab0JQ=-{D1-g00",
+    "large-v3-turbo": b"ABzY8j^C+e0{>%RARaKHP%t(lGR*)0g!tONPyhe`",
+    "turbo": b"ABzY8j^C+e0{>%RARaKHP%t(lGR*)0g!tONPyhe`",
 }
 
 _PARAMETERS_TO_MODEL_NAME = {
@@ -2381,7 +2383,7 @@ def get_alignment_heads(model, max_top_layer=3):
         if next(model.parameters())[0,0,0] > 0:
             model_name = "large-v1"
         else:
-            model_name = "large-v2"
+            model_name = "large-v3"
     return _get_alignment_heads(model_name, num_layers, num_heads)
 
 def _get_alignment_heads(model_name, num_layers, num_heads):
