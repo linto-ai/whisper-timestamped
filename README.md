@@ -24,7 +24,7 @@ Multilingual Automatic Speech Recognition with word-level timestamps and confide
    * [Accurate Whisper transcription](#accurate-whisper-transcription)
    * [Running Voice Activity Detection (VAD) before sending to Whisper](#running-voice-activity-detection-vad-before-sending-to-whisper)
    * [Detecting disfluencies](#detecting-disfluencies)
-* [Acknowledgment](#acknowledgment)
+* [Acknowledgment/Support](#acknowledgmentsupport)
 * [Citations](#citations)
 
 ## Description
@@ -745,9 +745,16 @@ whisper_timestamped --detect_disfluencies True ...
 ```
 **Important:** Note that when using these options, possible disfluencies will appear in the transcription as a special "`[*]`" word.
 
-## Acknowledgment
+## Acknowledgment/Support
+
+whisper-timestamped was coded mainly by [Jérôme Louradour](https://www.linkedin.com/in/jeronymous).
+It is based on the following libraries:
 * [whisper](https://github.com/openai/whisper): Whisper speech recognition (License MIT).
 * [dtw-python](https://pypi.org/project/dtw-python): Dynamic Time Warping (License GPL v3).
+
+Please consider supporting the development of this library by buying me a coffee:
+
+<a href="https://buymeacoffee.com/jeronymous" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
 ## Citations
 If you use this in your research, please cite the repo:
