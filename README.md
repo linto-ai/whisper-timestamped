@@ -24,7 +24,7 @@ Multilingual Automatic Speech Recognition with word-level timestamps and confide
    * [Accurate Whisper transcription](#accurate-whisper-transcription)
    * [Running Voice Activity Detection (VAD) before sending to Whisper](#running-voice-activity-detection-vad-before-sending-to-whisper)
    * [Detecting disfluencies](#detecting-disfluencies)
-* [Acknowledgment/Support](#acknowledgmentsupport)
+* [Acknowledgments/Support](#acknowledgments-support)
 * [Citations](#citations)
 
 ## Description
@@ -745,7 +745,7 @@ whisper_timestamped --detect_disfluencies True ...
 ```
 **Important:** Note that when using these options, possible disfluencies will appear in the transcription as a special "`[*]`" word.
 
-## Acknowledgment/Support
+## Acknowledgments/Support
 
 whisper-timestamped was coded mainly by [Jérôme Louradour](https://www.linkedin.com/in/jeronymous).
 It is based on the following libraries:
