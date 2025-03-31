@@ -2,7 +2,7 @@ FROM python:3.9
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-        ffmpeg
+        ffmpeg portaudio19-dev
 
 RUN python3 -m pip install --upgrade pip
 
