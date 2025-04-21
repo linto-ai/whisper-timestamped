@@ -1,58 +1,73 @@
 import os
-
 from setuptools import setup, find_packages
+import re
 
-install_requires = [
-    "Cython",
-    "dtw-python",
-    "openai-whisper",
-]
+def get_requirements(filename="requirements.txt"):
+    """Reads requirements from a requirements file."""
+    requirements = []
+    full_path = os.path.join(os.path.dirname(__file__), filename)
+    if os.path.exists(full_path):
+        with open(full_path, 'r', encoding='utf-8') as f:
+            requirements = [line.strip() for line in f if line.strip() and not line.startswith('#')]
+    return requirements
 
-required_packages_filename = os.path.join(os.path.dirname(__file__), "requirements.txt")
-if os.path.exists(required_packages_filename):
-    install_requires2 = [l.strip() for l in open(required_packages_filename).readlines()]
-    assert install_requires == install_requires2, f"requirements.txt is not up-to-date: {install_requires} != {install_requires2}"
+def get_metadata(field):
+    """Reads metadata fields like __version__, __license__ from __init__.py"""
+    init_path = os.path.join(os.path.dirname(__file__), "whisper_timestamped", "__init__.py")
+    metadata_value = None
+    if os.path.exists(init_path):
+        with open(init_path, 'r', encoding='utf-8') as f:
+            init_contents = f.read()
+            match = re.search(r"^__" + re.escape(field) + r"__\s*=\s*['\"]([^'\"]*)['\"]", init_contents, re.M)
+            if match:
+                metadata_value = match.group(1)
+            else:
+                print(f"Warning: Could not find __{field}__ in {init_path}")
+    else:
+        print(f"Warning: {init_path} not found.")
+    return metadata_value
 
-version = None
-license = None
-with open(os.path.join(os.path.dirname(__file__), "whisper_timestamped", "transcribe.py")) as f:
-    for line in f:
-        if line.strip().startswith("__version__"):
-            version = line.split("=")[1].strip().strip("\"'")
-            if version and license:
-                break
-        if line.strip().startswith("__license__"):
-            license = line.split("=")[1].strip().strip("\"'")
-            if version and license:
-                break
-assert version and license
+install_requires = get_requirements()
 
-description="Multi-lingual Automatic Speech Recognition (ASR) based on Whisper models, with accurate word timestamps, access to language detection confidence, several options for Voice Activity Detection (VAD), and more."
+version = get_metadata("version")
+license = get_metadata("license")
+
+if not version:
+    raise RuntimeError("Version information not found in whisper_timestamped/__init__.py")
+
+if not license:
+    print("Warning: License information not found in whisper_timestamped/__init__.py.")
+
+long_description = ""
+readme_path = os.path.join(os.path.dirname(__file__), "README.md")
+if os.path.exists(readme_path):
+    with open(readme_path, 'r', encoding='utf-8') as f:
+        long_description = f.read()
+else:
+    print("Warning: README.md not found.")
+
+
+description = "Multilingual automatic speech recognition (ASR) with new speaker segmentation (NSS) and word-level timestamps (WLT)"
 
 setup(
-    name="whisper-timestamped",
-    py_modules=["whisper_timestamped"],
+    name="urro_whisper",
+    author="urroxyz",
+    url="https://github.com/urroxyz/whisper",
+    # --------------------
     version=version,
     description=description,
-    long_description=description+"\nSee https://github.com/linto-ai/whisper-timestamped for more information.",
+    long_description=long_description,
     long_description_content_type='text/markdown',
     python_requires=">=3.7",
-    author="Jeronymous",
-    url="https://github.com/linto-ai/whisper-timestamped",
     license=license,
     packages=find_packages(exclude=["tests*"]),
     install_requires=install_requires,
-    entry_points = {
-        'console_scripts': [
-            'whisper_timestamped=whisper_timestamped.transcribe:cli',
-            'whisper_timestamped_make_subtitles=whisper_timestamped.make_subtitles:cli'
-        ],
-    },
     include_package_data=True,
-    extras_require={
-        'dev': ['matplotlib==3.7.4', 'transformers'],
-        'vad_silero': ['onnxruntime', 'torchaudio'],
-        'vad_auditok': ['auditok'],
-        'test': ['jsonschema'],
-    },
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+        "Topic :: Multimedia :: Sound/Audio :: Speech",
+        "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    ],
 )
