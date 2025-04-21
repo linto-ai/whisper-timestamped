@@ -5,4 +5,4 @@ GREATER = " >"
 DOUBLE_GREATER = " >>"
 
 __license__ = "GPLv3"
-__version__ = "urro-whisper-0.1.0"
+__version__ = "0.1.0"
