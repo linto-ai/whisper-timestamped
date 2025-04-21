@@ -13,7 +13,7 @@ def get_requirements(filename="requirements.txt"):
 
 def get_metadata(field):
     """Reads metadata fields like __version__, __license__ from __init__.py"""
-    init_path = os.path.join(os.path.dirname(__file__), "whisper_timestamped", "__init__.py")
+    init_path = os.path.join(os.path.dirname(__file__), "urro_whisper", "__init__.py")
     metadata_value = None
     if os.path.exists(init_path):
         with open(init_path, 'r', encoding='utf-8') as f:
@@ -33,10 +33,10 @@ version = get_metadata("version")
 license = get_metadata("license")
 
 if not version:
-    raise RuntimeError("Version information not found in whisper_timestamped/__init__.py")
+    raise RuntimeError("Version information not found in urro_whisper/__init__.py")
 
 if not license:
-    print("Warning: License information not found in whisper_timestamped/__init__.py.")
+    print("Warning: License information not found in urro_whisper/__init__.py.")
 
 long_description = ""
 readme_path = os.path.join(os.path.dirname(__file__), "README.md")
