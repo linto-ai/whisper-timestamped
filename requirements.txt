@@ -1,3 +1,7 @@
-Cython
-dtw-python
-openai-whisper
+numpy==2.0.0
+torch==2.6.0
+onnxruntime==1.21.0
+tqdm==4.67.1
+soundfile==0.13.1
+dtw-python==1.5.3
+openai-whisper==20240930
