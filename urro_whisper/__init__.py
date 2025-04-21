@@ -4,4 +4,5 @@ HYPHEN = " -"
 GREATER = " >"
 DOUBLE_GREATER = " >>"
 
-__version__ = "urro-whisper-1.0"
+__license__ = "Unknown"
+__version__ = "urro-whisper-0.1.0"
