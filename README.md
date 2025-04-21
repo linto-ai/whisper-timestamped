@@ -11,7 +11,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 
 from urro_whisper import whisperer, HYPHEN, GREATER, DOUBLE_GREATER
 
-audio = "audioCoco.mp3" # Make sure this file exists or replace with a valid path
+audio = "audio.wav" # Make sure this file exists or replace with a valid path
 diarization_prefix = DOUBLE_GREATER
 
 result = whisperer(
