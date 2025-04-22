@@ -140,3 +140,9 @@ except Exception as e:
     import traceback
     traceback.print_exc()
 ```
+
+## Acknowledgements
+* [openai-whisper] by OpenAI
+    * mel spectrogram handling
+* [whisper-timestamped](https://github.com/linto-ai/whisper-timestamped) by Linto AI
+    * extracting word-level timestamps
