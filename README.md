@@ -142,7 +142,7 @@ except Exception as e:
 ```
 
 ## Acknowledgements
-* [openai-whisper] by OpenAI
+* [openai-whisper](https://github.com/openai/whisper) by OpenAI
     * mel spectrogram handling
 * [whisper-timestamped](https://github.com/linto-ai/whisper-timestamped) by Linto AI
     * extracting word-level timestamps
