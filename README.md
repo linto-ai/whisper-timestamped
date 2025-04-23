@@ -141,8 +141,13 @@ except Exception as e:
     traceback.print_exc()
 ```
 
+## To-Do
+- [ ] Regroup word ouput
+- [ ] Speaker diarization
+- [ ] Stream audio input
+
 ## Acknowledgements
 * [openai-whisper](https://github.com/openai/whisper) by OpenAI
     * mel spectrogram handling
 * [whisper-timestamped](https://github.com/linto-ai/whisper-timestamped) by Linto AI
-    * extracting word-level timestamps
+    * word-level timestamp extraction
