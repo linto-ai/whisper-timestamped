@@ -2687,7 +2687,7 @@ class TransformerWhisperAsOpenAIWhisper:
             return_segments = True,
             return_timestamps = True,
             return_token_timestamps = use_token_timestamps,
-            max_length = self.dims.n_text_ctx,
+            max_length = self.dims.n_text_ctx if self.dims.n_text_ctx is not None else generation_config.max_length,
             is_multilingual = self.is_multilingual,
             prompt_ids = prompt_ids,
             generation_config = generation_config,
