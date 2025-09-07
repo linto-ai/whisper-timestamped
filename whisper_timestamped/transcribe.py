@@ -2734,9 +2734,29 @@ class TransformerWhisperAsOpenAIWhisper:
         else:
             i_sot = -1
         if self.is_multilingual:
-            language = self.tokenizer.decode([first_segment_tokens[i_sot+1]], decode_with_timestamps=True)
-            assert len(language) in [6,7], f"Unexpected language detected: '{language}' ({first_segment_tokens[i_sot+1]}) in '{self.tokenizer.decode(first_segment_tokens, decode_with_timestamps=True)}'"
-            language = language[2:-2]
+            user_language = kwargs.get("language")
+            if user_language is not None:
+                language = norm_language(user_language)
+            else:
+                # Try to read the language token right after SOT; if it's not a valid language token, fallback to detection
+                language = None
+                if 0 <= i_sot < len(first_segment_tokens) - 1:
+                    language_token = self.tokenizer.decode([first_segment_tokens[i_sot+1]], decode_with_timestamps=True)
+                    if len(language_token) in [6,7]:
+                        language = language_token[2:-2]
+                    
+                if not language:
+                    # Heuristic fallback: decode some early text and try langdetect if available
+                    try:
+                        from langdetect import detect as _ld_detect  
+                        sample_tokens = [t for t in first_segment_tokens if t < self.tokenizer.eot or t >= self.tokenizer.timestamp_begin]
+                        sample_text = self.tokenizer.decode(sample_tokens, decode_with_timestamps=True)
+                        detected = _ld_detect(sample_text) if sample_text.strip() else None
+                        language = norm_language(detected) if detected else None
+                    except Exception:
+                        language = None
+                    if not language:
+                        language = "en"
         else:
             language = "en"
 
