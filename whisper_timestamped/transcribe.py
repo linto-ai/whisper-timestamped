@@ -2439,7 +2439,7 @@ def load_model(
             name = f"openai/whisper-{name}"
         # TODO: use download_root
         # TODO: does in_memory makes sense?
-        cache_dir=os.path.join(download_root, "huggingface", "hub") if download_root else None,
+        cache_dir=os.path.join(download_root, "huggingface", "hub") if download_root else None
         try:
             generation_config = transformers.GenerationConfig.from_pretrained(name, cache_dir=cache_dir)
         except OSError:
