@@ -2736,7 +2736,7 @@ class TransformerWhisperAsOpenAIWhisper:
         if self.is_multilingual:
             language = self.tokenizer.decode([first_segment_tokens[i_sot+1]], decode_with_timestamps=True)
 
-            if len(language) in [6,7]:
+            if len(language) in (6,7) and language.startswith("<|") and language.endswith("|>"):
                 language = language[2:-2]
             else:
                 logging.debug(
