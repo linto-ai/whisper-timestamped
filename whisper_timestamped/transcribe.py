@@ -2439,7 +2439,7 @@ def load_model(
             name = f"openai/whisper-{name}"
         # TODO: use download_root
         # TODO: does in_memory makes sense?
-        cache_dir=os.path.join(download_root, "huggingface", "hub") if download_root else None,
+        cache_dir=os.path.join(download_root, "huggingface", "hub") if download_root else None
         try:
             generation_config = transformers.GenerationConfig.from_pretrained(name, cache_dir=cache_dir)
         except OSError:
@@ -2687,7 +2687,7 @@ class TransformerWhisperAsOpenAIWhisper:
             return_segments = True,
             return_timestamps = True,
             return_token_timestamps = use_token_timestamps,
-            max_length = self.dims.n_text_ctx,
+            max_length = self.dims.n_text_ctx if self.dims.n_text_ctx is not None else generation_config.max_length,
             is_multilingual = self.is_multilingual,
             prompt_ids = prompt_ids,
             generation_config = generation_config,
@@ -2735,8 +2735,16 @@ class TransformerWhisperAsOpenAIWhisper:
             i_sot = -1
         if self.is_multilingual:
             language = self.tokenizer.decode([first_segment_tokens[i_sot+1]], decode_with_timestamps=True)
-            assert len(language) in [6,7], f"Unexpected language detected: '{language}' ({first_segment_tokens[i_sot+1]}) in '{self.tokenizer.decode(first_segment_tokens, decode_with_timestamps=True)}'"
-            language = language[2:-2]
+
+            if len(language) in (6,7) and language.startswith("<|") and language.endswith("|>"):
+                language = language[2:-2]
+            else:
+                logging.debug(
+                    f"Unexpected language detected: '{language}' "
+                    f"({first_segment_tokens[i_sot+1]}) in "
+                    f"'{self.tokenizer.decode(first_segment_tokens, decode_with_timestamps=True)}'"
+                )
+                language = None
         else:
             language = "en"
 
