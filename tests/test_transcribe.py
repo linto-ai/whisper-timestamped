@@ -649,6 +649,29 @@ class TestMakeSubtitles(TestHelper):
                     self.assertTrue(os.path.isfile(output_file), msg=f"File {output_file} not found")
                     self.assertNonRegression(output_file, expected_file)
 
+    def test_make_subtitles_yue(self):
+
+        main_script = self.main_script("make_subtitles.py", "whisper_timestamped_make_subtitles")
+
+        # Cantonese ("yue") must be split on characters, not on spaces
+        text = "呢一句係一句好長嘅廣東話句子用嚟測試字幕分割"
+        words = [{"text": c, "start": 0.0 + i * 0.1, "end": 0.1 + i * 0.1} for i, c in enumerate(text)]
+        transcript = {"language": "yue", "segments": [{"text": text, "start": 0.0, "end": 2.0, "words": words}]}
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".words.json", encoding="utf8", delete=False) as f:
+            json.dump(transcript, f, ensure_ascii=False)
+            input_file = f.name
+
+        output_path = os.path.join(self.get_output_path(), "yue_output.srt")
+        try:
+            self.assertRun([main_script, input_file, output_path, "--max_length", "10"])
+            with open(output_path, encoding="utf8") as f:
+                content = f.read()
+            text_lines = [l for l in content.splitlines() if l and "-->" not in l and not l.isdigit()]
+            self.assertEqual("".join(l.strip() for l in text_lines), text)
+        finally:
+            os.remove(input_file)
+            os.remove(output_path)
+
 class TestHuggingFaceModel(TestHelperCli):
 
     def test_hugging_face_model(self):

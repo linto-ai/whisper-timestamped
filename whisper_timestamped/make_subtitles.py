@@ -141,7 +141,7 @@ def cli():
         segments = transcript["segments"]
         if args.max_length:
             language = transcript["language"]
-            use_space = language not in ["zh", "ja", "th", "lo", "my"]
+            use_space = language not in ["zh", "ja", "th", "lo", "my", "yue"]
             segments = split_long_segments(segments, args.max_length, use_space=use_space)
         for output in outputs:
             if output.endswith(".srt"):
