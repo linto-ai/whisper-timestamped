@@ -649,6 +649,32 @@ class TestMakeSubtitles(TestHelper):
                     self.assertTrue(os.path.isfile(output_file), msg=f"File {output_file} not found")
                     self.assertNonRegression(output_file, expected_file)
 
+    def test_split_long_segments_without_words(self):
+
+        from whisper_timestamped.make_subtitles import split_long_segments
+
+        long_text = "This is a very long sentence that exceeds the maximum length of the segment."
+        segment = {
+            "text": long_text,
+            "start": 0.0,
+            "end": 4.0,
+            "words": [],
+        }
+
+        # A long segment without word-level timestamps must not be silently dropped
+        for use_space in True, False:
+            out = split_long_segments([segment], 20, use_space=use_space)
+            self.assertEqual(len(out), 1)
+            self.assertEqual(out[0]["text"], long_text)
+
+        # Same when the "words" key is missing entirely
+        for use_space in True, False:
+            seg_no_words = dict(segment)
+            seg_no_words.pop("words")
+            out = split_long_segments([seg_no_words], 20, use_space=use_space)
+            self.assertEqual(len(out), 1)
+            self.assertEqual(out[0]["text"], long_text)
+
 class TestHuggingFaceModel(TestHelperCli):
 
     def test_hugging_face_model(self):

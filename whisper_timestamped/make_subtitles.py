@@ -12,7 +12,12 @@ def split_long_segments(segments, max_length, use_space = True):
         if len(text) <= max_length:
             new_segments.append(segment)
         else:
-            meta_words = segment["words"]
+            meta_words = segment.get("words", []) or []
+            if not meta_words:
+                # No word-level timestamps to split on: keep the whole segment
+                # instead of silently dropping it.
+                new_segments.append(segment)
+                continue
             # Note: we do this in case punctuation were removed from words
             if use_space:
                 # Split text around spaces and punctuations (keeping punctuations)
