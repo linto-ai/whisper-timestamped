@@ -45,6 +45,15 @@ class SplitLongSegmentsTest(unittest.TestCase):
         got = split_long_segments([segment], max_length=6, use_space=False)
         self.assertEqual([part["text"] for part in got], ["こんにちは。", "元気"])
 
+    def test_no_space_multiple_cuts(self):
+        segment = _segment([
+            _word("ab。", 0.0, 1.0),
+            _word("cd。", 1.0, 2.0),
+            _word("ef", 2.0, 3.0),
+        ])
+        got = split_long_segments([segment], max_length=3, use_space=False)
+        self.assertEqual([part["text"] for part in got], ["ab。", "cd。", "ef"])
+
     def test_space_still_splits_after_punctuation(self):
         segment = _segment(
             [
