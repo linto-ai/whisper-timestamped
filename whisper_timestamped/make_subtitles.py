@@ -39,7 +39,10 @@ def split_long_segments(segments, max_length, use_space = True):
                     if current_best_idx is not None:
                         text = current_text[:current_best_idx]
                         end = current_best_end
-                        current_text = current_text[current_best_idx+1:]
+                        # The saved index points at the separator. A space is that separator.
+                        # Without spaces, the next character is the next word.
+                        skip = 1 if use_space else 0
+                        current_text = current_text[current_best_idx + skip:]
                         current_start = current_best_next_start
                     else:
                         text = current_text_before
