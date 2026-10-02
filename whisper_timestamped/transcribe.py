@@ -1853,6 +1853,7 @@ def split_tokens_on_unicode(tokens: list, tokenizer, remove_punctuation_from_wor
                 if len(words) == 0:
                     words = [""]
                     word_tokens = [[]]
+                    word_tokens_indices = [[]]
                 if not remove_punctuation_from_words:
                     words[-1] += decoded
                 word_tokens[-1].extend(empty_tokens + [decoded])
@@ -1881,6 +1882,12 @@ def split_tokens_on_spaces(tokens: torch.Tensor, tokenizer, remove_punctuation_f
         with_space = subword.startswith(" ") and not is_space
         punctuation = not is_space and subword.strip() in _punctuation
         if special or (not previous_space and (previous_special or (with_space and not punctuation) or (is_space and not next_special))):
+            words.append(subword.strip())
+            word_tokens.append(subword_tokens)
+            word_tokens_indices.append(subword_tokens_indices)
+        elif len(words) == 0:
+            # Segment starts with a space or punctuation: start a new word
+            # instead of crashing on words[-1]
             words.append(subword.strip())
             word_tokens.append(subword_tokens)
             word_tokens_indices.append(subword_tokens_indices)

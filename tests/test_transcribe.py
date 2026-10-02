@@ -900,3 +900,40 @@ class TestZZZPythonImport(TestHelper):
                 [[50363], [764], [51813]]
             )
         )
+
+    def test_split_tokens_leading_punctuation_or_space(self):
+
+        from whisper_timestamped.transcribe import split_tokens_on_unicode
+        from whisper_timestamped.transcribe import split_tokens_on_spaces
+
+        class FakeTokenizer:
+            eot = 50257
+            timestamp_begin = 50364
+
+            def __init__(self, decoding):
+                self._decoding = decoding
+
+            def decode_with_timestamps(self, tokens):
+                return "".join(self._decoding.get(t, "") for t in tokens)
+
+        SPACE, HELLO, COMMA = 101, 102, 104
+        TS = 50364
+
+        # Segment whose text starts with a punctuation character
+        tokenizer = FakeTokenizer({COMMA: ",", HELLO: " hello"})
+        self.assertEqual(
+            split_tokens_on_unicode([COMMA, HELLO], tokenizer),
+            ([',', ' hello'], [[','], [' hello']], [[104], [102]]),
+        )
+        self.assertEqual(
+            split_tokens_on_spaces([COMMA, HELLO], tokenizer),
+            ([',', 'hello'], [[','], [' hello']], [[104], [102]]),
+        )
+
+        # Segment whose text starts with a bare space before a timestamp token
+        tokenizer = FakeTokenizer({SPACE: " ", HELLO: "hello", TS: "[<|0.00|>]"})
+        self.assertEqual(
+            split_tokens_on_spaces([SPACE, TS, HELLO], tokenizer),
+            (['', '[<|0.00|>]', 'hello'], [[' '], ['[<|0.00|>]'], ['hello']], [[101], [50364], [102]]),
+        )
+
