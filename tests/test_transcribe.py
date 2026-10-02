@@ -649,6 +649,18 @@ class TestMakeSubtitles(TestHelper):
                     self.assertTrue(os.path.isfile(output_file), msg=f"File {output_file} not found")
                     self.assertNonRegression(output_file, expected_file)
 
+    def test_make_subtitles_bare_output_filename(self):
+
+        main_script = self.main_script("make_subtitles.py", "whisper_timestamped_make_subtitles")
+        input_file = self.get_data_path("smartphone.mp3.words.json")
+
+        # A bare output filename (no directory component) used to crash on os.makedirs("")
+        output_file = "bare_output.srt"
+        self.assertRun([main_script, input_file, output_file])
+        output_path = os.path.join(tempfile.gettempdir(), output_file)
+        self.assertTrue(os.path.isfile(output_path), msg=f"File {output_path} not found")
+        os.remove(output_path)
+
 class TestHuggingFaceModel(TestHelperCli):
 
     def test_hugging_face_model(self):

@@ -135,8 +135,9 @@ def cli():
     else:
         input_files = [args.input]
         output_files = [[args.output]]
-        if not os.path.isdir(os.path.dirname(args.output)):
-            os.makedirs(os.path.dirname(args.output))
+        output_dir = os.path.dirname(args.output)
+        if output_dir and not os.path.isdir(output_dir):
+            os.makedirs(output_dir)
 
     for fn, outputs in zip(input_files, output_files):
         with open(fn, "r", encoding="utf-8") as f:
